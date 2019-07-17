@@ -1,0 +1,201 @@
+/* stylelint-disable */
+.event-story {
+  margin-bottom: em(70);
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    display: block;
+    font-size: em(35);
+    padding: 0 em(95,35) 0 em(15,35);
+    position: relative;
+    margin: em(-25,35) 0 em(30,35) 0;
+    line-height: 1.15;
+
+    &::after {
+        transform: translate3d(0,0,0);
+        content: '\E800';
+        font-family: 'mnm';
+        display: inline-block;
+        color: black;
+        font-size: em(45,70);
+        // margin-left: 175px;
+        // position: relative;
+        // top: -10px;
+        position: absolute;
+        bottom: 10px;
+        right: 1.25em;
+        transition: transform 300ms;
+      }
+
+    &:hover {
+      &::after {
+        transform: translate3d(50%,0,0);
+      }
+    }
+  }
+
+  .story-picture {
+    width: 100%;
+    min-height: 250px;
+    height: 75vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    .img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: transparent;
+    }
+
+  }
+
+  h3 {
+    font-size: em(16);
+    font-weight: 600;
+    padding: 0 em(15);
+    margin: 0 0 em(30) 0;
+  }
+
+  p {
+    font-size: em(14);
+    padding:  0 em(15,14);
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 650px) {
+    max-width: em(552);
+
+    &:nth-child(even) {
+      margin-left: auto;
+    }
+
+    .story-picture {
+      max-width: em(552);
+      max-height: em(456);
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    max-width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: em(100);
+
+    h2 {
+      width: 110%;
+      padding: 0 2.71429em 0 1em;
+
+      &::after {
+        right: em(-30);
+      }
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      h2 {
+        margin-left: 0;
+      }
+
+      h3,
+      p {
+        width: 100%;
+      }
+    }
+
+    .story-info {
+      max-width: em(368);
+      width: 45%;
+    }
+
+    .story-picture {
+      width: 50%;
+      height: 33vw;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    
+  }
+
+  @media screen and (min-width: 1150px) {
+    margin-bottom: em(136);
+    .story-picture {
+      width: em(552);
+      height: em(456);
+    }
+
+    p {
+      font-size: em(14);
+      padding:  0 3em;
+      line-height: 1.8;
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 1350px) {
+    h2 {
+      font-size: em(40);
+      line-height: 1;
+      width: 120%;
+    }
+  }
+
+} 
+
+.caso,
+.cronica {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 300px;
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+
+  .img,
+  .inside {
+    position: absolute;
+    background-color: orange;
+    width: 50%;
+    height: 100%;
+  }
+
+  .inside {
+    right: 0;
+    background-color: transparent;
+    bottom: 0;
+    height: auto;
+    margin-right: 10%;
+
+    .txt,
+    .ubicacion {
+      width: 70%;
+      margin-left: 30%;
+    }
+
+    .ubicacion {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:nth-child(even) {
+    .img {
+      right: 0;
+    }
+
+    .inside {
+      left: 10%;
+      right: auto;
+    }
+  }
+}

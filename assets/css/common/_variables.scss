@@ -1,0 +1,52 @@
+$dimMenu: 70px;
+$widthSide: 350px;
+$zindex_sidemenu: 110;
+$zindex_topmenu: 100;
+$max-width: 1100px;
+$max-side-width: em(450);
+
+$color2: #d5941c;
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+$color-menu: #ff7153;
+
+$rosado: #fcebeb;
+
+@mixin top-offset($pos) {
+  -moz-transform: translateY($pos);
+  -webkit-transform: translateY($pos);
+  -o-transform: translateY($pos);
+  -ms-transform: translateY($pos);
+  transform: translateY($pos);
+}
+
+@mixin border-radius($pos) {
+  -webkit-border-radius: $pos;
+  -moz-border-radius: $pos;
+  border-radius: $pos;
+}
+
+@mixin left-offset($pos) {
+  -moz-transform: translateX($pos);
+  -webkit-transform: translateX($pos);
+  -o-transform: translateX($pos);
+  -ms-transform: translateX($pos);
+  transform: translateX($pos);
+}
+
+@mixin transition-mix($prop) {
+  -webkit-transition: $prop 0.2s ease;
+  -moz-transition: $prop 0.2s ease;
+  -ms-transition: $prop 0.2s ease;
+  -o-transition: $prop 0.2s ease;
+  transition: $prop 0.2s ease;
+}
+
+@mixin center-all() {
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}

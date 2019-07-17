@@ -1,0 +1,29 @@
+#publi_block {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .publi {
+    border: 1px solid #999;
+    color: #000;
+    display: block;
+    width: 30%;
+    float: left;
+    margin: 1.5%;
+    height: 300px;
+    position: relative;
+
+    .date {
+      font-size: 80px;
+      text-align: center;
+      position: relative;
+      top: -40px;
+    }
+
+    .inside {
+      padding: 10px;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+}

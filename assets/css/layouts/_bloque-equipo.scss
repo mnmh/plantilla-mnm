@@ -1,0 +1,24 @@
+.bloque_equipo {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  cursor: move;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+
+  .item_equipo {
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .img {
+      width: 300px;
+      background-color: orange;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+  }
+}

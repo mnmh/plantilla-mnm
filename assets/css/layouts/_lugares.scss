@@ -1,0 +1,422 @@
+/* stylelint-disable */
+#lugares_formulario {
+	position: relative;
+	
+	#mapid, #mapaid {
+		width: calc(100% - 600px);
+		height: calc(100vh - 150px) !important;
+	}
+
+	.leaflet-marker-icon {
+		background-color: #eccdbc;
+		border-radius: 20px;
+		border: 1px solid #999;
+
+		&.opacity {
+			background-color: rgba(255,255,255,0.7);
+			border: 1px solid #333;
+		}
+	}
+
+	.inside_lugares {
+		display: flex;
+		margin-top: 100px;
+		height: calc(100vh - 150px);
+
+		.left {
+			width: calc(100% - 600px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.visor {
+				width: 100%;
+				max-width: 700px;
+
+				.video {
+					height: 500px;
+					background-color: black;
+					position: relative;
+
+					iframe {
+						border: none;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 100%;
+					}
+				}
+
+				.items {
+					display: flex;
+
+					.item {
+						flex-grow: 1;
+						text-align: center;
+						margin-top: 20px;
+
+						.num {
+							width: 40px;
+							height: 40px;
+							border: 1px solid #999;
+							border-radius: 20px;
+							color: #999;
+							line-height: 38px;
+							display: inline-block;
+						}
+
+						&:hover {
+							cursor: pointer;
+
+							.num {
+								background-color: #555;
+								color: white;
+								border-color: #333;
+								font-weight: 700;
+							}
+						}
+
+						&.active {
+							.num {
+								background-color: #333;
+								color: white;
+								border-color: #333;
+								font-weight: 700;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.right {
+			width: 600px;
+
+			.texto {
+				font-size: 0.8em;
+				margin: 0;
+				border-top: 1px dashed #999;
+				padding-top: 20px;
+				margin-top: 20px;
+
+				p {
+					margin: 0;
+					margin-top: 10px;
+					color: #888;
+				}
+			}
+
+			h1 {
+				margin-top: 20px;
+				font-size: 3em;
+				color: #333;
+			}
+
+			h2 {
+				margin-top: 30px;
+			}
+
+			.copy {
+				font-size: 0.8em;
+
+				p {
+					margin: 0;
+					margin-top: 10px;
+				}
+			}
+		}
+
+		&.page {
+			display: block;
+			height: auto;
+
+			.intro {
+				background-color: #333;
+				display: flex;
+				align-items: center;
+				height: 50vh;
+				color: white;
+
+				.sideIntro {
+					width: 50%;
+					padding: 20px;
+
+					h1 {
+						font-size: 4em;
+					}
+
+					.des p {
+						color: white;
+					}
+				}
+
+				.video {
+					width: 50%;
+
+					.inside {
+						height: 30vh;
+						max-width: 600px;
+						width: 100%;
+						max-height: 400px;
+						background-color: white;
+						margin: 0 auto;
+						overflow: hidden;
+						position: relative;
+
+						video {
+							position: absolute;
+							z-index: 0;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							margin: auto;
+							min-width: 50%;
+							min-height: 50%;
+						}
+					}
+				}
+			}
+
+			.icons_virtual {
+				height: 300px;
+				display: flex;
+
+				.item {
+					flex-grow: 1;
+					display: flex;
+					align-items: center;
+					border-right: 1px solid #f3f3f3;
+					padding-right: 40px;
+
+					&:last-child {
+						border: none;
+					}
+
+					.name {
+					    width: 100%;
+					    text-align: center;
+					    text-transform: uppercase;
+					    font-weight: 700;
+					    color: #999;
+					}
+
+					.icon {
+						width: 200px;
+						margin: 0 auto;
+
+						path {
+							stroke-width: 1px;
+							fill: #999;
+							stroke: #999;
+						}
+					}
+				}
+			}
+
+			.proyectos {
+				.item {
+					display: flex;
+					align-items: center;
+					background-color: #fcebeb;
+					padding-top: 5vh;
+					padding-bottom: 5vh;
+
+					.img {
+						width: 40%;
+						height: 30vh;
+						background-size: contain;
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+
+					.content {
+						width: 60%;
+
+						ul {
+							font-size: 1.2em;
+							margin-top: 1em;
+							color: #777;
+
+							li {
+								margin-bottom: 0.25em;
+							}
+						}
+
+						.title {
+							margin: 0;
+						}
+
+						a {
+							border: 1px solid #333;
+							background-color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.next_btn {
+		border: none;
+		padding: 20px;
+		background: #eccdbc;
+		color: white;
+		cursor: pointer;
+		float: right;
+
+		&:hover {
+			color: #333;
+		}
+
+		&.hidden {
+			display: none;
+		}
+	}
+
+	#contenido_side {
+		width: 600px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-left: 10px;
+		padding-right: 5px;
+
+		.texto {
+			font-size: 0.8em;
+			margin: 0;
+
+			p {
+				margin: 0;
+				margin-top: 10px;
+				color: #888;
+			}
+		}
+
+		h1 {
+			margin-top: 20px;
+			font-size: 3em;
+			color: #333;
+		}
+
+		h2 {
+			margin-top: 30px;
+		}
+
+		.copy {
+			font-size: 0.8em;
+
+			p {
+				margin: 0;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	#acf-form {
+		position: relative;
+		margin-top: 100px;
+
+
+		.acf-field--post-title {
+			position: absolute;
+			width: 580px;
+			right: 25px;
+			top: 260px;
+			z-index: 2;
+		}
+
+		.acf-field-mmhc-mapa {
+			z-index: 1;
+
+			.acf-label {
+				display: none;
+			}
+		}
+
+		.acf-field-text {
+			position: absolute;
+			width: 580px;
+			right: 25px;
+			top: 350px;
+			z-index: 2;
+
+			&.acf-field--post-title {
+				position: absolute;
+				top: 260px;
+			}
+
+			.acf-label {
+				display: none;
+			}
+
+			.acf-input input{
+				padding: 20px;
+				border: none;
+				border-bottom: 1px solid #999;
+				height: auto;
+			}
+		}
+
+		.acf-fields > .acf-field {
+			border: none;
+
+			label {
+				font-weight: normal !important;
+				font-size: 14px;
+				padding-left: 20px !important;
+				text-transform: lowercase;
+				color: #777;
+				margin-bottom: 20px !important;
+			}
+		}
+
+		.acf-field-textarea {
+			position: absolute;
+			width: 580px;
+			right: 25px;
+			top: 440px;
+			z-index: 2;
+
+			.acf-label {
+				display: none;
+			}
+
+			textarea {
+				border: 1px dashed #999;
+				outline: none;
+			}
+		}
+
+		.acf-field-paleta-colores {
+			position: absolute;
+			width: 580px;
+			right: 25px;
+			top: 680px;
+			z-index: 2;
+		}
+
+		.acf-form-submit {
+			position: absolute;
+			width: 580px;
+			right: 25px;
+			top: 830px;
+			z-index: 2;
+			text-align: right;
+			padding-right: 12px;
+
+			input {
+				border: none;
+				padding: 20px;
+				background: #eccdbc;
+				color: white;
+				cursor: pointer;
+
+				&:hover {
+					color: #333;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,181 @@
+svg {
+  .zone {
+    // display: none;
+    opacity: 0.5;
+    transition: opacity 300ms;
+
+    &[data-eje="Eje Cuerpo"] {
+      fill: #9f2445;
+    }
+
+    &[data-eje="Eje Agua"] {
+      fill: #008691;
+    }
+
+    &[data-eje="Eje Tierra"] {
+      fill: #c3614f;
+    }
+
+    &[data-eje="Voces para transformar a Colombia"],
+    &#Teatro,
+    &#Foro,
+    &#Biblioteca,
+    &#Conmemora_Radio,
+    &#Memorial {
+      fill: #c3b750;
+    }
+
+    &.visible-zone {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+}
+
+.expo-map {
+  .svg-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+    transition: opacity 300ms, transform 300ms;
+    width: 100%;
+    height: auto;
+    min-width: 800px;
+
+    .zone {
+      opacity: 0;
+
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+
+    &.visible {
+      display: block;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .ghost-map {
+    height: auto;
+    min-width: 800px;
+  }
+
+  .tabbed-menu {
+    a {
+      opacity: 0.25;
+      transition: opacity 300ms;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .map-wrapper {
+    position: relative;
+    margin-bottom: em(30);
+    overflow-x: scroll;
+    padding: 5px 0;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 0;
+      height: 0;
+      background: transparent;
+    }
+
+    @media screen and (min-width: 650px) {
+      margin-bottom: em(50);
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: em(100);
+      overflow: visible;
+    }
+  }
+
+  .map-info {
+    padding: 0 em(20) 0 em(50);
+    width: 100%;
+
+    h1 {
+      font-size: em(25);
+    }
+
+    h5 {
+      margin-bottom: em(20);
+      display: block;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        left: -25px;
+        border-radius: 100%;
+        opacity: 0.5;
+      }
+
+      &[data-axis="Eje Cuerpo"]::before {
+        background: #9f2445;
+      }
+
+      &[data-axis="Eje Agua"]::before {
+        background: #008691;
+      }
+
+      &[data-axis="Eje Tierra"]::before {
+        background: #c3614f;
+      }
+
+      &[data-axis="Voces para transformar a Colombia"]::before {
+        background: #c3b750;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      max-width: em(750);
+      margin: 0 auto;
+
+      h1 {
+        font-size: em(30);
+      }
+    }
+  }
+}
+
+#des-mapa {
+  max-width: 46.875em;
+  margin: 0 auto;
+
+  .item {
+    font-family: 'Merriweather', serif;
+    line-height: 2;
+    color: #222;
+    font-size: 0.875em;
+    max-width: 46.875em;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: none;
+  }
+}

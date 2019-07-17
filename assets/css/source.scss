@@ -1,0 +1,40 @@
+@import "common/variables";
+@import "common/functions";
+
+/** Import theme styles */
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/background_video";
+@import "components/contenidogeneral";
+@import "components/sidemenu";
+@import "components/scroll-down";
+@import "components/frontslider";
+@import "components/downloads-list";
+@import "components/wp-classes";
+
+
+@import "layouts/publicaciones";
+@import "layouts/top-presentacion";
+@import "layouts/top-single";
+@import "layouts/casos";
+@import "layouts/contenido-texto";
+@import "layouts/bloque-publicaciones";
+@import "layouts/bloque-equipo";
+@import "layouts/sidebar-archive";
+@import "layouts/programacion-agenda";
+@import "layouts/programacion-radio";
+@import "layouts/tematicas";
+@import "layouts/mapa-educacion";
+@import "layouts/bloque-txt";
+@import "layouts/agenda-dia-front";
+@import "layouts/radio-banner";
+@import "layouts/page-voces";
+@import "layouts/lugares";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";

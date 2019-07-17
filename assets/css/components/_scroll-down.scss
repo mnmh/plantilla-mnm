@@ -1,0 +1,30 @@
+.scroll-down-item {
+  width: 50%;
+  width: 70px;
+  height: auto;
+
+  svg {
+    display: block;
+  }
+
+  @media screen and (min-width: 650px) {
+    width: 126px;
+  }
+}
+
+.scroll-down-wrapper {
+  position: absolute;
+  bottom: 0;
+  // top: calc(100% - 36px);
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+
+  @media screen and (min-width: 1024px) {
+    transform: translateX(#{em(-400)});
+  }
+
+  .video & {
+    transform: translateX(-50%) !important;
+  }
+}

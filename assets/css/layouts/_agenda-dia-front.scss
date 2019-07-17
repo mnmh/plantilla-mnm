@@ -1,0 +1,442 @@
+/* stylelint-disable */
+// #agenda-dia {
+//   max-width: 1100px;
+//   overflow: auto;
+
+//   .side_archive {
+//     width: 30%;
+//     padding-left: 10px;
+//     overflow: hidden;
+//     position: relative;
+//     padding-top: 80px;
+
+//     .hori_scroll {
+//       z-index: 10;
+//       text-align: left;
+//       user-select: none;
+//       position: absolute;
+//       top: 5px;
+//       right: 5px;
+
+//       div {
+//         width: em(30);
+//         height: em(30);
+//         background: white;
+//         cursor: pointer;
+//         position: relative;
+//         font-family: 'mnm';
+//         display: inline-block;
+//         margin: 0 em(2);
+
+//         &.next::before,
+//         &.prev::before {
+//           content: '\E809';
+//           position: absolute;
+//           width: 100%;
+//           line-height: 1.2;
+//           top: 0;
+//           left: 0;
+//           text-align: center;
+//           font-size: em(30);
+//         }
+
+//         &.prev::before {
+//           content: '\E80A';
+//         }
+
+//         &.disabled {
+//           color: #ccc;
+//           border-color: #ccc;
+//         }
+//       }
+
+//       .num {
+//         width: 100%;
+//         text-align: center;
+//         display: block;
+//         font-size: 30px;
+//         margin-bottom: 10px;
+//       }
+//     }
+
+//     .page {
+//       width: 100%;
+//     }
+
+//     a {
+//       margin-bottom: 1.25em;
+//       display: block;
+
+//       h2 {
+//         line-height: 1.5;
+//         font-weight: 600;
+//         font-size: 1em;
+//       }
+
+//       .time {
+//         font-size: em(15);
+//         line-height: 1.6;
+
+//         &::before {
+//           font-family: 'mnm';
+//           display: inline-block;
+//           content: '\E80D';
+//           font-size: 1em;
+//           margin-right: 5px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+#agenda-dia {
+  position: relative;
+
+  .wrapper {
+    @media screen and (min-width: 850px) {
+      display: flex;
+    }
+  }
+  
+
+  @media screen and (min-width: 1024px) {
+    // font-size: em(18);
+  }
+
+  .first {
+    width: calc(100% + 0.3125em + 1.125em);
+    margin-left: -0.75em;
+
+    @media screen and (min-width: 850px) {
+      width: 65%;
+      margin-right: 5%;
+    }
+
+    @media screen and (min-width: 1080px) {
+      display: flex;
+    }
+  }
+
+  .time {
+    font-size: 1.1em;
+    line-height: 1.6;
+
+    &::before {
+      font-family: 'mnm';
+      display: inline-block;
+      content: '\E80D';
+      font-size: 1em;
+      margin-right: 5px;
+    }
+  }
+
+  .info {
+    padding: 0 0 0 em(20,40);
+    position: relative;
+    font-weight: 500;
+
+    .copy-des {
+      padding: 0 0 1em 0;
+      color: inherit;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.875em;
+    }
+
+    @media screen and (min-width: 1080px) {
+      width: 70%;
+      margin-right: em(-210);
+      padding-top: em(100);
+    }
+  }
+
+  .date {
+    font-size: 1.25em;
+    text-transform: lowercase;
+    margin-bottom: 2.5vh;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+
+    .day {
+      font-size: 2.4em;
+      line-height: 1;
+    }
+
+    @media screen and (min-width: 850px) {
+      right: 1em;
+    }
+
+    @media screen and (min-width: 1080px) {
+      position: static;
+    }
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: em(30);
+    display: block;
+    width: 80%;
+    position: relative;
+    z-index: 2;
+    line-height: 1.25;
+
+    &::after {
+      transform: translate3d(0,0,0);
+      content: '\E800';
+      font-family: 'mnm';
+      display: inline-block;
+      color: black;
+      font-size: em(45,70);
+      // margin-left: 175px;
+      // position: relative;
+      // top: -10px;
+      position: absolute;
+      bottom: 10px;
+      right: em(-50);
+      transition: transform 300ms;
+    }
+
+    &:hover {
+      &::after {
+        transform: translate3d(25%,0,0);
+      }
+    }
+
+    @media screen and (min-width: 850px) {
+      width: 70%;
+    }
+
+    @media screen and (min-width: 1080px) {
+      font-size: em(40);
+      width: 110%;
+    }
+  }
+
+  .featured-image {
+    width: 100%;
+    height: 250px;
+    height: 70vw;
+    margin-bottom: em(40);
+    position: relative;
+    margin-top: em(-60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: calc(100% + 1.125em);
+    margin-left: -0.5em;
+
+    @media screen and (min-width: 850px) {
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: -3em;
+      height: 53vw;
+    }
+
+    @media screen and (min-width: 1080px) {
+      margin-top: 0;
+      height: em(575);
+    }
+  }
+
+  .featured-event {
+    width: 100%;
+  }
+}
+
+.side_archive {
+  width: 100%;
+  position: relative;
+
+  @media screen and (min-width: 850px) {
+    width: 30%;
+    padding-top: 6em;
+  }
+
+  @media screen and (min-width: 1080px) {
+    padding-top: 0;
+  }
+
+  a {
+    margin-bottom: 1em;
+    display: block;
+    font-size: 0.75em;
+    width: 80%;
+
+    @media screen and (min-width: 850px) {
+      margin-bottom: 1.5em;
+    }
+
+    @media screen and (min-width: 1080px) {
+      margin-bottom: 2em;
+    }
+  }
+
+  h2{
+    margin-bottom: 0.3em;
+  }
+
+  @media screen and (min-width: 850px) {
+    overflow: hidden;
+
+    .page {
+      margin-right: 0;
+    }
+  }
+
+  .page {
+    width: 100%;
+    margin-right: calc(1.25rem + 0.9375rem + 6vw);
+  }
+
+  .hori_scroll {
+    z-index: 10;
+    text-align: left;
+    user-select: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    div {
+      width: em(30);
+      height: em(30);
+      cursor: pointer;
+      position: relative;
+      font-family: 'mnm';
+      display: inline-block;
+      margin: 0 em(2);
+
+      &.next::before,
+      &.prev::before {
+        content: '\E809';
+        position: absolute;
+        width: 100%;
+        line-height: 1.2;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-size: em(30);
+      }
+
+      &.prev::before {
+        content: '\E80A';
+      }
+
+      &.disabled {
+        color: #ccc;
+        border-color: #ccc;
+      }
+    }
+
+    .num {
+      width: 100%;
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1080px) {
+      top: auto;
+      right: auto;
+      bottom: 5px;
+      left: 0;
+    }
+  }
+
+.events-list {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 15/16*1em;
+  
+  .event-item {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding-bottom: 60/16*1em;
+    margin-bottom: 55/16*1em;
+
+    &::before {
+      content: attr(data-date);
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-weight: 800;
+      font-size: 80/16*1em;
+      text-transform: uppercase;
+      z-index: -1;
+      color: white;
+    }
+  }
+
+  .event-category {
+    font-size: 14/16*1em;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 28/14*1em;
+  }
+
+  h2 {
+    font-size: 25/16*1em;
+    font-weight: 500;
+    margin: 0 0 10/25*1em;
+  }
+
+  .event-time {
+    font-size: 15/16*1em;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+// .event-list-nav {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 0 20/16*1em 0 12/16*1em;
+
+//   .next, .prev {
+//     width: em(40);
+//     height: em(40);
+//     padding: 0;
+//     margin: 0;
+
+//     &:disabled,
+//     &[disabled]{
+//       opacity: 0.25;
+//     }
+//   }
+
+  // .flickity-page-dots {
+  //   text-align: center;
+  //   margin: 0;
+  //   padding: 0;
+
+  //   li {
+  //     list-style: none;
+  //     cursor: pointer;
+  //     width: 45px;
+  //     height: 4px;
+  //     display: block;
+  //     float: left;
+  //     margin: 0 2px;
+  //     background: black;
+  //     opacity: 0.25;
+  //     transition: opacity 200ms;
+
+  //     &.is-selected {
+  //       opacity: 1;
+  //     }
+  //   }
+
+  //   @media screen and (min-width: 1024px) {
+
+  //     &:hover {
+  //       opacity: 1;
+  //     }
+  //   }
+  // }
+}

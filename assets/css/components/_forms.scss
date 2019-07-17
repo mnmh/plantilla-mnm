@@ -1,0 +1,55 @@
+/* stylelint-disable */
+// /** Search form */
+// .search-form {
+//   @extend .form-inline;
+// }
+
+// .search-form label {
+//   @extend .form-group;
+
+//   font-weight: normal;
+// }
+
+// .search-form .search-field {
+//   @extend .form-control;
+// }
+
+// .search-form .search-submit {
+//   @extend .btn;
+//   @extend .btn-secondary;
+// }
+
+#input_search_obras {
+	margin-bottom: 1.5625em;
+	position: relative;
+
+	input {
+	    width: 100%;
+	    outline: none;
+	    padding: 10px;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	    border: 1px solid #999;
+	    position: relative;
+
+	    &:focus {
+	    	border-color: black;
+	    }
+	}
+
+	&:before {
+    	position: absolute;
+		right: 5px;
+		width: 40px;
+		height: 40px;
+		content: '\E80B';
+		font-family: 'mnm';
+		top: 50%;
+		z-index: 2;
+		margin-top: -20px;
+		text-align: center;
+		line-height: 40px;
+		font-size: 25px;
+		color: #999;
+    }
+}
