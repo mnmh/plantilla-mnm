@@ -31,6 +31,7 @@ button {
   top: 0;
   left: 0;
   transition: box-shadow 300ms, color 300ms, background 300ms;
+  border-bottom: 1px solid #ccc;
 
   .main-wrapper {
     padding: em(18) em(20);
@@ -82,6 +83,7 @@ button {
     background: white;
 
     body.home & {
+
       h1,
       h4,
       .right_area {
@@ -135,14 +137,16 @@ button {
     @media screen and (min-width: 1024px) {
       margin-left: em(85);
     }
+
     // width: 10vw;
   }
 
   body.home & {
+
     h1,
     h4,
     .right_area {
-      color: $white;
+      // color: $white;
     }
   }
 
@@ -152,6 +156,7 @@ button {
   body.fp-viewing-4 &,
   body.fp-viewing-5 &,
   body.fp-viewing-6 & {
+
     h1,
     h4,
     .right_area {
@@ -199,7 +204,7 @@ button {
 
   body.home & {
     .a {
-      fill: $white;
+      // fill: $white;
     }
   }
 }

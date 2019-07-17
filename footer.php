@@ -1,3 +1,8 @@
+			</main>
+			<!-- /CONTENIDO -->
+		</div>
+		<!-- /Wrap -->
+		
 		<?php wp_footer(); ?>
 
 		<!-- analytics -->

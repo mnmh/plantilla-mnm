@@ -28,7 +28,6 @@ a {
 .wrap {
   position: relative;
   overflow: auto;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   padding-bottom: 6.25em; }
   .page-template-template-laboratorio .wrap {
     padding-bottom: 0; }
@@ -94,16 +93,31 @@ h5 {
   font-size: 1.25em;
   line-height: 0.5; }
 
-#archive_item_content p, .content p, .contenido_texto p, #contenidoGeneral p, #contenidoGeneral blockquote, .perfil_viewer p {
+#archive_item_content p,
+.content p,
+.contenido_texto p,
+#contenidoGeneral p,
+#contenidoGeneral blockquote,
+.perfil_viewer p {
   font-family: 'Merriweather', serif;
   line-height: 2;
   color: #222;
   margin: 1.25em 0 3.125em;
   font-size: 0.875em; }
-  #archive_item_content p a, .content p a, .contenido_texto p a, #contenidoGeneral p a, #contenidoGeneral blockquote a, .perfil_viewer p a {
+  #archive_item_content p a,
+  .content p a,
+  .contenido_texto p a,
+  #contenidoGeneral p a,
+  #contenidoGeneral blockquote a,
+  .perfil_viewer p a {
     font-style: italic;
     text-decoration: underline; }
-  #archive_item_content p.copy-des, .content p.copy-des, .contenido_texto p.copy-des, #contenidoGeneral p.copy-des, #contenidoGeneral blockquote.copy-des, .perfil_viewer p.copy-des {
+  #archive_item_content p.copy-des,
+  .content p.copy-des,
+  .contenido_texto p.copy-des,
+  #contenidoGeneral p.copy-des,
+  #contenidoGeneral blockquote.copy-des,
+  .perfil_viewer p.copy-des {
     font-family: 'Roboto', sans-serif;
     line-height: 1.75;
     font-size: 1rem;
@@ -111,26 +125,53 @@ h5 {
     margin: 0;
     color: black; }
     @media screen and (min-width: 850px) {
-      #archive_item_content p.copy-des, .content p.copy-des, .contenido_texto p.copy-des, #contenidoGeneral p.copy-des, #contenidoGeneral blockquote.copy-des, .perfil_viewer p.copy-des {
+      #archive_item_content p.copy-des,
+      .content p.copy-des,
+      .contenido_texto p.copy-des,
+      #contenidoGeneral p.copy-des,
+      #contenidoGeneral blockquote.copy-des,
+      .perfil_viewer p.copy-des {
         font-size: 1.125rem; } }
-  #archive_item_content p span, .content p span, .contenido_texto p span, #contenidoGeneral p span, #contenidoGeneral blockquote span, .perfil_viewer p span {
+  #archive_item_content p span,
+  .content p span,
+  .contenido_texto p span,
+  #contenidoGeneral p span,
+  #contenidoGeneral blockquote span,
+  .perfil_viewer p span {
     font-weight: regular; }
   @media screen and (max-width: 340px) {
-    #archive_item_content p, .content p, .contenido_texto p, #contenidoGeneral p, #contenidoGeneral blockquote, .perfil_viewer p {
+    #archive_item_content p,
+    .content p,
+    .contenido_texto p,
+    #contenidoGeneral p,
+    #contenidoGeneral blockquote,
+    .perfil_viewer p {
       font-size: 0.8125em; } }
   @media screen and (min-width: 850px) {
-    #archive_item_content p, .content p, .contenido_texto p, #contenidoGeneral p, #contenidoGeneral blockquote, .perfil_viewer p {
+    #archive_item_content p,
+    .content p,
+    .contenido_texto p,
+    #contenidoGeneral p,
+    #contenidoGeneral blockquote,
+    .perfil_viewer p {
       font-size: 1.0625em; } }
   @media screen and (min-width: 1024px) {
-    #archive_item_content p, .content p, .contenido_texto p, #contenidoGeneral p, #contenidoGeneral blockquote, .perfil_viewer p {
+    #archive_item_content p,
+    .content p,
+    .contenido_texto p,
+    #contenidoGeneral p,
+    #contenidoGeneral blockquote,
+    .perfil_viewer p {
       font-size: 1.125em; } }
 
-#archive_item_content > h2, .content > h2 {
+#archive_item_content > h2,
+.content > h2 {
   margin: 0 0 1.25em;
   font-size: 1.875em;
   color: black; }
   @media screen and (min-width: 1024px) {
-    #archive_item_content > h2, .content > h2 {
+    #archive_item_content > h2,
+    .content > h2 {
       margin: 0 0 1.875em;
       font-size: 2.5em; } }
 
@@ -5962,7 +6003,8 @@ button {
   z-index: 100;
   top: 0;
   left: 0;
-  transition: box-shadow 300ms, color 300ms, background 300ms; }
+  transition: box-shadow 300ms, color 300ms, background 300ms;
+  border-bottom: 1px solid #ccc; }
   #top_menu .main-wrapper {
     padding: 1.125em 1.25em;
     display: flex;
@@ -6029,10 +6071,6 @@ button {
     @media screen and (min-width: 1024px) {
       #top_menu h1 {
         margin-left: 5.3125em; } }
-  body.home #top_menu h1,
-  body.home #top_menu h4,
-  body.home #top_menu .right_area {
-    color: white; }
   body.fp-viewing-1 #top_menu h1,
   body.fp-viewing-1 #top_menu h4,
   body.fp-viewing-1 #top_menu .right_area,
@@ -6085,9 +6123,6 @@ button {
 
 #menu_lateral_btn:hover .a {
   fill: #ff7153; }
-
-body.home #menu_lateral_btn .a {
-  fill: white; }
 
 .item.buscar {
   height: 0.9375em;

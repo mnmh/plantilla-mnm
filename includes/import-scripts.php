@@ -1,3 +1,7 @@
+<?php
+
+// Este archivo define los scripts JS que se cargan a la página
+
 add_action('init', 'header_scripts');
 
 function header_scripts()
@@ -7,3 +11,5 @@ function header_scripts()
         wp_enqueue_script('scripts');
     }
 }
+
+?>
