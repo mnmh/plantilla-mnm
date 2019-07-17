@@ -32,8 +32,8 @@
 ## Estructura de la carpeta /assets/template-parts
 
     └── template-parts/
-        ├── head.php # Contenido del HEAD
-        └── top_header.php # Menu superior transversal a toda la página
+        ├── head.php            # Contenido del HEAD
+        └── top_header.php      # Menu superior transversal a toda la página
 
 ## Scripts para desarollo
 
