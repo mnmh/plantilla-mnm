@@ -1,5 +1,7 @@
 # [Museo de Memoria Histórica](http://museodememoria.gov.co)
 
+> **AVISO:** Esta plantilla esta en desarrollo y no representa un producto final del equipo virtual del MNM. El MNM ni el CNMH ponen a disposición del público este código y no se responsabilizan por el uso que se le de ni de lo que resulte de este.
+
 ## Estructura de la carpeta raíz
 
     ├── assets/                  # Partes del tema separados por archivos
@@ -15,6 +17,9 @@
     └── page.php                 # Plantilla para todos los módulos. Aqui se cargan los bloques.
 
 ## Estructura de la carpeta /assets/bloques
+
+    └── bloques/
+        └── bloque-botones.php      # Botones
 
 - [ ] Carrousel con cuadros
 - [ ] Carrousel de cabezote
