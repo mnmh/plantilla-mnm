@@ -16,8 +16,6 @@
 
 ## Estructura de la carpeta /assets/bloques
 
-// TODO
-
 - [ ] Carrousel con cuadros
 - [ ] Carrousel de cabezote
 - [ ] Noticias recientes
