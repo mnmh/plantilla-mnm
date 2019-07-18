@@ -7,7 +7,7 @@
     ├── assets/                  # Partes del tema separados por archivos
         ├── css/                 # Carpeta con los archivos SCSS para el estilo
         ├── bloques/             # Archivos PHP con los bloques usados en la plataforma
-        └── template-parts/      # Carpeta con los archivos PHP para cada parte del estilo
+        └── template-parts/      # Carpeta con los archivos PHP para cada parte de la estructura
     ├── fonts/                   # Fuentes con los iconos de la página
     ├── img/                     # Imágenes del tema
     ├── includes/                # Funciones del tema, organizadas por archivos, todas se importan al archivo functions.php
@@ -21,12 +21,15 @@
     └── bloques/
         └── bloque-botones.php      # Botones
 
-- [ ] Carrousel con cuadros
-- [ ] Carrousel de cabezote
-- [ ] Noticias recientes
-- [ ] Bloque con los botones
-- [ ] Galería con filtro
-- [ ] Cabezote con botones
+- [ ] Carrousel con cuadros verticales (perfil equipo y con enlace)
+- [ ] Carrousel de cuadros (cuadro noticias menu)
+- [ ] Banner con texto
+- [ ] Banner con tarjetas (banner prototipo)
+- [ ] Banner corto (el mismo del home)
+- [ ] Lista de tarjetas (el bloque de galeria)
+- [ ] Lista de tarjetas con filtro (el bloque de galeria)
+- [ ] Linea del tiempo
+- [ ] Carrousel botones
 
 ## Estructura de la carpeta /assets/css
 
