@@ -96,8 +96,12 @@ function html5blank_conditional_scripts()
     }
 }
 
-foreach ( glob( '/includes/*.php' ) as $file )
-    include $file;
+// cargar el inicializadores de bloques para la plataforma
+include( get_theme_file_path("/includes/bloques_init.php") );
+// cargar los scripts js para la plataforma
+include( get_theme_file_path("/includes/import-scripts.php") );
+// cargar las constantes para la plataforma
+include( get_theme_file_path("/includes/constantes.php") );
 
 // Load HTML5 Blank styles
 function html5blank_styles()

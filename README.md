@@ -19,9 +19,10 @@
 ## Estructura de la carpeta /assets/bloques
 
     └── bloques/
-        └── bloque-botones.php      # Botones
+        ├── bloque-carrousel-verticales.php             # Carrousel con cuadros verticales
+        └── bloque-botones.php                          # Botones
 
-- [ ] Carrousel con cuadros verticales (perfil equipo y con enlace)
+- [x] Carrousel con cuadros verticales (perfil equipo y con enlace)
 - [ ] Carrousel de cuadros (cuadro noticias menu)
 - [ ] Banner con texto
 - [ ] Banner con tarjetas (banner prototipo)
@@ -31,15 +32,25 @@
 - [ ] Linea del tiempo
 - [ ] Carrousel botones
 
-## Estructura de la carpeta /assets/css
+## Estructura de la carpeta /assets/css/bloques
 
-// TODO
+    └── bloques/
+        └── carrousel-verticales.scss              # Estilo carrousel vertical
 
 ## Estructura de la carpeta /assets/template-parts
 
     └── template-parts/
-        ├── head.php            # Contenido del HEAD
-        └── top_header.php      # Menu superior transversal a toda la página
+        ├── head.php                    # Contenido del HEAD
+        └── top_header.php              # Menu superior transversal a toda la página
+
+## Estructura de la carpeta /js
+
+    └── js/
+        ├── lib/
+        |    └── flickity.js                    # Librería flickity
+        ├── bloques/
+        |    └── carrousel-vertical.js          # Scripts para el bloque carrousel vertical
+        └── scripts.js                          # Scripts generales de la plataforma
 
 ## Scripts para desarollo
 
