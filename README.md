@@ -20,11 +20,12 @@
 
     └── bloques/
         ├── bloque-carrousel-verticales.php             # Carrousel con cuadros verticales
+        ├── bloque-banner-texto.php                     # Carrousel banner con texto
         └── bloque-botones.php                          # Botones
 
 - [x] Carrousel con cuadros verticales (perfil equipo y con enlace)
 - [ ] Carrousel de cuadros (cuadro noticias menu)
-- [ ] Banner con texto
+- [x] Banner con texto
 - [ ] Banner con tarjetas (banner prototipo)
 - [ ] Banner corto (el mismo del home)
 - [ ] Lista de tarjetas (el bloque de galeria)
@@ -35,7 +36,8 @@
 ## Estructura de la carpeta /assets/css/bloques
 
     └── bloques/
-        └── carrousel-verticales.scss              # Estilo carrousel vertical
+        ├── banner-texto.scss                       # Estilo banner texto
+        └── carrousel-verticales.scss               # Estilo carrousel vertical
 
 ## Estructura de la carpeta /assets/template-parts
 

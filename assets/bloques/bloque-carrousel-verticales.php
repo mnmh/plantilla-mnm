@@ -12,7 +12,7 @@ $titulo = get_field('titulo_del_carrousel');
 
 ?>
 
-<div class="carrousel-vertical-container pad">
+<div class="carrousel-vertical-container pad btm">
     <h1 class="sec"><?php echo $titulo; ?></h1>
     <nav class="hori_scroll">
         <div class="prev"></div>
