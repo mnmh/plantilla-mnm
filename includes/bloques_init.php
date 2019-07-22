@@ -27,6 +27,17 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'banner' ),
 		));
+
+		// Banner con botones
+		acf_register_block(array(
+			'name'				=> 'banner_botones',
+			'title'				=> __('Banner con botones'),
+			'description'		=> __('Un bloque para agregar un banner con botones'),
+			'render_callback'	=> 'bloque_callback_banner_botones',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'banner' ),
+		));
         
         // Bloque de botones
 		acf_register_block(array(
@@ -51,6 +62,14 @@ function bloque_callback_carrousel_verticales( $block ) {
 
 // Carga la plantilla del bloque banner con texto
 function bloque_callback_banner_texto( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque banner con texto
+function bloque_callback_banner_botones( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );

@@ -27,7 +27,7 @@
 - [ ] Carrousel de cuadros (cuadro noticias menu)
 - [x] Banner con texto
 - [ ] Banner con tarjetas (banner prototipo)
-- [ ] Banner corto (el mismo del home)
+- [x] Banner con botones
 - [ ] Lista de tarjetas (el bloque de galeria)
 - [ ] Lista de tarjetas con filtro (el bloque de galeria)
 - [ ] Linea del tiempo
