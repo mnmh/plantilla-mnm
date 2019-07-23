@@ -1,6 +1,6 @@
 # [Museo de Memoria Histórica](http://museodememoria.gov.co)
 
-> **AVISO:** Esta plantilla esta en desarrollo y no representa un producto final del equipo virtual del MNM. El MNM ni el CNMH ponen a disposición del público este código y no se responsabilizan por el uso que se le de ni de lo que resulte de este.
+> **AVISO:** Esta plantilla esta en desarrollo y no representa un producto final del equipo virtual del MNM. El MNM y el CNMH no se responsabilizan por el uso que se le de ni de lo que resulte de este.
 
 ## Estructura de la carpeta raíz
 
@@ -20,24 +20,29 @@
 
     └── bloques/
         ├── bloque-carrousel-verticales.php             # Carrousel con cuadros verticales
+        ├── bloque-carrousel-botones.php                # Carrousel de botones
+        ├── bloque-carrousel-cuadros.php                # Carrousel de cuadros
         ├── bloque-banner-texto.php                     # Carrousel banner con texto
         └── bloque-botones.php                          # Botones
 
-- [x] Carrousel con cuadros verticales (perfil equipo y con enlace)
-- [ ] Carrousel de cuadros (cuadro noticias menu)
+- [x] Carrousel con cuadros verticales
+- [x] Carrousel con cuadros de noticias
 - [x] Banner con texto
 - [ ] Banner con tarjetas (banner prototipo)
 - [x] Banner con botones
 - [ ] Lista de tarjetas (el bloque de galeria)
 - [ ] Lista de tarjetas con filtro (el bloque de galeria)
 - [ ] Linea del tiempo
-- [ ] Carrousel botones
+- [x] Carrousel botones
 
 ## Estructura de la carpeta /assets/css/bloques
 
     └── bloques/
         ├── banner-texto.scss                       # Estilo banner texto
+        ├── banner-botones.scss                     # Estilo banner botones
         └── carrousel-verticales.scss               # Estilo carrousel vertical
+        └── carrousel-cuadros.scss                  # Estilo carrousel cuadros
+        └── carrousel-botones.scss                  # Estilo carrousel botones
 
 ## Estructura de la carpeta /assets/template-parts
 
@@ -52,6 +57,8 @@
         |    └── flickity.js                    # Librería flickity
         ├── bloques/
         |    └── carrousel-vertical.js          # Scripts para el bloque carrousel vertical
+        |    └── carrousel-botones.js           # Scripts para el bloque carrousel botones
+        |    └── banner-botones.js              # Scripts para el banner con botones
         └── scripts.js                          # Scripts generales de la plataforma
 
 ## Scripts para desarollo

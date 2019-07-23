@@ -6484,48 +6484,49 @@ body#tinymce {
   #contenidoGeneral .btm {
     margin-bottom: 10vh; }
 
+.hori_scroll {
+  z-index: 10;
+  text-align: left;
+  user-select: none;
+  position: absolute;
+  top: 5px;
+  right: 5px; }
+  .hori_scroll div {
+    width: 1.875em;
+    height: 1.875em;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    font-family: 'mnm';
+    display: inline-block;
+    margin: 0 0.125em;
+    transition: opacity 300ms; }
+    .hori_scroll div:hover {
+      opacity: 0.25; }
+    .hori_scroll div.next::before, .hori_scroll div.prev::before {
+      content: '\E809';
+      position: absolute;
+      width: 100%;
+      line-height: 1.2;
+      top: 0;
+      left: 0;
+      text-align: center;
+      font-size: 1.875em; }
+    .hori_scroll div.prev::before {
+      content: '\E80A'; }
+    .hori_scroll div.disabled {
+      color: #ccc;
+      border-color: #ccc; }
+  .hori_scroll .num {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px; }
+
 .carrousel-vertical-container {
   cursor: grab;
   position: relative; }
-  .carrousel-vertical-container .hori_scroll {
-    z-index: 10;
-    text-align: left;
-    user-select: none;
-    position: absolute;
-    top: 5px;
-    right: 5px; }
-    .carrousel-vertical-container .hori_scroll div {
-      width: 1.875em;
-      height: 1.875em;
-      background: white;
-      cursor: pointer;
-      position: relative;
-      font-family: 'mnm';
-      display: inline-block;
-      margin: 0 0.125em;
-      transition: opacity 300ms; }
-      .carrousel-vertical-container .hori_scroll div:hover {
-        opacity: 0.25; }
-      .carrousel-vertical-container .hori_scroll div.next::before, .carrousel-vertical-container .hori_scroll div.prev::before {
-        content: '\E809';
-        position: absolute;
-        width: 100%;
-        line-height: 1.2;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-size: 1.875em; }
-      .carrousel-vertical-container .hori_scroll div.prev::before {
-        content: '\E80A'; }
-      .carrousel-vertical-container .hori_scroll div.disabled {
-        color: #ccc;
-        border-color: #ccc; }
-    .carrousel-vertical-container .hori_scroll .num {
-      width: 100%;
-      text-align: center;
-      display: block;
-      font-size: 30px;
-      margin-bottom: 10px; }
   .carrousel-vertical-container.mediadores .hori_scroll {
     top: -50px;
     right: auto;
@@ -6626,6 +6627,50 @@ body#tinymce {
     background-size: cover;
     background-position: center center;
     transition: opacity 300ms; }
+
+.botones-carrousel {
+  cursor: grab;
+  position: relative; }
+  .botones-carrousel .boton {
+    width: 20.625em;
+    height: 20.625em;
+    display: inline-block;
+    margin-right: 0.3125em; }
+    .botones-carrousel .boton .img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center; }
+    .botones-carrousel .boton .name {
+      padding: 0.5em;
+      position: absolute;
+      bottom: 0;
+      color: white; }
+    @media all and (min-width: 1024px) {
+      .botones-carrousel .boton {
+        margin-right: 1.25em; } }
+
+.cuadros-carrousel {
+  cursor: grab;
+  position: relative; }
+  .cuadros-carrousel .cuadro {
+    width: 20.625em;
+    display: inline-block;
+    margin-right: 0.3125em; }
+    .cuadros-carrousel .cuadro .img {
+      width: 100%;
+      height: 17em;
+      background-size: cover;
+      background-position: center; }
+    .cuadros-carrousel .cuadro .name {
+      padding: 0.5em;
+      color: #333; }
+    @media all and (min-width: 1024px) {
+      .cuadros-carrousel .cuadro {
+        margin-right: 1.25em; } }
 
 .banner {
   height: 60vh;

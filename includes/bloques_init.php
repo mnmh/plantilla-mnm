@@ -17,6 +17,17 @@ function my_acf_init() {
 			'keywords'			=> array( 'carrousel', 'enlaces', 'vertical' ),
 		));
 
+		// Carrousel con cuadros
+		acf_register_block(array(
+			'name'				=> 'carrousel_cuadros',
+			'title'				=> __('Carrousel con cuadros'),
+			'description'		=> __('Un bloque para agregar un carrousel de cuadros'),
+			'render_callback'	=> 'bloque_callback_carrousel_cuadros',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'carrousel', 'enlaces', 'noticias' ),
+		));
+
 		// Banner con texto
 		acf_register_block(array(
 			'name'				=> 'banner_texto',
@@ -41,9 +52,9 @@ function my_acf_init() {
         
         // Bloque de botones
 		acf_register_block(array(
-			'name'				=> 'botones',
-			'title'				=> __('Botones'),
-			'description'		=> __('Un bloque para agregar entre 3 y 6 botones en línea'),
+			'name'				=> 'carrousel_botones',
+			'title'				=> __('Carrousel botones'),
+			'description'		=> __('Un bloque para agregar botones en un carrousel'),
 			'render_callback'	=> 'bloque_callback_botones',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
@@ -60,6 +71,14 @@ function bloque_callback_carrousel_verticales( $block ) {
 	}
 }
 
+// Carga la plantilla del bloque carrousel con cuadros
+function bloque_callback_carrousel_cuadros( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
 // Carga la plantilla del bloque banner con texto
 function bloque_callback_banner_texto( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
@@ -68,7 +87,7 @@ function bloque_callback_banner_texto( $block ) {
 	}
 }
 
-// Carga la plantilla del bloque banner con texto
+// Carga la plantilla del bloque banner con botones
 function bloque_callback_banner_botones( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
@@ -76,7 +95,7 @@ function bloque_callback_banner_botones( $block ) {
 	}
 }
 
-// Carga la plantilla del bloque botones
+// Carga la plantilla del bloque botones en carrousel
 function bloque_callback_botones( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
@@ -86,5 +105,8 @@ function bloque_callback_botones( $block ) {
 
 // Cargar los campos de los bloques
 include( get_theme_file_path("/includes/campos/carrousel-verticales.php") );
+include( get_theme_file_path("/includes/campos/carrousel-botones.php") );
+include( get_theme_file_path("/includes/campos/carrousel-cuadros.php") );
 include( get_theme_file_path("/includes/campos/banner-texto.php") );
+include( get_theme_file_path("/includes/campos/banner-botones.php") );
 ?>

@@ -1,0 +1,32 @@
+.botones-carrousel {
+    cursor: grab;
+    position: relative;
+
+    .boton {
+        width: 20.625em;
+        height: 20.625em;
+        display: inline-block;
+        margin-right: 0.3125em;
+
+        .img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .name {
+            padding: 0.5em;
+            position: absolute;
+            bottom: 0;
+            color: white;
+        }
+
+        @media all and (min-width: 1024px) {
+            margin-right: 1.25em;
+        }
+    }
+}

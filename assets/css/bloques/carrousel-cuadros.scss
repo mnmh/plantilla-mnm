@@ -1,0 +1,26 @@
+.cuadros-carrousel {
+    cursor: grab;
+    position: relative;
+
+    .cuadro {
+        width: 20.625em;
+        display: inline-block;
+        margin-right: 0.3125em;
+
+        .img {
+            width: 100%;
+            height: 17em;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .name {
+            padding: 0.5em;
+            color: #333;
+        }
+
+        @media all and (min-width: 1024px) {
+            margin-right: 1.25em;
+        }
+    }
+}
