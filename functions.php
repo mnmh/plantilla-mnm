@@ -96,12 +96,17 @@ function html5blank_conditional_scripts()
     }
 }
 
+add_image_size('visor', 2000, 2000, false);
+add_image_size('archivo_thumb', 500, 500, false);
+    
 // cargar el inicializadores de bloques para la plataforma
 include( get_theme_file_path("/includes/bloques_init.php") );
 // cargar los scripts js para la plataforma
 include( get_theme_file_path("/includes/import-scripts.php") );
 // cargar las constantes para la plataforma
 include( get_theme_file_path("/includes/constantes.php") );
+// cargar nuevos tipos de base de datos
+include( get_theme_file_path("/includes/tipos.php") );
 
 // Load HTML5 Blank styles
 function html5blank_styles()

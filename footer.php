@@ -1,3 +1,11 @@
+			
+			<div class="photo-gallery">
+				<button class="close-slider"></button>
+				<ul class="photo-container">
+				
+				</ul>
+			</div>
+
 			</main>
 			<!-- /CONTENIDO -->
 		</div>

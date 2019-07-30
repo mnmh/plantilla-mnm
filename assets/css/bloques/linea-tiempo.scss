@@ -1,0 +1,64 @@
+.linea-tiempo {
+    .top {
+        margin-bottom: 50px;
+
+        .item {
+            display: flex;
+            justify-content: center;
+            display: none;
+
+            .img {
+                height: 200px;
+                width: 300px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &.active {
+                display: flex;
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+
+        .dot {
+            width: 20px;
+            height: 20px;
+            background: #ccc;
+            border-radius: 20px;
+            margin: 5px;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                background: #999;
+            }
+
+            &:before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border: 2px solid transparent;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                border-radius: 30px;
+                transition: all 0.25s ease;
+            }
+
+            &.active {
+                background: #999;
+
+                &:before {
+                    width: 25px;
+                    height: 25px;
+                    border: 2px solid #ccc;
+                }
+            }
+        }
+    }
+}

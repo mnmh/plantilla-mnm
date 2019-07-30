@@ -23,16 +23,18 @@
         ├── bloque-carrousel-botones.php                # Carrousel de botones
         ├── bloque-carrousel-cuadros.php                # Carrousel de cuadros
         ├── bloque-banner-texto.php                     # Carrousel banner con texto
+        ├── bloque-linea-tiempo.php                     # Linea del tiempo
+        ├── bloque-lista-tarjetas.php                   # Listado de tarjetas (videos y galerías)
         └── bloque-botones.php                          # Botones
 
 - [x] Carrousel con cuadros verticales
 - [x] Carrousel con cuadros de noticias
 - [x] Banner con texto
-- [ ] Banner con tarjetas (banner prototipo)
+- [ ] Banner con tarjetas (banner prototipo) // pendiente nueva versión
 - [x] Banner con botones
-- [ ] Lista de tarjetas (el bloque de galeria)
-- [ ] Lista de tarjetas con filtro (el bloque de galeria)
-- [ ] Linea del tiempo
+- [x] Lista de tarjetas
+- [x] Lista de tarjetas con filtro
+- [x] Linea del tiempo
 - [x] Carrousel botones
 
 ## Estructura de la carpeta /assets/css/bloques
@@ -42,6 +44,9 @@
         ├── banner-botones.scss                     # Estilo banner botones
         └── carrousel-verticales.scss               # Estilo carrousel vertical
         └── carrousel-cuadros.scss                  # Estilo carrousel cuadros
+        └── carrousel-botones.scss                  # Estilo carrousel botones
+        └── linea-tiempo.scss                       # Estilo linea del tiempo
+        └── lista-tarjetas.scss                     # Estilo listado de tarjetas
         └── carrousel-botones.scss                  # Estilo carrousel botones
 
 ## Estructura de la carpeta /assets/template-parts
@@ -58,6 +63,8 @@
         ├── bloques/
         |    └── carrousel-vertical.js          # Scripts para el bloque carrousel vertical
         |    └── carrousel-botones.js           # Scripts para el bloque carrousel botones
+        |    └── linea-tiempo.js                # Scripts para el bloque linea del tiempo
+        |    └── lista-tarjetas.js              # Scripts para el bloque lista-tarjetas
         |    └── banner-botones.js              # Scripts para el banner con botones
         └── scripts.js                          # Scripts generales de la plataforma
 
