@@ -2,7 +2,7 @@
 
     $(function () {
 
-        $('.botones-carrousel .botones').each(function (i) {
+        $('.botones-carrousel .botones, .cuadros-carrousel .cuadros').each(function (i) {
             var flkty = new Flickity(this, {
                 prevNextButtons: false,
                 pageDots: false,
