@@ -166,6 +166,7 @@ include( get_theme_file_path("/includes/campos/carrousel-botones.php") );
 include( get_theme_file_path("/includes/campos/carrousel-cuadros.php") );
 include( get_theme_file_path("/includes/campos/banner-texto.php") );
 include( get_theme_file_path("/includes/campos/banner-botones.php") );
+include( get_theme_file_path("/includes/campos/banner-ejes.php") );
 include( get_theme_file_path("/includes/campos/lista-tarjetas.php") );
 include( get_theme_file_path("/includes/campos/linea-tiempo.php") );
 ?>

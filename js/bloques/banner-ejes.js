@@ -13,6 +13,8 @@
             $parent.find('.content .txt').html(des);
         });
 
+        $('.banner .tarjetas .item:first-child').click();
+
     });
 
 })(jQuery, this);
