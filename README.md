@@ -30,7 +30,7 @@
 - [x] Carrousel con cuadros verticales
 - [x] Carrousel con cuadros de noticias
 - [x] Banner con texto
-- [ ] Banner con tarjetas (banner prototipo) // pendiente nueva versión
+- [x] Banner con tarjetas
 - [x] Banner con botones
 - [x] Lista de tarjetas
 - [x] Lista de tarjetas con filtro
@@ -53,6 +53,7 @@
 
     └── template-parts/
         ├── head.php                    # Contenido del HEAD
+        ├── sideMenu.php                # Menu lateral
         └── top_header.php              # Menu superior transversal a toda la página
 
 ## Estructura de la carpeta /js

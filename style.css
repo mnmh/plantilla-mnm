@@ -4729,7 +4729,8 @@ blockquote {
   margin-top: 10px;
   margin-bottom: 10px;
   border: 1px solid black;
-  display: inline-block; }
+  display: table;
+  text-decoration: none !important; }
 
 #intro_header {
   position: relative;
@@ -6671,6 +6672,37 @@ body#tinymce {
     @media all and (min-width: 1024px) {
       .cuadros-carrousel .cuadro {
         margin-right: 1.25em; } }
+
+.banner .tarjetas {
+  position: absolute;
+  width: 51W0px;
+  bottom: -70px;
+  right: 10%; }
+  .banner .tarjetas .item {
+    background: white;
+    width: 150px;
+    margin: 10px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    transition: all 0.25s ease;
+    position: relative; }
+    .banner .tarjetas .item.active {
+      transform: scale(1.15); }
+    .banner .tarjetas .item:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.4;
+      background: black; }
+
+.texto_banner .inside {
+  min-height: 200px;
+  margin-top: 150px; }
 
 .banner {
   height: 60vh;

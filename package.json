@@ -19,5 +19,8 @@
     "devDependencies": {
         "node-sass": "^4.5.3",
         "nodemon": "^1.11.0"
+    },
+    "dependencies": {
+        "jshint": "^2.10.2"
     }
 }

@@ -14,12 +14,19 @@ function header_scripts()
         wp_register_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js', array('jquery'), '1.0.0');
         wp_enqueue_script('gsap');
 
+        // Cargar componentes generales
+        wp_register_script('menu', get_template_directory_uri() . '/js/common/menu.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('menu');
+
         // Cargar scripts de los bloques
         wp_register_script('carrousel-vertical', get_template_directory_uri() . '/js/bloques/carrousel-vertical.js', array('jquery'), '1.0.0');
         wp_enqueue_script('carrousel-vertical');
 
         wp_register_script('banner-botones', get_template_directory_uri() . '/js/bloques/banner-botones.js', array('jquery'), '1.0.0');
         wp_enqueue_script('banner-botones');
+
+        wp_register_script('banner-ejes', get_template_directory_uri() . '/js/bloques/banner-ejes.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('banner-ejes');
 
         wp_register_script('carrousel-botones', get_template_directory_uri() . '/js/bloques/carrousel-botones.js', array('jquery'), '1.0.0');
         wp_enqueue_script('carrousel-botones');

@@ -1,0 +1,40 @@
+.banner {
+    .tarjetas {
+        position: absolute;
+        width: 51W0px;
+        bottom: -70px;
+        right: 10%;
+
+        .item {
+            background: white;
+            width: 150px;
+            margin: 10px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            transform: scale(1);
+            transition: all 0.25s ease;
+            position: relative;
+
+            &.active {
+                transform: scale(1.15);
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0.4;
+                background: black;
+            }
+        }
+    }
+}
+
+.texto_banner .inside {
+    min-height: 200px;
+    margin-top: 150px;
+}

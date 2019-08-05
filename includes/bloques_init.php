@@ -82,6 +82,17 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'linea', 'tiempo' ),
 		));
+
+		// Bloque de linea del tiempo
+		acf_register_block(array(
+			'name'				=> 'banner_tarjetas_audio',
+			'title'				=> __('Banner ejes audio'),
+			'description'		=> __('Un bloque para agregar un banner con audios de cada eje'),
+			'render_callback'	=> 'bloque_callback_banner_ejes',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'banner', 'ejes', 'audio' ),
+		));
 	}
 }
 
@@ -135,6 +146,14 @@ function bloque_callback_botones( $block ) {
 
 // Carga la plantilla del bloque linea del tiempo
 function bloque_callback_linea_tiempo( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque linea del tiempo
+function bloque_callback_banner_ejes( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );

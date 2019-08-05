@@ -4,6 +4,7 @@
 		<!-- Carga el contenido del HEAD del documento -->
 		<?php get_template_part('/assets/template-parts/head') ?>
 	</head>
+	<?php get_template_part('/assets/template-parts/sideMenu') ?>
 	<body <?php body_class(); ?>>
 		<div class="wrap" role="document">
 			<!-- Carga la barra de arriba para la navegación -->

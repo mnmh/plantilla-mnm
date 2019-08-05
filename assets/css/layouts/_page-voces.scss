@@ -974,7 +974,8 @@ blockquote {
   margin-top: 10px;
   margin-bottom: 10px;
   border: 1px solid black;
-  display: inline-block;
+  display: table;
+  text-decoration: none !important;
 }
 
 #intro_header {
