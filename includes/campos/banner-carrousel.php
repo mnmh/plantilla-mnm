@@ -2,11 +2,11 @@
 if( function_exists('acf_add_local_field_group') ):
 
     acf_add_local_field_group(array(
-        'key' => 'group_5d401986d4fcb',
-        'title' => 'BLOQUE linea del tiempo',
+        'key' => 'group_5d484edc0df86',
+        'title' => 'BLOQUE banner carrousel',
         'fields' => array(
             array(
-                'key' => 'field_5d40199077a21',
+                'key' => 'field_5d484ee2a53d5',
                 'label' => 'Elementos',
                 'name' => 'elementos',
                 'type' => 'repeater',
@@ -18,14 +18,14 @@ if( function_exists('acf_add_local_field_group') ):
                     'class' => '',
                     'id' => '',
                 ),
-                'collapsed' => 'field_5d40199b77a22',
+                'collapsed' => 'field_5d484ef0a53d6',
                 'min' => 0,
                 'max' => 0,
                 'layout' => 'block',
                 'button_label' => '',
                 'sub_fields' => array(
                     array(
-                        'key' => 'field_5d40199b77a22',
+                        'key' => 'field_5d484ef0a53d6',
                         'label' => 'Titulo',
                         'name' => 'titulo',
                         'type' => 'text',
@@ -44,9 +44,9 @@ if( function_exists('acf_add_local_field_group') ):
                         'maxlength' => '',
                     ),
                     array(
-                        'key' => 'field_5d4019a177a23',
-                        'label' => 'Contenido',
-                        'name' => 'contenido',
+                        'key' => 'field_5d484ef6a53d7',
+                        'label' => 'Descripcion',
+                        'name' => 'descripcion',
                         'type' => 'textarea',
                         'instructions' => '',
                         'required' => 0,
@@ -63,7 +63,7 @@ if( function_exists('acf_add_local_field_group') ):
                         'new_lines' => '',
                     ),
                     array(
-                        'key' => 'field_5d4019a877a24',
+                        'key' => 'field_5d484f35a53d8',
                         'label' => 'Imagen',
                         'name' => 'imagen',
                         'type' => 'image',
@@ -86,23 +86,6 @@ if( function_exists('acf_add_local_field_group') ):
                         'max_size' => '',
                         'mime_types' => '',
                     ),
-                    array(
-                        'key' => 'field_5d49692c6d322',
-                        'label' => 'Fecha',
-                        'name' => 'fecha',
-                        'type' => 'date_picker',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'display_format' => 'd/m/Y',
-                        'return_format' => 'F j, Y',
-                        'first_day' => 1,
-                    ),
                 ),
             ),
         ),
@@ -111,7 +94,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'block',
                     'operator' => '==',
-                    'value' => 'acf/linea-tiempo',
+                    'value' => 'acf/banner-carrousel',
                 ),
             ),
         ),

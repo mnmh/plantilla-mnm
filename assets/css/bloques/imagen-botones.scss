@@ -1,0 +1,40 @@
+.banner {
+    &.botones {
+        height: 30vh;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 30vh;
+        position: relative;
+
+        .item {
+            width: 300px;
+            height: 50px;
+            display: block;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.65);
+                color: #333;
+                border-color: white;
+            }
+
+            @media all and (max-width: 1000px) {
+                margin: 5px;
+            }
+        }
+
+        @media all and (max-width: 1000px) {
+            flex-wrap: wrap;
+            align-content: center;
+        }
+    }
+}

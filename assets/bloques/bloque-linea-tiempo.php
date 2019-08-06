@@ -25,8 +25,12 @@ $items_count = count(get_field('elementos'));
         <?php endwhile; endif; ?>
     </div>
     <div class="nav">
-        <?php for($i = 0; $i < $items_count; $i++): ?>
-            <div class="dot"></div>
-        <?php endfor; ?>
+        <div class="prev"></div>
+        <div class="inside">
+            <?php for($i = 0; $i < $items_count; $i++): ?>
+                <div class="dot"></div>
+            <?php endfor; ?>
+        </div>
+        <div class="next"></div>
     </div>
 </div>

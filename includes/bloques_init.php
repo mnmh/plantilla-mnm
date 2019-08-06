@@ -93,6 +93,28 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'banner', 'ejes', 'audio' ),
 		));
+
+		// Bloque banner con carrousel
+		acf_register_block(array(
+			'name'				=> 'banner_carrousel',
+			'title'				=> __('Banner carrousel'),
+			'description'		=> __('Un bloque para agregar un banner con carrousel'),
+			'render_callback'	=> 'bloque_callback_banner_carrousel',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'banner', 'carrousel' ),
+		));
+
+		// Bloque imagen con botones
+		acf_register_block(array(
+			'name'				=> 'imagen_botones',
+			'title'				=> __('Imagen con botones'),
+			'description'		=> __('Un bloque para agregar un banner con carrousel'),
+			'render_callback'	=> 'bloque_callback_imagen_botones',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'botones', 'imagen' ),
+		));
 	}
 }
 
@@ -152,8 +174,24 @@ function bloque_callback_linea_tiempo( $block ) {
 	}
 }
 
-// Carga la plantilla del bloque linea del tiempo
+// Carga la plantilla del bloque banner con ejes
 function bloque_callback_banner_ejes( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque banner con carrousel
+function bloque_callback_banner_carrousel( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque imagen con botones
+function bloque_callback_imagen_botones( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
@@ -166,7 +204,9 @@ include( get_theme_file_path("/includes/campos/carrousel-botones.php") );
 include( get_theme_file_path("/includes/campos/carrousel-cuadros.php") );
 include( get_theme_file_path("/includes/campos/banner-texto.php") );
 include( get_theme_file_path("/includes/campos/banner-botones.php") );
+include( get_theme_file_path("/includes/campos/banner-carrousel.php") );
 include( get_theme_file_path("/includes/campos/banner-ejes.php") );
 include( get_theme_file_path("/includes/campos/lista-tarjetas.php") );
+include( get_theme_file_path("/includes/campos/imagen-botones.php") );
 include( get_theme_file_path("/includes/campos/linea-tiempo.php") );
 ?>

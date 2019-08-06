@@ -4,7 +4,7 @@
 
         .item {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             display: none;
 
             .img {
@@ -23,6 +23,25 @@
     .nav {
         display: flex;
         justify-content: center;
+
+        .prev,
+        .next {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #333;
+            margin-bottom: 5px;
+            position: relative;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .inside {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
 
         .dot {
             width: 20px;

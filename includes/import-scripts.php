@@ -28,6 +28,9 @@ function header_scripts()
         wp_register_script('banner-ejes', get_template_directory_uri() . '/js/bloques/banner-ejes.js', array('jquery'), '1.0.0');
         wp_enqueue_script('banner-ejes');
 
+        wp_register_script('banner-carrousel', get_template_directory_uri() . '/js/bloques/banner-carrousel.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('banner-carrousel');
+
         wp_register_script('carrousel-botones', get_template_directory_uri() . '/js/bloques/carrousel-botones.js', array('jquery'), '1.0.0');
         wp_enqueue_script('carrousel-botones');
 

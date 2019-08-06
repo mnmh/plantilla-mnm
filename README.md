@@ -32,10 +32,12 @@
 - [x] Banner con texto
 - [x] Banner con tarjetas
 - [x] Banner con botones
+- [x] Banner con carrousel
 - [x] Lista de tarjetas
 - [x] Lista de tarjetas con filtro
 - [x] Linea del tiempo
 - [x] Carrousel botones
+- [x] Imagen con botones
 
 ## Estructura de la carpeta /assets/css/bloques
 
