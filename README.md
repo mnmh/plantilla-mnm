@@ -23,6 +23,9 @@
         ├── bloque-carrousel-botones.php                # Carrousel de botones
         ├── bloque-carrousel-cuadros.php                # Carrousel de cuadros
         ├── bloque-banner-texto.php                     # Carrousel banner con texto
+        ├── bloque-imagen-botones.php                   # Imagen con botones
+        ├── bloque-banner-botones.php                   # Banner con botones
+        ├── bloque-banner-tarjetas-audio.php            # Banner con tarjetas de audio
         ├── bloque-linea-tiempo.php                     # Linea del tiempo
         ├── bloque-lista-tarjetas.php                   # Listado de tarjetas (videos y galerías)
         └── bloque-botones.php                          # Botones
