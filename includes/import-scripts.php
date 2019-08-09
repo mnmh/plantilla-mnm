@@ -18,6 +18,10 @@ function header_scripts()
         wp_register_script('menu', get_template_directory_uri() . '/js/common/menu.js', array('jquery'), '1.0.0');
         wp_enqueue_script('menu');
 
+        // Cargar elementos
+        wp_register_script('arte-cultura', get_template_directory_uri() . '/js/elementos/arte-cultura.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('arte-cultura');
+
         // Cargar scripts de los bloques
         wp_register_script('carrousel-vertical', get_template_directory_uri() . '/js/bloques/carrousel-vertical.js', array('jquery'), '1.0.0');
         wp_enqueue_script('carrousel-vertical');

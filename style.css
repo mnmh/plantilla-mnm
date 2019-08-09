@@ -1512,7 +1512,7 @@ body {
         margin-top: 0 !important; }
   .page-obras .items {
     overflow: visible;
-    margin-top: 140px;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start; }

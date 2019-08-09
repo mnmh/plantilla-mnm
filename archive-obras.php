@@ -71,7 +71,7 @@
 			</a>
             <?php $prev_item = $item->ID; ?>
             <?php endif; endforeach;?>
-            <div class="moreNav" data-url="{{get_blogInfo('url')}}/wp-json/wp/v2/obras?per_page=20&page=" data-page="2">
+            <div class="moreNav" data-url="<?php echo get_blogInfo('url')?>/wp-json/wp/v2/obras?per_page=20&page=" data-page="2">
 		</div>
 	</div>
 
