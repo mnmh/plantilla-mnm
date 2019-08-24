@@ -2,6 +2,7 @@
 
     $(function () {
         iniciarArteCultura();
+        iniciarObra();
 
         function iniciarArteCultura() {
             $('.navegacionFiltros .alfa .letter').on('click', function () {
@@ -660,6 +661,85 @@
                     });
                 }
             })
+        }
+
+        function iniciarObra() {
+            var gal_num = $('.page-obras .galeria .inside .item').length;
+
+            var gal_obra = new Flickity('.page-obras .galeria .inside', {
+                freeScroll: false,
+                contain: true,
+                prevNextButtons: false,
+                pageDots: true,
+                cellAlign: 'center',
+                setGallerySize: false,
+            });
+
+            gal_obra.on('select', function () {
+                var index = $('.page-obras .galeria .inside .is-selected').index();
+                // console.log(index);
+                actualizarNavGaleria(index);
+                // console.log(index + '|' + gal_num);
+            });
+
+            $('.gal_nav .next').on('click', function () {
+                gal_obra.next();
+            });
+            $('.gal_nav .prev').on('click', function () {
+                gal_obra.previous();
+            });
+
+            function actualizarNavGaleria(index) {
+                if (index == 0) {
+                    $('.gal_nav .prev').hide();
+                } else {
+                    $('.gal_nav .prev').show();
+                }
+
+                if (gal_num == (index + 1)) {
+                    $('.gal_nav .next').hide();
+                } else {
+                    $('.gal_nav .next').show();
+                }
+            }
+
+            $('.page-obras .galeria .inside .item.video').on('click', function () {
+                if (!$(this).hasClass('loaded')) {
+                    var id = $(this).attr('data-id');
+                    var $container = $(this).find('.inside');
+                    var url = '';
+
+                    if ($(this).hasClass('YouTube')) {
+                        // console.log(id);
+                        url = 'https://www.youtube.com/embed/' + id + '?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1';
+
+                    } else if ($(this).hasClass('Vimeo')) {
+                        // console.log(id);
+                        url = 'https://player.vimeo.com/video/' + id + '?autoplay=1';
+                    }
+
+                    var $iframe = $('<iframe src="' + url + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+                    $container.append($iframe);
+                    $container.fadeIn();
+                    $(this).addClass('loaded');
+                }
+            });
+
+            $('.texto .left .item').on('click', function () {
+                var div = $(this).attr('data-div');
+                if (!$(this).hasClass('active')) {
+                    $('.texto .left .item.active').removeClass('active');
+                    $(this).addClass('active');
+                    $('.texto .content .inside.active').fadeOut(200);
+                    setTimeout(function () {
+                        $('.texto .content .inside' + div).fadeIn();
+                        $('.texto .content .inside' + div).addClass('active');
+                    }, 200);
+
+                }
+            });
+
+            $('.texto .left .item:first-child').click();
         }
 
     });

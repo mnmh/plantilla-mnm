@@ -44,7 +44,7 @@
             }
         });
 
-        $('.tarjetas .item.galeria').on('click', function () {
+        $('.tarjetas .item.galeria, .open-gallery').on('click', function () {
             $('.photo-gallery').toggleClass('visible');
             var $gal = $(this).find('.gal .itemgal').clone();
             $gal.each(function () {
@@ -56,6 +56,7 @@
             if ($('.photo-gallery').hasClass('visible')) {
                 $carousel.flickity('remove', $('.photo-gallery .itemgal'));
                 $carousel.flickity('append', $gal);
+                $carousel.flickity('select', 0);
             } else {
                 $carousel.flickity('remove', $('.photo-gallery .itemgal'));
             }

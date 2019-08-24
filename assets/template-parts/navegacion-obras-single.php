@@ -12,7 +12,7 @@
     	<ul class="dropdown">
     		<?php foreach($terms_autor as $term): ?>
 				<li class="link">
-					<?php $term->name; ?>
+					<?php echo $term->name; ?>
 				</li>
             <?php endforeach; ?>
 
@@ -23,7 +23,7 @@
 						list($r, $g, $b) = sscanf($term_color, "#%02x%02x%02x");
 					?>
 					<li class="link categoria" style="background-color: rgb(<?php $r; ?>, <?php $g; ?>, <?php $b; ?>)">
-						<?php $term->name; ?>
+						<?php echo $term->name; ?>
 					</li>
                 <?php endif; ?>
             <?php endforeach; ?>
