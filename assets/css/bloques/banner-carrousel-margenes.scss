@@ -1,0 +1,19 @@
+.banner {
+    &.banner-margenes {
+        background: white;
+        color: black;
+
+        .img {
+            width: 70%;
+            height: 70%;
+            right: 0;
+        }
+
+        .nav {
+            .item {
+                background: white;
+                border-color: black;
+            }
+        }
+    }
+}

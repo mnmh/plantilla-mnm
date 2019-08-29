@@ -4,7 +4,7 @@
 
         $('.banner .tarjetas .item').on('click', function () {
             $parent = $(this).parent().parent().parent();
-            $parent.find('.img').attr('style', $(this).attr('style'));
+            $parent.find('.img').attr('style', $(this).attr('data-imagen'));
             $('.banner .tarjetas .item.active').removeClass('active');
             $(this).addClass('active');
             var titulo = $(this).attr('data-titulo');

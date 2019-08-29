@@ -1,0 +1,49 @@
+.tres-botones {
+
+    .botones {
+        display: flex;
+
+        .boton {
+            width: 32.33%;
+            height: 300px;
+            position: relative;
+            margin: 0.5%;
+
+            .img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .name {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(255,255,255,0.8);
+                padding: 10px;
+
+                h4 {
+                    font-weight: normal;
+                    border-top: 1px dotted #999;
+                    margin-top: 10px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+
+    @media all and (max-width: 1000px) {
+        .botones {
+            flex-wrap: wrap;
+
+            .boton {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,7 +1,6 @@
 .tarjetas {
     position: relative;
     z-index: 2;
-    text-align: center;
 
     .enlaces li a:hover {
         opacity: 1;
@@ -109,8 +108,12 @@
 }
 
 .tarjetas {
-    display: flex;
-    flex-wrap: wrap;
+
+    .inside {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 
     .item {
         width: 32.33%;

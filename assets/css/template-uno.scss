@@ -1,0 +1,14 @@
+.columnas {
+    display: flex;
+
+    .left {
+        width: 300px;
+        border-right: 1px solid #dcdcdc;
+    }
+
+    .right {
+        width: calc(100% - 250px);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

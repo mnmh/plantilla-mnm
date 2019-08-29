@@ -61,6 +61,17 @@ function my_acf_init() {
 			'keywords'			=> array( 'botones', 'enlaces' ),
 		));
 
+		// Bloque tres botones
+		acf_register_block(array(
+			'name'				=> 'tres_botones',
+			'title'				=> __('Tres botones'),
+			'description'		=> __('Un bloque para tres botones'),
+			'render_callback'	=> 'bloque_callback_tres_botones',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'botones', 'imagen' ),
+		));
+
 		// Bloque de lista
 		acf_register_block(array(
 			'name'				=> 'lista_tarjetas',
@@ -105,6 +116,17 @@ function my_acf_init() {
 			'keywords'			=> array( 'banner', 'carrousel' ),
 		));
 
+		// Bloque banner con carrousel
+		acf_register_block(array(
+			'name'				=> 'banner_carrousel_margenes',
+			'title'				=> __('Banner carrousel con márgenes'),
+			'description'		=> __('Un bloque para agregar un banner con carrousel y márgenes'),
+			'render_callback'	=> 'bloque_callback_banner_carrousel_margenes',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'banner', 'carrousel', 'margenes' ),
+		));
+
 		// Bloque imagen con botones
 		acf_register_block(array(
 			'name'				=> 'imagen_botones',
@@ -114,6 +136,39 @@ function my_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'botones', 'imagen' ),
+		));
+
+		// Bloque con cifras
+		acf_register_block(array(
+			'name'				=> 'cifras',
+			'title'				=> __('Bloque con cifras'),
+			'description'		=> __('Un bloque para agregar cifras'),
+			'render_callback'	=> 'bloque_callback_cifras',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'cifras' ),
+		));
+
+		// Bloque de galeria en carrousel
+		acf_register_block(array(
+			'name'				=> 'galeria carrousel',
+			'title'				=> __('Bloque de galeria en un carrousel'),
+			'description'		=> __('Un bloque para agregar una galeria'),
+			'render_callback'	=> 'bloque_callback_galeria_carrousel',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'galeria', 'carrousel' ),
+		));
+
+		// Bloque testimonios carrousel
+		acf_register_block(array(
+			'name'				=> 'testimonios carrousel',
+			'title'				=> __('Bloque de testimonios en un carrousel'),
+			'description'		=> __('Un bloque para agregar testimonios'),
+			'render_callback'	=> 'bloque_callback_testimonios_carrousel',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'testimonios', 'carrousel' ),
 		));
 	}
 }
@@ -158,6 +213,14 @@ function bloque_callback_banner_botones( $block ) {
 	}
 }
 
+// Carga la plantilla del bloque con tres botones
+function bloque_callback_tres_botones( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
 // Carga la plantilla del bloque botones en carrousel
 function bloque_callback_botones( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
@@ -190,8 +253,40 @@ function bloque_callback_banner_carrousel( $block ) {
 	}
 }
 
+// Carga la plantilla del bloque banner con carrousel y márgenes
+function bloque_callback_banner_carrousel_margenes( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
 // Carga la plantilla del bloque imagen con botones
 function bloque_callback_imagen_botones( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque cifras
+function bloque_callback_cifras( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque cifras
+function bloque_callback_galeria_carrousel( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga el bloque testimonios
+function bloque_callback_testimonios_carrousel( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );

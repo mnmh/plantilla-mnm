@@ -14,7 +14,7 @@ $imagen = get_field('imagen');
     <div class="botones">
         <?php if(have_rows('botones')): while(have_rows('botones')): the_row(); ?>
             <a class="item" href="<?php echo get_sub_field('enlace') ?>">
-                <?php echo get_sub_field('nombre') ?>
+                <h2><?php echo get_sub_field('nombre') ?></h2>
             </a>
         <?php endwhile; endif; ?>
     </div>    

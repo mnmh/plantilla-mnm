@@ -97,6 +97,13 @@ if( function_exists('acf_add_local_field_group') ):
                     'value' => 'acf/banner-carrousel',
                 ),
             ),
+            array(
+                array(
+                    'param' => 'block',
+                    'operator' => '==',
+                    'value' => 'acf/banner-carrousel-margenes',
+                ),
+            ),
         ),
         'menu_order' => 0,
         'position' => 'normal',

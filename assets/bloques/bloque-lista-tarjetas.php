@@ -10,7 +10,9 @@ $id = 'botones-' . $block['id'];
 ?>
 
 <div class="tarjetas galeria pad btm">
+    <h1 class="sec">Tarjetas</h1>
 
+    <div class="inside">
     <?php if(have_rows('tarjetas')): while(have_rows('tarjetas')): the_row(); ?>
         <?php $tipo = get_sub_field('tipo'); ?>
         <?php
@@ -39,5 +41,7 @@ $id = 'botones-' . $block['id'];
             <h3><?php echo $titulo ?></h3>
         </div>
     <?php endwhile; endif; ?>
+    </div>
+    
 
 </div>

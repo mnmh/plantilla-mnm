@@ -22,7 +22,8 @@
             padding: 0.5em;
             position: absolute;
             bottom: 0;
-            color: white;
+            color: black;
+            transform: translate(0, 100%);
         }
 
         @media all and (min-width: 1024px) {

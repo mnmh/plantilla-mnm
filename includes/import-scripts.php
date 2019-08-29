@@ -50,6 +50,12 @@ function header_scripts()
         wp_register_script('linea-tiempo', get_template_directory_uri() . '/js/bloques/linea-tiempo.js', array('jquery'), '1.0.0');
         wp_enqueue_script('linea-tiempo');
 
+        wp_register_script('galeria-carrousel', get_template_directory_uri() . '/js/bloques/galeria-carrousel.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('galeria-carrousel');
+
+        wp_register_script('citas-container', get_template_directory_uri() . '/js/bloques/citas-container.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('citas-container');
+
         wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scripts');
     }

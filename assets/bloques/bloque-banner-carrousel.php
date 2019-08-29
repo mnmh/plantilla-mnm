@@ -13,8 +13,8 @@ $id = 'bloque-' . $block['id'];
     <div class="carrousel">
         <?php if(have_rows('elementos')): while(have_rows('elementos')): the_row(); ?>
             <?php $imagen = get_sub_field('imagen') ?>
-            <div class="item" data-titulo="<?php echo get_sub_field('titulo') ?>">
-                <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
+            <div class="item" data-des="<?php echo get_sub_field('descripcion') ?>" data-titulo="<?php echo get_sub_field('titulo') ?>">
+                <div class="img" style="background-image:url('<?php echo $imagen['url'] ?>')"></div>
             </div>
         <?php endwhile; endif; ?>
     </div>
