@@ -4157,7 +4157,7 @@ svg .zone {
   margin-top: 2em; }
   .page-voces .texto.participante p {
     font-size: 1em !important;
-    font-family: 'Barlow', sans-serif !important; }
+    font-family: 'CircularStd', sans-serif !important; }
   .agenda .page-voces .texto {
     margin: 0;
     margin-bottom: 3em; }
@@ -4776,7 +4776,7 @@ blockquote {
           display: none; } }
 
 #listado_principal p {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: white; }
 
 #listado_principal .btn {
@@ -4918,7 +4918,7 @@ figure {
     #cifras .cifras-container .num {
       font-size: 6em; }
     #cifras .cifras-container .des {
-      font-family: "Merriweather", serif; }
+      font-family: "Inter", sans-serif; }
     @media screen and (min-width: 900px) {
       #cifras .cifras-container {
         padding: 9.375em 0;
