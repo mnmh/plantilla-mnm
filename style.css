@@ -3,6 +3,7 @@
 /* stylelint-disable */
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,500,600,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://rsms.me/inter/inter.css");
 @font-face {
   font-family: 'mnm';
   src: url("./assets/fonts/museo-virtual.eot?53257856");
@@ -99,7 +100,7 @@ h5 {
 #contenidoGeneral p,
 #contenidoGeneral blockquote,
 .perfil_viewer p {
-  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans-serif;
   line-height: 2;
   color: #222;
   margin: 1.25em 0 3.125em;
