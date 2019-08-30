@@ -347,7 +347,9 @@ h2 strong {
   background-position: center; }
 
 body {
-  font-family: "Inter", sans-serif; }
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7; }
 
 #contenidoGeneral {
   min-height: 100%;
@@ -6818,7 +6820,7 @@ body#tinymce {
       max-width: 500px; }
       .banner .inside .content .titulo {
         font-size: 3em;
-        margin-bottom: 1em; }
+        margin-bottom: 20px; }
 
 .banner .inside_navigation {
   display: flex;
@@ -6919,16 +6921,14 @@ body#tinymce {
         content: '\E80F'; }
 
 .banner.banner-margenes {
-  background: #3B3B3B;
-  color: black; }
+  background: #3B3B3B; }
   .banner.banner-margenes .img {
     width: 70%;
     height: 70%;
     right: 0;
     bottom: 0; }
   .banner.banner-margenes .nav .item {
-    background: white;
-    border-color: black; }
+    border-color: white; }
 
 .tarjetas {
   position: relative;
