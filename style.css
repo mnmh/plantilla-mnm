@@ -347,7 +347,7 @@ h2 strong {
   background-position: center; }
 
 body {
-  font-family: "Barlow", sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 #contenidoGeneral {
   min-height: 100%;
@@ -411,7 +411,7 @@ body {
         margin-bottom: 1.5em;
         max-width: 350px; }
     #menu_lateral .menu-wrapper .descripcion {
-      font-family: "Merriweather";
+      font-family: 'Inter', 'sans-serif';
       font-size: 0.85em;
       line-height: 1.75;
       color: #777; }
@@ -481,7 +481,7 @@ body {
       margin-right: 16%;
       max-width: 34.375em; }
       #menu_lateral .menu-wrapper .inside .des {
-        font-family: 'Merriweather', serif;
+        font-family: 'Inter', sans-serif;
         display: none;
         line-height: 2;
         font-size: 1.25em;
@@ -818,7 +818,7 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 0;
-  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans-serif;
   line-height: 2;
   color: #222;
   z-index: 2;
@@ -835,13 +835,13 @@ body {
     font-size: 0.75em; }
   #fullpage .left .title {
     font-size: 1.5em;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'CircularStd', sans-serif;
     line-height: 1.25;
     margin-bottom: 1em;
     font-weight: 600; }
   #fullpage .left a {
     font-weight: 600;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'CircularStd', sans-serif;
     font-size: 1.25em;
     margin-top: 20px;
     display: block;
@@ -2021,7 +2021,7 @@ body {
       .container .contenido {
         margin-top: 6.25em; } }
     .container .contenido p {
-      font-family: 'Merriweather', serif;
+      font-family: 'Inter', serif;
       font-size: 0.9375em;
       line-height: 2;
       margin-bottom: 2.5em; }
@@ -2223,7 +2223,7 @@ body {
           transform: translate3d(0, 0, 0); } }
 
 .extra {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #333; }
   .extra li {
     position: relative;
@@ -2240,7 +2240,7 @@ p:first-child {
       display: block;
       line-height: 1.5; }
     .extra li::before {
-      font-family: 'Barlow', sans-serif;
+      font-family: 'CircularStd', sans-serif;
       content: attr(data-title);
       display: block;
       font-weight: 600;
@@ -2410,7 +2410,7 @@ body.single-programacion .agenda.theme-events {
     right: auto; }
 
 .contenido_texto {
-  font-family: 'Merriweather', serif; }
+  font-family: 'Inter', sans-serif; }
 
 #publi_block {
   max-width: 1000px;
@@ -2579,7 +2579,7 @@ body.single-programacion .agenda.theme-events {
   padding: 43vh 0 0; }
   #archive_item_content .inside > ul:not(.enlaces) {
     margin: 1.25em 0 3.125em;
-    font-family: 'Merriweather', serif;
+    font-family: 'Inter', sans-serif;
     line-height: 2;
     font-size: 1.125em;
     padding-left: 10%; }
@@ -2589,7 +2589,7 @@ body.single-programacion .agenda.theme-events {
       margin-bottom: 1em; }
   #archive_item_content .inside > ol {
     margin: 1.25em 0 3.125em;
-    font-family: 'Merriweather', serif;
+    font-family: 'Inter', sans-serif;
     line-height: 2;
     font-size: 1em;
     padding-left: 10%; }
@@ -2991,7 +2991,7 @@ body.single-programacion .agenda.theme-events {
       margin-top: 2em; }
       .agenda.medallo .texto.participante p {
         font-size: 1em !important;
-        font-family: 'Barlow', sans-serif !important; }
+        font-family: 'CircularStd', sans-serif !important; }
     .agenda.medallo .item-agenda {
       max-width: 500px;
       max-height: 600px;
@@ -3180,7 +3180,7 @@ body.single-programacion .agenda.theme-events {
           letter-spacing: 2px; } }
     .agenda .item-agenda .time {
       font-size: 0.9375em;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin-bottom: 0.4375em; }
       .agenda .item-agenda .time::before {
         font-family: 'mnm';
@@ -3190,7 +3190,7 @@ body.single-programacion .agenda.theme-events {
         margin-right: 5px; }
     .agenda .item-agenda .ubicacion {
       font-size: 0.9375em;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin-bottom: 0.4375em;
       text-transform: capitalize; }
       .agenda .item-agenda .ubicacion::before {
@@ -3326,7 +3326,7 @@ body.single-programacion .agenda.theme-events {
   width: calc(100% + 3.2em);
   margin-left: -1.6em; }
   .radio-play-container > .des {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #555;
     position: absolute;
     top: 179px;
@@ -3360,7 +3360,7 @@ body.single-programacion .agenda.theme-events {
       color: #ff7153;
       opacity: 1; }
     .radio-playlist .item-radio .des {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
       display: none;
       color: #555;
       margin-left: 6px;
@@ -3425,7 +3425,7 @@ body.single-programacion .agenda.theme-events {
         font-weight: 600;
         margin-bottom: 1.875em; }
       .radio-descriptions p {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
         line-height: 2;
         color: #555; } }
   @media screen and (min-width: 1150px) {
@@ -3774,7 +3774,7 @@ svg .zone {
   max-width: 46.875em;
   margin: 0 auto; }
   #des-mapa .item {
-    font-family: 'Merriweather', serif;
+    font-family: 'Inter', sans-serif;
     line-height: 2;
     color: #222;
     font-size: 0.875em;
@@ -4011,7 +4011,7 @@ svg .zone {
       margin: 0 0 0.4em; }
     .side_archive .events-list .event-time {
       font-size: 0.9375em;
-      font-family: 'Roboto', sans-serif; }
+      font-family: 'Inter', sans-serif; }
 
 /* stylelint-disable */
 .radio-banner {
@@ -6315,7 +6315,7 @@ header.section-header {
     border: 0;
     background: none;
     border-bottom: 2px solid black;
-    font-family: "Barlow", sans-serif;
+    font-family: "CircularStd", sans-serif;
     font-weight: 500;
     text-transform: lowercase;
     font-size: 1.875em;

@@ -181,7 +181,7 @@
         }
 
         p {
-            font-family: 'Merriweather', serif;
+            font-family: 'Inter', serif;
             font-size: em(15);
             line-height: 2;
             margin-bottom: em(35,14);
@@ -490,7 +490,7 @@
 }
 
 .extra {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #333;
     li {
         position: relative;
@@ -514,7 +514,7 @@
         }
 
         &::before {
-            font-family: 'Barlow', sans-serif;
+            font-family: 'CircularStd', sans-serif;
             content: attr(data-title);
             // position: absolute;
             display: block;
