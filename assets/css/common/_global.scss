@@ -114,7 +114,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 500;
+  font-family: 'CircularStd', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -142,7 +145,7 @@ h5 {
   }
 
   &.copy-des {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.75;
     font-size: rem(16);
     padding: em(10) 0 em(40);
@@ -214,7 +217,7 @@ h5 {
 }
 
 .copy-des {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.75;
   font-size: rem(16);
   padding: em(10) 0 em(40);

@@ -84,7 +84,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 500;
+  font-family: 'CircularStd', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5;
   margin: 0; }
 
 .add-icon {
@@ -117,7 +120,7 @@ h5 {
   #contenidoGeneral p.copy-des,
   #contenidoGeneral blockquote.copy-des,
   .perfil_viewer p.copy-des {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.75;
     font-size: 1rem;
     padding: 0.625em 0 2.5em;
@@ -190,7 +193,7 @@ h5 {
       margin-left: 28.125rem; } }
 
 .copy-des {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.75;
   font-size: 1rem;
   padding: 0.625em 0 2.5em; }
