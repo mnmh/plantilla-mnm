@@ -16,13 +16,13 @@
         padding: 0 2.5%;
 
         @media all and (min-width: 1024px) {
-            padding: 0 5%;
+            padding: 0 0%;
         }
 
 
         .content {
             position: absolute;
-            bottom: 30%;
+            bottom: 40%;
             max-width: 600px;
 
             .titulo {
@@ -35,6 +35,5 @@
             }
         }
     }
-
 
 }

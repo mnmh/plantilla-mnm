@@ -353,13 +353,9 @@ body {
 
 #contenidoGeneral {
   min-height: 100%;
-  overflow: hidden;
-  padding: 0.3125em; }
+  overflow: hidden; }
   body.page-pagina-principal-data #contenidoGeneral {
     padding: 0; }
-  @media screen and (min-width: 1024px) {
-    #contenidoGeneral {
-      padding: 0.5em; } }
 
 #frontImg {
   background: red;
@@ -6813,10 +6809,10 @@ body#tinymce {
     padding: 0 2.5%; }
     @media all and (min-width: 1024px) {
       .banner .inside {
-        padding: 0 5%; } }
+        padding: 0 0%; } }
     .banner .inside .content {
       position: absolute;
-      bottom: 30%;
+      bottom: 40%;
       max-width: 600px; }
       .banner .inside .content .titulo {
         font-size: 56px;
@@ -6933,7 +6929,8 @@ body#tinymce {
       right: 0;
       bottom: 0; }
     .banner.banner-margenes .contenedor-carrusel .nav .item {
-      border-color: white; }
+      border-color: white;
+      border: none; }
 
 .tarjetas {
   position: relative;
