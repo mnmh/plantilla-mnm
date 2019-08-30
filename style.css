@@ -87,7 +87,7 @@ h5 {
   font-family: 'CircularStd', sans-serif;
   font-weight: 600;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.3;
   margin: 0; }
 
 .add-icon {
@@ -6816,11 +6816,13 @@ body#tinymce {
         padding: 0 5%; } }
     .banner .inside .content {
       position: absolute;
-      bottom: 10%;
-      max-width: 500px; }
+      bottom: 30%;
+      max-width: 600px; }
       .banner .inside .content .titulo {
-        font-size: 3em;
+        font-size: 56px;
         margin-bottom: 20px; }
+      .banner .inside .content .txt {
+        max-width: 400px; }
 
 .banner .inside_navigation {
   display: flex;
@@ -6922,13 +6924,16 @@ body#tinymce {
 
 .banner.banner-margenes {
   background: #3B3B3B; }
-  .banner.banner-margenes .img {
-    width: 70%;
-    height: 70%;
-    right: 0;
-    bottom: 0; }
-  .banner.banner-margenes .nav .item {
-    border-color: white; }
+  .banner.banner-margenes .contenedor-carrusel {
+    max-width: 1600px;
+    margin: auto; }
+    .banner.banner-margenes .contenedor-carrusel .img {
+      width: 70%;
+      height: 90%;
+      right: 0;
+      bottom: 0; }
+    .banner.banner-margenes .contenedor-carrusel .nav .item {
+      border-color: white; }
 
 .tarjetas {
   position: relative;

@@ -19,14 +19,19 @@
             padding: 0 5%;
         }
 
+
         .content {
             position: absolute;
-            bottom: 10%;
-            max-width: 500px;
+            bottom: 30%;
+            max-width: 600px;
 
             .titulo {
-                font-size: 3em;
+                font-size: 56px;
                 margin-bottom: 20px;
+            }
+
+            .txt {
+                max-width: 400px;
             }
         }
     }
