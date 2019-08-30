@@ -1,12 +1,13 @@
 .banner {
     &.banner-margenes {
-        background: white;
+        background: #3B3B3B;
         color: black;
 
         .img {
             width: 70%;
             height: 70%;
             right: 0;
+            bottom: 0;
         }
 
         .nav {

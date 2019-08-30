@@ -6860,12 +6860,13 @@ body#tinymce {
         content: '\E80F'; }
 
 .banner.banner-margenes {
-  background: white;
+  background: #3B3B3B;
   color: black; }
   .banner.banner-margenes .img {
     width: 70%;
     height: 70%;
-    right: 0; }
+    right: 0;
+    bottom: 0; }
   .banner.banner-margenes .nav .item {
     background: white;
     border-color: black; }
