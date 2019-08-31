@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /** Import theme styles */
 /* stylelint-disable */
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,500,600,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://rsms.me/inter/inter.css");
 @font-face {
   font-family: 'mnm';
   src: url("./assets/fonts/museo-virtual.eot?53257856");
@@ -90,7 +89,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 500;
+  font-family: 'CircularStd', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5;
   margin: 0; }
 
 .add-icon {
@@ -98,69 +100,76 @@ h5 {
   font-size: 1.25em;
   line-height: 0.5; }
 
-#archive_item_content p a,
-.content p a,
-.contenido_texto p a,
-#contenidoGeneral p a,
-#contenidoGeneral blockquote a,
-.perfil_viewer p a {
-  font-style: italic;
-  text-decoration: underline; }
-
-#archive_item_content p.copy-des,
-.content p.copy-des,
-.contenido_texto p.copy-des,
-#contenidoGeneral p.copy-des,
-#contenidoGeneral blockquote.copy-des,
-.perfil_viewer p.copy-des {
-  line-height: 1.75;
-  font-size: 1rem;
-  padding: 0.625em 0 2.5em;
-  margin: 0;
-  color: black; }
+#archive_item_content p,
+.content p,
+.contenido_texto p,
+#contenidoGeneral p,
+#contenidoGeneral blockquote,
+.perfil_viewer p {
+  font-family: 'Inter', sans-serif;
+  line-height: 2;
+  color: #222;
+  margin: 1.25em 0 3.125em;
+  font-size: 0.875em; }
+  #archive_item_content p a,
+  .content p a,
+  .contenido_texto p a,
+  #contenidoGeneral p a,
+  #contenidoGeneral blockquote a,
+  .perfil_viewer p a {
+    font-style: italic;
+    text-decoration: underline; }
+  #archive_item_content p.copy-des,
+  .content p.copy-des,
+  .contenido_texto p.copy-des,
+  #contenidoGeneral p.copy-des,
+  #contenidoGeneral blockquote.copy-des,
+  .perfil_viewer p.copy-des {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.75;
+    font-size: 1rem;
+    padding: 0.625em 0 2.5em;
+    margin: 0;
+    color: black; }
+    @media screen and (min-width: 850px) {
+      #archive_item_content p.copy-des,
+      .content p.copy-des,
+      .contenido_texto p.copy-des,
+      #contenidoGeneral p.copy-des,
+      #contenidoGeneral blockquote.copy-des,
+      .perfil_viewer p.copy-des {
+        font-size: 1.125rem; } }
+  #archive_item_content p span,
+  .content p span,
+  .contenido_texto p span,
+  #contenidoGeneral p span,
+  #contenidoGeneral blockquote span,
+  .perfil_viewer p span {
+    font-weight: regular; }
+  @media screen and (max-width: 340px) {
+    #archive_item_content p,
+    .content p,
+    .contenido_texto p,
+    #contenidoGeneral p,
+    #contenidoGeneral blockquote,
+    .perfil_viewer p {
+      font-size: 0.8125em; } }
   @media screen and (min-width: 850px) {
-    #archive_item_content p.copy-des,
-    .content p.copy-des,
-    .contenido_texto p.copy-des,
-    #contenidoGeneral p.copy-des,
-    #contenidoGeneral blockquote.copy-des,
-    .perfil_viewer p.copy-des {
-      font-size: 1.125rem; } }
-
-#archive_item_content p span,
-.content p span,
-.contenido_texto p span,
-#contenidoGeneral p span,
-#contenidoGeneral blockquote span,
-.perfil_viewer p span {
-  font-weight: regular; }
-
-@media screen and (max-width: 340px) {
-  #archive_item_content p,
-  .content p,
-  .contenido_texto p,
-  #contenidoGeneral p,
-  #contenidoGeneral blockquote,
-  .perfil_viewer p {
-    font-size: 0.8125em; } }
-
-@media screen and (min-width: 850px) {
-  #archive_item_content p,
-  .content p,
-  .contenido_texto p,
-  #contenidoGeneral p,
-  #contenidoGeneral blockquote,
-  .perfil_viewer p {
-    font-size: 1.0625em; } }
-
-@media screen and (min-width: 1024px) {
-  #archive_item_content p,
-  .content p,
-  .contenido_texto p,
-  #contenidoGeneral p,
-  #contenidoGeneral blockquote,
-  .perfil_viewer p {
-    font-size: 1.125em; } }
+    #archive_item_content p,
+    .content p,
+    .contenido_texto p,
+    #contenidoGeneral p,
+    #contenidoGeneral blockquote,
+    .perfil_viewer p {
+      font-size: 1.0625em; } }
+  @media screen and (min-width: 1024px) {
+    #archive_item_content p,
+    .content p,
+    .contenido_texto p,
+    #contenidoGeneral p,
+    #contenidoGeneral blockquote,
+    .perfil_viewer p {
+      font-size: 1.125em; } }
 
 #archive_item_content > h2,
 .content > h2 {
@@ -189,7 +198,7 @@ h5 {
       margin-left: 28.125rem; } }
 
 .copy-des {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.75;
   font-size: 1rem;
   padding: 0.625em 0 2.5em; }
@@ -202,6 +211,63 @@ h5 {
 
 h2 strong {
   font-weight: 500; }
+
+/* CircularStd @font-face kit */
+@font-face {
+  font-family: 'CircularStd';
+  src: url("./assets/fonts/circular/CircularStd-Black.eot");
+  src: url("./assets/fonts/circular/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/circular/CircularStd-Black.woff") format("woff"), url("./assets/fonts/circular/CircularStd-Black.ttf") format("truetype"), url("./assets/fonts/circular/CircularStd-Black.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url("./assets/fonts/circular/CircularStd-BlackItalic.eot");
+  src: url("./assets/fonts/circular/CircularStd-BlackItalic.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/circular/CircularStd-BlackItalic.woff") format("woff"), url("./assets/fonts/circular/CircularStd-BlackItalic.ttf") format("truetype"), url("./assets/fonts/circular/CircularStd-BlackItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url("./assets/fonts/circular/CircularStd-Bold.eot");
+  src: url("./assets/fonts/circular/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/circular/CircularStd-Bold.woff") format("woff"), url("./assets/fonts/circular/CircularStd-Bold.ttf") format("truetype"), url("./assets/fonts/circular/CircularStd-Bold.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url("./assets/fonts/circular/CircularStd-BoldItalic.eot");
+  src: url("./assets/fonts/circular/CircularStd-BoldItalic.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/circular/CircularStd-BoldItalic.woff") format("woff"), url("./assets/fonts/circular/CircularStd-BoldItalic.ttf") format("truetype"), url("./assets/fonts/circular/CircularStd-BoldItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url("./assets/fonts/circular/CircularStd-Medium.eot");
+  src: url("./assets/fonts/circular/CircularStd-Medium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/circular/CircularStd-Medium.woff") format("woff"), url("./assets/fonts/circular/CircularStd-Medium.ttf") format("truetype"), url("./assets/fonts/circular/CircularStd-Medium.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url("./assets/fonts/circular/CircularStd-MediumItalic.eot");
+  src: url("./assets/fonts/circular/CircularStd-MediumItalic.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/circular/CircularStd-MediumItalic.woff") format("woff"), url("./assets/fonts/circular/CircularStd-MediumItalic.ttf") format("truetype"), url("./assets/fonts/circular/CircularStd-MediumItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url("./assets/fonts/circular/CircularStd-Book.eot");
+  src: url("./assets/fonts/circular/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/circular/CircularStd-Book.woff") format("woff"), url("./assets/fonts/circular/CircularStd-Book.ttf") format("truetype"), url("./assets/fonts/circular/CircularStd-Book.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url("./assets/fonts/circular/CircularStd-BookItalic.eot");
+  src: url("./assets/fonts/circular/CircularStd-BookItalic.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/circular/CircularStd-BookItalic.woff") format("woff"), url("./assets/fonts/circular/CircularStd-BookItalic.ttf") format("truetype"), url("./assets/fonts/circular/CircularStd-BookItalic.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 400;
+  font-style: italic; }
 
 /* stylelint-disable */
 #input_search_obras {
@@ -286,7 +352,7 @@ h2 strong {
   background-position: center; }
 
 body {
-  font-family: "Barlow", sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 #contenidoGeneral {
   min-height: 100%;
@@ -694,7 +760,7 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 0;
-  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans-serif;
   line-height: 2;
   color: #222;
   z-index: 2;
@@ -711,13 +777,13 @@ body {
     font-size: 0.75em; }
   #fullpage .left .title {
     font-size: 1.5em;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'CircularStd', sans-serif;
     line-height: 1.25;
     margin-bottom: 1em;
     font-weight: 600; }
   #fullpage .left a {
     font-weight: 600;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'CircularStd', sans-serif;
     font-size: 1.25em;
     margin-top: 20px;
     display: block;
@@ -1897,7 +1963,7 @@ body {
       .container .contenido {
         margin-top: 6.25em; } }
     .container .contenido p {
-      font-family: 'Merriweather', serif;
+      font-family: 'Inter', serif;
       font-size: 0.9375em;
       line-height: 2;
       margin-bottom: 2.5em; }
@@ -2099,7 +2165,7 @@ body {
           transform: translate3d(0, 0, 0); } }
 
 .extra {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #333; }
   .extra li {
     position: relative;
@@ -2116,7 +2182,7 @@ p:first-child {
       display: block;
       line-height: 1.5; }
     .extra li::before {
-      font-family: 'Barlow', sans-serif;
+      font-family: 'CircularStd', sans-serif;
       content: attr(data-title);
       display: block;
       font-weight: 600;
@@ -2286,7 +2352,7 @@ body.single-programacion .agenda.theme-events {
     right: auto; }
 
 .contenido_texto {
-  font-family: 'Merriweather', serif; }
+  font-family: 'Inter', sans-serif; }
 
 #publi_block {
   max-width: 1000px;
@@ -2455,7 +2521,7 @@ body.single-programacion .agenda.theme-events {
   padding: 43vh 0 0; }
   #archive_item_content .inside > ul:not(.enlaces) {
     margin: 1.25em 0 3.125em;
-    font-family: 'Merriweather', serif;
+    font-family: 'Inter', sans-serif;
     line-height: 2;
     font-size: 1.125em;
     padding-left: 10%; }
@@ -2465,7 +2531,7 @@ body.single-programacion .agenda.theme-events {
       margin-bottom: 1em; }
   #archive_item_content .inside > ol {
     margin: 1.25em 0 3.125em;
-    font-family: 'Merriweather', serif;
+    font-family: 'Inter', sans-serif;
     line-height: 2;
     font-size: 1em;
     padding-left: 10%; }
@@ -2867,7 +2933,7 @@ body.single-programacion .agenda.theme-events {
       margin-top: 2em; }
       .agenda.medallo .texto.participante p {
         font-size: 1em !important;
-        font-family: 'Barlow', sans-serif !important; }
+        font-family: 'CircularStd', sans-serif !important; }
     .agenda.medallo .item-agenda {
       max-width: 500px;
       max-height: 600px;
@@ -3045,7 +3111,7 @@ body.single-programacion .agenda.theme-events {
           letter-spacing: 2px; } }
     .agenda .item-agenda .time {
       font-size: 0.9375em;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin-bottom: 0.4375em; }
       .agenda .item-agenda .time::before {
         font-family: 'mnm';
@@ -3055,7 +3121,7 @@ body.single-programacion .agenda.theme-events {
         margin-right: 5px; }
     .agenda .item-agenda .ubicacion {
       font-size: 0.9375em;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin-bottom: 0.4375em;
       text-transform: capitalize; }
       .agenda .item-agenda .ubicacion::before {
@@ -3191,7 +3257,7 @@ body.single-programacion .agenda.theme-events {
   width: calc(100% + 3.2em);
   margin-left: -1.6em; }
   .radio-play-container > .des {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #555;
     position: absolute;
     top: 179px;
@@ -3225,7 +3291,7 @@ body.single-programacion .agenda.theme-events {
       color: #ff7153;
       opacity: 1; }
     .radio-playlist .item-radio .des {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
       display: none;
       color: #555;
       margin-left: 6px;
@@ -3290,7 +3356,7 @@ body.single-programacion .agenda.theme-events {
         font-weight: 600;
         margin-bottom: 1.875em; }
       .radio-descriptions p {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
         line-height: 2;
         color: #555; } }
   @media screen and (min-width: 1150px) {
@@ -3639,7 +3705,7 @@ svg .zone {
   max-width: 46.875em;
   margin: 0 auto; }
   #des-mapa .item {
-    font-family: 'Merriweather', serif;
+    font-family: 'Inter', sans-serif;
     line-height: 2;
     color: #222;
     font-size: 0.875em;
@@ -3876,7 +3942,7 @@ svg .zone {
       margin: 0 0 0.4em; }
     .side_archive .events-list .event-time {
       font-size: 0.9375em;
-      font-family: 'Roboto', sans-serif; }
+      font-family: 'Inter', sans-serif; }
 
 /* stylelint-disable */
 .radio-banner {
@@ -4022,7 +4088,7 @@ svg .zone {
   margin-top: 2em; }
   .page-voces .texto.participante p {
     font-size: 1em !important;
-    font-family: 'Barlow', sans-serif !important; }
+    font-family: 'CircularStd', sans-serif !important; }
   .agenda .page-voces .texto {
     margin: 0;
     margin-bottom: 3em; }
@@ -4641,7 +4707,7 @@ blockquote {
           display: none; } }
 
 #listado_principal p {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: white; }
 
 #listado_principal .btn {
@@ -4774,7 +4840,7 @@ figure {
     #cifras .cifras-container .num {
       font-size: 6em; }
     #cifras .cifras-container .des {
-      font-family: "Merriweather", serif; }
+      font-family: "Inter", sans-serif; }
     @media screen and (min-width: 900px) {
       #cifras .cifras-container {
         padding: 9.375em 0;
@@ -6175,7 +6241,7 @@ header.section-header {
     border: 0;
     background: none;
     border-bottom: 2px solid black;
-    font-family: "Barlow", sans-serif;
+    font-family: "CircularStd", sans-serif;
     font-weight: 500;
     text-transform: lowercase;
     font-size: 1.875em;
@@ -6974,12 +7040,13 @@ body#tinymce {
         content: '\E80F'; }
 
 .banner.banner-margenes {
-  background: white;
+  background: #3B3B3B;
   color: black; }
   .banner.banner-margenes .img {
     width: 70%;
     height: 70%;
-    right: 0; }
+    right: 0;
+    bottom: 0; }
   .banner.banner-margenes .nav .item {
     background: white; }
 
