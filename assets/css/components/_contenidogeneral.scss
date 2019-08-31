@@ -1,18 +1,20 @@
 body {
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 #contenidoGeneral {
   min-height: 100%;
   overflow: hidden;
-  padding: em(5);
+  //padding: em(5);
 
   body.page-pagina-principal-data & {
     padding: 0;
   }
 
   @media screen and (min-width: 1024px) {
-    padding: em(8);
+    //padding: em(8);
   }
 }
 

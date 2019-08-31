@@ -1,18 +1,23 @@
 .banner {
     &.banner-margenes {
         background: #3B3B3B;
-        color: black;
+        
+        .contenedor-carrusel {
+            max-width: 1600px;
+            margin: auto;
 
-        .img {
-            width: 70%;
-            height: 70%;
-            right: 0;
-            bottom: 0;
-        }
+            .img {
+                width: 70%;
+                height: 90%;
+                right: 0;
+                bottom: 0;
+            }
 
-        .nav {
-            .item {
-                background: white;
+            .nav {
+                .item {
+                    border-color: white;
+                    border: none;
+                }
             }
         }
     }
