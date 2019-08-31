@@ -8,7 +8,7 @@ import $ from 'jquery';
 (function ($, root, undefined) {
 
     $(function () {
-        if ($('body').hasClass('parent-pageid-2165')) {
+        if ($('body').hasClass('parent-pageid-4433')) {
 
             var viewer = null;
             var audio_url = '';
@@ -77,7 +77,7 @@ import $ from 'jquery';
             }
 
             loader.load(
-                '/mnm/wp-content/themes/mnm/assets/3d/mapa.obj',
+                '/wp-content/themes/plantilla-mnm-master/assets/3d/mapa.obj',
                 function (obj) {
                     obj.traverse(function (child) {
                         if (child instanceof THREE.Mesh) {

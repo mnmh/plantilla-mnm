@@ -35,8 +35,14 @@
 					<span>Arte y Cultura</span>
 					</a></li>
 					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
+						<span>Voces para transfromar</span>
+					</a></li>
+					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
 						<span>Archivo DDHH</span>
-					</a></li>			
+					</a></li>
+					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
+						<span>Observatorio de cifras</span>
+					</a></li>		
 				</ul>
 			</nav>
 		</div>
@@ -81,9 +87,9 @@
           $des = get_field('extracto', $noticia->ID);
         ?>
 		<a href="<?php get_permalink($noticia->ID)?>">
-            <div class="item_noticia" style="background-image: url('<?php $img['sizes']['large']?>')"></div>
-			<h3 class="title"><?php $noticia->post_title?></h3>
-			<p class="descripcion"><?php $noticia->post_excerpt?></p>
+            <div class="item_noticia" style="background-image: url('<?php echo $img['sizes']['large']?>')"></div>
+			<h3 class="title"><?php echo $noticia->post_title?></h3>
+			<p class="descripcion"><?php echo $noticia->post_excerpt?></p>
 		</a>
 		<?php endforeach; ?>
 	</div>

@@ -22,8 +22,9 @@
 
         .content {
             position: absolute;
-            bottom: 40%;
+            top: 40%;
             max-width: 600px;
+            transform: translate(0,-50%);
 
             .titulo {
                 font-size: 56px;

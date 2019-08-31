@@ -72,8 +72,6 @@
 </div>
 
 <?php } ?>
-
-
 <?php function crearMesSiguiente() {
 $dia_num = date("j");
 $mes_num = date("m");
@@ -144,9 +142,8 @@ endwhile;
 
 </div>
 
-<?php } ?>
+<?php } 
 
-<?php
 function zerofill ($num, $zerofill = 5) {
 	return str_pad($num, $zerofill, '0', STR_PAD_LEFT);
 }
