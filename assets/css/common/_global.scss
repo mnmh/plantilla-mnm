@@ -38,9 +38,16 @@ a {
   position: relative;
   overflow: auto;
   padding-bottom: em(100);
+  transition: all 0.5s ease;
+  width: 100%;
 
   .page-template-template-laboratorio & {
     padding-bottom: 0;
+  }
+
+  &.move-left {
+    margin-left: 350px;
+    width: 100%;
   }
 }
 
@@ -131,11 +138,6 @@ h5 {
 #contenidoGeneral p,
 #contenidoGeneral blockquote,
 .perfil_viewer p {
-  font-family: 'Merriweather', serif;
-  line-height: 2;
-  color: #222;
-  margin: em(20) 0 em(50);
-  font-size: em(14);
 
   a {
     font-style: italic;
@@ -143,7 +145,6 @@ h5 {
   }
 
   &.copy-des {
-    font-family: 'Roboto', sans-serif;
     line-height: 1.75;
     font-size: rem(16);
     padding: em(10) 0 em(40);

@@ -8,7 +8,8 @@
 @import "components/forms";
 @import "components/background_video";
 @import "components/contenidogeneral";
-@import "components/sidemenu";
+// @import "components/sidemenu";
+@import "components/sidemenu-nuevo";
 @import "components/scroll-down";
 @import "components/frontslider";
 @import "components/downloads-list";
@@ -41,6 +42,11 @@
 
 
 @import "generales";
+
+
+@import "elementos/calendario";
+
+
 @import "bloques/carrousel-verticales";
 @import "bloques/carrousel-botones";
 @import "bloques/carrousel-cuadros";
@@ -53,6 +59,6 @@
 @import "bloques/linea-tiempo";
 @import "bloques/imagen-botones";
 @import "bloques/tres-botones";
-
+@import "bloques/bloque-agenda";
 
 @import "template-uno";

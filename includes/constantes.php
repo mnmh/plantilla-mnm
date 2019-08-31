@@ -84,4 +84,34 @@ function elimina_acentos($text) {
     return $text;
 }
 
+function darMesEspanol($mes){
+    if($mes == 'April')
+        $mes = 'Abril';
+    elseif($mes == 'May')
+        $mes = 'Mayo';
+    elseif($mes == 'September')
+        $mes = 'Septiembre';
+
+    return $mes;
+}
+
+function darDiaEspanol($dia){
+    if($dia == 'Mon')
+        $dia = 'Lun';
+    elseif($dia == 'Tue')
+        $dia = 'Mar';
+    elseif($dia == 'Wed')
+        $dia = 'Mie';
+    elseif($dia == 'Thu')
+        $dia = 'Jue';
+    elseif($dia == 'Fri')
+        $dia = 'Vie';
+    elseif($dia == 'Sat')
+        $dia = 'Sab';
+    elseif($dia == 'Sun')
+        $dia = 'Dom';
+
+    return $dia;
+}
+
 ?>

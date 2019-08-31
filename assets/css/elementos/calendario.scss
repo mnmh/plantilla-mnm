@@ -1,0 +1,258 @@
+.calendario_mes {
+    display: flex;
+
+    .listado {
+        width: 40%;
+        padding-top: 55px;
+        padding-left: 15px;
+
+        .item {
+            color: white;
+            font-size: 1.5em;
+            min-height: 50px;
+            border-top: 1px dashed #333;
+            margin-bottom: 2.5px;
+            cursor: pointer;
+
+            .top {
+                display: flex;
+                align-items: center;
+                min-height: 50px;
+                padding: 5px;
+            }
+
+            .inside {
+                display: none;
+
+                .content {
+                    display: flex;
+                    margin-left: 5px;
+                    margin-top: 20px;
+                    padding-bottom: 10px;
+
+                    .img {
+                        width: 100px;
+                        height: 100px;
+                        background: #999;
+                    }
+
+                    .txt {
+                        margin-left: 10px;
+                        max-width: 350px;
+                        width: calc(100% - 100px);
+                    }
+                }
+            }
+
+            &:last-child {
+                border-bottom: 1px dashed #333;
+            }
+
+            .categ {
+                width: 20px;
+                height: 20px;
+                border-radius: 30px;
+                border: 3px solid white;
+                margin-right: 10px;
+                flex: none;
+
+                &.convocatorias {
+                    border-color: #d66bd8;
+                }
+
+                &.laboratorio {
+                    border-color: #f1e340;
+                }
+            }
+
+            .categ_name {
+                &.convocatorias {
+                    background: #d66bd8;
+                }
+
+                &.laboratorio {
+                    background: #f1e340;
+                }
+            }
+
+            .categ_name, .link {
+                font-family: 'Inconsolata', monospace;
+                background: white;
+                color: black;
+                text-transform: lowercase;
+                display: inline-block;
+                margin-left: 5px;
+                padding: 3px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 0.85em;
+            }
+
+            .link {
+                background: transparent;
+                color: white;
+                border: 1px solid;
+
+                &:hover {
+                    background: white;
+                    color: #333;
+                }
+            }
+
+            .fecha {
+                font-family: 'Inconsolata', monospace;
+                border: 1px solid;
+                padding: 3px;
+                font-size: 0.85em;
+                border-radius: 3px;
+                margin-left: 15px;
+                color: #777;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            &.inactive .categ {
+                border-color: #999 !important;
+            }
+
+            .nombre {
+                width: auto;
+                display: inline-block;
+            }
+        }
+    }
+
+    #calendario {
+        width: 60%;
+
+        .mes {
+            color: #333;
+            font-size: 2em;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2, 50px) repeat(5, 100px);
+            grid-gap: 5px;
+
+            &.hide {
+                display: none;
+            }
+
+            @media all and (max-width: 900px) {
+                grid-template-rows: repeat(2, 50px) repeat(5, 50px);
+            }
+        }
+
+        .item {
+            border: 1px solid #dcdcdc;
+            padding: 0.5em;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &.dia_nom {
+                text-transform: lowercase;
+                font-size: 0.75em;
+                border: none;
+                text-align: center;
+            }
+
+            &.hoy {
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    top: 15px;
+                    left: 0;
+                    background: $rosado;
+                    content: '';
+                    z-index: -1;
+                }
+            }
+
+            &.nombre {
+                grid-column: 2/7;
+                font-size: 0.75em;
+                justify-content: center;
+                position: relative;
+            }
+
+            &.nombre, &.nav {
+                border: none;
+            }
+
+            &.nav:not(.hide) {
+				cursor: pointer;
+				font-family: 'icons';
+				text-align: center;
+
+				&.next:before {
+					content: '\E802';
+					color: white;
+					width: 100%;
+				}
+
+				&.prev:before {
+					content: '\E803';
+					color: white;
+					width: 100%;
+				}
+            }
+
+            &.siHay:before {
+                position: absolute;
+                width: 100%;
+                height: 10px;
+                top: 0px;
+                left: 0;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQYV2NkQAP/////z4gsBhYAAZggTADEBwsiC4AF0QVAggAaRhQC9fJaWAAAAABJRU5ErkJggg==);
+                content: '';
+                z-index: -1;
+                transition: all 0.25s ease;
+            }
+
+            &.siHayActivo:before {
+                height: 100%;
+            }
+
+            &.vacio {
+                border-color: #fff;
+            }
+        }
+    }
+
+    .itemArchive {
+        text-transform: uppercase;
+        color: white;
+        position: relative;
+        font-family: 'Inconsolata', monospace;
+        display: inline-block;
+        padding: 5px;
+        font-size: 1.25em;
+        padding-right: 50px;
+        cursor: pointer;
+
+        &:before {
+            content: '\E802';
+            font-family: 'icons';
+            right: 30px;
+            position: absolute;
+            transition: all 0.25s ease;
+        }
+
+        &:hover {
+            &:before {
+                right: 20px;
+            }
+        }
+    }
+
+    @media all and (max-width: 900px) {
+        flex-wrap: wrap;
+
+        .listado, #calendario {
+            width: 100%;
+        }
+    }
+}

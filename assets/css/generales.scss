@@ -1,5 +1,5 @@
 #contenidoGeneral {
-    margin-top: 100px;
+    margin-top: 117px;
 
     p {
         max-width: 700px;
@@ -23,10 +23,14 @@
     justify-content: space-between;
     transform: translate(0px, -50%);
 
+    .agenda & {
+        display: block;
+        transform: none;
+    }
+
     div {
         width: 40px;
         height: 40px;
-        border: 1px solid black;
         background: white;
         margin-bottom: 5px;
         position: relative;
@@ -50,6 +54,7 @@
             line-height: 40px;
             font-family: 'mnm';
             content: '\E80E';
+            left: 0;
         }
 
         &.prev::before {
@@ -68,5 +73,27 @@
         display: block;
         font-size: 30px;
         margin-bottom: 10px;
+    }
+}
+
+.btn {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    display: table;
+    text-decoration: none !important;
+    border-radius: 40px;
+    margin-right: 10px;
+    color: #999;
+    cursor: pointer;
+
+    &:hover {
+        background: #dcdcdc;
+    }
+
+    &.active {
+        // background: $rosado;
+        color: #333;
     }
 }

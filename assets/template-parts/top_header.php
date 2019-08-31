@@ -3,7 +3,9 @@
 		<div class="main-wrapper">
 			<div class="left_area">
 				<div id="menu_lateral_btn">
-					<svg class="menu_icon" xmlns="http://www.w3.org/2000/svg" viewBox="896.374 -5312.277 15.326 15.325"><g transform="translate(896.374 -5312.277)"><ellipse class="a equis-3" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(12.26 12.26)"/><ellipse class="a equis-4" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(6.13 12.26)"/><ellipse class="a" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(6.13 6.13)"/><ellipse class="a equis-1" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(0 12.26)"/><ellipse class="a" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(12.26 6.13)"/><ellipse class="a equis-2" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(12.26)"/></g></svg>
+					<div class="inside">
+						<svg class="menu_icon" xmlns="http://www.w3.org/2000/svg" viewBox="896.374 -5312.277 15.326 15.325"><g transform="translate(896.374 -5312.277)"><ellipse class="a equis-3" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(12.26 12.26)"/><ellipse class="a equis-4" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(6.13 12.26)"/><ellipse class="a" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(6.13 6.13)"/><ellipse class="a equis-1" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(0 12.26)"/><ellipse class="a" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(12.26 6.13)"/><ellipse class="a equis-2" cx="1.533" cy="1.533" rx="1.533" ry="1.533" transform="translate(12.26)"/></g></svg>
+					</div>
 				</div>
 
 				<!-- Titulo -->
@@ -11,9 +13,6 @@
 					<a href="<?php get_blogInfo('url') ?>"><?php get_blogInfo('name') ?></a>
 				</h1>
 			</div>
-			<button class="right_area share-page">
-				<h4>Compartir</h4><i class="fas fa-share-alt fa-xs" data-fa-transform="shrink-3 up-0.5"></i>
-			</button>
 		</div>
 
 	<?php if(is_page(array(2165, 2194, 2192, 2231, 2205, 2326, 1231, 3107)) || (is_single() && get_post_type() == 'post' && !has_category('lugares-de-memoria'))): ?>

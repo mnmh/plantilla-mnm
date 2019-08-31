@@ -7,11 +7,21 @@ $max-side-width: em(450);
 
 $color2: #d5941c;
 $white: rgb(255, 255, 255);
-$black: rgb(0, 0, 0);
+$black: #222;
 
 $color-menu: #ff7153;
 
 $rosado: #fcebeb;
+
+$ancho: 350px;
+$ancho2: 280px;
+$ancho_tercio: 117px;
+$altura_menu: 117px;
+
+$dobleancho: 700px;
+$tripleancho: 1050px;
+
+$ancho_small: 58px;
 
 @mixin top-offset($pos) {
   -moz-transform: translateY($pos);

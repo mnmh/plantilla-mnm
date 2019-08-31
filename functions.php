@@ -107,6 +107,9 @@ include( get_theme_file_path("/includes/import-scripts.php") );
 include( get_theme_file_path("/includes/constantes.php") );
 // cargar nuevos tipos de base de datos
 include( get_theme_file_path("/includes/tipos.php") );
+// cargar calendario
+include( get_theme_file_path("/includes/calendario.php") );
+
 
 // Load HTML5 Blank styles
 function html5blank_styles()
