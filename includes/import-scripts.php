@@ -25,9 +25,6 @@ function header_scripts()
         wp_register_script('arte-cultura', get_template_directory_uri() . '/js/elementos/arte-cultura.js', array('jquery'), '1.0.0');
         wp_enqueue_script('arte-cultura');
 
-        wp_register_script('recorrido-virtual', get_template_directory_uri() . '/js/elementos/recorrido-virtual.js', array('jquery'), '1.0.0');
-        wp_enqueue_script('recorrido-virtual');
-
         // Cargar scripts de los bloques
         wp_register_script('carrousel-vertical', get_template_directory_uri() . '/js/bloques/carrousel-vertical.js', array('jquery'), '1.0.0');
         wp_enqueue_script('carrousel-vertical');
