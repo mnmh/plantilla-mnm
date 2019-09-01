@@ -31,7 +31,7 @@
 			</div>
 			<nav class="secondLvl">
 				<ul>
-					<li><a href="{{ARTE}}" class="itemChild">
+					<li><a href="<?php echo ARTE; ?>" class="itemChild">
 					<span>Arte y Cultura</span>
 					</a></li>
 					<li><a href="{{VOCES}}" data-target="#" class="itemChild">

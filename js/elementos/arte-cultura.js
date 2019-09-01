@@ -4,6 +4,7 @@
         iniciarArteCultura();
         iniciarObra();
 
+
         function iniciarArteCultura() {
             $('.navegacionFiltros .alfa .letter').on('click', function () {
                 var div = $(this).attr('data-div');
