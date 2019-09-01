@@ -30,7 +30,11 @@
 				text-align: left;
 				margin-bottom: 4em;
 
-				&:nth-child(2) {
+				@media all and (max-width: 1400px) {
+					margin-bottom: 2em;
+				}
+
+				&:nth-child(2), &:nth-child(3) {
 					position: relative;
 
 					&:before {
@@ -41,11 +45,15 @@
 						left: 0;
 						height: 1px;
 						content: '';
+
+						@media all and (max-width: 1400px) {
+							top: -1em;
+						}
 					}
 				}
 
 				.name {
-					// @include font-header();
+					font-weight: bold;
 				}
 
 				.des {
@@ -60,6 +68,10 @@
 						margin-top: 1em;
 						display: block;
 						font-size: 1em;
+
+						@media all and (max-width: 1400px) {
+							margin-top: 0.25em;
+						}
 
 						&:hover {
 							// color: $color_rosado;

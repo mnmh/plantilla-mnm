@@ -392,9 +392,12 @@ body {
         margin-left: 70px;
         text-align: left;
         margin-bottom: 4em; }
-        #menu_lateral .menu-wrapper .main-menu .item:nth-child(2) {
+        @media all and (max-width: 1400px) {
+          #menu_lateral .menu-wrapper .main-menu .item {
+            margin-bottom: 2em; } }
+        #menu_lateral .menu-wrapper .main-menu .item:nth-child(2), #menu_lateral .menu-wrapper .main-menu .item:nth-child(3) {
           position: relative; }
-          #menu_lateral .menu-wrapper .main-menu .item:nth-child(2):before {
+          #menu_lateral .menu-wrapper .main-menu .item:nth-child(2):before, #menu_lateral .menu-wrapper .main-menu .item:nth-child(3):before {
             position: absolute;
             width: 20px;
             border-top: 2px solid black;
@@ -402,6 +405,11 @@ body {
             left: 0;
             height: 1px;
             content: ''; }
+            @media all and (max-width: 1400px) {
+              #menu_lateral .menu-wrapper .main-menu .item:nth-child(2):before, #menu_lateral .menu-wrapper .main-menu .item:nth-child(3):before {
+                top: -1em; } }
+        #menu_lateral .menu-wrapper .main-menu .item .name {
+          font-weight: bold; }
         #menu_lateral .menu-wrapper .main-menu .item .des {
           font-weight: 250;
           font-style: italic;
@@ -411,6 +419,9 @@ body {
           margin-top: 1em;
           display: block;
           font-size: 1em; }
+          @media all and (max-width: 1400px) {
+            #menu_lateral .menu-wrapper .main-menu .item .secondLvl .itemChild {
+              margin-top: 0.25em; } }
         #menu_lateral .menu-wrapper .main-menu .item.logo-bar {
           position: absolute;
           width: 100%;
