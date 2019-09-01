@@ -85,14 +85,14 @@ import $ from 'jquery';
                             var mat = child.material;
                             if (child.name == 'Curve.008') {
                                 var mat = new THREE.MeshBasicMaterial({
-                                    color: 0xefabc8,
+                                    color: 0x8ea2a1,
                                     wireframe: true,
                                     transparent: true
                                 });
-                                mat.opacity = 1;
+                                mat.opacity = 0.5;
                             } else {
                                 var mat = new THREE.MeshBasicMaterial({
-                                    color: 0x999999,
+                                    color: 0xdcd8cd,
                                     wireframe: true,
                                     transparent: false
                                 });
@@ -135,7 +135,7 @@ import $ from 'jquery';
                             var geometry = new THREE.SphereGeometry(0.02, 10, 10);
                             if (z_coor == 1)
                                 var material = new THREE.MeshBasicMaterial({
-                                    color: 0xFFFFFF
+                                    color: 0xefabc8
                                 });
                             else
                                 var material = new THREE.MeshBasicMaterial({

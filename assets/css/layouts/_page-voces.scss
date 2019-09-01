@@ -1450,7 +1450,7 @@ body.no_scroll {
 }
 
 #mapa3d {
-  height: calc(100vh - 16px);
+  height: calc(100vh - 60px);
   position: relative;
 
   .controls {
@@ -1465,13 +1465,16 @@ body.no_scroll {
     .next {
       position: absolute;
       right: 0;
-      width: 60px;
-      height: 100px;
-      top: -100px;
+      width: 40px;
+      height: 40px;
+      top: -55px;
       text-align: center;
-      font-size: 2em;
-      color: white;
+      font-size: 1em;
+      color: #333;
       cursor: pointer;
+      background: white;
+      line-height: 40px;
+      border-radius: 50px;
 
       &:before {
         position: absolute;
@@ -1479,7 +1482,6 @@ body.no_scroll {
         height: 100%;
         top: 0;
         left: 0;
-        line-height: 100px;
         font-family: 'mnm';
         content: '\E80E';
       }
@@ -1620,7 +1622,7 @@ body.no_scroll {
 }
 
 #slider3d {
-  height: 100px;
+  height: 70px;
   bottom: 0;
   width: 100%;
   position: absolute;
@@ -1628,14 +1630,16 @@ body.no_scroll {
 
   .item {
     width: 200px;
-    height: 100px;
+    height: 70px;
     margin-left: 5px;
     margin-right: 5px;
+    font-size: 0.65em;
     border: 1px solid #555;
-
+    border-radius: 5px;
+    background: #333;
+    color: #999;
+    
     &.is-selected {
-      border-color: white;
-
       .img-wrapper {
         opacity: 1;
       }
@@ -1653,7 +1657,7 @@ body.no_scroll {
       background: white;
 
       .txt {
-        color: #333;
+        color: #999;
       }
     }
 
@@ -1674,6 +1678,7 @@ body.no_scroll {
         margin-left: 2px;
         margin-right: 2px;
         position: relative;
+        background: #333;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1763,6 +1768,7 @@ body.no_scroll {
         &.open,
         &.active {
           background: white;
+          border-color: #333;
 
           &:before {
             color: black;
@@ -1857,23 +1863,7 @@ body.no_scroll {
 }
 
 body.dark {
-  background-color: black;
-  transition: background-color 1s ease-in-out;
 
-  #top_menu h1 {
-    color: white;
-    transition: color 1s ease-in-out;
-  }
-
-  #menu_lateral_btn .a {
-    fill: white;
-    transition: fill 1s ease-in-out;
-  }
-
-  #top_menu .right_area {
-    color: white;
-    transition: color 1s ease-in-out;
-  }
 }
 
 .txt-content {

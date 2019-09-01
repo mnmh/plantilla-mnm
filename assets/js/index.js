@@ -195,14 +195,14 @@ OBJLoader(three__WEBPACK_IMPORTED_MODULE_0__);
 
             if (child.name == 'Curve.008') {
               var mat = new three__WEBPACK_IMPORTED_MODULE_0__["MeshBasicMaterial"]({
-                color: 0xefabc8,
+                color: 0x8ea2a1,
                 wireframe: true,
                 transparent: true
               });
-              mat.opacity = 1;
+              mat.opacity = 0.5;
             } else {
               var mat = new three__WEBPACK_IMPORTED_MODULE_0__["MeshBasicMaterial"]({
-                color: 0x999999,
+                color: 0xdcd8cd,
                 wireframe: true,
                 transparent: false
               });
@@ -235,7 +235,7 @@ OBJLoader(three__WEBPACK_IMPORTED_MODULE_0__);
           if (x_coor != '' && y_coor != '' && z_coor != '') {
             var geometry = new three__WEBPACK_IMPORTED_MODULE_0__["SphereGeometry"](0.02, 10, 10);
             if (z_coor == 1) var material = new three__WEBPACK_IMPORTED_MODULE_0__["MeshBasicMaterial"]({
-              color: 0xFFFFFF
+              color: 0xefabc8
             });else var material = new three__WEBPACK_IMPORTED_MODULE_0__["MeshBasicMaterial"]({
               color: 0xefabc8
             });
