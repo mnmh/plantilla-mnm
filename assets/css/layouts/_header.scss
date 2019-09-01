@@ -115,8 +115,8 @@ button {
   @media screen and (min-width: 1024px) {
     &.small {
       #menu_lateral_btn {
-        width: 58px;
-        height: 58px;
+        width: $ancho_small;
+        height: $ancho_small;
       }
 
       #logoAni {
@@ -197,6 +197,10 @@ button {
     @include center-all();
     width: 15px;
     height: 15px;
+
+    .menu_icon{
+      position: absolute;
+    }
   }
 
   .a {

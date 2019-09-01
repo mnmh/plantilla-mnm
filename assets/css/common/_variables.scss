@@ -15,13 +15,13 @@ $rosado: #fcebeb;
 
 $ancho: 350px;
 $ancho2: 280px;
-$ancho_tercio: 117px;
-$altura_menu: 117px;
+$ancho_tercio: 70px;
+$altura_menu: 60px;
 
 $dobleancho: 700px;
 $tripleancho: 1050px;
 
-$ancho_small: 58px;
+$ancho_small: 50px;
 
 @mixin top-offset($pos) {
   -moz-transform: translateY($pos);

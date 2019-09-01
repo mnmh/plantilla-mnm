@@ -126,7 +126,7 @@
 
             $('#menu_lateral_btn').on('click', function(){
                 if($(this).hasClass('animActive')){
-                    // tl.reverse();
+                    // tl.reverse();    
                     $(this).removeClass('animActive')
 
                     var tl_btn = new TimelineMax();

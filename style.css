@@ -368,7 +368,7 @@ body {
 
 #menu_lateral {
   position: fixed;
-  top: 117px;
+  top: 60px;
   left: 0;
   z-index: 110;
   background: transparent;
@@ -389,7 +389,7 @@ body {
         #menu_lateral .menu-wrapper .main-menu {
           width: 350px; } }
       #menu_lateral .menu-wrapper .main-menu .item {
-        margin-left: 117px;
+        margin-left: 70px;
         text-align: left;
         margin-bottom: 4em; }
         #menu_lateral .menu-wrapper .main-menu .item:nth-child(2) {
@@ -6032,8 +6032,8 @@ button {
     transition: transform 300ms, box-shadow 300ms, background 300ms, top 0ms linear 0ms; }
   @media screen and (min-width: 1024px) {
     #top_menu.small #menu_lateral_btn {
-      width: 58px;
-      height: 58px; }
+      width: 50px;
+      height: 50px; }
     #top_menu.small #logoAni {
       height: 58px; } }
   #top_menu .container {
@@ -6082,14 +6082,14 @@ button {
 
 #menu_lateral_btn {
   transition: all 0.2s ease;
-  width: 58px;
-  height: 58px;
+  width: 50px;
+  height: 50px;
   position: relative;
   padding: 10px; }
   @media screen and (min-width: 1024px) {
     #menu_lateral_btn {
-      width: 117px;
-      height: 117px;
+      width: 70px;
+      height: 70px;
       cursor: pointer; } }
   #menu_lateral_btn .inside {
     position: absolute;
@@ -6102,6 +6102,8 @@ button {
     transform: translateX(-50%) translateY(-50%);
     width: 15px;
     height: 15px; }
+    #menu_lateral_btn .inside .menu_icon {
+      position: absolute; }
   #menu_lateral_btn .a {
     fill: #222; }
   #menu_lateral_btn:hover .a {
@@ -6457,7 +6459,10 @@ body#tinymce {
   margin: 12px !important; }
 
 #contenidoGeneral {
-  margin-top: 117px; }
+  margin-top: 50px; }
+  @media all and (min-width: 1024px) {
+    #contenidoGeneral {
+      margin-top: 70px; } }
   #contenidoGeneral p {
     max-width: 700px;
     margin: 0 auto; }

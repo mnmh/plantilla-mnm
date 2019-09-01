@@ -1,5 +1,9 @@
 #contenidoGeneral {
-    margin-top: 117px;
+    margin-top: $ancho_small;
+
+    @media all and (min-width: 1024px) {
+        margin-top: $ancho_tercio;
+    }
 
     p {
         max-width: 700px;
