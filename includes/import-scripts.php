@@ -21,6 +21,9 @@ function header_scripts()
         wp_register_script('menu', get_template_directory_uri() . '/js/common/menu.js', array('jquery'), '1.0.0');
         wp_enqueue_script('menu');
 
+        wp_register_script('listadoMenu', get_template_directory_uri() . '/js/common/listadoMenu.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('listadoMenu');
+
         // Cargar elementos
         wp_register_script('arte-cultura', get_template_directory_uri() . '/js/elementos/arte-cultura.js', array('jquery'), '1.0.0');
         wp_enqueue_script('arte-cultura');

@@ -13,7 +13,7 @@ define("LABORATORIO", get_permalink(85));
 define("PROGRAMACION", get_blogInfo('url') . '/programacion');
 define("ARTE", get_blogInfo('url') . '/arte-y-cultura');
 
-define("PROYECTO", get_permalink(65));
+define("PROYECTO", get_permalink(4403));
 define("OBRA", get_blogInfo('url') . '/obras');
 define("CONCURSO", get_permalink(67));
 define("EDIFICIO", get_permalink(69));

@@ -11,7 +11,27 @@
 	?>
 	<div class="columnas">
 		<div class="left">
-		
+			<?php
+				$parentID = $post->post_parent;
+				$args = array(
+					'post_parent' => $parentID,
+					'numberposts' => -1,
+					'post_type' => 'page',
+					'order' => 'ASC'
+				);
+
+				$children = get_children($args);
+
+				// print_r($children);
+
+				foreach($children as $child):
+
+					$class = '';
+					if($post->ID == $child->ID)
+						$class = 'active';
+			?>
+				<a href="<?php echo get_permalink($child->ID) ?>" class="<?php echo $class ?> itemList"><?php echo $child->post_title ?></a>
+			<?php endforeach;?>
 		</div>
 		<div class="right">
 			<?php

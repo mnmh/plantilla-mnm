@@ -10,7 +10,7 @@
 			</div>
 			<nav class="secondLvl">
 				<ul>
-					<li><a href="{{PROYECTO}}" data-target="#" class="itemChild">
+					<li><a href="<?php echo PROYECTO ?>" data-target="#" class="itemChild">
 						<span>Proyecto</span>
 					</a></li>
 					<li><a href="{{PUBLICACIONES}}" data-target="#" class="itemChild">
@@ -56,7 +56,10 @@
 			<nav class="secondLvl">
 				<ul>
 					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
-						<span>Voces para transformar</span>
+						<span>Educación</span>
+					</a></li>
+					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
+						<span>Agenda</span>
 					</a></li>			
 				</ul>
 			</nav>

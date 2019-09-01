@@ -6026,10 +6026,6 @@ button {
   #top_menu.style {
     color: black;
     background: white; }
-    body.home #top_menu.style h1,
-    body.home #top_menu.style h4,
-    body.home #top_menu.style .right_area {
-      color: black; }
   #top_menu.on {
     position: fixed;
     top: -100%; }
@@ -6055,15 +6051,11 @@ button {
     color: #333;
     margin: 0;
     padding: 0;
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 600;
     display: block;
-    margin-left: 5vw;
     line-height: 15px;
     font-weight: 600; }
-    @media screen and (min-width: 1024px) {
-      #top_menu h1 {
-        margin-left: 190px; } }
   body.fp-viewing-1 #top_menu h1,
   body.fp-viewing-1 #top_menu h4,
   body.fp-viewing-1 #top_menu .right_area,
@@ -7327,8 +7319,23 @@ body#tinymce {
   display: flex; }
   .columnas .left {
     width: 300px;
-    border-right: 1px solid #dcdcdc; }
+    border-right: 1px solid #dcdcdc;
+    transition: all 0.25s ease; }
+    .columnas .left.scroll {
+      padding-top: 10px; }
+    .columnas .left .itemList {
+      display: block;
+      padding-top: 0.1em;
+      padding-bottom: 0.1em;
+      padding-left: 70px; }
+      .columnas .left .itemList.active {
+        font-weight: bold; }
   .columnas .right {
     width: calc(100% - 250px);
     padding-left: 10px;
     padding-right: 10px; }
+  @media all and (max-width: 1024px) {
+    .columnas .left {
+      display: none; }
+    .columnas .right {
+      width: 100%; } }

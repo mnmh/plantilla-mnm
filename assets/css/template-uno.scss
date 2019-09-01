@@ -4,11 +4,37 @@
     .left {
         width: 300px;
         border-right: 1px solid #dcdcdc;
+        transition: all 0.25s ease;
+
+        &.scroll {
+            padding-top: 10px;
+        }
+
+        .itemList {
+            display: block;
+            padding-top: 0.1em;
+            padding-bottom: 0.1em;
+            padding-left: $ancho_tercio;
+
+            &.active {
+                font-weight: bold;
+            }
+        }
     }
 
     .right {
         width: calc(100% - 250px);
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    @media all and (max-width: 1024px) {
+        .left {
+            display: none;
+        }
+
+        .right {
+            width: 100%;
+        }
     }
 }

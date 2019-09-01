@@ -9,7 +9,7 @@
 
 				<!-- Titulo -->
 				<h1 id="title">
-					<a href="<?php get_blogInfo('url') ?>"><?php get_blogInfo('name') ?></a>
+					<a href="<?php echo get_blogInfo('url') ?>"><?php echo get_blogInfo('name') ?></a>
 				</h1>
 			</div>
 		</div>
