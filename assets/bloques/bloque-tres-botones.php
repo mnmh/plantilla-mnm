@@ -17,8 +17,8 @@ $id = 'bloque-' . $block['id'];
             <li class="boton"><a href="#">
                 <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
                 <div class="name">
-                    <h2><?php the_sub_field('nombre') ?></h2>
-                    <h4><?php the_sub_field('descripcion') ?>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat ultrices lectus nec interdum.</h4>
+                    <h1><?php the_sub_field('descripcion') ?>Lorem ipsum dolor sit amet consectetur</h1>
+                    <h4><?php the_sub_field('nombre') ?></h4>
                 </div>
             </a></li>
         <?php endwhile; endif; ?>

@@ -12,6 +12,7 @@
             height: 300px;
             position: relative;
             margin: 0.5%;
+            padding: 32px;
 
             &:nth-child(1) {
                 background-color:#225DDC;
@@ -36,21 +37,22 @@
             }
 
             .name {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                //background: rgba(255,255,255,0.8);
-                padding: 10px;
+
+                h1 {
+                    font-size: 56px;
+                }
+                
 
                 h4 {
                     font-weight: normal;
                     margin-top: 10px;
                     padding-top: 5px;
-                }
+                    bottom: 0;
+                    }
             }
         }
     }
+    
 
     @media all and (max-width: 1000px) {
         .botones {
