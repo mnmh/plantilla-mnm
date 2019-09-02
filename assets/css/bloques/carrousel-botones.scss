@@ -1,9 +1,11 @@
 .botones-carrousel {
-    cursor: grab;
+    
     position: relative;
+    
 
     .hori_scroll {
         top: 60%;
+        width: 95%;
 
         div {
             border-radius: 20px;
@@ -12,7 +14,11 @@
         }
     }
 
+    .botones {
+        transform: translate(-10%, 0);
+    }
     .boton {
+        cursor: grab;
         width: 20.625em;
         height: 23.7em;
         display: inline-block;

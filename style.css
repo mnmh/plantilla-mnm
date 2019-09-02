@@ -6813,15 +6813,18 @@ body#tinymce {
     transition: opacity 300ms; }
 
 .botones-carrousel {
-  cursor: grab;
   position: relative; }
   .botones-carrousel .hori_scroll {
-    top: 60%; }
+    top: 60%;
+    width: 95%; }
     .botones-carrousel .hori_scroll div {
       border-radius: 20px;
       opacity: 1;
       font-weight: bold; }
+  .botones-carrousel .botones {
+    transform: translate(-10%, 0); }
   .botones-carrousel .boton {
+    cursor: grab;
     width: 20.625em;
     height: 23.7em;
     display: inline-block;
