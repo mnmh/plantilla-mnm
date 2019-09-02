@@ -7043,15 +7043,28 @@ body#tinymce {
         content: '\E80F'; }
 
 .banner.banner-margenes {
-  background: #3B3B3B; }
+  background: #3B3B3B;
+  margin: 0 0 100px 0; }
   .banner.banner-margenes .contenedor-carrusel {
     max-width: 1600px;
     margin: auto; }
+    .banner.banner-margenes .contenedor-carrusel .content {
+      padding-left: 20px; }
+    .banner.banner-margenes .contenedor-carrusel .subtitulo {
+      text-transform: uppercase;
+      color: #9A9A9A; }
     .banner.banner-margenes .contenedor-carrusel .img {
       width: 70%;
       height: 90%;
       right: 0;
       bottom: 0; }
+    .banner.banner-margenes .contenedor-carrusel .btn {
+      color: white;
+      background-color: #F4C724;
+      border: none;
+      font-weight: bold;
+      margin-top: 20px;
+      padding: 8px 28px 8px 28px; }
     .banner.banner-margenes .contenedor-carrusel .nav .item {
       border-color: white;
       border: none; }
