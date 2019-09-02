@@ -7325,7 +7325,7 @@ body#tinymce {
         background-size: cover;
         background-position: center; }
       .tres-botones .botones .boton .name h1 {
-        font-size: 48px; }
+        font-size: 38px; }
       .tres-botones .botones .boton .name h4 {
         font-family: 'CircularStd', sans-serif;
         font-weight: 600;
@@ -7334,7 +7334,13 @@ body#tinymce {
         margin-top: 10px;
         padding-top: 5px;
         position: absolute;
-        bottom: 30px; }
+        bottom: 30px;
+        width: 85%; }
+        .tres-botones .botones .boton .name h4::before {
+          position: absolute;
+          font-family: 'mnm';
+          content: '\E80E';
+          right: 0; }
   @media all and (max-width: 1000px) {
     .tres-botones .botones {
       flex-wrap: wrap; }
