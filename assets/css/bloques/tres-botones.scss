@@ -2,6 +2,7 @@
     width: 90%;
     margin: auto;
     max-width: 1600px;
+    color: white;
 
     .botones {
         display: flex;
@@ -12,6 +13,18 @@
             position: relative;
             margin: 0.5%;
 
+            &:nth-child(1) {
+                background-color:#225DDC;
+            }
+      
+            &:nth-child(2) {
+                background-color:#F4C724;
+            }
+    
+            &:nth-child(3) {
+                background-color:#3B3B3B;
+            }
+    
             .img {
                 position: absolute;
                 top: 0;
@@ -27,12 +40,11 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background: rgba(255,255,255,0.8);
+                //background: rgba(255,255,255,0.8);
                 padding: 10px;
 
                 h4 {
                     font-weight: normal;
-                    border-top: 1px dotted #999;
                     margin-top: 10px;
                     padding-top: 5px;
                 }

@@ -7300,7 +7300,8 @@ body#tinymce {
 .tres-botones {
   width: 90%;
   margin: auto;
-  max-width: 1600px; }
+  max-width: 1600px;
+  color: white; }
   .tres-botones .botones {
     display: flex; }
     .tres-botones .botones .boton {
@@ -7308,6 +7309,12 @@ body#tinymce {
       height: 300px;
       position: relative;
       margin: 0.5%; }
+      .tres-botones .botones .boton:nth-child(1) {
+        background-color: #225DDC; }
+      .tres-botones .botones .boton:nth-child(2) {
+        background-color: #F4C724; }
+      .tres-botones .botones .boton:nth-child(3) {
+        background-color: #3B3B3B; }
       .tres-botones .botones .boton .img {
         position: absolute;
         top: 0;
@@ -7321,11 +7328,9 @@ body#tinymce {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: rgba(255, 255, 255, 0.8);
         padding: 10px; }
         .tres-botones .botones .boton .name h4 {
           font-weight: normal;
-          border-top: 1px dotted #999;
           margin-top: 10px;
           padding-top: 5px; }
   @media all and (max-width: 1000px) {
