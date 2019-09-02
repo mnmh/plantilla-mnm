@@ -6828,8 +6828,6 @@ body#tinymce {
       border-radius: 20px;
       opacity: 1;
       font-weight: bold; }
-  .botones-carrousel .botones {
-    transform: translate(-10%, 0); }
   .botones-carrousel .boton {
     cursor: grab;
     width: 20.625em;
