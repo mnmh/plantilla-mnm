@@ -6819,7 +6819,8 @@ body#tinymce {
     width: 100%;
     max-width: 1600px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-left: 20px; }
   .botones-carrousel .hori_scroll {
     top: 60%;
     width: 95%;
