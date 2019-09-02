@@ -36,20 +36,23 @@ $titulo = get_field('titulo_del_carrousel');
                     <div class="image-wrapper itinerancias" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')">
                 <?php endif; ?>
 
-                    <div class="inside_content">
-                        <?php if($subtitulo): ?>
-                            <h3><?php echo $subtitulo ?></h3>
-                        <?php endif ?>
-                        <?php if($titulo_item): ?>
-                            <h2><?php echo $titulo_item ?></h2>
-                        <?php endif ?>
-                        <?php if($descripcion): ?>
-                            <div class="descripcion">
-                                <?php echo $descripcion ?>
-                            </div>
-                        <?php endif ?>
-                    </div>
+                    <div class="opacity-layer">
 
+                        <div class="inside_content">
+                            <?php if($subtitulo): ?>
+                                <h3><?php echo $subtitulo ?></h3>
+                            <?php endif ?>
+                            <?php if($titulo_item): ?>
+                                <h2><?php echo $titulo_item ?></h2>
+                            <?php endif ?>
+                            <?php if($descripcion): ?>
+                                <div class="descripcion">
+                                    <?php echo $descripcion ?>
+                                </div>
+                            <?php endif ?>
+                        </div>
+
+                    </div>
 
                 <?php if($enlace): ?>
                     </a>
