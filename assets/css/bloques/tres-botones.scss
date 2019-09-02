@@ -34,21 +34,27 @@
                 height: 100%;
                 background-size: cover;
                 background-position: center;
+
+                
             }
 
             .name {
+                //position: relative;
 
                 h1 {
-                    font-size: 56px;
+                    font-size: 48px;
                 }
-                
 
                 h4 {
-                    font-weight: normal;
+                    font-family: 'CircularStd', sans-serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: 16px;
                     margin-top: 10px;
                     padding-top: 5px;
-                    bottom: 0;
-                    }
+                    position: absolute;
+                    bottom: 30px;
+                 }
             }
         }
     }
