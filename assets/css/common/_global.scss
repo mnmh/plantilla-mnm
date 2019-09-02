@@ -144,7 +144,7 @@ h5 {
   line-height: 2;
   color: #222;
   margin: em(20) 0 em(50);
-  font-size: em(14);
+  font-size: 16px;
 
   a {
     font-style: italic;
@@ -154,17 +154,17 @@ h5 {
   &.copy-des {
     font-family: 'Inter', sans-serif;
     line-height: 1.75;
-    font-size: rem(16);
+    font-size: 16px;
     padding: em(10) 0 em(40);
     margin: 0;
     color: black;
 
     @media screen and (min-width: 850px) {
-      font-size: rem(18);
+      font-size: 16px;
     }
 
     @media screen and (min-width: 1024px) {
-      // font-size: rem(19);
+      font-size: 16px;
     }
   }
 

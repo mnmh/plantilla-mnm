@@ -122,8 +122,9 @@
     
 
     .item {
-        width: 32.33%;
+        width: 24%;
         margin: 0.5%;
+        border: #C9C9C9 1px solid;
 
         @media all and (max-width: 850px) {
             width: 99%;
@@ -142,10 +143,22 @@
             position: relative;
         }
 
-        h3 {
-            text-align: left;
-            margin-top: 2.5%;
-            margin-bottom: 5%;
+        .tarjeta-description {
+            padding: 15px;
+
+            h3 {
+                text-align: left;
+                margin-bottom: 5px;
+                color: #3B3B3B;
+            }
+
+            .texto-descriptivo {
+                color: #C9C9C9;
+                font-weight: 300;
+                text-align: left;
+                font-size: 16px !important;
+                color: #C9C9C9 !important;
+            }
         }
     }
 

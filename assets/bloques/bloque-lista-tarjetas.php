@@ -9,7 +9,7 @@ $id = 'botones-' . $block['id'];
 
 ?>
 
-<div class="tarjetas galeria pad btm">
+<div class="tarjetas galeria btm">
     <h1 class="sec">Tarjetas</h1>
 
     <div class="inside">
@@ -38,7 +38,11 @@ $id = 'botones-' . $block['id'];
             <?php endif; ?>
 
             <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
-            <h3><?php echo $titulo ?></h3>
+
+            <div class="tarjeta-description">
+                <h3><?php echo $titulo ?></h3>
+                <p class="texto-descriptivo"> Lorem ipsum dolor sit amet, consectetur </p>
+            </div>
         </div>
     <?php endwhile; endif; ?>
     </div>
