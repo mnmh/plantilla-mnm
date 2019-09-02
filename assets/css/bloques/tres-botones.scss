@@ -3,13 +3,14 @@
     margin: auto;
     max-width: 1600px;
     color: white;
+    margin-bottom: 5vh;
 
     .botones {
         display: flex;
 
         .boton {
-            width: 32.33%;
-            height: 300px;
+            width: 32.33vw;
+            height: 22vw;
             position: relative;
             margin: 0.5%;
             padding: 32px;

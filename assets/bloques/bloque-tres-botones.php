@@ -8,7 +8,7 @@
 $id = 'bloque-' . $block['id'];
 ?>
 
-<div class="pad tres-botones btm">
+<div class="tres-botones">
     <ul class="botones">
         <?php if(have_rows('listado_botones')): while(have_rows('listado_botones')): the_row(); ?>
         <?php
