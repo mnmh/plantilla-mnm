@@ -12,6 +12,17 @@
         
     }
 
+    .descripcion{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+
+    }
+
     .hori_scroll {
         top: 60%;
         width: 95%;
@@ -37,9 +48,9 @@
         max-width: 748px;
         padding: 2.5em 0 2em;
         border-bottom: 1px solid #ccc;
-        font-family: 'Merriweather', serif;
+        font-family: 'Inter', sans-serif;
         line-height: 2;
-        color: #666;
+        color: #9A9A9A;
         font-size: 0.75em;
         width: 75%;
 
@@ -66,6 +77,8 @@
 
     .profiles-list {
         width: 100%;
+        max-width: 1600px;
+        margin: auto;
     }
 
     .profiles-item {
@@ -88,7 +101,7 @@
             width: 100%;
             align-content: flex-end;
             background: rgba(0, 0, 0, 0);
-            padding: 0.5em;
+            padding: 2em;
             color: white;
 
             h2,
@@ -134,7 +147,13 @@
                 width: em(330);
                 height: em(460);
             }
+
+            &.itinerancias{
+                width: 25.6vw;
+                height: 35vw;
+            }
         }
+
 
         h2 {
             @media screen and (min-width: 1000px) {

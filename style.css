@@ -6717,6 +6717,12 @@ body#tinymce {
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px; }
+  .carrousel-vertical-container .descripcion {
+    font-size: 16px;
+    font-weight: 500; }
+  .carrousel-vertical-container h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; }
   .carrousel-vertical-container .hori_scroll {
     top: 60%;
     width: 95%;
@@ -6734,9 +6740,9 @@ body#tinymce {
     max-width: 748px;
     padding: 2.5em 0 2em;
     border-bottom: 1px solid #ccc;
-    font-family: 'Merriweather', serif;
+    font-family: 'Inter', sans-serif;
     line-height: 2;
-    color: #666;
+    color: #9A9A9A;
     font-size: 0.75em;
     width: 75%; }
     .carrousel-vertical-container .des.active {
@@ -6752,7 +6758,9 @@ body#tinymce {
   .carrousel-vertical-container:active {
     cursor: grabbing; }
   .carrousel-vertical-container .profiles-list {
-    width: 100%; }
+    width: 100%;
+    max-width: 1600px;
+    margin: auto; }
   .carrousel-vertical-container .profiles-item {
     margin-right: 0.3125em;
     overflow: hidden;
@@ -6771,7 +6779,7 @@ body#tinymce {
       width: 100%;
       align-content: flex-end;
       background: rgba(0, 0, 0, 0);
-      padding: 0.5em;
+      padding: 2em;
       color: white; }
       .carrousel-vertical-container .profiles-item .inside_content h2,
       .carrousel-vertical-container .profiles-item .inside_content h3 {
@@ -6801,6 +6809,9 @@ body#tinymce {
         .carrousel-vertical-container .profiles-item .image-wrapper {
           width: 20.625em;
           height: 28.75em; } }
+      .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias {
+        width: 25.6vw;
+        height: 35vw; }
     @media screen and (min-width: 1000px) {
       .carrousel-vertical-container .profiles-item h2 {
         font-size: 2.8125em; } }

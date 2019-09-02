@@ -33,7 +33,7 @@ $titulo = get_field('titulo_del_carrousel');
                 <?php if($enlace): ?>
                     <a href="<?php echo $enlace; ?>" target="_blank" class="image-wrapper" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')">
                 <?php else: ?>
-                    <div class="image-wrapper" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')">
+                    <div class="image-wrapper itinerancias" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')">
                 <?php endif; ?>
 
                     <div class="inside_content">
