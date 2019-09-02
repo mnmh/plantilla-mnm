@@ -7127,7 +7127,12 @@ body#tinymce {
 
 .tarjetas {
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  width: 90%;
+  margin: auto;
+  max-width: 1600px;
+  color: white;
+  margin-bottom: 5vh; }
   .tarjetas .enlaces li a:hover {
     opacity: 1; }
     .tarjetas .enlaces li a:hover .img-wrapper::before, .tarjetas .enlaces li a:hover .img-wrapper::after {

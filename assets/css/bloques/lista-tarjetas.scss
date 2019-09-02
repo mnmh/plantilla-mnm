@@ -1,6 +1,12 @@
 .tarjetas {
     position: relative;
     z-index: 2;
+    
+    width: 90%;
+    margin: auto;
+    max-width: 1600px;
+    color: white;
+    margin-bottom: 5vh;
 
     .enlaces li a:hover {
         opacity: 1;
