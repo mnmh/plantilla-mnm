@@ -183,8 +183,8 @@ h5 {
       font-size: 2.5em; } }
 
 .pad {
-  margin: 0 1.25rem;
-  max-width: 68.75em; }
+  margin: 0 auto;
+  max-width: 1600px; }
   @media screen and (min-width: 650px) {
     .pad {
       margin-left: calc(1.25rem + 0.9375rem + 5vw);
@@ -6710,6 +6710,21 @@ body#tinymce {
 .carrousel-vertical-container {
   cursor: grab;
   position: relative; }
+  .carrousel-vertical-container .sec {
+    display: block;
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px; }
+  .carrousel-vertical-container .hori_scroll {
+    top: 60%;
+    width: 95%;
+    left: 2.5%; }
+    .carrousel-vertical-container .hori_scroll div {
+      border-radius: 20px;
+      opacity: 1;
+      font-weight: bold; }
   .carrousel-vertical-container.mediadores .hori_scroll {
     top: -50px;
     right: auto;

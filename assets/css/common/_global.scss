@@ -198,8 +198,8 @@ h5 {
 }
 
 .pad {
-  margin: 0 1.25rem;
-  max-width: em(1100);
+  margin: 0 auto;
+  max-width: 1600px;
 
   @media screen and (min-width: 650px) {
     margin-left: calc(1.25rem + 0.9375rem + 5vw);
