@@ -12,7 +12,7 @@ $titulo = get_field('titulo');
 ?>
 
 <div class="botones-carrousel btm">
-    <h1 class="sec pad"><?php echo $titulo; ?></h1>
+    <h1 class="sec"><?php echo $titulo; ?></h1>
     <nav class="hori_scroll">
         <div class="prev"></div>
         <div class="next"></div>

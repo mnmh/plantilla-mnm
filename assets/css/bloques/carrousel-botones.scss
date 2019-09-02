@@ -1,11 +1,18 @@
 .botones-carrousel {
-    
     position: relative;
     
-
+    .sec {
+        display: block;
+        width: 100%;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .hori_scroll {
         top: 60%;
         width: 95%;
+        left: 2.5%;
 
         div {
             border-radius: 20px;

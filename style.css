@@ -6814,9 +6814,16 @@ body#tinymce {
 
 .botones-carrousel {
   position: relative; }
+  .botones-carrousel .sec {
+    display: block;
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto; }
   .botones-carrousel .hori_scroll {
     top: 60%;
-    width: 95%; }
+    width: 95%;
+    left: 2.5%; }
     .botones-carrousel .hori_scroll div {
       border-radius: 20px;
       opacity: 1;
@@ -7054,7 +7061,7 @@ body#tinymce {
 
 .banner.banner-margenes {
   background: #3B3B3B;
-  margin: 0 0 100px 0; }
+  margin: 0 0 80px 0; }
   .banner.banner-margenes .contenedor-carrusel {
     max-width: 1600px;
     margin: auto; }
