@@ -21,8 +21,10 @@ $id = 'bloque-' . $block['id'];
         </div>
         <div class="inside">
             <div class="content">
+                <div class="subtitulo">sub titulo</div>
                 <h1 class="titulo"><strong></strong></h1>
                 <div class="txt"></div>
+                <div class="btn">ver más</div>
             </div>
         </div>
         <div class="nav">

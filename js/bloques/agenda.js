@@ -10,7 +10,13 @@
             $('.agenda .nav .btn').on('click', function() {
                 $('.agenda .nav .active').removeClass('active');
                 $(this).addClass('active');
+                var div = $(this).attr('data-div');
+                $parent = $(this).parent().parent();
+                $parent.find('.agenda_dias, .calendario_mes').hide();
+                $parent.find('.' + div).show();
             });
+
+            $('.agenda .nav .btn:first-child').click();
         }
 
         function iniciarAgenda() {

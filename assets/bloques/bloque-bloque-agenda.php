@@ -106,8 +106,8 @@ endforeach;
 <div class="agenda pad medallo">
 
     <div class="nav">
-        <div class="btn active">Vista por días</div>
-        <div class="btn">Vista por mes</div>
+        <div data-div="agenda_dias" class="btn active">Vista por días</div>
+        <div data-div="calendario_mes" class="btn">Vista por mes</div>
     </div>
     
     <div class="agenda_dias">
