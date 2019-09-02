@@ -34,13 +34,13 @@
 					<li><a href="<?php echo ARTE; ?>" class="itemChild">
 					<span>Arte y Cultura</span>
 					</a></li>
-					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
+					<li><a href="<?php echo VOCES?>" data-target="#" class="itemChild">
 						<span>Voces para transfromar</span>
 					</a></li>
-					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
+					<li><a href="#" data-target="#" class="itemChild">
 						<span>Archivo DDHH</span>
 					</a></li>
-					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
+					<li><a href="http://centrodememoriahistorica.gov.co/observatorio/" data-target="#" class="itemChild">
 						<span>Observatorio de cifras</span>
 					</a></li>		
 				</ul>

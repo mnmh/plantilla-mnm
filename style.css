@@ -409,7 +409,9 @@ body {
               #menu_lateral .menu-wrapper .main-menu .item:nth-child(2):before, #menu_lateral .menu-wrapper .main-menu .item:nth-child(3):before {
                 top: -1em; } }
         #menu_lateral .menu-wrapper .main-menu .item .name {
-          font-weight: bold; }
+          font-weight: bold;
+          position: relative;
+          left: -15px; }
         #menu_lateral .menu-wrapper .main-menu .item .des {
           font-weight: 250;
           font-style: italic;
