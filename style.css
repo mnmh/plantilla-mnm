@@ -6539,6 +6539,14 @@ body#tinymce {
   .btn.active {
     color: #333; }
 
+.subtitulo {
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px; }
+
 .calendario_mes {
   display: flex; }
   .calendario_mes .listado {
@@ -7255,78 +7263,83 @@ body#tinymce {
   cursor: pointer;
   margin-left: 0.5%; }
 
-.linea-tiempo .top {
-  margin-bottom: 50px; }
-  .linea-tiempo .top .item {
+.linea-tiempo {
+  width: 90%;
+  margin: auto;
+  max-width: 1600px;
+  color: white;
+  margin-bottom: 5vh; }
+  .linea-tiempo .top {
+    margin-bottom: 50px; }
+    .linea-tiempo .top .item {
+      display: flex;
+      justify-content: space-between;
+      display: none; }
+      .linea-tiempo .top .item .img {
+        height: 550px;
+        width: 50%;
+        background-size: cover;
+        background-position: center; }
+      .linea-tiempo .top .item.active {
+        display: flex; }
+      .linea-tiempo .top .item h2 {
+        margin-bottom: 20px; }
+  .linea-tiempo .nav {
     display: flex;
-    justify-content: space-between;
-    display: none; }
-    .linea-tiempo .top .item .img {
-      height: 550px;
-      width: 50%;
-      background-size: cover;
-      background-position: center; }
-    .linea-tiempo .top .item.active {
-      display: flex; }
-    .linea-tiempo .top .item h2 {
-      margin-bottom: 20px; }
-
-.linea-tiempo .nav {
-  display: flex;
-  justify-content: center; }
-  .linea-tiempo .nav .prev,
-  .linea-tiempo .nav .next {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 5px;
-    position: relative;
-    cursor: pointer;
-    color: #333;
-    font-family: 'mnm'; }
-  .linea-tiempo .nav .next::before,
-  .linea-tiempo .nav .prev::before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 40px;
-    font-family: 'mnm';
-    content: '\E80E'; }
-  .linea-tiempo .nav .prev::before {
-    content: '\E80F'; }
-  .linea-tiempo .nav .inside {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    margin-left: 20px;
-    margin-right: 20px; }
-  .linea-tiempo .nav .dot {
-    width: 20px;
-    height: 20px;
-    background: #ccc;
-    border-radius: 20px;
-    margin: 5px;
-    position: relative;
-    cursor: pointer; }
-    .linea-tiempo .nav .dot:hover {
-      background: #999; }
-    .linea-tiempo .nav .dot:before {
-      content: '';
-      width: 10px;
-      height: 10px;
-      border: 2px solid transparent;
+    justify-content: center; }
+    .linea-tiempo .nav .prev,
+    .linea-tiempo .nav .next {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 5px;
+      position: relative;
+      cursor: pointer;
+      color: #333;
+      font-family: 'mnm'; }
+    .linea-tiempo .nav .next::before,
+    .linea-tiempo .nav .prev::before {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      border-radius: 30px;
-      transition: all 0.25s ease; }
-    .linea-tiempo .nav .dot.active {
-      background: #999; }
-      .linea-tiempo .nav .dot.active:before {
-        width: 25px;
-        height: 25px;
-        border: 2px solid #ccc; }
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 40px;
+      font-family: 'mnm';
+      content: '\E80E'; }
+    .linea-tiempo .nav .prev::before {
+      content: '\E80F'; }
+    .linea-tiempo .nav .inside {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin-left: 20px;
+      margin-right: 20px; }
+    .linea-tiempo .nav .dot {
+      width: 20px;
+      height: 20px;
+      background: #ccc;
+      border-radius: 20px;
+      margin: 5px;
+      position: relative;
+      cursor: pointer; }
+      .linea-tiempo .nav .dot:hover {
+        background: #999; }
+      .linea-tiempo .nav .dot:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 2px solid transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 30px;
+        transition: all 0.25s ease; }
+      .linea-tiempo .nav .dot.active {
+        background: #999; }
+        .linea-tiempo .nav .dot.active:before {
+          width: 25px;
+          height: 25px;
+          border: 2px solid #ccc; }
 
 .banner.botones {
   height: 30vh; }
@@ -7366,13 +7379,16 @@ body#tinymce {
   color: white;
   margin-bottom: 5vh; }
   .tres-botones .botones {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     .tres-botones .botones .boton {
       width: 32.33vw;
-      height: 22vw;
+      height: 32.33vw;
       position: relative;
       margin: 0.5%;
-      padding: 32px; }
+      padding: 32px;
+      max-width: 400px;
+      max-height: 400px; }
       .tres-botones .botones .boton:nth-child(1) {
         background-color: #225DDC; }
       .tres-botones .botones .boton:nth-child(2) {

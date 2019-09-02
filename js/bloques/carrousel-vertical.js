@@ -7,7 +7,8 @@
             var flkty = new Flickity(this, {
                 prevNextButtons: false,
                 pageDots: false,
-                cellAlign: 'left',
+                cellAlign: 'center',
+                wrapAround: true
             });
 
             flkty.on('select', function () {

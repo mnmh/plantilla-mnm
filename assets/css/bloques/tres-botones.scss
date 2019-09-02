@@ -7,13 +7,16 @@
 
     .botones {
         display: flex;
+        justify-content: center;
 
         .boton {
             width: 32.33vw;
-            height: 22vw;
+            height: 32.33vw;
             position: relative;
             margin: 0.5%;
             padding: 32px;
+            max-width: 400px;
+            max-height: 400px;
 
             &:nth-child(1) {
                 background-color:#225DDC;
