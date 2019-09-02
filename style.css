@@ -6119,7 +6119,18 @@ button {
   text-transform: lowercase;
   display: inline-block;
   position: relative;
-  margin-bottom: 1.25em; }
+  margin-bottom: 1.25em;
+  color: #3B3B3B;
+  /*&::before {
+    content: '';
+    display: block;
+    width: 110%;
+    height: 2px;
+    background: black;
+    bottom: -2px;
+    left: 19px;
+    position: absolute;
+  }*/ }
   @media screen and (min-width: 650px) {
     .section-title,
     .sec {
@@ -6128,16 +6139,6 @@ button {
     .section-title,
     .sec {
       font-size: 2.1875rem; } }
-  .section-title::before,
-  .sec::before {
-    content: '';
-    display: block;
-    width: 110%;
-    height: 2px;
-    background: black;
-    bottom: -2px;
-    left: 19px;
-    position: absolute; }
 
 header.section-header {
   width: 100%;
@@ -6814,9 +6815,15 @@ body#tinymce {
 .botones-carrousel {
   cursor: grab;
   position: relative; }
+  .botones-carrousel .hori_scroll {
+    top: 60%; }
+    .botones-carrousel .hori_scroll div {
+      border-radius: 20px;
+      opacity: 1;
+      font-weight: bold; }
   .botones-carrousel .boton {
     width: 20.625em;
-    height: 20.625em;
+    height: 23.7em;
     display: inline-block;
     margin-right: 0.3125em; }
     .botones-carrousel .boton .img {
@@ -6831,7 +6838,7 @@ body#tinymce {
       padding: 0.5em;
       position: absolute;
       bottom: 0;
-      color: black;
+      color: #3B3B3B;
       transform: translate(0, 100%); }
     @media all and (min-width: 1024px) {
       .botones-carrousel .boton {

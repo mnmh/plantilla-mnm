@@ -2,9 +2,19 @@
     cursor: grab;
     position: relative;
 
+    .hori_scroll {
+        top: 60%;
+
+        div {
+            border-radius: 20px;
+            opacity: 1;
+            font-weight: bold;
+        }
+    }
+
     .boton {
         width: 20.625em;
-        height: 20.625em;
+        height: 23.7em;
         display: inline-block;
         margin-right: 0.3125em;
 
@@ -22,7 +32,7 @@
             padding: 0.5em;
             position: absolute;
             bottom: 0;
-            color: black;
+            color: #3B3B3B;
             transform: translate(0, 100%);
         }
 
