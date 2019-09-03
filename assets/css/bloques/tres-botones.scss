@@ -1,14 +1,35 @@
 .tres-botones {
+    width: 90%;
+    margin: auto;
+    max-width: 1600px;
+    color: white;
+    margin-bottom: 5vh;
 
     .botones {
         display: flex;
+        justify-content: center;
 
         .boton {
-            width: 32.33%;
-            height: 300px;
+            width: 32.33vw;
+            height: 32.33vw;
             position: relative;
             margin: 0.5%;
+            padding: 32px;
+            max-width: 400px;
+            max-height: 400px;
 
+            &:nth-child(1) {
+                background-color:#225DDC;
+            }
+      
+            &:nth-child(2) {
+                background-color:#F4C724;
+            }
+    
+            &:nth-child(3) {
+                background-color:#3B3B3B;
+            }
+    
             .img {
                 position: absolute;
                 top: 0;
@@ -20,23 +41,34 @@
             }
 
             .name {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: rgba(255,255,255,0.8);
-                padding: 10px;
+
+                h1 {
+                    font-size: 38px;
+                }
 
                 h4 {
-                    font-weight: normal;
-                    border-top: 1px dotted #999;
+                    font-family: 'CircularStd', sans-serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: 16px;
+
                     margin-top: 10px;
                     padding-top: 5px;
-                }
+                    position: absolute;
+                    bottom: 30px;
+                    width: 85%;
+
+                    &::before {
+                        position: absolute;
+                        font-family: 'mnm';
+                        content: '\E80E';
+                        right: 0;
+                    }
+                 }
             }
         }
     }
-
+    
     @media all and (max-width: 1000px) {
         .botones {
             flex-wrap: wrap;

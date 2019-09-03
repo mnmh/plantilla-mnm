@@ -9,7 +9,7 @@ $id = 'botones-' . $block['id'];
 $items_count = count(get_field('elementos'));
 ?>
 
-<div class="linea-tiempo pad btm">
+<div class="linea-tiempo btm">
     <h1 class="sec">Línea del tiempo</h1>
     <div class="top">
         <?php if(have_rows('elementos')): while(have_rows('elementos')): the_row(); ?>

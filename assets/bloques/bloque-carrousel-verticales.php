@@ -12,7 +12,7 @@ $titulo = get_field('titulo_del_carrousel');
 
 ?>
 
-<div class="carrousel-vertical-container pad btm">
+<div class="carrousel-vertical-container btm">
     <h1 class="sec"><?php echo $titulo; ?></h1>
     <nav class="hori_scroll">
         <div class="prev"></div>
@@ -33,23 +33,26 @@ $titulo = get_field('titulo_del_carrousel');
                 <?php if($enlace): ?>
                     <a href="<?php echo $enlace; ?>" target="_blank" class="image-wrapper" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')">
                 <?php else: ?>
-                    <div class="image-wrapper" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')">
+                    <div class="image-wrapper itinerancias" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')">
                 <?php endif; ?>
 
-                    <div class="inside_content">
-                        <?php if($subtitulo): ?>
-                            <h3><?php echo $subtitulo ?></h3>
-                        <?php endif ?>
-                        <?php if($titulo_item): ?>
-                            <h2><?php echo $titulo_item ?></h2>
-                        <?php endif ?>
-                        <?php if($descripcion): ?>
-                            <div class="descripcion">
-                                <?php echo $descripcion ?>
-                            </div>
-                        <?php endif ?>
-                    </div>
+                    <div class="opacity-layer">
 
+                        <div class="inside_content">
+                            <?php if($subtitulo): ?>
+                                <h3><?php echo $subtitulo ?></h3>
+                            <?php endif ?>
+                            <?php if($titulo_item): ?>
+                                <h2><?php echo $titulo_item ?></h2>
+                            <?php endif ?>
+                            <?php if($descripcion): ?>
+                                <div class="descripcion">
+                                    <?php echo $descripcion ?>
+                                </div>
+                            <?php endif ?>
+                        </div>
+
+                    </div>
 
                 <?php if($enlace): ?>
                     </a>
