@@ -11,6 +11,7 @@ $id = 'botones-' . $block['id'];
 
 <div class="tarjetas galeria btm">
     <h1 class="sec">Tarjetas</h1>
+    <div class="subtitulo-sec"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
 
     <div class="inside">
     <?php if(have_rows('tarjetas')): while(have_rows('tarjetas')): the_row(); ?>

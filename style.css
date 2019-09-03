@@ -7222,6 +7222,8 @@ body#tinymce {
   max-width: 1600px;
   color: white;
   margin-bottom: 5vh; }
+  .tarjetas h1.sec {
+    padding-left: 20px; }
   .tarjetas .enlaces li a:hover {
     opacity: 1; }
     .tarjetas .enlaces li a:hover .img-wrapper::before, .tarjetas .enlaces li a:hover .img-wrapper::after {
