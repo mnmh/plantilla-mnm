@@ -42,27 +42,12 @@
 
             .play {
                 position: absolute;
-                bottom: 10px;
+                bottom: 20px;
                 left: 50%;
                 transform: translate(-50%, 0);
-                width: 50px;
-                height: 50px;
-                background: white;
-                border-radius: 50px;
                 opacity: 0;
                 transition: opacity 0.25s ease;
                 cursor: pointer;
-
-                &:before {
-                    content: '\e810';
-                    font-family: 'mnm';
-                    color: #555;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5em;
-                }
             }
 
             &.active {
@@ -105,8 +90,7 @@
     margin: auto;
 
     p {
-        margin: 4vh 0 !important;
-        
+        margin: 4vh 0 !important; 
     }
 
 }

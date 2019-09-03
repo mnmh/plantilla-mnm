@@ -6573,8 +6573,15 @@ body#tinymce {
   margin-bottom: 10px;
   margin-right: 10px;
   margin-top: 20px;
-  padding: 8px 28px 8px 28px;
+  padding: 8px 20px 8px 28px;
   border-radius: 40px; }
+  .btn-play:after {
+    content: '\e810';
+    font-family: 'mnm';
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px; }
 
 .subtitulo-sec {
   display: block;
@@ -7062,25 +7069,12 @@ body#tinymce {
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15); }
     .banner .tarjetas .item .play {
       position: absolute;
-      bottom: 10px;
+      bottom: 20px;
       left: 50%;
       transform: translate(-50%, 0);
-      width: 50px;
-      height: 50px;
-      background: white;
-      border-radius: 50px;
       opacity: 0;
       transition: opacity 0.25s ease;
       cursor: pointer; }
-      .banner .tarjetas .item .play:before {
-        content: '\e810';
-        font-family: 'mnm';
-        color: #555;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 1.5em; }
     .banner .tarjetas .item.active {
       transform: scale(1.15); }
       .banner .tarjetas .item.active .play {
