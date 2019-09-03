@@ -1,16 +1,35 @@
 .banner {
     &.banner-margenes {
         background: #3B3B3B;
+        margin: 0 0 80px 0;
         
         .contenedor-carrusel {
             max-width: 1600px;
             margin: auto;
+
+            .content {
+                padding-left: 20px;
+            }
+
+            .subtitulo {
+                text-transform: uppercase;
+                color: #9A9A9A;
+            }
 
             .img {
                 width: 70%;
                 height: 90%;
                 right: 0;
                 bottom: 0;
+            }
+
+            .btn {
+                color: white;
+                background-color: #F4C724;
+                border: none;
+                font-weight: bold;
+                margin-top: 20px;
+                padding: 8px 28px 8px 28px;
             }
 
             .nav {

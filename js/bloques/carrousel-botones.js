@@ -7,6 +7,7 @@
                 prevNextButtons: false,
                 pageDots: false,
                 cellAlign: 'left',
+                wrapAround: true
             });
 
             flkty.on('select', function () {

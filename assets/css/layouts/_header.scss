@@ -229,10 +229,11 @@ button {
 .section-title,
 .sec {
   font-size: rem(18);
-  text-transform: lowercase;
+  //text-transform: lowercase;
   display: inline-block;
   position: relative;
   margin-bottom: em(20);
+  color: #3B3B3B;
 
   @media screen and (min-width: 650px) {
     font-size: rem(22);
@@ -242,7 +243,7 @@ button {
     font-size: rem(35);
   }
 
-  &::before {
+  /*&::before {
     content: '';
     display: block;
     width: 110%;
@@ -251,7 +252,7 @@ button {
     bottom: -2px;
     left: 19px;
     position: absolute;
-  }
+  }*/
 }
 
 header.section-header {
