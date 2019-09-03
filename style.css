@@ -6548,6 +6548,34 @@ body#tinymce {
   padding: 8px 28px 8px 28px;
   border-radius: 40px; }
 
+.btn-linea {
+  display: table;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #225DDC;
+  background-color: transparent;
+  border: 1px solid #225DDC;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 8px 28px 8px 28px;
+  border-radius: 40px;
+  font-style: normal !important; }
+
+.btn-play {
+  display: table;
+  text-decoration: none !important;
+  cursor: pointer;
+  color: white;
+  background-color: #225DDC;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 8px 28px 8px 28px;
+  border-radius: 40px; }
+
 .subtitulo-sec {
   display: block;
   width: 100%;
@@ -7002,20 +7030,25 @@ body#tinymce {
 
 .banner .content {
   width: 100%;
-  max-width: 1600px !important;
+  max-width: none !important;
   padding-left: 20px;
-  left: 13%;
   transform: translate(0, 100%) !important; }
+  .banner .content .titulo {
+    max-width: 1600px;
+    margin: auto; }
+  .banner .content .contenedor-txt {
+    max-width: 1600px;
+    margin: auto; }
 
 .banner .tarjetas {
   position: absolute;
   width: 50%;
   bottom: -270px;
-  right: 2%;
+  right: -5%;
   display: flex; }
   .banner .tarjetas .item {
     background: white;
-    width: 20%;
+    width: 25%;
     margin: 20px;
     height: 500px;
     background-size: cover;
@@ -7023,7 +7056,10 @@ body#tinymce {
     transform: scale(1);
     transition: all 0.25s ease;
     position: relative;
-    border: 1px solid white; }
+    border: none;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15); }
     .banner .tarjetas .item .play {
       position: absolute;
       bottom: 10px;
@@ -7067,7 +7103,11 @@ body#tinymce {
 .texto_banner .inside {
   min-height: 200px;
   margin-top: 150px;
-  width: 50%; }
+  width: 100%;
+  max-width: 1600px;
+  margin: auto; }
+  .texto_banner .inside p {
+    margin: 4vh 0 !important; }
 
 .banner {
   height: 60vh;
