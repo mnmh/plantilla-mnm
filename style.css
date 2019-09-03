@@ -7000,6 +7000,13 @@ body#tinymce {
       .cuadros-carrousel .cuadro {
         margin-right: 1.25em; } }
 
+.banner .content {
+  width: 100%;
+  max-width: 1600px !important;
+  padding-left: 20px;
+  left: 13%;
+  transform: translate(0, 100%) !important; }
+
 .banner .tarjetas {
   position: absolute;
   width: 50%;
