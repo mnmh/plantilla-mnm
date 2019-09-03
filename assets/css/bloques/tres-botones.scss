@@ -1,7 +1,7 @@
 .tres-botones {
     width: 90%;
     margin: auto;
-    max-width: 1600px;
+    
     color: white;
     margin-bottom: 9vh;
     margin-top: 12vh;
@@ -70,6 +70,41 @@
         }
     }
     
+    &.segunda{
+        max-width: 2000px;
+        width: 100%;
+        margin-top: 9vh;
+
+        .sec {
+            display: block;
+            width: 100%;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+        }
+
+        .boton {
+            background-color: #F6F6F6 !important; 
+            max-width: none;
+
+            .name {
+                bottom: 5%;
+                position: absolute;
+
+                .btn {
+                    background-color: #3B3B3B;
+                }
+
+                p {
+                    max-width: 70% !important;
+                    margin-left: 0 !important;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
     @media all and (max-width: 1000px) {
         .botones {
             flex-wrap: wrap;

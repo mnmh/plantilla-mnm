@@ -108,7 +108,7 @@ h5 {
 .perfil_viewer p {
   font-family: 'Inter', sans-serif;
   line-height: 2;
-  color: #222;
+  color: #3B3B3B;
   margin: 1.25em 0 3.125em;
   font-size: 16px; }
   #archive_item_content p a,
@@ -169,7 +169,7 @@ h5 {
     #contenidoGeneral p,
     #contenidoGeneral blockquote,
     .perfil_viewer p {
-      font-size: 1.0625em; } }
+      font-size: 16px; } }
   @media screen and (min-width: 1024px) {
     #archive_item_content p,
     .content p,
@@ -177,7 +177,7 @@ h5 {
     #contenidoGeneral p,
     #contenidoGeneral blockquote,
     .perfil_viewer p {
-      font-size: 1.125em; } }
+      font-size: 16px; } }
 
 #archive_item_content > h2,
 .content > h2 {
@@ -781,7 +781,7 @@ body {
   opacity: 0;
   font-family: 'Inter', sans-serif;
   line-height: 2;
-  color: #222;
+  color: #3B3B3B;
   z-index: 2;
   padding: 0 1.25rem;
   position: absolute;
@@ -1976,7 +1976,7 @@ body {
     justify-content: space-between;
     align-content: flex-items; }
   .container .contenido {
-    color: #222;
+    color: #3B3B3B;
     margin-top: 3.75em; }
     @media screen and (min-width: 850px) {
       .container .contenido {
@@ -6111,7 +6111,7 @@ button {
     #menu_lateral_btn .inside .menu_icon {
       position: absolute; }
   #menu_lateral_btn .a {
-    fill: #222; }
+    fill: #3B3B3B; }
   #menu_lateral_btn:hover .a {
     fill: #ff7153; }
 
@@ -7451,7 +7451,6 @@ body#tinymce {
 .tres-botones {
   width: 90%;
   margin: auto;
-  max-width: 1600px;
   color: white;
   margin-bottom: 9vh;
   margin-top: 12vh; }
@@ -7497,6 +7496,29 @@ body#tinymce {
           font-family: 'mnm';
           content: '\E80E';
           right: 0; }
+  .tres-botones.segunda {
+    max-width: 2000px;
+    width: 100%;
+    margin-top: 9vh; }
+    .tres-botones.segunda .sec {
+      display: block;
+      width: 100%;
+      max-width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px; }
+    .tres-botones.segunda .boton {
+      background-color: #F6F6F6 !important;
+      max-width: none; }
+      .tres-botones.segunda .boton .name {
+        bottom: 5%;
+        position: absolute; }
+        .tres-botones.segunda .boton .name .btn {
+          background-color: #3B3B3B; }
+        .tres-botones.segunda .boton .name p {
+          max-width: 70% !important;
+          margin-left: 0 !important;
+          font-weight: 300; }
   @media all and (max-width: 1000px) {
     .tres-botones .botones {
       flex-wrap: wrap; }
