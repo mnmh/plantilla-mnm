@@ -6551,7 +6551,7 @@ body#tinymce {
   .btn.active {
     color: #333; }
 
-.subtitulo {
+.subtitulo-sec {
   display: block;
   width: 100%;
   max-width: 1600px;
@@ -7182,7 +7182,7 @@ body#tinymce {
       padding-left: 20px; }
     .banner.banner-margenes .contenedor-carrusel .subtitulo {
       text-transform: uppercase;
-      color: #9A9A9A; }
+      color: #F4C724; }
     .banner.banner-margenes .contenedor-carrusel .img {
       width: 70%;
       height: 90%;
