@@ -6126,7 +6126,6 @@ button {
   font-size: 1.125rem;
   display: inline-block;
   position: relative;
-  margin-bottom: 1.25em;
   color: #3B3B3B;
   /*&::before {
     content: '';
@@ -6558,7 +6557,10 @@ body#tinymce {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px; }
+  padding-left: 20px;
+  color: #9A9A9A;
+  font-weight: 300;
+  margin-bottom: 2em; }
 
 .calendario_mes {
   display: flex; }
@@ -6952,7 +6954,15 @@ body#tinymce {
       position: absolute;
       bottom: 0;
       color: #3B3B3B;
-      transform: translate(0, 100%); }
+      font-size: 18px;
+      transform: translate(0, 95%); }
+    .botones-carrousel .boton .subtitulo-tarjetas {
+      position: absolute;
+      bottom: 0;
+      color: #9A9A9A !important;
+      font-size: 14px !important;
+      transform: translate(0, 150%);
+      padding: 7px 9px; }
     @media all and (min-width: 1024px) {
       .botones-carrousel .boton {
         margin-right: 1.25em; } }
@@ -7435,8 +7445,8 @@ body#tinymce {
       position: relative;
       margin: 0.5%;
       padding: 32px;
-      max-width: 400px;
-      max-height: 400px; }
+      max-width: 500px;
+      max-height: 500px; }
       .tres-botones .botones .boton:nth-child(1) {
         background-color: #225DDC; }
       .tres-botones .botones .boton:nth-child(2) {

@@ -45,7 +45,17 @@
             position: absolute;
             bottom: 0;
             color: #3B3B3B;
-            transform: translate(0, 100%);
+            font-size: 18px;
+            transform: translate(0, 95%);
+        }
+
+        .subtitulo-tarjetas {
+            position: absolute;
+            bottom: 0;
+            color: #9A9A9A !important;
+            font-size: 14px !important;
+            transform: translate(0, 150%);
+            padding: 7px 9px;
         }
 
         @media all and (min-width: 1024px) {
