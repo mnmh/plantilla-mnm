@@ -7197,7 +7197,9 @@ body#tinymce {
       padding: 8px 28px 8px 28px; }
     .banner.banner-margenes .contenedor-carrusel .nav .item {
       border-color: white;
-      border: none; }
+      border: none;
+      border-radius: 40px;
+      font-weight: bold; }
 
 .tarjetas {
   position: relative;
