@@ -79,6 +79,7 @@
         width: 100%;
         max-width: 1600px;
         margin: auto;
+        clip-path: inset( -100vw -100vw -100vw 0 );
     }
 
     .profiles-item {

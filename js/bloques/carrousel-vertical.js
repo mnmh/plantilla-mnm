@@ -7,7 +7,7 @@
             var flkty = new Flickity(this, {
                 prevNextButtons: false,
                 pageDots: false,
-                cellAlign: 'center',
+                cellAlign: 'left',
                 wrapAround: true
             });
 

@@ -6823,7 +6823,8 @@ body#tinymce {
   .carrousel-vertical-container .profiles-list {
     width: 100%;
     max-width: 1600px;
-    margin: auto; }
+    margin: auto;
+    clip-path: inset(-100vw -100vw -100vw 0); }
   .carrousel-vertical-container .profiles-item {
     margin-right: 0.3125em;
     overflow: hidden;
