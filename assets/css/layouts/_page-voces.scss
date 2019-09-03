@@ -1131,6 +1131,8 @@ figure {
   font-weight: 500;
 
   .cifras-container {
+    max-width: 1600px;
+    margin: 0 auto;
     text-align: center;
     position: relative;
     padding: em(80) 0;
@@ -1144,7 +1146,7 @@ figure {
     }
 
     .des {
-      font-family: "Inter", sans-serif;
+      font-family: "CircularStd", sans-serif;
     }
 
     @media screen and (min-width:900px) {

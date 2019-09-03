@@ -4851,6 +4851,8 @@ figure {
   text-align: center;
   font-weight: 500; }
   #cifras .cifras-container {
+    max-width: 1600px;
+    margin: 0 auto;
     text-align: center;
     position: relative;
     padding: 5em 0; }
@@ -4859,7 +4861,7 @@ figure {
     #cifras .cifras-container .num {
       font-size: 6em; }
     #cifras .cifras-container .des {
-      font-family: "Inter", sans-serif; }
+      font-family: "CircularStd", sans-serif; }
     @media screen and (min-width: 900px) {
       #cifras .cifras-container {
         padding: 9.375em 0;
