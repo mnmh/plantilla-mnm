@@ -72,6 +72,17 @@ function my_acf_init() {
 			'keywords'			=> array( 'botones', 'imagen' ),
 		));
 
+		// Bloque tres botones
+		acf_register_block(array(
+			'name'				=> 'tres_botones_segunda',
+			'title'				=> __('Tres botones segunda version'),
+			'description'		=> __('Un bloque para tres botones'),
+			'render_callback'	=> 'bloque_callback_tres_botones_segunda',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'botones', 'imagen' ),
+		));
+
 		// Bloque de lista
 		acf_register_block(array(
 			'name'				=> 'lista_tarjetas',
@@ -181,6 +192,25 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'agenda', 'calendario' ),
 		));
+
+		// Bloque header columna
+		acf_register_block(array(
+			'name'				=> 'bloque header columna',
+			'title'				=> __('Bloque header columna'),
+			'description'		=> __('Un bloque para mostrar dos columnas de contenido'),
+			'render_callback'	=> 'bloque_callback_bloque_header_columna',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'columna', 'header' ),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_bloque_header_columna( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 
@@ -226,6 +256,14 @@ function bloque_callback_banner_botones( $block ) {
 
 // Carga la plantilla del bloque con tres botones
 function bloque_callback_tres_botones( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque con tres botones
+function bloque_callback_tres_botones_segunda( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
