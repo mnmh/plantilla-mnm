@@ -361,4 +361,5 @@ include( get_theme_file_path("/includes/campos/banner-ejes.php") );
 include( get_theme_file_path("/includes/campos/lista-tarjetas.php") );
 include( get_theme_file_path("/includes/campos/imagen-botones.php") );
 include( get_theme_file_path("/includes/campos/linea-tiempo.php") );
+include( get_theme_file_path("/includes/campos/tres-botones.php") );
 ?>
