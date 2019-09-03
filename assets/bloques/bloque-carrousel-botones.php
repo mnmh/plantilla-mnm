@@ -13,7 +13,7 @@ $titulo = get_field('titulo');
 
 <div class="botones-carrousel btm">
     <h1 class="sec"><?php echo $titulo; ?></h1>
-    <div class="subtitulo-sec">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+    <div class="subtitulo-sec"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
     <nav class="hori_scroll">
         <div class="prev"></div>
         <div class="next"></div>
