@@ -7045,13 +7045,13 @@ body#tinymce {
     margin: auto; }
   .banner .content .contenedor-txt {
     max-width: 1600px;
-    margin: auto; }
+    margin: 1vh auto; }
 
 .banner .tarjetas {
   position: absolute;
   width: 50%;
   bottom: -270px;
-  right: -5%;
+  right: 0%;
   display: flex; }
   .banner .tarjetas .item {
     background: white;
@@ -7119,16 +7119,19 @@ body#tinymce {
     @media all and (min-width: 1024px) {
       .banner .inside {
         padding: 0 0%; } }
+    .banner .inside .contenedor-txt {
+      max-width: 1600px;
+      margin: auto; }
     .banner .inside .content {
       position: absolute;
-      top: 40%;
+      top: 25%;
       max-width: 600px;
       transform: translate(0, -50%); }
       .banner .inside .content .titulo {
         font-size: 56px;
         margin-bottom: 20px; }
       .banner .inside .content .txt {
-        max-width: 400px; }
+        max-width: 500px; }
 
 .banner .inside_navigation {
   display: flex;

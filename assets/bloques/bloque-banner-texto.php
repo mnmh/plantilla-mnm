@@ -19,8 +19,11 @@ $imagen = get_field('imagen');
             <h1 class="titulo">
                 <strong><?php echo $titulo ?></strong>
             </h1>
-            <div class="txt">
-                <?php echo $texto ?>
+            <div class="contenedor-txt">
+                <div class="txt">
+                    <?php echo $texto ?>
+                </div>
+                <div class="btn"> Saber más </div>
             </div>
         </div>
     </div>

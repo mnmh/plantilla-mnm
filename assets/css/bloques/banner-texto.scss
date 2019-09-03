@@ -19,10 +19,14 @@
             padding: 0 0%;
         }
 
+        .contenedor-txt {
+            max-width: 1600px;
+            margin: auto;
+        }
 
         .content {
             position: absolute;
-            top: 40%;
+            top: 25%;
             max-width: 600px;
             transform: translate(0,-50%);
 
@@ -32,7 +36,7 @@
             }
 
             .txt {
-                max-width: 400px;
+                max-width: 500px;
             }
         }
     }
