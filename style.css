@@ -4217,8 +4217,8 @@ blockquote {
     content: "";
     display: block;
     width: 4.6875em;
-    height: 0.4375em;
-    background: rgba(255, 113, 83, 0.5);
+    height: 0.25em;
+    background: #F4C724;
     margin: 0;
     position: relative;
     top: -1.875em; }
@@ -4227,7 +4227,7 @@ blockquote {
     font-size: 0.75em;
     display: block;
     width: 75%;
-    margin: 1.25em 0 0; }
+    margin: 2.125em 0 0; }
     blockquote em strong {
       font-weight: 400; }
   @media screen and (min-width: 850px) {
@@ -4748,7 +4748,7 @@ blockquote {
       position: absolute;
       top: 100%;
       left: 0;
-      background: #fcebeb;
+      background: #F4C724;
       width: 100%;
       height: 100%; }
       @media screen and (min-width: 900px) {
@@ -4761,12 +4761,12 @@ blockquote {
       position: absolute;
       top: 0;
       left: 0;
-      background: linear-gradient(to top, #fcebeb, rgba(255, 255, 255, 0));
+      background: linear-gradient(to top, #F4C724, rgba(255, 255, 255, 0));
       width: 100%;
       height: 100%; }
       @media screen and (min-width: 900px) {
         #intro_header .background_img::after {
-          background: linear-gradient(to left, #fcebeb, rgba(255, 255, 255, 0)); } }
+          background: linear-gradient(to left, #F4C724, rgba(255, 255, 255, 0)); } }
   #intro_header.conmemora {
     color: white; }
     #intro_header.conmemora p {
@@ -4827,7 +4827,7 @@ figure {
     left: 0;
     width: 100%;
     height: 150%;
-    background: #fcebeb;
+    background: #F4C724;
     z-index: -1; }
   .color-section::before {
     display: block;
@@ -5443,7 +5443,7 @@ body.no_scroll {
 
 .voces-publicacion {
   width: 100%;
-  background: #fcebeb; }
+  background: #F4C724; }
   @media screen and (min-width: 1300px) {
     .voces-publicacion .publicaciones-list {
       position: relative; }
