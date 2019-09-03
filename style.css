@@ -6323,6 +6323,10 @@ header.section-header {
   font-weight: 500;
   position: relative;
   z-index: 50; }
+  .site-footer .footer_container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px; }
   .site-footer a {
     transition: opacity 300ms;
     color: #151515; }
@@ -6332,8 +6336,6 @@ header.section-header {
       opacity: 0.25; }
   .site-footer .footer-logo {
     width: 100%;
-    max-width: 31.66667em;
-    padding-top: 4em;
     display: block;
     opacity: 0.5; }
     .site-footer .footer-logo img {
@@ -6348,9 +6350,23 @@ header.section-header {
     font-size: 1.1875em;
     font-weight: 600;
     margin-bottom: 1.63158em; }
+  .site-footer .info-links {
+    margin-top: 20px;
+    text-align: center; }
+    .site-footer .info-links h3 {
+      margin-bottom: 5px; }
+    .site-footer .info-links .social {
+      margin-top: 20px; }
+      .site-footer .info-links .social li {
+        display: inline-block;
+        margin-right: 0.46667em; }
+        .site-footer .info-links .social li a {
+          display: block;
+          width: 20px;
+          height: 20px; }
   .site-footer section {
     display: flex;
-    justify-content: space-between; }
+    justify-content: center; }
   .site-footer li {
     line-height: 1.2; }
   .site-footer .footer-museo {
@@ -6370,9 +6386,6 @@ header.section-header {
       margin-left: 3.06667em; }
     .site-footer .footer-general li {
       margin-bottom: 1.33333em; }
-    .site-footer .footer-general .social li {
-      display: inline-block;
-      margin-right: 0.46667em; }
   @media screen and (max-width: 930px) {
     .site-footer .footer-museo h3 {
       margin-bottom: 1.63158em; }
