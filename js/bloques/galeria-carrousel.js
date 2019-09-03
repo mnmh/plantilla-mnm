@@ -9,6 +9,7 @@
                 prevNextButtons: false,
                 pageDots: false,
                 cellAlign: 'center',
+                wrapAround: true
             });
 
             $('#galeria_voces .next').on('click', function(){
