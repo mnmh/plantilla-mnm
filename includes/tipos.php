@@ -3,6 +3,40 @@
 add_action( 'init', 'cptg_custom_post_types' );
 function cptg_custom_post_types()
 	{
+		$labels = array(
+			'name' => 'Correos',
+			'singular_name' => 'Correos',
+			'menu_name' => 'Correos',
+			'name_admin_bar' => 'Correos',
+			'all_items' => 'All Posts',
+			'add_new' => 'Add New',
+			'add_new_item' => 'Add New Post',
+			'edit_item' => 'Edit Post',
+			'new_item' => 'New Post',
+			'view_item' => 'View Post',
+			'search_items' => 'Search Posts',
+			'not_found' =>  'No posts found.',
+			'not_found_in_trash' => 'No posts found in Trash.',
+			'parent_item_colon' => 'Parent Page',
+		);
+		$args = array(
+			'labels' => $labels,
+			'public' => false,
+			'exclude_from_search' => true,
+			'publicly_queryable' => false,
+			'show_ui' => true,
+			'show_in_nav_menus' => true,
+			'show_in_menu' => true,
+			'show_in_admin_bar' => true,
+			'has_archive' => false,
+			'menu_position' => null,
+			'menu_icon' => null,
+			'hierarchical' => false,
+			'query_var' => true,
+			'can_export' => true,
+			'supports' => array(),
+		);
+		register_post_type( 'correos', $args );
         $labels = array(
 			'name' => 'Galerías',
 			'singular_name' => 'Galerías',

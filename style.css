@@ -6707,6 +6707,41 @@ body#tinymce {
       .calendario_mes .listado, .calendario_mes #calendario {
         width: 100%; } }
 
+.form_mail {
+  display: block !important; }
+  .form_mail h3 {
+    margin: 0 !important;
+    margin-bottom: 10px !important; }
+  .form_mail .acf-fields {
+    display: flex;
+    align-items: flex-end; }
+    .form_mail .acf-fields .acf-label {
+      margin-bottom: 0;
+      display: none; }
+      .form_mail .acf-fields .acf-label label {
+        margin: 0;
+        font-weight: normal;
+        color: #999; }
+    .form_mail .acf-fields .acf-field {
+      padding: 0;
+      width: 100%;
+      padding-right: 5px; }
+      .form_mail .acf-fields .acf-field input {
+        width: 100%;
+        line-height: 40px;
+        height: 40px; }
+  .form_mail .acf-button {
+    border: none;
+    background: #dcdcdc;
+    width: calc(100% - 5px);
+    padding: 10px;
+    color: white;
+    margin-top: 5px;
+    color: #999; }
+    .form_mail .acf-button:hover {
+      background: #999;
+      color: white; }
+
 .carrousel-vertical-container {
   cursor: grab;
   position: relative; }

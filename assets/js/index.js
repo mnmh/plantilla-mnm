@@ -192,6 +192,7 @@ OBJLoader(three__WEBPACK_IMPORTED_MODULE_0__);
           if (child instanceof three__WEBPACK_IMPORTED_MODULE_0__["Mesh"]) {
             var geo = child.geometry;
             var mat = child.material;
+            console.log(geo);
 
             if (child.name == 'Curve.008') {
               var mat = new three__WEBPACK_IMPORTED_MODULE_0__["MeshBasicMaterial"]({

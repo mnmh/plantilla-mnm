@@ -1,0 +1,51 @@
+.form_mail {
+    display: block !important;
+
+    h3 {
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .acf-fields {
+        display: flex;
+        align-items: flex-end;
+
+        .acf-label {
+            margin-bottom: 0;
+            display: none;
+            
+            label {
+                margin: 0;
+                font-weight: normal;
+                color: #999;
+            }
+        }
+
+        .acf-field {
+            padding: 0;
+            width: 100%;
+            padding-right: 5px;
+
+            input {
+                width: 100%;
+                line-height: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    .acf-button {
+        border: none;
+        background: #dcdcdc;
+        width: calc(100% - 5px);
+        padding: 10px;
+        color: white;
+        margin-top: 5px;
+        color: #999;
+
+        &:hover {
+            background: #999;
+            color: white;
+        }
+    }
+}

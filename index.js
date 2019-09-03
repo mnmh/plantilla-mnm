@@ -79,10 +79,18 @@ import $ from 'jquery';
             loader.load(
                 '/wp-content/themes/plantilla-mnm-master/assets/3d/mapa.obj',
                 function (obj) {
+                    // console.log(obj[0])
+                    var num = 0;
                     obj.traverse(function (child) {
+                        if(num == 0) console.log(child);
+
+                        num++;
+
+                        
                         if (child instanceof THREE.Mesh) {
                             var geo = child.geometry;
                             var mat = child.material;
+
                             if (child.name == 'Curve.008') {
                                 var mat = new THREE.MeshBasicMaterial({
                                     color: 0x8ea2a1,
