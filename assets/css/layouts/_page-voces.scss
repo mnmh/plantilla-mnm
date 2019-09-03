@@ -1135,29 +1135,36 @@ figure {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    padding: em(80) 0;
+    padding: 5em 0;
 
     .cifra {
       margin-bottom: 20px;
     }
 
     .num {
+      font-family: "CircularStd", sans-serif;
       font-size: 6em;
+      color: #3B3B3B;
+      line-height: 1.2;
     }
 
     .des {
-      font-family: "CircularStd", sans-serif;
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      color: #3B3B3B;
+      font-weight: 300;
+      
     }
 
     @media screen and (min-width:900px) {
-      padding: em(150) 0;
+      padding: 5em 0;
       display: flex;
       justify-content: space-between;
 
       .cifra {
         width: 30%;
         margin-top: 50px;
-        max-width: 300px;
+        max-width: 350px;
 
         .num {
           font-size: 5em;
@@ -1310,7 +1317,7 @@ figure {
   @media screen and (min-width:900px) {
     width: 650px;
     margin: 0 auto;
-    padding: em(150) 0 0 0;
+    padding: 5em 0 0 0;
 
     .item {
       width: 650px;
