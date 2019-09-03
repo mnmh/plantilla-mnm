@@ -7010,14 +7010,14 @@ body#tinymce {
 .banner .tarjetas {
   position: absolute;
   width: 50%;
-  bottom: -70px;
+  bottom: -270px;
   right: 2%;
   display: flex; }
   .banner .tarjetas .item {
     background: white;
-    width: 30%;
-    margin: 10px;
-    height: 300px;
+    width: 20%;
+    margin: 20px;
+    height: 500px;
     background-size: cover;
     background-position: center;
     transform: scale(1);
@@ -7066,7 +7066,8 @@ body#tinymce {
 
 .texto_banner .inside {
   min-height: 200px;
-  margin-top: 150px; }
+  margin-top: 150px;
+  width: 50%; }
 
 .banner {
   height: 60vh;

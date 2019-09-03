@@ -11,15 +11,15 @@
     .tarjetas {
         position: absolute;
         width: 50%;
-        bottom: -70px;
+        bottom: -270px;
         right: 2%;
         display: flex;
 
         .item {
             background: white;
-            width: 30%;
-            margin: 10px;
-            height: 300px;
+            width: 20%;
+            margin: 20px;
+            height: 500px;
             background-size: cover;
             background-position: center;
             transform: scale(1);
@@ -87,6 +87,5 @@
 .texto_banner .inside {
     min-height: 200px;
     margin-top: 150px;
-
-    
+    width: 50%;
 }
