@@ -47,6 +47,7 @@ $large-and-down: "only screen and (max-width : #{$large-screen})" !default;
 $extralarge-and-down: "only screen and (max-width : #{$extralarge-screen})" !default;
 
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$extra-large-only: "only screen and (min-width : #{$large-screen-up}) and (max-width : #{$extralarge-screen})" !default;
 
 
 @mixin top-offset($pos) {

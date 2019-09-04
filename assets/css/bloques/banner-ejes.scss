@@ -7,7 +7,7 @@
             max-width: none !important;
             padding-left: 20px;
             transform: translate(0, 100%) !important;
-            bottom: 30% !important;
+            bottom: 30%;
 
             .titulo {
                 max-width: 1600px;
@@ -20,12 +20,7 @@
 
                 .txt {
                     max-width: 40%;
-
-                    @media #{$extralarge-and-down} {
-                        width: 35% !important;
-                    }
                 }
-
             }
         }
     }
@@ -41,7 +36,7 @@
         margin: auto;
         position: relative;
         top: 40vh;
-        
+
         .item {
             width: 250px;
             height: 375px;
@@ -91,7 +86,9 @@
 
         @media #{$large-and-down} {
             right: 40px;
-        }       
+            justify-content: center;
+            
+        }     
     }
 
     &.audio {
@@ -115,8 +112,5 @@
             margin: 4vh 0 !important; 
             padding-left: 20px;
 
-            @media #{$extralarge-and-down} {
-                width: 35% !important;
-            }
     }  
 }  
