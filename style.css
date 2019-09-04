@@ -4884,7 +4884,8 @@ figure {
         font-size: 7em; } }
 
 #galeria_voces {
-  position: relative; }
+  position: relative;
+  margin-bottom: 5em; }
   #galeria_voces .nav {
     width: 95%; }
   #galeria_voces .next,
@@ -4917,6 +4918,7 @@ figure {
     color: #3B3B3B; }
   #galeria_voces .item {
     width: 35%;
+    min-width: 400px;
     margin-right: 1%;
     opacity: 0.5;
     transition: opacity 300ms; }
