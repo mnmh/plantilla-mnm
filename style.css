@@ -7064,7 +7064,7 @@ body#tinymce {
   max-width: none !important;
   padding-left: 20px;
   transform: translate(0, 100%) !important;
-  top: 40% !important; }
+  bottom: 30% !important; }
   .banner .content.ejes .titulo {
     max-width: 1600px;
     margin: auto; }
@@ -7073,6 +7073,9 @@ body#tinymce {
     margin: 1vh auto; }
     .banner .content.ejes .contenedor-txt .txt {
       max-width: 40%; }
+      @media only screen and (max-width: 1700px) {
+        .banner .content.ejes .contenedor-txt .txt {
+          width: 35% !important; } }
 
 .banner .contenedor-tarjetas {
   width: 100%; }
@@ -7119,9 +7122,6 @@ body#tinymce {
       .banner .tarjetas .item {
         width: 100%;
         height: 110px; } }
-  @media only screen and (min-width: 1201px) {
-    .banner .tarjetas {
-      margin-left: calc((100% - 1600px)/2); } }
   @media only screen and (max-width: 1200px) {
     .banner .tarjetas {
       right: 40px; } }
@@ -7140,6 +7140,9 @@ body#tinymce {
   .texto_banner .inside p {
     margin: 4vh 0 !important;
     padding-left: 20px; }
+    @media only screen and (max-width: 1700px) {
+      .texto_banner .inside p {
+        width: 35% !important; } }
 
 .banner {
   height: 60vh;

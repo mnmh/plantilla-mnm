@@ -7,7 +7,7 @@
             max-width: none !important;
             padding-left: 20px;
             transform: translate(0, 100%) !important;
-            top: 40% !important;
+            bottom: 30% !important;
 
             .titulo {
                 max-width: 1600px;
@@ -18,11 +18,14 @@
                 max-width: 1600px;
                 margin: 1vh auto;
 
-                .txt{
+                .txt {
                     max-width: 40%;
 
-
+                    @media #{$extralarge-and-down} {
+                        width: 35% !important;
+                    }
                 }
+
             }
         }
     }
@@ -86,13 +89,9 @@
             }
         }
 
-        @media #{$extra-large-and-up} {
-            margin-left: calc((100% - 1600px)/2);
-        }
-    
         @media #{$large-and-down} {
             right: 40px;
-        }
+        }       
     }
 
     &.audio {
@@ -113,7 +112,11 @@
     margin: auto;
 
     p {
-        margin: 4vh 0 !important; 
-        padding-left: 20px;
-    }
-}
+            margin: 4vh 0 !important; 
+            padding-left: 20px;
+
+            @media #{$extralarge-and-down} {
+                width: 35% !important;
+            }
+    }  
+}  
