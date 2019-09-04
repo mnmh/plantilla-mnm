@@ -17,20 +17,30 @@
             .contenedor-txt {
                 max-width: 1600px;
                 margin: 1vh auto;
+
+                .txt{
+                    max-width: 40%;
+
+
+                }
             }
         }
     }
 
+    .contenedor-tarjetas {
+        width: 100%;
+    }
     .tarjetas {
         position: absolute;
         display: flex;
         justify-content: flex-end;
-        bottom: -270px;
-        width: 100%;
+        bottom: -40%;
+        
+        margin-left: calc((100% - 1600px)/2);
 
         .item {
-            width: 300px;
-            height: 450px;
+            width: 250px;
+            height: 375px;
             margin-left: 15px;
             
             background-size: cover;
@@ -43,6 +53,10 @@
             -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
             -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
             box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+
+            @media #{$extralarge-and-down} {
+
+            }
 
             .play {
                 position: absolute;
@@ -95,5 +109,6 @@
 
     p {
         margin: 4vh 0 !important; 
+        padding-left: 20px;
     }
 }
