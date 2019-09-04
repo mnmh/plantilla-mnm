@@ -6932,9 +6932,14 @@ body#tinymce {
         min-height: 400px; }
         @media only screen and (max-width: 1700px) {
           .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .descripcion {
-            font-size: 12px; }
+            font-size: 14px; }
           .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .inside_content {
             padding: 1em; } }
+        @media only screen and (max-width: 980px) {
+          .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .inside_content {
+            padding: 1em; }
+            .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .inside_content h3 {
+              font-size: 12px; } }
         .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .opacity-layer {
           background-color: rgba(0, 0, 0, 0.3);
           position: absolute;
