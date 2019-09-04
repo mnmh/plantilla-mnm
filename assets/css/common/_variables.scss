@@ -25,6 +25,14 @@ $tripleancho: 1050px;
 
 $ancho_small: 50px;
 
+//tamaños de pantalla
+$screen-xs: 575px !default;
+$screen-s: 768px !default;
+$screen-m: 980px !default;
+$screen-l: 1200px !default;
+$screen-xl: 1600px !default;
+
+
 @mixin top-offset($pos) {
   -moz-transform: translateY($pos);
   -webkit-transform: translateY($pos);
