@@ -6836,9 +6836,12 @@ body#tinymce {
     font-family: 'Inter', sans-serif;
     font-size: 16px; }
   .carrousel-vertical-container .hori_scroll {
-    top: 60%;
+    top: 50%;
     width: 95%;
     left: 2.5%; }
+    @media only screen and (max-width: 1200px) {
+      .carrousel-vertical-container .hori_scroll {
+        top: 110% !important; } }
     .carrousel-vertical-container .hori_scroll div {
       border-radius: 20px;
       opacity: 1;
@@ -6924,15 +6927,14 @@ body#tinymce {
           height: 28.75em; } }
       .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias {
         width: 20vw;
-        height: 35vw; }
-        @media screen and (max-width: 850px) {
-          .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias {
-            width: 30vw;
-            height: 52vw; }
-            .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .descripcion {
-              font-size: 12px; }
-            .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .inside_content {
-              padding: 0.5em; } }
+        height: 35vw;
+        min-width: 250px;
+        min-height: 400px; }
+        @media only screen and (max-width: 1700px) {
+          .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .descripcion {
+            font-size: 12px; }
+          .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .inside_content {
+            padding: 1em; } }
         .carrousel-vertical-container .profiles-item .image-wrapper.itinerancias .opacity-layer {
           background-color: rgba(0, 0, 0, 0.3);
           position: absolute;
