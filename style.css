@@ -7170,6 +7170,8 @@ body#tinymce {
           max-width: 1600px;
           margin: auto;
           padding-left: 20px; }
+          .banner .inside .content.texto-abajo .contenedor-txt .titulo {
+            max-width: 600px; }
       .banner .inside .content .titulo {
         font-size: 56px;
         margin-bottom: 20px; }
@@ -7672,7 +7674,10 @@ body#tinymce {
       display: block;
       padding-top: 0.1em;
       padding-bottom: 0.1em;
-      padding-left: 70px; }
+      padding-left: 70px;
+      padding-right: 0.5em;
+      color: #9A9A9A;
+      margin-bottom: 1.5em; }
       .columnas .left .itemList.active {
         font-weight: bold; }
   .columnas .right {
