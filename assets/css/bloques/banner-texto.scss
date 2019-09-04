@@ -48,4 +48,17 @@
         }
     }
 
+    @media #{$small-and-down} {
+        .inside {
+            .content {
+                bottom: 10%;
+                top: auto;
+                padding-left: 5px;
+                .titulo {
+                    font-size: 42px;
+                    margin-bottom: 10px;
+                }    
+            }
+        }
+    }
 }

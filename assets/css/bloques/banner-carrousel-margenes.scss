@@ -9,6 +9,10 @@
 
             .content {
                 padding-left: 40px;
+
+                @media #{$small-and-down} {
+                    padding-left: 5px;
+                }
             }
 
             .subtitulo {
@@ -42,6 +46,8 @@
             }
         }
     }
+
+    /* MEDIA QUERIES -------------------------------------------------------*/
 
     @media #{$extralarge-and-down} {
         &.banner-margenes {
