@@ -7258,7 +7258,7 @@ body#tinymce {
     max-width: 1600px;
     margin: auto; }
     .banner.banner-margenes .contenedor-carrusel .content {
-      padding-left: 20px; }
+      padding-left: 40px; }
     .banner.banner-margenes .contenedor-carrusel .subtitulo {
       text-transform: uppercase;
       color: #F4C724; }
@@ -7279,6 +7279,28 @@ body#tinymce {
       border: none;
       border-radius: 40px;
       font-weight: bold; }
+
+@media only screen and (max-width: 1700px) {
+  .banner.banner-margenes .nav {
+    top: 95%; } }
+
+@media only screen and (max-width: 980px) {
+  .banner.banner-margenes {
+    background-color: red; }
+    .banner.banner-margenes .contenedor-carrusel .img {
+      width: 100%;
+      height: 100%;
+      right: 0;
+      bottom: 0; }
+      .banner.banner-margenes .contenedor-carrusel .img:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: black;
+        opacity: 0.3; } }
 
 .tarjetas {
   position: relative;
