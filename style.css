@@ -6608,6 +6608,9 @@ body#tinymce {
   font-weight: 300;
   margin-bottom: 2em; }
 
+.banner {
+  min-height: 630px; }
+
 .calendario_mes {
   display: flex; }
   .calendario_mes .listado {
@@ -7071,15 +7074,14 @@ body#tinymce {
 
 .banner .tarjetas {
   position: absolute;
-  width: 50%;
+  display: flex;
+  justify-content: flex-end;
   bottom: -270px;
-  right: 0%;
-  display: flex; }
+  width: 100%; }
   .banner .tarjetas .item {
-    background: white;
-    width: 25%;
-    margin: 20px;
-    height: 500px;
+    width: 300px;
+    height: 450px;
+    margin-left: 15px;
     background-size: cover;
     background-position: center;
     transform: scale(1);
@@ -7098,7 +7100,7 @@ body#tinymce {
       transition: opacity 0.25s ease;
       cursor: pointer; }
     .banner .tarjetas .item.active {
-      transform: scale(1.15); }
+      transform: scale(1.05); }
       .banner .tarjetas .item.active .play {
         opacity: 1; }
   @media all and (max-width: 1000px) {
@@ -7303,22 +7305,20 @@ body#tinymce {
     .banner.banner-margenes .nav {
       top: 95%; } }
   @media only screen and (max-width: 980px) {
-    .banner.banner-margenes {
-      background-color: red; }
-      .banner.banner-margenes .contenedor-carrusel .img {
-        width: 100%;
-        height: 100%;
+    .banner.banner-margenes .contenedor-carrusel .img {
+      width: 100%;
+      height: 100%;
+      right: 0;
+      bottom: 0; }
+      .banner.banner-margenes .contenedor-carrusel .img:before {
+        content: "";
+        position: absolute;
+        left: 0;
         right: 0;
-        bottom: 0; }
-        .banner.banner-margenes .contenedor-carrusel .img:before {
-          content: "";
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          background: black;
-          opacity: 0.3; } }
+        top: 0;
+        bottom: 0;
+        background: black;
+        opacity: 0.3; } }
 
 .tarjetas {
   position: relative;
@@ -7619,7 +7619,8 @@ body#tinymce {
       padding-left: 20px; }
     .tres-botones.segunda .boton {
       background-color: #F6F6F6 !important;
-      max-width: none; }
+      max-width: none;
+      min-height: 400px; }
       .tres-botones.segunda .boton .name {
         bottom: 5%;
         position: absolute; }

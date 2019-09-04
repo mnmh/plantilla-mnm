@@ -23,16 +23,16 @@
 
     .tarjetas {
         position: absolute;
-        width: 50%;
-        bottom: -270px;
-        right: 0%;
         display: flex;
+        justify-content: flex-end;
+        bottom: -270px;
+        width: 100%;
 
         .item {
-            background: white;
-            width: 25%;
-            margin: 20px;
-            height: 500px;
+            width: 300px;
+            height: 450px;
+            margin-left: 15px;
+            
             background-size: cover;
             background-position: center;
             transform: scale(1);
@@ -55,7 +55,7 @@
             }
 
             &.active {
-                transform: scale(1.15);
+                transform: scale(1.05);
 
                 .play {
                     opacity: 1;
@@ -96,5 +96,4 @@
     p {
         margin: 4vh 0 !important; 
     }
-
 }
