@@ -14,7 +14,7 @@ $enlace = get_field('enlace');
 <div class="banner audio">
     <div class="img"></div>
         <div class="inside">
-            <div class="content">
+            <div class="content ejes">
                 <h1 class="titulo"><strong></strong></h1>
                 <div class="contenedor-txt"> <div class="txt"></div> </div>
             </div>

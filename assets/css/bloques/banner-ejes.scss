@@ -1,19 +1,23 @@
 .banner {
     
     .content {
-        width: 100%;
-        max-width: none !important;
-        padding-left: 20px;
-        transform: translate(0, 100%) !important;
 
-        .titulo {
-            max-width: 1600px;
-            margin: auto;
-        }
+            &.ejes { 
+            width: 100%;
+            max-width: none !important;
+            padding-left: 20px;
+            transform: translate(0, 100%) !important;
+            top: 40% !important;
 
-        .contenedor-txt {
-            max-width: 1600px;
-            margin: 1vh auto;
+            .titulo {
+                max-width: 1600px;
+                margin: auto;
+            }
+
+            .contenedor-txt {
+                max-width: 1600px;
+                margin: 1vh auto;
+            }
         }
     }
 

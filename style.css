@@ -7049,15 +7049,16 @@ body#tinymce {
       .cuadros-carrousel .cuadro {
         margin-right: 1.25em; } }
 
-.banner .content {
+.banner .content.ejes {
   width: 100%;
   max-width: none !important;
   padding-left: 20px;
-  transform: translate(0, 100%) !important; }
-  .banner .content .titulo {
+  transform: translate(0, 100%) !important;
+  top: 40% !important; }
+  .banner .content.ejes .titulo {
     max-width: 1600px;
     margin: auto; }
-  .banner .content .contenedor-txt {
+  .banner .content.ejes .contenedor-txt {
     max-width: 1600px;
     margin: 1vh auto; }
 
@@ -7133,14 +7134,19 @@ body#tinymce {
     @media all and (min-width: 1024px) {
       .banner .inside {
         padding: 0 0%; } }
-    .banner .inside .contenedor-txt {
-      max-width: 1600px;
-      margin: auto; }
     .banner .inside .content {
       position: absolute;
       top: 25%;
-      max-width: 600px;
-      transform: translate(0, -50%); }
+      max-width: 600px; }
+      .banner .inside .content.texto-abajo {
+        transform: translate(0, -50%);
+        top: 75%;
+        width: 100%;
+        max-width: none; }
+        .banner .inside .content.texto-abajo .contenedor-txt {
+          max-width: 1600px;
+          margin: auto;
+          padding-left: 20px; }
       .banner .inside .content .titulo {
         font-size: 56px;
         margin-bottom: 20px; }
