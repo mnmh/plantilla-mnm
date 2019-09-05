@@ -48,6 +48,10 @@
         
       }
 
+      @media #{$small-and-down} {
+        height: 90vh;
+      }
+
       .inside {
         position: absolute;
         top: 75px;
