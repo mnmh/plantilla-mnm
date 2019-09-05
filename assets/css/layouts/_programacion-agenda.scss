@@ -42,12 +42,6 @@
       max-height: 600px;
       height: 80vh;
 
-      @media all and (max-width: 850px) {
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
-      }
-
       @media #{$medium-and-down} {
         max-width: 500px;
         max-height: 660px;
@@ -222,11 +216,10 @@
       opacity: 0.25;
     }
 
-    @media screen and (max-width: 400px) {
+    @media #{$small-and-down} {
       padding: 1.25em 1.25em;
+      width: 100%;
     }
-
-    
 
     @media screen and (min-width: 980px) {
       margin-right: em(25);
