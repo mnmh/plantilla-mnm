@@ -2934,6 +2934,7 @@ body.single-programacion .agenda.theme-events {
 .agenda {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   max-width: 1600px;
   overflow: visible;
   font-size: 0.9375em; }
@@ -2941,8 +2942,7 @@ body.single-programacion .agenda.theme-events {
     .agenda {
       font-size: 0.8125em; } }
   .agenda.medallo {
-    max-width: 110em !important;
-    padding: 5em 0 10em 0 !important;
+    padding: 5em 0 10em 20px !important;
     margin-bottom: 2em !important; }
     .agenda.medallo .btn {
       font-size: 16px; }
@@ -6632,7 +6632,7 @@ body#tinymce {
       color: white;
       font-size: 1.5em;
       min-height: 50px;
-      border-top: 1px dashed #333;
+      border-top: 1px dashed #3B3B3B;
       margin-bottom: 2.5px;
       cursor: pointer; }
       .calendario_mes .listado .item .top {
@@ -6675,7 +6675,7 @@ body#tinymce {
       .calendario_mes .listado .item .categ_name, .calendario_mes .listado .item .link {
         font-family: 'Inconsolata', monospace;
         background: white;
-        color: black;
+        color: #3B3B3B;
         text-transform: lowercase;
         display: inline-block;
         margin-left: 5px;
@@ -6689,7 +6689,7 @@ body#tinymce {
         border: 1px solid; }
         .calendario_mes .listado .item .link:hover {
           background: white;
-          color: #333; }
+          color: #3B3B3B; }
       .calendario_mes .listado .item .fecha {
         font-family: 'Inconsolata', monospace;
         border: 1px solid;
@@ -6706,9 +6706,11 @@ body#tinymce {
         width: auto;
         display: inline-block; }
   .calendario_mes #calendario {
-    width: 60%; }
+    width: 60%;
+    margin-right: 20px; }
     .calendario_mes #calendario .mes {
-      color: #333;
+      font-family: 'CircularStd', sans-serif;
+      color: #3B3B3B;
       font-size: 2em;
       display: grid;
       grid-template-columns: repeat(7, 1fr);
@@ -6743,7 +6745,8 @@ body#tinymce {
           z-index: -1; }
       .calendario_mes #calendario .item.nombre {
         grid-column: 2/7;
-        font-size: 0.75em;
+        font-size: 1em;
+        font-weight: 500;
         justify-content: center;
         position: relative; }
       .calendario_mes #calendario .item.nombre, .calendario_mes #calendario .item.nav {

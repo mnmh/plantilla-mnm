@@ -6,6 +6,7 @@
 .agenda {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   max-width: 1600px;
   overflow: visible;
   font-size: em(15);
@@ -15,8 +16,7 @@
   }
 
   &.medallo {
-    max-width:  110em !important;
-    padding: 5em 0 10em 0 !important;
+    padding: 5em 0 10em 20px !important;
     margin-bottom: 2em !important;
 
     .btn {

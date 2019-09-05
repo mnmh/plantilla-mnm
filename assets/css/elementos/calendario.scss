@@ -10,7 +10,7 @@
             color: white;
             font-size: 1.5em;
             min-height: 50px;
-            border-top: 1px dashed #333;
+            border-top: 1px dashed $black;
             margin-bottom: 2.5px;
             cursor: pointer;
 
@@ -78,7 +78,7 @@
             .categ_name, .link {
                 font-family: 'Inconsolata', monospace;
                 background: white;
-                color: black;
+                color: $black;
                 text-transform: lowercase;
                 display: inline-block;
                 margin-left: 5px;
@@ -95,7 +95,7 @@
 
                 &:hover {
                     background: white;
-                    color: #333;
+                    color: $black;
                 }
             }
 
@@ -124,9 +124,11 @@
 
     #calendario {
         width: 60%;
+        margin-right: 20px;
 
         .mes {
-            color: #333;
+            font-family: 'CircularStd', sans-serif;
+            color: $black;
             font-size: 2em;
             display: grid;
             grid-template-columns: repeat(7, 1fr);
@@ -173,7 +175,8 @@
 
             &.nombre {
                 grid-column: 2/7;
-                font-size: 0.75em;
+                font-size: 1em;
+                font-weight: 500;
                 justify-content: center;
                 position: relative;
             }
