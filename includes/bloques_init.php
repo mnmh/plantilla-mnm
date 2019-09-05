@@ -214,6 +214,17 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'banner', 'cita', 'imagen' ),
 		));
+
+		// Bloque Banner corto con texto
+		acf_register_block(array(
+			'name'				=> 'bloque banner corto texto',
+			'title'				=> __('Bloque banner corto con texto'),
+			'description'		=> __('Un bloque para mostrar un texto y una imagen'),
+			'render_callback'	=> 'bloque_callback_bloque_banner_corto_texto',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'banner', 'corto', 'texto', 'imagen'),
+		));
 	}
 }
 
@@ -361,8 +372,16 @@ function bloque_callback_bloque_agenda( $block ) {
 	}
 }
 
-// Carga el bloque testimonios
+// Carga el bloque banner cita e imagen
 function bloque_callback_bloque_banner_cita_imagen( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga el bloque banner corto con texto
+function bloque_callback_bloque_banner_corto_texto( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
@@ -381,4 +400,5 @@ include( get_theme_file_path("/includes/campos/lista-tarjetas.php") );
 include( get_theme_file_path("/includes/campos/imagen-botones.php") );
 include( get_theme_file_path("/includes/campos/linea-tiempo.php") );
 include( get_theme_file_path("/includes/campos/tres-botones.php") );
+include( get_theme_file_path("/includes/campos/banner-cita-imagen.php") );
 ?>

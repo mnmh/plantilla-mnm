@@ -1,0 +1,107 @@
+<?php
+if( function_exists('acf_add_local_field_group') ):
+
+    acf_add_local_field_group(array(
+        'key' => 'group_5d7151cd2d9b0',
+        'title' => 'bloque cita',
+        'fields' => array(
+            array(
+                'key' => 'field_5d7151d50bd76',
+                'label' => 'Cita',
+                'name' => 'cita',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 1,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_5d7151fe0bd77',
+                'label' => 'Enlace',
+                'name' => 'enlace',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'field_5d7152070bd78',
+                'label' => 'Texto del enlace',
+                'name' => 'texto_del_enlace',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_5d71520f0bd79',
+                'label' => 'Imagen',
+                'name' => 'imagen',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'block',
+                    'operator' => '==',
+                    'value' => 'acf/bloque-banner-cita-imagen',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+    
+    endif;
+?>
