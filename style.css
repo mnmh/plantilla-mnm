@@ -2942,7 +2942,7 @@ body.single-programacion .agenda.theme-events {
     .agenda {
       font-size: 0.8125em; } }
   .agenda.medallo {
-    padding: 5em 0 10em 20px !important;
+    padding: 0 0 10em 20px !important;
     margin-bottom: 2em !important; }
     .agenda.medallo .btn {
       font-size: 16px; }
