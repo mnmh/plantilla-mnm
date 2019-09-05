@@ -92,6 +92,8 @@
   }
 
   .timeNav {
+    font-family: 'CircularStd', sans-serif;
+
     .meses {
       font-weight: 500;
       font-size: em(20);
@@ -120,14 +122,12 @@
         margin-right: em(10,14);
 
         &.selected {
-          color: #000;
+          color: $black;
         }
       }
     }
 
     .dias {
-      // padding: 0 em(20);
-      // margin-bottom: em(20);
       font-weight: 500;
       cursor: pointer;
 
@@ -158,11 +158,11 @@
         }
 
         &.selected {
-          color: #000;
+          color: $black;
         }
 
         &:hover {
-          color: #333;
+          color: $gris;
         }
       }
     }
@@ -242,6 +242,7 @@
     }
 
     .nombre {
+      font-family: 'CircularStd', sans-serif;
       font-size: 1.5625em;
       font-weight: 600;
       margin: 0 0 0.4em;
