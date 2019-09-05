@@ -7710,6 +7710,29 @@ body#tinymce {
     align-items: center;
     justify-content: center; }
 
+.banner.corto {
+  max-height: 500px; }
+
+.banner.texto-imagen {
+  display: flex;
+  background: #f4f4f4; }
+  .banner.texto-imagen .left, .banner.texto-imagen .right {
+    width: 100%; }
+  .banner.texto-imagen .left {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; }
+    .banner.texto-imagen .left .texto, .banner.texto-imagen .left .link {
+      width: 100%;
+      display: block; }
+  .banner.texto-imagen .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .banner.texto-imagen .right .img {
+      background-size: cover; }
+
 .columnas {
   display: flex; }
   .columnas .left {
