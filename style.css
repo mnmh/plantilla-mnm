@@ -7734,7 +7734,10 @@ body#tinymce {
       background-size: cover; }
 
 .header-columna {
-  display: flex; }
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto; }
   .header-columna.invertido {
     flex-flow: row-reverse; }
   .header-columna .left, .header-columna .right {
@@ -7742,11 +7745,17 @@ body#tinymce {
   .header-columna .left {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between; }
+    align-content: space-between;
+    padding-left: 20px; }
   .header-columna .right {
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    position: relative; }
+    .header-columna .right img {
+      position: relative;
+      margin-left: 20%;
+      width: 90%;
+      height: 80vh;
+      min-height: 700px; }
 
 .columnas {
   display: flex; }
