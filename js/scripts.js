@@ -4,8 +4,6 @@
 
 		'use strict';
 
-		console.log('hola');
-
 	});
 
 })(jQuery, this);

@@ -203,6 +203,17 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'columna', 'header' ),
 		));
+
+		// Bloque Banner cita con imagen
+		acf_register_block(array(
+			'name'				=> 'bloque banner cita imagen',
+			'title'				=> __('Bloque banner cita imagen'),
+			'description'		=> __('Un bloque para mostrar una cita y una imagen'),
+			'render_callback'	=> 'bloque_callback_bloque_banner_cita_imagen',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'banner', 'cita', 'imagen' ),
+		));
 	}
 }
 
@@ -344,6 +355,14 @@ function bloque_callback_testimonios_carrousel( $block ) {
 
 // Carga el bloque testimonios
 function bloque_callback_bloque_agenda( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga el bloque testimonios
+function bloque_callback_bloque_banner_cita_imagen( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );

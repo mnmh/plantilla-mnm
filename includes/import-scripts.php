@@ -11,9 +11,6 @@ function header_scripts()
         wp_register_script('flickity', get_template_directory_uri() . '/js/lib/flickity.js', array('jquery'), '1.0.0');
         wp_enqueue_script('flickity');
 
-        wp_register_script('recorridovirtual', get_template_directory_uri() . '/assets/js/index.js', array('jquery'), '1.0.0');
-        wp_enqueue_script('recorridovirtual');
-
         wp_register_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js', array('jquery'), '1.0.0');
         wp_enqueue_script('gsap');
 
@@ -27,6 +24,9 @@ function header_scripts()
         // Cargar elementos
         wp_register_script('arte-cultura', get_template_directory_uri() . '/js/elementos/arte-cultura.js', array('jquery'), '1.0.0');
         wp_enqueue_script('arte-cultura');
+
+        wp_register_script('recorridovirtual', get_template_directory_uri() . '/assets/js/index.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('recorridovirtual');
 
         // Cargar scripts de los bloques
         wp_register_script('carrousel-vertical', get_template_directory_uri() . '/js/bloques/carrousel-vertical.js', array('jquery'), '1.0.0');

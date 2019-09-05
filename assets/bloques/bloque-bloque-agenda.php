@@ -131,6 +131,7 @@ endforeach;
         <div class="listado"></div>
         <div id="calendario">
             <?php crearMes(); ?>
+            <?php crearMesSiguiente(); ?>
         </div>
         
     </div>

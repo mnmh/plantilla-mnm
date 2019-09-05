@@ -7693,6 +7693,23 @@ body#tinymce {
     padding: 10px;
     margin: 5px; }
 
+.banner.cita-imagen {
+  display: flex;
+  background: #f4f4f4; }
+  .banner.cita-imagen .left, .banner.cita-imagen .right {
+    width: 100%; }
+  .banner.cita-imagen .left {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; }
+    .banner.cita-imagen .left .cita, .banner.cita-imagen .left .link {
+      width: 100%;
+      display: block; }
+  .banner.cita-imagen .right {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
 .columnas {
   display: flex; }
   .columnas .left {
