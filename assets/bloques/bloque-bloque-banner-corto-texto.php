@@ -12,12 +12,11 @@ $imagen = get_field('imagen');
 
 ?>
 
-<div class="banner texto-imagen btm corto"> 
+<div class="banner texto-imagen-corto  btm "> 
     <div class="left">
-        <div class="texto"><?php echo $texto; ?></div>
+        <h1 class="titulo"><?php echo $texto; ?></h1>
     </div>
     <div class="right">
         <div class="img" style="background-image:url('<?php echo $imagen['url']; ?>')"></div>
-        
     </div>
 </div>

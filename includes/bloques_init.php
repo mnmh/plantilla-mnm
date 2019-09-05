@@ -402,4 +402,6 @@ include( get_theme_file_path("/includes/campos/linea-tiempo.php") );
 include( get_theme_file_path("/includes/campos/tres-botones.php") );
 include( get_theme_file_path("/includes/campos/banner-cita-imagen.php") );
 include( get_theme_file_path("/includes/campos/banner-corto-texto.php") );
+include( get_theme_file_path("/includes/campos/bloque-header-columna.php") );
+
 ?>

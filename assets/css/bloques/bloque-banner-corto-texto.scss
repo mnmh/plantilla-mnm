@@ -1,13 +1,17 @@
 .banner {
-    &.corto {
-        max-height: 500px;
-    }
-    &.texto-imagen {
+
+    &.texto-imagen-corto {
         display: flex;
         background: $grisclaro;
+        max-height: 300px;
+
+        .titulo {
+            color: $black;
+        }
 
         .left, .right {
             width: 100%;
+            
         }
 
         .left {

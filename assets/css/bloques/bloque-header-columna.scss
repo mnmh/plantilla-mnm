@@ -1,0 +1,24 @@
+.header-columna{
+    display: flex;
+
+    &.invertido {
+        flex-flow: row-reverse;
+    }
+   
+    .left, .right {
+        width: 100%;
+    }
+
+    .left {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
