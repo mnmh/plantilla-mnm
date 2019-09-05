@@ -2932,7 +2932,9 @@ body.single-programacion .agenda.theme-events {
   position: relative; }
 
 .agenda {
-  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   overflow: visible;
   font-size: 0.9375em; }
   @media screen and (min-width: 1000px) {
@@ -2949,11 +2951,11 @@ body.single-programacion .agenda.theme-events {
       width: 95%;
       max-width: 600px;
       margin: 0;
-      margin-top: 0px;
       line-height: 1.8em;
-      margin-top: 2em; }
+      margin-top: 1.5em; }
       .agenda.medallo .texto.participante p {
-        font-size: 1em !important; }
+        font-size: 1em !important;
+        line-height: 1.5em; }
     .agenda.medallo .item-agenda {
       max-width: 450px;
       max-height: 600px;
@@ -3103,7 +3105,7 @@ body.single-programacion .agenda.theme-events {
       font-family: 'CircularStd', sans-serif;
       font-size: 1.5625em;
       font-weight: 600;
-      margin: 0 0 0.4em; }
+      margin: 0 10px 0.4em 0; }
       @media screen and (min-width: 1000px) {
         .agenda .item-agenda .nombre {
           font-size: 1.875em; } }

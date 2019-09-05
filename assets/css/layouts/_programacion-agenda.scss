@@ -4,7 +4,9 @@
 }
 
 .agenda {
-  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   overflow: visible;
   font-size: em(15);
 
@@ -26,12 +28,12 @@
       width: 95%;
       max-width: 600px;
       margin: 0;
-      margin-top: 0px;
       line-height: 1.8em;
-      margin-top: 2em;
+      margin-top: 1.5em;
 
       &.participante p {
         font-size: 1em !important;
+        line-height: 1.5em;
       }
     }
 
@@ -245,7 +247,7 @@
       font-family: 'CircularStd', sans-serif;
       font-size: 1.5625em;
       font-weight: 600;
-      margin: 0 0 0.4em;
+      margin: 0 10px 0.4em 0;
 
       @media screen and (min-width: 1000px) {
         font-size: em(30);
