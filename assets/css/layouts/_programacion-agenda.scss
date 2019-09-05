@@ -11,7 +11,7 @@
   overflow: visible;
   font-size: em(15);
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 980px) {
     font-size: em(13);
   }
 
@@ -48,6 +48,12 @@
         border-right: none;
       }
 
+      @media #{$medium-and-down} {
+        max-width: 500px;
+        max-height: 660px;
+        
+      }
+
       .inside {
         position: absolute;
         top: 75px;
@@ -67,6 +73,10 @@
     z-index: 10;
     text-align: center;
     font-size: em(16,13);
+
+    @media #{$medium-and-down} {
+      visibility: hidden;
+    }
 
     div {
       width: 2.5em;
@@ -103,7 +113,7 @@
       margin-bottom: em(20);
       overflow: hidden;
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         font-size: em(26);
         // padding: 0 em(20,26);
         margin-bottom: em(20,26);
@@ -133,7 +143,7 @@
       font-weight: 500;
       cursor: pointer;
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         margin-bottom: em(70);
       }
 
@@ -150,7 +160,7 @@
           margin-right: em(10);
         }
 
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 980px) {
           font-size: em(70);
         }
 
@@ -176,6 +186,11 @@
     overflow: visible;
     padding: 0.9375em 0.9375em 0 4em;
 
+    @media #{$medium-and-down} {
+      padding: 0.9375em 0.9375em 0 0;
+    }
+
+
     @media screen and (min-width: 1024px) {
       margin-top: em(50);
       padding: 0.9375em 0.9375em 0 5em;
@@ -200,7 +215,7 @@
     flex-direction: column;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding: 1.25em em(0);
+    padding: 1.25em 1.25em;
     border-radius: 5px;
 
     &.escondido {
@@ -213,9 +228,10 @@
 
     
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 980px) {
       margin-right: em(25);
       padding: em(33) em(40);
+
     }
 
     &.is-selected {
@@ -249,7 +265,7 @@
       font-weight: 600;
       margin: 0 10px 0.4em 0;
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         font-size: em(30);
       }
     }
@@ -274,7 +290,7 @@
       padding-left: 10px;
       padding-right: 5px;
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         font-size: em(80);
         left: em(25,60);
       }

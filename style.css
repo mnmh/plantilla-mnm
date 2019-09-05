@@ -2938,7 +2938,7 @@ body.single-programacion .agenda.theme-events {
   max-width: 1600px;
   overflow: visible;
   font-size: 0.9375em; }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 980px) {
     .agenda {
       font-size: 0.8125em; } }
   .agenda.medallo {
@@ -2965,6 +2965,10 @@ body.single-programacion .agenda.theme-events {
           border-bottom: none;
           border-left: none;
           border-right: none; } }
+      @media only screen and (max-width: 980px) {
+        .agenda.medallo .item-agenda {
+          max-width: 500px;
+          max-height: 660px; } }
       .agenda.medallo .item-agenda .inside {
         position: absolute;
         top: 75px; }
@@ -2978,6 +2982,9 @@ body.single-programacion .agenda.theme-events {
     z-index: 10;
     text-align: center;
     font-size: 1.23077em; }
+    @media only screen and (max-width: 980px) {
+      .agenda .hori_scroll {
+        visibility: hidden; } }
     .agenda .hori_scroll div {
       width: 2.5em;
       height: 2.5em;
@@ -3003,7 +3010,7 @@ body.single-programacion .agenda.theme-events {
       font-size: 1.25em;
       margin-bottom: 1.25em;
       overflow: hidden; }
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         .agenda .timeNav .meses {
           font-size: 1.625em;
           margin-bottom: 0.76923em; } }
@@ -3020,7 +3027,7 @@ body.single-programacion .agenda.theme-events {
     .agenda .timeNav .dias {
       font-weight: 500;
       cursor: pointer; }
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         .agenda .timeNav .dias {
           margin-bottom: 4.375em; } }
       .agenda .timeNav .dias .item {
@@ -3034,7 +3041,7 @@ body.single-programacion .agenda.theme-events {
         @media screen and (min-width: 650px) {
           .agenda .timeNav .dias .item {
             margin-right: 0.625em; } }
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 980px) {
           .agenda .timeNav .dias .item {
             font-size: 4.375em; } }
         .agenda .timeNav .dias .item span {
@@ -3049,6 +3056,9 @@ body.single-programacion .agenda.theme-events {
     width: 100%;
     overflow: visible;
     padding: 0.9375em 0.9375em 0 4em; }
+    @media only screen and (max-width: 980px) {
+      .agenda .items {
+        padding: 0.9375em 0.9375em 0 0; } }
     @media screen and (min-width: 1024px) {
       .agenda .items {
         margin-top: 3.125em;
@@ -3070,14 +3080,14 @@ body.single-programacion .agenda.theme-events {
     flex-direction: column;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding: 1.25em 0em;
+    padding: 1.25em 1.25em;
     border-radius: 5px; }
     .agenda .item-agenda.escondido {
       opacity: 0.25; }
     @media screen and (max-width: 400px) {
       .agenda .item-agenda {
         padding: 1.25em 1.25em; } }
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 980px) {
       .agenda .item-agenda {
         margin-right: 1.5625em;
         padding: 2.0625em 2.5em; } }
@@ -3106,7 +3116,7 @@ body.single-programacion .agenda.theme-events {
       font-size: 1.5625em;
       font-weight: 600;
       margin: 0 10px 0.4em 0; }
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         .agenda .item-agenda .nombre {
           font-size: 1.875em; } }
     .agenda .item-agenda .hora {
@@ -3128,7 +3138,7 @@ body.single-programacion .agenda.theme-events {
       width: auto;
       padding-left: 10px;
       padding-right: 5px; }
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         .agenda .item-agenda .hora {
           font-size: 5em;
           left: 0.41667em; } }
