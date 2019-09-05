@@ -2946,6 +2946,9 @@ body.single-programacion .agenda.theme-events {
     margin-bottom: 2em !important; }
     .agenda.medallo .btn {
       font-size: 16px; }
+      @media only screen and (max-width: 650px) {
+        .agenda.medallo .btn {
+          font-size: 14px; } }
     .agenda.medallo .texto {
       font-size: 1.125em;
       width: 95%;

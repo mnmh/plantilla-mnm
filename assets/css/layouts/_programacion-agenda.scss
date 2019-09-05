@@ -21,6 +21,10 @@
 
     .btn {
       font-size: 16px;
+
+      @media #{$small-and-down} {
+        font-size: 14px;
+      }
     }
 
     .texto {
