@@ -2942,19 +2942,20 @@ body.single-programacion .agenda.theme-events {
     max-width: 110em !important;
     padding: 5em 0 10em 0 !important;
     margin-bottom: 2em !important; }
+    .agenda.medallo .btn {
+      font-size: 16px; }
     .agenda.medallo .texto {
       font-size: 1.125em;
-      width: 90%;
+      width: 95%;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0;
       margin-top: 0px;
       line-height: 1.8em;
       margin-top: 2em; }
       .agenda.medallo .texto.participante p {
-        font-size: 1em !important;
-        font-family: 'CircularStd', sans-serif !important; }
+        font-size: 1em !important; }
     .agenda.medallo .item-agenda {
-      max-width: 500px;
+      max-width: 450px;
       max-height: 600px;
       height: 80vh; }
       @media all and (max-width: 850px) {
@@ -2964,7 +2965,7 @@ body.single-programacion .agenda.theme-events {
           border-right: none; } }
       .agenda.medallo .item-agenda .inside {
         position: absolute;
-        top: 110px; }
+        top: 75px; }
     .agenda.medallo .timeNav .meses {
       display: none; }
   .agenda .hori_scroll {
@@ -3050,14 +3051,14 @@ body.single-programacion .agenda.theme-events {
         padding: 0.9375em 0.9375em 0 5em; } }
   .agenda .item-agenda {
     text-decoration: none;
-    color: #000;
+    color: #3B3B3B;
     width: 70vw;
     height: 70vw;
     max-width: 350px;
     max-height: 350px;
     display: block;
     position: relative;
-    border: 2px solid black;
+    border: 1.7px solid #3B3B3B;
     margin-right: 1.25em;
     display: -ms-flexbox;
     display: flex;
@@ -3065,7 +3066,8 @@ body.single-programacion .agenda.theme-events {
     flex-direction: column;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding: 1.25em 1.875em; }
+    padding: 1.25em 0em;
+    border-radius: 5px; }
     .agenda .item-agenda.escondido {
       opacity: 0.25; }
     @media screen and (max-width: 400px) {
@@ -3073,8 +3075,8 @@ body.single-programacion .agenda.theme-events {
         padding: 1.25em 1.25em; } }
     @media screen and (min-width: 1000px) {
       .agenda .item-agenda {
-        margin-right: 2.8125em;
-        padding: 2.0625em 1.5625em; } }
+        margin-right: 1.5625em;
+        padding: 2.0625em 2.5em; } }
     .agenda .item-agenda.is-selected {
       opacity: 1; }
     .agenda .item-agenda.escondido {
@@ -3103,17 +3105,18 @@ body.single-programacion .agenda.theme-events {
         .agenda .item-agenda .nombre {
           font-size: 1.875em; } }
     .agenda .item-agenda .hora {
+      color: #3B3B3B;
+      font-family: 'CircularStd', sans-serif;
+      font-weight: 600;
       display: block;
       position: absolute;
       left: 0.25em;
-      top: -0.2em;
-      font-size: 2.925em;
+      top: -0.3em;
+      font-size: 4em;
       text-transform: uppercase;
       line-height: 0.75;
-      font-family: 'CircularStd', sans-serif;
       transition: opacity 300ms ease 200ms, transform 300ms ease 200ms;
       transform: translate3d(0, 0, 0);
-      letter-spacing: 4px;
       background: white;
       z-index: 1;
       display: inline-block;
@@ -3122,7 +3125,7 @@ body.single-programacion .agenda.theme-events {
       padding-right: 5px; }
       @media screen and (min-width: 1000px) {
         .agenda .item-agenda .hora {
-          font-size: 3.75em;
+          font-size: 5em;
           left: 0.41667em; } }
       @media screen and (max-width: 400px) {
         .agenda .item-agenda .hora {
@@ -3151,11 +3154,12 @@ body.single-programacion .agenda.theme-events {
         margin-right: 5px;
         padding-left: 2px; }
     .agenda .item-agenda .tipo {
-      font-size: 0.875em;
-      text-transform: capitalize;
+      font-size: 14px;
+      text-transform: uppercase;
       font-weight: 600;
       display: block;
-      margin-bottom: 2em; }
+      margin-bottom: 0;
+      color: #9A9A9A; }
 
 .site-section {
   margin-bottom: 4.375em; }

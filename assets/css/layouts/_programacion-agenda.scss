@@ -17,23 +17,26 @@
     padding: 5em 0 10em 0 !important;
     margin-bottom: 2em !important;
 
+    .btn {
+      font-size: 16px;
+    }
+
     .texto {
       font-size: 1.125em;
-      width: 90%;
+      width: 95%;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0;
       margin-top: 0px;
       line-height: 1.8em;
       margin-top: 2em;
 
-      &.participante p{
+      &.participante p {
         font-size: 1em !important;
-        font-family: 'CircularStd', sans-serif !important;
       }
     }
 
     .item-agenda {
-      max-width: 500px;
+      max-width: 450px;
       max-height: 600px;
       height: 80vh;
 
@@ -45,7 +48,7 @@
 
       .inside {
         position: absolute;
-        top: 110px;
+        top: 75px;
       }
     }
 
@@ -180,14 +183,14 @@
 
   .item-agenda {
     text-decoration: none;
-    color: #000;
+    color: $black;
     width: 70vw;
     height: 70vw;
     max-width: 350px;
     max-height: 350px;
     display: block;
     position: relative;
-    border: 2px solid black;
+    border: 1.7px solid $black;
     margin-right: em(20);
     display: -ms-flexbox;
     display: flex;
@@ -195,8 +198,8 @@
     flex-direction: column;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding: 1.25em em(30);
-    // opacity: 0.1;
+    padding: 1.25em em(0);
+    border-radius: 5px;
 
     &.escondido {
       opacity: 0.25;
@@ -209,8 +212,8 @@
     
 
     @media screen and (min-width: 1000px) {
-      margin-right: em(45);
-      padding: em(33) em(25);
+      margin-right: em(25);
+      padding: em(33) em(40);
     }
 
     &.is-selected {
@@ -249,18 +252,18 @@
     }
 
     .hora {
+      color: $black;
+      font-family: 'CircularStd', sans-serif;
+      font-weight: 600;
       display: block;
       position: absolute;
       left: 0.25em;
-      top: -0.2em;
-      font-size: 2.925em;
+      top: -0.3em;
+      font-size: 4em;
       text-transform: uppercase;
       line-height: 0.75;
-      // opacity: 0;
-      font-family: 'CircularStd', sans-serif;
       transition: opacity 300ms ease 200ms, transform 300ms ease 200ms;
       transform: translate3d(0, 0, 0);
-      letter-spacing: 4px;
       background: white;
       z-index: 1;
       display: inline-block;
@@ -269,7 +272,7 @@
       padding-right: 5px;
 
       @media screen and (min-width: 1000px) {
-        font-size: em(60);
+        font-size: em(80);
         left: em(25,60);
       }
 
@@ -310,11 +313,12 @@
     }
 
     .tipo {
-          font-size: 0.875em;
-          text-transform: capitalize;
+          font-size: 14px;
+          text-transform: uppercase;
           font-weight: 600;
           display: block;
-          margin-bottom: 2em;
+          margin-bottom: 0;
+          color: $gris
     }
   }
 }
