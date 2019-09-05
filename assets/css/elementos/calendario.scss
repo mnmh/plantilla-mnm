@@ -126,6 +126,8 @@
         width: 60%;
         margin-right: 20px;
 
+
+
         .mes {
             font-family: 'CircularStd', sans-serif;
             color: $black;
@@ -142,6 +144,11 @@
             @media all and (max-width: 900px) {
                 grid-template-rows: repeat(2, 50px) repeat(5, 50px);
             }
+
+            @media #{$small-and-down} {
+                grid-gap: 1px;
+                font-size: 1.5em;
+            }
         }
 
         .item {
@@ -150,6 +157,10 @@
             display: flex;
             align-items: center;
             position: relative;
+
+            @media #{$small-and-down} {
+                padding: 0.1em;
+            }
 
             &.dia_nom {
                 text-transform: lowercase;
@@ -222,6 +233,8 @@
             &.vacio {
                 border-color: #fff;
             }
+
+            
         }
     }
 

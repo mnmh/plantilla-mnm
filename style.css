@@ -6733,12 +6733,19 @@ body#tinymce {
       @media all and (max-width: 900px) {
         .calendario_mes #calendario .mes {
           grid-template-rows: repeat(2, 50px) repeat(5, 50px); } }
+      @media only screen and (max-width: 650px) {
+        .calendario_mes #calendario .mes {
+          grid-gap: 1px;
+          font-size: 1.5em; } }
     .calendario_mes #calendario .item {
       border: 1px solid #dcdcdc;
       padding: 0.5em;
       display: flex;
       align-items: center;
       position: relative; }
+      @media only screen and (max-width: 650px) {
+        .calendario_mes #calendario .item {
+          padding: 0.1em; } }
       .calendario_mes #calendario .item.dia_nom {
         text-transform: lowercase;
         font-size: 0.75em;
