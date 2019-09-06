@@ -7055,7 +7055,7 @@ body#tinymce {
       transform: translate(0, 150%);
       padding: 7px 9px; }
     .botones-carrousel .boton .btn {
-      position: absolute;
+      position: relative !important;
       top: 44%;
       left: 50%;
       transform: translate(-47%, -50%);
