@@ -23,7 +23,7 @@ if($invertido == 1) $class = 'invertido';
             </div>
         </div>
         <div class="right">
-            <div class="img" style="background-image: url('<?php echo $img['url'];?>')"></div>
+            <div class="img" style="background-image:url('<?php echo $img['url'] ?>')"></div>
         </div>
     </div>
 </div>

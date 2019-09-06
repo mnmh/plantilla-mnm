@@ -17,6 +17,19 @@
 
         &.invertido {
             flex-flow: row-reverse;
+
+            .right {
+                display: flex;
+                .img{
+                    position: fixed;
+                    width:50%;
+                    height: 80vh;
+                    max-width: 750px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+            }
         }
    
         .left, .right {
@@ -49,9 +62,12 @@
             display: flex;
 
             .img {
+                width:100%;
                 height: 80vh;
-                max-width: 90%;
-                background-size: cover;
+                max-width: 750px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
             }
 
         }
