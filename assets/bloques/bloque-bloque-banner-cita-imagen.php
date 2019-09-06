@@ -14,11 +14,13 @@ $imagen = get_field('imagen');
 ?>
 
 <div class="banner cita-imagen btm">
-    <div class="left">
-        <div class="cita"><?php echo $cita; ?></div>
-        <a href="<?php echo $enlace; ?>" class="link"><?php echo $textoEnlace; ?></a>
-    </div>
-    <div class="right">
-        <img src="<?php echo $imagen['url']; ?>" alt="" width=<?php echo $imagen['width']; ?> height=<?php echo $imagen['height']; ?>>
+    <div class="contenedor-banner">
+        <div class="left">
+            <div class="cita"><?php echo $cita; ?></div>
+            <a href="<?php echo $enlace; ?>" class="link"><?php echo $textoEnlace; ?></a>
+        </div>
+        <div class="right">
+            <div class="img" style="background-image: url('<?php echo $imagen['url']; ?>')"></div>
+        </div>
     </div>
 </div>

@@ -1,27 +1,43 @@
 .banner {
     &.cita-imagen {
-        display: flex;
+        height: 50vh;
+        min-height: 300px;
         background: $grisclaro;
-
-        .left, .right {
+        
+        .contenedor-banner {
+            display: flex;
             width: 100%;
-        }
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
 
-        .left {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
-
-            .cita, .link {
+            .left, .right {
                 width: 100%;
-                display: block;
             }
-        }
 
-        .right {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            .left {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+
+                .cita, .link {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .img {
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 40%;
+                    transform: translate(0, 30%);
+                }
+            }
         }
     }
 }

@@ -7694,21 +7694,33 @@ body#tinymce {
     margin: 5px; }
 
 .banner.cita-imagen {
-  display: flex;
+  height: 50vh;
+  min-height: 300px;
   background: #f4f4f4; }
-  .banner.cita-imagen .left, .banner.cita-imagen .right {
-    width: 100%; }
-  .banner.cita-imagen .left {
+  .banner.cita-imagen .contenedor-banner {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between; }
-    .banner.cita-imagen .left .cita, .banner.cita-imagen .left .link {
-      width: 100%;
-      display: block; }
-  .banner.cita-imagen .right {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto; }
+    .banner.cita-imagen .contenedor-banner .left, .banner.cita-imagen .contenedor-banner .right {
+      width: 100%; }
+    .banner.cita-imagen .contenedor-banner .left {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between; }
+      .banner.cita-imagen .contenedor-banner .left .cita, .banner.cita-imagen .contenedor-banner .left .link {
+        width: 100%;
+        display: block; }
+    .banner.cita-imagen .contenedor-banner .right {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .banner.cita-imagen .contenedor-banner .right .img {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40%;
+        transform: translate(0, 30%); }
 
 .banner.texto-imagen-corto {
   display: flex;
