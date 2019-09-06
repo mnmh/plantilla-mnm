@@ -14,16 +14,16 @@ $class = '';
 if($invertido == 1) $class = 'invertido';
 ?>
 
-<div class="header-columna btm <?php echo $class?>">
+<div class="header-columna btm">
     <h1 class="titulo"> <?php echo $titulo?> </h1>
-    <div class="contenedor">
+    <div class="contenedor <?php echo $class?>">
         <div class="left">
             <div class="texto">
                 <?php echo $texto?>
             </div>
         </div>
         <div class="right">
-            <img src="<?php echo $img['url'];?>" alt="">
+            <div class="img" style="background-image: url('<?php echo $img['url'];?>')"></div>
         </div>
     </div>
 </div>

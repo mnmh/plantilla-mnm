@@ -6,7 +6,6 @@
 
 // id unico para el bloque
 $id = 'botones-' . $block['id'];
-
 $titulo = get_field('titulo');
 
 ?>

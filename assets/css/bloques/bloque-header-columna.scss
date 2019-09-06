@@ -3,10 +3,6 @@
     max-width: 1600px;
     margin: 0 auto;
 
-    &.invertido {
-        flex-flow: row-reverse;
-    }
-
     .titulo {
         margin: 50px 0;
         padding-left: 40px;
@@ -18,6 +14,10 @@
         display: flex;
         justify-content: space-between;
         padding-left: 20px;
+
+        &.invertido {
+            flex-flow: row-reverse;
+        }
    
         .left, .right {
             width: 100%;
@@ -43,6 +43,12 @@
 
         .right {
             display: flex;
+
+            .img {
+                height: 80vh;
+                max-width: 90%;
+                background-size: cover;
+            }
 
         }
     }
