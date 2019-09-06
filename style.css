@@ -7769,25 +7769,35 @@ body#tinymce {
 .banner.texto-imagen-corto {
   display: flex;
   background: #f4f4f4;
-  max-height: 300px; }
-  .banner.texto-imagen-corto .titulo {
-    color: #3B3B3B; }
-  .banner.texto-imagen-corto .left, .banner.texto-imagen-corto .right {
-    width: 100%; }
-  .banner.texto-imagen-corto .left {
+  min-height: 500px;
+  height: 20vh; }
+  .banner.texto-imagen-corto .contenedor-banner {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between; }
-    .banner.texto-imagen-corto .left .texto, .banner.texto-imagen-corto .left .link {
-      width: 100%;
-      display: block; }
-  .banner.texto-imagen-corto .right {
-    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
-    justify-content: center;
-    position: relative; }
-    .banner.texto-imagen-corto .right .img {
-      background-size: cover; }
+    padding-left: 20px; }
+    .banner.texto-imagen-corto .contenedor-banner .left, .banner.texto-imagen-corto .contenedor-banner .right {
+      width: 100%; }
+    .banner.texto-imagen-corto .contenedor-banner .left {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between; }
+      .banner.texto-imagen-corto .contenedor-banner .left .titulo {
+        width: 80%;
+        display: block;
+        color: #3B3B3B;
+        font-size: 48px; }
+    .banner.texto-imagen-corto .contenedor-banner .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative; }
+      .banner.texto-imagen-corto .contenedor-banner .right .img {
+        background-size: cover; }
 
 .header-columna {
   display: flex;

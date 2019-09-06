@@ -3,36 +3,46 @@
     &.texto-imagen-corto {
         display: flex;
         background: $grisclaro;
-        max-height: 300px;
+        min-height: 500px;
+        height:20vh;
 
-        .titulo {
-            color: $black;
-        }
-
-        .left, .right {
+        .contenedor-banner {
+            display: flex;
             width: 100%;
-            
-        }
-
-        .left {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
-
-            .texto, .link {
-                width: 100%;
-                display: block;
-            }
-        }
-
-        .right {
-            display: flex;
+            height: 100%;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
             align-items: center;
-            justify-content: center;
-            position: relative;
+            padding-left: 20px;
 
-            .img {
-                background-size: cover;
+            .left, .right {
+                width: 100%;
+                
+            }
+
+            .left {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+
+                .titulo {
+                    width: 80%;
+                    display: block;   
+                    color: $black;
+                    font-size: 48px;
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                .img {
+                    background-size: cover;
+                }
             }
         }
     }
