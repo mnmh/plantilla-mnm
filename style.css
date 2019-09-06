@@ -7830,6 +7830,8 @@ body#tinymce {
         .header-columna .contenedor .left .texto h3 {
           font-size: 24px;
           margin-bottom: 20px; }
+        .header-columna .contenedor .left .texto h4 {
+          margin-top: 10px; }
     .header-columna .contenedor .right {
       display: flex; }
       .header-columna .contenedor .right .img {
