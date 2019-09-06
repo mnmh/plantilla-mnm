@@ -1,5 +1,4 @@
-.header-columna{
-    display: flex;
+.header-columna {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
@@ -7,29 +6,37 @@
     &.invertido {
         flex-flow: row-reverse;
     }
-   
-    .left, .right {
-        width: 100%;
-    }
 
-    .left {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
+    .titulo {
+        margin: 50px 0;
         padding-left: 20px;
-
+        color: $black;
+        font-size: 56px;
     }
 
-    .right {
+    .contenedor {
         display: flex;
-        position: relative;
+   
+        .left, .right {
+            width: 100%;
+        }
 
-        img {
+        .left {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            padding-left: 20px;
+
+        }
+
+        .right {
+            display: flex;
             position: relative;
-            margin-left: 20%;
-            width: 90%;
-            height: 80vh;
-            min-height: 700px;
+
+            img {
+                background-size: cover;
+                margin-left: 20%;
+            }
         }
     }
 }

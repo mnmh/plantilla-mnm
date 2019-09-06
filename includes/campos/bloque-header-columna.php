@@ -6,6 +6,25 @@ if( function_exists('acf_add_local_field_group') ):
 		'title' => 'bloque header columna',
 		'fields' => array(
 			array(
+				'key' => 'field_5d7289e152534',
+				'label' => 'Titulo',
+				'name' => 'titulo',
+				'type' => 'textarea',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'new_lines' => '',
+			),
+			array(
 				'key' => 'field_5d7161b76bca0',
 				'label' => 'texto',
 				'name' => 'texto',

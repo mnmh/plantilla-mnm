@@ -7803,28 +7803,31 @@ body#tinymce {
             font-size: 24px; } }
 
 .header-columna {
-  display: flex;
   width: 100%;
   max-width: 1600px;
   margin: 0 auto; }
   .header-columna.invertido {
     flex-flow: row-reverse; }
-  .header-columna .left, .header-columna .right {
-    width: 100%; }
-  .header-columna .left {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    padding-left: 20px; }
-  .header-columna .right {
-    display: flex;
-    position: relative; }
-    .header-columna .right img {
-      position: relative;
-      margin-left: 20%;
-      width: 90%;
-      height: 80vh;
-      min-height: 700px; }
+  .header-columna .titulo {
+    margin: 50px 0;
+    padding-left: 20px;
+    color: #3B3B3B;
+    font-size: 56px; }
+  .header-columna .contenedor {
+    display: flex; }
+    .header-columna .contenedor .left, .header-columna .contenedor .right {
+      width: 100%; }
+    .header-columna .contenedor .left {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      padding-left: 20px; }
+    .header-columna .contenedor .right {
+      display: flex;
+      position: relative; }
+      .header-columna .contenedor .right img {
+        background-size: cover;
+        margin-left: 20%; }
 
 .columnas {
   display: flex; }
