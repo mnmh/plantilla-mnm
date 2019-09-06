@@ -7700,18 +7700,36 @@ body#tinymce {
   .banner.cita-imagen .contenedor-banner {
     display: flex;
     width: 100%;
+    height: 100%;
     max-width: 1600px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    align-items: center;
+    padding-left: 20px; }
     .banner.cita-imagen .contenedor-banner .left, .banner.cita-imagen .contenedor-banner .right {
       width: 100%; }
     .banner.cita-imagen .contenedor-banner .left {
       display: flex;
-      flex-wrap: wrap;
-      align-content: space-between; }
+      flex-wrap: wrap; }
+      .banner.cita-imagen .contenedor-banner .left h1 {
+        max-width: 600px;
+        color: #3B3B3B; }
+      .banner.cita-imagen .contenedor-banner .left h6 {
+        font-family: "Inter", sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        color: #9A9A9A;
+        margin-top: 20px; }
+      .banner.cita-imagen .contenedor-banner .left .link {
+        font-family: 'CircularStd', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #3B3B3B;
+        position: absolute;
+        bottom: 35px; }
       .banner.cita-imagen .contenedor-banner .left .cita, .banner.cita-imagen .contenedor-banner .left .link {
-        width: 100%;
-        display: block; }
+        display: block;
+        width: 100%; }
     .banner.cita-imagen .contenedor-banner .right {
       display: flex;
       align-items: center;
@@ -7719,8 +7737,7 @@ body#tinymce {
       .banner.cita-imagen .contenedor-banner .right .img {
         background-size: contain;
         background-repeat: no-repeat;
-        width: 40%;
-        transform: translate(0, 30%); }
+        width: 40%; }
 
 .banner.texto-imagen-corto {
   display: flex;
