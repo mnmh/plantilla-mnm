@@ -7055,7 +7055,7 @@ body#tinymce {
       transform: translate(0, 150%);
       padding: 7px 9px; }
     .botones-carrousel .boton .btn {
-      position: relative !important;
+      position: relative;
       top: 44%;
       left: 50%;
       transform: translate(-47%, -50%);
@@ -7727,6 +7727,11 @@ body#tinymce {
         color: #3B3B3B;
         position: absolute;
         bottom: 35px; }
+        .banner.cita-imagen .contenedor-banner .left .link::before {
+          position: absolute;
+          font-family: 'mnm';
+          content: '\E80E';
+          right: 85%; }
       .banner.cita-imagen .contenedor-banner .left .cita, .banner.cita-imagen .contenedor-banner .left .link {
         display: block;
         width: 100%; }

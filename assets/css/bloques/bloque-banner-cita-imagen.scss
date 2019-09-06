@@ -42,6 +42,13 @@
                     color: $black;
                     position: absolute;
                     bottom: 35px;
+
+                    &::before {
+                        position: absolute;
+                        font-family: 'mnm';
+                        content: '\E80E';
+                        right: 85%;
+                    }
                 }
 
                 .cita, .link {
