@@ -7695,8 +7695,14 @@ body#tinymce {
 
 .banner.cita-imagen {
   height: 50vh;
-  min-height: 300px;
+  min-height: 400px;
   background: #f4f4f4; }
+  @media only screen and (max-width: 980px) {
+    .banner.cita-imagen {
+      height: 80vh; } }
+  @media only screen and (max-width: 650px) {
+    .banner.cita-imagen {
+      height: 100vh; } }
   .banner.cita-imagen .contenedor-banner {
     display: flex;
     width: 100%;
@@ -7706,6 +7712,10 @@ body#tinymce {
     margin-right: auto;
     align-items: center;
     padding-left: 20px; }
+    @media only screen and (max-width: 980px) {
+      .banner.cita-imagen .contenedor-banner {
+        flex-direction: column-reverse;
+        justify-content: space-around; } }
     .banner.cita-imagen .contenedor-banner .left, .banner.cita-imagen .contenedor-banner .right {
       width: 100%; }
     .banner.cita-imagen .contenedor-banner .left {
@@ -7714,6 +7724,10 @@ body#tinymce {
       .banner.cita-imagen .contenedor-banner .left h1 {
         max-width: 600px;
         color: #3B3B3B; }
+        @media only screen and (max-width: 650px) {
+          .banner.cita-imagen .contenedor-banner .left h1 {
+            width: 100%;
+            font-size: 24px; } }
       .banner.cita-imagen .contenedor-banner .left h6 {
         font-family: "Inter", sans-serif;
         font-weight: normal;
@@ -7731,7 +7745,7 @@ body#tinymce {
           position: absolute;
           font-family: 'mnm';
           content: '\E80E';
-          right: 85%; }
+          margin-left: 250px; }
       .banner.cita-imagen .contenedor-banner .left .cita, .banner.cita-imagen .contenedor-banner .left .link {
         display: block;
         width: 100%; }
@@ -7743,6 +7757,14 @@ body#tinymce {
         background-size: contain;
         background-repeat: no-repeat;
         width: 40%; }
+        @media only screen and (max-width: 980px) {
+          .banner.cita-imagen .contenedor-banner .right .img {
+            width: 60%;
+            top: -210px; } }
+        @media only screen and (max-width: 650px) {
+          .banner.cita-imagen .contenedor-banner .right .img {
+            width: 90%;
+            top: -210px; } }
 
 .banner.texto-imagen-corto {
   display: flex;

@@ -1,8 +1,16 @@
 .banner {
     &.cita-imagen {
         height: 50vh;
-        min-height: 300px;
+        min-height: 400px;
         background: $grisclaro;
+
+        @media #{$medium-and-down} { 
+            height: 80vh;
+        }
+
+        @media #{$small-and-down} { 
+            height: 100vh;
+        }
         
         .contenedor-banner {
             display: flex;
@@ -13,6 +21,11 @@
             margin-right: auto;
             align-items: center;
             padding-left: 20px;
+
+            @media #{$medium-and-down} { 
+                flex-direction: column-reverse;
+                justify-content: space-around;
+            }
 
             .left, .right {
                 width: 100%;
@@ -25,6 +38,11 @@
                 h1 {
                     max-width: 600px;
                     color: $black;
+
+                    @media #{$small-and-down} { 
+                        width: 100%;
+                        font-size: 24px;
+                    }
                 }
 
                 h6 {
@@ -47,7 +65,7 @@
                         position: absolute;
                         font-family: 'mnm';
                         content: '\E80E';
-                        right: 85%;
+                        margin-left: 250px;
                     }
                 }
 
@@ -67,6 +85,16 @@
                     background-size: contain;
                     background-repeat: no-repeat;
                     width: 40%;
+
+                    @media #{$medium-and-down} { 
+                        width: 60%;
+                        top: -210px;
+                    }
+
+                    @media #{$small-and-down} { 
+                        width: 90%;
+                        top: -210px;
+                    }
                 }
             }
         }
