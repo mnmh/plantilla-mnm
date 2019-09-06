@@ -9,13 +9,15 @@
 
     .titulo {
         margin: 50px 0;
-        padding-left: 20px;
+        padding-left: 40px;
         color: $black;
         font-size: 56px;
     }
 
     .contenedor {
         display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
    
         .left, .right {
             width: 100%;
@@ -27,16 +29,21 @@
             align-content: space-between;
             padding-left: 20px;
 
+            .texto {
+                width: 80%;
+                color: $black;
+
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+            }
+
         }
 
         .right {
             display: flex;
-            position: relative;
 
-            img {
-                background-size: cover;
-                margin-left: 20%;
-            }
         }
     }
 }
