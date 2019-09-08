@@ -225,6 +225,17 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'banner', 'corto', 'texto', 'imagen'),
 		));
+		
+		// Bloque personajes
+		acf_register_block(array(
+			'name'				=> 'bloque personajes',
+			'title'				=> __('Bloque personajes'),
+			'description'		=> __('Un bloque para mostrar un reproductor para la radio'),
+			'render_callback'	=> 'bloque_callback_bloque_personajes',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'banner', 'corto', 'texto', 'imagen'),
+		));
 	}
 }
 
@@ -382,6 +393,14 @@ function bloque_callback_bloque_banner_cita_imagen( $block ) {
 
 // Carga el bloque banner corto con texto
 function bloque_callback_bloque_banner_corto_texto( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga el bloque banner corto con texto
+function bloque_callback_bloque_personajes( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );

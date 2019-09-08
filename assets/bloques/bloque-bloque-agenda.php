@@ -94,6 +94,7 @@ foreach($posts as $post):
         <div class="nombre">'.$title.'</div>
         <div class="ubicacion">'.$lugar.'</div>
         <div class="time">'.$hora_inicio.' - '.$hora_fin.'</div>
+        <a class="inscripcion btn">Inscribirse</a>
         <div class="texto">'.$post->post_content.'</div>
         <div class="texto participante">'.$participante.'</div>
         </div>
@@ -106,8 +107,8 @@ endforeach;
 <div class="agenda medallo">
 
     <div class="nav">
-        <div data-div="agenda_dias" class="btn active">Vista por días</div>
-        <div data-div="calendario_mes" class="btn">Vista por mes</div>
+        <div data-div="agenda_dias" class="itemNav btn active">Vista por días</div>
+        <div data-div="calendario_mes" class="itemNav btn">Vista por mes</div>
     </div>
     
     <div class="agenda_dias">
@@ -136,4 +137,15 @@ endforeach;
         
     </div>
  
+</div>
+
+<div class="popup">
+<?php
+    $settings = array(
+        'field_groups' => array(4700),
+        'submit_value' => 'Inscribirse'
+    );
+
+    acf_form($settings);
+?>
 </div>

@@ -14,28 +14,28 @@
 		<footer class="content-info site-footer">
 			<div class="footer_container">
 				<section>
+					<h2>Museo de Memoria de Colombia</h2>
 					<div class="footer-museo">
-						<h2>Museo de Memoria de Colombia</h2>
-						<h3>Recorre</h3>
 						<ul class="museo-links">
-							<li><a href="#">Proyecto</a></li>
-							<li><a href="#">Diseño</a></li>
-							<li><a href="#">Avance del guión</a></li>
+							<h3>Recorre</h3>
+							<li><a href="#">Sobre el proyecto</a></li>
+							<li><a href="#">Diseño del edificio</a></li>
+							<li><a href="#">Plan museológico</a></li>
+							<li><a href="#">Infórmate</a></li>
 						</ul>
-						<h3>Comprende</h3>
 						<ul class="museo-links">
+							<h3>Comprende</h3>
 							<li><a href="#">Arte y Cultura</a></li>
 							<li><a href="#">Voces para transformar</a></li>
 							<li><a href="#">Archivo DDHH</a></li>
 							<li><a href="#">Observatorio</a></li>
 						</ul>
-						<h3>Transformar</h3>
 						<ul class="museo-links">
+							<h3>Transformar</h3>
 							<li><a href="#">Agenda</a></li>
 							<li><a href="#">Educación</a></li>
 						</ul>
-					</div>
-					<div class="footer-general">
+
 						<ul class="cnmh-links">
 							<h3>CNMH</h3>
 							<li><a href="http://www.centrodememoriahistorica.gov.co/que-es-el-cnmh" target="_blank">Qué es el CNMH</a></li>
@@ -43,8 +43,6 @@
 							<li><a href="http://www.centrodememoriahistorica.gov.co/ley-de-victimas" target="_blank">Ley de Víctimas</a></li>
 							<li><a href="http://www.centrodememoriahistorica.gov.co/publicaciones-cnmh" target="_blank">Publicaciones CNMH</a></li>
 							<li><a href="http://www.centrodememoriahistorica.gov.co/pasantias-y-practicas" target="_blank">Pasantías y Prácticas</a></li>
-							<li><a href="http://www.archivodelosddhh.gov.co/saia_release1/ws_client_oim/menu_usuario.php">Archivo Virtual de los Derechos Humanos y Memoria Histórica</a></li>
-							<li><a href="http://centrodememoriahistorica.gov.co/observatorio/">Observatorio CNMH</a></li>
 						</ul>
 					</div>
 				</section>

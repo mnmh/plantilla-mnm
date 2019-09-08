@@ -6400,20 +6400,21 @@ header.section-header {
           display: block;
           width: 20px;
           height: 20px; }
-  .site-footer section {
-    display: flex;
-    justify-content: center; }
   .site-footer li {
     line-height: 1.2; }
   .site-footer .footer-museo {
-    width: 18em; }
+    display: flex; }
+    .site-footer .footer-museo ul {
+      width: 100%; }
     .site-footer .footer-museo h3 {
       margin-bottom: 0.52632em; }
     .site-footer .footer-museo .museo-links {
+      display: block;
       margin-bottom: 1.8em; }
     .site-footer .footer-museo li {
-      display: inline-block;
-      margin-right: 0.8em; }
+      display: block;
+      margin-right: 0.8em;
+      margin-bottom: 1.33333em; }
   .site-footer .footer-general {
     display: flex; }
     .site-footer .footer-general > ul {
@@ -7143,24 +7144,39 @@ body#tinymce {
       transform: scale(1.05); }
       .banner .tarjetas .item.active .play {
         opacity: 1; }
-  @media all and (max-width: 1000px) {
+  @media only screen and (max-width: 980px) {
     .banner .tarjetas {
-      flex-wrap: wrap;
-      right: 50%;
-      transform: translate(50%, 0);
-      width: 200px; }
+      display: block;
+      position: static; }
       .banner .tarjetas .item {
         width: 100%;
-        height: 110px; } }
+        height: 200px;
+        margin: 0;
+        margin-bottom: 5px;
+        transform: none !important; }
+        .banner .tarjetas .item .play {
+          opacity: 1; } }
   @media only screen and (max-width: 1200px) {
     .banner .tarjetas {
       right: 40px;
       justify-content: center; } }
 
-@media all and (max-width: 1000px) {
-  .banner.audio .content {
-    bottom: auto;
-    top: 0; } }
+@media only screen and (max-width: 980px) {
+  .banner.audio {
+    height: auto;
+    background: white;
+    min-height: 0; }
+    .banner.audio .img {
+      display: none; }
+    .banner.audio .inside {
+      padding: 0;
+      color: #333; }
+      .banner.audio .inside .content {
+        position: relative;
+        top: 0;
+        transform: translate(0px, 0px) !important; }
+        .banner.audio .inside .content .contenedor-txt .txt {
+          max-width: 100%; } }
 
 .texto_banner .inside {
   min-height: 200px;
@@ -7430,7 +7446,6 @@ body#tinymce {
       .tarjetas .item.is-selected .des {
         opacity: 1; }
     .tarjetas .item.video .img:after {
-      content: '\E81F';
       font-family: 'mnm';
       font-size: 5em;
       text-align: center;
@@ -7689,9 +7704,51 @@ body#tinymce {
   display: flex;
   margin-bottom: 20px; }
   .agenda .nav .itemNav {
-    border: 1px solid #999;
+    background: #225DDC; }
+
+.agenda .inscripcion {
+  border: 1px solid #dcdcdc;
+  background: transparent;
+  color: #999; }
+  .agenda .inscripcion:hover {
+    background: #225DDC;
+    color: white; }
+
+.popup {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none; }
+  .popup .acf-label {
+    display: none; }
+  .popup .acf-field {
+    border: none !important;
+    width: 400px; }
+  .popup .acf-form-submit {
+    text-align: center; }
+  .popup span {
+    color: white; }
+  .popup input[type=text] {
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 1em !important;
+    padding: 20px !important; }
+  .popup input[type=submit] {
+    border-radius: 30px;
+    border: none;
     padding: 10px;
-    margin: 5px; }
+    font-weight: bold;
+    background: #F4C724;
+    color: white;
+    margin: 0 auto;
+    margin-top: 30px; }
 
 .banner.cita-imagen {
   height: 50vh;
