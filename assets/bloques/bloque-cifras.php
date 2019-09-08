@@ -8,7 +8,7 @@
 $id = 'bloque-' . $block['id'];
 ?>
 <div id="cifras">
-<div class="cifras-container pad">
+<div class="cifras-container">
 
 <?php if(have_rows('cifras')): while(have_rows('cifras')): the_row(); ?>
     <div class="cifra">

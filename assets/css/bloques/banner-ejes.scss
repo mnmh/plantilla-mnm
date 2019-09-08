@@ -1,50 +1,70 @@
 .banner {
+    
+    .content {
+
+            &.ejes { 
+            width: 100%;
+            max-width: none !important;
+            padding-left: 20px;
+            transform: translate(0, 100%) !important;
+            bottom: 30%;
+
+            .titulo {
+                max-width: 1600px;
+                margin: auto;
+            }
+
+            .contenedor-txt {
+                max-width: 1600px;
+                margin: 1vh auto;
+
+                .txt {
+                    max-width: 40%;
+                }
+            }
+        }
+    }
+
+    .contenedor-tarjetas {
+        width: 100%;
+    }
     .tarjetas {
-        position: absolute;
-        width: 50%;
-        bottom: -70px;
-        right: 2%;
         display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 1600px;
+        margin: auto;
+        position: relative;
+        top: 40vh;
 
         .item {
-            background: white;
-            width: 30%;
-            margin: 10px;
-            height: 300px;
+            width: 250px;
+            height: 375px;
+            margin-left: 15px;
+            
             background-size: cover;
             background-position: center;
             transform: scale(1);
             transition: all 0.25s ease;
             position: relative;
-            border: 1px solid white;
+            border:none;
+
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+            box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
 
             .play {
                 position: absolute;
-                bottom: 10px;
+                bottom: 20px;
                 left: 50%;
                 transform: translate(-50%, 0);
-                width: 50px;
-                height: 50px;
-                background: white;
-                border-radius: 50px;
                 opacity: 0;
                 transition: opacity 0.25s ease;
                 cursor: pointer;
-
-                &:before {
-                    content: '\e810';
-                    font-family: 'mnm';
-                    color: #555;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 1.5em;
-                }
             }
 
             &.active {
-                transform: scale(1.15);
+                transform: scale(1.05);
 
                 .play {
                     opacity: 1;
@@ -63,6 +83,12 @@
                 height: 110px;
             }
         }
+
+        @media #{$large-and-down} {
+            right: 40px;
+            justify-content: center;
+            
+        }     
     }
 
     &.audio {
@@ -78,6 +104,13 @@
 .texto_banner .inside {
     min-height: 200px;
     margin-top: 150px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
 
-    
-}
+    p {
+            margin: 4vh 0 !important; 
+            padding-left: 20px;
+
+    }  
+}  

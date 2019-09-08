@@ -8,9 +8,11 @@
 $id = 'bloque-' . $block['id'];
 ?>
 
-<div id="galeria_voces" class="pad">
-    <div class="next"></div>
-    <div class="prev"></div>
+<div id="galeria_voces">  
+    <div class="nav">
+        <div class="next"></div>
+        <div class="prev"></div>
+    </div>
 
     <div class="inside">
         <?php

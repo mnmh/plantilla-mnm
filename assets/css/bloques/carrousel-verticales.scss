@@ -12,7 +12,7 @@
         
     }
 
-    .descripcion{
+    .descripcion {
         font-size: 16px;
         font-weight: 500;
     }
@@ -24,9 +24,14 @@
     }
 
     .hori_scroll {
-        top: 60%;
+        top: 50%;
         width: 95%;
         left: 2.5%;
+
+        @media #{$large-and-down} {
+            top: 110% !important;
+        }
+
 
         div {
             border-radius: 20px;
@@ -79,6 +84,7 @@
         width: 100%;
         max-width: 1600px;
         margin: auto;
+        clip-path: inset( -100vw -100vw -100vw 0 );
     }
 
     .profiles-item {
@@ -148,24 +154,34 @@
                 height: em(460);
             }
 
-            &.itinerancias{
+            &.itinerancias {
                 width: 20vw;
                 height: 35vw;
+                min-width: 250px;
+                min-height: 400px;
 
-            @media screen and (max-width: 850px) {
-                width: 30vw;
-                height: 52vw;
+                @media #{$extralarge-and-down} {
 
-                .descripcion {
-                    font-size: 12px;
+                    .descripcion {
+                        font-size: 14px;
+                    }
+    
+                    .inside_content{
+                        padding: 1em;
+                    }
                 }
 
-                .inside_content{
-                    padding: 0.5em;
-                }
-            }
+                @media #{$medium-and-down} {
 
-            
+                    .inside_content{
+                        padding: 1em;
+
+                        h3 {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
                 .opacity-layer{
                     background-color: rgba(0, 0, 0, 0.3);
                     position: absolute;

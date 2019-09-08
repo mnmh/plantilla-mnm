@@ -103,7 +103,7 @@ endforeach;
 
 ?>
 
-<div class="agenda pad medallo">
+<div class="agenda medallo">
 
     <div class="nav">
         <div data-div="agenda_dias" class="btn active">Vista por días</div>
@@ -131,6 +131,7 @@ endforeach;
         <div class="listado"></div>
         <div id="calendario">
             <?php crearMes(); ?>
+            <?php crearMesSiguiente(); ?>
         </div>
         
     </div>

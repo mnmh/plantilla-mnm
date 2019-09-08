@@ -5,15 +5,20 @@
         
         .contenedor-carrusel {
             max-width: 1600px;
+            height: 100%;
             margin: auto;
 
             .content {
-                padding-left: 20px;
+                padding-left: 40px;
+
+                @media #{$small-and-down} {
+                    padding-left: 5px;
+                }
             }
 
             .subtitulo {
                 text-transform: uppercase;
-                color: #9A9A9A;
+                color: #F4C724;
             }
 
             .img {
@@ -21,6 +26,7 @@
                 height: 90%;
                 right: 0;
                 bottom: 0;
+                min-height: 700px;
             }
 
             .btn {
@@ -36,8 +42,44 @@
                 .item {
                     border-color: white;
                     border: none;
+                    border-radius: 40px;
+                    font-weight: bold;
                 }
             }
+        }
+    }
+
+    /* MEDIA QUERIES -------------------------------------------------------*/
+
+    @media #{$extralarge-and-down} {
+        &.banner-margenes {
+            .nav {
+                top: 95%;
+            }
+        }
+    }
+
+    @media #{$medium-and-down} {
+
+        &.banner-margenes {
+
+            .contenedor-carrusel {
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    right: 0;
+                    bottom: 0;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0; right: 0;
+                        top: 0; bottom: 0;
+                        background: black;
+                        opacity: 0.3;
+                    }
+                }
+             }
         }
     }
 }

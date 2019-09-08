@@ -7,11 +7,15 @@ $max-side-width: em(450);
 
 $color2: #d5941c;
 $white: rgb(255, 255, 255);
-$black: #222;
+$black:  #3B3B3B;
+$gris: #9A9A9A;
+$grisclaro: #f4f4f4;
 
 $color-menu: #ff7153;
 
 $rosado: #fcebeb;
+$amarillo: #F4C724;
+$azul: #225DDC;
 
 $ancho: 350px;
 $ancho2: 280px;
@@ -22,6 +26,31 @@ $dobleancho: 700px;
 $tripleancho: 1050px;
 
 $ancho_small: 50px;
+
+//tamaños de pantalla para media queries
+
+$small-screen: 650px !default;
+$medium-screen: 980px !default;
+$large-screen: 1200px !default;
+$extralarge-screen: 1700px !default;
+
+$small-screen-up: 651px !default;
+$medium-screen-up: 981px !default;
+$large-screen-up: 1201px !default;
+$extralarge-screen-up: 1701px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$large-and-down: "only screen and (max-width : #{$large-screen})" !default;
+$extralarge-and-down: "only screen and (max-width : #{$extralarge-screen})" !default;
+
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$extra-large-only: "only screen and (min-width : #{$large-screen-up}) and (max-width : #{$extralarge-screen})" !default;
+
 
 @mixin top-offset($pos) {
   -moz-transform: translateY($pos);

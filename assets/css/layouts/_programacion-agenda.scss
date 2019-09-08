@@ -4,48 +4,61 @@
 }
 
 .agenda {
-  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1600px;
   overflow: visible;
   font-size: em(15);
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 980px) {
     font-size: em(13);
   }
 
   &.medallo {
-    max-width:  110em !important;
-    padding: 5em 0 10em 0 !important;
+    padding: 0 0 10em 20px !important;
     margin-bottom: 2em !important;
+
+    .btn {
+      font-size: 16px;
+
+      @media #{$small-and-down} {
+        font-size: 14px;
+      }
+    }
 
     .texto {
       font-size: 1.125em;
-      width: 90%;
+      width: 95%;
       max-width: 600px;
-      margin: 0 auto;
-      margin-top: 0px;
+      margin: 0;
       line-height: 1.8em;
-      margin-top: 2em;
+      margin-top: 1.5em;
 
-      &.participante p{
+      &.participante p {
         font-size: 1em !important;
-        font-family: 'CircularStd', sans-serif !important;
+        line-height: 1.5em;
       }
     }
 
     .item-agenda {
-      max-width: 500px;
+      max-width: 450px;
       max-height: 600px;
       height: 80vh;
 
-      @media all and (max-width: 850px) {
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
+      @media #{$medium-and-down} {
+        max-width: 500px;
+        max-height: 660px;
+        
+      }
+
+      @media #{$small-and-down} {
+        height: 90vh;
       }
 
       .inside {
         position: absolute;
-        top: 110px;
+        top: 75px;
       }
     }
 
@@ -62,6 +75,10 @@
     z-index: 10;
     text-align: center;
     font-size: em(16,13);
+
+    @media #{$medium-and-down} {
+      visibility: hidden;
+    }
 
     div {
       width: 2.5em;
@@ -89,6 +106,8 @@
   }
 
   .timeNav {
+    font-family: 'CircularStd', sans-serif;
+
     .meses {
       font-weight: 500;
       font-size: em(20);
@@ -96,7 +115,7 @@
       margin-bottom: em(20);
       overflow: hidden;
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         font-size: em(26);
         // padding: 0 em(20,26);
         margin-bottom: em(20,26);
@@ -117,18 +136,16 @@
         margin-right: em(10,14);
 
         &.selected {
-          color: #000;
+          color: $black;
         }
       }
     }
 
     .dias {
-      // padding: 0 em(20);
-      // margin-bottom: em(20);
       font-weight: 500;
       cursor: pointer;
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         margin-bottom: em(70);
       }
 
@@ -145,7 +162,7 @@
           margin-right: em(10);
         }
 
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 980px) {
           font-size: em(70);
         }
 
@@ -155,11 +172,11 @@
         }
 
         &.selected {
-          color: #000;
+          color: $black;
         }
 
         &:hover {
-          color: #333;
+          color: $gris;
         }
       }
     }
@@ -171,6 +188,11 @@
     overflow: visible;
     padding: 0.9375em 0.9375em 0 4em;
 
+    @media #{$medium-and-down} {
+      padding: 0.9375em 0.9375em 0 0;
+    }
+
+
     @media screen and (min-width: 1024px) {
       margin-top: em(50);
       padding: 0.9375em 0.9375em 0 5em;
@@ -180,14 +202,14 @@
 
   .item-agenda {
     text-decoration: none;
-    color: #000;
+    color: $black;
     width: 70vw;
     height: 70vw;
     max-width: 350px;
     max-height: 350px;
     display: block;
     position: relative;
-    border: 2px solid black;
+    border: 1.7px solid $black;
     margin-right: em(20);
     display: -ms-flexbox;
     display: flex;
@@ -195,22 +217,22 @@
     flex-direction: column;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding: 1.25em em(30);
-    // opacity: 0.1;
+    padding: 1.25em 1.25em;
+    border-radius: 5px;
 
     &.escondido {
       opacity: 0.25;
     }
 
-    @media screen and (max-width: 400px) {
+    @media #{$small-and-down} {
       padding: 1.25em 1.25em;
+      width: 100%;
     }
 
-    
+    @media screen and (min-width: 980px) {
+      margin-right: em(25);
+      padding: em(33) em(40);
 
-    @media screen and (min-width: 1000px) {
-      margin-right: em(45);
-      padding: em(33) em(25);
     }
 
     &.is-selected {
@@ -239,28 +261,29 @@
     }
 
     .nombre {
+      font-family: 'CircularStd', sans-serif;
       font-size: 1.5625em;
       font-weight: 600;
-      margin: 0 0 0.4em;
+      margin: 0 10px 0.4em 0;
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 980px) {
         font-size: em(30);
       }
     }
 
     .hora {
+      color: $black;
+      font-family: 'CircularStd', sans-serif;
+      font-weight: 600;
       display: block;
       position: absolute;
       left: 0.25em;
-      top: -0.2em;
-      font-size: 2.925em;
+      top: -0.3em;
+      font-size: 4em;
       text-transform: uppercase;
       line-height: 0.75;
-      // opacity: 0;
-      font-family: 'mnm';
       transition: opacity 300ms ease 200ms, transform 300ms ease 200ms;
       transform: translate3d(0, 0, 0);
-      letter-spacing: 4px;
       background: white;
       z-index: 1;
       display: inline-block;
@@ -268,8 +291,8 @@
       padding-left: 10px;
       padding-right: 5px;
 
-      @media screen and (min-width: 1000px) {
-        font-size: em(60);
+      @media screen and (min-width: 980px) {
+        font-size: em(80);
         left: em(25,60);
       }
 
@@ -310,11 +333,12 @@
     }
 
     .tipo {
-          font-size: 0.875em;
-          text-transform: capitalize;
+          font-size: 14px;
+          text-transform: uppercase;
           font-weight: 600;
           display: block;
-          margin-bottom: 2em;
+          margin-bottom: 0;
+          color: $gris
     }
   }
 }

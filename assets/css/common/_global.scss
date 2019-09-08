@@ -142,7 +142,7 @@ h5 {
 .perfil_viewer p {
   font-family: 'Inter', sans-serif;
   line-height: 2;
-  color: #222;
+  color:  #3B3B3B;
   margin: em(20) 0 em(50);
   font-size: 16px;
 
@@ -177,11 +177,11 @@ h5 {
   }
 
   @media screen and (min-width: 850px) {
-    font-size: em(17);
+    font-size: 16px;
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: em(18);
+    font-size: 16px;
   }
 }
 

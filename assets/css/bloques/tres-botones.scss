@@ -1,22 +1,24 @@
 .tres-botones {
-    width: 90%;
+    width: 100%;
     margin: auto;
     max-width: 1600px;
     color: white;
-    margin-bottom: 5vh;
+    margin-bottom: 9vh;
+    margin-top: 12vh;
 
     .botones {
         display: flex;
         justify-content: center;
 
         .boton {
-            width: 32.33vw;
-            height: 32.33vw;
+            width: 33vw;
+            height: 33vw;
             position: relative;
             margin: 0.5%;
             padding: 32px;
-            max-width: 400px;
-            max-height: 400px;
+            //max-width: 500px;
+            max-height: 500px;
+            min-height: 190px;
 
             &:nth-child(1) {
                 background-color:#225DDC;
@@ -66,9 +68,53 @@
                     }
                  }
             }
+
+            @media #{$medium-and-down} {
+                max-width: none;
+                height: 20vw;
+                
+                
+            }
         }
     }
     
+    &.segunda{
+        max-width: 2000px;
+        width: 100%;
+        margin-top: 9vh;
+        
+
+        .sec {
+            display: block;
+            width: 100%;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+        }
+
+        .boton {
+            background-color: #F6F6F6 !important; 
+            max-width: none;
+            min-height: 400px;
+
+            .name {
+                bottom: 5%;
+                position: absolute;
+
+                .btn {
+                    background-color: #3B3B3B;
+                }
+
+                p {
+                    max-width: 70% !important;
+                    margin-left: 0 !important;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
     @media all and (max-width: 1000px) {
         .botones {
             flex-wrap: wrap;

@@ -1,15 +1,49 @@
 <?php
-
 if( function_exists('acf_add_local_field_group') ):
 
     acf_add_local_field_group(array(
-        'key' => 'group_5d34d3e3e82d9',
-        'title' => 'BLOQUE banner texto',
+        'key' => 'group_5d7151cd2d9b0',
+        'title' => 'bloque cita',
         'fields' => array(
             array(
-                'key' => 'field_5d34d3eac4521',
-                'label' => 'Titulo',
-                'name' => 'titulo',
+                'key' => 'field_5d7151d50bd76',
+                'label' => 'Cita',
+                'name' => 'cita',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 1,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_5d7151fe0bd77',
+                'label' => 'Enlace',
+                'name' => 'enlace',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'field_5d7152070bd78',
+                'label' => 'Texto del enlace',
+                'name' => 'texto_del_enlace',
                 'type' => 'text',
                 'instructions' => '',
                 'required' => 0,
@@ -26,26 +60,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'maxlength' => '',
             ),
             array(
-                'key' => 'field_5d34d3f1c4522',
-                'label' => 'Texto',
-                'name' => 'texto',
-                'type' => 'textarea',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'maxlength' => '',
-                'rows' => '',
-                'new_lines' => '',
-            ),
-            array(
-                'key' => 'field_5d34d3f8c4523',
+                'key' => 'field_5d71520f0bd79',
                 'label' => 'Imagen',
                 'name' => 'imagen',
                 'type' => 'image',
@@ -68,32 +83,13 @@ if( function_exists('acf_add_local_field_group') ):
                 'max_size' => '',
                 'mime_types' => '',
             ),
-            array(
-                'key' => 'field_5d714d63f5b13',
-                'label' => 'activar boton',
-                'name' => 'activar_boton',
-                'type' => 'true_false',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'message' => 'Activar botón saber más',
-                'default_value' => 0,
-                'ui' => 0,
-                'ui_on_text' => '',
-                'ui_off_text' => '',
-            ),
         ),
         'location' => array(
             array(
                 array(
                     'param' => 'block',
                     'operator' => '==',
-                    'value' => 'acf/banner-texto',
+                    'value' => 'acf/bloque-banner-cita-imagen',
                 ),
             ),
         ),
@@ -108,5 +104,4 @@ if( function_exists('acf_add_local_field_group') ):
     ));
     
     endif;
-
 ?>

@@ -6,7 +6,7 @@ if( function_exists('acf_add_local_field_group') ):
         'title' => 'BLOQUE Botones',
         'fields' => array(
             array(
-                'key' => 'field_5d3660a91a20a',
+                'key' => 'field_5d3660a61a20a',
                 'label' => 'Titulo',
                 'name' => 'titulo',
                 'type' => 'text',
