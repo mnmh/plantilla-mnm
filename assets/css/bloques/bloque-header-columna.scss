@@ -23,7 +23,7 @@
                 .img{
                     position: fixed;
                     width:50%;
-                    height: 80vh;
+                    height: 100%;
                     max-width: 750px;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -63,13 +63,21 @@
 
             .img {
                 width:100%;
-                height: 80vh;
+                height: 100%;
                 max-width: 750px;
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
             }
 
+        }
+
+        @media #{$medium-and-down} {
+            flex-wrap: wrap;
+
+            .img {
+                height: 400px;
+            }
         }
     }
 }

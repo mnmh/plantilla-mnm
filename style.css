@@ -7892,7 +7892,7 @@ body#tinymce {
         .header-columna .contenedor.invertido .right .img {
           position: fixed;
           width: 50%;
-          height: 80vh;
+          height: 100%;
           max-width: 750px;
           background-size: contain;
           background-repeat: no-repeat;
@@ -7916,11 +7916,16 @@ body#tinymce {
       display: flex; }
       .header-columna .contenedor .right .img {
         width: 100%;
-        height: 80vh;
+        height: 100%;
         max-width: 750px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center; }
+    @media only screen and (max-width: 980px) {
+      .header-columna .contenedor {
+        flex-wrap: wrap; }
+        .header-columna .contenedor .img {
+          height: 400px; } }
 
 .audio.piepag {
   background: #3B3B3B;
