@@ -20,19 +20,21 @@
                 text-transform: uppercase;
                 color: #F4C724;
             }
+            .carrousel {
+                .item {
+                    max-width: 1600px;
+                    left: 50% !important;
+                    height: 100vh;
+                    transform: translate(-50%, 0%);
+                }
 
-            .item {
-                max-width: 1600px;
-                left: 50% !important;
-                height: 100vh;
-                transform: translate(-50%, 0%);
+                .img {
+                    width: 70%;
+                    height: 90%;
+                    right: 0;
+                }
             }
-
-            .img {
-                width: 70%;
-                height: 90%;
-                right: 0;
-            }
+            
 
             .btn {
                 color: white;

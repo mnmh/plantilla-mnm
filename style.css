@@ -7359,12 +7359,12 @@ body#tinymce {
       .banner.banner-margenes .contenedor-carrusel .subtitulo {
         text-transform: uppercase;
         color: #F4C724; }
-      .banner.banner-margenes .contenedor-carrusel .item {
+      .banner.banner-margenes .contenedor-carrusel .carrousel .item {
         max-width: 1600px;
         left: 50% !important;
         height: 100vh;
         transform: translate(-50%, 0%); }
-      .banner.banner-margenes .contenedor-carrusel .img {
+      .banner.banner-margenes .contenedor-carrusel .carrousel .img {
         width: 70%;
         height: 90%;
         right: 0; }

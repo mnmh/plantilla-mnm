@@ -21,10 +21,10 @@ $id = 'bloque-' . $block['id'];
         </div>
         <div class="inside">
             <div class="content">
-                <div class="subtitulo">sub titulo</div>
+                <div class="subtitulo"><?php echo get_sub_field('subtitulo') ?></div>
                 <h1 class="titulo"><strong></strong></h1>
                 <div class="txt"></div>
-                <div class="btn">ver más</div>
+                <a href="<?php echo get_sub_field('enlace') ?>" class="btn">ver más</a>
             </div>
         </div>
         <div class="nav">
