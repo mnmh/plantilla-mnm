@@ -142,7 +142,7 @@ endforeach;
 <div class="popup">
 <?php
     $settings = array(
-        'field_groups' => array(4700),
+        'field_groups' => array('group_5d756c588f0df'),
         'submit_value' => 'Inscribirse'
     );
 

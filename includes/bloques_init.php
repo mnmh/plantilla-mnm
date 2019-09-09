@@ -234,7 +234,7 @@ function my_acf_init() {
 			'render_callback'	=> 'bloque_callback_bloque_personajes',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
-			'keywords'			=> array( 'banner', 'corto', 'texto', 'imagen'),
+			'keywords'			=> array( 'banner', 'personajes', 'texto', 'imagen'),
 		));
 	}
 }
@@ -399,11 +399,11 @@ function bloque_callback_bloque_banner_corto_texto( $block ) {
 	}
 }
 
-// Carga el bloque banner corto con texto
+// Carga el bloque banner con personajes
 function bloque_callback_bloque_personajes( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
-	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
-		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-bloque-personajes.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-bloque-personajes.php") );
 	}
 }
 
@@ -422,5 +422,6 @@ include( get_theme_file_path("/includes/campos/tres-botones.php") );
 include( get_theme_file_path("/includes/campos/banner-cita-imagen.php") );
 include( get_theme_file_path("/includes/campos/banner-corto-texto.php") );
 include( get_theme_file_path("/includes/campos/bloque-header-columna.php") );
+include( get_theme_file_path("/includes/campos/formulario-correo.php") );
 
 ?>

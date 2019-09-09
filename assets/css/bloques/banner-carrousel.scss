@@ -4,11 +4,18 @@
 
     .carrousel {
         overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
 
         .item {
             position: absolute;
             width: 100%;
             height: 60vh;
+
+            .img {
+                bottom: auto !important;
+            }
         }
     }
 

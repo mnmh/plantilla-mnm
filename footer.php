@@ -6,6 +6,8 @@
 				</ul>
 			</div>
 
+			<audio src="#" id="audioPlayer"></audio>
+
 			</main>
 			<!-- /CONTENIDO -->
 		</div>
@@ -54,7 +56,7 @@
 					<h3>Recibe nuestras noticias</h3>
 					<?php
 						$settings = array(
-							'field_groups' => array(4483),
+							'field_groups' => array('group_5d7667e2d999e'),
 							'submit_value' => 'Suscribirme'
 						);
 					?>

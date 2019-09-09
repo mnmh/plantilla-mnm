@@ -15,6 +15,44 @@
 
         $('.banner .tarjetas .item:first-child').click();
 
+        $('.audio.piepag .tarjetas .play').on('click', function(){
+            // var urlAudio = $(this).attr('data-url');
+            var urlAudio = '/audio.mp3';
+            var audio = document.getElementById("audioPlayer");
+            audio.setAttribute('src', urlAudio);
+
+            $('.audio.piepag .tarjetas .play.playing').removeClass('playing');
+            $(this).addClass('playing');
+
+            audio.oncanplay = () => {
+                audio.play();
+            }
+
+            audio.ontimeupdate = () => {
+                var timeCurrent = audio.currentTime;
+                var timeTotal = audio.duration;
+                updateTimeText(timeCurrent, timeTotal);
+            }
+
+        });
+
+        function secondsTimeSpanToHMS(s) {
+            var h = Math.floor(s/3600);
+            s -= h*3600;
+            var m = Math.floor(s/60);
+            s -= m*60;
+    
+            s = Math.floor(s);
+            return (h < 10 ? '0'+h : h)+":"+(m < 10 ? '0'+m : m)+":"+(s < 10 ? '0'+s : s);
+        }
+
+        function updateTimeText(current, total) {
+            var porcentaje = ((current * 100)/total);
+    
+            $('.reproductor .current').attr('style', 'width: '+porcentaje+'%');
+            $('.reproductor .time').html(secondsTimeSpanToHMS(current) + "/" + secondsTimeSpanToHMS(total));
+        }
+
     });
 
 })(jQuery, this);
