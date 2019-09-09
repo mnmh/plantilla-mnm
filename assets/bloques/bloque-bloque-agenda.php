@@ -10,18 +10,18 @@ $id = 'bloque-' . $block['id'];
 $today = date('Ymd');
 $args = array (
     'post_type' => 'programacion',
-    // 'meta_query' => array(
-    //     'relation' => 'AND',
-    //     'dia' => array(
-    //         'key'		=> 'dia',
-    //         'compare'	=> '>=',
-    //         'value'		=> $today,
-    //     ),
-    //     'hora' => array(
-    //         'key'		=> 'hora_de_inicio',
-    //         'compare'	=> 'EXISTS'
-    //     )
-    // ),
+    'meta_query' => array(
+        'relation' => 'AND',
+        'dia' => array(
+            'key'		=> 'dia',
+            'compare'	=> '>=',
+            'value'		=> $today,
+        ),
+        'hora' => array(
+            'key'		=> 'hora_de_inicio',
+            'compare'	=> 'EXISTS'
+        )
+    ),
     'tax_query' => array(
         array(
             'taxonomy' => 'tipo_evento',
@@ -31,10 +31,10 @@ $args = array (
         )
     ),
     'posts_per_page'   => -1,
-    // 'orderby' => array(
-    //     'dia' => ASC,
-    //     'hora' => ASC
-    // )
+    'orderby' => array(
+        'dia' => ASC,
+        'hora' => ASC
+    )
 );
 
 // get posts
