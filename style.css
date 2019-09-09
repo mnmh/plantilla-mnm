@@ -4237,7 +4237,7 @@ blockquote {
     display: block;
     width: 4.6875em;
     height: 0.25em;
-    background: #F4C724;
+    background: #ffbc54;
     margin: 0;
     position: relative;
     top: -1.875em; }
@@ -4767,7 +4767,7 @@ blockquote {
       position: absolute;
       top: 100%;
       left: 0;
-      background: #F4C724;
+      background: #ffbc54;
       width: 100%;
       height: 100%; }
       @media screen and (min-width: 900px) {
@@ -4780,12 +4780,12 @@ blockquote {
       position: absolute;
       top: 0;
       left: 0;
-      background: linear-gradient(to top, #F4C724, rgba(255, 255, 255, 0));
+      background: linear-gradient(to top, #ffbc54, rgba(255, 255, 255, 0));
       width: 100%;
       height: 100%; }
       @media screen and (min-width: 900px) {
         #intro_header .background_img::after {
-          background: linear-gradient(to left, #F4C724, rgba(255, 255, 255, 0)); } }
+          background: linear-gradient(to left, #ffbc54, rgba(255, 255, 255, 0)); } }
   #intro_header.conmemora {
     color: white; }
     #intro_header.conmemora p {
@@ -4846,7 +4846,7 @@ figure {
     left: 0;
     width: 100%;
     height: 150%;
-    background: #F4C724;
+    background: #ffbc54;
     z-index: -1; }
   .color-section::before {
     display: block;
@@ -5464,7 +5464,7 @@ body.no_scroll {
 
 .voces-publicacion {
   width: 100%;
-  background: #F4C724; }
+  background: #ffbc54; }
   @media screen and (min-width: 1300px) {
     .voces-publicacion .publicaciones-list {
       position: relative; }
@@ -6590,9 +6590,9 @@ body#tinymce {
   display: table;
   text-decoration: none !important;
   cursor: pointer;
-  color: #225DDC;
+  color: #3e6cd1;
   background-color: transparent;
-  border: 1px solid #225DDC;
+  border: 1px solid #3e6cd1;
   font-weight: bold;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -6606,7 +6606,7 @@ body#tinymce {
   text-decoration: none !important;
   cursor: pointer;
   color: white;
-  background-color: #F4C724;
+  background-color: #ffbc54;
   font-weight: bold;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -6857,7 +6857,7 @@ body#tinymce {
     padding-left: 30px;
     padding-right: 30px; }
     .form_mail .acf-button:hover {
-      background: #225DDC;
+      background: #3e6cd1;
       color: white; }
   .form_mail .acf-form-submit {
     text-align: center; }
@@ -7687,30 +7687,26 @@ body#tinymce {
         .tres-botones .botones .boton {
           max-width: none;
           height: 20vw; } }
-  .tres-botones.segunda {
-    max-width: 2000px;
+  .tres-botones.segunda .sec {
+    display: block;
     width: 100%;
-    margin-top: 9vh; }
-    .tres-botones.segunda .sec {
-      display: block;
-      width: 100%;
-      max-width: 1600px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 20px; }
-    .tres-botones.segunda .boton {
-      background-color: #F6F6F6 !important;
-      max-width: none;
-      min-height: 400px; }
-      .tres-botones.segunda .boton .name {
-        bottom: 5%;
-        position: absolute; }
-        .tres-botones.segunda .boton .name .btn {
-          background-color: #3B3B3B; }
-        .tres-botones.segunda .boton .name p {
-          max-width: 70% !important;
-          margin-left: 0 !important;
-          font-weight: 300; }
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px; }
+  .tres-botones.segunda .boton {
+    background-color: #F6F6F6 !important;
+    max-width: none;
+    min-height: 400px; }
+    .tres-botones.segunda .boton .name {
+      bottom: 5%;
+      position: absolute; }
+      .tres-botones.segunda .boton .name .btn {
+        background-color: #3B3B3B; }
+      .tres-botones.segunda .boton .name p {
+        max-width: 70% !important;
+        margin-left: 0 !important;
+        font-weight: 300; }
   @media all and (max-width: 1000px) {
     .tres-botones .botones {
       flex-wrap: wrap; }
@@ -7721,14 +7717,14 @@ body#tinymce {
   display: flex;
   margin-bottom: 20px; }
   .agenda .nav .itemNav {
-    background: #225DDC; }
+    background: #3e6cd1; }
 
 .agenda .inscripcion {
   border: 1px solid #dcdcdc;
   background: transparent;
   color: #999; }
   .agenda .inscripcion:hover {
-    background: #225DDC;
+    background: #3e6cd1;
     color: white; }
 
 .popup {
@@ -7762,7 +7758,7 @@ body#tinymce {
     border: none;
     padding: 10px;
     font-weight: bold;
-    background: #F4C724;
+    background: #ffbc54;
     color: white;
     margin: 0 auto;
     margin-top: 30px; }
@@ -7944,7 +7940,7 @@ body#tinymce {
         top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: #225DDC; }
+        background: #3e6cd1; }
         .audio.piepag .tarjetas .item .play.playing:after {
           content: '\e813'; }
   .audio.piepag .reproductor {
