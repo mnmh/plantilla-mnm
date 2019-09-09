@@ -7049,15 +7049,15 @@ body#tinymce {
       background-position: center; }
     .botones-carrousel .boton .info {
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      transform: translate(0, 100%); }
     .botones-carrousel .boton .name {
       padding: 0.5em;
       color: #3B3B3B;
       font-size: 18px; }
     .botones-carrousel .boton .subtitulo-tarjetas {
       color: #9A9A9A !important;
-      font-size: 14px !important;
-      padding: 7px 9px; }
+      font-size: 14px !important; }
     .botones-carrousel .boton .btn {
       position: relative;
       top: 44%;
