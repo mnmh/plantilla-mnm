@@ -7056,7 +7056,9 @@ body#tinymce {
     .botones-carrousel .boton .name {
       padding: 0.5em;
       color: #3B3B3B;
-      font-size: 18px; }
+      font-size: 18px;
+      padding-bottom: 0;
+      padding-left: 0; }
     .botones-carrousel .boton .subtitulo-tarjetas {
       color: #9A9A9A !important;
       font-size: 14px !important; }
