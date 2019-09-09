@@ -14,7 +14,7 @@ $titulo = get_field('titulo_del_carrousel');
 
 <div class="carrousel-vertical-container btm">
     <h1 class="sec"><?php echo $titulo; ?></h1>
-    <div class="subtitulo-sec"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
+    <div class="subtitulo-sec"><?php echo get_field('subtitulo') ?></div>
     <nav class="hori_scroll">
         <div class="prev"></div>
         <div class="next"></div>

@@ -29,7 +29,7 @@ $titulo = get_field('titulo');
                     <h2 class="name"><?php the_sub_field('nombre') ?></h2>
                     <p class="subtitulo-tarjetas"><?php echo get_sub_field('descripcion') ?></p>
                 </div>
-                <a href="#" class="btn">Ver más</a>
+                <a href="<?php echo get_sub_field('enlace') ?>" class="btn">Ver más</a>
             </li>
         <?php endwhile; endif; ?>
     </ul>

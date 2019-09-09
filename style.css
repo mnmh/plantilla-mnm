@@ -7353,7 +7353,7 @@ body#tinymce {
       margin: auto; }
       .banner.banner-margenes .contenedor-carrusel .content {
         padding-left: 40px;
-        max-width: 850px; }
+        max-width: 800px; }
         @media only screen and (max-width: 650px) {
           .banner.banner-margenes .contenedor-carrusel .content {
             padding-left: 5px; } }
