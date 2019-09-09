@@ -20,7 +20,7 @@ $imagen = get_field('imagen');
             <a href="<?php echo $enlace; ?>" class="link"><?php echo $textoEnlace; ?></a>
         </div>
         <div class="right">
-            <div class="img" style="background-image: url('<?php echo $imagen['url']; ?>')"></div>
+            <a href="<?php echo get_field('enlace_img')?>" class="img" style="background-image: url('<?php echo $imagen['url']; ?>')"></a>
         </div>
     </div>
 </div>
