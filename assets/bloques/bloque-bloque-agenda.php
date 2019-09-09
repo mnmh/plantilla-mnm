@@ -66,6 +66,7 @@ foreach($posts as $post):
     $participante = get_field('participante', $id);
 
     $tipo = get_field('tipo_ev', $id);
+    if(!$tipo) $tipo = '';
 
     $mes_temp = date('F',$time);
     $mes_temp = darMesEspanol($mes_temp);

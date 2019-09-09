@@ -9,8 +9,8 @@ $id = 'bloque-' . $block['id'];
 ?>
 
 <div class="tres-botones segunda">
-    <h1 class="sec"> Título </h1>
-    <div class="subtitulo-sec"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
+    <h1 class="sec"><?php echo get_field('titulo') ?></h1>
+    <div class="subtitulo-sec"><?php echo get_field('subtitulo') ?></div>
     <ul class="botones">
         <?php if(have_rows('listado_botones')): while(have_rows('listado_botones')): the_row(); ?>
         <?php
