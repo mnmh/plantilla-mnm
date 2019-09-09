@@ -7350,6 +7350,7 @@ body#tinymce {
     .banner.banner-margenes .contenedor-carrusel {
       max-width: 1600px;
       height: 100%;
+      position: relative;
       margin: auto; }
       .banner.banner-margenes .contenedor-carrusel .content {
         padding-left: 40px; }
@@ -7359,8 +7360,10 @@ body#tinymce {
       .banner.banner-margenes .contenedor-carrusel .subtitulo {
         text-transform: uppercase;
         color: #F4C724; }
+      .banner.banner-margenes .contenedor-carrusel .carrousel .flickity-slider {
+        height: 100%; }
       .banner.banner-margenes .contenedor-carrusel .carrousel .item {
-        height: 60vh; }
+        height: 100%; }
       .banner.banner-margenes .contenedor-carrusel .carrousel .img {
         width: 70%;
         height: 90%;

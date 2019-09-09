@@ -6,6 +6,7 @@
         .contenedor-carrusel {
             max-width: 1600px;
             height: 100%;
+            position: relative;
             margin: auto;
 
             .content {
@@ -21,8 +22,11 @@
                 color: #F4C724;
             }
             .carrousel {
+                .flickity-slider {
+                    height: 100%;
+                }
                 .item {
-                    height: 60vh;
+                    height: 100%;
                 }
 
                 .img {
