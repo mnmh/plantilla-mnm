@@ -77,8 +77,7 @@
   }
 
   section {
-  	display: flex;
-  	justify-content: center;
+
   }
 
   li {
@@ -86,19 +85,25 @@
   }
 
   .footer-museo {
-  	width: em(270,15);
+	  display: flex;
+
+	  ul {
+		  width: 100%;
+	  }
 
   	h3 {
   		margin-bottom: em(10,19);
   	}
 
   	.museo-links {
+		display: block;
   		margin-bottom: em(27,15);
   	}
 
   	li {
-  		display: inline-block;
-  		margin-right: em(12, 15);
+  		display: block;
+		  margin-right: em(12, 15);
+		  margin-bottom: 1.33333em;
   	}
   }
 

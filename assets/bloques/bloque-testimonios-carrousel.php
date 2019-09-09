@@ -10,7 +10,7 @@ $testimonios = get_posts(array('post_type' => 'citas', 'posts_per_page' => 10));
 // print_r($testimonios);
 ?>
 
-<div class="citas-container">
+<div class="citas-container btm">
     <div id="citas">
         <div class="inside">
             <?php foreach($testimonios as $testimonio): ?>

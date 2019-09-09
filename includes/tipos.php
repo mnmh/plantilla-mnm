@@ -4,10 +4,10 @@ add_action( 'init', 'cptg_custom_post_types' );
 function cptg_custom_post_types()
 	{
 		$labels = array(
-			'name' => 'Correos',
-			'singular_name' => 'Correos',
-			'menu_name' => 'Correos',
-			'name_admin_bar' => 'Correos',
+			'name' => 'Inscripciones a eventos',
+			'singular_name' => 'Inscripciones a eventos',
+			'menu_name' => 'Inscripciones a eventos',
+			'name_admin_bar' => 'Inscripciones a eventos',
 			'all_items' => 'All Posts',
 			'add_new' => 'Add New',
 			'add_new_item' => 'Add New Post',

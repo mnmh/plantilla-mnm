@@ -5,6 +5,11 @@
 
         iniciarAgenda();
         activarNavigacionTop();
+        
+        $('a.inscripcion.btn').on('click', function() {
+            console.log('hola');
+            $('.popup').fadeIn();
+        })
 
         function activarNavigacionTop() {
             $('.agenda .nav .btn').on('click', function() {
@@ -17,6 +22,11 @@
             });
 
             $('.agenda .nav .btn:first-child').click();
+
+            $('.inscripcion').on('click', function() {
+                $('.popup').fadeIn();
+                console.log('hola');
+            })
         }
 
         function iniciarAgenda() {

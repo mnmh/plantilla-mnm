@@ -4,9 +4,67 @@
         margin-bottom: 20px;
 
         .itemNav {
-            border: 1px solid #999;
-            padding: 10px;
-            margin: 5px;
+            background: $azul;
         }
+    }
+
+    .inscripcion {
+        border: 1px solid #dcdcdc;
+        background: transparent;
+        color: #999;
+
+        &:hover {
+            background: $azul;
+            color: white;
+        }
+    }
+}
+
+.popup {
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    .acf-label {
+        display: none;
+    }
+
+    .acf-field {
+        border: none !important;
+        width: 400px;
+    }
+
+    .acf-form-submit {
+        text-align: center;
+    }
+
+    span {
+        color: white;
+    }
+
+    input[type=text] {
+        border: 1px solid white;
+        border-radius: 30px;
+        font-size: 1em !important;
+        padding: 20px !important;
+    }
+
+    input[type=submit] {
+        border-radius: 30px;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        background: $amarillo;
+        color: white;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }

@@ -72,15 +72,20 @@
             }
         }
 
-        @media all and (max-width: 1000px) {
-            flex-wrap: wrap;
-            right: 50%;
-            transform: translate(50%, 0);
-            width: 200px;
+        @media #{$medium-and-down} {
+            display: block;
+            position: static;
 
             .item {
                 width: 100%;
-                height: 110px;
+                height: 200px;
+                margin: 0;
+                margin-bottom: 5px;
+                transform: none !important;
+
+                .play {
+                    opacity: 1;
+                }
             }
         }
 
@@ -91,11 +96,29 @@
         }     
     }
 
-    &.audio {
-        @media all and (max-width: 1000px) {
-            .content {
-                bottom: auto;
-                top: 0;
+    @media #{$medium-and-down} {
+        &.audio {
+            height: auto;
+            background: white;
+            min-height: 0;
+
+            .img {
+                display: none;
+            }
+
+            .inside {
+                padding: 0;
+                color: #333;
+
+                .content {
+                    position: relative;
+                    top: 0;
+                    transform: translate(0px,0px) !important;
+
+                    .contenedor-txt .txt {
+                        max-width: 100%;
+                    }
+                }
             }
         }
     }
