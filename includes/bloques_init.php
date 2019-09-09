@@ -236,6 +236,17 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'banner', 'personajes', 'texto', 'imagen'),
 		));
+
+		// Bloque listado noticias
+		acf_register_block(array(
+			'name'				=> 'listado noticias',
+			'title'				=> __('Listado noticias'),
+			'description'		=> __('Un bloque para mostrar un listado de noticias'),
+			'render_callback'	=> 'bloque_callback_bloque_listado_noticias',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'banner', 'personajes', 'texto', 'imagen'),
+		));
 	}
 }
 
@@ -404,6 +415,14 @@ function bloque_callback_bloque_personajes( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-bloque-personajes.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-bloque-personajes.php") );
+	}
+}
+
+// Carga el bloque listado con noticias
+function bloque_callback_bloque_listado_noticias( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-listado-noticias.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-listado-noticias.php") );
 	}
 }
 
