@@ -25,7 +25,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'maxlength' => '',
             ),
             array(
-                'key' => 'field_5d3660a91a20a',
+                'key' => 'field_5d3660a91a23a',
                 'label' => 'Subtitulo',
                 'name' => 'subtitulo',
                 'type' => 'text',
