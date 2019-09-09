@@ -6524,6 +6524,8 @@ body#tinymce {
     margin: 0 auto; }
   #contenidoGeneral .btm {
     margin-bottom: 10vh; }
+  #contenidoGeneral .btmdoble {
+    margin-bottom: 20vh; }
 
 .hori_scroll {
   z-index: 10;
