@@ -39,7 +39,7 @@ $args = array (
 
 // get posts
 $posts = get_posts($args);
-print_r($posts);
+// print_r($posts);
 
 $mes = '';
 $dia = '';
