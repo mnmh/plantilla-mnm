@@ -25,8 +25,10 @@ $titulo = get_field('titulo');
         ?>
             <li class="boton">
                 <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
-                <h2 class="name"><?php the_sub_field('nombre') ?></h2>
-                <p class="subtitulo-tarjetas"> Lorem ipsum dolor sit amet </p>
+                <div class="info">
+                    <h2 class="name"><?php the_sub_field('nombre') ?></h2>
+                    <p class="subtitulo-tarjetas"> Lorem ipsum dolor sit amet </p>
+                </div>
                 <a href="#" class="btn">Ver más</a>
             </li>
         <?php endwhile; endif; ?>

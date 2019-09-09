@@ -11,6 +11,7 @@
 
             .content {
                 padding-left: 40px;
+                max-width: 850px;
 
                 @media #{$small-and-down} {
                     padding-left: 5px;
@@ -33,7 +34,7 @@
                     width: 70%;
                     height: 90%;
                     right: 5%;
-                    max-width: 800px;
+                    max-width: 1200px;
                     bottom: 0 !important;
                     top: auto;
                 }
