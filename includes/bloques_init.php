@@ -442,5 +442,6 @@ include( get_theme_file_path("/includes/campos/banner-cita-imagen.php") );
 include( get_theme_file_path("/includes/campos/banner-corto-texto.php") );
 include( get_theme_file_path("/includes/campos/bloque-header-columna.php") );
 include( get_theme_file_path("/includes/campos/formulario-correo.php") );
+include( get_theme_file_path("/includes/campos/listado-noticias.php") );
 
 ?>
