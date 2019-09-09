@@ -7368,7 +7368,9 @@ body#tinymce {
         width: 70%;
         height: 90%;
         right: 5%;
-        max-width: 800px; }
+        max-width: 800px;
+        bottom: 0 !important;
+        top: auto; }
       .banner.banner-margenes .contenedor-carrusel .btn {
         color: white;
         background-color: #F4C724;
@@ -7376,11 +7378,11 @@ body#tinymce {
         font-weight: bold;
         margin-top: 20px;
         padding: 8px 28px 8px 28px; }
-      .banner.banner-margenes .contenedor-carrusel .nav .item {
-        border-color: white;
-        border: none;
-        border-radius: 40px;
-        font-weight: bold; }
+    .banner.banner-margenes .nav .item {
+      border-color: white;
+      border: none;
+      border-radius: 40px;
+      font-weight: bold; }
   @media only screen and (max-width: 1700px) {
     .banner.banner-margenes .nav {
       top: 95%; } }

@@ -2,7 +2,7 @@
 
     $(function () {
         $('.banner .carrousel').each(function (i) {
-            $parent = $(this);
+            $parent = $(this).parents('.banner');
             var flkty = new Flickity(this, {
                 prevNextButtons: false,
                 pageDots: false,

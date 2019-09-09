@@ -27,9 +27,9 @@ $id = 'bloque-' . $block['id'];
                 <a href="<?php echo get_sub_field('enlace') ?>" class="btn">ver más</a>
             </div>
         </div>
-        <div class="nav">
-            <div class="item prev"></div>
-            <div class="item next"></div>
-        </div>
     </div>  
+    <div class="nav">
+        <div class="item prev"></div>
+        <div class="item next"></div>
+    </div>
 </div>

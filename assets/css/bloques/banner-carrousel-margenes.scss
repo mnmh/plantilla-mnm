@@ -34,6 +34,8 @@
                     height: 90%;
                     right: 5%;
                     max-width: 800px;
+                    bottom: 0 !important;
+                    top: auto;
                 }
             }
             
@@ -46,14 +48,14 @@
                 margin-top: 20px;
                 padding: 8px 28px 8px 28px;
             }
+        }
 
-            .nav {
-                .item {
-                    border-color: white;
-                    border: none;
-                    border-radius: 40px;
-                    font-weight: bold;
-                }
+        .nav {
+            .item {
+                border-color: white;
+                border: none;
+                border-radius: 40px;
+                font-weight: bold;
             }
         }
     }
