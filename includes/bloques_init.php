@@ -247,6 +247,25 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'banner', 'personajes', 'texto', 'imagen'),
 		));
+
+		// Bloque equipo
+		acf_register_block(array(
+			'name'				=> 'bloque equipo',
+			'title'				=> __('Bloque equipo'),
+			'description'		=> __('Un bloque para mostrar un listado de mediadores'),
+			'render_callback'	=> 'bloque_callback_bloque_equipo',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'carrousel', 'equipo', 'listado'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_bloque_equipo( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 
@@ -443,5 +462,6 @@ include( get_theme_file_path("/includes/campos/banner-corto-texto.php") );
 include( get_theme_file_path("/includes/campos/bloque-header-columna.php") );
 include( get_theme_file_path("/includes/campos/formulario-correo.php") );
 include( get_theme_file_path("/includes/campos/listado-noticias.php") );
+include( get_theme_file_path("/includes/campos/bloque-equipo.php") );
 
 ?>
