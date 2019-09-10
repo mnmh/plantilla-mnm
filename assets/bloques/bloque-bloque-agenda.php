@@ -133,7 +133,7 @@ endforeach;
         <div class="listado">
             <?php
                 foreach($posts as $post):
-                    print($post);
+                    echo 'hola';
                 endforeach;
             ?>
         </div>
