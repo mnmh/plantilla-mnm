@@ -10,8 +10,8 @@
             $('.popup').fadeIn();
         })
 
-        $('.calendario_mes .listado .itemListado').each(function(item){
-            console.log(item);
+        $('.calendario_mes .listado .itemListado').each(function(i){
+            console.log($(this));
         })
 
         function activarNavigacionTop() {
