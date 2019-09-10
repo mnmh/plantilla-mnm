@@ -91,6 +91,8 @@ function darMesEspanol($mes){
         $mes = 'Mayo';
     elseif($mes == 'September')
         $mes = 'Septiembre';
+    elseif($mes == 'October')
+        $mes = 'Octubre';
 
     return $mes;
 }
