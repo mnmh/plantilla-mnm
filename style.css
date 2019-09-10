@@ -6536,11 +6536,14 @@ body#tinymce {
     #contenidoGeneral {
       margin-top: 70px; } }
   #contenidoGeneral .halfbtm {
-    margin-bottom: 5vh; }
+    margin-bottom: 5vh !important; }
   #contenidoGeneral .btm {
-    margin-bottom: 10vh; }
+    margin-bottom: 10vh !important; }
   #contenidoGeneral .btmdoble {
-    margin-bottom: 20vh; }
+    margin-bottom: 20vh !important; }
+  #contenidoGeneral .wp-block-image {
+    max-width: 800px !important;
+    margin: 0 auto; }
 
 .hori_scroll {
   z-index: 10;
