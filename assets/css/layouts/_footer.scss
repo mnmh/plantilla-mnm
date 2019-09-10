@@ -10,6 +10,15 @@
   position: relative;
   z-index: 50;
 
+  .git {
+		font-size: 0.75em;
+		margin-top: 5vh;
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
   .footer_container {
 	  max-width: 1000px;
 	  margin: 0 auto;

@@ -111,6 +111,12 @@
 				width: calc(100% - 350px);
 			}
 
+			@media all and (max-width:900px) {
+				.flickity-slider, .flickity-viewport {
+					display: none;
+				}
+			}
+
 			.flickity-slider, .flickity-viewport {
 				height: 100% !important;
 			}
@@ -212,6 +218,10 @@
 						// fill: $color_rosado;
 					}
 				}
+			}
+
+			@media all and (max-width:900px) {
+				display: none;
 			}
 		}
 	}

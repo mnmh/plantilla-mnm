@@ -99,6 +99,10 @@
 
                 .btn {
                     background-color: #3B3B3B;
+
+                    &:hover {
+                        background: $azul;
+                    }
                 }
 
                 p {
@@ -107,6 +111,8 @@
                     font-weight: 300;
                 }
             }
+
+            
         }
     }
 

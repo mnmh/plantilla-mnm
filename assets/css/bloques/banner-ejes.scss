@@ -63,6 +63,18 @@
                 opacity: 0;
                 transition: opacity 0.25s ease;
                 cursor: pointer;
+
+                &.playing {
+                    &:after {
+                        content: '\e813';
+                    }
+                }
+
+                &.paused {
+                    &:after {
+                        content: '\e810';
+                    }
+                }
             }
 
             &.active {

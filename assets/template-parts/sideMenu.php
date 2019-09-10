@@ -11,13 +11,16 @@
 			<nav class="secondLvl">
 				<ul>
 					<li><a href="<?php echo PROYECTO ?>" data-target="#" class="itemChild">
-						<span>Proyecto</span>
+						<span>Sobre el proyecto</span>
 					</a></li>
-					<li><a href="{{PUBLICACIONES}}" data-target="#" class="itemChild">
-						<span>Diseño</span>
+					<li><a href="<?php echo EDIFICIO ?>" data-target="#" class="itemChild">
+						<span>Diseño del edificio</span>
+					</a></li>
+					<li><a href="<?php echo PLANMUSEO ?>" data-target="#" class="itemChild">
+						<span>Plan museológico</span>
 					</a></li>
 					<li><a href="{{EQUIPO}}" data-target="#" class="itemChild">
-						<span>Guión</span>
+						<span>Infórmate</span>
 					</a></li>
 				</ul>
 			</nav>
@@ -55,17 +58,14 @@
 			</div>
 			<nav class="secondLvl">
 				<ul>
-					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
+					<li><a href="<?php echo EDUCACION ?>" data-target="#" class="itemChild">
 						<span>Educación</span>
 					</a></li>
-					<li><a href="{{VOCES}}" data-target="#" class="itemChild">
+					<li><a href="<?php echo PROGRAMACION ?>" data-target="#" class="itemChild">
 						<span>Agenda</span>
 					</a></li>			
 				</ul>
 			</nav>
-		</div>
-		<div class="logo-bar item">
-			<img src="{{wp_get_attachment_url(3271)}}" alt="Gobierno de Colombia">
 		</div>
 	</div>
 	<div class="right">
