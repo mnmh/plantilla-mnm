@@ -15,13 +15,13 @@
                 $selected = $parent.find('.item:nth-child(' + (index + 1) + ')');
                 $parent.parent().find('.content .titulo').html($selected.attr('data-titulo'));
                 $parent.parent().find('.content .txt').html($selected.attr('data-des'));
-                $parent.parent().find('.content .btn').html($selected.attr('data-enlace'));
+                $parent.parent().find('.content .btn').attr('href', $selected.attr('data-enlace'));
             });
 
             $selected = $parent.find('.item:nth-child(1)');
             $parent.parent().find('.content .titulo').html($selected.attr('data-titulo'));
             $parent.parent().find('.content .txt').html($selected.attr('data-des'));
-            $parent.parent().find('.content .btn').html($selected.attr('data-enlace'));
+            $parent.parent().find('.content .btn').attr('href', $selected.attr('data-enlace'));
 
 
             var $previousButton = $parent.parent().find('.nav .prev');

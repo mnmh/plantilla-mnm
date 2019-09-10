@@ -6370,6 +6370,11 @@ header.section-header {
   font-weight: 500;
   position: relative;
   z-index: 50; }
+  .site-footer .git {
+    font-size: 0.75em;
+    margin-top: 5vh; }
+    .site-footer .git a {
+      text-decoration: underline; }
   .site-footer .footer_container {
     max-width: 1000px;
     margin: 0 auto;

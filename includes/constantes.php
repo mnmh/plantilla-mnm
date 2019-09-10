@@ -22,7 +22,7 @@ define("NINOS", get_permalink(53));
 define("PROGRAMA_EDU", get_permalink(51));
 
 define("AGRADECIMIENTOS", get_permalink(1231));
-define("VOCES", get_permalink(4433));
+define("VOCES", get_permalink(2165));
 define("VOCESMEDALLO", get_permalink(3107));
 define("SOBRE_LA_EXPO", get_permalink(2326));
 

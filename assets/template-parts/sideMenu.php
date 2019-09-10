@@ -67,9 +67,6 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="logo-bar item">
-			<img src="{{wp_get_attachment_url(3271)}}" alt="Gobierno de Colombia">
-		</div>
 	</div>
 	<div class="right">
 		<?php
