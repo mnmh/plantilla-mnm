@@ -7935,8 +7935,8 @@ body#tinymce {
     @media only screen and (max-width: 980px) {
       .header-columna .contenedor {
         flex-wrap: wrap; }
-        .header-columna .contenedor .img {
-          height: 400px !important; } }
+        .header-columna .contenedor .left, .header-columna .contenedor .right {
+          width: 100%; } }
 
 .audio.piepag {
   background: #3B3B3B;
