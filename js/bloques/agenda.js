@@ -7,8 +7,11 @@
         activarNavigacionTop();
         
         $('a.inscripcion.btn').on('click', function() {
-            console.log('hola');
             $('.popup').fadeIn();
+        })
+
+        $('.calendario_mes .listado .itemListado').each(function(item){
+            console.log(item);
         })
 
         function activarNavigacionTop() {
