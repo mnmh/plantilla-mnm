@@ -19,6 +19,7 @@ $id = 'bloque-' . $block['id'];
             <li class="boton">
                 <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
                 <div class="name">
+                    <?php print_r(get_sub_field('enlace')) ?>
                     <a class="btn" href="<?php echo get_sub_field('enlace') ?>"><?php the_sub_field('nombre') ?> </a>
                     <p><?php the_sub_field('descripcion') ?></p>
                 </div>
