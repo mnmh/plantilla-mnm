@@ -6809,14 +6809,15 @@ body#tinymce {
           width: 100%; }
       .calendario_mes #calendario .item.active:before {
         position: absolute;
-        width: 100%;
-        height: 10px;
-        top: 0px;
-        left: 0;
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQYV2NkQAP/////z4gsBhYAAZggTADEBwsiC4AF0QVAggAaRhQC9fJaWAAAAABJRU5ErkJggg==);
+        width: 15px;
+        height: 15px;
+        bottom: 3px;
+        left: 3px;
+        background: #3e6cd1;
         content: '';
         z-index: -1;
-        transition: all 0.25s ease; }
+        transition: all 0.25s ease;
+        border-radius: 20px; }
       .calendario_mes #calendario .item.siHayActivo:before {
         height: 100%; }
       .calendario_mes #calendario .item.vacio {
