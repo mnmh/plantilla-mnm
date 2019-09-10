@@ -8043,7 +8043,9 @@ body#tinymce {
         background: white; }
 
 .personas_slider {
-  position: relative; }
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto; }
   .personas_slider .persona_item .image-wrapper {
     width: 300px;
     height: 400px;

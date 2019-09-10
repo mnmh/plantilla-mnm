@@ -12,7 +12,7 @@ $titulo = get_field('titulo_del_carrousel');
 
 ?>
 
-<div class="personas_slider pad">
+<div class="personas_slider">
 <nav class="hori_scroll">
 	<div class="prev"></div>
 	<div class="next"></div>
@@ -24,10 +24,11 @@ $titulo = get_field('titulo_del_carrousel');
             $img = get_sub_field('imagen');
         ?>
     
-        <li class="persona_item" data-des="<?php echo get_sub_field('descripcion') ?>">
+        <li class="persona_item">
             <div class="image-wrapper" style="background-image: url('<?php echo $img['sizes']['large'] ?>')"></div>
             <div class="inside">
                 <h2><?php echo get_sub_field('titulo') ?></h2>
+                <p class="des"><?php echo get_sub_field('descripcion') ?></p>
             </div>
         </li>
     <?php endwhile; endif; ?>
