@@ -17,11 +17,15 @@
             $('#calendario').find('.' + mes).find('.' + dia).addClass('active');
         });
 
-        $('#calendario .item').on('click', function() {
+        $('#calendario .item.active').on('click', function() {
             var dia = $(this).attr('data-dia');
             var mes = $(this).attr('data-mes');
 
-            console.log(dia + ' ' + mes);
+            $('#calendario .item.selected').removeClass('selected');
+            $(this).addClass('selected');
+            
+            $('.calendario_mes .listado .itemListado').hide();
+            $('.calendario_mes .listado .itemListado.' + mes + '.' + dia).show();
         })
 
         function activarNavigacionTop() {
