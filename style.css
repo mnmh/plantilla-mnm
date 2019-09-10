@@ -6364,7 +6364,7 @@ header.section-header {
   background: #f4f4f4;
   color: #151515;
   min-height: 15.625em;
-  padding: 6.66667em 0 10.66667em;
+  padding-top: 50px;
   width: 100%;
   font-size: 0.9375em;
   font-weight: 500;
