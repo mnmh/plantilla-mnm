@@ -7877,7 +7877,8 @@ body#tinymce {
 
 .header-columna {
   width: 100%;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  padding-bottom: 5vh; }
   .header-columna .inside {
     max-width: 1600px;
     margin: 0 auto; }
@@ -7903,7 +7904,8 @@ body#tinymce {
           background-repeat: no-repeat;
           background-position: center center; }
     .header-columna .contenedor .left, .header-columna .contenedor .right {
-      width: 100%; }
+      width: 100%;
+      padding-top: 5vh; }
     .header-columna .contenedor .left {
       display: flex;
       flex-wrap: wrap;
@@ -7930,7 +7932,7 @@ body#tinymce {
       .header-columna .contenedor {
         flex-wrap: wrap; }
         .header-columna .contenedor .img {
-          height: 400px; } }
+          height: 400px !important; } }
 
 .audio.piepag {
   background: #3B3B3B;

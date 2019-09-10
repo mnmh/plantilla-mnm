@@ -1,6 +1,7 @@
 .header-columna {
     width: 100%;
     background: $grisclaro;
+    padding-bottom: 5vh;
 
     .inside {
         max-width: 1600px;
@@ -38,6 +39,7 @@
    
         .left, .right {
             width: 100%;
+            padding-top: 5vh;
         }
 
         .left {
@@ -80,7 +82,7 @@
             flex-wrap: wrap;
 
             .img {
-                height: 400px;
+                height: 400px !important;
             }
         }
     }
