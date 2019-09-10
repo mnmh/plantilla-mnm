@@ -28,6 +28,8 @@
             $('.calendario_mes .listado .itemListado.' + mes + '.' + dia).show();
         })
 
+        $('#calendario .item.active')[0].click();
+        
         $('#calendario .mes .next, #calendario .mes .prev').on('click', function() {
             var $show = $('#calendario .mes:not(.hide)');
             $('#calendario .mes.hide').removeClass('hide');
@@ -43,7 +45,6 @@
                 $parent.find('.agenda_dias, .calendario_mes').hide();
                 $parent.find('.' + div).show();
 
-                $('#calendario .item.active')[0].click();
             });
 
             $('.agenda .nav .btn:first-child').click();
