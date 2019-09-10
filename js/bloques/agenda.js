@@ -42,6 +42,8 @@
                 $parent = $(this).parent().parent();
                 $parent.find('.agenda_dias, .calendario_mes').hide();
                 $parent.find('.' + div).show();
+
+                $('#calendario .item.active')[0].click();
             });
 
             $('.agenda .nav .btn:first-child').click();
