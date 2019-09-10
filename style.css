@@ -7904,7 +7904,7 @@ body#tinymce {
           background-repeat: no-repeat;
           background-position: center center; }
     .header-columna .contenedor .left, .header-columna .contenedor .right {
-      width: 100%;
+      width: 50%;
       padding-top: 5vh; }
     .header-columna .contenedor .left {
       display: flex;
@@ -7920,7 +7920,8 @@ body#tinymce {
         .header-columna .contenedor .left .texto h4 {
           margin-top: 10px; }
     .header-columna .contenedor .right {
-      display: flex; }
+      display: flex;
+      padding-top: 0; }
       .header-columna .contenedor .right .img {
         width: 100%;
         height: 100%;
@@ -7928,6 +7929,9 @@ body#tinymce {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center; }
+      .header-columna .contenedor .right img {
+        width: 100%;
+        height: auto; }
     @media only screen and (max-width: 980px) {
       .header-columna .contenedor {
         flex-wrap: wrap; }
