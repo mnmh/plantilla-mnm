@@ -6772,6 +6772,16 @@ body#tinymce {
       @media only screen and (max-width: 650px) {
         .calendario_mes #calendario .item {
           padding: 0.1em; } }
+      .calendario_mes #calendario .item.next {
+        position: relative; }
+        .calendario_mes #calendario .item.next:before {
+          content: '\E80E';
+          font-family: 'mnm';
+          position: absolute;
+          width: 100%;
+          font-size: 2em;
+          top: 0;
+          left: 0; }
       .calendario_mes #calendario .item.dia_nom {
         text-transform: lowercase;
         font-size: 0.75em;
@@ -7809,7 +7819,9 @@ body#tinymce {
 
 .calendario_mes .listado .itemListado {
   margin-bottom: 10px;
-  display: none; }
+  display: none;
+  border-left: 5px solid #3e6cd1;
+  padding-left: 10px; }
   .calendario_mes .listado .itemListado .hora {
     font-weight: bold; }
 
