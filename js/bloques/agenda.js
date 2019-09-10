@@ -23,10 +23,16 @@
 
             $('#calendario .item.selected').removeClass('selected');
             $(this).addClass('selected');
-            
+
             $('.calendario_mes .listado .itemListado').hide();
             $('.calendario_mes .listado .itemListado.' + mes + '.' + dia).show();
         })
+
+        $('#calendario .mes .next, #calendario .mes .prev').on('click', function() {
+            var $show = $('#calendario .mes:not(.hide)');
+            $('#calendario .mes.hide').removeClass('hide');
+            $show.addClass('hide');
+        });
 
         function activarNavigacionTop() {
             $('.agenda .nav .btn').on('click', function() {
