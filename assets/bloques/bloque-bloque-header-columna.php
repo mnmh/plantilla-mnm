@@ -15,15 +15,17 @@ if($invertido == 1) $class = 'invertido';
 ?>
 
 <div class="header-columna btm">
-    <h1 class="titulo"> <?php echo $titulo?> </h1>
-    <div class="contenedor <?php echo $class?>">
-        <div class="left">
-            <div class="texto">
-                <?php echo $texto?>
+    <div class="inside">
+        <div class="contenedor <?php echo $class?>">
+            <div class="left">
+                <div class="texto">
+                    <?php echo $texto?>
+                </div>
+            </div>
+            <div class="right">
+                <div class="img" style="background-image:url('<?php echo $img['url'] ?>')"></div>
             </div>
         </div>
-        <div class="right">
-            <div class="img" style="background-image:url('<?php echo $img['url'] ?>')"></div>
-        </div>
     </div>
+    
 </div>

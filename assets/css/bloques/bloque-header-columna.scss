@@ -1,7 +1,11 @@
 .header-columna {
     width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
+    background: $grisclaro;
+
+    .inside {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
 
     .titulo {
         margin: 50px 0;
