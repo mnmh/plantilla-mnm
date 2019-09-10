@@ -25,7 +25,7 @@ $titulo = get_field('titulo_del_carrousel');
         ?>
     
         <li class="persona_item" data-des="<?php echo get_sub_field('descripcion') ?>">
-            <div class="image-wrapper" style="background-image: url('<?php $img['sizes']['large'] ?>')"></div>
+            <div class="image-wrapper" style="background-image: url('<?php echo $img['sizes']['large'] ?>')"></div>
             <div class="inside">
                 <h2><?php echo get_sub_field('titulo') ?></h2>
             </div>

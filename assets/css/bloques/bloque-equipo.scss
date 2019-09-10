@@ -1,3 +1,11 @@
-.personas_list {
-    
+.personas_slider {
+    position: relative;
+
+    .persona_item {
+        .image-wrapper {
+            width: 300px;
+            height: 400px;
+            background-size: cover;
+        }
+    }
 }

@@ -8042,6 +8042,13 @@ body#tinymce {
         top: 0.5px;
         background: white; }
 
+.personas_slider {
+  position: relative; }
+  .personas_slider .persona_item .image-wrapper {
+    width: 300px;
+    height: 400px;
+    background-size: cover; }
+
 .columnas {
   display: flex; }
   .columnas .left {
