@@ -22,7 +22,7 @@ $enlace = get_field('enlace');
                 <?php if(have_rows('ejes')): while(have_rows('ejes')): the_row(); ?>
                 <?php $imagen = get_sub_field('imagen') ?>
                 <?php $thumbnail = get_sub_field('thumbnail') ?>
-                <div class="item" data-titulo="<?php echo get_sub_field('titulo')?>" data-des="<?php echo get_sub_field('descripcion')?>" data-imagen="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"  style="background-image:url('<?php echo $thumbnail['sizes']['large'] ?>')">
+                <div class="item" data-titulo="<?php echo get_sub_field('titulo')?>" data-des="<?php echo get_sub_field('descripcion')?>" data-imagen="background-image:url('<?php echo $imagen['url'] ?>')"  style="background-image:url('<?php echo $thumbnail['url'] ?>')">
                     <div class="btn-play play"> Escuchar</div>
                 </div>
                 <?php endwhile; endif; ?>

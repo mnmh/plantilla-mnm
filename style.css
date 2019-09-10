@@ -7107,8 +7107,8 @@ body#tinymce {
   width: 100%;
   max-width: none !important;
   padding-left: 20px;
-  transform: translate(0, 100%) !important;
-  bottom: 30%; }
+  bottom: 30% !important;
+  top: auto !important; }
   .banner .content.ejes .titulo {
     max-width: 1600px;
     margin: auto; }
@@ -7125,10 +7125,11 @@ body#tinymce {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  max-width: 1600px;
+  max-width: 600px;
   margin: auto;
   position: relative;
-  top: 40vh; }
+  top: 40vh;
+  float: right; }
   .banner .tarjetas .item {
     width: 250px;
     height: 375px;
