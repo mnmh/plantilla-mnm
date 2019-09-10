@@ -48,9 +48,6 @@
 						</ul>
 					</div>
 				</section>
-				<section class="footer-logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/grupo-cnmh-dps.png" alt="">
-				</section>
 
 				<section class="form_mail">
 					<h3>Recibe nuestras noticias</h3>
@@ -62,6 +59,11 @@
 					?>
 					<?php acf_form($settings); ?>
 				</section>
+
+				<section class="footer-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/grupo-cnmh-dps.png" alt="">
+				</section>
+
 				<ul class="info-links">
 					<h3>Más información</h3>
 					<li><a class="mail" href="mailto:museodelamemoria@cnmh.gov.co"><strong>museodelamemoria@cnmh.gov.co</strong></a></li>
