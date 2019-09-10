@@ -463,5 +463,6 @@ include( get_theme_file_path("/includes/campos/bloque-header-columna.php") );
 include( get_theme_file_path("/includes/campos/formulario-correo.php") );
 include( get_theme_file_path("/includes/campos/listado-noticias.php") );
 include( get_theme_file_path("/includes/campos/bloque-equipo.php") );
+include( get_theme_file_path("/includes/campos/bloque-cifras.php") );
 
 ?>
