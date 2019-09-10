@@ -15,6 +15,13 @@
             var mes = $(this).attr('data-mes');
 
             $('#calendario').find('.' + mes).find('.' + dia).addClass('active');
+        });
+
+        $('#calendario .item').on('click', function() {
+            var dia = $(this).attr('data-dia');
+            var mes = $(this).attr('data-mes');
+
+            console.log(dia + ' ' + mes);
         })
 
         function activarNavigacionTop() {
