@@ -19,8 +19,7 @@
             var audio = document.getElementById("audioPlayer");
 
             if(!$(this).hasClass('playing')){
-                var urlAudio = $(this).attr('data-url');
-                console.log(urlAudio);
+                var urlAudio = $(this).attr('data-audio');
                 // var urlAudio = '/audio.mp3';
                 audio.setAttribute('src', urlAudio);
 
