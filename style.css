@@ -369,12 +369,13 @@ body {
   overflow: hidden; }
   body.page-pagina-principal-data #contenidoGeneral {
     padding: 0; }
+  #contenidoGeneral .columnas h2, #contenidoGeneral .columnas h3, #contenidoGeneral .columnas h4, #contenidoGeneral .columnas h5, #contenidoGeneral .columnas h6, #contenidoGeneral .columnas p {
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 15px; }
   #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p {
     max-width: 800px;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: #333; }
+    margin: 0 auto; }
 
 #frontImg {
   background: red;
