@@ -1,5 +1,6 @@
 .calendario_mes {
     display: flex;
+    align-items: center;
 
     .listado {
         width: 40%;
@@ -212,7 +213,7 @@
 				}
             }
 
-            &.active {
+            &.active, &.selected {
                 &:before {
                     position: absolute;
                     width: 15px;
