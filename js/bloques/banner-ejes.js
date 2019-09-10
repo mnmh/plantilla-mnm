@@ -16,25 +16,50 @@
         $('.banner .tarjetas .item:first-child').click();
 
         $('.audio.piepag .tarjetas .play').on('click', function(){
-            // var urlAudio = $(this).attr('data-url');
-            var urlAudio = '/audio.mp3';
             var audio = document.getElementById("audioPlayer");
-            audio.setAttribute('src', urlAudio);
 
-            $('.audio.piepag .tarjetas .play.playing').removeClass('playing');
-            $(this).addClass('playing');
+            if(!$(this).hasClass('playing')){
+                var urlAudio = $(this).attr('data-url');
+                // var urlAudio = '/audio.mp3';
+                audio.setAttribute('src', urlAudio);
 
-            audio.oncanplay = () => {
-                audio.play();
+                $('.audio.piepag .tarjetas .play.playing').removeClass('playing').removeClass('paused');
+                $(this).addClass('playing');
+
+                audio.oncanplay = () => {
+                    audio.play();
+                }
+
+                audio.ontimeupdate = () => {
+                    var timeCurrent = audio.currentTime;
+                    var timeTotal = audio.duration;
+                    updateTimeText(timeCurrent, timeTotal);
+                }
+            } else {
+                audio.pause();
+                $(this).addClass('paused');
             }
-
-            audio.ontimeupdate = () => {
-                var timeCurrent = audio.currentTime;
-                var timeTotal = audio.duration;
-                updateTimeText(timeCurrent, timeTotal);
-            }
+            
 
         });
+
+        $('.banner.audio .play').on('click', function() {
+            var audio = document.getElementById("audioPlayer");
+            if(!$(this).hasClass('playing')){
+                var urlAudio = $(this).attr('data-url');
+                audio.setAttribute('src', urlAudio);
+
+                $('.banner.audio .play.playing').removeClass('playing').removeClass('paused');
+                $(this).addClass('playing');
+
+                audio.oncanplay = () => {
+                    audio.play();
+                }
+            } else {
+                audio.pause();
+                $(this).addClass('paused');
+            }
+        })
 
         function secondsTimeSpanToHMS(s) {
             var h = Math.floor(s/3600);
