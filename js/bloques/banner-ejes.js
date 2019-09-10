@@ -17,10 +17,10 @@
 
         $('.audio.piepag .tarjetas .play').on('click', function(){
             var audio = document.getElementById("audioPlayer");
+            var urlAudio = $(this).attr('data-audio');
+            console.log(urlAudio);
 
             if(!$(this).hasClass('playing')){
-                var urlAudio = $(this).attr('data-audio');
-                console.log(urlAudio);
                 // var urlAudio = '/audio.mp3';
                 audio.setAttribute('src', urlAudio);
 
