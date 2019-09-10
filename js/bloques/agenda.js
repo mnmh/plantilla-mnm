@@ -12,8 +12,9 @@
 
         $('.calendario_mes .listado .itemListado').each(function(i){
             var dia = $(this).attr('data-date');
+            var mes = $(this).attr('data-mes');
 
-            $('#calendario').find('.' + dia).addClass('active');
+            $('#calendario').find('.' + mes).find('.' + dia).addClass('active');
         })
 
         function activarNavigacionTop() {

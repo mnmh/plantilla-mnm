@@ -139,10 +139,10 @@ endforeach;
                     $time = strtotime($date);
                     $title = $post->post_title;
                     $hora_inicio = get_field('hora_de_inicio', $id);
-                    $mes_temp = date('F',$time);
+                    $mes_temp = date('m',$time);
                     $dia_num_temp = date('d',$time);
             ?>
-                    <div class="itemListado" data-date="<?php echo 'dia_' . $dia_num_temp ?>">
+                    <div class="itemListado" data-mes="<?php echo 'mes_' . $mes_temp ?>" data-date="<?php echo 'dia_' . $dia_num_temp ?>">
                         <div class="hora"><?php echo $hora_inicio; ?></div>
                         <div class="title"><?php echo $title; ?></div>
                     </div>
