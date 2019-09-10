@@ -6389,7 +6389,11 @@ header.section-header {
   .site-footer .footer-logo {
     width: 100%;
     display: block;
-    opacity: 0.5; }
+    opacity: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
     .site-footer .footer-logo img {
       width: 100%;
       height: auto; }

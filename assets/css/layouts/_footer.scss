@@ -42,7 +42,11 @@
   .footer-logo {
   	width: 100%;
   	display: block;
-  	opacity: 0.5;
+	  opacity: 1;
+	  max-width: 600px;
+	  margin: 0 auto;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
 
   	img {
   		width: 100%;
