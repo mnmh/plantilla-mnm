@@ -6798,7 +6798,7 @@ body#tinymce {
         border: none; }
       .calendario_mes #calendario .item.nav:not(.hide) {
         cursor: pointer;
-        font-family: 'icons';
+        font-family: 'mnm';
         text-align: center; }
         .calendario_mes #calendario .item.nav:not(.hide).next:before {
           content: '\E80E';
