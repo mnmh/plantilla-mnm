@@ -6815,7 +6815,6 @@ body#tinymce {
         left: 3px;
         background: #3e6cd1;
         content: '';
-        z-index: -1;
         transition: all 0.25s ease;
         border-radius: 20px; }
       .calendario_mes #calendario .item.active:hover {
