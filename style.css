@@ -369,11 +369,8 @@ body {
   overflow: hidden; }
   body.page-pagina-principal-data #contenidoGeneral {
     padding: 0; }
-  #contenidoGeneral p {
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6 {
-    max-width: 1000px;
+  #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p {
+    max-width: 800px;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px; }
