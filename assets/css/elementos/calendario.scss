@@ -126,8 +126,6 @@
         width: 60%;
         margin-right: 20px;
 
-
-
         .mes {
             font-family: 'CircularStd', sans-serif;
             color: $black;
@@ -178,7 +176,7 @@
                     height: 10px;
                     top: 15px;
                     left: 0;
-                    background: $rosado;
+                    background: $amarillo;
                     content: '';
                     z-index: -1;
                 }
@@ -214,7 +212,7 @@
 				}
             }
 
-            &.siHay:before {
+            &.active:before {
                 position: absolute;
                 width: 100%;
                 height: 10px;
