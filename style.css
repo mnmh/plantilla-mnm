@@ -6522,9 +6522,6 @@ body#tinymce {
   @media all and (min-width: 1024px) {
     #contenidoGeneral {
       margin-top: 70px; } }
-  #contenidoGeneral p {
-    max-width: 1000px;
-    margin: 0 auto; }
   #contenidoGeneral .btm {
     margin-bottom: 10vh; }
   #contenidoGeneral .btmdoble {
