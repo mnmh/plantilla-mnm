@@ -6772,16 +6772,6 @@ body#tinymce {
       @media only screen and (max-width: 650px) {
         .calendario_mes #calendario .item {
           padding: 0.1em; } }
-      .calendario_mes #calendario .item.next {
-        position: relative; }
-        .calendario_mes #calendario .item.next:before {
-          content: '\E80E';
-          font-family: 'mnm';
-          position: absolute;
-          width: 100%;
-          font-size: 2em;
-          top: 0;
-          left: 0; }
       .calendario_mes #calendario .item.dia_nom {
         text-transform: lowercase;
         font-size: 0.75em;
@@ -6811,12 +6801,12 @@ body#tinymce {
         font-family: 'icons';
         text-align: center; }
         .calendario_mes #calendario .item.nav:not(.hide).next:before {
-          content: '\E802';
-          color: white;
+          content: '\E80E';
+          color: #333;
           width: 100%; }
         .calendario_mes #calendario .item.nav:not(.hide).prev:before {
-          content: '\E803';
-          color: white;
+          content: '\E80F';
+          color: #333;
           width: 100%; }
       .calendario_mes #calendario .item.active:before {
         position: absolute;

@@ -161,19 +161,7 @@
                 padding: 0.1em;
             }
 
-            &.next {
-                position: relative;
-
-                &:before {
-                    content: '\E80E';
-                    font-family: 'mnm';
-                    position: absolute;
-                    width: 100%;
-                    font-size: 2em;
-                    top: 0;
-                    left: 0;
-                }
-            }
+            
 
             &.dia_nom {
                 text-transform: lowercase;
@@ -215,14 +203,14 @@
 				text-align: center;
 
 				&.next:before {
-					content: '\E802';
-					color: white;
+					content: '\E80E';
+					color: #333;
 					width: 100%;
 				}
 
 				&.prev:before {
-					content: '\E803';
-					color: white;
+					content: '\E80F';
+					color: #333;
 					width: 100%;
 				}
             }
