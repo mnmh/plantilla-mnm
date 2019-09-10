@@ -6523,6 +6523,8 @@ body#tinymce {
   @media all and (min-width: 1024px) {
     #contenidoGeneral {
       margin-top: 70px; } }
+  #contenidoGeneral .halfbtm {
+    margin-bottom: 5vh; }
   #contenidoGeneral .btm {
     margin-bottom: 10vh; }
   #contenidoGeneral .btmdoble {
