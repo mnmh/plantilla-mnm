@@ -130,7 +130,13 @@ endforeach;
     </div>
 
     <div class="calendario_mes">
-        <div class="listado"></div>
+        <div class="listado">
+            <?php
+                foreach($posts as $post):
+                    print($post);
+                endforeach;
+            ?>
+        </div>
         <div id="calendario">
             <?php crearMes(); ?>
             <?php crearMesSiguiente(); ?>
