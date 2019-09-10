@@ -17,7 +17,9 @@ $imagen = get_field('imagen');
     <div class="contenedor-banner">
         <div class="left">
             <div class="cita"><?php echo $cita; ?></div>
-            <a href="<?php echo $enlace; ?>" class="link"><?php echo $textoEnlace; ?></a>
+            <?php if($enlace): ?>
+                <a href="<?php echo $enlace; ?>" class="link"><?php echo $textoEnlace; ?></a>
+            <?php endif; ?>
         </div>
         <div class="right">
             <a href="<?php echo get_field('enlace_img')?>" class="img" style="background-image: url('<?php echo $imagen['url']; ?>')"></a>
