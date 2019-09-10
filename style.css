@@ -373,7 +373,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
     margin-top: 15px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    color: #333; }
 
 #frontImg {
   background: red;
