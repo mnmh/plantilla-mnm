@@ -19,10 +19,15 @@ $titulo = get_field('titulo_del_carrousel');
 </nav>
 <ul class="personas_list">
     <?php if(have_rows('items_del_carrousel')): while(have_rows('items_del_carrousel')): the_row(); ?>
-        <li class="persona_item" data-des="<?php get_sub_field('descripcion') ?>">
+        
+        <?php
+            $img = get_sub_field('imagen');
+        ?>
+    
+        <li class="persona_item" data-des="<?php echo get_sub_field('descripcion') ?>">
             <div class="image-wrapper" style="background-image: url('<?php $img['sizes']['large'] ?>')"></div>
             <div class="inside">
-                <h2><?php get_sub_field('nombre') ?></h2>
+                <h2><?php echo get_sub_field('titulo') ?></h2>
             </div>
         </li>
     <?php endwhile; endif; ?>
