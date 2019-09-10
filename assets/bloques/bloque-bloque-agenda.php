@@ -132,11 +132,17 @@ endforeach;
     <div class="calendario_mes">
         <div class="listado">
             <?php
-                foreach($posts as $post): 
+                foreach($posts as $post):
+                    $id = $post->ID;
+                    $date = get_field('dia', $id);
+                    $date = str_replace('/', '-', $date);
+                    $time = strtotime($date);
                     $title = $post->post_title;
                     $hora_inicio = get_field('hora_de_inicio', $id);
+                    $mes_temp = date('F',$time);
+                    $dia_num_temp = date('d',$time);
             ?>
-                    <div class="itemListado">
+                    <div class="itemListado" data-date="<?php echo $dia_num_temp . '_' . $mes_temp ?>">
                         <div class="hora"><?php echo $hora_inicio; ?></div>
                         <div class="title"><?php echo $title; ?></div>
                     </div>
