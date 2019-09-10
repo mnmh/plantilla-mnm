@@ -7800,6 +7800,12 @@ body#tinymce {
     margin: 0 auto;
     margin-top: 30px; }
 
+.calendario_mes .listado .itemListado {
+  margin-bottom: 10px;
+  display: none; }
+  .calendario_mes .listado .itemListado .hora {
+    font-weight: bold; }
+
 .banner.cita-imagen {
   height: 50vh;
   min-height: 400px;
