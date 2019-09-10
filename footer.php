@@ -49,7 +49,7 @@
 					</div>
 				</section>
 				<section class="footer-logo">
-					<img src="<?php echo get_bl ?>" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/grupo-cnmh-dps.png" alt="">
 				</section>
 
 				<section class="form_mail">
