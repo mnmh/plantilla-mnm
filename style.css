@@ -7877,8 +7877,7 @@ body#tinymce {
 
 .header-columna {
   width: 100%;
-  background: #f4f4f4;
-  padding-bottom: 5vh; }
+  background: #f4f4f4; }
   .header-columna .inside {
     max-width: 1600px;
     margin: 0 auto; }
@@ -7910,7 +7909,8 @@ body#tinymce {
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
-      padding-left: 20px; }
+      padding-left: 20px;
+      padding-bottom: 5vh; }
       .header-columna .contenedor .left .texto {
         width: 80%;
         color: #3B3B3B; }

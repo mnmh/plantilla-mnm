@@ -1,7 +1,6 @@
 .header-columna {
     width: 100%;
     background: $grisclaro;
-    padding-bottom: 5vh;
 
     .inside {
         max-width: 1600px;
@@ -47,6 +46,7 @@
             flex-wrap: wrap;
             align-content: space-between;
             padding-left: 20px;
+            padding-bottom: 5vh;
 
             .texto {
                 width: 80%;
