@@ -37,6 +37,7 @@
         position: relative;
         top: 40vh;
         float: right;
+        margin-right: 10%;
 
         .item {
             width: 250px;
@@ -125,6 +126,11 @@
     }
 }
 
+
+.texto_banner {
+    margin-top: 150px;
+}
+
 .texto_banner .inside {
     min-height: 200px;
     margin-top: 150px;
@@ -133,8 +139,7 @@
     margin: auto;
 
     p {
-            margin: 4vh 0 !important; 
-            padding-left: 20px;
-
+        margin: 4vh 0 !important; 
+        padding-left: 20px;
     }  
 }  

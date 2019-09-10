@@ -7129,7 +7129,8 @@ body#tinymce {
   margin: auto;
   position: relative;
   top: 40vh;
-  float: right; }
+  float: right;
+  margin-right: 10%; }
   .banner .tarjetas .item {
     width: 250px;
     height: 375px;
@@ -7188,6 +7189,9 @@ body#tinymce {
         transform: translate(0px, 0px) !important; }
         .banner.audio .inside .content .contenedor-txt .txt {
           max-width: 100%; } }
+
+.texto_banner {
+  margin-top: 150px; }
 
 .texto_banner .inside {
   min-height: 200px;
