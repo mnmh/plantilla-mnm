@@ -11,7 +11,9 @@
         })
 
         $('.calendario_mes .listado .itemListado').each(function(i){
-            console.log($(this));
+            var dia = $(this).attr('data-date');
+
+            $('#calendario').find('.' + dia).addClass('active');
         })
 
         function activarNavigacionTop() {
