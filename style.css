@@ -6808,7 +6808,7 @@ body#tinymce {
           content: '\E803';
           color: white;
           width: 100%; }
-      .calendario_mes #calendario .item.active:before, .calendario_mes #calendario .item.selected:before {
+      .calendario_mes #calendario .item.active:before {
         position: absolute;
         width: 15px;
         height: 15px;
@@ -6818,11 +6818,11 @@ body#tinymce {
         content: '';
         transition: all 0.25s ease;
         border-radius: 20px; }
-      .calendario_mes #calendario .item.active:hover, .calendario_mes #calendario .item.selected:hover {
+      .calendario_mes #calendario .item.active:hover, .calendario_mes #calendario .item.active.selected {
         background: #3e6cd1;
         color: white;
         cursor: pointer; }
-        .calendario_mes #calendario .item.active:hover:before, .calendario_mes #calendario .item.selected:hover:before {
+        .calendario_mes #calendario .item.active:hover:before, .calendario_mes #calendario .item.active.selected:before {
           background: white; }
       .calendario_mes #calendario .item.siHayActivo:before {
         height: 100%; }

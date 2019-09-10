@@ -213,7 +213,7 @@
 				}
             }
 
-            &.active, &.selected {
+            &.active {
                 &:before {
                     position: absolute;
                     width: 15px;
@@ -226,7 +226,7 @@
                     border-radius: 20px;
                 }
 
-                &:hover {
+                &:hover, &.selected {
                     background: $azul;
                     color: white;
                     cursor: pointer;
