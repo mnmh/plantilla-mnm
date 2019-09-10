@@ -4,7 +4,7 @@
     $year = date("Y");
     
     $date_today = getdate(mktime(0,0,0,$mes_num,1,$year));
-    $mes_nombre = $date_today["month"];
+    $mes_nombre = darMesEspanol($date_today["month"]);
     $primer_dia_mes = $date_today['wday'];
     $loop = true;
     $today = 27;
@@ -79,7 +79,7 @@ if($mes_num < 12) $mes_num++;
 else $mes_num = 1;
 $year = date("Y");
 $date_new = getdate(mktime(0,0,0,$mes_num,1,$year));
-$mes_nombre = $date_new["month"];
+$mes_nombre = darMesEspanol($date_new["month"]);
 $primer_dia_mes = $date_new['wday'];
 $loop = true;
 $today = 27;
