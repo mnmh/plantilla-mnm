@@ -108,7 +108,7 @@ endforeach;
 
 <div class="agenda medallo">
 
-    <div class="nav">
+    <!-- <div class="nav">
         <div data-div="agenda_dias" class="itemNav btn active">Vista por días</div>
         <div data-div="calendario_mes" class="itemNav btn">Vista por mes</div>
     </div>
@@ -128,7 +128,7 @@ endforeach;
                 <?php echo $out ?>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="calendario_mes">
         <div class="listado">
