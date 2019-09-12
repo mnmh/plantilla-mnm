@@ -1,8 +1,8 @@
 .banner {
-    
+
     .content {
 
-            &.ejes { 
+        &.ejes {
             width: 100%;
             max-width: none !important;
             padding-left: 20px;
@@ -28,6 +28,7 @@
     .contenedor-tarjetas {
         width: 100%;
     }
+
     .tarjetas {
         display: flex;
         justify-content: flex-end;
@@ -41,19 +42,19 @@
 
         .item {
             width: 250px;
-            height: 375px;
+            height: 275px;
             margin-left: 15px;
-            
+
             background-size: cover;
             background-position: center;
             transform: scale(1);
             transition: all 0.25s ease;
             position: relative;
-            border:none;
+            border: none;
 
-            -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
-            -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
-            box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 
             .play {
                 position: absolute;
@@ -106,8 +107,8 @@
         @media #{$large-and-down} {
             right: 40px;
             justify-content: center;
-            
-        }     
+
+        }
     }
 
     @media #{$medium-and-down} {
@@ -127,7 +128,7 @@
                 .content {
                     position: relative;
                     top: 0;
-                    transform: translate(0px,0px) !important;
+                    transform: translate(0px, 0px) !important;
 
                     .contenedor-txt .txt {
                         max-width: 100%;
@@ -151,7 +152,7 @@
     margin: auto;
 
     p {
-        margin: 4vh 0 !important; 
+        margin: 4vh 0 !important;
         padding-left: 20px;
-    }  
-}  
+    }
+}

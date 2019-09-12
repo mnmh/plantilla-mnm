@@ -24,13 +24,13 @@
             top: 25%;
             max-width: 600px;
 
-            &.texto-abajo{
-                transform: translate(0,-50%);
-                top: 75%;
+            &.texto-abajo {
+                transform: translate(0, -50%);
+                top: 50%;
                 width: 100%;
                 max-width: none;
 
-                .contenedor-txt{
+                .contenedor-txt {
                     max-width: 1600px;
                     margin: auto;
                     padding-left: 20px;
@@ -58,10 +58,11 @@
                 bottom: 10%;
                 top: auto;
                 padding-left: 5px;
+
                 .titulo {
                     font-size: 42px;
                     margin-bottom: 10px;
-                }    
+                }
             }
         }
     }

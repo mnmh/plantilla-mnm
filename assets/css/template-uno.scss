@@ -18,6 +18,7 @@
             padding-right: 0.5em;
             color: #9A9A9A;
             margin-bottom: 1.5em;
+
             &.active {
                 font-weight: bold;
             }
@@ -28,6 +29,7 @@
         width: calc(100% - 250px);
         padding-left: 10px;
         padding-right: 10px;
+        overflow: hidden;
     }
 
     @media all and (max-width: 1024px) {
