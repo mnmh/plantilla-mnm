@@ -6659,6 +6659,11 @@ body#tinymce {
 .banner {
   min-height: 630px; }
 
+.titulo-noticia {
+  margin-top: 40px;
+  color: #3B3B3B;
+  font-size: 48px; }
+
 .calendario_mes {
   display: flex;
   align-items: flex-start; }
