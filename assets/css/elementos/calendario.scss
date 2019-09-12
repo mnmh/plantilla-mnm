@@ -1,6 +1,6 @@
 .calendario_mes {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     .listado {
         width: 40%;
@@ -76,7 +76,8 @@
                 }
             }
 
-            .categ_name, .link {
+            .categ_name,
+            .link {
                 font-family: 'Inconsolata', monospace;
                 background: white;
                 color: $black;
@@ -161,7 +162,7 @@
                 padding: 0.1em;
             }
 
-            
+
 
             &.dia_nom {
                 text-transform: lowercase;
@@ -193,26 +194,27 @@
                 position: relative;
             }
 
-            &.nombre, &.nav {
+            &.nombre,
+            &.nav {
                 border: none;
             }
 
             &.nav:not(.hide) {
-				cursor: pointer;
-				font-family: 'mnm';
-				text-align: center;
+                cursor: pointer;
+                font-family: 'mnm';
+                text-align: center;
 
-				&.next:before {
-					content: '\E80E';
-					color: #333;
-					width: 100%;
-				}
+                &.next:before {
+                    content: '\E80E';
+                    color: #333;
+                    width: 100%;
+                }
 
-				&.prev:before {
-					content: '\E80F';
-					color: #333;
-					width: 100%;
-				}
+                &.prev:before {
+                    content: '\E80F';
+                    color: #333;
+                    width: 100%;
+                }
             }
 
             &.active {
@@ -228,7 +230,8 @@
                     border-radius: 20px;
                 }
 
-                &:hover, &.selected {
+                &:hover,
+                &.selected {
                     background: $azul;
                     color: white;
                     cursor: pointer;
@@ -247,7 +250,7 @@
                 border-color: #fff;
             }
 
-            
+
         }
     }
 
@@ -280,7 +283,8 @@
     @media all and (max-width: 900px) {
         flex-wrap: wrap;
 
-        .listado, #calendario {
+        .listado,
+        #calendario {
             width: 100%;
         }
     }

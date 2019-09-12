@@ -54,7 +54,12 @@
 					<?php
 						$settings = array(
 							'field_groups' => array('group_5d7667e2d999e'),
-							'submit_value' => 'Suscribirme'
+							'submit_value' => 'Suscribirme',
+							'post_id' => 'new_post',
+							'new_post'		=> array(
+								'post_type'		=> 'base_datos_correos',
+								'post_status'	=> 'publish'
+							)
 						);
 					?>
 					<?php acf_form($settings); ?>
@@ -82,14 +87,15 @@
 		<?php wp_footer(); ?>
 
 		<!-- analytics -->
-		<script>
-		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-		ga('send', 'pageview');
-		</script>
+		<?php if(!is_user_logged_in()): ?>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116884043-1"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-116884043-1');
+		<?php endif; ?>
 
 	</body>
 </html>

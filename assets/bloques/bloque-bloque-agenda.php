@@ -108,7 +108,7 @@ endforeach;
 
 <div class="agenda medallo">
 
-    <div class="nav">
+    <!-- <div class="nav">
         <div data-div="agenda_dias" class="itemNav btn active">Vista por días</div>
         <div data-div="calendario_mes" class="itemNav btn">Vista por mes</div>
     </div>
@@ -128,7 +128,7 @@ endforeach;
                 <?php echo $out ?>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="calendario_mes">
         <div class="listado">
@@ -146,6 +146,10 @@ endforeach;
                     <div class="itemListado <?php echo 'mes_' . $mes_temp ?> <?php echo 'dia_' . $dia_num_temp ?>" data-mes="<?php echo 'mes_' . $mes_temp ?>" data-date="<?php echo 'dia_' . $dia_num_temp ?>">
                         <div class="hora"><?php echo $hora_inicio; ?></div>
                         <div class="title"><?php echo $title; ?></div>
+                        <div class="des">
+                            <?php echo $post->post_content ?>
+                        </div>
+                        <a class="inscripcion btn" data-id="<?php echo $post->ID ?>">Inscribirse</a>
                     </div>
             <?php endforeach; ?>
         </div>
@@ -162,7 +166,12 @@ endforeach;
 <?php
     $settings = array(
         'field_groups' => array('group_5d756c588f0df'),
-        'submit_value' => 'Inscribirse'
+        'submit_value' => 'Inscribirse',
+        'post_id' => 'new_post',
+        'new_post'		=> array(
+			'post_type'		=> 'correos',
+			'post_status'	=> 'publish'
+		)
     );
 
     acf_form($settings);

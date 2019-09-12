@@ -6661,7 +6661,7 @@ body#tinymce {
 
 .calendario_mes {
   display: flex;
-  align-items: center; }
+  align-items: flex-start; }
   .calendario_mes .listado {
     width: 40%;
     padding-top: 55px;
@@ -6710,7 +6710,8 @@ body#tinymce {
         background: #d66bd8; }
       .calendario_mes .listado .item .categ_name.laboratorio {
         background: #f1e340; }
-      .calendario_mes .listado .item .categ_name, .calendario_mes .listado .item .link {
+      .calendario_mes .listado .item .categ_name,
+      .calendario_mes .listado .item .link {
         font-family: 'Inconsolata', monospace;
         background: white;
         color: #3B3B3B;
@@ -6849,7 +6850,8 @@ body#tinymce {
   @media all and (max-width: 900px) {
     .calendario_mes {
       flex-wrap: wrap; }
-      .calendario_mes .listado, .calendario_mes #calendario {
+      .calendario_mes .listado,
+      .calendario_mes #calendario {
         width: 100%; } }
 
 .form_mail {
@@ -6886,7 +6888,8 @@ body#tinymce {
     color: #333;
     font-weight: bold;
     padding-left: 30px;
-    padding-right: 30px; }
+    padding-right: 30px;
+    margin-top: 2.5vh; }
     .form_mail .acf-button:hover {
       background: #3e6cd1;
       color: white; }
@@ -7161,7 +7164,7 @@ body#tinymce {
   margin-right: 10%; }
   .banner .tarjetas .item {
     width: 250px;
-    height: 375px;
+    height: 275px;
     margin-left: 15px;
     background-size: cover;
     background-position: center;
@@ -7257,7 +7260,7 @@ body#tinymce {
       max-width: 600px; }
       .banner .inside .content.texto-abajo {
         transform: translate(0, -50%);
-        top: 75%;
+        top: 50%;
         width: 100%;
         max-width: none; }
         .banner .inside .content.texto-abajo .contenedor-txt {
@@ -7771,6 +7774,10 @@ body#tinymce {
     background: #3e6cd1;
     color: white; }
 
+.agenda .calendario_mes .inscripcion {
+  margin-top: 0;
+  font-size: 1em; }
+
 .popup {
   position: fixed;
   background: rgba(0, 0, 0, 0.8);
@@ -7788,6 +7795,8 @@ body#tinymce {
   .popup .acf-field {
     border: none !important;
     width: 400px; }
+    .popup .acf-field.hidden {
+      display: none !important; }
   .popup .acf-form-submit {
     text-align: center; }
   .popup span {
@@ -7814,6 +7823,10 @@ body#tinymce {
   padding-left: 10px; }
   .calendario_mes .listado .itemListado .hora {
     font-weight: bold; }
+  .calendario_mes .listado .itemListado .des {
+    font-style: italic;
+    color: #999;
+    padding: 10px; }
 
 .banner.cita-imagen {
   height: 50vh;
@@ -8046,10 +8059,16 @@ body#tinymce {
   position: relative;
   max-width: 800px;
   margin: 0 auto; }
-  .personas_slider .persona_item .image-wrapper {
-    width: 300px;
-    height: 400px;
-    background-size: cover; }
+  .personas_slider .persona_item {
+    margin: 10px; }
+    .personas_slider .persona_item .image-wrapper {
+      width: 300px;
+      height: 400px;
+      background-size: cover; }
+  .personas_slider .hori_scroll div {
+    border-radius: 20px;
+    opacity: 1;
+    font-weight: bold; }
 
 .columnas {
   display: flex; }
@@ -8072,7 +8091,8 @@ body#tinymce {
   .columnas .right {
     width: calc(100% - 250px);
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    overflow: hidden; }
   @media all and (max-width: 1024px) {
     .columnas .left {
       display: none; }
