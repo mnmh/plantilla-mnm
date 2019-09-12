@@ -14,6 +14,10 @@
             });
         })
 
+        $('.popup').on('click', function (e) {
+            if ($(e.target).hasClass('popup')) $('.popup').fadeOut()
+        })
+
         $('.calendario_mes .listado .itemListado').each(function (i) {
             var dia = $(this).attr('data-date');
             var mes = $(this).attr('data-mes');
