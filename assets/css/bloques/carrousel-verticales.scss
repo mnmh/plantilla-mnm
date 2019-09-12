@@ -203,6 +203,9 @@
 
     &.first {
         .profiles-item:first-child {
+            a {
+                background-size: contain;
+            }
             .opacity-layer {
                 display: none;
             }
