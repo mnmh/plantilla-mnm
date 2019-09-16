@@ -8,12 +8,14 @@
         <?php $final = get_field('hora_de_fin') ?>
         <?php $dia = get_field('dia') ?>
         <?php $dia_fin = get_field('dia_fin') ?>
+        <?php $lugar = get_field('lugar') ?>
 
         <?php if($galeria): ?>
-            <figure class="wp-block-image btm">
+            <figure class="wp-block-image btm top">
                 <img src="<?php echo $galeria[0]['url'] ?>" alt="">
             </figure>
         <?php endif; ?>
+
 
         <h2><?php the_title() ?></h2>
 
@@ -23,17 +25,23 @@
             </p>
         <?php endif; ?>
 
-        <?php if($tipo): ?>
-            <p class="halfbtm">
-                <em><?php echo $tipo ?></em>
+        <?php if($inicio and $final): ?>
+            <p>
+                <?php echo $inicio ?> a <?php echo $final ?>
             </p>
         <?php endif; ?>
 
-        <a class="inscripcion btn" data-id="<?php echo get_the_ID() ?>">Inscribirse</a>
-    
+        <?php if($lugar): ?>
+            <p class="halfbtm">
+                <?php echo $lugar ?>
+            </p>
+        <?php endif; ?>
 
 
-    <?php the_content() ?>
+        <div class="btm max-800">
+            <?php the_content() ?>
+            <a class="inscripcion btn" data-id="<?php echo get_the_ID() ?>">Inscribirse</a>
+        </div>
     
     <div class="popup">
     <?php

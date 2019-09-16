@@ -6547,7 +6547,10 @@ body#tinymce {
     margin-bottom: 20vh !important; }
   #contenidoGeneral .wp-block-image {
     max-width: 800px !important;
-    margin: 0 auto; }
+    margin-left: auto;
+    margin-right: auto; }
+    #contenidoGeneral .wp-block-image.top {
+      margin-top: 3em; }
 
 .hori_scroll {
   z-index: 10;
@@ -6658,6 +6661,11 @@ body#tinymce {
 
 .banner {
   min-height: 630px; }
+
+.max-800 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .calendario_mes {
   display: flex;
@@ -7027,6 +7035,8 @@ body#tinymce {
     @media screen and (min-width: 1000px) {
       .carrousel-vertical-container .profiles-item h2 {
         font-size: 2.8125em; } }
+  .carrousel-vertical-container.first .profiles-item:first-child a {
+    background-size: contain; }
   .carrousel-vertical-container.first .profiles-item:first-child .opacity-layer {
     display: none; }
   .carrousel-vertical-container.obras a {
