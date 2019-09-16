@@ -8,7 +8,9 @@
                 pageDots: false,
                 cellAlign: 'left',
                 adaptiveHeight: false,
-                wrapAround: true
+                wrapAround: true,
+                autoPlay: 4000,
+                friction: 0.15
             });
 
             flkty.on('select', function (index) {
