@@ -10,7 +10,6 @@
                 adaptiveHeight: false,
                 wrapAround: true,
                 autoPlay: 4000,
-                selectedAttraction: 0.01,
                 friction: 0.15
             });
 
