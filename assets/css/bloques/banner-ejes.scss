@@ -1,5 +1,18 @@
 .banner {
 
+    &.audio{
+        .img::after {
+            content: ""; // ::before and ::after both require content
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: .4;
+        }
+    }
+
     .content {
 
         &.ejes {
@@ -33,16 +46,20 @@
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        max-width: 600px;
+        max-width: 35%;
         margin: auto;
         position: relative;
         top: 40vh;
         float: right;
         margin-right: 10%;
 
+        @media #{$large-and-down} {
+            max-width: 600px;
+        }
+
         .item {
-            width: 250px;
-            height: 275px;
+            width: 270px;
+            height: 370px;
             margin-left: 15px;
 
             background-size: cover;

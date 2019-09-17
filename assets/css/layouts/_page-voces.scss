@@ -1182,7 +1182,7 @@ figure {
 
 #galeria_voces {
   position: relative;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
 
   .nav {
     width: 95%;
@@ -1238,15 +1238,16 @@ figure {
       opacity: 0;
       transition: opacity 300ms, transform 300ms;
       display: block;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 1.5;
     }
 
     .descripcion {
       opacity: 0;
-      color: black;
+      color: $black;
       transition: opacity 300ms, transform 300ms;
       transform: translate3d(0, 50%, 0);
+      margin: 10px 0 0 0;
     }
 
     &.is-selected {
@@ -1259,8 +1260,8 @@ figure {
       .descripcion {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        font-weight: bold;
-        width: 85%;
+        font-style: italic;
+        width: 90%;
         font-size: 1em;
       }
     }

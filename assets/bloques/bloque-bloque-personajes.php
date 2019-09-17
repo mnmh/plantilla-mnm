@@ -12,6 +12,17 @@ $enlace = get_field('enlace');
 ?>
 
 <div class="audio piepag">
+
+<div class="textos">
+            <h1> 
+                Grandes conversaciones
+            </h1>
+            <p> 
+                A lo largo de sus vidas, Víctor Gaviria, Felipe Aljure y Mariana Arruti se han preocupado por dejar en la memoria historias de la gente anónima. 
+            </p>
+    </div>
+ 
+
     <div class="reproductor">
         <div class="slider">
             <div class="current"></div>
