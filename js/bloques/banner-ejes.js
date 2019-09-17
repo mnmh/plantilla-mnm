@@ -48,7 +48,7 @@
             var audio = document.getElementById("audioPlayer");
             var $item = $(e.target);
             if(!$item.hasClass('playing')){
-                var urlAudio = $item.attr('data-url');
+                var urlAudio = $item.attr('data-audio');
                 audio.setAttribute('src', urlAudio);
 
                 $('.banner.audio .play.playing').removeClass('playing').removeClass('paused');
