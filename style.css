@@ -4917,7 +4917,7 @@ figure {
 
 #galeria_voces {
   position: relative;
-  margin-bottom: 5em; }
+  margin-bottom: 10em; }
   #galeria_voces .nav {
     width: 95%; }
   #galeria_voces .next,
@@ -4960,13 +4960,14 @@ figure {
       opacity: 0;
       transition: opacity 300ms, transform 300ms;
       display: block;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 1.5; }
     #galeria_voces .item .descripcion {
       opacity: 0;
-      color: black;
+      color: #3B3B3B;
       transition: opacity 300ms, transform 300ms;
-      transform: translate3d(0, 50%, 0); }
+      transform: translate3d(0, 50%, 0);
+      margin: 10px 0 0 0; }
     #galeria_voces .item.is-selected {
       opacity: 1; }
       #galeria_voces .item.is-selected .leyenda {
@@ -4974,8 +4975,8 @@ figure {
       #galeria_voces .item.is-selected .descripcion {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        font-weight: bold;
-        width: 85%;
+        font-style: italic;
+        width: 90%;
         font-size: 1em; }
     #galeria_voces .item img {
       width: 100%;
