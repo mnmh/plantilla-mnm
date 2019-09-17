@@ -7176,15 +7176,18 @@ body#tinymce {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  max-width: 600px;
+  max-width: 35%;
   margin: auto;
   position: relative;
   top: 40vh;
   float: right;
   margin-right: 10%; }
+  @media only screen and (max-width: 1200px) {
+    .banner .tarjetas {
+      max-width: 600px; } }
   .banner .tarjetas .item {
-    width: 250px;
-    height: 275px;
+    width: 270px;
+    height: 370px;
     margin-left: 15px;
     background-size: cover;
     background-position: center;
