@@ -44,21 +44,22 @@
 
         });
 
-        $('.banner.audio .play').on('click', function() {
+        $('.banner.audio .play').on('click', function(e) {
             var audio = document.getElementById("audioPlayer");
-            if(!$(this).hasClass('playing')){
-                var urlAudio = $(this).attr('data-url');
+            var $item = $(e.target);
+            if(!$item.hasClass('playing')){
+                var urlAudio = $item.attr('data-url');
                 audio.setAttribute('src', urlAudio);
 
                 $('.banner.audio .play.playing').removeClass('playing').removeClass('paused');
-                $(this).addClass('playing');
+                $item.addClass('playing');
 
                 audio.oncanplay = () => {
                     audio.play();
                 }
             } else {
                 audio.pause();
-                $(this).addClass('paused');
+                $item.addClass('paused');
             }
         })
 
