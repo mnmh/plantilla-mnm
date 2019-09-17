@@ -8047,10 +8047,21 @@ body#tinymce {
           content: '\e813'; }
         .audio.piepag .tarjetas .item .play.paused:after {
           content: '\e810'; }
+  .audio.piepag .textos {
+    text-align: left;
+    position: absolute;
+    max-width: 400px;
+    margin-left: 10%;
+    transform: translate(0, 70%); }
+    .audio.piepag .textos h1 {
+      color: white;
+      font-size: 38px; }
+    .audio.piepag .textos p {
+      color: white !important; }
   .audio.piepag .reproductor {
     width: 250px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
     margin-left: 10%; }
     .audio.piepag .reproductor .time {
       background: #5f5f5f;
