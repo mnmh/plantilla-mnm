@@ -107,7 +107,8 @@ endforeach;
 ?>
 
 <div class="agenda medallo">
-
+    <h1 class="sec">Calendario de eventos</h1>
+    <div class="subtitulo-sec">Conoce nuestra programación e inscríbete a nuestros eventos. <i>* inscribirse no garantiza cupo al evento</i></div>
     <!-- <div class="nav">
         <div data-div="agenda_dias" class="itemNav btn active">Vista por días</div>
         <div data-div="calendario_mes" class="itemNav btn">Vista por mes</div>
