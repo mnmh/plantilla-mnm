@@ -90,11 +90,12 @@
 		<?php if(!is_user_logged_in()): ?>
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116884043-1"></script>
 			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
 
-			gtag('config', 'UA-116884043-1');
+				gtag('config', 'UA-116884043-1');
+			</script>
 		<?php endif; ?>
 
 	</body>
