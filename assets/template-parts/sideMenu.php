@@ -38,9 +38,9 @@
 					<span>Arte y Cultura</span>
 					</a></li>
 					<li><a href="<?php echo VOCES?>" data-target="#" class="itemChild">
-						<span>Voces para transfromar</span>
+						<span>Voces para transformar</span>
 					</a></li>
-					<li><a href="#" data-target="#" class="itemChild">
+					<li><a href="http://www.archivodelosddhh.gov.co" data-target="#" class="itemChild">
 						<span>Archivo DDHH</span>
 					</a></li>
 					<li><a href="http://centrodememoriahistorica.gov.co/observatorio/" data-target="#" class="itemChild">
