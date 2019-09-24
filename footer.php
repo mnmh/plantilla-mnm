@@ -23,7 +23,7 @@
 							<li><a href="http://museodememoria.gov.co/sobre-el-proyecto/que-es-el-museo-de-memoria-de-colombia/">Sobre el proyecto</a></li>
 							<li><a href="http://museodememoria.gov.co/diseno-del-edificio/72-pro/">Diseño del edificio</a></li>
 							<li><a href="http://museodememoria.gov.co/plan-museologico/guion-conceptual/">Plan museológico</a></li>
-							<li><a href="#">Infórmate</a></li>
+							<li><a href="http://museodememoria.gov.co/informate/">Infórmate</a></li>
 						</ul>
 						<ul class="museo-links">
 							<h3>Comprende</h3>
