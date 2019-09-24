@@ -20,22 +20,22 @@
 					<div class="footer-museo">
 						<ul class="museo-links">
 							<h3>Recorre</h3>
-							<li><a href="#">Sobre el proyecto</a></li>
-							<li><a href="#">Diseño del edificio</a></li>
-							<li><a href="#">Plan museológico</a></li>
+							<li><a href="http://museodememoria.gov.co/sobre-el-proyecto/que-es-el-museo-de-memoria-de-colombia/">Sobre el proyecto</a></li>
+							<li><a href="http://museodememoria.gov.co/diseno-del-edificio/72-pro/">Diseño del edificio</a></li>
+							<li><a href="http://museodememoria.gov.co/plan-museologico/guion-conceptual/">Plan museológico</a></li>
 							<li><a href="#">Infórmate</a></li>
 						</ul>
 						<ul class="museo-links">
 							<h3>Comprende</h3>
-							<li><a href="#">Arte y Cultura</a></li>
-							<li><a href="#">Voces para transformar</a></li>
-							<li><a href="#">Archivo DDHH</a></li>
-							<li><a href="#">Observatorio</a></li>
+							<li><a href="http://museodememoria.gov.co/arte-y-cultura/">Arte y Cultura</a></li>
+							<li><a href="http://museodememoria.gov.co/voces-para-transformar/">Voces para transformar</a></li>
+							<li><a href="http://www.archivodelosddhh.gov.co">Archivo DDHH</a></li>
+							<li><a href="http://centrodememoriahistorica.gov.co/observatorio/">Observatorio</a></li>
 						</ul>
 						<ul class="museo-links">
 							<h3>Transformar</h3>
-							<li><a href="#">Agenda</a></li>
-							<li><a href="#">Educación</a></li>
+							<li><a href="http://museodememoria.gov.co/programacion-2/">Agenda</a></li>
+							<li><a href="http://museodememoria.gov.co/pagina-principal/educacion/">Educación</a></li>
 						</ul>
 
 						<ul class="cnmh-links">
