@@ -43,8 +43,8 @@
 							<li><a href="http://www.centrodememoriahistorica.gov.co/que-es-el-cnmh" target="_blank">Qué es el CNMH</a></li>
 							<li><a href="http://www.centrodememoriahistorica.gov.co/areas-de-trabajo" target="_blank">Áreas de Trabajo</a></li>
 							<li><a href="http://www.centrodememoriahistorica.gov.co/ley-de-victimas" target="_blank">Ley de Víctimas</a></li>
-							<li><a href="http://www.centrodememoriahistorica.gov.co/publicaciones-cnmh" target="_blank">Publicaciones CNMH</a></li>
-							<li><a href="http://www.centrodememoriahistorica.gov.co/pasantias-y-practicas" target="_blank">Pasantías y Prácticas</a></li>
+							<li><a href="http://www.centrodememoriahistorica.gov.co/informes" target="_blank">Publicaciones CNMH</a></li>
+							<li><a href="http://www.centrodememoriahistorica.gov.co/practicas-laborales" target="_blank">Pasantías y Prácticas</a></li>
 						</ul>
 					</div>
 				</section>
