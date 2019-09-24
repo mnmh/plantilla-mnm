@@ -38,7 +38,7 @@
 					<span>Arte y Cultura</span>
 					</a></li>
 					<li><a href="<?php echo VOCES?>" data-target="#" class="itemChild">
-						<span>Voces para transfromar</span>
+						<span>Voces para transformar</span>
 					</a></li>
 					<li><a href="#" data-target="#" class="itemChild">
 						<span>Archivo DDHH</span>
