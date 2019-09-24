@@ -19,7 +19,7 @@
 					<li><a href="<?php echo PLANMUSEO ?>" data-target="#" class="itemChild">
 						<span>Plan museológico</span>
 					</a></li>
-					<li><a href="{{EQUIPO}}" data-target="#" class="itemChild">
+					<li><a href="http://museodememoria.gov.co/informate/" data-target="#" class="itemChild">
 						<span>Infórmate</span>
 					</a></li>
 				</ul>
