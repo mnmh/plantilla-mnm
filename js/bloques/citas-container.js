@@ -6,7 +6,7 @@
                 freeScroll: false,
                 contain: true,
                 wrapAround: true,
-                autoPlay: true,
+                autoPlay: 7000,
                 pageDots: false,
                 prevNextButtons: false,
                 cellAlign: 'center',
