@@ -164,7 +164,6 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
     
     color: #9A9A9A;
     font-weight: 300;
@@ -179,4 +178,12 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+@media #{$extralarge-and-down} {
+
+    .subtitulo-sec {
+        padding-left: 20px;
+    }
 }
