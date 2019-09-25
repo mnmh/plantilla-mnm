@@ -7597,11 +7597,12 @@ body#tinymce {
       margin-bottom: 5px;
       color: #3B3B3B; }
     .tarjetas .item .tarjeta-description .texto-descriptivo {
-      color: #C9C9C9;
+      color: #9A9A9A !important;
       font-weight: 300;
       text-align: left;
       font-size: 16px !important;
-      color: #C9C9C9 !important; }
+      margin-top: 10px !important;
+      margin-bottom: 0px !important; }
 
 .tarjetas .more.gal {
   border: 1px solid black;
