@@ -166,11 +166,13 @@
             }
 
             .texto-descriptivo {
-                color: #C9C9C9;
+                color: $gris !important;
                 font-weight: 300;
                 text-align: left;
                 font-size: 16px !important;
-                color: #C9C9C9 !important;
+                margin-top: 10px !important;
+                margin-bottom: 0px !important;
+                
             }
         }
     }
