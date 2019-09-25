@@ -12,8 +12,15 @@ $subtitulo = get_field('subtitulo');
 ?>
 
 <div class="tarjetas galeria noticias btm">
+
+
     <h1 class="sec"><?php echo $titulo; ?></h1>
-    <div class="subtitulo-sec"><?php echo $subtitulo; ?></div>
+    <span class="ver-todas"> 
+        <a href="http://museodememoria.gov.co/informate/"> Ver todas </a>
+    </span>
+    <div class="subtitulo-sec"><?php echo $subtitulo; ?></div> 
+    
+    
 
     <div class="inside">
     <?php if(have_rows('tarjetas')): while(have_rows('tarjetas')): the_row(); ?>
