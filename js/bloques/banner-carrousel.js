@@ -9,7 +9,7 @@
                 cellAlign: 'left',
                 adaptiveHeight: false,
                 wrapAround: true,
-                autoPlay: 4000
+                autoPlay: 8000
             });
 
             flkty.on('select', function (index) {
