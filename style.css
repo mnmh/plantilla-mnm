@@ -27,7 +27,6 @@ a {
 .wrap {
   position: relative;
   overflow: auto;
-  padding-bottom: 6.25em;
   transition: all 0.5s ease;
   width: 100%; }
   .page-template-template-laboratorio .wrap {
@@ -8046,7 +8045,8 @@ body#tinymce {
 
 .audio.piepag {
   background: #3B3B3B;
-  margin-top: 250px; }
+  margin-top: 250px;
+  height: 500px; }
   .audio.piepag .tarjetas {
     display: flex;
     height: 350px;
@@ -8056,7 +8056,8 @@ body#tinymce {
     .audio.piepag .tarjetas .item {
       position: relative;
       background-size: cover;
-      max-width: 250px; }
+      max-width: 250px;
+      border: none; }
       .audio.piepag .tarjetas .item .play {
         position: absolute;
         top: 75%;

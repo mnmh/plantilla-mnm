@@ -1,6 +1,7 @@
 .audio.piepag {
     background: $black;
     margin-top: 250px;
+    height: 500px;
 
     .tarjetas {
         display: flex;
@@ -13,6 +14,7 @@
             position: relative;
             background-size: cover;
             max-width: 250px;
+            border: none;
 
             .play {
                 position: absolute;
