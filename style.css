@@ -8141,7 +8141,8 @@ body#tinymce {
           .audio.piepag .contenedor .left .textos {
             text-align: center !important;
             max-width: none !important;
-            margin-left: 0 !important; }
+            margin-left: 0 !important;
+            padding: 0 15px; }
           .audio.piepag .contenedor .left .reproductor {
             margin-left: auto !important;
             margin-right: auto; }
