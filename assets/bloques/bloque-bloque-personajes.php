@@ -13,6 +13,8 @@ $enlace = get_field('enlace');
 
 <div class="audio piepag">
 
+    <div class="contenedor">
+
     <!-- <div class="textos">
             <h1> 
                 Grandes conversaciones

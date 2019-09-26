@@ -8044,47 +8044,27 @@ body#tinymce {
           width: 100%; } }
 
 .audio.piepag {
+  position: relative;
   background: #3B3B3B;
   margin-top: 250px;
   height: 500px; }
-  .audio.piepag .tarjetas {
-    display: flex;
-    height: 350px;
-    justify-content: flex-end;
-    position: relative;
-    top: -140px; }
-    .audio.piepag .tarjetas .item {
-      position: relative;
-      background-size: cover;
-      max-width: 250px;
-      border: none; }
-      .audio.piepag .tarjetas .item .play {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #3e6cd1; }
-        .audio.piepag .tarjetas .item .play.playing:after {
-          content: '\e813'; }
-        .audio.piepag .tarjetas .item .play.paused:after {
-          content: '\e810'; }
-  .audio.piepag .textos {
+  .audio.piepag .contenedor .textos {
     text-align: left;
     position: absolute;
     max-width: 400px;
     margin-left: 10%;
     transform: translate(0, 70%); }
-    .audio.piepag .textos h1 {
+    .audio.piepag .contenedor .textos h1 {
       color: white;
       font-size: 38px; }
-    .audio.piepag .textos p {
+    .audio.piepag .contenedor .textos p {
       color: white !important; }
-  .audio.piepag .reproductor {
+  .audio.piepag .contenedor .reproductor {
     width: 250px;
     text-align: center;
     padding-top: 30px;
     margin-left: 10%; }
-    .audio.piepag .reproductor .time {
+    .audio.piepag .contenedor .reproductor .time {
       background: #5f5f5f;
       width: 50%;
       text-align: center;
@@ -8093,23 +8073,44 @@ body#tinymce {
       font-size: 0.75em;
       color: #999;
       margin: 0 auto; }
-    .audio.piepag .reproductor .slider {
+    .audio.piepag .contenedor .reproductor .slider {
       position: relative;
       height: 5px;
       margin-bottom: 10px;
       margin-left: 5px; }
-      .audio.piepag .reproductor .slider .total {
+      .audio.piepag .contenedor .reproductor .slider .total {
         position: absolute;
         width: 100%;
         height: 2px;
         top: 100%;
         margin-top: -1px;
         background: #999; }
-      .audio.piepag .reproductor .slider .current {
+      .audio.piepag .contenedor .reproductor .slider .current {
         position: absolute;
         height: 4px;
         top: 0.5px;
         background: white; }
+  .audio.piepag .contenedor .tarjetas {
+    display: flex;
+    height: 350px;
+    justify-content: flex-end;
+    position: relative;
+    top: -140px; }
+    .audio.piepag .contenedor .tarjetas .item {
+      position: relative;
+      background-size: cover;
+      max-width: 250px;
+      border: none; }
+      .audio.piepag .contenedor .tarjetas .item .play {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #3e6cd1; }
+        .audio.piepag .contenedor .tarjetas .item .play.playing:after {
+          content: '\e813'; }
+        .audio.piepag .contenedor .tarjetas .item .play.paused:after {
+          content: '\e810'; }
 
 .personas_slider {
   position: relative;
