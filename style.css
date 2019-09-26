@@ -8114,7 +8114,7 @@ body#tinymce {
       .audio.piepag .contenedor .tarjetas.right {
         width: 50%;
         float: right;
-        height: 80vw !important; }
+        height: 350px; }
       .audio.piepag .contenedor .tarjetas .item {
         position: relative;
         background-size: cover;
@@ -8142,12 +8142,12 @@ body#tinymce {
             text-align: center !important;
             max-width: none !important;
             margin-left: 0 !important;
-            padding: 0 15px; }
+            padding: 0 20px; }
           .audio.piepag .contenedor .left .reproductor {
             margin-left: auto !important;
             margin-right: auto; }
         .audio.piepag .contenedor .right {
-          height: 350px !important;
+          height: 80vw !important;
           width: 80% !important; } }
 
 .personas_slider {
