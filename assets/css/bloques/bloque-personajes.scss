@@ -84,17 +84,25 @@
     }
 
     .tarjetas {
-        display: flex;
-        height: 350px;
-        justify-content: flex-end;
-        position: absolute;
-        top: -25%;
         
+        display: flex;
+        justify-content: space-between;
+
+        &.right {
+            width: 50%;
+            float: right;
+            height: 350px;
+            border: red solid 1px;
+        }
+
         .item {
             position: relative;
             background-size: cover;
             max-width: 250px;
             border: none;
+
+            width: 40% !important;
+            margin: 0 !important;
 
             .play {
                 position: absolute;

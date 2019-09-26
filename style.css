@@ -8106,15 +8106,19 @@ body#tinymce {
             background: white; }
   .audio.piepag .tarjetas {
     display: flex;
-    height: 350px;
-    justify-content: flex-end;
-    position: absolute;
-    top: -25%; }
+    justify-content: space-between; }
+    .audio.piepag .tarjetas.right {
+      width: 50%;
+      float: right;
+      height: 350px;
+      border: red solid 1px; }
     .audio.piepag .tarjetas .item {
       position: relative;
       background-size: cover;
       max-width: 250px;
-      border: none; }
+      border: none;
+      width: 40% !important;
+      margin: 0 !important; }
       .audio.piepag .tarjetas .item .play {
         position: absolute;
         top: 75%;
