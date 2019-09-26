@@ -4,6 +4,10 @@
     margin-top: 250px;
     height: 500px;
 
+    @media #{$large-and-down} {
+        height: 800px;
+    }
+
     .contenedor {
         position: absolute;
         width: 100%;
@@ -86,13 +90,12 @@
 
             display: flex;
             justify-content: space-between;
-            top: -25px;
+            top: -50px;
 
             &.right {
                 width: 50%;
                 float: right;
-                height: 70%;
-                border: red solid 1px;
+                height: 80vw !important;
             }
 
             .item {
@@ -123,20 +126,32 @@
             }
         }
 
-
         @media #{$large-and-down} {
+            display: flex;
+            flex-direction: column-reverse;
 
-            .contenedor {
-                display: flex;
-                flex-direction: column-reverse;
+            .left, .right {
+                width: 100%;
+            }
 
-                .left, .right {
-                    width: 100%;
+            .left {
+                justify-content: end !important;
+
+                .textos {
+                    text-align: center !important;
+                    max-width: none !important;
+                    margin-left: 0 !important;
                 }
 
-                .left {
-                    flex-direction: row-reverse;
+                .reproductor {
+                    margin-left: auto !important;
+                    margin-right: auto;
                 }
+            }
+
+            .right {
+                height: 350px !important;
+                width: 80% !important;
             }
         }
     }

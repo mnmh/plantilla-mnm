@@ -8048,6 +8048,9 @@ body#tinymce {
   background: #3B3B3B;
   margin-top: 250px;
   height: 500px; }
+  @media only screen and (max-width: 1200px) {
+    .audio.piepag {
+      height: 800px; } }
   .audio.piepag .contenedor {
     position: absolute;
     width: 100%;
@@ -8107,12 +8110,11 @@ body#tinymce {
     .audio.piepag .contenedor .tarjetas {
       display: flex;
       justify-content: space-between;
-      top: -25px; }
+      top: -50px; }
       .audio.piepag .contenedor .tarjetas.right {
         width: 50%;
         float: right;
-        height: 70%;
-        border: red solid 1px; }
+        height: 80vw !important; }
       .audio.piepag .contenedor .tarjetas .item {
         position: relative;
         background-size: cover;
@@ -8129,13 +8131,23 @@ body#tinymce {
           .audio.piepag .contenedor .tarjetas .item .play.paused:after {
             content: '\e810'; }
     @media only screen and (max-width: 1200px) {
-      .audio.piepag .contenedor .contenedor {
+      .audio.piepag .contenedor {
         display: flex;
         flex-direction: column-reverse; }
-        .audio.piepag .contenedor .contenedor .left, .audio.piepag .contenedor .contenedor .right {
+        .audio.piepag .contenedor .left, .audio.piepag .contenedor .right {
           width: 100%; }
-        .audio.piepag .contenedor .contenedor .left {
-          flex-direction: row-reverse; } }
+        .audio.piepag .contenedor .left {
+          justify-content: end !important; }
+          .audio.piepag .contenedor .left .textos {
+            text-align: center !important;
+            max-width: none !important;
+            margin-left: 0 !important; }
+          .audio.piepag .contenedor .left .reproductor {
+            margin-left: auto !important;
+            margin-right: auto; }
+        .audio.piepag .contenedor .right {
+          height: 350px !important;
+          width: 80% !important; } }
 
 .personas_slider {
   position: relative;
