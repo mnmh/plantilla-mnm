@@ -87,9 +87,9 @@
         display: flex;
         height: 350px;
         justify-content: flex-end;
-        position: relative;
-        top: -140px;
-
+        position: absolute;
+        top: -25%;
+        
         .item {
             position: relative;
             background-size: cover;

@@ -8108,8 +8108,8 @@ body#tinymce {
     display: flex;
     height: 350px;
     justify-content: flex-end;
-    position: relative;
-    top: -140px; }
+    position: absolute;
+    top: -25%; }
     .audio.piepag .tarjetas .item {
       position: relative;
       background-size: cover;
