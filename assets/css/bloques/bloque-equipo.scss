@@ -4,6 +4,8 @@
     margin: 0 auto;
 
     .hori_scroll {
+        top: 25%;
+        transform: translate(0px, -25%);
 
         div {
             border-radius: 20px;
@@ -24,18 +26,9 @@
         .inside {
 
             .des {
-                visibility:hidden;
-
-            }
-        }
-    }
-
-    .persona_item {
-
-        &.is-selected {
-
-            .des {
                 visibility: visible;
+                max-width: 300px !important;
+                font-size: 14px !important;
 
             }
         }

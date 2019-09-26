@@ -8113,10 +8113,13 @@ body#tinymce {
   position: relative;
   width: 100%;
   margin: 0 auto; }
-  .personas_slider .hori_scroll div {
-    border-radius: 20px;
-    opacity: 1;
-    font-weight: bold; }
+  .personas_slider .hori_scroll {
+    top: 25%;
+    transform: translate(0px, -25%); }
+    .personas_slider .hori_scroll div {
+      border-radius: 20px;
+      opacity: 1;
+      font-weight: bold; }
   .personas_slider .persona_item {
     margin: 10px; }
     .personas_slider .persona_item .image-wrapper {
@@ -8124,9 +8127,9 @@ body#tinymce {
       height: 400px;
       background-size: cover; }
     .personas_slider .persona_item .inside .des {
-      visibility: hidden; }
-  .personas_slider .persona_item.is-selected .des {
-    visibility: visible; }
+      visibility: visible;
+      max-width: 300px !important;
+      font-size: 14px !important; }
 
 .columnas {
   display: flex; }
