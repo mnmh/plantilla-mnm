@@ -15,19 +15,20 @@
         height: 100%;
 
         .left {
-            background: red;
             width: 50%;
             float: left;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
 
 
             .textos {
                 
-                position: absolute;
                 text-align: left;
                 max-width: 400px;
                 margin-left: 10%;
-                transform: translate(0, 70%);
                 
                 h1 {
                     color: white;
@@ -40,9 +41,9 @@
             }
 
             .reproductor {
+                padding-top: 40px;
                 width: 250px;
                 text-align: center;
-                padding-top: 30px;
                 margin-left: 10%;
 
                 .time {
