@@ -81,49 +81,63 @@
                 }
             }
         }
-    }
+    
+        .tarjetas {
 
-    .tarjetas {
-        
-        display: flex;
-        justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
+            top: -25px;
 
-        &.right {
-            width: 50%;
-            float: right;
-            height: 350px;
-            border: red solid 1px;
-        }
+            &.right {
+                width: 50%;
+                float: right;
+                height: 70%;
+                border: red solid 1px;
+            }
 
-        .item {
-            position: relative;
-            background-size: cover;
-            max-width: 250px;
-            border: none;
+            .item {
+                position: relative;
+                background-size: cover;
+                border: none;
+                width: 33% !important;
 
-            width: 40% !important;
-            margin: 0 !important;
+                .play {
+                    position: absolute;
+                    top: 75%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: $azul;
 
-            .play {
-                position: absolute;
-                top: 75%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: $azul;
-
-                &.playing {
-                    &:after {
-                        content: '\e813';
+                    &.playing {
+                        &:after {
+                            content: '\e813';
+                        }
                     }
-                }
 
-                &.paused {
-                    &:after {
-                        content: '\e810';
+                    &.paused {
+                        &:after {
+                            content: '\e810';
+                        }
                     }
                 }
             }
         }
-    }
 
+
+        @media #{$large-and-down} {
+
+            .contenedor {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .left, .right {
+                    width: 100%;
+                }
+
+                .left {
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+    }
 }

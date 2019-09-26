@@ -8104,31 +8104,38 @@ body#tinymce {
             height: 4px;
             top: 0.5px;
             background: white; }
-  .audio.piepag .tarjetas {
-    display: flex;
-    justify-content: space-between; }
-    .audio.piepag .tarjetas.right {
-      width: 50%;
-      float: right;
-      height: 350px;
-      border: red solid 1px; }
-    .audio.piepag .tarjetas .item {
-      position: relative;
-      background-size: cover;
-      max-width: 250px;
-      border: none;
-      width: 40% !important;
-      margin: 0 !important; }
-      .audio.piepag .tarjetas .item .play {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #3e6cd1; }
-        .audio.piepag .tarjetas .item .play.playing:after {
-          content: '\e813'; }
-        .audio.piepag .tarjetas .item .play.paused:after {
-          content: '\e810'; }
+    .audio.piepag .contenedor .tarjetas {
+      display: flex;
+      justify-content: space-between;
+      top: -25px; }
+      .audio.piepag .contenedor .tarjetas.right {
+        width: 50%;
+        float: right;
+        height: 70%;
+        border: red solid 1px; }
+      .audio.piepag .contenedor .tarjetas .item {
+        position: relative;
+        background-size: cover;
+        border: none;
+        width: 33% !important; }
+        .audio.piepag .contenedor .tarjetas .item .play {
+          position: absolute;
+          top: 75%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #3e6cd1; }
+          .audio.piepag .contenedor .tarjetas .item .play.playing:after {
+            content: '\e813'; }
+          .audio.piepag .contenedor .tarjetas .item .play.paused:after {
+            content: '\e810'; }
+    @media only screen and (max-width: 1200px) {
+      .audio.piepag .contenedor .contenedor {
+        display: flex;
+        flex-direction: column-reverse; }
+        .audio.piepag .contenedor .contenedor .left, .audio.piepag .contenedor .contenedor .right {
+          width: 100%; }
+        .audio.piepag .contenedor .contenedor .left {
+          flex-direction: row-reverse; } }
 
 .personas_slider {
   position: relative;
