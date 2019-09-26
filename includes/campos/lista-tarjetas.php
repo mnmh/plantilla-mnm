@@ -78,6 +78,7 @@
                             'choices' => array(
                                 'video' => 'Video',
                                 'galeria' => 'Galería',
+                                'audio' => 'Audio'
                             ),
                             'default_value' => array(
                             ),

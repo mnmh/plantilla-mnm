@@ -10,8 +10,22 @@ $id = 'botones-' . $block['id'];
 ?>
 
 <div class="tarjetas galeria btm">
-    <h1 class="sec">Tarjetas</h1>
-    <div class="subtitulo-sec"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
+    <h1 class="sec"><?php echo get_field('titulo') ?></h1>
+    <div class="subtitulo-sec"><?php echo get_field('subtitulo') ?></div>
+
+    <div class="filtros">
+        <div class="ciudades">
+            <div class="item name">Ciudades</div>
+            <div class="item">Bogotá</div>
+            <div class="item">Cali</div>
+            <div class="item">Medellín</div>
+        </div>
+        <div class="tipos">
+            <div class="item name">Tipos</div>
+            <div class="item">Videos</div>
+            <div class="item">Audios</div>
+        </div>
+    </div>
 
     <div class="inside">
     <?php if(have_rows('tarjetas')): while(have_rows('tarjetas')): the_row(); ?>
