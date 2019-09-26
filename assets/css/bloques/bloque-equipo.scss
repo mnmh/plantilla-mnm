@@ -1,7 +1,18 @@
 .personas_slider {
     position: relative;
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+
+    .hori_scroll {
+        top: 25%;
+        transform: translate(0px, -25%);
+
+        div {
+            border-radius: 20px;
+            opacity: 1;
+            font-weight: bold;
+        }
+    }
 
     .persona_item {
         margin: 10px;
@@ -11,11 +22,15 @@
             height: 400px;
             background-size: cover;
         }
-    }
 
-    .hori_scroll div {
-        border-radius: 20px;
-        opacity: 1;
-        font-weight: bold;
+        .inside {
+
+            .des {
+                visibility: visible;
+                max-width: 300px !important;
+                font-size: 14px !important;
+
+            }
+        }
     }
 }

@@ -8111,18 +8111,25 @@ body#tinymce {
 
 .personas_slider {
   position: relative;
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto; }
+  .personas_slider .hori_scroll {
+    top: 25%;
+    transform: translate(0px, -25%); }
+    .personas_slider .hori_scroll div {
+      border-radius: 20px;
+      opacity: 1;
+      font-weight: bold; }
   .personas_slider .persona_item {
     margin: 10px; }
     .personas_slider .persona_item .image-wrapper {
       width: 300px;
       height: 400px;
       background-size: cover; }
-  .personas_slider .hori_scroll div {
-    border-radius: 20px;
-    opacity: 1;
-    font-weight: bold; }
+    .personas_slider .persona_item .inside .des {
+      visibility: visible;
+      max-width: 300px !important;
+      font-size: 14px !important; }
 
 .columnas {
   display: flex; }
