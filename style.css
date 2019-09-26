@@ -7038,9 +7038,11 @@ body#tinymce {
           left: 0;
           width: 100%;
           height: 100%; }
-    @media screen and (min-width: 1000px) {
-      .carrousel-vertical-container .profiles-item h2 {
-        font-size: 2.8125em; } }
+    .carrousel-vertical-container .profiles-item h2 {
+      font-size: 45px; }
+      @media only screen and (max-width: 1600px) {
+        .carrousel-vertical-container .profiles-item h2 {
+          font-size: 24px; } }
   .carrousel-vertical-container.first .profiles-item:first-child a {
     background-size: contain; }
   .carrousel-vertical-container.first .profiles-item:first-child .opacity-layer {
