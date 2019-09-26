@@ -13,31 +13,33 @@ $enlace = get_field('enlace');
 
 <div class="audio piepag">
 
-<div class="textos">
-            <h1> 
-                Grandes conversaciones
-            </h1>
-            <p> 
-                A lo largo de sus vidas, Víctor Gaviria, Felipe Aljure y Mariana Arruti se han preocupado por dejar en la memoria historias de la gente anónima. 
-            </p>
-    </div>
- 
+    <div class="contenedor">
 
-    <div class="reproductor">
-        <div class="slider">
-            <div class="current"></div>
-            <div class="total"></div>
+        <div class="left">
+
+            <div class="textos">
+                    <h1> 
+                        Grandes conversaciones
+                    </h1>
+                    <p> 
+                        A lo largo de sus vidas, Víctor Gaviria, Felipe Aljure y Mariana Arruti se han preocupado por dejar en la memoria historias de la gente anónima. 
+                    </p>
+            </div> 
+        
+
+            <div class="reproductor">
+                <div class="slider">
+                    <div class="current"></div>
+                    <div class="total"></div>
+                </div>
+                <div class="time">
+                    00:00 / 00:00
+                </div>
+            </div>
+
         </div>
-        <div class="time">
-            00:00 / 00:00
-        </div>
-    </div>
-    <div class="inside">
-        <div class="content ejes">
-            <h1 class="titulo"><strong></strong></h1>
-            <div class="contenedor-txt"> <div class="txt"></div> </div>
-        </div>
-        <div class="tarjetas">
+ 
+        <div class="tarjetas right">
             <?php if(have_rows('ejes')): while(have_rows('ejes')): the_row(); ?>
             <?php $imagen = get_sub_field('imagen') ?>
             <?php $thumbnail = get_sub_field('thumbnail') ?>
@@ -47,5 +49,6 @@ $enlace = get_field('enlace');
             </div>
             <?php endwhile; endif; ?>
         </div>
+
     </div>
 </div>

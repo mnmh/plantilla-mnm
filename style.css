@@ -27,7 +27,6 @@ a {
 .wrap {
   position: relative;
   overflow: auto;
-  padding-bottom: 6.25em;
   transition: all 0.5s ease;
   width: 100%; }
   .page-template-template-laboratorio .wrap {
@@ -8045,70 +8044,111 @@ body#tinymce {
           width: 100%; } }
 
 .audio.piepag {
+  position: relative;
   background: #3B3B3B;
-  margin-top: 250px; }
-  .audio.piepag .tarjetas {
-    display: flex;
-    height: 350px;
-    justify-content: flex-end;
-    position: relative;
-    top: -140px; }
-    .audio.piepag .tarjetas .item {
-      position: relative;
-      background-size: cover;
-      max-width: 250px; }
-      .audio.piepag .tarjetas .item .play {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #3e6cd1; }
-        .audio.piepag .tarjetas .item .play.playing:after {
-          content: '\e813'; }
-        .audio.piepag .tarjetas .item .play.paused:after {
-          content: '\e810'; }
-  .audio.piepag .textos {
-    text-align: left;
+  margin-top: 250px;
+  height: 500px; }
+  @media only screen and (max-width: 1200px) {
+    .audio.piepag {
+      height: 800px; } }
+  .audio.piepag .contenedor {
     position: absolute;
-    max-width: 400px;
-    margin-left: 10%;
-    transform: translate(0, 70%); }
-    .audio.piepag .textos h1 {
-      color: white;
-      font-size: 38px; }
-    .audio.piepag .textos p {
-      color: white !important; }
-  .audio.piepag .reproductor {
-    width: 250px;
-    text-align: center;
-    padding-top: 30px;
-    margin-left: 10%; }
-    .audio.piepag .reproductor .time {
-      background: #5f5f5f;
+    width: 100%;
+    max-width: 1600px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%; }
+    .audio.piepag .contenedor .left {
       width: 50%;
-      text-align: center;
-      padding: 5px;
-      border-radius: 30px;
-      font-size: 0.75em;
-      color: #999;
-      margin: 0 auto; }
-    .audio.piepag .reproductor .slider {
-      position: relative;
-      height: 5px;
-      margin-bottom: 10px;
-      margin-left: 5px; }
-      .audio.piepag .reproductor .slider .total {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        top: 100%;
-        margin-top: -1px;
-        background: #999; }
-      .audio.piepag .reproductor .slider .current {
-        position: absolute;
-        height: 4px;
-        top: 0.5px;
-        background: white; }
+      float: left;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .audio.piepag .contenedor .left .textos {
+        text-align: left;
+        max-width: 400px;
+        margin-left: 10%; }
+        .audio.piepag .contenedor .left .textos h1 {
+          color: white;
+          font-size: 38px; }
+        .audio.piepag .contenedor .left .textos p {
+          color: white !important; }
+      .audio.piepag .contenedor .left .reproductor {
+        padding-top: 40px;
+        width: 250px;
+        text-align: center;
+        margin-left: 10%; }
+        .audio.piepag .contenedor .left .reproductor .time {
+          background: #5f5f5f;
+          width: 50%;
+          text-align: center;
+          padding: 5px;
+          border-radius: 30px;
+          font-size: 0.75em;
+          color: #999;
+          margin: 0 auto; }
+        .audio.piepag .contenedor .left .reproductor .slider {
+          position: relative;
+          height: 5px;
+          margin-bottom: 10px;
+          margin-left: 5px; }
+          .audio.piepag .contenedor .left .reproductor .slider .total {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 100%;
+            margin-top: -1px;
+            background: #999; }
+          .audio.piepag .contenedor .left .reproductor .slider .current {
+            position: absolute;
+            height: 4px;
+            top: 0.5px;
+            background: white; }
+    .audio.piepag .contenedor .tarjetas {
+      display: flex;
+      justify-content: space-between;
+      top: -50px; }
+      .audio.piepag .contenedor .tarjetas.right {
+        width: 50%;
+        float: right;
+        height: 350px; }
+      .audio.piepag .contenedor .tarjetas .item {
+        position: relative;
+        background-size: cover;
+        border: none;
+        width: 33% !important; }
+        .audio.piepag .contenedor .tarjetas .item .play {
+          position: absolute;
+          top: 75%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #3e6cd1; }
+          .audio.piepag .contenedor .tarjetas .item .play.playing:after {
+            content: '\e813'; }
+          .audio.piepag .contenedor .tarjetas .item .play.paused:after {
+            content: '\e810'; }
+    @media only screen and (max-width: 1200px) {
+      .audio.piepag .contenedor {
+        display: flex;
+        flex-direction: column-reverse; }
+        .audio.piepag .contenedor .left, .audio.piepag .contenedor .right {
+          width: 100%; }
+        .audio.piepag .contenedor .left {
+          justify-content: end !important; }
+          .audio.piepag .contenedor .left .textos {
+            text-align: center !important;
+            max-width: none !important;
+            margin-left: 0 !important;
+            padding: 0 20px; }
+          .audio.piepag .contenedor .left .reproductor {
+            margin-left: auto !important;
+            margin-right: auto; }
+        .audio.piepag .contenedor .right {
+          height: 80vw !important;
+          width: 80% !important; } }
 
 .personas_slider {
   position: relative;

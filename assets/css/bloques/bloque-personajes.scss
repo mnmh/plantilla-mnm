@@ -1,95 +1,158 @@
 .audio.piepag {
+    position: relative;
     background: $black;
     margin-top: 250px;
+    height: 500px;
 
-    .tarjetas {
-        display: flex;
-        height: 350px;
-        justify-content: flex-end;
-        position: relative;
-        top: -140px;
-
-        .item {
-            position: relative;
-            background-size: cover;
-            max-width: 250px;
-
-            .play {
-                position: absolute;
-                top: 75%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: $azul;
-
-                &.playing {
-                    &:after {
-                        content: '\e813';
-                    }
-                }
-
-                &.paused {
-                    &:after {
-                        content: '\e810';
-                    }
-                }
-            }
-        }
+    @media #{$large-and-down} {
+        height: 800px;
     }
 
-    .textos {
-        text-align: left;
+    .contenedor {
         position: absolute;
-        max-width: 400px;
-        margin-left: 10%;
-        transform: translate(0, 70%);
-        
-        h1 {
-            color: white;
-            font-size: 38px;
-        }
+        width: 100%;
+        max-width: 1600px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        height: 100%;
 
-        p {
-            color: white !important;
-        }
-    }
-
-    .reproductor {
-        width: 250px;
-        text-align: center;
-        padding-top: 30px;
-        margin-left: 10%;
-
-        .time {
-            background: #5f5f5f;
+        .left {
             width: 50%;
-            text-align: center;
-            padding: 5px;
-            border-radius: 30px;
-            font-size: 0.75em;
-            color: #999;
-            margin: 0 auto;
-        }
+            float: left;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
 
-        .slider {
-            position: relative;
-            height: 5px;
-            margin-bottom: 10px;
-            margin-left: 5px;
 
-            .total {
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                top: 100%;
-                margin-top: -1px;
-                background: #999;
+            .textos {
+                
+                text-align: left;
+                max-width: 400px;
+                margin-left: 10%;
+                
+                h1 {
+                    color: white;
+                    font-size: 38px;
+                }
+
+                p {
+                    color: white !important;
+                }
             }
 
-            .current {
-                position: absolute;
-                height: 4px;
-                top: 0.5px;
-                background: white;
+            .reproductor {
+                padding-top: 40px;
+                width: 250px;
+                text-align: center;
+                margin-left: 10%;
+
+                .time {
+                    background: #5f5f5f;
+                    width: 50%;
+                    text-align: center;
+                    padding: 5px;
+                    border-radius: 30px;
+                    font-size: 0.75em;
+                    color: #999;
+                    margin: 0 auto;
+                }
+
+                .slider {
+                    position: relative;
+                    height: 5px;
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+
+                    .total {
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        top: 100%;
+                        margin-top: -1px;
+                        background: #999;
+                    }
+
+                    .current {
+                        position: absolute;
+                        height: 4px;
+                        top: 0.5px;
+                        background: white;
+                    }
+                }
+            }
+        }
+    
+        .tarjetas {
+
+            display: flex;
+            justify-content: space-between;
+            top: -50px;
+
+            &.right {
+                width: 50%;
+                float: right;
+                height: 350px;
+            }
+
+            .item {
+                position: relative;
+                background-size: cover;
+                border: none;
+                width: 33% !important;
+
+                .play {
+                    position: absolute;
+                    top: 75%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: $azul;
+
+                    &.playing {
+                        &:after {
+                            content: '\e813';
+                        }
+                    }
+
+                    &.paused {
+                        &:after {
+                            content: '\e810';
+                        }
+                    }
+                }
+            }
+        }
+
+        @media #{$large-and-down} {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .left, .right {
+                width: 100%;
+            }
+
+            .left {
+                justify-content: end !important;
+                            
+                .textos {
+                    text-align: center !important;
+                    max-width: none !important;
+                    margin-left: 0 !important;
+                    padding: 0 20px;
+                }
+
+                .reproductor {
+                    margin-left: auto !important;
+                    margin-right: auto;
+                }
+            }
+
+            .right {
+                height: 80vw !important;
+                width: 80% !important;
             }
         }
     }
