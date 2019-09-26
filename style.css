@@ -4975,9 +4975,8 @@ figure {
       #galeria_voces .item.is-selected .descripcion {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        font-style: italic;
         width: 90%;
-        font-size: 1em; }
+        font-size: 14px; }
     #galeria_voces .item img {
       width: 100%;
       height: auto; }
