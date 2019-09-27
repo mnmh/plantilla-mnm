@@ -16,9 +16,9 @@ $id = 'botones-' . $block['id'];
     <div class="filtros">
         <div class="ciudades container_filtro">
             <div class="item_filtro name active">Ciudades</div>
-            <div class="item_filtro filter">Bogotá</div>
-            <div class="item_filtro filter">Cali</div>
-            <div class="item_filtro filter">Medellín</div>
+            <div class="item_filtro filter" data-filter="ciudad_bogota">Bogotá</div>
+            <div class="item_filtro filter" data-filter="ciudad_cali">Cali</div>
+            <div class="item_filtro filter" data-filter="ciudad_medellin">Medellín</div>
             <div class="item_filtro todos">Ver todos</div>
         </div>
         <div class="tipos container_filtro">
@@ -33,6 +33,7 @@ $id = 'botones-' . $block['id'];
     <div class="inside">
     <?php if(have_rows('tarjetas')): while(have_rows('tarjetas')): the_row(); ?>
         <?php $tipo = get_sub_field('tipo'); ?>
+        <?php $ciudad = get_sub_field('ciudad'); ?>
         <?php
             if($tipo == 'video'):
                 $imagen = get_sub_field('imagen');
@@ -45,7 +46,7 @@ $id = 'botones-' . $block['id'];
                 $imagen = $galeria[0];
             endif;
         ?>
-        <div class="item tipo_<?php echo $tipo ?>" data-video="<?php echo $video ?>">
+        <div class="item tipo_<?php echo $tipo ?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
 
             <?php if($tipo == 'galeria'): ?>
                 <div class="gal">
