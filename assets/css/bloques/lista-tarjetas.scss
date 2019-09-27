@@ -185,3 +185,65 @@
         margin-left: 0.5%;
     }
 }
+
+.filtros{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    align-items: flex-start;
+    width: 300px;
+
+    .container_filtro {
+        border: 1px solid #999;
+        // position: absolute;
+        z-index: 2;
+        background: white;
+        border-radius: 5px;
+        margin-left: 10px;
+
+        &.tipos {
+            left: 110px;
+        }
+    }
+    .item_filtro {
+        color: #333;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: none;
+        cursor: pointer;
+        width: 150px;
+        text-align: center;
+        margin: 0;
+
+        &:hover {
+            background: #ececec;
+        }
+
+        &.active {
+            display: block;
+
+            &:hover {
+                background: #999;
+                color: white;
+            }
+        }
+
+        &.name {
+            color: #999;
+        }
+
+        &.todos {
+            color: #999;
+            font-style: italic;
+        }
+
+        &.filter {
+            &.active {
+                background: $azul;
+                color: white;
+            }
+        }
+    }
+}

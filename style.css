@@ -7621,6 +7621,47 @@ body#tinymce {
   cursor: pointer;
   margin-left: 0.5%; }
 
+.filtros {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  align-items: flex-start;
+  width: 300px; }
+  .filtros .container_filtro {
+    border: 1px solid #999;
+    z-index: 2;
+    background: white;
+    border-radius: 5px;
+    margin-left: 10px; }
+    .filtros .container_filtro.tipos {
+      left: 110px; }
+  .filtros .item_filtro {
+    color: #333;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin: 0; }
+    .filtros .item_filtro:hover {
+      background: #ececec; }
+    .filtros .item_filtro.active {
+      display: block; }
+      .filtros .item_filtro.active:hover {
+        background: #999;
+        color: white; }
+    .filtros .item_filtro.name {
+      color: #999; }
+    .filtros .item_filtro.todos {
+      color: #999;
+      font-style: italic; }
+    .filtros .item_filtro.filter.active {
+      background: #3e6cd1;
+      color: white; }
+
 .linea-tiempo {
   width: 90%;
   margin: auto;

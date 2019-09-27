@@ -10,12 +10,30 @@ $id = 'botones-' . $block['id'];
 ?>
 
 <div class="tarjetas galeria btm">
-    <h1 class="sec">Tarjetas</h1>
-    <div class="subtitulo-sec"> Lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
+    <h1 class="sec"><?php echo get_field('titulo') ?></h1>
+    <div class="subtitulo-sec"><?php echo get_field('subtitulo') ?></div>
+
+    <div class="filtros">
+        <div class="ciudades container_filtro">
+            <div class="item_filtro name active">Ciudades</div>
+            <div class="item_filtro filter" data-filter="ciudad_bogota">Bogotá</div>
+            <div class="item_filtro filter" data-filter="ciudad_cali">Cali</div>
+            <div class="item_filtro filter" data-filter="ciudad_medellin">Medellín</div>
+            <div class="item_filtro todos">Ver todos</div>
+        </div>
+        <div class="tipos container_filtro">
+            <div class="item_filtro name active">Formato</div>
+            <div class="item_filtro filter" data-filter="tipo_video">Videos</div>
+            <div class="item_filtro filter" data-filter="tipo_audio">Audios</div>
+            <div class="item_filtro filter" data-filter="tipo_galeria">Galerías</div>
+            <div class="item_filtro todos">Ver todos</div>
+        </div>
+    </div>
 
     <div class="inside">
     <?php if(have_rows('tarjetas')): while(have_rows('tarjetas')): the_row(); ?>
         <?php $tipo = get_sub_field('tipo'); ?>
+        <?php $ciudad = get_sub_field('ciudad'); ?>
         <?php
             if($tipo == 'video'):
                 $imagen = get_sub_field('imagen');
@@ -28,7 +46,7 @@ $id = 'botones-' . $block['id'];
                 $imagen = $galeria[0];
             endif;
         ?>
-        <div class="item <?php echo $tipo ?>" data-video="<?php echo $video ?>">
+        <div class="item tipo_<?php echo $tipo ?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
 
             <?php if($tipo == 'galeria'): ?>
                 <div class="gal">
@@ -42,7 +60,7 @@ $id = 'botones-' . $block['id'];
 
             <div class="tarjeta-description">
                 <h3><?php echo $titulo ?></h3>
-                <p class="texto-descriptivo"> Lorem ipsum dolor sit amet, consectetur </p>
+                <p class="texto-descriptivo"><?php echo get_sub_field('descripcion') ?></p>
             </div>
         </div>
     <?php endwhile; endif; ?>

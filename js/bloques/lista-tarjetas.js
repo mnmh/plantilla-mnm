@@ -8,6 +8,30 @@
 
         $('.photo-gallery').append($next).append($prev);
 
+        $('.item_filtro').on('click', (e) => {
+            $item = $(e.target)
+            $parent = $item.parent()
+            if($item.hasClass('active')){
+                $parent.find('.item_filtro').show();
+            } else if($item.hasClass('filter')){
+                $parent.find('.item_filtro.active').removeClass('active')
+                $parent.find('.item_filtro').show();
+                $item.addClass('active')
+            } else if ($item.hasClass('todos')){
+                $parent.find('.item_filtro.active').removeClass('active')
+                $parent.find('.item_filtro').show();
+                $parent.find('.item_filtro.name').addClass('active')
+            }
+        })
+
+        $('.container_filtro').on({
+            mouseleave: (e) => {
+                var $item = $(e.target)
+                var $parent = $item.parent()
+                $parent.find('.item_filtro:not(.active)').hide();
+            }
+        })
+
         $carousel.flickity({
             cellAlign: 'left',
             contain: true,

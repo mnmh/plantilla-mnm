@@ -6,7 +6,7 @@
             'title' => 'BLOQUE LISTA TARJETAS',
             'fields' => array(
                 array(
-                    'key' => 'field_5d3660a91a20a',
+                    'key' => 'field_5d2660a91a20a',
                     'label' => 'Titulo',
                     'name' => 'titulo',
                     'type' => 'text',
@@ -78,6 +78,34 @@
                             'choices' => array(
                                 'video' => 'Video',
                                 'galeria' => 'Galería',
+                                'audio' => 'Audio'
+                            ),
+                            'default_value' => array(
+                            ),
+                            'allow_null' => 0,
+                            'multiple' => 0,
+                            'ui' => 0,
+                            'return_format' => 'value',
+                            'ajax' => 0,
+                            'placeholder' => '',
+                        ),
+                        array(
+                            'key' => 'field_5d3ffd12ba759',
+                            'label' => 'Ciudad',
+                            'name' => 'ciudad',
+                            'type' => 'select',
+                            'instructions' => '',
+                            'required' => 0,
+                            'conditional_logic' => 0,
+                            'wrapper' => array(
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'choices' => array(
+                                'bogota' => 'Bogotá',
+                                'medellin' => 'Medellín',
+                                'cali' => 'Cali'
                             ),
                             'default_value' => array(
                             ),
