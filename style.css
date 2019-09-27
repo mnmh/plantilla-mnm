@@ -7814,20 +7814,25 @@ body#tinymce {
         font-weight: 600;
         font-style: normal;
         font-size: 16px;
-        margin-top: 10px;
         padding-top: 5px;
-        position: absolute;
-        bottom: 30px;
         width: 85%; }
         .tres-botones .botones .boton .name h4::before {
           position: absolute;
           font-family: 'mnm';
           content: '\E80E';
-          right: 0; }
+          right: 50px; }
       @media only screen and (max-width: 980px) {
         .tres-botones .botones .boton {
           max-width: none;
-          height: 20vw; } }
+          min-height: 20vw;
+          height: auto; } }
+  .tres-botones.color .botones .name {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .tres-botones.color .botones .name h4 {
+      margin-left: 0 !important; }
   .tres-botones.segunda .sec {
     display: block;
     width: 100%;
