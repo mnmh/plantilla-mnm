@@ -21,7 +21,7 @@
 		$evento_title = get_the_title($post_id);
 	?>
 
-	<tr class="itemListado">
+	<tr class="itemListado_tabla">
 		<th class="evento">
 			<?php echo $evento_title ?>
 		</th>
