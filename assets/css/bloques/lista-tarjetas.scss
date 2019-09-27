@@ -189,9 +189,8 @@
 .filtros{
     display: flex;
     position: absolute;
-    margin-left: 20px;
     top: 0;
-    right: 0;
+    right: 40px;
     align-items: flex-start;
     width: 300px;
 
@@ -238,6 +237,13 @@
         &.todos {
             color: #999;
             font-style: italic;
+        }
+
+        &.filter {
+            &.active {
+                background: $azul;
+                color: white;
+            }
         }
     }
 }

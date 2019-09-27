@@ -59,7 +59,7 @@ $id = 'botones-' . $block['id'];
 
             <div class="tarjeta-description">
                 <h3><?php echo $titulo ?></h3>
-                <p class="texto-descriptivo"> Lorem ipsum dolor sit amet, consectetur </p>
+                <p class="texto-descriptivo"><?php echo get_sub_field('descripcion') ?></p>
             </div>
         </div>
     <?php endwhile; endif; ?>

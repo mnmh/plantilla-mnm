@@ -7615,9 +7615,8 @@ body#tinymce {
 .filtros {
   display: flex;
   position: absolute;
-  margin-left: 20px;
   top: 0;
-  right: 0;
+  right: 40px;
   align-items: flex-start;
   width: 300px; }
   .filtros .container_filtro {
@@ -7650,6 +7649,9 @@ body#tinymce {
     .filtros .item_filtro.todos {
       color: #999;
       font-style: italic; }
+    .filtros .item_filtro.filter.active {
+      background: #3e6cd1;
+      color: white; }
 
 .linea-tiempo {
   width: 90%;
