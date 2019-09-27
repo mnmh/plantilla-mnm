@@ -8,16 +8,20 @@
 $id = 'botones-' . $block['id'];
 $titulo = get_field('titulo');
 $subtitulo = get_field('subtitulo');
+$ver_mas = get_field('enlace_true');
 
 ?>
 
 <div class="tarjetas galeria noticias btm">
 
-
     <h1 class="sec"><?php echo $titulo; ?></h1>
-    <span class="ver-todas"> 
-        <a href="http://museodememoria.gov.co/informate/"> Ver todas </a>
-    </span>
+
+    <?php if ($ver_mas == 1): ?>
+        <span class="ver-todas"> 
+            <a href="http://museodememoria.gov.co/informate/"> Ver todas </a>
+        </span>
+    <?php endif; ?>
+    
     <div class="subtitulo-sec"><?php echo $subtitulo; ?></div> 
     
     
