@@ -257,7 +257,7 @@
                     // console.log(url);
 
                     $.getJSON(url, function (data) {
-                        // console.log(data);
+                        console.log(data);
                         $btn.remove();
 
                         for (var i = 0; i < data.length; i++) {
