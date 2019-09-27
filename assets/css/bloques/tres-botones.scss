@@ -43,11 +43,7 @@
             }
 
             .name {
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
+                
                 h1 {
                     font-size: 38px;
                 }
@@ -59,7 +55,6 @@
                     font-size: 16px;
                     padding-top: 5px;
                     width: 85%;
-                    margin-left: 0 !important;
 
                     &::before {
                         position: absolute;
@@ -78,6 +73,22 @@
                 
             }
         }
+    }
+
+    &.color {
+        .botones {
+            .name {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h4 {
+                    margin-left: 0 !important;
+                }
+            }
+        }
+
     }
     
     &.segunda{
