@@ -18,6 +18,8 @@ $id = 'botones-' . $block['id'];
             <div class="item_filtro name active">Ciudades</div>
             <div class="item_filtro filter" data-filter="ciudad_bogota">Bogotá</div>
             <div class="item_filtro filter" data-filter="ciudad_cali">Cali</div>
+            <div class="item_filtro filter" data-filter="ciudad_cucuta">Cúcuta</div>
+            <div class="item_filtro filter" data-filter="ciudad_villavicencio">Villavicencio</div>
             <div class="item_filtro filter" data-filter="ciudad_medellin">Medellín</div>
             <div class="item_filtro todos">Ver todos</div>
         </div>

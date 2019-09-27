@@ -105,7 +105,9 @@
                             'choices' => array(
                                 'bogota' => 'Bogotá',
                                 'medellin' => 'Medellín',
-                                'cali' => 'Cali'
+                                'cali' => 'Cali',
+                                'cucuta' => 'Cúcuta',
+                                'villavicencio' => 'Villavicencio'
                             ),
                             'default_value' => array(
                             ),
