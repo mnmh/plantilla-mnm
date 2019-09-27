@@ -6907,6 +6907,16 @@ body#tinymce {
   .form_mail .acf-form-submit {
     text-align: center; }
 
+.itemListado {
+  text-align: left;
+  font-size: 0.6em;
+  font-weight: normal; }
+  .itemListado > th {
+    border: 1px solid #999;
+    padding: 5px; }
+  .itemListado:nth-child(even) {
+    background: #ececec; }
+
 .carrousel-vertical-container {
   cursor: grab;
   position: relative; }
