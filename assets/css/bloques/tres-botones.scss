@@ -43,6 +43,10 @@
             }
 
             .name {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 h1 {
                     font-size: 38px;
@@ -53,25 +57,23 @@
                     font-weight: 600;
                     font-style: normal;
                     font-size: 16px;
-
-                    margin-top: 10px;
                     padding-top: 5px;
-                    position: absolute;
-                    bottom: 30px;
                     width: 85%;
+                    margin-left: 0 !important;
 
                     &::before {
                         position: absolute;
                         font-family: 'mnm';
                         content: '\E80E';
-                        right: 0;
+                        right: 50px;
                     }
                  }
             }
 
             @media #{$medium-and-down} {
                 max-width: none;
-                height: 20vw;
+                min-height: 20vw;
+                height: auto;
                 
                 
             }
