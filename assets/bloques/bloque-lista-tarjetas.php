@@ -14,16 +14,19 @@ $id = 'botones-' . $block['id'];
     <div class="subtitulo-sec"><?php echo get_field('subtitulo') ?></div>
 
     <div class="filtros">
-        <div class="ciudades">
-            <div class="item name">Ciudades</div>
-            <div class="item">Bogotá</div>
-            <div class="item">Cali</div>
-            <div class="item">Medellín</div>
+        <div class="ciudades container_filtro">
+            <div class="item_filtro name active">Ciudades</div>
+            <div class="item_filtro">Bogotá</div>
+            <div class="item_filtro">Cali</div>
+            <div class="item_filtro">Medellín</div>
+            <div class="item_filtro todos">Ver todos</div>
         </div>
-        <div class="tipos">
-            <div class="item name">Tipos</div>
-            <div class="item">Videos</div>
-            <div class="item">Audios</div>
+        <div class="tipos container_filtro">
+            <div class="item_filtro name active">Formato</div>
+            <div class="item_filtro" data-filter="tipo_video">Videos</div>
+            <div class="item_filtro" data-filter="tipo_audio">Audios</div>
+            <div class="item_filtro" data-filter="tipo_galeria">Galerías</div>
+            <div class="item_filtro todos">Ver todos</div>
         </div>
     </div>
 
@@ -42,7 +45,7 @@ $id = 'botones-' . $block['id'];
                 $imagen = $galeria[0];
             endif;
         ?>
-        <div class="item <?php echo $tipo ?>" data-video="<?php echo $video ?>">
+        <div class="item tipo_<?php echo $tipo ?>" data-video="<?php echo $video ?>">
 
             <?php if($tipo == 'galeria'): ?>
                 <div class="gal">

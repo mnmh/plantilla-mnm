@@ -7612,6 +7612,31 @@ body#tinymce {
   cursor: pointer;
   margin-left: 0.5%; }
 
+.filtros {
+  display: flex;
+  height: 70px;
+  position: absolute;
+  margin-left: 20px;
+  top: 0;
+  right: 0;
+  width: 220px; }
+  .filtros .container_filtro {
+    border: 1px solid #999;
+    position: absolute;
+    z-index: 2;
+    background: white;
+    border-radius: 5px; }
+    .filtros .container_filtro.tipos {
+      left: 110px; }
+  .filtros .item_filtro {
+    color: #333;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none; }
+    .filtros .item_filtro.active {
+      display: block; }
+
 .linea-tiempo {
   width: 90%;
   margin: auto;

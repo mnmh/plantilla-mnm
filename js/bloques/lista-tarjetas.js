@@ -8,6 +8,22 @@
 
         $('.photo-gallery').append($next).append($prev);
 
+        $('.item_filtro').on('click', (e) => {
+            $item = $(e.target)
+            $parent = $item.parent()
+            if($item.hasClass('active')){
+                $parent.find('.item_filtro').show();
+            }
+        })
+
+        $('.container_filtro').on({
+            mouseleave: (e) => {
+                var $item = $(e.target)
+                var $parent = $item.parent()
+                $parent.find('.item_filtro:not(.active)').hide();
+            }
+        })
+
         $carousel.flickity({
             cellAlign: 'left',
             contain: true,

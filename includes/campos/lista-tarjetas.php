@@ -6,7 +6,7 @@
             'title' => 'BLOQUE LISTA TARJETAS',
             'fields' => array(
                 array(
-                    'key' => 'field_5d3660a91a20a',
+                    'key' => 'field_5d2660a91a20a',
                     'label' => 'Titulo',
                     'name' => 'titulo',
                     'type' => 'text',
