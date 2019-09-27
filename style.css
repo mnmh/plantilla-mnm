@@ -7614,18 +7614,18 @@ body#tinymce {
 
 .filtros {
   display: flex;
-  height: 70px;
   position: absolute;
   margin-left: 20px;
   top: 0;
   right: 0;
-  width: 220px; }
+  align-items: flex-start;
+  width: 300px; }
   .filtros .container_filtro {
     border: 1px solid #999;
-    position: absolute;
     z-index: 2;
     background: white;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin-left: 10px; }
     .filtros .container_filtro.tipos {
       left: 110px; }
   .filtros .item_filtro {
@@ -7633,9 +7633,23 @@ body#tinymce {
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    display: none; }
+    display: none;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin: 0; }
+    .filtros .item_filtro:hover {
+      background: #ececec; }
     .filtros .item_filtro.active {
       display: block; }
+      .filtros .item_filtro.active:hover {
+        background: #999;
+        color: white; }
+    .filtros .item_filtro.name {
+      color: #999; }
+    .filtros .item_filtro.todos {
+      color: #999;
+      font-style: italic; }
 
 .linea-tiempo {
   width: 90%;

@@ -13,6 +13,10 @@
             $parent = $item.parent()
             if($item.hasClass('active')){
                 $parent.find('.item_filtro').show();
+            } else if($item.hasClass('filter')){
+                $parent.find('.item_filtro.active').removeClass('active')
+                $parent.find('.item_filtro').show();
+                $item.addClass('active')
             }
         })
 

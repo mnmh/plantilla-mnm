@@ -16,16 +16,16 @@ $id = 'botones-' . $block['id'];
     <div class="filtros">
         <div class="ciudades container_filtro">
             <div class="item_filtro name active">Ciudades</div>
-            <div class="item_filtro">Bogotá</div>
-            <div class="item_filtro">Cali</div>
-            <div class="item_filtro">Medellín</div>
+            <div class="item_filtro filter">Bogotá</div>
+            <div class="item_filtro filter">Cali</div>
+            <div class="item_filtro filter">Medellín</div>
             <div class="item_filtro todos">Ver todos</div>
         </div>
         <div class="tipos container_filtro">
             <div class="item_filtro name active">Formato</div>
-            <div class="item_filtro" data-filter="tipo_video">Videos</div>
-            <div class="item_filtro" data-filter="tipo_audio">Audios</div>
-            <div class="item_filtro" data-filter="tipo_galeria">Galerías</div>
+            <div class="item_filtro filter" data-filter="tipo_video">Videos</div>
+            <div class="item_filtro filter" data-filter="tipo_audio">Audios</div>
+            <div class="item_filtro filter" data-filter="tipo_galeria">Galerías</div>
             <div class="item_filtro todos">Ver todos</div>
         </div>
     </div>
