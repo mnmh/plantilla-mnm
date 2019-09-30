@@ -68,7 +68,7 @@
             }
         });
 
-        $('.tarjetas .item.galeria, .open-gallery').on('click', function () {
+        $('.tarjetas .item.tipo_galeria, .open-gallery').on('click', function () {
             $('.photo-gallery').toggleClass('visible');
             var $gal = $(this).find('.gal .itemgal').clone();
             $gal.each(function () {
@@ -87,7 +87,7 @@
         });
 
 
-        $('.tarjetas .item.video').on('click', function () {
+        $('.tarjetas .item.tipo_video').on('click', function () {
             var video = $(this).attr('data-video');
             var url = 'https://www.youtube.com/embed/' + video + '?autoplay=1&controls=0&rel=0&showinfo=0&color=white';
             $('body').append('<div class="visor_video"><iframe></iframe></div>');
