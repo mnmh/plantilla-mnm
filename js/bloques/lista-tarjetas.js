@@ -68,7 +68,7 @@
             }
         });
 
-        $('.tarjetas .item.galeria, .open-gallery').on('click', function () {
+        $('.tarjetas .item.tipo_galeria, .open-gallery').on('click', function () {
             $('.photo-gallery').toggleClass('visible');
             var $gal = $(this).find('.gal .itemgal').clone();
             $gal.each(function () {
