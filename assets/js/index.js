@@ -112,7 +112,7 @@ OBJLoader(three__WEBPACK_IMPORTED_MODULE_0__);
 
 (function ($, root, undefined) {
   $(function () {
-    if ($('body').hasClass('parent-pageid-4433')) {
+    if ($('body').hasClass('parent-pageid-2165')) {
       var animate = function animate() {
         requestAnimationFrame(animate);
         renderer.render(scene, camera);
@@ -188,11 +188,15 @@ OBJLoader(three__WEBPACK_IMPORTED_MODULE_0__);
 
       controls.enableZoom = true;
       loader.load('/wp-content/themes/plantilla-mnm-master/assets/3d/mapa.obj', function (obj) {
+        // console.log(obj[0])
+        var num = 0;
         obj.traverse(function (child) {
+          if (num == 0) console.log(child);
+          num++;
+
           if (child instanceof three__WEBPACK_IMPORTED_MODULE_0__["Mesh"]) {
             var geo = child.geometry;
             var mat = child.material;
-            console.log(geo);
 
             if (child.name == 'Curve.008') {
               var mat = new three__WEBPACK_IMPORTED_MODULE_0__["MeshBasicMaterial"]({
