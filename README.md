@@ -43,17 +43,9 @@
         ├── bloque-tres-botones-segunda.php             # Listado de tarjetas (videos y galerías)
         └── bloque-tres-botones.php                     # Botones
 
-## Estructura de la carpeta /assets/css/bloques
+### bloque-banner-botones
 
-    └── bloques/
-        ├── banner-texto.scss                       # Estilo banner texto
-        ├── banner-botones.scss                     # Estilo banner botones
-        └── carrousel-verticales.scss               # Estilo carrousel vertical
-        └── carrousel-cuadros.scss                  # Estilo carrousel cuadros
-        └── carrousel-botones.scss                  # Estilo carrousel botones
-        └── linea-tiempo.scss                       # Estilo linea del tiempo
-        └── lista-tarjetas.scss                     # Estilo listado de tarjetas
-        └── carrousel-botones.scss                  # Estilo carrousel botones
+### bloque-banner-carrousel-margenes
 
 ## Estructura de la carpeta /assets/template-parts
 
