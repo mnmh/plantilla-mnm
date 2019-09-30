@@ -19,28 +19,29 @@
 ## Estructura de la carpeta /assets/bloques
 
     └── bloques/
-        ├── bloque-carrousel-verticales.php             # Carrousel con cuadros verticales
+        ├── bloque-banner-botones.php                   # Carrousel con cuadros verticales
+        ├── bloque-banner-carrousel-margenes.php        # Carrousel con cuadros verticales
+        ├── bloque-banner-carrousel.php                 # Carrousel con cuadros verticales
+        ├── bloque-banner-tarjetas-audio.php            # Carrousel con cuadros verticales
+        ├── bloque-banner-texto.php                     # Carrousel con cuadros verticales
+        ├── bloque-bloque-agenda.php                    # Carrousel con cuadros verticales
+        ├── bloque-bloque-banner-cita-imagen.php        # Carrousel con cuadros verticales
+        ├── bloque-bloque-banner-corto-texto.php        # Carrousel con cuadros verticales
+        ├── bloque-bloque-equipo.php                    # Carrousel con cuadros verticales
+        ├── bloque-bloque-header-columna.php            # Carrousel con cuadros verticales
+        ├── bloque-bloque-personajes.php                # Carrousel de botones
         ├── bloque-carrousel-botones.php                # Carrousel de botones
         ├── bloque-carrousel-cuadros.php                # Carrousel de cuadros
-        ├── bloque-banner-texto.php                     # Carrousel banner con texto
+        ├── bloque-carrousel-verticales.php             # Carrousel de cuadros
+        ├── bloque-cifra.php                            # Carrousel de cuadros
+        ├── bloque-galeria-carrousel.php                # Imagen con botones
         ├── bloque-imagen-botones.php                   # Imagen con botones
-        ├── bloque-banner-botones.php                   # Banner con botones
-        ├── bloque-banner-tarjetas-audio.php            # Banner con tarjetas de audio
         ├── bloque-linea-tiempo.php                     # Linea del tiempo
         ├── bloque-lista-tarjetas.php                   # Listado de tarjetas (videos y galerías)
-        └── bloque-botones.php                          # Botones
-
-- [x] Carrousel con cuadros verticales
-- [x] Carrousel con cuadros de noticias
-- [x] Banner con texto
-- [x] Banner con tarjetas
-- [x] Banner con botones
-- [x] Banner con carrousel
-- [x] Lista de tarjetas
-- [x] Lista de tarjetas con filtro
-- [x] Linea del tiempo
-- [x] Carrousel botones
-- [x] Imagen con botones
+        ├── bloque-listado-noticias.php                 # Listado de tarjetas (videos y galerías)
+        ├── bloque-testimonios-carrousel.php            # Listado de tarjetas (videos y galerías)
+        ├── bloque-tres-botones-segunda.php             # Listado de tarjetas (videos y galerías)
+        └── bloque-tres-botones.php                     # Botones
 
 ## Estructura de la carpeta /assets/css/bloques
 
