@@ -8,7 +8,7 @@ import $ from 'jquery';
 (function ($, root, undefined) {
 
     $(function () {
-        if ($('body').hasClass('parent-pageid-4433')) {
+        if ($('body').hasClass('parent-pageid-2165')) {
 
             var viewer = null;
             var audio_url = '';
