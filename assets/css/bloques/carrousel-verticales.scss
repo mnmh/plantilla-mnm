@@ -2,6 +2,10 @@
     cursor: grab;
     position: relative;
 
+    @media #{$small-and-down} {
+        margin-bottom: 15vh !important;
+    }
+
     .sec {
         display: block;
         width: 100%;

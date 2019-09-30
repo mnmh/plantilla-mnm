@@ -6923,6 +6923,9 @@ body#tinymce {
 .carrousel-vertical-container {
   cursor: grab;
   position: relative; }
+  @media only screen and (max-width: 650px) {
+    .carrousel-vertical-container {
+      margin-bottom: 15vh !important; } }
   .carrousel-vertical-container .sec {
     display: block;
     width: 100%;
