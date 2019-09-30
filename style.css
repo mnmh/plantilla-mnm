@@ -8058,7 +8058,8 @@ body#tinymce {
   .header-columna .contenedor {
     display: flex;
     justify-content: space-between;
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-right: 20px; }
     .header-columna .contenedor.invertido {
       flex-flow: row-reverse; }
       .header-columna .contenedor.invertido .right {
@@ -8078,16 +8079,21 @@ body#tinymce {
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
-      padding-left: 20px;
       padding-bottom: 5vh; }
       .header-columna .contenedor .left .texto {
         width: 80%;
         color: #3B3B3B; }
+        @media only screen and (max-width: 650px) {
+          .header-columna .contenedor .left .texto {
+            width: 100%;
+            text-align: center; }
+            .header-columna .contenedor .left .texto h1 {
+              font-size: 1.5em; } }
         .header-columna .contenedor .left .texto h3 {
           font-size: 24px;
           margin-bottom: 20px; }
-        .header-columna .contenedor .left .texto h4 {
-          margin-top: 10px; }
+        .header-columna .contenedor .left .texto h4, .header-columna .contenedor .left .texto h6 {
+          margin-top: 10px !important; }
     .header-columna .contenedor .right {
       display: flex;
       padding-top: 0; }
