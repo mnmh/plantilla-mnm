@@ -163,23 +163,11 @@
                 .play {
                     padding: 4px 10px 4px 14px;
                     font-size: 14px;
-
-                    &.playing {
-                        &:after {
-                            font-size: 14px;
-                            margin-left: 10px;
-                            content: '\e813';
-                        }
-                    }
-
-                    &.paused {
-                        &:after {
-                            font-size: 14px;
-                            margin-left: 10px;
-                            content: '\e810';
-                        }
-                    }
                     
+                    &:after {
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }      
                 }
             }
 
