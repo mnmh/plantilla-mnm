@@ -187,7 +187,7 @@ OBJLoader(three__WEBPACK_IMPORTED_MODULE_0__);
       controls.enableDamping = false; // controls.dampingFactor = 0.5;
 
       controls.enableZoom = true;
-      loader.load('/wp-content/themes/plantilla-mnm-master/assets/3d/mapa.obj', function (obj) {
+      loader.load('/wp-content/themes/plantilla-mnm/assets/3d/mapa.obj', function (obj) {
         // console.log(obj[0])
         var num = 0;
         obj.traverse(function (child) {
