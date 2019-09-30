@@ -87,7 +87,7 @@
         });
 
 
-        $('.tarjetas .item.video').on('click', function () {
+        $('.tarjetas .item.tipo_video').on('click', function () {
             var video = $(this).attr('data-video');
             var url = 'https://www.youtube.com/embed/' + video + '?autoplay=1&controls=0&rel=0&showinfo=0&color=white';
             $('body').append('<div class="visor_video"><iframe></iframe></div>');
