@@ -19,6 +19,7 @@
                 $parent.find('.item_filtro.active').removeClass('active')
                 $parent.find('.item_filtro').show();
                 $item.addClass('active')
+                $parent_galeria.find('.inside .item').hide()
                 $parent_galeria.find('.' + $item.attr('data-filter'))
             } else if ($item.hasClass('todos')){
                 $parent.find('.item_filtro.active').removeClass('active')
