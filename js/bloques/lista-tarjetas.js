@@ -11,12 +11,15 @@
         $('.item_filtro').on('click', (e) => {
             $item = $(e.target)
             $parent = $item.parent()
+            $parent_galeria = $item.parent().parent().parent()
+
             if($item.hasClass('active')){
                 $parent.find('.item_filtro').show();
             } else if($item.hasClass('filter')){
                 $parent.find('.item_filtro.active').removeClass('active')
                 $parent.find('.item_filtro').show();
                 $item.addClass('active')
+                $parent_galeria.find('.' + $item.attr('data-filter'))
             } else if ($item.hasClass('todos')){
                 $parent.find('.item_filtro.active').removeClass('active')
                 $parent.find('.item_filtro').show();
