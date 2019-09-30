@@ -8215,14 +8215,9 @@ body#tinymce {
         .audio.piepag .contenedor .right .play {
           padding: 4px 10px 4px 14px;
           font-size: 14px; }
-          .audio.piepag .contenedor .right .play.playing:after {
+          .audio.piepag .contenedor .right .play:after {
             font-size: 14px;
-            margin-left: 10px;
-            content: '\e813'; }
-          .audio.piepag .contenedor .right .play.paused:after {
-            font-size: 14px;
-            margin-left: 10px;
-            content: '\e810'; } }
+            margin-left: 10px; } }
 
 .personas_slider {
   position: relative;
