@@ -77,7 +77,7 @@ import $ from 'jquery';
             }
 
             loader.load(
-                '/wp-content/themes/plantilla-mnm-master/assets/3d/mapa.obj',
+                '/wp-content/themes/plantilla-mnm/assets/3d/mapa.obj',
                 function (obj) {
                     // console.log(obj[0])
                     var num = 0;
