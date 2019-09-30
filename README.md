@@ -54,19 +54,6 @@
         ├── sideMenu.php                # Menu lateral
         └── top_header.php              # Menu superior transversal a toda la página
 
-## Estructura de la carpeta /js
-
-    └── js/
-        ├── lib/
-        |    └── flickity.js                    # Librería flickity
-        ├── bloques/
-        |    └── carrousel-vertical.js          # Scripts para el bloque carrousel vertical
-        |    └── carrousel-botones.js           # Scripts para el bloque carrousel botones
-        |    └── linea-tiempo.js                # Scripts para el bloque linea del tiempo
-        |    └── lista-tarjetas.js              # Scripts para el bloque lista-tarjetas
-        |    └── banner-botones.js              # Scripts para el banner con botones
-        └── scripts.js                          # Scripts generales de la plataforma
-
 ## Scripts para desarollo
 
 La plantilla usa el compilador para SASS de NODE.js
