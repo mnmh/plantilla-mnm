@@ -1,6 +1,11 @@
 .carrousel-vertical-container {
     cursor: grab;
     position: relative;
+    margin-bottom: 10vh;
+
+    @media #{$small-and-down} {
+        margin-bottom: 15vh;
+    }
 
     .sec {
         display: block;

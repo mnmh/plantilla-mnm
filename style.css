@@ -6922,7 +6922,11 @@ body#tinymce {
 
 .carrousel-vertical-container {
   cursor: grab;
-  position: relative; }
+  position: relative;
+  margin-bottom: 10vh; }
+  @media only screen and (max-width: 650px) {
+    .carrousel-vertical-container {
+      margin-bottom: 15vh; } }
   .carrousel-vertical-container .sec {
     display: block;
     width: 100%;
@@ -8209,6 +8213,15 @@ body#tinymce {
         .audio.piepag .contenedor .right {
           height: 80vw !important;
           width: 80% !important; } }
+    @media only screen and (max-width: 650px) {
+      .audio.piepag .contenedor .right {
+        width: 100% !important; }
+        .audio.piepag .contenedor .right .play {
+          padding: 4px 10px 4px 14px;
+          font-size: 14px; }
+          .audio.piepag .contenedor .right .play:after {
+            font-size: 14px;
+            margin-left: 10px; } }
 
 .personas_slider {
   position: relative;
