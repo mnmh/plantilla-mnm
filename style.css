@@ -7669,6 +7669,9 @@ body#tinymce {
     .filtros .item_filtro.filter.active {
       background: #3e6cd1;
       color: white; }
+  @media all and (max-width: 900px) {
+    .filtros {
+      position: static; } }
 
 .linea-tiempo {
   width: 90%;
