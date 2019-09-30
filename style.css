@@ -8059,7 +8059,7 @@ body#tinymce {
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
-    padding-rigth: 20px; }
+    padding-right: 20px; }
     .header-columna .contenedor.invertido {
       flex-flow: row-reverse; }
       .header-columna .contenedor.invertido .right {
@@ -8079,12 +8079,11 @@ body#tinymce {
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
-      padding-left: 20px;
       padding-bottom: 5vh; }
       .header-columna .contenedor .left .texto {
         width: 80%;
         color: #3B3B3B; }
-        @media small-and-down {
+        @media only screen and (max-width: 650px) {
           .header-columna .contenedor .left .texto {
             width: 100%;
             text-align: center; }
