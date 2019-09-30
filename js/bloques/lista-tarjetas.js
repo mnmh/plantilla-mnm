@@ -20,8 +20,12 @@
                 $parent.find('.item_filtro').show();
                 $item.addClass('active')
                 $parent_galeria.find('.inside .item').hide()
-                var filtro = $item.attr('data-filter')
-                $parent_galeria.find('.inside .item.' + filtro).show()
+
+                var filtro = ''
+                $('.item_filtro.filter.active').each((i, elem) => {
+                    filtro += '.' + $(elem).attr('data-filter')
+                })
+                $parent_galeria.find('.inside .item' + filtro).show()
             } else if ($item.hasClass('todos')){
                 $parent.find('.item_filtro.active').removeClass('active')
                 $parent.find('.item_filtro').show();
