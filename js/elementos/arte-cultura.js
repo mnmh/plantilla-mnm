@@ -683,6 +683,8 @@
                 // console.log(index + '|' + gal_num);
             });
 
+            gal_obra.select(0);
+
             $('.gal_nav .next').on('click', function () {
                 gal_obra.next();
             });

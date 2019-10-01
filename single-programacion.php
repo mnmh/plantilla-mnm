@@ -21,6 +21,7 @@
 
         <?php if($tipo): ?>
             <p class="halfbtm">
+                <em></em>
                 <em><?php echo $tipo ?></em>
             </p>
         <?php endif; ?>
