@@ -173,7 +173,7 @@ h5 {
   }
 
   .wp-block-image img {
-    height: auto;
+    height: auto !important;
   }
 
   @media screen and (max-width: 340px) {
