@@ -22,7 +22,11 @@ body {
   }
   h2, h3, h4, h5, h6, p {
     max-width: 800px;
-    margin: auto 5px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 800px) {
+      margin: 0 10px;
+    }
   }
 
   @media screen and (min-width: 1024px) {

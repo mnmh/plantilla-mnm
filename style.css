@@ -381,7 +381,10 @@ body {
     margin-bottom: 15px; }
   #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p {
     max-width: 800px;
-    margin: auto 5px; }
+    margin: 0 auto; }
+    @media screen and (max-width: 800px) {
+      #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p {
+        margin: 0 10px; } }
 
 #frontImg {
   background: red;
