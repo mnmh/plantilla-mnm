@@ -4907,6 +4907,8 @@ body#tinymce {
     margin-right: auto; }
     #contenidoGeneral .wp-block-image.top {
       margin-top: 3em; }
+    #contenidoGeneral .wp-block-image img {
+      height: auto; }
 
 .hori_scroll {
   z-index: 10;
