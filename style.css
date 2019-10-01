@@ -153,6 +153,13 @@ h5 {
   #contenidoGeneral blockquote span,
   .perfil_viewer p span {
     font-weight: regular; }
+  #archive_item_content p .wp-block-image img,
+  .content p .wp-block-image img,
+  .contenido_texto p .wp-block-image img,
+  #contenidoGeneral p .wp-block-image img,
+  #contenidoGeneral blockquote .wp-block-image img,
+  .perfil_viewer p .wp-block-image img {
+    height: auto; }
   @media screen and (max-width: 340px) {
     #archive_item_content p,
     .content p,
