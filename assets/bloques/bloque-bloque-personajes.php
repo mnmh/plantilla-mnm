@@ -9,6 +9,8 @@ $id = 'bloque-' . $block['id'];
 
 $texto = get_field('texto_abajo');
 $enlace = get_field('enlace');
+$titulo = get_field('titulo');
+$descripcion = get_field('texto_abajo');
 ?>
 
 <div class="audio piepag">
@@ -18,12 +20,8 @@ $enlace = get_field('enlace');
         <div class="left">
 
             <div class="textos">
-                    <h1> 
-                        Grandes conversaciones
-                    </h1>
-                    <p> 
-                        A lo largo de sus vidas, Víctor Gaviria, Felipe Aljure y Mariana Arruti se han preocupado por dejar en la memoria historias de la gente anónima. 
-                    </p>
+                    <h1> <?php echo $titulo ?> </h1>
+                    <p> <?php echo $descripcion ?> </p>
             </div> 
         
 

@@ -18,6 +18,7 @@
         display: flex;
         justify-content: space-between;
         padding-left: 20px;
+        padding-right: 20px;
 
         &.invertido {
             flex-flow: row-reverse;
@@ -45,23 +46,30 @@
             display: flex;
             flex-wrap: wrap;
             align-content: space-between;
-            padding-left: 20px;
             padding-bottom: 5vh;
 
             .texto {
                 width: 80%;
                 color: $black;
 
+                @media #{$small-and-down} {
+                    width: 100%;
+                    text-align: center;
+
+                    h1 {
+                        font-size: 1.5em;
+                    }
+                }
+
                 h3 {
                     font-size: 24px;
                     margin-bottom: 20px;
                 }
 
-                h4 {
-                    margin-top: 10px;
+                h4, h6 {
+                    margin-top: 10px !important;
                 }
             }
-
         }
 
         .right {

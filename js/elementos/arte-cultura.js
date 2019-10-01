@@ -257,7 +257,7 @@
                     // console.log(url);
 
                     $.getJSON(url, function (data) {
-                        // console.log(data);
+                        console.log(data);
                         $btn.remove();
 
                         for (var i = 0; i < data.length; i++) {
@@ -682,6 +682,8 @@
                 actualizarNavGaleria(index);
                 // console.log(index + '|' + gal_num);
             });
+
+            gal_obra.select(0);
 
             $('.gal_nav .next').on('click', function () {
                 gal_obra.next();

@@ -155,5 +155,22 @@
                 width: 80% !important;
             }
         }
+
+        @media #{$small-and-down} {
+            .right {
+                width: 100% !important;
+
+                .play {
+                    padding: 4px 10px 4px 14px;
+                    font-size: 14px;
+                    
+                    &:after {
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }      
+                }
+            }
+
+        }
     }
 }

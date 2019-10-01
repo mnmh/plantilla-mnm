@@ -50,7 +50,7 @@ function my_acf_init() {
 			'keywords'			=> array( 'banner' ),
 		));
         
-        // Bloque de botones
+        //Carrousel de botones
 		acf_register_block(array(
 			'name'				=> 'carrousel_botones',
 			'title'				=> __('Carrousel botones'),
@@ -72,7 +72,7 @@ function my_acf_init() {
 			'keywords'			=> array( 'botones', 'imagen' ),
 		));
 
-		// Bloque tres botones
+		// Bloque tres botones segunda version
 		acf_register_block(array(
 			'name'				=> 'tres_botones_segunda',
 			'title'				=> __('Tres botones segunda version'),
@@ -83,7 +83,7 @@ function my_acf_init() {
 			'keywords'			=> array( 'botones', 'imagen' ),
 		));
 
-		// Bloque de lista
+		// Bloque de lista de tarjetas
 		acf_register_block(array(
 			'name'				=> 'lista_tarjetas',
 			'title'				=> __('Lista tarjetas'),
@@ -105,7 +105,7 @@ function my_acf_init() {
 			'keywords'			=> array( 'linea', 'tiempo' ),
 		));
 
-		// Bloque de linea del tiempo
+		// Bloque de banner tarjetas audio
 		acf_register_block(array(
 			'name'				=> 'banner_tarjetas_audio',
 			'title'				=> __('Banner ejes audio'),

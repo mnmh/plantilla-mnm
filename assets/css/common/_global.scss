@@ -143,12 +143,16 @@ h5 {
   font-family: 'Inter', sans-serif;
   line-height: 2;
   color:  #3B3B3B;
-  margin: em(20) 0 em(50);
+  //margin: em(20) 0 em(50);
   font-size: 16px;
 
   a {
     font-style: italic;
     text-decoration: underline;
+  }
+
+  @media #{$small-and-down} { 
+    margin: auto 5px;
   }
 
   &.copy-des {
@@ -171,6 +175,7 @@ h5 {
   span {
     font-weight: regular;
   }
+
 
   @media screen and (max-width: 340px) {
     font-size: em(13);

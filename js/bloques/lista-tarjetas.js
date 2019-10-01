@@ -11,6 +11,8 @@
         $('.item_filtro').on('click', (e) => {
             $item = $(e.target)
             $parent = $item.parent()
+            $parent_galeria = $item.parent().parent().parent()
+
             if($item.hasClass('active')){
                 $parent.find('.item_filtro').show();
             } else if($item.hasClass('filter')){
@@ -18,11 +20,18 @@
                 $parent.find('.item_filtro').show();
                 $item.addClass('active')
                 $parent.find('.item_filtro:not(.active)').hide();
+                $parent_galeria.find('.inside .item').hide()
+                var filtro = ''
+                $('.item_filtro.filter.active').each((i, elem) => {
+                    filtro += '.' + $(elem).attr('data-filter')
+                })
+                $parent_galeria.find('.inside .item' + filtro).show()
             } else if ($item.hasClass('todos')){
                 $parent.find('.item_filtro.active').removeClass('active')
                 $parent.find('.item_filtro').show();
                 $parent.find('.item_filtro.name').addClass('active')
                 $parent.find('.item_filtro:not(.active)').hide()
+                $parent_galeria.find('.inside .item').show()
             }
         })
 
@@ -70,7 +79,7 @@
             }
         });
 
-        $('.tarjetas .item.galeria, .open-gallery').on('click', function () {
+        $('.tarjetas .item.tipo_galeria, .open-gallery').on('click', function () {
             $('.photo-gallery').toggleClass('visible');
             var $gal = $(this).find('.gal .itemgal').clone();
             $gal.each(function () {
@@ -89,7 +98,7 @@
         });
 
 
-        $('.tarjetas .item.video').on('click', function () {
+        $('.tarjetas .item.tipo_video').on('click', function () {
             var video = $(this).attr('data-video');
             var url = 'https://www.youtube.com/embed/' + video + '?autoplay=1&controls=0&rel=0&showinfo=0&color=white';
             $('body').append('<div class="visor_video"><iframe></iframe></div>');
