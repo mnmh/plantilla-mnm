@@ -6574,6 +6574,9 @@ body#tinymce {
     font-style: italic;
     color: #999;
     padding: 10px; }
+  .calendario_mes .listado .itemListado .lugar {
+    font-style: italic;
+    color: #999; }
 
 .banner.cita-imagen {
   height: 50vh;
