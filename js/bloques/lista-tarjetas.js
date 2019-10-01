@@ -17,10 +17,12 @@
                 $parent.find('.item_filtro.active').removeClass('active')
                 $parent.find('.item_filtro').show();
                 $item.addClass('active')
+                $parent.find('.item_filtro:not(.active)').hide();
             } else if ($item.hasClass('todos')){
                 $parent.find('.item_filtro.active').removeClass('active')
                 $parent.find('.item_filtro').show();
                 $parent.find('.item_filtro.name').addClass('active')
+                $parent.find('.item_filtro:not(.active)').hide()
             }
         })
 
