@@ -153,13 +153,6 @@ h5 {
   #contenidoGeneral blockquote span,
   .perfil_viewer p span {
     font-weight: regular; }
-  #archive_item_content p .wp-block-image img,
-  .content p .wp-block-image img,
-  .contenido_texto p .wp-block-image img,
-  #contenidoGeneral p .wp-block-image img,
-  #contenidoGeneral blockquote .wp-block-image img,
-  .perfil_viewer p .wp-block-image img {
-    height: auto !important; }
   @media screen and (max-width: 340px) {
     #archive_item_content p,
     .content p,
@@ -4904,6 +4897,8 @@ body#tinymce {
     margin-right: auto; }
     #contenidoGeneral .wp-block-image.top {
       margin-top: 3em; }
+    #contenidoGeneral .wp-block-image img {
+      height: auto; }
 
 .hori_scroll {
   z-index: 10;
