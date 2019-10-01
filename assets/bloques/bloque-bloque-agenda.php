@@ -141,12 +141,14 @@ endforeach;
                     $time = strtotime($date);
                     $title = $post->post_title;
                     $hora_inicio = get_field('hora_de_inicio', $id);
+                    $lugar = get_field('lugar', $id);
                     $mes_temp = date('m',$time);
                     $dia_num_temp = date('d',$time);
             ?>
                     <div class="itemListado <?php echo 'mes_' . $mes_temp ?> <?php echo 'dia_' . $dia_num_temp ?>" data-mes="<?php echo 'mes_' . $mes_temp ?>" data-date="<?php echo 'dia_' . $dia_num_temp ?>">
                         <div class="hora"><?php echo $hora_inicio; ?></div>
                         <div class="title"><?php echo $title; ?></div>
+                        <div class="lugar"><?php echo $lugar ?></div>
                         <div class="des">
                             <?php echo $post->post_content ?>
                         </div>
