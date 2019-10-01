@@ -172,6 +172,10 @@ h5 {
     font-weight: regular;
   }
 
+  .wp-block-image img {
+    height: auto;
+  }
+
   @media screen and (max-width: 340px) {
     font-size: em(13);
   }
