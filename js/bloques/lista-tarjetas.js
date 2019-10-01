@@ -19,8 +19,8 @@
                 $parent.find('.item_filtro.active').removeClass('active')
                 $parent.find('.item_filtro').show();
                 $item.addClass('active')
+                $parent.find('.item_filtro:not(.active)').hide();
                 $parent_galeria.find('.inside .item').hide()
-
                 var filtro = ''
                 $('.item_filtro.filter.active').each((i, elem) => {
                     filtro += '.' + $(elem).attr('data-filter')
@@ -30,6 +30,7 @@
                 $parent.find('.item_filtro.active').removeClass('active')
                 $parent.find('.item_filtro').show();
                 $parent.find('.item_filtro.name').addClass('active')
+                $parent.find('.item_filtro:not(.active)').hide()
                 $parent_galeria.find('.inside .item').show()
             }
         })
