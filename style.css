@@ -6642,6 +6642,8 @@ body#tinymce {
       @media only screen and (max-width: 980px) {
         .banner.cita-imagen .contenedor-banner .left {
           height: 60%; } }
+      .banner.cita-imagen .contenedor-banner .left p {
+        margin: 0 !important; }
       .banner.cita-imagen .contenedor-banner .left h1 {
         max-width: 600px;
         color: #3B3B3B; }
