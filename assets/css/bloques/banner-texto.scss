@@ -10,6 +10,17 @@
         height: 100%;
         background-size: cover;
         background-position: center center;
+
+        &::after {
+            content: ""; // ::before and ::after both require content
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: .4;
+        }
     }
 
     .inside {
@@ -33,7 +44,7 @@
                 .contenedor-txt {
                     max-width: 1600px;
                     margin: auto;
-                    padding-left: 20px;
+                    padding-left: 10px;
 
                     .titulo {
                         max-width: 600px;
