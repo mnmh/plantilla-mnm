@@ -29,7 +29,6 @@
             .left, .right {
                 height: 100%;
                 width: 50%;
-                border: solid 1px red;
 
                 @media #{$medium-and-down} { 
                     width: 100%;
