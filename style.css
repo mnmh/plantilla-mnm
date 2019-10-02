@@ -5572,6 +5572,37 @@ body#tinymce {
 .citas-container:after {
   content: none; }
 
+blockquote {
+  font-weight: 600;
+  color: black;
+  font-size: 1em;
+  margin: 0 0 0 auto;
+  display: block;
+  width: 100%; }
+  blockquote::after {
+    content: "";
+    display: block;
+    width: 4.6875em;
+    height: 0.25em;
+    background: #ffbc54;
+    margin: 0;
+    position: relative;
+    top: -1.875em; }
+  blockquote em {
+    font-weight: 400;
+    font-size: 0.75em;
+    display: block;
+    width: 75%;
+    margin: 2.125em 0 0; }
+    blockquote em strong {
+      font-weight: 400; }
+  @media screen and (min-width: 850px) {
+    blockquote {
+      font-size: 1.05em; } }
+  @media screen and (min-width: 1300px) {
+    blockquote {
+      margin-left: 10%; } }
+
 #citas {
   padding: 4em 0 4em 0;
   width: 100%;
