@@ -14,18 +14,21 @@ $activar = get_field('activar_boton');
 
 <div class="banner overlay btm">
     <div class="img" style="background-image:url('<?php echo $imagen['url'] ?>')"></div>
-    <div class="content">
-        <div class="contenedor-txt">
-            <h1 class="titulo">
-                <strong><?php echo $titulo ?></strong>
-            </h1>
-            
-            <div class="txt">
-                <?php echo $texto ?>
+    <div class="inside">
+        <div class="content texto-abajo">
+
+            <div class="contenedor-txt">
+                <h1 class="titulo">
+                    <strong><?php echo $titulo ?></strong>
+                </h1>
+                
+                <div class="txt">
+                    <?php echo $texto ?>
+                </div>
+                <?php if($activar == 1): ?>
+                <div class="btn"> Saber más </div>
+                <?php endif; ?>
             </div>
-            <?php if($activar == 1): ?>
-            <div class="btn"> Saber más </div>
-            <?php endif; ?>
         </div>
     </div>
 </div>
