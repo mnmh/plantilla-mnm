@@ -5,11 +5,11 @@
         background: $grisclaro;
 
         @media #{$medium-and-down} { 
-            height: 80vh;
+            height: 70vh;
         }
 
         @media #{$small-and-down} { 
-            height: 100vh;
+            height: 95vh;
         }
         
         .contenedor-banner {
@@ -20,7 +20,6 @@
             margin-left: auto;
             margin-right: auto;
             align-items: center;
-            padding-left: 10px;
 
             @media #{$medium-and-down} { 
                 flex-direction: column-reverse;
@@ -28,13 +27,28 @@
             }
 
             .left, .right {
-                width: 100%;
+                height: 100%;
+                width: 50%;
+                border: solid 1px red;
+
+                @media #{$medium-and-down} { 
+                    width: 100%;
+                }
             }
 
             .left {
+                
+                position: relative;
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 10px;
 
+                @media #{$medium-and-down} { 
+                    height: 60%;
+                }
+
+            
                 h1 {
                     max-width: 600px;
                     color: $black;
@@ -58,8 +72,8 @@
                     font-weight: 600;
                     font-size: 16px;
                     color: $black;
+                    bottom: 5%;
                     position: absolute;
-                    bottom: 35px;
 
                     &::before {
                         position: absolute;
@@ -81,20 +95,17 @@
                 align-items: center;
                 justify-content: center;
 
+
+                @media #{$medium-and-down} { 
+                    height: 40%;
+                }
+
                 .img {
                     background-size: contain;
                     background-repeat: no-repeat;
-                    width: 40%;
-
-                    @media #{$medium-and-down} { 
-                        width: 60%;
-                        top: -210px;
-                    }
-
-                    @media #{$small-and-down} { 
-                        width: 90%;
-                        top: -210px;
-                    }
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
                 }
             }
         }

@@ -382,9 +382,9 @@ body {
   #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p {
     max-width: 800px;
     margin: 0 auto; }
-    @media screen and (max-width: 800px) {
-      #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p {
-        margin: 0 10px; } }
+  @media screen and (max-width: 800px) {
+    #contenidoGeneral p {
+      margin: 0 10px; } }
 
 #frontImg {
   background: red;
@@ -6611,10 +6611,10 @@ body#tinymce {
   background: #f4f4f4; }
   @media only screen and (max-width: 980px) {
     .banner.cita-imagen {
-      height: 80vh; } }
+      height: 70vh; } }
   @media only screen and (max-width: 650px) {
     .banner.cita-imagen {
-      height: 100vh; } }
+      height: 95vh; } }
   .banner.cita-imagen .contenedor-banner {
     display: flex;
     width: 100%;
@@ -6622,17 +6622,27 @@ body#tinymce {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
-    padding-left: 10px; }
+    align-items: center; }
     @media only screen and (max-width: 980px) {
       .banner.cita-imagen .contenedor-banner {
         flex-direction: column-reverse;
         justify-content: space-around; } }
     .banner.cita-imagen .contenedor-banner .left, .banner.cita-imagen .contenedor-banner .right {
-      width: 100%; }
+      height: 100%;
+      width: 50%;
+      border: solid 1px red; }
+      @media only screen and (max-width: 980px) {
+        .banner.cita-imagen .contenedor-banner .left, .banner.cita-imagen .contenedor-banner .right {
+          width: 100%; } }
     .banner.cita-imagen .contenedor-banner .left {
+      position: relative;
       display: flex;
-      flex-wrap: wrap; }
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px; }
+      @media only screen and (max-width: 980px) {
+        .banner.cita-imagen .contenedor-banner .left {
+          height: 60%; } }
       .banner.cita-imagen .contenedor-banner .left h1 {
         max-width: 600px;
         color: #3B3B3B; }
@@ -6651,8 +6661,8 @@ body#tinymce {
         font-weight: 600;
         font-size: 16px;
         color: #3B3B3B;
-        position: absolute;
-        bottom: 35px; }
+        bottom: 5%;
+        position: absolute; }
         .banner.cita-imagen .contenedor-banner .left .link::before {
           position: absolute;
           font-family: 'mnm';
@@ -6665,18 +6675,15 @@ body#tinymce {
       display: flex;
       align-items: center;
       justify-content: center; }
+      @media only screen and (max-width: 980px) {
+        .banner.cita-imagen .contenedor-banner .right {
+          height: 40%; } }
       .banner.cita-imagen .contenedor-banner .right .img {
         background-size: contain;
         background-repeat: no-repeat;
-        width: 40%; }
-        @media only screen and (max-width: 980px) {
-          .banner.cita-imagen .contenedor-banner .right .img {
-            width: 60%;
-            top: -210px; } }
-        @media only screen and (max-width: 650px) {
-          .banner.cita-imagen .contenedor-banner .right .img {
-            width: 90%;
-            top: -210px; } }
+        width: 100%;
+        height: 100%;
+        position: relative; }
 
 .banner.texto-imagen-corto {
   display: flex;
