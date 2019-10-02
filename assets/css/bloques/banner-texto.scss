@@ -4,14 +4,9 @@
     background: #ccc;
     color: white;
 
-    .img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center center;
-
-        &::after {
+    .overlay {
+        
+        .img::after {
             content: ""; // ::before and ::after both require content
             position: absolute;
             top: 0;
@@ -21,6 +16,15 @@
             background-color: black;
             opacity: .4;
         }
+    }
+
+    .img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+
     }
 
     .inside {
