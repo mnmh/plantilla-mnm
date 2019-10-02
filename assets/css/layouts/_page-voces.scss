@@ -1153,7 +1153,7 @@ figure {
       font-size: 16px;
       color: #3B3B3B;
       font-weight: 300;
-      
+
     }
 
     @media screen and (min-width:900px) {
@@ -1187,6 +1187,7 @@ figure {
   .nav {
     width: 95%;
   }
+
   .next,
   .prev {
     position: absolute;
@@ -1204,7 +1205,7 @@ figure {
     &:after {
       font-family: 'mnm';
       content: "\E80E";
-      font-size: 16px ;
+      font-size: 16px;
       color: #3B3B3B;
       font-weight: 300;
     }
@@ -1659,7 +1660,7 @@ body.no_scroll {
     border-radius: 5px;
     background: #333;
     color: #999;
-    
+
     &.is-selected {
       .img-wrapper {
         opacity: 1;
@@ -1883,9 +1884,7 @@ body.no_scroll {
   }
 }
 
-body.dark {
-
-}
+body.dark {}
 
 .txt-content {
   display: flex;
