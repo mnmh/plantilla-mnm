@@ -6114,6 +6114,11 @@ body#tinymce {
         max-width: 1200px;
         bottom: 0 !important;
         top: auto; }
+        @media only screen and (max-width: 980px) {
+          .banner.banner-margenes .contenedor-carrusel .carrousel .img {
+            width: 100%;
+            height: 100%;
+            right: 0; } }
       .banner.banner-margenes .contenedor-carrusel .btn {
         color: white;
         background-color: #F4C724;
