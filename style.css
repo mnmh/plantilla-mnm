@@ -6629,8 +6629,7 @@ body#tinymce {
         justify-content: space-around; } }
     .banner.cita-imagen .contenedor-banner .left, .banner.cita-imagen .contenedor-banner .right {
       height: 100%;
-      width: 50%;
-      border: solid 1px red; }
+      width: 50%; }
       @media only screen and (max-width: 980px) {
         .banner.cita-imagen .contenedor-banner .left, .banner.cita-imagen .contenedor-banner .right {
           width: 100%; } }
