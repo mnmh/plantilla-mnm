@@ -1,0 +1,53 @@
+#cifras {
+    text-align: center;
+    font-weight: 500;
+
+    .cifras-container {
+        max-width: 1600px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        padding: 5em 0;
+
+        .cifra {
+            margin-bottom: 20px;
+        }
+
+        .num {
+            font-family: "CircularStd", sans-serif;
+            font-size: 6em;
+            color: #3B3B3B;
+            line-height: 1.2;
+        }
+
+        .des {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            color: #3B3B3B;
+            font-weight: 300;
+
+        }
+
+        @media screen and (min-width:900px) {
+            padding: 5em 0;
+            display: flex;
+            justify-content: space-between;
+
+            .cifra {
+                width: 30%;
+                margin-top: 50px;
+                max-width: 350px;
+
+                .num {
+                    font-size: 5em;
+                }
+            }
+        }
+
+        @media screen and (min-width:1024px) {
+            .cifra .num {
+                font-size: 7em
+            }
+        }
+    }
+}
