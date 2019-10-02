@@ -6284,7 +6284,9 @@ body#tinymce {
       text-align: left;
       font-size: 14px !important;
       margin-top: 10px !important;
-      margin-bottom: 0px !important; }
+      margin-bottom: 0px !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
 
 .tarjetas .more.gal {
   border: 1px solid black;
