@@ -6088,8 +6088,7 @@ body#tinymce {
   /* MEDIA QUERIES -------------------------------------------------------*/ }
   .banner.banner-margenes {
     background: #3B3B3B;
-    margin: 0 0 80px 0;
-    max-height: 630px; }
+    margin: 0 0 80px 0; }
     .banner.banner-margenes .contenedor-carrusel {
       max-width: 1600px;
       height: 100%;
