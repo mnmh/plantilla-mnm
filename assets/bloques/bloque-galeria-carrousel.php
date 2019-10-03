@@ -9,6 +9,8 @@ $id = 'bloque-' . $block['id'];
 ?>
 
 <div id="galeria_voces">  
+    <h1 class="sec"><?php echo get_field('titulo') ?></h1>
+    <div class="subtitulo-sec"><?php echo get_field('subtitulo') ?></div>
     <div class="nav">
         <div class="next"></div>
         <div class="prev"></div>
