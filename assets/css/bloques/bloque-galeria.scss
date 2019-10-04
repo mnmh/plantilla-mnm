@@ -2,6 +2,14 @@
     position: relative;
     margin-bottom: 10em;
 
+    .sec {
+        width: 100%;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        }
+    
     .nav {
         width: 95%;
     }

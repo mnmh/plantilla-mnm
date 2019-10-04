@@ -6635,6 +6635,12 @@ blockquote {
 #galeria_voces {
   position: relative;
   margin-bottom: 10em; }
+  #galeria_voces .sec {
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
   #galeria_voces .nav {
     width: 95%; }
   #galeria_voces .next,
