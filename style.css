@@ -6178,15 +6178,17 @@ blockquote {
 
 .botones-carrousel {
   position: relative; }
+  @media only screen and (max-width: 1600px) {
+    .botones-carrousel {
+      padding-left: 10px; } }
   .botones-carrousel .sec {
     display: block;
     width: 100%;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto; }
-    @media only screen and (max-width: 1600px) {
-      .botones-carrousel .sec {
-        padding-left: 10px; } }
+  .botones-carrousel .subtitulo-sec {
+    padding-left: 0; }
   .botones-carrousel .hori_scroll {
     top: calc(60% - 20px);
     width: 95%;
