@@ -6987,6 +6987,9 @@ blockquote {
     margin-left: auto;
     margin-right: auto;
     display: block; }
+    @media only screen and (max-width: 1200px) {
+      #galeria_voces .sec {
+        padding-left: 10px; } }
   #galeria_voces .nav {
     width: 95%; }
   #galeria_voces .next,
