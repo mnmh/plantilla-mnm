@@ -6385,15 +6385,13 @@ blockquote {
   position: relative;
   background: #ccc;
   color: white; }
-  .banner .overlay .img::after {
-    content: "";
+  .banner .overlay .img:after {
+    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: .4; }
+    background: black;
+    opacity: 0.3; }
   .banner .img {
     position: absolute;
     width: 100%;
@@ -6695,6 +6693,11 @@ blockquote {
   margin-right: 20px;
   border-bottom: solid 1px #9A9A9A;
   margin-top: 44px; }
+  @media only screen and (max-width: 650px) {
+    .tarjetas .ver-todas {
+      margin-top: 0;
+      font-size: 14px;
+      margin-right: 10px; } }
 
 .tarjetas .inside {
   display: flex;
