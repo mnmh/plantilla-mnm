@@ -22,7 +22,7 @@ $id = 'bloque-' . $block['id'];
             foreach($galeria as $img):
         ?>
             <div class="item" style="position: absolute; left: 0%;">
-                <img src="<?php echo $img['url'] ?>">
+                <img src="<?php echo $img['sizes']['large'] ?>">
                 <div class="des">
                     <span class="leyenda"><?php echo $img['title'] ?></span>
                     <p class="descripcion"><?php echo $img['description'] ?></p>
