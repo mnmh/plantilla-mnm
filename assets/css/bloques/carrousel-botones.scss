@@ -1,5 +1,9 @@
 .botones-carrousel {
     position: relative;
+
+    @media #{$extralarge-and-down} {
+        padding-left: 10px;
+    }
     
     .sec {
         display: block;
@@ -7,10 +11,10 @@
         max-width: 1600px;
         margin-left: auto;
         margin-right: auto;
+    }
 
-        @media #{$extralarge-and-down} {
-            padding-left: 10px;
-        }
+    .subtitulo-sec {
+        padding-left: 0;
     }
     
     .hori_scroll {
