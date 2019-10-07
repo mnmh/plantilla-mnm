@@ -51,6 +51,12 @@ El bloque banner botones es parecido al banner carrousel pero se usan botones co
 
 ### bloque-banner-carrousel-margenes
 
+![banner-carrousel-margenes-mnm](./img/readme/banner-carrousel-margenes.jpg)
+
+El bloque banner carrousel margenes es una variación del banner carrousel pero las imágenes de fondo de cada slide tienen márgenes que dejan ver el fondo gris del bloque.
+
+### bloque-banner-carrousel
+
 
 ## Estructura de la carpeta /assets/template-parts
 
