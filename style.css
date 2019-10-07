@@ -6405,17 +6405,14 @@ blockquote {
         padding: 0 0%; } }
     .banner .inside .content {
       position: absolute;
-      top: 25%;
+      bottom: 15%;
       max-width: 600px; }
       .banner .inside .content.texto-abajo {
-        transform: translate(0, -50%);
-        top: 50%;
         width: 100%;
         max-width: none; }
         .banner .inside .content.texto-abajo .contenedor-txt {
           max-width: 1600px;
-          margin: auto;
-          padding-left: 10px; }
+          margin: auto; }
           .banner .inside .content.texto-abajo .contenedor-txt .titulo {
             max-width: 600px; }
       .banner .inside .content .titulo {
@@ -6426,8 +6423,7 @@ blockquote {
   @media only screen and (max-width: 650px) {
     .banner .inside .content {
       bottom: 10%;
-      top: auto;
-      padding-left: 5px; }
+      top: auto; }
       .banner .inside .content .titulo {
         font-size: 42px;
         margin-bottom: 10px; } }
