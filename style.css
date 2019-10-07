@@ -7134,7 +7134,7 @@ blockquote {
       height: 70vh; } }
   @media only screen and (max-width: 650px) {
     .banner.cita-imagen {
-      height: 95vh; } }
+      height: 110vh; } }
   .banner.cita-imagen .contenedor-banner {
     display: flex;
     width: 100%;
