@@ -23,7 +23,7 @@
 
 	<tr class="itemListado_tabla">
 		<th class="date">
-			<?php echo get_the_time('U'); ?>
+			<?php echo get_the_time('U', $post->ID); ?>
 		</th>
 		<th class="evento">
 			<?php echo $evento_title ?>
