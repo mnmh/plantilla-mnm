@@ -22,6 +22,9 @@
 	?>
 
 	<tr class="itemListado_tabla">
+		<th class="date">
+			<?php echo get_the_time('U'); ?>
+		</th>
 		<th class="evento">
 			<?php echo $evento_title ?>
 		</th>
