@@ -45,7 +45,12 @@
 
 ### bloque-banner-botones
 
+![banner-botones-mnm](./img/readme/banner-botones.jpg)
+
+El bloque banner botones es parecido al banner carrousel pero se usan botones con textos descriptivos para cambiar entre los slides.
+
 ### bloque-banner-carrousel-margenes
+
 
 ## Estructura de la carpeta /assets/template-parts
 
