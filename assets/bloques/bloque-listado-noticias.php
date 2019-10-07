@@ -35,7 +35,7 @@ $ver_mas = get_field('enlace_true');
 
         <a href="<?php echo get_sub_field('enlace') ?>" class="item">
 
-            <div class="img" style="background-image:url('<?php echo $imagen['sizes']['medium'] ?>')"></div>
+            <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
 
             <div class="tarjeta-description">
                 <h3><?php echo $titulo ?></h3>
