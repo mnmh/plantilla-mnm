@@ -6692,7 +6692,7 @@ blockquote {
   @media only screen and (max-width: 650px) {
     .tarjetas .ver-todas {
       margin-top: 0;
-      font-size: 14px;
+      font-size: 12px;
       margin-right: 10px; } }
 
 .tarjetas .inside {
