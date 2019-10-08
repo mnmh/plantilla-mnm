@@ -19,29 +19,29 @@
 ## Estructura de la carpeta /assets/bloques
 
     └── bloques/
-        ├── bloque-banner-botones.php                   # Carrousel con cuadros verticales
-        ├── bloque-banner-carrousel-margenes.php        # Carrousel con cuadros verticales
-        ├── bloque-banner-carrousel.php                 # Carrousel con cuadros verticales
-        ├── bloque-banner-tarjetas-audio.php            # Carrousel con cuadros verticales
-        ├── bloque-banner-texto.php                     # Carrousel con cuadros verticales
-        ├── bloque-bloque-agenda.php                    # Carrousel con cuadros verticales
-        ├── bloque-bloque-banner-cita-imagen.php        # Carrousel con cuadros verticales
-        ├── bloque-bloque-banner-corto-texto.php        # Carrousel con cuadros verticales
-        ├── bloque-bloque-equipo.php                    # Carrousel con cuadros verticales
-        ├── bloque-bloque-header-columna.php            # Carrousel con cuadros verticales
-        ├── bloque-bloque-personajes.php                # Carrousel de botones
-        ├── bloque-carrousel-botones.php                # Carrousel de botones
-        ├── bloque-carrousel-cuadros.php                # Carrousel de cuadros
-        ├── bloque-carrousel-verticales.php             # Carrousel de cuadros
-        ├── bloque-cifra.php                            # Carrousel de cuadros
-        ├── bloque-galeria-carrousel.php                # Imagen con botones
-        ├── bloque-imagen-botones.php                   # Imagen con botones
-        ├── bloque-linea-tiempo.php                     # Linea del tiempo
-        ├── bloque-lista-tarjetas.php                   # Listado de tarjetas (videos y galerías)
-        ├── bloque-listado-noticias.php                 # Listado de tarjetas (videos y galerías)
-        ├── bloque-testimonios-carrousel.php            # Listado de tarjetas (videos y galerías)
-        ├── bloque-tres-botones-segunda.php             # Listado de tarjetas (videos y galerías)
-        └── bloque-tres-botones.php                     # Botones
+        ├── bloque-banner-botones.php                   
+        ├── bloque-banner-carrousel-margenes.php        
+        ├── bloque-banner-carrousel.php                 
+        ├── bloque-banner-tarjetas-audio.php            
+        ├── bloque-banner-texto.php                     
+        ├── bloque-bloque-agenda.php                    
+        ├── bloque-bloque-banner-cita-imagen.php        
+        ├── bloque-bloque-banner-corto-texto.php        
+        ├── bloque-bloque-equipo.php                    
+        ├── bloque-bloque-header-columna.php            
+        ├── bloque-bloque-personajes.php                
+        ├── bloque-carrousel-botones.php                
+        ├── bloque-carrousel-cuadros.php                
+        ├── bloque-carrousel-verticales.php             
+        ├── bloque-cifra.php                            
+        ├── bloque-galeria-carrousel.php                
+        ├── bloque-imagen-botones.php                   
+        ├── bloque-linea-tiempo.php                     
+        ├── bloque-lista-tarjetas.php                   
+        ├── bloque-listado-noticias.php                 
+        ├── bloque-testimonios-carrousel.php            
+        ├── bloque-tres-botones-segunda.php             
+        └── bloque-tres-botones.php                     
 
 ### bloque-banner-botones
 
