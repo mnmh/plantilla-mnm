@@ -203,6 +203,10 @@
     align-items: flex-start;
     width: 300px;
 
+    @media #{$small-and-down} {    
+        margin-bottom: 20px
+    }
+
     .container_filtro {
         border: 1px solid #999;
         // position: absolute;

@@ -6745,6 +6745,9 @@ blockquote {
   right: 40px;
   align-items: flex-start;
   width: 300px; }
+  @media only screen and (max-width: 650px) {
+    .filtros {
+      margin-bottom: 20px; } }
   .filtros .container_filtro {
     border: 1px solid #999;
     z-index: 2;
