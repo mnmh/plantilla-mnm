@@ -465,6 +465,8 @@
 
 .page-obras {
   position: relative;
+  max-width: 1600px;
+  margin: auto;
 
   &.loading {
     &:after {
