@@ -389,11 +389,15 @@
   }
 
   //arte y cultura contenidos
-  
+
   .page-obras {
     position: relative;
     max-width: 1600px;
     margin: auto;
+
+    h2 {
+      max-width: 1600px !important;
+    }
   
     &.loading {
       &:after {
@@ -715,7 +719,7 @@
   
     .items {
       overflow: visible;
-      margin-top: 60px;
+      margin-top: 15px;
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
@@ -861,12 +865,12 @@
         &::before {
           content: 'nuevo';
           position: absolute;
-          background-color: #f27373;
+          background-color: $azul;
           color: white;
           text-transform: uppercase;
           font-weight: 700;
           border: 2px solid white;
-          padding: 5px;
+          padding: 4px 12px;
           top: 188px;
           right: 10px;
           font-size: 0.6em;
@@ -920,12 +924,12 @@
       }
   
       .title {
-        color: #333;
+        color: $black;
         font-weight: normal;
         font-size: 18px;
         margin-left: 10px;
         margin-right: 10px;
-        padding-top: 10px;
+        padding-top: 15px;
         font-weight: bold;
         border-top: 1px solid #ddd;
       }
@@ -947,8 +951,8 @@
       li {
         font-size: 0.8em;
         font-style: italic;
-        color: #999;
-        padding: 10px;
+        color: $gris;
+        padding: 2px 10px;
       }
     }
   

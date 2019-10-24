@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <article class="page-obras">
-	<div class="items">
+<h2> Obras </h2>
+	<div class="items btm">
+		
         <?php
             $args = array (
 				'post_type' => 'obras',
