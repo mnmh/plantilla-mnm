@@ -5439,7 +5439,8 @@ body#tinymce {
       font-weight: bold; }
       .page-obras .disciplina li:hover {
         background-color: inherit !important;
-        color: white !important; }
+        color: white !important;
+        border: none; }
   .page-obras .navegacionFiltros {
     position: absolute;
     top: 0;
