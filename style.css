@@ -5281,24 +5281,21 @@ body#tinymce {
     width: 23%;
     margin: 0.25em;
     min-height: 350px;
-    display: block;
+    display: flex;
     position: relative;
-    border: 1px solid #ddd;
-    padding-bottom: 30px;
     overflow: hidden;
-    max-width: 300px;
-    background: #ddd; }
+    max-width: 300px; }
     .page-obras .moreNav:before {
-      color: white;
       content: 'cargar más';
-      width: 100%;
-      line-height: 50px;
-      font-size: 1.1em;
-      display: block;
-      text-align: center;
-      top: 50%;
-      position: absolute;
-      margin-top: -25px; }
+      display: table;
+      text-decoration: none !important;
+      cursor: pointer;
+      color: white;
+      background-color: #F4C724;
+      font-weight: bold;
+      margin: auto;
+      padding: 8px 28px 8px 28px;
+      border-radius: 40px; }
   .page-obras .resultado {
     width: 100%;
     border-bottom: 1px solid #ddd;
@@ -5440,7 +5437,7 @@ body#tinymce {
       .page-obras .disciplina li:hover {
         background-color: inherit !important;
         color: white !important;
-        border: none; }
+        border: nonegi; }
   .page-obras .navegacionFiltros {
     position: absolute;
     top: 0;
