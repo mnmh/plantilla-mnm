@@ -62,7 +62,7 @@ $videos = get_field('videos');
             </nav>
     	</div>
 
-        <div class="texto">
+        <div class="texto btm">
             <?php
                 $obra = get_field('obra');
                 $proceso = get_field('proceso');
