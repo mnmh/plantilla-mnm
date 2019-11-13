@@ -1,7 +1,16 @@
 <?php get_header(); ?>
 
+<?php
+	$content = get_post_field('post_content', 7408);
+	$blocks = parse_blocks( $content );
+	if(count($blocks) > 0):
+		echo render_block($blocks[0]);
+	endif;
+
+?>
+
 <article class="page-obras">
-<h2> Obras </h2>
+	<h2>Obras</h2>
 	<div class="items btm">
 		
         <?php
@@ -133,5 +142,13 @@
         </div>
     </div>
 </article>
+
+<?php
+	if(count($blocks) > 1):
+		for($i = 1; $i < count($blocks); $i++):
+			echo render_block($blocks[$i]);
+		endfor;
+	endif;
+?>
 
 <?php get_footer(); ?>
