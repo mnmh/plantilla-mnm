@@ -39,8 +39,7 @@
         ├── bloque-lista-tarjetas.php                   
         ├── bloque-listado-noticias.php                 
         ├── bloque-testimonios-carrousel.php            
-        ├── bloque-tres-botones-segunda.php             
-        └── bloque-tres-botones.php                     
+        └── bloque-tres-botones-segunda.php                     
 
 ### bloque-banner-botones
 
@@ -126,6 +125,45 @@ Bloque similar a los botones pero los despliga con una forma vertical.
 
 Un bloque para mostrar tres cifras
 
+### galeria-carrousel
+
+![bloque-galeria-carrousel-mnm](./img/readme/galeria-carrousel.jpg)
+
+Un bloque que despliega una galeria tipo carrousel.
+
+### imagen-botones
+
+![bloque-imagen-botones-mnm](./img/readme/imagen-botones.jpg)
+
+Un bloque con una imagen de fondo y tres botones.
+
+### linea-tiempo
+
+![bloque-linea-tiempo-mnm](./img/readme/linea-tiempo.jpg)
+
+Un bloque que despliega una linea del tiempo.
+
+### lista-tarjetas
+
+![bloque-lista-tarjetas-mnm](./img/readme/lista-tarjetas.jpg)
+
+Un bloque que despliega una lista de tarjetas con filtros para organizar.
+
+### listado-noticias
+
+![bloque-listado-noticias-mnm](./img/readme/listado-noticias.jpg)
+
+Similar a la lista de tarjetas pero sin filtro.
+
+### testimonios-carrousel
+
+![bloque-testimonios-carrousel-mnm](./img/readme/testimonios-carrousel.jpg)
+
+Despliega un carrousel con testimonios aleatorios de la base de datos.
+
+### tres-botones-segunda
+
+![bloque-tres-botones-segunda-mnm](./img/readme/tres-botones-segunda.jpg)
 
 
 
