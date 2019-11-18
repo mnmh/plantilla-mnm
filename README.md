@@ -19,40 +19,153 @@
 ## Estructura de la carpeta /assets/bloques
 
     └── bloques/
-        ├── bloque-carrousel-verticales.php             # Carrousel con cuadros verticales
-        ├── bloque-carrousel-botones.php                # Carrousel de botones
-        ├── bloque-carrousel-cuadros.php                # Carrousel de cuadros
-        ├── bloque-banner-texto.php                     # Carrousel banner con texto
-        ├── bloque-imagen-botones.php                   # Imagen con botones
-        ├── bloque-banner-botones.php                   # Banner con botones
-        ├── bloque-banner-tarjetas-audio.php            # Banner con tarjetas de audio
-        ├── bloque-linea-tiempo.php                     # Linea del tiempo
-        ├── bloque-lista-tarjetas.php                   # Listado de tarjetas (videos y galerías)
-        └── bloque-botones.php                          # Botones
+        ├── bloque-banner-botones.php                   
+        ├── bloque-banner-carrousel-margenes.php        
+        ├── bloque-banner-carrousel.php                 
+        ├── bloque-banner-tarjetas-audio.php            
+        ├── bloque-banner-texto.php                     
+        ├── bloque-bloque-agenda.php                    
+        ├── bloque-bloque-banner-cita-imagen.php        
+        ├── bloque-bloque-banner-corto-texto.php        
+        ├── bloque-bloque-equipo.php                    
+        ├── bloque-bloque-header-columna.php            
+        ├── bloque-bloque-personajes.php                
+        ├── bloque-carrousel-botones.php                
+        ├── bloque-carrousel-verticales.php             
+        ├── bloque-cifra.php                            
+        ├── bloque-galeria-carrousel.php                
+        ├── bloque-imagen-botones.php                   
+        ├── bloque-linea-tiempo.php                     
+        ├── bloque-lista-tarjetas.php                   
+        ├── bloque-listado-noticias.php                 
+        ├── bloque-testimonios-carrousel.php            
+        └── bloque-tres-botones-segunda.php                     
 
-- [x] Carrousel con cuadros verticales
-- [x] Carrousel con cuadros de noticias
-- [x] Banner con texto
-- [x] Banner con tarjetas
-- [x] Banner con botones
-- [x] Banner con carrousel
-- [x] Lista de tarjetas
-- [x] Lista de tarjetas con filtro
-- [x] Linea del tiempo
-- [x] Carrousel botones
-- [x] Imagen con botones
+### bloque-banner-botones
 
-## Estructura de la carpeta /assets/css/bloques
+![banner-botones-mnm](./img/readme/banner-botones.jpg)
 
-    └── bloques/
-        ├── banner-texto.scss                       # Estilo banner texto
-        ├── banner-botones.scss                     # Estilo banner botones
-        └── carrousel-verticales.scss               # Estilo carrousel vertical
-        └── carrousel-cuadros.scss                  # Estilo carrousel cuadros
-        └── carrousel-botones.scss                  # Estilo carrousel botones
-        └── linea-tiempo.scss                       # Estilo linea del tiempo
-        └── lista-tarjetas.scss                     # Estilo listado de tarjetas
-        └── carrousel-botones.scss                  # Estilo carrousel botones
+El bloque banner botones es parecido al banner carrousel pero se usan botones con textos descriptivos para cambiar entre los slides.
+
+### bloque-banner-carrousel-margenes
+
+![banner-carrousel-margenes-mnm](./img/readme/banner-carrousel-margenes.jpg)
+
+El bloque banner carrousel margenes es una variación del banner carrousel pero las imágenes de fondo de cada slide tienen márgenes que dejan ver el fondo gris del bloque.
+
+### bloque-banner-carrousel
+
+![banner-carrousel-mnm](./img/readme/banner-carrousel.jpg)
+
+Es un banner con un carrousel que ocupa todo el espacio del header a diferencia del bloque carrousel margenes.
+
+### bloque-banner-tarjetas-audio
+
+![banner-tarjetas-audio-mnm](./img/readme/banner-tarjetas-audio.jpg)
+
+Banner al cual se le pueden añadir tarjetas para reproducir clips de audio. Tambien tiene soporte para agregar un texto abajo a la izquierda del bloque.
+
+### bloque-banner-texto
+
+![banner-texto-mnm](./img/readme/banner-texto.jpg)
+
+Banner muy parecido a los anteriores pero solo tiene habilitado una entrada y un botón de saber más.
+
+### bloque-bloque-agenda
+
+![bloque-agenda-mnm](./img/readme/bloque-agenda.jpg)
+
+Bloque que despliega un calendario y muestra los eventos que están por venir.
+
+### bloque-banner-cita-imagen
+
+![bloque-banner-cita-imagen-mnm](./img/readme/banner-cita-imagen.jpg)
+
+Bloque que se divide en dos, una imagen a la izquierda y texto a la derecha, a manera de banner con texto.
+
+### bloque-banner-corto-texto
+
+![bloque-banner-corto-texto-mnm](./img/readme/banner-corto-texto.jpg)
+
+Banner para desplegar una imagen tipo banner pero menos alta y con la posibilidad de añadir un texto oscuro (para una imagen clara).
+
+### bloque-equipo
+
+![bloque-bloque-equipo-mnm](./img/readme/bloque-equipo.jpg)
+
+Un carrousel con tarjetas que permiten desplegar un texto abajo, en la página se usa para mostrar los perfiles del equipo.
+
+### bloque-header-columna
+
+![bloque-bloque-header-columna-mnm](./img/readme/bloque-header-columna.png)
+
+//TODO actualizar los estilos del titulo y del texto de este bloque
+
+### bloque-personajes
+
+![bloque-bloque-personajes-mnm](./img/readme/bloque-personajes.jpg)
+
+Bloque que despliega tres tarjetas, cada una con su audio. Incluye reproductor con tiempo para la reproducción.
+
+### carrousel-botones
+
+![bloque-carrousel-botones-mnm](./img/readme/carrousel-botones.jpg)
+
+Bloque que despliega un carrousel con botones cuadrados y enlace interno.
+
+### carrousel-verticales
+
+![bloque-carrousel-verticales-mnm](./img/readme/carrousel-verticales.jpg)
+
+Bloque similar a los botones pero los despliga con una forma vertical.
+
+### cifra
+
+![bloque-cifra-mnm](./img/readme/cifra.jpg)
+
+Un bloque para mostrar tres cifras
+
+### galeria-carrousel
+
+![bloque-galeria-carrousel-mnm](./img/readme/galeria-carrousel.jpg)
+
+Un bloque que despliega una galeria tipo carrousel.
+
+### imagen-botones
+
+![bloque-imagen-botones-mnm](./img/readme/imagen-botones.jpg)
+
+Un bloque con una imagen de fondo y tres botones.
+
+### linea-tiempo
+
+![bloque-linea-tiempo-mnm](./img/readme/linea-tiempo.jpg)
+
+Un bloque que despliega una linea del tiempo.
+
+### lista-tarjetas
+
+![bloque-lista-tarjetas-mnm](./img/readme/lista-tarjetas.jpg)
+
+Un bloque que despliega una lista de tarjetas con filtros para organizar.
+
+### listado-noticias
+
+![bloque-listado-noticias-mnm](./img/readme/listado-noticias.jpg)
+
+Similar a la lista de tarjetas pero sin filtro.
+
+### testimonios-carrousel
+
+![bloque-testimonios-carrousel-mnm](./img/readme/testimonios-carrousel.jpg)
+
+Despliega un carrousel con testimonios aleatorios de la base de datos.
+
+### tres-botones-segunda
+
+![bloque-tres-botones-segunda-mnm](./img/readme/tres-botones-segunda.jpg)
+
+
 
 ## Estructura de la carpeta /assets/template-parts
 
@@ -60,19 +173,6 @@
         ├── head.php                    # Contenido del HEAD
         ├── sideMenu.php                # Menu lateral
         └── top_header.php              # Menu superior transversal a toda la página
-
-## Estructura de la carpeta /js
-
-    └── js/
-        ├── lib/
-        |    └── flickity.js                    # Librería flickity
-        ├── bloques/
-        |    └── carrousel-vertical.js          # Scripts para el bloque carrousel vertical
-        |    └── carrousel-botones.js           # Scripts para el bloque carrousel botones
-        |    └── linea-tiempo.js                # Scripts para el bloque linea del tiempo
-        |    └── lista-tarjetas.js              # Scripts para el bloque lista-tarjetas
-        |    └── banner-botones.js              # Scripts para el banner con botones
-        └── scripts.js                          # Scripts generales de la plataforma
 
 ## Scripts para desarollo
 
