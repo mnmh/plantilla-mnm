@@ -69,6 +69,49 @@ Banner al cual se le pueden añadir tarjetas para reproducir clips de audio. Tam
 
 ### bloque-banner-texto
 
+![banner-texto-mnm](./img/readme/banner-texto.jpg)
+
+Banner muy parecido a los anteriores pero solo tiene habilitado una entrada y un botón de saber más.
+
+### bloque-bloque-agenda
+
+![bloque-agenda-mnm](./img/readme/bloque-agenda.jpg)
+
+Bloque que despliega un calendario y muestra los eventos que están por venir.
+
+### bloque-banner-cita-imagen
+
+![bloque-banner-cita-imagen-mnm](./img/readme/banner-cita-imagen.jpg)
+
+Bloque que se divide en dos, una imagen a la izquierda y texto a la derecha, a manera de banner con texto.
+
+### bloque-banner-corto-texto
+
+![bloque-banner-corto-texto-mnm](./img/readme/banner-corto-texto.jpg)
+
+Banner para desplegar una imagen tipo banner pero menos alta y con la posibilidad de añadir un texto oscuro (para una imagen clara).
+
+### bloque-equipo
+
+![bloque-bloque-equipo-mnm](./img/readme/bloque-equipo.jpg)
+
+Un carrousel con tarjetas que permiten desplegar un texto abajo, en la página se usa para mostrar los perfiles del equipo.
+
+### bloque-header-columna
+
+![bloque-bloque-header-columna-mnm](./img/readme/bloque-header-columna.jpg)
+
+//TODO actualizar los estilos del titulo y del texto de este bloque
+
+### bloque-personajes
+
+![bloque-bloque-personajes-mnm](./img/readme/bloque-personajes.jpg)
+
+Bloque que despliega tres tarjetas, cada una con su audio. Incluye reproductor con tiempo para la reproducción.
+
+### carrousel-botones
+
+
 
 
 ## Estructura de la carpeta /assets/template-parts
