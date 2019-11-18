@@ -31,7 +31,6 @@
         ├── bloque-bloque-header-columna.php            
         ├── bloque-bloque-personajes.php                
         ├── bloque-carrousel-botones.php                
-        ├── bloque-carrousel-cuadros.php                
         ├── bloque-carrousel-verticales.php             
         ├── bloque-cifra.php                            
         ├── bloque-galeria-carrousel.php                
@@ -110,6 +109,22 @@ Un carrousel con tarjetas que permiten desplegar un texto abajo, en la página s
 Bloque que despliega tres tarjetas, cada una con su audio. Incluye reproductor con tiempo para la reproducción.
 
 ### carrousel-botones
+
+![bloque-carrousel-botones-mnm](./img/readme/carrousel-botones.jpg)
+
+Bloque que despliega un carrousel con botones cuadrados y enlace interno.
+
+### carrousel-verticales
+
+![bloque-carrousel-verticales-mnm](./img/readme/carrousel-verticales.jpg)
+
+Bloque similar a los botones pero los despliga con una forma vertical.
+
+### cifra
+
+![bloque-cifra-mnm](./img/readme/cifra.jpg)
+
+Un bloque para mostrar tres cifras
 
 
 
