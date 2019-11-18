@@ -57,6 +57,19 @@ El bloque banner carrousel margenes es una variación del banner carrousel pero 
 
 ### bloque-banner-carrousel
 
+![banner-carrousel-mnm](./img/readme/banner-carrousel.jpg)
+
+Es un banner con un carrousel que ocupa todo el espacio del header a diferencia del bloque carrousel margenes.
+
+### bloque-banner-tarjetas-audio
+
+![banner-tarjetas-audio-mnm](./img/readme/banner-tarjetas-audio.jpg)
+
+Banner al cual se le pueden añadir tarjetas para reproducir clips de audio. Tambien tiene soporte para agregar un texto abajo a la izquierda del bloque.
+
+### bloque-banner-texto
+
+
 
 ## Estructura de la carpeta /assets/template-parts
 
