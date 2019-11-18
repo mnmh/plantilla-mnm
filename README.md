@@ -99,7 +99,7 @@ Un carrousel con tarjetas que permiten desplegar un texto abajo, en la página s
 
 ### bloque-header-columna
 
-![bloque-bloque-header-columna-mnm](./img/readme/bloque-header-columna.jpg)
+![bloque-bloque-header-columna-mnm](./img/readme/bloque-header-columna.png)
 
 //TODO actualizar los estilos del titulo y del texto de este bloque
 
