@@ -6,6 +6,7 @@
 
 // id unico para el bloque
 $id = 'bloque-' . $block['id'];
+
 ?>
 
 <div class="banner btm">
