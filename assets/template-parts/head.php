@@ -10,7 +10,7 @@
 <meta name="description" content="<?php bloginfo('description'); ?>">
 
 <?php
-    if(is_single()):
+    if(is_single() || is_page()):
         $img = get_the_post_thumbnail_url(get_the_ID(), 'large');
     endif;
 ?>
