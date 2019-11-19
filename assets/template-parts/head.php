@@ -9,4 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="<?php bloginfo('description'); ?>">
 
+<?php
+    $img = get_the_post_thumbnail_url(get_the_ID(), 'large');
+?>
+<meta property="og:image" content="<?php echo $img ?>" />
+
+
 <?php wp_head(); ?>
