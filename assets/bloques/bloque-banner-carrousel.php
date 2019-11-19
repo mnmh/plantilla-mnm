@@ -25,7 +25,7 @@ $txtbtn = get_field('txtbtn');
             <div class="subtitulo">sub titulo</div>
             <h1 class="titulo"><strong></strong></h1>
             <div class="txt"></div>
-            <div class="btn"><?php echo $titulo ?></div>
+            <div class="btn"><?php echo $txtbtn ?></div>
         </div>
     </div>
     <div class="nav">
