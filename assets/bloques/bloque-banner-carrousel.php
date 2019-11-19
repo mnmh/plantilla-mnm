@@ -6,7 +6,6 @@
 
 // id unico para el bloque
 $id = 'bloque-' . $block['id'];
-$txtbtn = get_field('txtbtn');
 
 ?>
 
@@ -25,7 +24,7 @@ $txtbtn = get_field('txtbtn');
             <div class="subtitulo">sub titulo</div>
             <h1 class="titulo"><strong></strong></h1>
             <div class="txt"></div>
-            <div class="btn"><?php echo $txtbtn ?></div>
+            <div class="btn">ver más</div>
         </div>
     </div>
     <div class="nav">

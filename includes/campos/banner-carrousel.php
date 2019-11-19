@@ -106,7 +106,7 @@ if( function_exists('acf_add_local_field_group') ):
                         'mime_types' => '',
                     ),
                     array(
-                        'key' => 'field_5d484ef0a53x6',
+                        'key' => 'field_5d484ef0a53r6',
                         'label' => 'Texto Boton',
                         'name' => 'txtbtn',
                         'type' => 'text',
