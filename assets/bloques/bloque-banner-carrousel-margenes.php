@@ -6,6 +6,7 @@
 
 // id unico para el bloque
 $id = 'bloque-' . $block['id'];
+$txtbtn = get_field('txtbtn');
 ?>
 
 <div class="banner banner-margenes">
@@ -24,7 +25,7 @@ $id = 'bloque-' . $block['id'];
                 <div class="subtitulo"><?php echo get_sub_field('subtitulo') ?></div>
                 <h1 class="titulo"><strong></strong></h1>
                 <div class="txt"></div>
-                <a href="#" class="btn">ver más</a>
+                <a href="#" class="btn"><?php echo $txtbtn ?></a>
             </div>
         </div>
     </div>  
