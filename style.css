@@ -35,6 +35,13 @@ a {
     margin-left: 350px;
     width: 100%; }
 
+figure iframe {
+  border: none;
+  width: 100%;
+  height: 80vh;
+  padding: 50px;
+  background: #333; }
+
 #top_indice {
   margin: 0;
   padding: 0;
