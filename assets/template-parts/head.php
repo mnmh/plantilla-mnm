@@ -12,7 +12,7 @@
 <?php
     $img = get_the_post_thumbnail_url(get_the_ID(), 'large');
     $gal = get_field('galeria');
-    if(get_post_type() == 'obra')
+    if(get_post_type() == 'obras')
         $img = $gal[0]['url']
 ?>
 <meta property="og:image" content="<?php echo $img ?>" />
