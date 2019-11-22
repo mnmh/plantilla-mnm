@@ -184,6 +184,9 @@
     margin-right: auto;
 }
 
+.no-margin {
+    margin: 0 auto !important;
+}
 
 @media #{$extralarge-and-down} {
 
