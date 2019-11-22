@@ -6,8 +6,9 @@
 	if(count($blocks) > 0):
 		echo render_block($blocks[0]);
 	endif;
-
 ?>
+
+<?php get_template_part('/assets/template-parts/navegacion-obras') ?>
 
 <article class="page-obras">
 	<h2>Obras</h2>

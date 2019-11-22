@@ -17,7 +17,6 @@
 	<?php if(is_page(array(2165, 2194, 2192, 2231, 2205, 2326, 1231, 3107)) || (is_single() && get_post_type() == 'post' && !has_category('lugares-de-memoria'))): ?>
 
 	<?php elseif(is_post_type_archive('obras')): ?>
-	<?php get_template_part('/assets/template-parts/navegacion-obras') ?>
 	<?php elseif(is_single() && get_post_type() == 'obras'): ?>
 	<?php get_template_part('/assets/template-parts/navegacion-obras-single') ?>
 	<?php endif; ?>
