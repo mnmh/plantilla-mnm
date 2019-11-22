@@ -6,9 +6,10 @@
 
 // id unico para el bloque
 $id = 'bloque-' . $block['id'];
+// print_r($block);
 ?>
 
-<div class="banner banner-margenes">
+<div class="banner banner-margenes <?php echo $block['className'] ?>">
 
     <div class="contenedor-carrusel">
         <div class="carrousel">
