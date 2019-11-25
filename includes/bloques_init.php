@@ -258,6 +258,25 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'carrousel', 'equipo', 'listado'),
 		));
+
+		// Bloque slider Arte y cultura
+		acf_register_block(array(
+			'name'				=> 'slider dos columnas',
+			'title'				=> __('Bloque slider columna'),
+			'description'		=> __('Un bloque para mostrar un slider en arte y cultura'),
+			'render_callback'	=> 'bloque_callback_bloque_slider_columnas',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'carrousel', 'slider', 'columna'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_bloque_slider_columnas( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 
@@ -465,5 +484,6 @@ include( get_theme_file_path("/includes/campos/listado-noticias.php") );
 include( get_theme_file_path("/includes/campos/bloque-equipo.php") );
 include( get_theme_file_path("/includes/campos/bloque-cifras.php") );
 include( get_theme_file_path("/includes/campos/galeria-carrousel.php") );
+include( get_theme_file_path("/includes/campos/slider-columnas.php") );
 
 ?>

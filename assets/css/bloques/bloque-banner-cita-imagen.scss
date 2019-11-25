@@ -4,6 +4,10 @@
         min-height: 400px;
         background: $grisclaro;
 
+        &.oscuro {
+            background: #333;
+        }
+
         @media #{$medium-and-down} { 
             height: 70vh;
         }
