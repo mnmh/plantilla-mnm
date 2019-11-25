@@ -39,7 +39,8 @@
         ├── bloque-lista-tarjetas.php                   
         ├── bloque-listado-noticias.php                 
         ├── bloque-testimonios-carrousel.php            
-        └── bloque-tres-botones-segunda.php                     
+        ├── bloque-tres-botones-segunda.php  
+        └── bloque-slider-columnas.php                     
 
 ### bloque-banner-botones
 
@@ -164,6 +165,10 @@ Despliega un carrousel con testimonios aleatorios de la base de datos.
 ### tres-botones-segunda
 
 ![bloque-tres-botones-segunda-mnm](./img/readme/tres-botones-segunda.jpg)
+
+### tres-botones-segunda
+
+![bloque-slider-columna-mnm](./img/readme/slider-columnas.jpg)
 
 
 
