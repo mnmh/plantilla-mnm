@@ -49,7 +49,7 @@
             }
 
             function cerrarNavObras() {
-                bindNavArchivo();
+                //bindNavArchivo();
                 $('#secondary_menu .item_drop.active').removeClass('active');
                 $('#secondary_menu .buscar').removeClass('active');
                 $('.navegacionFiltros, .navegacionFiltros .autores, .navegacionFiltros .categorias').hide();
@@ -218,11 +218,11 @@
 
                 for (var t = 0; t < disciplinasArray.length; t++) {
                     if (disciplinasArray[t] != 141 && disciplinasArray[t] != 142 && disciplinasArray[t] != 143) {
-                        $disciplinas.append('<div style="background-color: ' + disciplinasColor[t] + '"><li class="li_categ" data-categ="categ_' + disciplinasArray[t] + '" style="background-color: ' + disciplinasColor[t] + '">' + disciplinasNames[t] + '</li></div>');
+                        $disciplinas.append('<li class="li_categ" data-categ="categ_' + disciplinasArray[t] + '" style="background-color: ' + disciplinasColor[t] + '"></li>');
                     }
                 }
 
-                $div.append($img).append($title).append($autores).append($disciplinas);
+                $div.append($img).append($title).append($disciplinas).append($autores);
 
                 return $div;
             }
@@ -374,15 +374,17 @@
                 $('.navegacionFiltros .autores .listado li').removeClass('active');
             }
 
-            $('.navegacionFiltros .categoria').on('click', function () {
+            $('.item_drop.categoria').on('click', function () {
                 if (!$(this).hasClass('active')) {
                     limpiarFiltros();
 
                     $(this).addClass('active');
-                    $('.navegacionFiltros .categoria:not(.active)').addClass('inactive');
+                    $('.item_drop.categoria:not(.active)').addClass('inactive');
 
                     var value = $(this).attr('data-name');
                     var url = $(this).attr('data-url');
+
+                    console.log(url);
 
                     var $loading_block = $('<div id="loading"></div>');
                     $('.page-obras').append($loading_block);
@@ -475,7 +477,9 @@
                 } else {
                     limpiarFiltros();
 
-                    var url = webURL + '/wp-json/wp/v2/obras?per_page=20';
+                    // var url = webURL + '/wp-json/wp/v2/obras?per_page=20';
+                    var url = $(this).attr('data-url');
+                    // console.log(url);
                     var $loading_block = $('<div id="loading"></div>');
                     $('.page-obras').append($loading_block);
                     // LoadingAni.init();

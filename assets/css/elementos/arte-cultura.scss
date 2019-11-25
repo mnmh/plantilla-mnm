@@ -5,10 +5,14 @@
     // top: 90px;
     font-size: 0.875em;
     font-weight: 600;
-    background-color: #DEDEDE;
     z-index: 2;
     width: 100%;
     transition: opacity 300ms;
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
     .filtroOpciones {
       overflow: auto;
       li {
@@ -121,7 +125,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 4em;
       overflow: hidden;
       line-height: 30px;
   
@@ -167,124 +170,150 @@
     .menu-on & {
       // opacity: 0;
     }
-    .dropdown {
-      .link {
-        padding: 0.7em 2.5em 0.7em 0em;
-        color: white;
-        // @include font-header();
+    .item_drop {
+      color: white;
+      display: flex;
+      border-radius: 50px;
+      padding-left: 15px;
+      margin-right: 5px;
+      cursor: pointer;
+
+      span {
+        margin-left: 5px;
+        background: white;
         font-size: 0.8em;
-        &.categoria {
-          color: white;
-          padding-left: 1.5em;
-          padding-right: 1.5em;
-        }
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        text-align: center;
+        border-radius: 40px;
+        border: 2px solid;
       }
-      .item_drop {
-        display: inline-block;
-        cursor: pointer;
-        color: white;
-        position: relative;
-        padding: 0.7em 2.5em 0.7em 0em;
-        line-height: 30px;
-        // @include font-header();
-        font-size: 0.8em;
-  
-        &::after {
-          // content: "\E816";
-          font-family: 'mnm';
-          font-size: 0.8em;
-          position: absolute;
-          right: 1.5em;
-          width: 20px;
-          height: 20px;
-          top: 50%;
-          margin-top: -10px;
-          line-height: 20px;
-          text-align: center;
-          transition: top 0.25s;
-          -moz-transform: rotate(0deg);
-          -webkit-transform: rotate(0deg);
-          -o-transform: rotate(0deg);
-          -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
-          transition: all 0.2s;
-        }
-        &.active {
-          color: $black;
-          &::after {
-            -moz-transform: rotate(180deg);
-            -webkit-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
-          }
-        }
-      }
-      .buscar {
-        position: relative;
-        cursor: pointer;
-        input {
-          outline: none;
-          line-height: 1.7em;
-          padding: 0em 0.3em;
-          width: 2.3em;
+
+      &.color {
+        color: #555;
+        border: 1px solid;
+
+        span {
           border: none;
-          background-color: transparent;
         }
-        &:before {
-          position: absolute;
-          width: 2.3em;
-          text-align: center;
-          line-height: 1.7em;
-          content: '\e80b';
-          font-family: 'mnm';
-          top: 0;
-          right: 0;
-          color: white;
-          height: 100%;
-        }
-        &:hover {
-          &:before {
-            color: #333;
-          }
-        }
-        &.active {
-          &:before {
-            color: #222;
-          }
-          input {
-            width: 15em;
-            background-color: white;
-          }
-        }
-      }
-      .lista,
-      .cuadricula {
-        width: 2em;
-        height: calc(1.7em + 2px);
-        position: relative;
-        cursor: pointer;
-        padding: 5px;
-  
-        path {
-          fill: white;
-        }
-        
-        &:hover {
-          path {
-            fill: #999;
-          }
-        }
-        &.active {
-          path {
-            fill: $amarillo;
-          }
-        }
-      }
-      .cuadricula {
-        margin-left: 1em;
       }
     }
+    // .dropdown {
+    //   .link {
+    //     padding: 0.7em 2.5em 0.7em 0em;
+    //     // @include font-header();
+    //     font-size: 0.8em;
+    //     &.categoria {
+    //       padding-left: 1.5em;
+    //       padding-right: 1.5em;
+    //     }
+    //   }
+    //   .item_drop {
+    //     display: inline-block;
+    //     cursor: pointer;
+    //     color: white;
+    //     position: relative;
+    //     line-height: 30px;
+    //     // @include font-header();
+    //     font-size: 0.8em;
+  
+    //     &::after {
+    //       // content: "\E816";
+    //       font-family: 'mnm';
+    //       font-size: 0.8em;
+    //       position: absolute;
+    //       right: 1.5em;
+    //       width: 20px;
+    //       height: 20px;
+    //       top: 50%;
+    //       margin-top: -10px;
+    //       line-height: 20px;
+    //       text-align: center;
+    //       transition: top 0.25s;
+    //       -moz-transform: rotate(0deg);
+    //       -webkit-transform: rotate(0deg);
+    //       -o-transform: rotate(0deg);
+    //       -ms-transform: rotate(0deg);
+    //       transform: rotate(0deg);
+    //       transition: all 0.2s;
+    //     }
+    //     &.active {
+    //       color: $black;
+    //       &::after {
+    //         -moz-transform: rotate(180deg);
+    //         -webkit-transform: rotate(180deg);
+    //         -o-transform: rotate(180deg);
+    //         -ms-transform: rotate(180deg);
+    //         transform: rotate(180deg);
+    //       }
+    //     }
+    //   }
+    //   .buscar {
+    //     position: relative;
+    //     cursor: pointer;
+    //     input {
+    //       outline: none;
+    //       line-height: 1.7em;
+    //       padding: 0em 0.3em;
+    //       width: 2.3em;
+    //       border: none;
+    //       background-color: transparent;
+    //     }
+    //     &:before {
+    //       position: absolute;
+    //       width: 2.3em;
+    //       text-align: center;
+    //       line-height: 1.7em;
+    //       content: '\e80b';
+    //       font-family: 'mnm';
+    //       top: 0;
+    //       right: 0;
+    //       color: white;
+    //       height: 100%;
+    //     }
+    //     &:hover {
+    //       &:before {
+    //         color: #333;
+    //       }
+    //     }
+    //     &.active {
+    //       &:before {
+    //         color: #222;
+    //       }
+    //       input {
+    //         width: 15em;
+    //         background-color: white;
+    //       }
+    //     }
+    //   }
+    //   .lista,
+    //   .cuadricula {
+    //     width: 2em;
+    //     height: calc(1.7em + 2px);
+    //     position: relative;
+    //     cursor: pointer;
+    //     padding: 5px;
+  
+    //     path {
+    //       fill: white;
+    //     }
+        
+    //     &:hover {
+    //       path {
+    //         fill: #999;
+    //       }
+    //     }
+    //     &.active {
+    //       path {
+    //         fill: $amarillo;
+    //       }
+    //     }
+    //   }
+    //   .cuadricula {
+    //     margin-left: 1em;
+    //   }
+    // }
     .general {
       width: 0px;
       a {
@@ -723,6 +752,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
+      justify-content: flex-start;
   
       &.lista {
         margin-left: 3em;
@@ -792,6 +822,7 @@
         background-color: #F4C724;
         font-weight: bold;
         margin: auto;
+        margin-top: 70px;
         padding: 8px 28px 8px 28px;
         border-radius: 40px;
       }
@@ -846,15 +877,14 @@
     }
   
     .obra {
-      width: 23%;
-      margin: 0.25em;
+      width: 24%;
+      margin-right: 1%;
       min-height: 350px;
       display: block;
       position: relative;
-      border: 1px solid #ddd;
-      padding-bottom: 30px;
+      padding-bottom: 60px;
       overflow: hidden;
-      max-width: 300px;
+      max-width: 400px;
   
       &.sticky {
         position: relative;
@@ -862,15 +892,16 @@
         &::before {
           content: 'nuevo';
           position: absolute;
-          background-color: $azul;
+          background-color: #3e6cd1;
           color: white;
           text-transform: uppercase;
           font-weight: 700;
-          border: 2px solid white;
+          border: 1px solid white;
           padding: 4px 12px;
-          top: 188px;
+          top: 10px;
           right: 10px;
           font-size: 0.6em;
+          border-radius: 50px;
         }
       }
   
@@ -950,12 +981,13 @@
         font-style: italic;
         color: $gris;
         padding: 2px 10px;
+        float: left;
       }
     }
   
     .disciplina {
-      position: absolute;
-      bottom: 10px;
+      // position: absolute;
+      // bottom: 10px;
       padding-left: 10px;
       padding-right: 10px;
   
@@ -971,25 +1003,25 @@
         display: inline-block;
         margin-right: -2px;
         font-size: 0.55em;
-        padding: 3px;
-        border: 1px solid #ddd;
-        background-color: white !important;
+        // padding: 3px;
+        // border: 1px solid #ddd;
+        // background-color: white !important;
         // @include border-radius(20px);
-        padding-left: 8px;
-        padding-right: 8px;
+        // padding-left: 8px;
+        // padding-right: 8px;
+        width: 15px;
+        height: 15px;
+        border-radius: 40px;
         font-weight: bold;
   
         &:hover {
           background-color: inherit !important;
-          color: white !important;
-          border: nonegi;
+          // color: white !important;
         }
       }
     }
   
     .navegacionFiltros {
-      position: absolute;
-      top: 0;
       background: white;
       width: 100%;
       padding: 1%;
@@ -1048,6 +1080,7 @@
             margin-bottom: 0.2em;
             color: #555;
             width: calc(25% - 0.2em);
+            border-radius: 100px;
   
             @media all and (max-width: 850px) {
               width: calc(90% - 0.2em);
@@ -1065,7 +1098,7 @@
               margin-top: -10px;
               font-size: 0.8em;
               border: 1px solid #ececec;
-              @include border-radius(3px);
+              @include border-radius(30px);
             }
   
             &:hover {}

@@ -17,5 +17,8 @@
 ?>
 <meta property="og:image" content="<?php echo $img ?>" />
 
+<script type="text/javascript">
+    var webURL = '<?php echo get_bloginfo('url'); ?>';
+</script>
 
 <?php wp_head(); ?>
