@@ -13,7 +13,7 @@ $imagen = get_field('imagen');
 
 ?>
 
-<div class="banner cita-imagen btm">
+<div class="banner cita-imagen btm <?php echo $block['className'] ?>">
     <div class="contenedor-banner">
         <div class="left">
             <div class="cita"><?php echo $cita; ?></div>

@@ -59,6 +59,9 @@ function header_scripts()
         wp_register_script('bloque-equipo', get_template_directory_uri() . '/js/bloques/bloque-equipo.js', array('jquery'), '1.0.0');
         wp_enqueue_script('bloque-equipo');
 
+        wp_register_script('slider-columnas', get_template_directory_uri() . '/js/bloques/slider-columnas.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('slider-columnas');
+
         wp_register_script('agenda', get_template_directory_uri() . '/js/bloques/agenda.js', array('jquery'), '1.0.0');
         wp_enqueue_script('agenda');
 
