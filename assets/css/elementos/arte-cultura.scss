@@ -196,6 +196,18 @@
 
         span {
           border: none;
+          position: relative;
+
+          &::before {
+            content: '\E80E';
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            transform: translate(0, -50%);
+            top: 50%;
+            left: 0;
+            font-family: 'mnm';
+          }
         }
       }
     }
