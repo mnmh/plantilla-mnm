@@ -907,15 +907,15 @@
         &::before {
           content: 'nuevo';
           position: absolute;
-          background-color: #3e6cd1;
+          background-color: $azul;
           color: white;
           text-transform: uppercase;
           font-weight: 700;
-          border: 1px solid white;
+          border: none;
           padding: 4px 12px;
           top: 10px;
           right: 10px;
-          font-size: 0.6em;
+          font-size: 0.7em;
           border-radius: 50px;
         }
       }
