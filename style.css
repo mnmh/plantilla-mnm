@@ -4858,7 +4858,7 @@ body#tinymce {
     display: flex;
     border-radius: 50px;
     padding-left: 15px;
-    margin-right: 5px;
+    margin-right: 16px;
     cursor: pointer; }
     #secondary_menu .item_drop span {
       margin-left: 5px;
