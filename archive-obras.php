@@ -101,6 +101,12 @@
 				<div class="title">
 					<?php echo $item->post_title?>
 				</div>
+				<ul class="autor_listado">
+					<?php foreach($terms_autor as $term): ?>
+						<li><?php echo $term->name?></li>
+					<?php endforeach; ?>
+				</ul>
+
 				<ul class="disciplina">
 					<?php foreach($terms_disciplina as $term): ?>
 						<?php if($term->term_id != 142 && $term->term_id != 143 && $term->term_id != 141): ?>
@@ -114,13 +120,7 @@
 							<!-- </div> -->
                         <?php endif;?>
 					<?php endforeach; ?>
-				</ul>
-				<ul class="autor_listado">
-					<?php foreach($terms_autor as $term): ?>
-						<li><?php echo $term->name?></li>
-					<?php endforeach; ?>
-				</ul>
-				
+				</ul>		
 			</a>
             <?php $prev_item = $item->ID; ?>
             <?php endif; endforeach;?>
