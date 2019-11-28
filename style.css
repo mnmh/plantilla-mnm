@@ -7488,6 +7488,22 @@ blockquote {
 .titulo-modulo.center {
   text-align: center; }
 
+.destacados-cc {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto; }
+  .destacados-cc ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+    .destacados-cc ul li {
+      width: 47.5%; }
+      .destacados-cc ul li a {
+        display: block; }
+        .destacados-cc ul li a .img {
+          height: 300px;
+          border-radius: 5px; }
+
 .columnas {
   display: flex; }
   .columnas .left {
