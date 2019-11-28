@@ -521,5 +521,6 @@ include( get_theme_file_path("/includes/campos/bloque-equipo.php") );
 include( get_theme_file_path("/includes/campos/bloque-cifras.php") );
 include( get_theme_file_path("/includes/campos/galeria-carrousel.php") );
 include( get_theme_file_path("/includes/campos/slider-columnas.php") );
+include( get_theme_file_path("/includes/campos/titulo-modulo.php") );
 
 ?>

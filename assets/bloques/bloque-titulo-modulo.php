@@ -8,7 +8,7 @@
 $id = 'bloque-' . $block['id'];
 ?>
 
-<div class="titulo-modulo">
-    <h1><?php echo get_field('titulo') ?></h1>
-    <p><?php echo get_field('subitutlo') ?></p>
+<div class="titulo-modulo <?php echo $block['className'] ?>">
+    <h2 class="sec"><?php echo get_field('titulo'); ?></h2>
+    <div class="subtitulo-sec"><?php echo get_field('subtitulo'); ?></div>
 </div>
