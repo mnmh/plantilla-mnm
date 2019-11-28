@@ -1,11 +1,24 @@
 .titulo-modulo {
     .sec {
-        max-width: 1600px;
+        max-width: 1600px !important;
         margin: 0 auto;
+        font-size: 1.5em;
         display: block;
         width: 100%;
     }
+    a {
+        color: $azul;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
     &.center {
         text-align: center;
+        
+        .sec {
+            font-size: 2em;
+        }
     }
 }
