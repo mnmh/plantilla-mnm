@@ -34,6 +34,17 @@ button {
   border-bottom: 1px solid #ccc;
   background-color: white;
 
+  #title {
+    svg {
+      width: 320px;
+      height: 45px;
+
+      path {
+        fill: #3b3b3b;
+      }
+    }
+  }
+
   .main-wrapper {
     display: flex;
     justify-content: space-between;

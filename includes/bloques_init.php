@@ -289,6 +289,24 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'destacados', 'cc'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'cabezote colores',
+			'title'				=> __('Cabezote colores'),
+			'description'		=> __('Un bloque para mostar un cabezote con un fondo de color'),
+			'render_callback'	=> 'bloque_callback_bloque_cabezote_colores',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'cabezote', 'colores'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_bloque_cabezote_colores( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 
@@ -522,5 +540,6 @@ include( get_theme_file_path("/includes/campos/bloque-cifras.php") );
 include( get_theme_file_path("/includes/campos/galeria-carrousel.php") );
 include( get_theme_file_path("/includes/campos/slider-columnas.php") );
 include( get_theme_file_path("/includes/campos/titulo-modulo.php") );
+include( get_theme_file_path("/includes/campos/destacados-cc.php") );
 
 ?>

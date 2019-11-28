@@ -170,6 +170,12 @@ Despliega un carrousel con testimonios aleatorios de la base de datos.
 
 ![bloque-slider-columna-mnm](./img/readme/slider-columnas.jpg)
 
+### cabezote-colores
+
+### titulo-modulo
+
+### destacados-cc
+
 
 
 ## Estructura de la carpeta /assets/template-parts
