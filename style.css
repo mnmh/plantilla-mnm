@@ -4340,6 +4340,8 @@ body#tinymce {
     margin-bottom: 5vh !important; }
   #contenidoGeneral .btm {
     margin-bottom: 10vh !important; }
+  #contenidoGeneral .top {
+    margin-top: 10vh !important; }
   #contenidoGeneral .btmdoble {
     margin-bottom: 20vh !important; }
   #contenidoGeneral .wp-block-image {
@@ -7476,6 +7478,31 @@ blockquote {
       visibility: visible;
       max-width: 300px !important;
       font-size: 14px !important; }
+
+.titulo-modulo .sec {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: block;
+  width: 100%; }
+
+.titulo-modulo.center {
+  text-align: center; }
+
+.destacados-cc {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto; }
+  .destacados-cc ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+    .destacados-cc ul li {
+      width: 47.5%; }
+      .destacados-cc ul li a {
+        display: block; }
+        .destacados-cc ul li a .img {
+          height: 300px;
+          border-radius: 5px; }
 
 .columnas {
   display: flex; }

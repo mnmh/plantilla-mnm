@@ -1,0 +1,24 @@
+.destacados-cc {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        li {
+            width: 47.5%;
+
+            a {
+                display: block;
+
+                .img {
+                    height: 300px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
