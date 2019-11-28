@@ -11,8 +11,6 @@
 
 
 <article class="page-obras">
-	<h2>Todas las obras de Arte y Cultura</h2>
-
 	<?php get_template_part('/assets/template-parts/navegacion-obras-nuevo') ?>
 
 	<div class="navegacionFiltros">
