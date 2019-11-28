@@ -7499,8 +7499,9 @@ blockquote {
       font-size: 14px !important; }
 
 .titulo-modulo .sec {
-  max-width: 1600px;
+  max-width: 1600px !important;
   margin: 0 auto;
+  font-size: 1.5em;
   display: block;
   width: 100%; }
 
@@ -7512,6 +7513,8 @@ blockquote {
 
 .titulo-modulo.center {
   text-align: center; }
+  .titulo-modulo.center .sec {
+    font-size: 2em; }
 
 .destacados-cc {
   display: flex;
