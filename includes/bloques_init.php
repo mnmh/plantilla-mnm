@@ -269,6 +269,42 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'carrousel', 'slider', 'columna'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'titulo modulo',
+			'title'				=> __('Bloque titulo modulo'),
+			'description'		=> __('Un bloque para mostrar un titulo'),
+			'render_callback'	=> 'bloque_callback_bloque_titulo_modulo',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'titulo', 'modulo'),
+		));
+
+		acf_register_block(array(
+			'name'				=> 'destacados cc',
+			'title'				=> __('Bloque destacados cc'),
+			'description'		=> __('Un bloque para mostrar un titulo'),
+			'render_callback'	=> 'bloque_callback_bloque_destacados_cc',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'destacados', 'cc'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_bloque_destacados_cc( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_bloque_titulo_modulo( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 

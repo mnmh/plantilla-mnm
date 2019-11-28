@@ -7477,6 +7477,9 @@ blockquote {
       max-width: 300px !important;
       font-size: 14px !important; }
 
+.titulo-modulo {
+  text-align: center; }
+
 .columnas {
   display: flex; }
   .columnas .left {
