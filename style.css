@@ -3841,6 +3841,11 @@ button {
   transition: box-shadow 300ms, color 300ms, background 300ms, padding 200ms;
   border-bottom: 1px solid #ccc;
   background-color: white; }
+  #top_menu #title svg {
+    width: 320px;
+    height: 45px; }
+    #top_menu #title svg path {
+      fill: #3b3b3b; }
   #top_menu .main-wrapper {
     display: flex;
     justify-content: space-between;
