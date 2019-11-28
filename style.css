@@ -3843,9 +3843,13 @@ button {
   background-color: white; }
   #top_menu #title svg {
     width: 320px;
-    height: 45px; }
+    height: 45px;
+    transition: box-shadow 300ms, color 300ms, background 300ms, padding 200ms; }
     #top_menu #title svg path {
       fill: #3b3b3b; }
+  #top_menu.small #title svg {
+    width: 270px;
+    height: 38px; }
   #top_menu .main-wrapper {
     display: flex;
     justify-content: space-between;
@@ -7499,6 +7503,12 @@ blockquote {
   margin: 0 auto;
   display: block;
   width: 100%; }
+
+.titulo-modulo a {
+  color: #3e6cd1;
+  text-decoration: underline; }
+  .titulo-modulo a:hover {
+    text-decoration: none; }
 
 .titulo-modulo.center {
   text-align: center; }

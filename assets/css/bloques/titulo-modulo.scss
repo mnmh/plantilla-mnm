@@ -5,6 +5,14 @@
         display: block;
         width: 100%;
     }
+    a {
+        color: $azul;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
     &.center {
         text-align: center;
     }
