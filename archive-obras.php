@@ -10,6 +10,7 @@
 		echo render_block($blocks[3]);
 		echo render_block($blocks[4]);
 		echo render_block($blocks[5]);
+		echo render_block($blocks[6]);
 	endif;
 ?>
 
@@ -136,7 +137,7 @@
 
 <?php
 	if(count($blocks) > 5):
-		for($i = 6; $i < count($blocks); $i++):
+		for($i = 7; $i < count($blocks); $i++):
 			echo render_block($blocks[$i]);
 		endfor;
 	endif;
