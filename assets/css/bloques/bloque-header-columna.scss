@@ -100,4 +100,22 @@
             }
         }
     }
+
+    &.colores {
+        background: $amarillo;
+
+        .left .texto {
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        &.azul {
+            background: $azul;
+        }
+
+        &.gris {
+            background: $gris;
+        }
+    }
 }
