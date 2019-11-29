@@ -8,7 +8,7 @@
 $id = 'bloque-' . $block['id'];
 ?>
 
-<div class="destacados-cc">
+<div class="destacados-cc <?php echo $block['className'] ?>">
     <ul class="listado">
         <?php if(have_rows('elementos')): while(have_rows('elementos')): the_row(); ?>
         <?php
