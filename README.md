@@ -174,7 +174,19 @@ Despliega un carrousel con testimonios aleatorios de la base de datos.
 
 ### titulo-modulo
 
+![bloque-slider-columna-mnm](./img/readme/titulo-modulo.jpg)
+
 ### destacados-cc
+
+![bloque-slider-columna-mnm](./img/readme/destacados-cc.jpg)
+
+### carrousel-color-imagen
+
+![bloque-slider-columna-mnm](./img/readme/cabezote-color-imagen.jpg)
+
+### carrousel-color-imagen-separado
+
+![bloque-slider-columna-mnm](./img/readme/cabezote-color-imagen-separado.jpg)
 
 
 
