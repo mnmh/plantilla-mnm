@@ -7528,19 +7528,21 @@ blockquote {
     width: 100%;
     justify-content: space-between; }
     .destacados-cc ul li {
-      width: 47.5%; }
+      width: 49.2%; }
       .destacados-cc ul li a {
         display: block; }
         .destacados-cc ul li a .img {
-          height: 300px;
+          height: 350px;
           border-radius: 5px; }
       .destacados-cc ul li .name {
-        padding: 10px; }
+        padding: 10px 0 10px 0; }
       .destacados-cc ul li .name h1 {
-        font-size: 1.25em; }
+        font-size: 1.25em;
+        padding-bottom: 4px; }
       .destacados-cc ul li .name h4 {
+        font-family: 'Inter';
         font-weight: normal;
-        color: #999; }
+        color: #f4f4f4; }
 
 .columnas {
   display: flex; }
