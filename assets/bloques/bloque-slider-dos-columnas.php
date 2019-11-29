@@ -7,7 +7,7 @@
 // id unico para el bloque
 $id = 'bloque-' . $block['id'];
 ?>
-<div class="slider-columna btm">
+<div class="slider-columna <?php echo $block['className'] ?>">
     <div class="left">
         <div class="subtitulo">
             

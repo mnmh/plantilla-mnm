@@ -7595,7 +7595,8 @@ blockquote {
         display: block; }
         .destacados-cc ul li a .img {
           height: 300px;
-          border-radius: 5px; }
+          border-radius: 5px;
+          background-size: cover; }
       .destacados-cc ul li .name {
         padding: 10px; }
       .destacados-cc ul li .name h1 {
