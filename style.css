@@ -5641,11 +5641,25 @@ body#tinymce {
   .slider-columna.amarillo .left {
     background: #ffbc54; }
   .slider-columna.gris .left {
-    background: #9A9A9A; }
+    background: #3B3B3B; }
   .slider-columna.half {
     position: relative; }
     .slider-columna.half .left {
-      width: 70%; }
+      width: 70%;
+      padding-left: 7vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: unset; }
+      .slider-columna.half .left .subtitulo {
+        padding: 0px;
+        font-size: 15px;
+        color: #9A9A9A; }
+      .slider-columna.half .left .titulo {
+        max-width: 600px;
+        line-height: initial;
+        padding: 0 0 12px 0; }
+      .slider-columna.half .left .des {
+        max-width: 400px; }
     .slider-columna.half .right {
       width: 30%;
       position: absolute;
