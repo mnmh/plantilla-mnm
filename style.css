@@ -5659,7 +5659,8 @@ body#tinymce {
         line-height: initial;
         padding: 0 0 12px 0; }
       .slider-columna.half .left .des {
-        max-width: 400px; }
+        max-width: 400px;
+        margin-bottom: 16px; }
     .slider-columna.half .right {
       width: 30%;
       position: absolute;
