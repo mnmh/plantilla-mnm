@@ -6140,7 +6140,7 @@ blockquote {
     transition: box-shadow 300ms;
     display: inline-block;
     border-radius: 6px;
-    width: 32.5%; }
+    width: 33%; }
     @media screen and (min-width: 850px) {
       .carrousel-vertical-container .profiles-item {
         margin-right: 1.25em; } }
