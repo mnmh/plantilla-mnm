@@ -1335,15 +1335,39 @@
 
     &.gris {
       .left {
-        background: $gris;
+        background: $black;
       }
     }
 
     &.half {
       position: relative;
+
       .left {
         width: 70%;
+        padding-left: 7vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: unset;
+        
+
+        .subtitulo {
+          padding: 0px;
+          font-size: 15px;
+          color: $gris;
+        }
+
+        .titulo {
+          max-width: 600px;
+          line-height: initial;
+          padding: 0 0 12px 0;
+        }
+
+        .des {
+          max-width: 400px;
+          margin-bottom: 16px;
+        }
       }
+
       .right {
         width: 30%;
         position: absolute;
