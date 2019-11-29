@@ -107,6 +107,14 @@
             margin-right: em(20);
         }
 
+        @media #{$medium-and-down} {
+            width: 49%;
+        }
+
+        @media #{$small-and-down} {
+            width: 100%;
+        }
+
         .inside_content {
             display: flex;
             flex-wrap: wrap;
@@ -132,7 +140,7 @@
 
         &.is-selected {
             .inside_content {
-                background: rgba(0, 0, 0, 0.3);
+                background: rgba(0, 0, 0, 0.2);
             }
 
             .descripcion {

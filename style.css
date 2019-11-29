@@ -6144,6 +6144,12 @@ blockquote {
     @media screen and (min-width: 850px) {
       .carrousel-vertical-container .profiles-item {
         margin-right: 1.25em; } }
+    @media only screen and (max-width: 980px) {
+      .carrousel-vertical-container .profiles-item {
+        width: 49%; } }
+    @media only screen and (max-width: 650px) {
+      .carrousel-vertical-container .profiles-item {
+        width: 100%; } }
     .carrousel-vertical-container .profiles-item .inside_content {
       display: flex;
       flex-wrap: wrap;
@@ -6162,7 +6168,7 @@ blockquote {
       .carrousel-vertical-container .profiles-item .inside_content .descripcion {
         display: none; }
     .carrousel-vertical-container .profiles-item.is-selected .inside_content {
-      background: rgba(0, 0, 0, 0.3); }
+      background: rgba(0, 0, 0, 0.2); }
     .carrousel-vertical-container .profiles-item.is-selected .descripcion {
       display: block; }
     .carrousel-vertical-container .profiles-item a {
