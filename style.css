@@ -28,7 +28,10 @@ a {
   position: relative;
   overflow: auto;
   transition: all 0.5s ease;
-  width: 100%; }
+  width: 98%;
+  margin: 1%;
+  margin-top: 0;
+  margin-bottom: 0; }
   .page-template-template-laboratorio .wrap {
     padding-bottom: 0; }
   .wrap.move-left {
