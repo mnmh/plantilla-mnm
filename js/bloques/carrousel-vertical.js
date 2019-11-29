@@ -47,6 +47,7 @@
 
     window.onload = ()=>{
         // console.log('load');
+        window.dispatchEvent(new Event('resize'));
     }
 
 })(jQuery, this);
