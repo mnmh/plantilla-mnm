@@ -9,7 +9,7 @@
         justify-content: space-between;
 
         li {
-            width: 47.5%;
+            width: 49.2%;
 
             a {
                 display: block;
@@ -22,16 +22,18 @@
             }
 
             .name {
-                padding: 10px;
+                padding: 10px 0 10px 0;
             }
             
             .name h1 {
                 font-size: 1.25em;
+                padding-bottom: 4px;
             }
             
             .name h4 {
+                font-family: 'Inter';
                 font-weight: normal;
-                color: #999;
+                color: $gris;
             }
         }
     }
