@@ -3840,7 +3840,27 @@ button {
   left: 0;
   transition: box-shadow 300ms, color 300ms, background 300ms, padding 200ms;
   border-bottom: 1px solid #ccc;
-  background-color: white; }
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #top_menu .sociales {
+    display: flex;
+    padding-right: 10px; }
+    #top_menu .sociales .item {
+      margin-left: 3px;
+      display: flex;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      align-items: center;
+      justify-content: center; }
+      #top_menu .sociales .item svg {
+        width: 50%; }
+        #top_menu .sociales .item svg path {
+          fill: #9A9A9A; }
+      #top_menu .sociales .item:hover svg path {
+        fill: #333; }
   #top_menu #title svg {
     width: 320px;
     height: 45px;
@@ -7515,6 +7535,8 @@ blockquote {
   text-align: center; }
   .titulo-modulo.center .sec {
     font-size: 2em; }
+  .titulo-modulo.center .subtitulo-sec {
+    max-width: 600px; }
 
 .destacados-cc {
   display: flex;
