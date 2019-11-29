@@ -7544,12 +7544,8 @@ blockquote {
   .titulo-modulo.center .sec {
     font-size: 2em; }
   .titulo-modulo.center .subtitulo-sec {
-<<<<<<< HEAD
     max-width: 800px;
     margin-top: 12px; }
-=======
-    max-width: 600px; }
->>>>>>> 4b2d472341da95a4fd62b2f3d458b86ebefd5245
 
 .destacados-cc {
   display: flex;
