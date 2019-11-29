@@ -33,6 +33,38 @@ button {
   transition: box-shadow 300ms, color 300ms, background 300ms, padding 200ms;
   border-bottom: 1px solid #ccc;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .sociales {
+    display: flex;
+    padding-right: 10px;
+
+    .item {
+      margin-left: 3px;
+      display: flex;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 50%;
+
+        path {
+          fill: $gris;
+        }
+      }
+
+      &:hover {
+        svg path {
+          fill: #333;
+        }
+      }
+    }
+  }
 
   #title {
     svg {
