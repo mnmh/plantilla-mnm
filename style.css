@@ -7515,6 +7515,9 @@ blockquote {
   text-align: center; }
   .titulo-modulo.center .sec {
     font-size: 2em; }
+  .titulo-modulo.center .subtitulo-sec {
+    max-width: 800px;
+    margin-top: 12px; }
 
 .destacados-cc {
   display: flex;
