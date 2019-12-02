@@ -6190,7 +6190,8 @@ blockquote {
     width: 100%;
     max-width: 1600px;
     margin: auto;
-    clip-path: inset(-100vw -100vw -100vw 0); }
+    clip-path: inset(-100vw -100vw -100vw 0);
+    position: relative; }
   .carrousel-vertical-container .profiles-item {
     margin-right: 0.3125em;
     overflow: hidden;
