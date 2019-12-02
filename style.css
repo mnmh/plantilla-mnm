@@ -7593,6 +7593,26 @@ blockquote {
       max-width: 300px !important;
       font-size: 14px !important; }
 
+.iconos-cc {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  background: #f3f3f3; }
+
+.iconos-cc a.item {
+  display: block;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.iconos-cc a.item > div {
+  width: 100%; }
+
+.iconos-cc .icon {
+  width: calc(100% - 20px);
+  padding: 10px; }
+
 .titulo-modulo .sec {
   max-width: 1600px !important;
   margin: 0 auto;

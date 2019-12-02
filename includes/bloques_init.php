@@ -319,6 +319,25 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'cabezote', 'colores'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'barra iconos cc',
+			'title'				=> __('Iconos CC'),
+			'description'		=> __('Un bloque para poner los iconos del CC'),
+			'render_callback'	=> 'bloque_callback_iconos_cc',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'iconos', 'cc'),
+		));
+	}
+}
+
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_iconos_cc( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 
