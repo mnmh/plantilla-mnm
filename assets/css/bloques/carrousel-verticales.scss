@@ -31,8 +31,8 @@
         width: 95%;
         left: 2.5%;
 
-        @media #{$large-and-down} {
-            top: 110% !important;
+        @media #{$small-and-down} {
+            top: 105% !important;
         }
 
 

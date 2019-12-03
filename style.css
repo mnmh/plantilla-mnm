@@ -6161,9 +6161,9 @@ blockquote {
     top: 50%;
     width: 95%;
     left: 2.5%; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 650px) {
       .carrousel-vertical-container .hori_scroll {
-        top: 110% !important; } }
+        top: 105% !important; } }
     .carrousel-vertical-container .hori_scroll div {
       border-radius: 20px;
       opacity: 1;
@@ -7638,7 +7638,7 @@ blockquote {
         display: block; } }
     .destacados-cc ul li {
       width: 49.2%; }
-      @media only screen and (max-width: 980px) {
+      @media only screen and (max-width: 1200px) {
         .destacados-cc ul li {
           width: 100%;
           margin-bottom: 40px; } }
@@ -7657,7 +7657,7 @@ blockquote {
         font-family: 'Inter';
         font-weight: normal;
         color: #9A9A9A; }
-        @media only screen and (max-width: 980px) {
+        @media only screen and (max-width: 1200px) {
           .destacados-cc ul li .name h4 {
             margin-left: 0 !important; } }
 

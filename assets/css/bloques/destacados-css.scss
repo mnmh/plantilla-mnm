@@ -15,7 +15,7 @@
         li {
             width: 49.2%;
 
-            @media #{$medium-and-down} {
+            @media #{$large-and-down} {
                 width: 100%;
                 margin-bottom: 40px;
             }
@@ -44,7 +44,7 @@
                 font-weight: normal;
                 color: $gris;
 
-                @media #{$medium-and-down} {
+                @media #{$large-and-down} {
                     margin-left: 0 !important;
                 }
                 
