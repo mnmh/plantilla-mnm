@@ -7622,8 +7622,15 @@ blockquote {
     display: flex;
     width: 100%;
     justify-content: space-between; }
+    @media only screen and (max-width: 980px) {
+      .destacados-cc ul {
+        display: block; } }
     .destacados-cc ul li {
       width: 49.2%; }
+      @media only screen and (max-width: 980px) {
+        .destacados-cc ul li {
+          width: 100%;
+          margin-bottom: 40px; } }
       .destacados-cc ul li a {
         display: block; }
         .destacados-cc ul li a .img {
@@ -7639,6 +7646,9 @@ blockquote {
         font-family: 'Inter';
         font-weight: normal;
         color: #9A9A9A; }
+        @media only screen and (max-width: 980px) {
+          .destacados-cc ul li .name h4 {
+            margin-left: 0 !important; } }
 
 .columnas {
   display: flex; }
