@@ -7660,7 +7660,7 @@ blockquote {
     display: flex;
     width: 100%;
     justify-content: space-between; }
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 1200px) {
       .destacados-cc ul {
         display: block; } }
     .destacados-cc ul li {

@@ -8,8 +8,9 @@
         width: 100%;
         justify-content: space-between;
 
-        @media #{$medium-and-down} {
+        @media #{$large-and-down} {
             display: block;
+
         }
 
         li {
