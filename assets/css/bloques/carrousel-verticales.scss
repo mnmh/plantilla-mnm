@@ -3,10 +3,6 @@
     position: relative;
     margin-bottom: 10vh;
 
-    @media #{$small-and-down} {
-        margin-bottom: 15vh;
-    }
-
     .sec {
         display: block;
         width: 100%;
@@ -35,8 +31,8 @@
         width: 95%;
         left: 2.5%;
 
-        @media #{$large-and-down} {
-            top: 110% !important;
+        @media #{$small-and-down} {
+            top: 105% !important;
         }
 
 
@@ -93,6 +89,10 @@
         margin: auto;
         clip-path: inset( -100vw -100vw -100vw 0 );
         position: relative;
+
+        @media #{$small-and-down} {
+            margin-bottom: 15vh;
+        }
     }
 
     .profiles-item {
@@ -102,14 +102,14 @@
         transition: box-shadow 300ms;
         display: inline-block;
         border-radius: 6px;
-        width: 33%;
+        width: 32.2%;
 
         @media screen and (min-width: 850px) {
             margin-right: em(20);
         }
 
         @media #{$medium-and-down} {
-            width: 49%;
+            width: 48.2%;
         }
 
         @media #{$small-and-down} {
@@ -174,7 +174,7 @@
 
             &.itinerancias {
                 width: 100%;
-                height: 35vw;
+                height: em(700);
                 min-width: 250px;
                 min-height: 400px;
 

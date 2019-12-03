@@ -8,8 +8,18 @@
         width: 100%;
         justify-content: space-between;
 
+        @media #{$large-and-down} {
+            display: block;
+
+        }
+
         li {
             width: 49.2%;
+
+            @media #{$large-and-down} {
+                width: 100%;
+                margin-bottom: 40px;
+            }
 
             a {
                 display: block;
@@ -34,6 +44,11 @@
                 font-family: 'Inter';
                 font-weight: normal;
                 color: $gris;
+
+                @media #{$large-and-down} {
+                    margin-left: 0 !important;
+                }
+                
             }
         }
     }
