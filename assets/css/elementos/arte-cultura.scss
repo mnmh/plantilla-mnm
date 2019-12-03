@@ -1398,6 +1398,7 @@
 
       @media #{$small-and-down} {
         height: 90vh;
+        max-height: 800px;
       }
 
       .left {
