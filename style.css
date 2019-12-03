@@ -5682,23 +5682,49 @@ body#tinymce {
     background: #3B3B3B; }
   .slider-columna.half {
     position: relative; }
+    @media only screen and (max-width: 980px) {
+      .slider-columna.half {
+        height: 80vh; } }
+    @media only screen and (max-width: 650px) {
+      .slider-columna.half {
+        height: 90vh; } }
     .slider-columna.half .left {
       width: 70%;
       padding-left: 7vw;
       flex-direction: column;
       justify-content: center;
-      align-items: unset; }
+      align-items: unset;
+      position: relative; }
+      @media only screen and (max-width: 980px) {
+        .slider-columna.half .left {
+          height: 60%;
+          width: 100%;
+          justify-content: flex-end;
+          padding-bottom: 20px; } }
+      @media only screen and (max-width: 650px) {
+        .slider-columna.half .left {
+          height: 70%; } }
       .slider-columna.half .left .subtitulo {
         padding: 0px;
         font-size: 15px;
         color: #9A9A9A; }
+        @media only screen and (max-width: 980px) {
+          .slider-columna.half .left .subtitulo {
+            font-size: 12px; } }
       .slider-columna.half .left .titulo {
-        max-width: 600px;
+        max-width: 60%;
         line-height: initial;
         padding: 0 0 12px 0; }
+        @media only screen and (max-width: 980px) {
+          .slider-columna.half .left .titulo {
+            max-width: 100%; } }
       .slider-columna.half .left .des {
-        max-width: 400px;
+        max-width: 380px;
         margin-bottom: 16px; }
+        @media only screen and (max-width: 980px) {
+          .slider-columna.half .left .des {
+            max-width: 100%;
+            font-size: 14px; } }
     .slider-columna.half .right {
       width: 30%;
       position: absolute;
@@ -5707,6 +5733,21 @@ body#tinymce {
       right: 5vw;
       top: 50%;
       transform: translate(0px, -50%); }
+      @media only screen and (max-width: 980px) {
+        .slider-columna.half .right {
+          top: 25%;
+          transform: translate(0px, -25%);
+          height: 50%;
+          width: 80%;
+          left: 0;
+          right: 0;
+          margin: auto; } }
+      @media only screen and (max-width: 650px) {
+        .slider-columna.half .right {
+          width: 90%;
+          top: 10%;
+          transform: translate(0px, -10%);
+          height: 45%; } }
   .slider-columna .sociales {
     display: flex;
     padding-right: 10px; }
