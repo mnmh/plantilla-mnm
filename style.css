@@ -5276,6 +5276,14 @@ body#tinymce {
     position: relative;
     overflow: hidden;
     max-width: 300px; }
+    @media only screen and (max-width: 980px) {
+      .page-obras .moreNav {
+        width: 49%;
+        max-width: 100%; } }
+    @media only screen and (max-width: 650px) {
+      .page-obras .moreNav {
+        width: 100%;
+        max-width: 100%; } }
     .page-obras .moreNav:before {
       content: 'cargar más';
       display: table;
