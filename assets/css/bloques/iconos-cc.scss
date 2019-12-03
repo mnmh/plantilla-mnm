@@ -4,13 +4,10 @@
     padding: 10px;
     text-align: center;
     background: #f3f3f3;
-}
 
-.iconos-cc a.item {
-    display: block;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    .name {
+        color: #999;
+    }
 }
 
 .iconos-cc a.item > div {
@@ -20,4 +17,30 @@
 .iconos-cc .icon {
     width: calc(100% - 20px);
     padding: 10px;
+
+    svg {
+        width: 40px;
+
+        path, polygon {
+            fill: #dcdcdc;
+            transition: fill 0.4s ease;
+        }
+    }
+}
+
+.iconos-cc a.item {
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &:hover {
+        .icon {
+            svg {
+                path, polygon {
+                    fill: #999;
+                }
+            }
+        }
+    }
 }

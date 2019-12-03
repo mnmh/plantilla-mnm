@@ -7599,12 +7599,8 @@ blockquote {
   padding: 10px;
   text-align: center;
   background: #f3f3f3; }
-
-.iconos-cc a.item {
-  display: block;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+  .iconos-cc .name {
+    color: #999; }
 
 .iconos-cc a.item > div {
   width: 100%; }
@@ -7612,6 +7608,19 @@ blockquote {
 .iconos-cc .icon {
   width: calc(100% - 20px);
   padding: 10px; }
+  .iconos-cc .icon svg {
+    width: 40px; }
+    .iconos-cc .icon svg path, .iconos-cc .icon svg polygon {
+      fill: #dcdcdc;
+      transition: fill 0.4s ease; }
+
+.iconos-cc a.item {
+  display: block;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .iconos-cc a.item:hover .icon svg path, .iconos-cc a.item:hover .icon svg polygon {
+    fill: #999; }
 
 .titulo-modulo .sec {
   max-width: 1600px !important;
