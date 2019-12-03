@@ -900,6 +900,16 @@
       padding-bottom: 60px;
       overflow: hidden;
       max-width: 400px;
+
+      @media #{$medium-and-down} {
+        width: 49%;
+        max-width: 100%;
+      }
+
+      @media #{$small-and-down} {
+        width: 100%;
+        max-width: 100%;
+      }
   
       &.sticky {
         position: relative;
@@ -918,11 +928,6 @@
           font-size: 0.7em;
           border-radius: 50px;
         }
-      }
-  
-      @media all and (max-width: 850px) {
-        width: 100%;
-        max-width: 100%;
       }
   
       &.fresh {

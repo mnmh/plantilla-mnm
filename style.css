@@ -5335,6 +5335,14 @@ body#tinymce {
     padding-bottom: 60px;
     overflow: hidden;
     max-width: 400px; }
+    @media only screen and (max-width: 980px) {
+      .page-obras .obra {
+        width: 49%;
+        max-width: 100%; } }
+    @media only screen and (max-width: 650px) {
+      .page-obras .obra {
+        width: 100%;
+        max-width: 100%; } }
     .page-obras .obra.sticky {
       position: relative; }
       .page-obras .obra.sticky::before {
@@ -5350,10 +5358,6 @@ body#tinymce {
         right: 10px;
         font-size: 0.7em;
         border-radius: 50px; }
-    @media all and (max-width: 850px) {
-      .page-obras .obra {
-        width: 100%;
-        max-width: 100%; } }
     .page-obras .obra.fresh {
       opacity: 0; }
     .page-obras .obra.autor {
