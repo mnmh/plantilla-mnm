@@ -5282,8 +5282,7 @@ body#tinymce {
         max-width: 100%; } }
     @media only screen and (max-width: 650px) {
       .page-obras .moreNav {
-        width: 100%;
-        max-width: 100%; } }
+        width: 100%; } }
     .page-obras .moreNav:before {
       content: 'cargar más';
       display: table;
@@ -5346,11 +5345,11 @@ body#tinymce {
     @media only screen and (max-width: 980px) {
       .page-obras .obra {
         width: 49%;
-        max-width: 100%; } }
+        max-width: 100%;
+        padding-bottom: 20px; } }
     @media only screen and (max-width: 650px) {
       .page-obras .obra {
-        width: 100%;
-        max-width: 100%; } }
+        width: 100%; } }
     .page-obras .obra.sticky {
       position: relative; }
       .page-obras .obra.sticky::before {

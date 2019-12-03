@@ -836,7 +836,6 @@
 
       @media #{$small-and-down} {
         width: 100%;
-        max-width: 100%;
       }
   
       &:before {
@@ -915,11 +914,12 @@
       @media #{$medium-and-down} {
         width: 49%;
         max-width: 100%;
+        padding-bottom: 20px;
       }
 
       @media #{$small-and-down} {
         width: 100%;
-        max-width: 100%;
+
       }
   
       &.sticky {
