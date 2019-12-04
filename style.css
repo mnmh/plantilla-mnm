@@ -7674,7 +7674,8 @@ blockquote {
     .personas_slider .persona_item .image-wrapper {
       width: 300px;
       height: 400px;
-      background-size: cover; }
+      background-size: cover;
+      border-radius: 6px; }
     .personas_slider .persona_item .inside .des {
       visibility: visible;
       max-width: 300px !important;
