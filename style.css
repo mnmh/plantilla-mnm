@@ -6909,9 +6909,14 @@ blockquote {
 .tarjetas .item {
   width: 24%;
   margin: 0.5%; }
-  @media all and (max-width: 850px) {
+  @media only screen and (max-width: 980px) {
     .tarjetas .item {
-      width: 99%; } }
+      width: 49%;
+      max-width: 100%;
+      padding-bottom: 20px; } }
+  @media only screen and (max-width: 650px) {
+    .tarjetas .item {
+      width: 100%; } }
   .tarjetas .item.hide {
     display: none; }
   .tarjetas .item .img {
