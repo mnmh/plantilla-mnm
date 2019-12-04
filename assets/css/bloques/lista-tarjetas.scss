@@ -144,10 +144,17 @@
     .item {
         width: 24%;
         margin: 0.5%;
-        border: #C9C9C9 1px solid;
+        
 
-        @media all and (max-width: 850px) {
-            width: 99%;
+        @media #{$medium-and-down} {
+            width: 49%;
+            max-width: 100%;
+            padding-bottom: 20px;
+        }
+    
+          @media #{$small-and-down} {
+            width: 100%;
+    
         }
 
         &.hide {
@@ -161,10 +168,11 @@
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
+            border-radius: 6px;
         }
 
         .tarjeta-description {
-            padding: 15px;
+            padding: 15px 0;
 
             h3 {
                 text-align: left;

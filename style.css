@@ -6416,7 +6416,8 @@ blockquote {
       top: 0;
       left: 0;
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      border-radius: 6px; }
     .botones-carrousel .boton .info {
       position: absolute;
       bottom: 0;
@@ -6442,7 +6443,8 @@ blockquote {
       width: 100%;
       height: 100%;
       background: black;
-      opacity: 0.3; }
+      opacity: 0.3;
+      border-radius: 6px; }
     .botones-carrousel .boton:hover .btn {
       opacity: 1; }
     @media all and (min-width: 1024px) {
@@ -6906,11 +6908,15 @@ blockquote {
 
 .tarjetas .item {
   width: 24%;
-  margin: 0.5%;
-  border: #C9C9C9 1px solid; }
-  @media all and (max-width: 850px) {
+  margin: 0.5%; }
+  @media only screen and (max-width: 980px) {
     .tarjetas .item {
-      width: 99%; } }
+      width: 49%;
+      max-width: 100%;
+      padding-bottom: 20px; } }
+  @media only screen and (max-width: 650px) {
+    .tarjetas .item {
+      width: 100%; } }
   .tarjetas .item.hide {
     display: none; }
   .tarjetas .item .img {
@@ -6919,9 +6925,10 @@ blockquote {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative; }
+    position: relative;
+    border-radius: 6px; }
   .tarjetas .item .tarjeta-description {
-    padding: 15px; }
+    padding: 15px 0; }
     .tarjetas .item .tarjeta-description h3 {
       text-align: left;
       margin-bottom: 5px;
@@ -7667,7 +7674,8 @@ blockquote {
     .personas_slider .persona_item .image-wrapper {
       width: 300px;
       height: 400px;
-      background-size: cover; }
+      background-size: cover;
+      border-radius: 6px; }
     .personas_slider .persona_item .inside .des {
       visibility: visible;
       max-width: 300px !important;
