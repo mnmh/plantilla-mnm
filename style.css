@@ -6908,8 +6908,7 @@ blockquote {
 
 .tarjetas .item {
   width: 24%;
-  margin: 0.5%;
-  border: #C9C9C9 1px solid; }
+  margin: 0.5%; }
   @media all and (max-width: 850px) {
     .tarjetas .item {
       width: 99%; } }
@@ -6921,9 +6920,10 @@ blockquote {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative; }
+    position: relative;
+    border-radius: 6px; }
   .tarjetas .item .tarjeta-description {
-    padding: 15px; }
+    padding: 15px 0; }
     .tarjetas .item .tarjeta-description h3 {
       text-align: left;
       margin-bottom: 5px;
