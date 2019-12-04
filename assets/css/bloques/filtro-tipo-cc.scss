@@ -1,0 +1,55 @@
+.filtro-cc {
+    display: flex;
+    justify-content: center;
+
+    .icon {
+        width: 40px;
+        height: 40px;
+
+        path, polygon, circle, rect {
+            fill: #dcdcdc;
+            transition: all 0.4s ease;
+        }
+    }
+
+    .item {
+        background: #f3f3f3;
+        width: 170px;
+        height: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 5px;
+        margin: 5px;
+        border: 2px solid #f3f3f3;
+
+        &.active {
+            border-color: $azul;
+            .icon {
+                path, polygon, circle, rect {
+                    fill: $azul;
+                }
+            }
+
+            .name {
+                color: $azul;
+            }
+        }
+
+        &:hover {
+            .icon {
+                path, polygon, circle, rect {
+                    fill: #999;
+                }
+            }
+        }
+    }
+
+    .name {
+        width: 100%;
+        text-align: center;
+        color: #999;
+    }
+}

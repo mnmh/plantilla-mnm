@@ -1047,79 +1047,6 @@
   
       .autores {
         display: none;
-  
-        .alfa {
-          text-align: left;
-          margin-bottom: 20px;
-          padding-left: 2em;
-  
-          .letter {
-            text-align: center;
-            display: inline-block;
-            font-size: 1.5em;
-            color: #d8d8d8;
-            cursor: pointer;
-            text-transform: uppercase;
-            text-transform: uppercase;
-            font-weight: 500;
-            padding-right: 0.2em;
-  
-            &.active {
-              color: #333;
-            }
-          }
-        }
-  
-        .listado {
-          overflow: auto;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: left;
-          padding-left: 2em;
-          flex-direction: column;
-          flex-wrap: wrap;
-          align-content: flex-start;
-          max-height: 35vh;
-  
-          li {
-            display: none;
-            padding: 5px;
-            cursor: pointer;
-            font-size: 0.9em;
-            padding-left: 1em;
-            padding-right: calc(1em + 30px);
-            position: relative;
-            position: relative;
-            border: 1px solid #ececec;
-            margin-right: 0.2em;
-            margin-bottom: 0.2em;
-            color: #555;
-            width: calc(25% - 0.2em);
-            border-radius: 100px;
-  
-            @media all and (max-width: 850px) {
-              width: calc(90% - 0.2em);
-            }
-  
-            .number {
-              position: absolute;
-              right: 0.5em;
-              color: #999;
-              width: 20px;
-              height: 20px;
-              line-height: 18px;
-              text-align: center;
-              top: 50%;
-              margin-top: -10px;
-              font-size: 0.8em;
-              border: 1px solid #ececec;
-              @include border-radius(30px);
-            }
-  
-            &:hover {}
-          }
-        }
-  
       }
   
       .categorias {
@@ -1399,6 +1326,93 @@
             fill: white;
           }
         }
+      }
+    }
+  }
+
+  .filtro_tags {
+    .alfa {
+      text-align: left;
+      margin-bottom: 20px;
+      padding-left: 2em;
+
+      .letter {
+        text-align: center;
+        display: inline-block;
+        font-size: 1.5em;
+        color: #d8d8d8;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        background: $grisclaro;
+        margin: 1px;
+
+        &.active {
+          color: #fff;
+          background: $azul;
+        }
+      }
+    }
+
+    .listado {
+      overflow: auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: left;
+      padding-left: 2em;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      max-height: 35vh;
+
+      li {
+        display: none;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 0.9em;
+        padding-left: 1em;
+        padding-right: calc(1em + 30px);
+        position: relative;
+        position: relative;
+        border: 1px solid #ececec;
+        margin-right: 0.2em;
+        margin-bottom: 0.2em;
+        color: #555;
+        width: calc(25% - 0.2em);
+        border-radius: 100px;
+
+        @media all and (max-width: 850px) {
+          width: calc(90% - 0.2em);
+        }
+
+        .number {
+          position: absolute;
+          right: 0.5em;
+          color: #999;
+          width: 20px;
+          height: 20px;
+          line-height: 18px;
+          text-align: center;
+          top: 50%;
+          margin-top: -10px;
+          font-size: 0.8em;
+          border: 1px solid #ececec;
+          @include border-radius(30px);
+        }
+
+        &:hover {}
+      }
+    }
+
+    &.center {
+      .alfa {
+        text-align: center;
+        padding: 0;
       }
     }
   }

@@ -329,9 +329,62 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'iconos', 'cc'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'busqueda cc',
+			'title'				=> __('Busqueda CC'),
+			'description'		=> __('Un bloque para la busqueda del CC'),
+			'render_callback'	=> 'bloque_callback_buscar_cc',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'buscar', 'cc'),
+		));
+
+		acf_register_block(array(
+			'name'				=> 'filtro tipo cc',
+			'title'				=> __('Filtro por tipo CC'),
+			'description'		=> __('Un bloque para el filtro por tipo del CC'),
+			'render_callback'	=> 'bloque_callback_filtro_tipo_cc',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'filtro', 'cc'),
+		));
+
+		acf_register_block(array(
+			'name'				=> 'filtro tags cc',
+			'title'				=> __('Filtro por tags CC'),
+			'description'		=> __('Un bloque para el filtro por tags del CC'),
+			'render_callback'	=> 'bloque_callback_filtro_tags_cc',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'filtro', 'cc'),
+		));
 	}
 }
 
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_filtro_tags_cc( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_filtro_tipo_cc( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_buscar_cc( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
 
 // Carga la plantilla del bloque carrousel con cuadros verticales
 function bloque_callback_iconos_cc( $block ) {

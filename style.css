@@ -5435,65 +5435,6 @@ body#tinymce {
     border-bottom: 1px solid #ddd; }
     .page-obras .navegacionFiltros .autores {
       display: none; }
-      .page-obras .navegacionFiltros .autores .alfa {
-        text-align: left;
-        margin-bottom: 20px;
-        padding-left: 2em; }
-        .page-obras .navegacionFiltros .autores .alfa .letter {
-          text-align: center;
-          display: inline-block;
-          font-size: 1.5em;
-          color: #d8d8d8;
-          cursor: pointer;
-          text-transform: uppercase;
-          text-transform: uppercase;
-          font-weight: 500;
-          padding-right: 0.2em; }
-          .page-obras .navegacionFiltros .autores .alfa .letter.active {
-            color: #333; }
-      .page-obras .navegacionFiltros .autores .listado {
-        overflow: auto;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: left;
-        padding-left: 2em;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        max-height: 35vh; }
-        .page-obras .navegacionFiltros .autores .listado li {
-          display: none;
-          padding: 5px;
-          cursor: pointer;
-          font-size: 0.9em;
-          padding-left: 1em;
-          padding-right: calc(1em + 30px);
-          position: relative;
-          position: relative;
-          border: 1px solid #ececec;
-          margin-right: 0.2em;
-          margin-bottom: 0.2em;
-          color: #555;
-          width: calc(25% - 0.2em);
-          border-radius: 100px; }
-          @media all and (max-width: 850px) {
-            .page-obras .navegacionFiltros .autores .listado li {
-              width: calc(90% - 0.2em); } }
-          .page-obras .navegacionFiltros .autores .listado li .number {
-            position: absolute;
-            right: 0.5em;
-            color: #999;
-            width: 20px;
-            height: 20px;
-            line-height: 18px;
-            text-align: center;
-            top: 50%;
-            margin-top: -10px;
-            font-size: 0.8em;
-            border: 1px solid #ececec;
-            -webkit-border-radius: 30px;
-            -moz-border-radius: 30px;
-            border-radius: 30px; }
     .page-obras .navegacionFiltros .categorias .categoria {
       color: white;
       text-transform: uppercase;
@@ -5684,6 +5625,77 @@ body#tinymce {
         width: 50%; }
         .slider-columna .sociales .item svg path {
           fill: white; }
+
+.filtro_tags .alfa {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 2em; }
+  .filtro_tags .alfa .letter {
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    color: #d8d8d8;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    background: #f4f4f4;
+    margin: 1px; }
+    .filtro_tags .alfa .letter.active {
+      color: #fff;
+      background: #3e6cd1; }
+
+.filtro_tags .listado {
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding-left: 2em;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-height: 35vh; }
+  .filtro_tags .listado li {
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding-left: 1em;
+    padding-right: calc(1em + 30px);
+    position: relative;
+    position: relative;
+    border: 1px solid #ececec;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    color: #555;
+    width: calc(25% - 0.2em);
+    border-radius: 100px; }
+    @media all and (max-width: 850px) {
+      .filtro_tags .listado li {
+        width: calc(90% - 0.2em); } }
+    .filtro_tags .listado li .number {
+      position: absolute;
+      right: 0.5em;
+      color: #999;
+      width: 20px;
+      height: 20px;
+      line-height: 18px;
+      text-align: center;
+      top: 50%;
+      margin-top: -10px;
+      font-size: 0.8em;
+      border: 1px solid #ececec;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px; }
+
+.filtro_tags.center .alfa {
+  text-align: center;
+  padding: 0; }
 
 .citas-container:after {
   content: none; }
@@ -7621,6 +7633,67 @@ blockquote {
   flex-wrap: wrap; }
   .iconos-cc a.item:hover .icon svg path, .iconos-cc a.item:hover .icon svg polygon {
     fill: #999; }
+
+.inputField {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  background: #f3f3f3;
+  max-width: 600px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px; }
+
+.inputField .icon {
+  width: 20px;
+  height: 20px; }
+
+.inputField input {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 10px; }
+
+.inputField path {
+  fill: #999; }
+
+.filtro-cc {
+  display: flex;
+  justify-content: center; }
+  .filtro-cc .icon {
+    width: 40px;
+    height: 40px; }
+    .filtro-cc .icon path, .filtro-cc .icon polygon, .filtro-cc .icon circle, .filtro-cc .icon rect {
+      fill: #dcdcdc;
+      transition: all 0.4s ease; }
+  .filtro-cc .item {
+    background: #f3f3f3;
+    width: 170px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    margin: 5px;
+    border: 2px solid #f3f3f3; }
+    .filtro-cc .item.active {
+      border-color: #3e6cd1; }
+      .filtro-cc .item.active .icon path, .filtro-cc .item.active .icon polygon, .filtro-cc .item.active .icon circle, .filtro-cc .item.active .icon rect {
+        fill: #3e6cd1; }
+      .filtro-cc .item.active .name {
+        color: #3e6cd1; }
+    .filtro-cc .item:hover .icon path, .filtro-cc .item:hover .icon polygon, .filtro-cc .item:hover .icon circle, .filtro-cc .item:hover .icon rect {
+      fill: #999; }
+  .filtro-cc .name {
+    width: 100%;
+    text-align: center;
+    color: #999; }
 
 .titulo-modulo .sec {
   max-width: 1600px !important;
