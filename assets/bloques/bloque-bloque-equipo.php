@@ -12,7 +12,7 @@ $titulo = get_field('titulo_del_carrousel');
 
 ?>
 
-<div class="personas_slider">
+<div class="personas_slider btm">
     <nav class="hori_scroll">
         <div class="prev"></div>
         <div class="next"></div>
