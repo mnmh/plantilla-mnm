@@ -27,7 +27,7 @@
 			$alfa = '';
 			$current_first = '';
         ?>
-        <div class="autores">
+        <div class="autores filtro_tags">
             <?php foreach($terms as $term): ?>
                 <?php
                     $str = trim($term->name);
