@@ -205,11 +205,9 @@
 
 .filtros{
     display: flex;
-    position: absolute;
-    top: 0;
-    right: 40px;
     align-items: flex-start;
     width: 300px;
+    margin-bottom: 10px;
 
     @media #{$small-and-down} {    
         margin-bottom: 20px
