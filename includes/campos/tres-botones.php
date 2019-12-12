@@ -71,7 +71,7 @@ if( function_exists('acf_add_local_field_group') ):
                         'key' => 'field_5d640a61c4d37',
                         'label' => 'Enlace',
                         'name' => 'enlace',
-                        'type' => 'page_link',
+                        'type' => 'url',
                         'instructions' => '',
                         'required' => 0,
                         'conditional_logic' => 0,
