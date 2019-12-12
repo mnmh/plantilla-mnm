@@ -4373,6 +4373,8 @@ body#tinymce {
     margin-bottom: 10vh !important; }
   #contenidoGeneral .top {
     margin-top: 10vh !important; }
+  #contenidoGeneral .halftop {
+    margin-top: 7vh !important; }
   #contenidoGeneral .btmdoble {
     margin-bottom: 20vh !important; }
   #contenidoGeneral .wp-block-image {
