@@ -6,6 +6,9 @@
 
 // id unico para el bloque
 $id = 'bloque-' . $block['id'];
+$nav = get_field('nav');
+$class = '';
+if($nav == 1) $class = 'ocultar';
 ?>
 <div class="slider-columna <?php echo $block['className'] ?>">
     <div class="left">
@@ -28,7 +31,7 @@ $id = 'bloque-' . $block['id'];
                 <div class="item" style="background-image: url('<?php echo $img['url'] ?>')" data-titulo="<?php echo get_sub_field('titulo') ?>" data-subtitulo="<?php echo get_sub_field('subtitulo') ?>" data-enlace="<?php echo get_sub_field('enlace') ?>" data-textoenlace="<?php echo get_sub_field('texto_enlace') ?>"></div>
             <?php endwhile; endif; ?>
         </div>
-        <div class="nav">
+        <div class="nav <?php echo $class?>">
             <div class="prev"></div>
             <div class="next"></div>
         </div>
