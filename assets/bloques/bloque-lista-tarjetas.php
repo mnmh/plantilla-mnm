@@ -10,9 +10,6 @@ $id = 'botones-' . $block['id'];
 ?>
 
 <div class="tarjetas galeria btm">
-    <h1 class="sec"><?php echo get_field('titulo') ?></h1>
-    <div class="subtitulo-sec"><?php echo get_field('subtitulo') ?></div>
-
     <div class="filtros">
         <div class="ciudades container_filtro">
             <div class="item_filtro name active">Ciudades</div>
