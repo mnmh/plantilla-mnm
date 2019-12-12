@@ -7,7 +7,7 @@ acf_add_local_field_group(array(
     'fields' => array(
         array(
             'key' => 'field_5d7164c533272',
-            'label' => 'mostrar navegacion',
+            'label' => 'ocultar navegacion',
             'name' => 'nav',
             'type' => 'true_false',
             'instructions' => '',
