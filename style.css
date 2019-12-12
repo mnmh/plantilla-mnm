@@ -6967,7 +6967,9 @@ blockquote {
   display: flex;
   align-items: flex-start;
   width: 300px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  position: absolute;
+  top: -50px; }
   @media only screen and (max-width: 650px) {
     .filtros {
       margin-bottom: 20px; } }

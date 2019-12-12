@@ -9,7 +9,7 @@ $id = 'botones-' . $block['id'];
 
 ?>
 
-<div class="tarjetas galeria btm">
+<div class="tarjetas galeria btm top">
     <div class="filtros">
         <div class="ciudades container_filtro">
             <div class="item_filtro name active">Ciudades</div>
