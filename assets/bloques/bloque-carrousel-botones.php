@@ -11,8 +11,6 @@ $titulo = get_field('titulo');
 ?>
 
 <div class="botones-carrousel btmdoble">
-    <h1 class="sec"><?php echo $titulo; ?></h1>
-    <div class="subtitulo-sec"><?php echo get_field('subtitulo') ?></div>
     <nav class="hori_scroll">
         <div class="prev"></div>
         <div class="next"></div>
