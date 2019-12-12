@@ -471,7 +471,6 @@ body {
         height: auto; }
     #menu_lateral .menu-wrapper .right {
       width: calc(100% - 280px);
-      background-color: rgba(240, 240, 240, 0.9);
       position: relative;
       overflow: hidden;
       padding-left: 50px;
