@@ -14,17 +14,12 @@ $ver_mas = get_field('enlace_true');
 
 <div class="tarjetas galeria noticias btm">
 
-    <h1 class="sec"><?php echo $titulo; ?></h1>
 
     <?php if ($ver_mas == 1): ?>
         <span class="ver-todas"> 
             <a href="http://museodememoria.gov.co/informate/"> Ver todas </a>
         </span>
     <?php endif; ?>
-    
-    <div class="subtitulo-sec"><?php echo $subtitulo; ?></div> 
-    
-    
 
     <div class="inside">
     <?php if(have_rows('tarjetas')): while(have_rows('tarjetas')): the_row(); ?>
