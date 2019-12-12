@@ -5543,6 +5543,8 @@ body#tinymce {
       display: flex;
       bottom: 10px;
       right: 10px; }
+      .slider-columna .right .nav.ocultar {
+        display: none; }
       .slider-columna .right .nav > div {
         width: 40px;
         height: 40px;
