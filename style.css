@@ -6905,7 +6905,7 @@ blockquote {
       transition: opacity 300ms; }
 
 .tarjetas .ver-todas {
-  float: right;
+  margin-left: 10px;
   text-transform: uppercase;
   color: #9A9A9A;
   margin-right: 20px;
