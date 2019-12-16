@@ -228,43 +228,37 @@
         }
     }
     .item_filtro {
-        color: #333;
-        padding: 5px;
+        color: $black;
+        padding: 2px;
         padding-left: 15px;
         padding-right: 15px;
         display: none;
         cursor: pointer;
         width: 150px;
-        text-align: center;
         margin: 0;
 
-        &:hover {
-            background: #ececec;
+        &:first-child::before {
+            float: right;
+            font-family: 'mnm';
+            content: '\E80E';
+            transform: rotate(90deg);
         }
 
         &.active {
             display: block;
-
-            &:hover {
-                background: #999;
-                color: white;
-            }
         }
 
         &.name {
-            color: #999;
+            color: $gris;
         }
 
         &.todos {
-            color: #999;
+            color: $gris;
             font-style: italic;
         }
 
-        &.filter {
-            &.active {
-                background: $azul;
-                color: white;
-            }
+        &.filter:hover {
+            background: $grisclaro;
         }
     }
 

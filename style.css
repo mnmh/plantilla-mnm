@@ -6984,30 +6984,28 @@ blockquote {
     .filtros .container_filtro.tipos {
       left: 110px; }
   .filtros .item_filtro {
-    color: #333;
-    padding: 5px;
+    color: #3B3B3B;
+    padding: 2px;
     padding-left: 15px;
     padding-right: 15px;
     display: none;
     cursor: pointer;
     width: 150px;
-    text-align: center;
     margin: 0; }
-    .filtros .item_filtro:hover {
-      background: #ececec; }
+    .filtros .item_filtro:first-child::before {
+      float: right;
+      font-family: 'mnm';
+      content: '\E80E';
+      transform: rotate(90deg); }
     .filtros .item_filtro.active {
       display: block; }
-      .filtros .item_filtro.active:hover {
-        background: #999;
-        color: white; }
     .filtros .item_filtro.name {
-      color: #999; }
+      color: #9A9A9A; }
     .filtros .item_filtro.todos {
-      color: #999;
+      color: #9A9A9A;
       font-style: italic; }
-    .filtros .item_filtro.filter.active {
-      background: #3e6cd1;
-      color: white; }
+    .filtros .item_filtro.filter:hover {
+      background: #f4f4f4; }
   @media all and (max-width: 900px) {
     .filtros {
       position: static; } }
