@@ -1320,6 +1320,29 @@
       }
     }
 
+    &.azul {
+      background: $azul;
+  }
+
+    &.blanco {
+      .left {
+        background: $white;
+        color:$black;
+      }
+    }
+
+    &.rojo {
+      .left {
+        background: $rojo;
+      }
+    }
+
+    &.verde {
+      .left {
+        background: $verde;
+      }
+    }
+
     &.half {
       position: relative;
 

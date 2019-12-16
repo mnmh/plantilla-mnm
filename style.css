@@ -5624,6 +5624,15 @@ body#tinymce {
     background: #ffbc54; }
   .slider-columna.gris .left {
     background: #3B3B3B; }
+  .slider-columna.azul {
+    background: #3e6cd1; }
+  .slider-columna.blanco .left {
+    background: white;
+    color: #3B3B3B; }
+  .slider-columna.rojo .left {
+    background: #C24D3F; }
+  .slider-columna.verde .left {
+    background: #29Af93; }
   .slider-columna.half {
     position: relative; }
     @media only screen and (max-width: 980px) {
