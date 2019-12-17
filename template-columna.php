@@ -17,7 +17,8 @@
 					'post_parent' => $parentID,
 					'numberposts' => -1,
 					'post_type' => 'page',
-					'order' => 'ASC'
+					'order' => 'ASC',
+					'orderby' => 'date'
 				);
 				$children = get_children($args);
 				// print_r($children);
