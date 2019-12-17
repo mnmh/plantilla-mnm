@@ -16,8 +16,8 @@
 					<li><a href="<?php echo EDIFICIO ?>" data-target="#" class="itemChild">
 						<span>Diseño del edificio</span>
 					</a></li>
-					<li><a href="<?php echo PLANMUSEO ?>" data-target="#" class="itemChild">
-						<span>Plan museológico</span>
+					<li><a href="<?php echo DIMEN ?>" data-target="#" class="itemChild">
+						<span>Dimensiones del museo</span>
 					</a></li>
 					<li><a href="http://museodememoria.gov.co/informate/" data-target="#" class="itemChild">
 						<span>Infórmate</span>
@@ -38,7 +38,7 @@
 					<span>Arte y Cultura</span>
 					</a></li>
 					<li><a href="<?php echo VOCES?>" data-target="#" class="itemChild">
-						<span>Voces para transformar</span>
+						<span>Exposiciones</span>
 					</a></li>
 					<li><a href="http://www.archivodelosddhh.gov.co" data-target="#" class="itemChild">
 						<span>Archivo DDHH</span>
