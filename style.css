@@ -6245,7 +6245,7 @@ blockquote {
 .carrousel-vertical-container {
   cursor: grab;
   position: relative;
-  margin-bottom: 10vh; }
+  margin-bottom: 8vh; }
   .carrousel-vertical-container .sec {
     display: block;
     width: 100%;
@@ -6265,9 +6265,6 @@ blockquote {
     top: 50%;
     width: 95%;
     left: 2.5%; }
-    @media only screen and (max-width: 650px) {
-      .carrousel-vertical-container .hori_scroll {
-        top: 105% !important; } }
     .carrousel-vertical-container .hori_scroll div {
       border-radius: 20px;
       opacity: 1;
