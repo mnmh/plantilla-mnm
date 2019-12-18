@@ -5618,6 +5618,13 @@ body#tinymce {
       height: 70vh;
       align-content: center;
       align-items: center; }
+      .slider-columna.full .left .des {
+        padding: 16px;
+        width: 100%;
+        padding-top: 0;
+        max-width: 500px; }
+      .slider-columna.full .left .titulo {
+        padding-bottom: 0; }
     .slider-columna.full .right .item {
       height: 70vh; }
   .slider-columna.amarillo .left {

@@ -1299,6 +1299,17 @@
         height: 70vh;
         align-content: center;
         align-items: center;
+
+        .des {
+          padding: 16px;
+          width: 100%;
+          padding-top: 0;
+          max-width: 500px;
+        }
+
+        .titulo {
+          padding-bottom: 0;
+        }
       }
 
       .right {
