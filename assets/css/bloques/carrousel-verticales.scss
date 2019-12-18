@@ -1,7 +1,7 @@
 .carrousel-vertical-container {
     cursor: grab;
     position: relative;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
 
     .sec {
         display: block;
@@ -30,11 +30,6 @@
         top: 50%;
         width: 95%;
         left: 2.5%;
-
-        @media #{$small-and-down} {
-            top: 105% !important;
-        }
-
 
         div {
             border-radius: 20px;
