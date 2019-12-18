@@ -1340,6 +1340,10 @@
         background: $white;
         color:$black;
       }
+
+      path {
+        fill: $black;
+      }
     }
 
     &.rojo {
