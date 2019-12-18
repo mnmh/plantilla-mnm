@@ -5636,8 +5636,10 @@ body#tinymce {
   .slider-columna.blanco .left {
     background: white;
     color: #3B3B3B; }
-  .slider-columna.blanco path {
-    fill: #3B3B3B; }
+    .slider-columna.blanco .left .sociales {
+      padding-left: 6px; }
+      .slider-columna.blanco .left .sociales path {
+        fill: #3B3B3B; }
   .slider-columna.rojo .left {
     background: #C24D3F; }
   .slider-columna.verde .left {

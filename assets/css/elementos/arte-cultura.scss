@@ -1339,11 +1339,14 @@
       .left {
         background: $white;
         color:$black;
-      }
 
-      path {
-        fill: $black;
-      }
+      .sociales {
+        padding-left: 6px;
+          path {
+            fill: $black;
+          }
+        }
+      }      
     }
 
     &.rojo {
