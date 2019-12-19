@@ -18,13 +18,18 @@
         $('.audio.piepag .tarjetas .play').on('click', function(){
             var audio = document.getElementById("audioPlayer");
             var urlAudio = $(this).attr('data-audio');
-            console.log(urlAudio);
+            var $parent = $(this).parents('.contenedor');
+
+            // console.log('alerta', $parent);  
 
             if(!$(this).hasClass('playing')){
                 // var urlAudio = '/audio.mp3';
                 audio.setAttribute('src', urlAudio);
 
                 $('.audio.piepag .tarjetas .play.playing').removeClass('playing').removeClass('paused');
+                $parent.find('.textos h1').html($(this).attr('data-titulo'));
+                $parent.find('.textos p').html($(this).attr('data-des'));
+
                 $(this).addClass('playing');
 
                 audio.oncanplay = () => {
