@@ -7526,7 +7526,7 @@ blockquote {
     .header-columna .contenedor .left {
       display: flex;
       flex-wrap: wrap;
-      align-content: space-between;
+      align-content: center;
       padding-bottom: 5vh; }
       .header-columna .contenedor .left .texto {
         width: 80%;
@@ -7542,6 +7542,10 @@ blockquote {
           margin-bottom: 20px; }
         .header-columna .contenedor .left .texto h4, .header-columna .contenedor .left .texto h6 {
           margin-top: 10px !important; }
+        .header-columna .contenedor .left .texto h6 {
+          font-weight: normal;
+          font-style: italic;
+          font-size: 14px; }
     .header-columna .contenedor .right {
       display: flex;
       padding-top: 0; }
