@@ -5512,6 +5512,13 @@ body#tinymce {
   display: flex;
   max-width: 1600px;
   margin: 0 auto; }
+  .slider-columna .invert {
+    flex-direction: row-reverse; }
+    .slider-columna .invert .subtitulo, .slider-columna .invert .titulo {
+      text-align: right; }
+    .slider-columna .invert .enlace {
+      width: 100%;
+      text-align: right; }
   @media only screen and (max-width: 980px) {
     .slider-columna {
       flex-direction: column-reverse;
