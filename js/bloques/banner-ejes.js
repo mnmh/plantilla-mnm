@@ -30,6 +30,8 @@
                 $parent.find('.textos h1').html($(this).attr('data-titulo'));
                 $parent.find('.textos p').html($(this).attr('data-des'));
 
+                console.log($(this).attr('data-des'))
+
                 $(this).addClass('playing');
 
                 audio.oncanplay = () => {
