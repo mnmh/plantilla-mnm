@@ -40,7 +40,7 @@
                 }
 
                 p {
-                    color: white !important;
+                    color: white;
                 }
             }
 
@@ -173,4 +173,32 @@
 
         }
     }
+
+    &.home {
+        background: $white;
+        margin-top: 20px;
+
+        .textos {
+            h1, p {
+            color: #5f5f5f !important;
+            }
+        }
+
+        .reproductor {
+
+            .time {
+                background: $black;
+            }
+
+            .slider {
+                .total {
+                    background: $black;
+                }
+                .current {
+                    background: $grisclaro;
+                }
+            }
+        }
+    }
+    
 }

@@ -117,7 +117,6 @@ h5 {
 .perfil_viewer p {
   font-family: 'Inter', sans-serif;
   line-height: 2;
-  color: #3B3B3B;
   font-size: 16px; }
   #archive_item_content p a,
   .content p a,
@@ -386,7 +385,6 @@ body {
   body.page-pagina-principal-data #contenidoGeneral {
     padding: 0; }
   #contenidoGeneral .columnas h2, #contenidoGeneral .columnas h3, #contenidoGeneral .columnas h4, #contenidoGeneral .columnas h5, #contenidoGeneral .columnas h6, #contenidoGeneral .columnas p {
-    color: #333;
     margin-top: 15px;
     margin-bottom: 15px; }
   #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p {
@@ -5638,7 +5636,7 @@ body#tinymce {
   .slider-columna.azul .left {
     background: #3e6cd1; }
     .slider-columna.azul .left .subtitulo {
-      color: white; }
+      color: white !important; }
   .slider-columna.blanco .left {
     background: white;
     color: #3B3B3B; }
@@ -5649,11 +5647,11 @@ body#tinymce {
   .slider-columna.rojo .left {
     background: #C24D3F; }
     .slider-columna.rojo .left .subtitulo {
-      color: white; }
+      color: white !important; }
   .slider-columna.verde .left {
     background: #29Af93; }
     .slider-columna.verde .left .subtitulo {
-      color: white; }
+      color: white !important; }
   .slider-columna.half {
     position: relative; }
     @media only screen and (max-width: 980px) {
@@ -7617,7 +7615,7 @@ blockquote {
           color: white;
           font-size: 38px; }
         .audio.piepag .contenedor .left .textos p {
-          color: white !important; }
+          color: white; }
       .audio.piepag .contenedor .left .reproductor {
         padding-top: 40px;
         width: 250px;
@@ -7700,6 +7698,17 @@ blockquote {
           .audio.piepag .contenedor .right .play:after {
             font-size: 14px;
             margin-left: 10px; } }
+  .audio.piepag.home {
+    background: white;
+    margin-top: 20px; }
+    .audio.piepag.home .textos h1, .audio.piepag.home .textos p {
+      color: #5f5f5f !important; }
+    .audio.piepag.home .reproductor .time {
+      background: #3B3B3B; }
+    .audio.piepag.home .reproductor .slider .total {
+      background: #3B3B3B; }
+    .audio.piepag.home .reproductor .slider .current {
+      background: #f4f4f4; }
 
 .personas_slider {
   position: relative;
