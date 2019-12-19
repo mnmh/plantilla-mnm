@@ -103,6 +103,7 @@
                 background-size: cover;
                 border: none;
                 width: 33% !important;
+                border-radius: 9px;
 
                 .play {
                     position: absolute;
@@ -185,11 +186,10 @@
         }
 
         .reproductor {
-
             .time {
                 background: $black;
+                color: white;
             }
-
             .slider {
                 .total {
                     background: $black;
