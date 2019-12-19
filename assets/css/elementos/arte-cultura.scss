@@ -1159,7 +1159,7 @@
     max-width: 1600px;
     margin: 0 auto;
 
-    .invert {
+    &.invert {
       flex-direction: row-reverse;
 
       .subtitulo, .titulo {
