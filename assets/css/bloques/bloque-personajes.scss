@@ -4,20 +4,6 @@
     margin-top: 250px;
     height: 500px;
 
-    &.home {
-        background: $white;
-        margin-top: 20px;
-
-        .textos {
-            h1, p {
-            color: #5f5f5f !important;
-            }
-        }
-
-
-
-    }
-
     @media #{$large-and-down} {
         height: 800px;
     }
@@ -187,4 +173,32 @@
 
         }
     }
+
+    &.home {
+        background: $white;
+        margin-top: 20px;
+
+        .textos {
+            h1, p {
+            color: #5f5f5f !important;
+            }
+        }
+
+        .reproductor {
+
+            .time {
+                background: $black;
+            }
+
+            .slider {
+                .total {
+                    background: $black;
+                }
+                .current {
+                    background: $grisclaro;
+                }
+            }
+        }
+    }
+    
 }
