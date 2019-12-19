@@ -6383,10 +6383,10 @@ blockquote {
           width: 100%;
           height: 100%; }
     .carrousel-vertical-container .profiles-item h2 {
-      font-size: 45px; }
-      @media only screen and (max-width: 1600px) {
+      font-size: 40px; }
+      @media only screen and (max-width: 980px) {
         .carrousel-vertical-container .profiles-item h2 {
-          font-size: 24px; } }
+          font-size: 30px; } }
   .carrousel-vertical-container.first .profiles-item:first-child a {
     background-size: contain; }
   .carrousel-vertical-container.first .profiles-item:first-child .opacity-layer {
