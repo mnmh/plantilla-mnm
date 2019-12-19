@@ -6,6 +6,8 @@
 
 // id unico para el bloque
 $id = 'bloque-' . $block['id'];
+$class = $block["className"];
+
 
 $texto = get_field('texto_abajo');
 $enlace = get_field('enlace');
@@ -13,7 +15,7 @@ $titulo = get_field('titulo');
 $descripcion = get_field('texto_abajo');
 ?>
 
-<div class="audio piepag">
+<div class="audio piepag <?php if($class) echo $class;?>">
 
     <div class="contenedor">
 
