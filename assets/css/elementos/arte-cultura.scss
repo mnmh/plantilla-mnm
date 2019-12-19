@@ -1296,9 +1296,14 @@
       height: 70vh;
 
       .left {
+        width: 40%;
         height: 70vh;
         align-content: center;
         align-items: center;
+
+        @media #{$large-and-up} {
+          padding-left: 100px;
+        } 
 
         .des {
           padding: 16px;
