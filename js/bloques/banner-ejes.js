@@ -27,10 +27,10 @@
                 audio.setAttribute('src', urlAudio);
 
                 $('.audio.piepag .tarjetas .play.playing').removeClass('playing').removeClass('paused');
-                $parent.find('.textos h1').html($(this).attr('data-titulo'));
-                $parent.find('.textos p').html($(this).attr('data-des'));
+                $parent.find('.textos h1').html($(this).parent().attr('data-titulo'));
+                $parent.find('.textos p').html($(this).parent().attr('data-des'));
 
-                console.log($(this).attr('data-des'))
+                console.log($(this).parent().attr('data-des'))
 
                 $(this).addClass('playing');
 
