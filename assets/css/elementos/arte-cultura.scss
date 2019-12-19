@@ -1327,6 +1327,7 @@
     &.amarillo {
       .left {
         background: $amarillo;
+        
       }
     }
 
@@ -1337,7 +1338,12 @@
     }
 
     &.azul {
+      .left {
       background: $azul;
+      .subtitulo {
+        color:$white;
+      }
+    }
   }
 
     &.blanco {
@@ -1357,6 +1363,9 @@
     &.rojo {
       .left {
         background: $rojo;
+        .subtitulo {
+          color:$white;
+        }
       }
     }
 

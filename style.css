@@ -5635,8 +5635,10 @@ body#tinymce {
     background: #ffbc54; }
   .slider-columna.gris .left {
     background: #3B3B3B; }
-  .slider-columna.azul {
+  .slider-columna.azul .left {
     background: #3e6cd1; }
+    .slider-columna.azul .left .subtitulo {
+      color: white; }
   .slider-columna.blanco .left {
     background: white;
     color: #3B3B3B; }
@@ -5646,6 +5648,8 @@ body#tinymce {
         fill: #3B3B3B; }
   .slider-columna.rojo .left {
     background: #C24D3F; }
+    .slider-columna.rojo .left .subtitulo {
+      color: white; }
   .slider-columna.verde .left {
     background: #29Af93; }
     .slider-columna.verde .left .subtitulo {
