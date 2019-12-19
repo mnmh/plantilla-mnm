@@ -5638,7 +5638,7 @@ body#tinymce {
   .slider-columna.azul .left {
     background: #3e6cd1; }
     .slider-columna.azul .left .subtitulo {
-      color: white; }
+      color: white !important; }
   .slider-columna.blanco .left {
     background: white;
     color: #3B3B3B; }
@@ -5649,11 +5649,11 @@ body#tinymce {
   .slider-columna.rojo .left {
     background: #C24D3F; }
     .slider-columna.rojo .left .subtitulo {
-      color: white; }
+      color: white !important; }
   .slider-columna.verde .left {
     background: #29Af93; }
     .slider-columna.verde .left .subtitulo {
-      color: white; }
+      color: white !important; }
   .slider-columna.half {
     position: relative; }
     @media only screen and (max-width: 980px) {
