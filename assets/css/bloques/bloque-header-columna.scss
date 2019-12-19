@@ -45,7 +45,7 @@
         .left {
             display: flex;
             flex-wrap: wrap;
-            align-content: space-between;
+            align-content: center;
             padding-bottom: 5vh;
 
             .texto {
@@ -68,6 +68,12 @@
 
                 h4, h6 {
                     margin-top: 10px !important;
+                }
+
+                h6 {
+                    font-weight: normal;
+                    font-style: italic;
+                    font-size: 14px;
                 }
             }
         }
