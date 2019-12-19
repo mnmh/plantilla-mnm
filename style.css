@@ -5648,6 +5648,8 @@ body#tinymce {
     background: #C24D3F; }
   .slider-columna.verde .left {
     background: #29Af93; }
+    .slider-columna.verde .left .subtitulo {
+      color: white; }
   .slider-columna.half {
     position: relative; }
     @media only screen and (max-width: 980px) {

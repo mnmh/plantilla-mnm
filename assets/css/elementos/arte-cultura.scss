@@ -1363,6 +1363,9 @@
     &.verde {
       .left {
         background: $verde;
+        .subtitulo {
+          color:$white;
+        }
       }
     }
 
