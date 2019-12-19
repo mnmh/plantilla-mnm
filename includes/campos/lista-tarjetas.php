@@ -40,7 +40,8 @@
                             'choices' => array(
                                 'video' => 'Video',
                                 'galeria' => 'Galería',
-                                'audio' => 'Audio'
+                                'audio' => 'Audio',
+                                'texto' => 'Texto'
                             ),
                             'default_value' => array(
                             ),
@@ -117,15 +118,7 @@
                             'type' => 'image',
                             'instructions' => '',
                             'required' => 0,
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_5d3ffd12ba959',
-                                        'operator' => '==',
-                                        'value' => 'Video',
-                                    ),
-                                ),
-                            ),
+                            'conditional_logic' => 0,
                             'wrapper' => array(
                                 'width' => '',
                                 'class' => '',
@@ -195,15 +188,7 @@
                             'type' => 'text',
                             'instructions' => '',
                             'required' => 0,
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_5d3ffd12ba959',
-                                        'operator' => '==',
-                                        'value' => 'video',
-                                    ),
-                                ),
-                            ),
+                            'conditional_logic' => 0,
                             'wrapper' => array(
                                 'width' => '',
                                 'class' => '',

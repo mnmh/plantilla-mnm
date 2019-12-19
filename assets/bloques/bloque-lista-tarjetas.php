@@ -25,6 +25,7 @@ $id = 'botones-' . $block['id'];
             <div class="item_filtro filter" data-filter="tipo_video">Videos</div>
             <div class="item_filtro filter" data-filter="tipo_audio">Audios</div>
             <div class="item_filtro filter" data-filter="tipo_galeria">Galerías</div>
+            <div class="item_filtro filter" data-filter="tipo_texto">Textos</div>
             <div class="item_filtro todos">Ver todos</div>
         </div>
     </div>
