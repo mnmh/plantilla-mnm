@@ -5618,6 +5618,13 @@ body#tinymce {
       height: 70vh;
       align-content: center;
       align-items: center; }
+      .slider-columna.full .left .des {
+        padding: 16px;
+        width: 100%;
+        padding-top: 0;
+        max-width: 500px; }
+      .slider-columna.full .left .titulo {
+        padding-bottom: 0; }
     .slider-columna.full .right .item {
       height: 70vh; }
   .slider-columna.amarillo .left {
@@ -5629,6 +5636,10 @@ body#tinymce {
   .slider-columna.blanco .left {
     background: white;
     color: #3B3B3B; }
+    .slider-columna.blanco .left .sociales {
+      padding-left: 6px; }
+      .slider-columna.blanco .left .sociales path {
+        fill: #3B3B3B; }
   .slider-columna.rojo .left {
     background: #C24D3F; }
   .slider-columna.verde .left {
@@ -6234,7 +6245,7 @@ blockquote {
 .carrousel-vertical-container {
   cursor: grab;
   position: relative;
-  margin-bottom: 10vh; }
+  margin-bottom: 8vh; }
   .carrousel-vertical-container .sec {
     display: block;
     width: 100%;
@@ -6254,9 +6265,6 @@ blockquote {
     top: 50%;
     width: 95%;
     left: 2.5%; }
-    @media only screen and (max-width: 650px) {
-      .carrousel-vertical-container .hori_scroll {
-        top: 105% !important; } }
     .carrousel-vertical-container .hori_scroll div {
       border-radius: 20px;
       opacity: 1;
@@ -6375,10 +6383,10 @@ blockquote {
           width: 100%;
           height: 100%; }
     .carrousel-vertical-container .profiles-item h2 {
-      font-size: 45px; }
-      @media only screen and (max-width: 1600px) {
+      font-size: 40px; }
+      @media only screen and (max-width: 980px) {
         .carrousel-vertical-container .profiles-item h2 {
-          font-size: 24px; } }
+          font-size: 30px; } }
   .carrousel-vertical-container.first .profiles-item:first-child a {
     background-size: contain; }
   .carrousel-vertical-container.first .profiles-item:first-child .opacity-layer {
@@ -7518,7 +7526,7 @@ blockquote {
     .header-columna .contenedor .left {
       display: flex;
       flex-wrap: wrap;
-      align-content: space-between;
+      align-content: center;
       padding-bottom: 5vh; }
       .header-columna .contenedor .left .texto {
         width: 80%;
@@ -7534,6 +7542,10 @@ blockquote {
           margin-bottom: 20px; }
         .header-columna .contenedor .left .texto h4, .header-columna .contenedor .left .texto h6 {
           margin-top: 10px !important; }
+        .header-columna .contenedor .left .texto h6 {
+          font-weight: normal;
+          font-style: italic;
+          font-size: 14px; }
     .header-columna .contenedor .right {
       display: flex;
       padding-top: 0; }
