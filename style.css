@@ -2397,8 +2397,6 @@ body.single-programacion .agenda.theme-events {
 .agenda {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  max-width: 1600px;
   overflow: visible;
   font-size: 0.9375em; }
   @media screen and (min-width: 980px) {
