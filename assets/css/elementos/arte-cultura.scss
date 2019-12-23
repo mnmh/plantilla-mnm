@@ -1410,7 +1410,7 @@
         justify-content: center;
         align-items: unset;
         position: relative;
-
+        
         @media #{$medium-and-down} {
           height: 60%;
           width: 100%;
@@ -1463,6 +1463,10 @@
         top: 50%;
         transform: translate(0px, -50%);
 
+        .item {
+          height: 625px;
+        }
+
         @media #{$medium-and-down} {
           top: 25%;
           transform: translate(0px, -25%);
@@ -1481,6 +1485,7 @@
           transform: translate(0px, -10%);
           height: 45%;
         }
+
       }
     }
 

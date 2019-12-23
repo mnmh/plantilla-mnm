@@ -5711,6 +5711,8 @@ body#tinymce {
       right: 5vw;
       top: 50%;
       transform: translate(0px, -50%); }
+      .slider-columna.half .right .item {
+        height: 625px; }
       @media only screen and (max-width: 980px) {
         .slider-columna.half .right {
           top: 25%;
