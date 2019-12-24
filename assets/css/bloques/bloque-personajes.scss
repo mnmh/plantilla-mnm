@@ -136,7 +136,7 @@
             }
 
             .left {
-                justify-content: end !important;
+                justify-content: end;
                             
                 .textos {
                     text-align: center !important;
@@ -178,6 +178,10 @@
     &.home {
         background: $white;
         margin-top: 20px;
+
+        .left {
+            justify-content: center;
+        }
 
         .textos {
             h1, p {
