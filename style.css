@@ -5624,7 +5624,7 @@ body#tinymce {
       align-items: center; }
       @media only screen and (min-width: 981px) {
         .slider-columna.full .left {
-          padding-left: 100px; } }
+          padding-left: 2.5vw; } }
       @media only screen and (max-width: 980px) {
         .slider-columna.full .left {
           height: 30%;
