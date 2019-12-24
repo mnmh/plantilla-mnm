@@ -21,14 +21,14 @@ $id = 'bloque-' . $block['id'];
                         $txtbtn = get_sub_field('txtbtn');
                     endif;
                 ?>
-                <div class="item" data-btn="<?php echo $txtbtn ?>" data-des="<?php echo get_sub_field('descripcion') ?>" data-titulo="<?php echo get_sub_field('titulo') ?>" data-enlace="<?php echo get_sub_field('enlace') ?>">
+                <div class="item" data-sub="<?php echo get_sub_field('subtitulo') ?>" data-btn="<?php echo $txtbtn ?>" data-des="<?php echo get_sub_field('descripcion') ?>" data-titulo="<?php echo get_sub_field('titulo') ?>" data-enlace="<?php echo get_sub_field('enlace') ?>">
                     <div class="img" style="background-image:url('<?php echo $imagen['url'] ?>')"></div>
                 </div>
             <?php endwhile; endif; ?>
         </div>
         <div class="inside">
             <div class="content">
-                <div class="subtitulo"><?php echo get_sub_field('subtitulo') ?></div>
+                <div class="subtitulo"></div>
                 <h1 class="titulo"><strong></strong></h1>
                 <div class="txt"></div>
                 <a href="#" class="btn">ver más</a>
