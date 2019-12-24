@@ -6280,6 +6280,8 @@ blockquote {
     top: 50%;
     width: 95%;
     left: 2.5%; }
+    .carrousel-vertical-container .hori_scroll.ocultar {
+      display: none; }
     .carrousel-vertical-container .hori_scroll div {
       border-radius: 20px;
       opacity: 1;
