@@ -1318,6 +1318,11 @@
           padding-left: 100px;
         } 
 
+        @media #{$medium-and-down} {
+          height: 30%;
+          width: 100%;
+        }
+
         .des {
           padding: 16px;
           width: 100%;
@@ -1333,6 +1338,11 @@
       .right {
         .item {
           height: 70vh;
+        }
+
+        @media #{$medium-and-down} {
+          height: 70%;
+          width: 100%;
         }
       }
     }
