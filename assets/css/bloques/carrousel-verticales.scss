@@ -3,6 +3,10 @@
     position: relative;
     margin-bottom: 8vh;
 
+    &.sin-carrusel {
+        margin-bottom: 0;
+    }
+
     .sec {
         display: block;
         width: 100%;

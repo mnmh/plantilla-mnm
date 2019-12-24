@@ -6261,6 +6261,8 @@ blockquote {
   cursor: grab;
   position: relative;
   margin-bottom: 8vh; }
+  .carrousel-vertical-container.sin-carrusel {
+    margin-bottom: 0; }
   .carrousel-vertical-container .sec {
     display: block;
     width: 100%;
