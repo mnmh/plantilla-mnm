@@ -9,13 +9,26 @@
                     prevNextButtons: false,
                     pageDots: false,
                     cellAlign: 'left',
-                    wrapAround: true
+                    wrapAround: true,
+                    draggable: true
                 });
-    
+
+                console.log($('.profiles-list').hasClass('sin-carrusel'));
+                if ( $('.profiles-list').hasClass('sin-carrusel') ) {
+                    console.log('draggable: ', flkty.options.draggable);
+                    
+
+                    flkty.options.draggable = !flkty.options.draggable;
+                    flkty.updateDraggable();
+                    
+                    console.log('draggable: ', flkty.options.draggable);
+                }
+
+                
                 flkty.on('select', function () {
                     $('.profiles-container .des').addClass('active');
                     $('.profiles-item.active').removeClass('active');
-    
+
                     var $item = $('.profiles-item.is-selected');
                     $item.addClass('active')
                     var txt = $item.attr('data-des');

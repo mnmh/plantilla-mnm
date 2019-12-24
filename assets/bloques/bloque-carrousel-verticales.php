@@ -15,14 +15,14 @@ $titulo = get_field('titulo_del_carrousel');
 
 ?>
 
-<div class="carrousel-vertical-container <?php echo $block['className'] ?> <?php echo $carrousel?>">
+<div class="carrousel-vertical-container <?php echo $block['className'] ?> ">
     <h1 class="sec"><?php echo $titulo; ?></h1>
     <div class="subtitulo-sec"><?php echo get_field('subtitulo') ?></div>
     <nav class="hori_scroll <?php echo $class?>">
         <div class="prev"></div>
         <div class="next"></div>
     </nav>
-    <ul class="profiles-list">
+    <ul class="profiles-list <?php echo $carrousel?>">
         
         <?php if(have_rows('items_del_carrousel')): while(have_rows('items_del_carrousel')): the_row(); ?>
             <?php
