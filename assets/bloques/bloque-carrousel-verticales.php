@@ -6,6 +6,7 @@
 
 // id unico para el bloque
 $id = 'bloque-' . $block['id'];
+$nav = get_field('nav');
 
 // titulo del carrousel
 $titulo = get_field('titulo_del_carrousel');
