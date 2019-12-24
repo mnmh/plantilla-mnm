@@ -5625,6 +5625,10 @@ body#tinymce {
       @media only screen and (min-width: 981px) {
         .slider-columna.full .left {
           padding-left: 100px; } }
+      @media only screen and (max-width: 980px) {
+        .slider-columna.full .left {
+          height: 30%;
+          width: 100%; } }
       .slider-columna.full .left .des {
         padding: 16px;
         width: 100%;
@@ -5634,6 +5638,10 @@ body#tinymce {
         padding-bottom: 0; }
     .slider-columna.full .right .item {
       height: 70vh; }
+    @media only screen and (max-width: 980px) {
+      .slider-columna.full .right {
+        height: 70%;
+        width: 100%; } }
   .slider-columna.amarillo .left {
     background: #ffbc54; }
   .slider-columna.gris .left {
