@@ -156,7 +156,7 @@
                         ),
                         array(
                             'key' => 'field_5d3ffd75ba95c',
-                            'label' => 'ID video',
+                            'label' => 'Enlace',
                             'name' => 'id_video',
                             'type' => 'text',
                             'instructions' => '',
@@ -167,6 +167,13 @@
                                         'field' => 'field_5d3ffd12ba959',
                                         'operator' => '==',
                                         'value' => 'Video',
+                                    ),
+                                ),
+                                array(
+                                    array(
+                                        'field' => 'field_5d3ffd12ba959',
+                                        'operator' => '==',
+                                        'value' => 'Texto',
                                     ),
                                 ),
                             ),

@@ -46,23 +46,44 @@ $id = 'botones-' . $block['id'];
                 $imagen = $galeria[0];
             endif;
         ?>
-        <div class="item tipo_<?php echo $tipo ?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
 
-            <?php if($tipo == 'galeria'): ?>
-                <div class="gal">
-                    <?php foreach($galeria as $img): ?>
-                    <div class="itemgal" data-img="<?php echo $img['sizes']['visor'] ?>"></div>
-                    <?php endforeach; ?>
+        <?php if($tipo != 'texto'): ?>
+            <div class="item tipo_<?php echo $tipo ?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
+
+                <?php if($tipo == 'galeria'): ?>
+                    <div class="gal">
+                        <?php foreach($galeria as $img): ?>
+                        <div class="itemgal" data-img="<?php echo $img['sizes']['visor'] ?>"></div>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+
+                <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
+
+                <div class="tarjeta-description">
+                    <h3><?php echo $titulo ?></h3>
+                    <p class="texto-descriptivo"><?php echo get_sub_field('descripcion') ?></p>
                 </div>
-            <?php endif; ?>
-
-            <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
-
-            <div class="tarjeta-description">
-                <h3><?php echo $titulo ?></h3>
-                <p class="texto-descriptivo"><?php echo get_sub_field('descripcion') ?></p>
             </div>
-        </div>
+        <?php else: ?>
+            <a href="<?php echo get_sub_field('id_video')?>" class="item tipo_<?php echo $tipo ?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
+
+                <?php if($tipo == 'galeria'): ?>
+                    <div class="gal">
+                        <?php foreach($galeria as $img): ?>
+                        <div class="itemgal" data-img="<?php echo $img['sizes']['visor'] ?>"></div>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+
+                <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
+
+                <div class="tarjeta-description">
+                    <h3><?php echo $titulo ?></h3>
+                    <p class="texto-descriptivo"><?php echo get_sub_field('descripcion') ?></p>
+                </div>
+            </a>
+        <?php endif; ?>
     <?php endwhile; endif; ?>
     </div>
     
