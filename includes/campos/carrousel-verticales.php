@@ -7,6 +7,25 @@ if( function_exists('acf_add_local_field_group') ):
         'title' => 'BLOQUE carrousel cuadros verticales',
         'fields' => array(
             array(
+                'key' => 'field_5d7164c533272',
+                'label' => 'ocultar navegacion',
+                'name' => 'nav',
+                'type' => 'true_false',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => '',
+                'default_value' => 0,
+                'ui' => 0,
+                'ui_on_text' => '',
+                'ui_off_text' => '',
+            ),
+            array(
                 'key' => 'field_5d348813b1942',
                 'label' => 'Titulo del carrousel',
                 'name' => 'titulo_del_carrousel',
