@@ -65,7 +65,7 @@ $id = 'botones-' . $block['id'];
                     <p class="texto-descriptivo"><?php echo get_sub_field('descripcion') ?></p>
                 </div>
             </div>
-        <?php else: ?>
+        <?php else: $imagen = get_sub_field('imagen');?>
             <a href="<?php echo get_sub_field('id_video')?>" class="item tipo_<?php echo $tipo ?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
 
                 <?php if($tipo == 'galeria'): ?>
