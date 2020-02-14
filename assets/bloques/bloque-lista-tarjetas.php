@@ -28,11 +28,19 @@ $id = 'botones-' . $block['id'];
             <div class="item_filtro filter" data-filter="tipo_texto">Textos</div>
             <div class="item_filtro todos">Ver todos</div>
         </div>
+        <div class="container_filtro tipos">
+            <div class="item_filtro name active">Año</div>
+            <div class="item_filtro filter" data-filter="fecha_2018">2018</div>
+            <div class="item_filtro filter" data-filter="fecha_2019">2019</div>
+            <div class="item_filtro filter" data-filter="fecha_2020">2020</div>
+            <div class="item_filtro todos">Ver todos</div>
+        </div>
     </div>
 
     <div class="inside">
     <?php if(have_rows('tarjetas')): while(have_rows('tarjetas')): the_row(); ?>
         <?php $tipo = get_sub_field('tipo'); ?>
+        <?php $fecha = get_sub_field('fecha'); ?>
         <?php $ciudad = get_sub_field('ciudad'); ?>
         <?php
             if($tipo == 'video'):
@@ -48,7 +56,7 @@ $id = 'botones-' . $block['id'];
         ?>
 
         <?php if($tipo != 'texto'): ?>
-            <div class="item tipo_<?php echo $tipo ?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
+            <div class="item tipo_<?php echo $tipo ?> fecha_<?php echo $fecha;?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
 
                 <?php if($tipo == 'galeria'): ?>
                     <div class="gal">
@@ -66,7 +74,7 @@ $id = 'botones-' . $block['id'];
                 </div>
             </div>
         <?php else: $imagen = get_sub_field('imagen');?>
-            <a href="<?php echo get_sub_field('id_video')?>" class="item tipo_<?php echo $tipo ?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
+            <a href="<?php echo get_sub_field('id_video')?>" class="item tipo_<?php echo $tipo ?> fecha_<?php echo $fecha;?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
 
                 <?php if($tipo == 'galeria'): ?>
                     <div class="gal">

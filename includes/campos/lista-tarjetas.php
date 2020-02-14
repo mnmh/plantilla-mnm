@@ -53,6 +53,33 @@
                             'placeholder' => '',
                         ),
                         array(
+                            'key' => 'field_5d3ffd12gt959',
+                            'label' => 'Fecha',
+                            'name' => 'fecha',
+                            'type' => 'select',
+                            'instructions' => '',
+                            'required' => 0,
+                            'conditional_logic' => 0,
+                            'wrapper' => array(
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'choices' => array(
+                                '2020' => '2020',
+                                '2019' => '2019',
+                                '2018' => '2018'
+                            ),
+                            'default_value' => array(
+                            ),
+                            'allow_null' => 0,
+                            'multiple' => 0,
+                            'ui' => 0,
+                            'return_format' => 'value',
+                            'ajax' => 0,
+                            'placeholder' => '',
+                        ),
+                        array(
                             'key' => 'field_5d3ffd12ba759',
                             'label' => 'Ciudad',
                             'name' => 'ciudad',
@@ -207,6 +234,7 @@
                             'append' => '',
                             'maxlength' => '',
                         ),
+                        
                     ),
                 ),
             ),
