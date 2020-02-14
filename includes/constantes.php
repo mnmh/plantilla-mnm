@@ -27,6 +27,7 @@ define("VOCESMEDALLO", get_permalink(3107));
 define("SOBRE_LA_EXPO", get_permalink(2326));
 
 define("DIMEN", get_permalink(8629));
+define("INFORMATE", get_permalink(5937));
 
 
 function elimina_acentos($text) {

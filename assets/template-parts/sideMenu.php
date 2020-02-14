@@ -19,7 +19,7 @@
 					<li><a href="<?php echo DIMEN ?>" data-target="#" class="itemChild">
 						<span>Dimensiones del museo</span>
 					</a></li>
-					<li><a href="http://museodememoria.gov.co/informate/" data-target="#" class="itemChild">
+					<li><a href="<?php echo INFORMATE ?>" data-target="#" class="itemChild">
 						<span>Infórmate</span>
 					</a></li>
 				</ul>
