@@ -36,7 +36,7 @@
             $('.calendario_mes .listado .itemListado.' + mes + '.' + dia).show();
         })
 
-        if($('#calendario .item.active').length > 0) $('#calendario .item.active')[0].click();
+        if($('#calendario .item.active').length > 0) {$('#calendario .item.active')[0].click()};
 
         $('#calendario .mes .next, #calendario .mes .prev').on('click', function () {
             var $show = $('#calendario .mes:not(.hide)');
