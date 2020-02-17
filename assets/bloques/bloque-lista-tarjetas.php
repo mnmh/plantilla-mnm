@@ -44,6 +44,9 @@ $id = 'botones-' . $block['id'];
     </div>
 
     <div class="inside">
+
+    <?php $numItemLoop = 0; ?>
+
     <?php if(have_rows('tarjetas')): while(have_rows('tarjetas')): the_row(); ?>
         <?php $tipo = get_sub_field('tipo'); ?>
         <?php $fecha = get_sub_field('fecha'); ?>
@@ -55,14 +58,21 @@ $id = 'botones-' . $block['id'];
                 $video = get_sub_field('id_video');
             else:
                 $post = get_sub_field('galeria');
-                $titulo = $post->post_title;
-                $galeria = get_field('galeria', $post->ID);
-                $imagen = $galeria[0];
+                if($post):
+                    $titulo = $post->post_title;
+                    $galeria = get_field('galeria', $post->ID);
+                    $imagen = $galeria[0];
+                endif;
             endif;
+
+            $numItemLoop++;
+            $class = '';
+
+            if($numItemLoop < 12) $class = 'visible';
         ?>
 
         <?php if($tipo != 'texto'): ?>
-            <div class="item tipo_<?php echo $tipo ?> fecha_<?php echo $fecha;?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
+            <div class="item <?php echo $class; ?> tipo_<?php echo $tipo ?> fecha_<?php echo $fecha;?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
 
                 <?php if($tipo == 'galeria'): ?>
                     <div class="gal">
@@ -80,7 +90,7 @@ $id = 'botones-' . $block['id'];
                 </div>
             </div>
         <?php else: $imagen = get_sub_field('imagen');?>
-            <a href="<?php echo get_sub_field('id_video')?>" class="item tipo_<?php echo $tipo ?> fecha_<?php echo $fecha;?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
+            <a href="<?php echo get_sub_field('id_video')?>" class="item <?php echo $class; ?> tipo_<?php echo $tipo ?> fecha_<?php echo $fecha;?> ciudad_<?php echo $ciudad ?>" data-video="<?php echo $video ?>">
 
                 <?php if($tipo == 'galeria'): ?>
                     <div class="gal">
@@ -93,12 +103,13 @@ $id = 'botones-' . $block['id'];
                 <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
 
                 <div class="tarjeta-description">
-                    <h3><?php echo $titulo ?></h3>
+                    <h3><?php echo get_sub_field('titulo') ?></h3>
                     <p class="texto-descriptivo"><?php echo get_sub_field('descripcion') ?></p>
                 </div>
             </a>
         <?php endif; ?>
     <?php endwhile; endif; ?>
+    <div class="moreNav" data-url="#"></div>
     </div>
     
 

@@ -4503,6 +4503,34 @@ body#tinymce {
   .subtitulo-sec {
     padding-left: 10px; } }
 
+.moreNav {
+  width: 23%;
+  margin: 0.25em;
+  min-height: 350px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  max-width: 300px; }
+  @media only screen and (max-width: 980px) {
+    .moreNav {
+      width: 48%;
+      max-width: 100%; } }
+  @media only screen and (max-width: 650px) {
+    .moreNav {
+      width: 100%; } }
+  .moreNav:before {
+    content: 'cargar más';
+    display: table;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: white;
+    background-color: #F4C724;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 70px;
+    padding: 8px 28px 8px 28px;
+    border-radius: 40px; }
+
 .calendario_mes {
   display: flex;
   align-items: flex-start; }
@@ -5265,33 +5293,6 @@ body#tinymce {
         min-height: 50px;
         max-width: none;
         margin: 0; }
-  .page-obras .moreNav {
-    width: 23%;
-    margin: 0.25em;
-    min-height: 350px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    max-width: 300px; }
-    @media only screen and (max-width: 980px) {
-      .page-obras .moreNav {
-        width: 48%;
-        max-width: 100%; } }
-    @media only screen and (max-width: 650px) {
-      .page-obras .moreNav {
-        width: 100%; } }
-    .page-obras .moreNav:before {
-      content: 'cargar más';
-      display: table;
-      text-decoration: none !important;
-      cursor: pointer;
-      color: white;
-      background-color: #F4C724;
-      font-weight: bold;
-      margin: auto;
-      margin-top: 70px;
-      padding: 8px 28px 8px 28px;
-      border-radius: 40px; }
   .page-obras .resultado {
     width: 100%;
     border-bottom: 1px solid #ddd;
@@ -6924,7 +6925,10 @@ blockquote {
     margin: 0 auto;
     width: 100%;
     max-width: 50em;
-    text-align: center; }
+    text-align: center;
+    display: none; }
+    .tarjetas .item.visible {
+      display: block; }
     .tarjetas .item.is-selected {
       opacity: 1; }
       .tarjetas .item.is-selected .des {

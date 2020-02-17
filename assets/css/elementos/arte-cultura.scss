@@ -820,39 +820,6 @@
       }
     }
   
-    .moreNav {
-      width: 23%;
-      margin: 0.25em;
-      min-height: 350px;
-      display: flex;
-      position: relative;
-      overflow: hidden;
-      max-width: 300px;
-
-      @media #{$medium-and-down} {
-        width: 48%;
-        max-width: 100%;
-      }
-
-      @media #{$small-and-down} {
-        width: 100%;
-      }
-  
-      &:before {
-        content: 'cargar más';
-        display: table;
-        text-decoration: none !important;
-        cursor: pointer;
-        color: white;
-        background-color: #F4C724;
-        font-weight: bold;
-        margin: auto;
-        margin-top: 70px;
-        padding: 8px 28px 8px 28px;
-        border-radius: 40px;
-      }
-    }
-  
     .resultado {
       width: 100%;
       border-bottom: 1px solid #ddd;

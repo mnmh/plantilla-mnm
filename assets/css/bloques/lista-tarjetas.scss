@@ -80,6 +80,11 @@
         width: 100%;
         max-width: em(800);
         text-align: center;
+        display: none;
+
+        &.visible {
+            display: block;
+        }
 
         &.is-selected {
             opacity: 1;
