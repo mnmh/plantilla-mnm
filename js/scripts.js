@@ -2,7 +2,8 @@
 
 	$(function () {
 
-		'use strict';
+		alert('hola');
+		console.log('hola mundo');
 
 	});
 
