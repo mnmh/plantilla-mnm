@@ -80,10 +80,10 @@
         width: 100%;
         max-width: em(800);
         text-align: center;
-        display: none;
+        // display: none;
 
-        &.visible {
-            display: block;
+        &.hidden {
+            display: none;
         }
 
         &.is-selected {

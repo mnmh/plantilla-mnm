@@ -68,7 +68,7 @@ $id = 'botones-' . $block['id'];
             $numItemLoop++;
             $class = '';
 
-            if($numItemLoop < 12) $class = 'visible';
+            if($numItemLoop >= 12) $class = 'hidden';
         ?>
 
         <?php if($tipo != 'texto'): ?>

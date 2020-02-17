@@ -6925,10 +6925,9 @@ blockquote {
     margin: 0 auto;
     width: 100%;
     max-width: 50em;
-    text-align: center;
-    display: none; }
-    .tarjetas .item.visible {
-      display: block; }
+    text-align: center; }
+    .tarjetas .item.hidden {
+      display: none; }
     .tarjetas .item.is-selected {
       opacity: 1; }
       .tarjetas .item.is-selected .des {

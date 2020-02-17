@@ -25,7 +25,7 @@
                 $('.item_filtro.filter.active').each((i, elem) => {
                     filtro += '.' + $(elem).attr('data-filter')
                 })
-                $parent_galeria.find('.inside .item').addClass('visible');
+                $parent_galeria.find('.inside .item').removeClass('hidden');
                 $parent_galeria.find('.inside .moreNav').remove();
                 $parent_galeria.find('.inside .item' + filtro).show()
             } else if ($item.hasClass('todos')){
@@ -34,7 +34,7 @@
                 $parent.find('.item_filtro.name').addClass('active')
                 $parent.find('.item_filtro:not(.active)').hide()
                 $parent_galeria.find('.inside .item').show()
-                $parent_galeria.find('.inside .item').addClass('visible');
+                $parent_galeria.find('.inside .item').removeClass('hidden');
                 $parent_galeria.find('.inside .moreNav').remove();
             }
         })
@@ -125,7 +125,7 @@
 
         $('.tarjetas .inside .moreNav').on('click', function() {
             $parent = $(this).parents('.inside');
-            $parent.find('.item').addClass('visible');
+            $parent.find('.item').removeClass('hidden');
             $(this).remove();
         })
     });
