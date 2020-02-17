@@ -248,6 +248,17 @@ function my_acf_init() {
 			'keywords'			=> array( 'banner', 'personajes', 'texto', 'imagen'),
 		));
 
+		// Bloque listado noticias
+		acf_register_block(array(
+			'name'				=> 'listado noticias automatico',
+			'title'				=> __('Listado noticias automatico'),
+			'description'		=> __('Un bloque para mostrar un listado de noticias automatico'),
+			'render_callback'	=> 'bloque_callback_bloque_listado_noticias_auto',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'banner', 'personajes', 'texto', 'imagen'),
+		));
+
 		// Bloque equipo
 		acf_register_block(array(
 			'name'				=> 'bloque equipo',
@@ -625,6 +636,14 @@ function bloque_callback_bloque_listado_noticias( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-listado-noticias.php") ) ) {
 		include( get_theme_file_path("assets/bloques/bloque-listado-noticias.php") );
+	}
+}
+
+// Carga el bloque listado con noticias automatico
+function bloque_callback_bloque_listado_noticias_auto( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-listado-noticias-auto.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-listado-noticias-auto.php") );
 	}
 }
 
