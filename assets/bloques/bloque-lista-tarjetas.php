@@ -30,7 +30,6 @@ $id = 'botones-' . $block['id'];
         </div>
         <div class="container_filtro tipos">
             <div class="item_filtro name active">Año</div>
-            <div class="item_filtro filter" data-filter="fecha_2018">2012</div>
             <div class="item_filtro filter" data-filter="fecha_2018">2013</div>
             <div class="item_filtro filter" data-filter="fecha_2018">2014</div>
             <div class="item_filtro filter" data-filter="fecha_2018">2015</div>
