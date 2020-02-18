@@ -7,8 +7,9 @@
 // id unico para el bloque
 $id = 'lista-noticias-' . $block['id'];
 $id_categ = get_field('categoria');
+$num = get_field('numero');
 
-$args = array( 'posts_per_page' => 4, 'category' => $id_categ );
+$args = array( 'posts_per_page' => $num, 'category' => $id_categ );
 
 $noticias = get_posts($args);
 ?>
