@@ -38,12 +38,67 @@
             .addTo(controller);
         })
 
-        //Bloque botones carrousel
+        //Bloque tarjetas audio
         $('.audio.piepag').each(function(e,i){
             var tl_temp = new TimelineMax();
 
             tl_temp
             .staggerFromTo($(this).find('.tarjetas .item') ,.5, {autoAlpha: 0, y: 20}, {autoAlpha: 1, y: 0}, 0.25)
+
+            var scene = new ScrollMagic.Scene({
+                triggerElement: this
+            })
+            .setTween(tl_temp)
+            .addTo(controller);
+        })
+
+        // ARTE y CULTURA
+        $('.page-obras').each(function() {
+            var tl_temp = new TimelineMax();
+
+            tl_temp
+            .staggerFromTo($(this).find('.dropdown .item_drop') ,.5, {autoAlpha: 0, x: 20}, {autoAlpha: 1, x: 0}, 0.25)
+
+            var scene = new ScrollMagic.Scene({
+                triggerElement: this
+            })
+            .setTween(tl_temp)
+            .addTo(controller);
+        })
+
+        // Slider columna
+        $('.slider-columna').each(function() {
+            var tl_temp = new TimelineMax();
+
+            tl_temp
+            .fromTo($(this).find('.left') ,.5, {autoAlpha: 0, x: -20}, {autoAlpha: 1, x: 0})
+
+            var scene = new ScrollMagic.Scene({
+                triggerElement: this
+            })
+            .setTween(tl_temp)
+            .addTo(controller);
+        })
+
+        // Header columna
+        $('.header-columna').each(function() {
+            var tl_temp = new TimelineMax();
+
+            tl_temp
+            .fromTo($(this).find('.right') ,1, {autoAlpha: 0}, {autoAlpha: 1})
+
+            var scene = new ScrollMagic.Scene({
+                triggerElement: this
+            })
+            .setTween(tl_temp)
+            .addTo(controller);
+        })
+
+        $('.wp-block-image').each(function(){
+            var tl_temp = new TimelineMax();
+
+            tl_temp
+            .fromTo($(this) ,1, {autoAlpha: 0}, {autoAlpha: 1})
 
             var scene = new ScrollMagic.Scene({
                 triggerElement: this
