@@ -11,13 +11,13 @@ function header_scripts()
         wp_register_script('flickity', get_template_directory_uri() . '/js/lib/flickity.js', array('jquery'), '1.0.0');
         wp_enqueue_script('flickity');
 
-        wp_register_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js', array('jquery'), '1.0.0');
+        wp_register_script('gsap', get_template_directory_uri() . '/js/lib/gsap.js', array('jquery'), '1.0.0');
         wp_enqueue_script('gsap');
 
-        wp_register_script('scroll', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array('jquery'), '1.0.0');
+        wp_register_script('scroll', get_template_directory_uri() . '/js/lib/scroll.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scroll');
 
-        wp_register_script('scroll-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js', array('jquery'), '1.0.0');
+        wp_register_script('scroll-gsap', get_template_directory_uri() . '/js/lib/scroll-plugin.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scroll-gsap');
 
         // Cargar componentes generales
