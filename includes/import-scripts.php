@@ -14,6 +14,12 @@ function header_scripts()
         wp_register_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js', array('jquery'), '1.0.0');
         wp_enqueue_script('gsap');
 
+        wp_register_script('scroll', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('scroll');
+
+        wp_register_script('scroll-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('scroll-gsap');
+
         // Cargar componentes generales
         wp_register_script('menu', get_template_directory_uri() . '/js/common/menu.js', array('jquery'), '1.0.0');
         wp_enqueue_script('menu');
@@ -65,8 +71,11 @@ function header_scripts()
         wp_register_script('agenda', get_template_directory_uri() . '/js/bloques/agenda.js', array('jquery'), '1.0.0');
         wp_enqueue_script('agenda');
 
-        wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
-        wp_enqueue_script('scripts');
+        wp_register_script('animaciones', get_template_directory_uri() . '/js/common/animaciones.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('animaciones');
+
+        // wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
+        // wp_enqueue_script('scripts');
     }
 }
 
