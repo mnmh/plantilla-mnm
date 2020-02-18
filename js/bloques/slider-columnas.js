@@ -1,7 +1,7 @@
 (function ($, root, undefined) {
 
     $(function () {
-        $('.slider-columna .right .inside').each(function (i) {
+        $('.slider-columna:not(.half) .right .inside').each(function (i) {
             $parent = $(this).parents('.slider-columna');
             var flkty = new Flickity(this, {
                 prevNextButtons: false,
