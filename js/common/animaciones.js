@@ -72,7 +72,7 @@
 
             tl_temp
             .fromTo($(this).find('.left > *') ,.5, {autoAlpha: 0}, {autoAlpha: 1})
-            .fromTo($(this).find('.right .item') ,.5, {autoAlpha: 0, x: 20}, {autoAlpha: 1, x: 0})
+            .fromTo($(this).find('.right .item') ,.5, {autoAlpha: 0}, {autoAlpha: 1})
 
             var scene = new ScrollMagic.Scene({
                 triggerElement: this
