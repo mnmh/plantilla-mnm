@@ -383,6 +383,7 @@
 
 .slider-columna.half {
     display: flex;
+    justify-content: center;
 
     .left {
         width: 60%;
@@ -393,7 +394,7 @@
         align-items: center;
         align-content: center;
         padding: 40px;
-        flex-direction: column;
+        max-width: 1200px;
 
         .titulo, .des {
             max-width: 600px;

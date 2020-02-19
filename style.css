@@ -7866,7 +7866,8 @@ blockquote {
           fill: white; }
 
 .slider-columna.half {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .slider-columna.half .left {
     width: 60%;
     background-color: #333;
@@ -7876,7 +7877,7 @@ blockquote {
     align-items: center;
     align-content: center;
     padding: 40px;
-    flex-direction: column; }
+    max-width: 1200px; }
     .slider-columna.half .left .titulo, .slider-columna.half .left .des {
       max-width: 600px; }
     .slider-columna.half .left .titulo {
