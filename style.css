@@ -7875,7 +7875,8 @@ blockquote {
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    padding: 40px; }
+    padding: 40px;
+    flex-direction: column; }
     .slider-columna.half .left .titulo, .slider-columna.half .left .des {
       max-width: 600px; }
     .slider-columna.half .left .titulo {
