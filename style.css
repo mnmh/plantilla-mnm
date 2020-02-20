@@ -6965,17 +6965,22 @@ blockquote {
           min-height: 20vw;
           height: auto; } }
   .tres-botones.color .botones .boton:nth-child(1) {
-    background-color: #225DDC; }
+    background-color: #3e6cd1; }
+    .tres-botones.color .botones .boton:nth-child(1) .name {
+      color: white; }
   .tres-botones.color .botones .boton:nth-child(2) {
-    background-color: #F4C724; }
+    background-color: #dfdfdf; }
+    .tres-botones.color .botones .boton:nth-child(2) .name {
+      color: #3B3B3B; }
   .tres-botones.color .botones .boton:nth-child(3) {
     background-color: #3B3B3B; }
+    .tres-botones.color .botones .boton:nth-child(3) .name {
+      color: white; }
   .tres-botones.color .botones .boton .name {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    color: white; }
+    justify-content: space-between; }
     .tres-botones.color .botones .boton .name h4 {
       margin-left: 0 !important; }
   .tres-botones.segunda .sec {

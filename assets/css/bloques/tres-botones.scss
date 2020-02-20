@@ -65,22 +65,31 @@
 
             .boton {
                 &:nth-child(1) {
-                    background-color:#225DDC;
+                    background-color:$azul;
+                    .name {
+                        color: white;
+                    }
                 }
           
                 &:nth-child(2) {
-                    background-color:#F4C724;
+                    background-color:#dfdfdf;
+                    .name {
+                        color: $black;
+                    }
                 }
         
                 &:nth-child(3) {
-                    background-color:#3B3B3B;
+                    background-color:$black;
+                    .name {
+                        color: white;
+                    }
                 }
+                
                 .name {
                     height: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    color: white;
 
                     h4 {
                         margin-left: 0 !important;
