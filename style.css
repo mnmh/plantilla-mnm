@@ -6925,7 +6925,6 @@ blockquote {
   width: 100%;
   margin: auto;
   max-width: 1600px;
-  color: white;
   margin-bottom: 9vh; }
   .tres-botones .botones {
     display: flex;
@@ -6938,12 +6937,6 @@ blockquote {
       padding: 32px;
       max-height: 500px;
       min-height: 190px; }
-      .tres-botones .botones .boton:nth-child(1) {
-        background-color: #225DDC; }
-      .tres-botones .botones .boton:nth-child(2) {
-        background-color: #F4C724; }
-      .tres-botones .botones .boton:nth-child(3) {
-        background-color: #3B3B3B; }
       .tres-botones .botones .boton .img {
         position: absolute;
         top: 0;
@@ -6971,12 +6964,19 @@ blockquote {
           max-width: none;
           min-height: 20vw;
           height: auto; } }
-  .tres-botones.color .botones .name {
+  .tres-botones.color .botones .boton:nth-child(1) {
+    background-color: #225DDC; }
+  .tres-botones.color .botones .boton:nth-child(2) {
+    background-color: #F4C724; }
+  .tres-botones.color .botones .boton:nth-child(3) {
+    background-color: #3B3B3B; }
+  .tres-botones.color .botones .boton .name {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
-    .tres-botones.color .botones .name h4 {
+    justify-content: space-between;
+    color: white; }
+    .tres-botones.color .botones .boton .name h4 {
       margin-left: 0 !important; }
   .tres-botones.segunda .sec {
     display: block;
@@ -6988,7 +6988,7 @@ blockquote {
       .tres-botones.segunda .sec {
         padding-left: 10px; } }
   .tres-botones.segunda .boton {
-    background-color: #F6F6F6 !important;
+    background-color: #F6F6F6;
     max-width: none;
     min-height: 400px; }
     .tres-botones.segunda .boton .name {
@@ -7001,7 +7001,8 @@ blockquote {
       .tres-botones.segunda .boton .name p {
         max-width: 70% !important;
         margin-left: 0 !important;
-        font-weight: 300; }
+        font-weight: 300;
+        color: #3B3B3B; }
   @media all and (max-width: 1000px) {
     .tres-botones .botones {
       flex-wrap: wrap; }
