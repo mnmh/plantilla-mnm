@@ -22,7 +22,7 @@
 
             .subtitulo {
                 text-transform: uppercase;
-                color: #F4C724;
+                color: $amarillo;
             }
             .carrousel {
                 .flickity-slider {
@@ -52,7 +52,7 @@
 
             .btn {
                 color: white;
-                background-color: #F4C724;
+                background-color: $amarillo;
                 border: none;
                 font-weight: bold;
                 margin-top: 20px;

@@ -30,39 +30,70 @@ button {
   z-index: $zindex_topmenu;
   top: 0;
   left: 0;
-  transition: box-shadow 300ms, color 300ms, background 300ms, padding 200ms;
   border-bottom: 1px solid #ccc;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  .sociales {
+  #acce_menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
     display: flex;
-    padding-right: 10px;
+    align-items: center;
 
-    .item {
-      margin-left: 3px;
+    > div {
       display: flex;
-      width: 30px;
-      height: 30px;
-      border-radius: 50px;
       align-items: center;
-      justify-content: center;
+    }
 
-      svg {
-        width: 50%;
+    .icon_acce {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
 
-        path {
-          fill: $gris;
+    .light {
+      cursor: pointer;
+      .slider {
+        width: 60px;
+        height: 25px;
+        border-radius: 20px;
+        background-color: #eaeaea;
+        position: relative;
+
+        &:before {
+          width: 20px;
+          height: 20px;
+          background-color: $azul;
+          border-radius: 30px;
+          position: absolute;
+          top: 50%;
+          left: 2.5px;
+          transform: translate(0,-50%);
+          content: '';
+          transition: left 0.4s ease;
+
+          .dark & {
+            left: 37.5px;
+          }
         }
+
+        
       }
 
-      &:hover {
-        svg path {
-          fill: #333;
-        }
+      .sun, .moon {
+        width: 30px;
+        height: 30px;
       }
+    }
+
+    &.open {
+      width: 300px;
     }
   }
 

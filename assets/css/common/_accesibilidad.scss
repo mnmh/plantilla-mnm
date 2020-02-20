@@ -1,0 +1,143 @@
+$color_acce_background: #333;
+$color_acce_background_2: #444;
+
+$titulo_secundario: #c7c7c7;
+
+body.dark {
+    background-color: $color_acce_background;
+
+    #top_menu {
+        background-color: $color_acce_background_2;
+        border-bottom-color: #555;
+    
+        &.style {
+            background-color: $color_acce_background_2;
+            border-bottom-color: #555;
+        }
+    
+        #title {
+            svg path {
+                fill: white;
+            }
+        }
+    
+        #acce_menu {
+            border-color: #555;
+            background-color: #333;
+    
+            .light{
+                .slider {
+                    background-color: #444;
+                    
+                    &:before {
+                        background-color: $amarillo;
+                    }
+                }
+            }
+        }
+    }
+    
+    #menu_lateral_btn {
+        .a {
+            fill: white;
+        }
+    
+        &:hover .a {
+            fill: $amarillo;
+        }
+    }
+    
+    #menu_lateral {
+        .menu-wrapper {
+            .main-menu {
+                background-color: $color_acce_background_2;
+    
+                a, .name {
+                    color: white;
+                }
+    
+                .item {
+                    &:before {
+                        border-color: #999 !important;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    .sec {
+        color: white;
+    }
+    
+    .botones-carrousel {
+        .boton {
+            .name {
+                color: $titulo_secundario;
+            }
+        }
+    }
+    
+    
+    .destacados-cc {
+        ul {
+            li {
+                .name {
+                    h1 {
+                        color: $titulo_secundario;
+                    }
+                }
+            }
+        }
+    }
+    
+    .titulo-modulo a {
+        color: $amarillo;
+    }
+    
+    .audio.piepag.home {
+        background-color: $color_acce_background_2;
+    }
+    
+    .tarjetas .item .tarjeta-description h3 {
+        color: $titulo_secundario;
+    }
+    
+    .tarjetas .item .tarjeta-description .texto-descriptivo {
+        color: $gris !important;
+    }
+    
+    .site-footer {
+        background-color: $color_acce_background_2;
+    
+        .footer-logo img {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    
+        h2, h3, .git {
+            color: white;
+        }
+    
+        a {
+            color: $titulo_secundario;
+    
+            &:hover {
+                color: $amarillo;
+                opacity: 1;
+            }
+        }
+    }
+    
+    .form_mail .acf-fields .acf-field input {
+        background-color: $color_acce_background;
+        color: white;
+    }
+    
+    .audio.piepag.home .textos {
+        p, h1 {
+            color: white !important;
+        }
+    }
+}
