@@ -4506,11 +4506,11 @@ body#tinymce {
 .moreNav {
   width: 23%;
   margin: 0.25em;
-  min-height: 350px;
+  height: 250px;
   display: flex;
   position: relative;
   overflow: hidden;
-  max-width: 300px; }
+  max-width: 400px; }
   @media only screen and (max-width: 980px) {
     .moreNav {
       width: 48%;
@@ -4527,7 +4527,6 @@ body#tinymce {
     background-color: #3e6cd1;
     font-weight: bold;
     margin: auto;
-    margin-top: 70px;
     padding: 8px 28px 8px 28px;
     border-radius: 40px; }
 
@@ -5288,11 +5287,6 @@ body#tinymce {
           margin-top: 0;
           padding-top: 0;
           flex-basis: 60%; }
-      .page-obras .items.lista .moreNav {
-        width: 100%;
-        min-height: 50px;
-        max-width: none;
-        margin: 0; }
   .page-obras .resultado {
     width: 100%;
     border-bottom: 1px solid #ddd;
@@ -5400,7 +5394,7 @@ body#tinymce {
       padding-top: 12px;
       font-weight: bold; }
     .page-obras .obra .img {
-      height: 240px;
+      height: 250px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
