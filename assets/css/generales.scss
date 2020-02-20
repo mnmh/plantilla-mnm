@@ -111,7 +111,7 @@
     text-decoration: none !important;
     cursor: pointer;
     color: white;
-    background-color: #F4C724;
+    background-color: $azul;
     font-weight: bold;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -206,11 +206,11 @@
 .moreNav {
     width: 23%;
     margin: 0.25em;
-    min-height: 350px;
+    height: 250px;
     display: flex;
     position: relative;
     overflow: hidden;
-    max-width: 300px;
+    max-width: 400px;
 
     @media #{$medium-and-down} {
       width: 48%;
@@ -227,10 +227,9 @@
       text-decoration: none !important;
       cursor: pointer;
       color: white;
-      background-color: #F4C724;
+      background-color: $azul;
       font-weight: bold;
       margin: auto;
-      margin-top: 70px;
       padding: 8px 28px 8px 28px;
       border-radius: 40px;
     }
