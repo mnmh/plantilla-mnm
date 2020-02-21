@@ -66,7 +66,7 @@
 				</section>
 
 				<section class="footer-logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/grupo-cnmh-dps.png" alt="">
+					<div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/sprite_imagen.png')"></div>
 				</section>
 
 				<ul class="info-links">

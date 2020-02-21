@@ -27,6 +27,7 @@ a {
 .wrap {
   position: relative;
   overflow: auto;
+  overflow: hidden;
   transition: all 0.5s ease;
   width: 98%;
   margin: 1%;
@@ -3836,29 +3837,66 @@ button {
   z-index: 100;
   top: 0;
   left: 0;
-  transition: box-shadow 300ms, color 300ms, background 300ms, padding 200ms;
   border-bottom: 1px solid #ccc;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  #top_menu .sociales {
+  #top_menu #acce_menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
     display: flex;
-    padding-right: 10px; }
-    #top_menu .sociales .item {
-      margin-left: 3px;
+    align-items: center; }
+    #top_menu #acce_menu > div {
       display: flex;
-      width: 30px;
-      height: 30px;
-      border-radius: 50px;
-      align-items: center;
-      justify-content: center; }
-      #top_menu .sociales .item svg {
-        width: 50%; }
-        #top_menu .sociales .item svg path {
-          fill: #9A9A9A; }
-      #top_menu .sociales .item:hover svg path {
-        fill: #333; }
+      align-items: center; }
+      #top_menu #acce_menu > div svg {
+        width: 70%;
+        margin: 15%; }
+    #top_menu #acce_menu .icon_acce {
+      width: 40px;
+      height: 40px;
+      cursor: pointer; }
+      #top_menu #acce_menu .icon_acce path {
+        fill: #999; }
+      #top_menu #acce_menu .icon_acce:hover path {
+        fill: #3e6cd1; }
+    #top_menu #acce_menu .light {
+      margin-left: 10px;
+      cursor: pointer; }
+      #top_menu #acce_menu .light .slider {
+        width: 60px;
+        height: 25px;
+        border-radius: 20px;
+        background-color: #eaeaea;
+        position: relative; }
+        #top_menu #acce_menu .light .slider:before {
+          width: 20px;
+          height: 20px;
+          background-color: #3e6cd1;
+          border-radius: 30px;
+          position: absolute;
+          top: 50%;
+          left: 2.5px;
+          transform: translate(0, -50%);
+          content: '';
+          transition: left 0.4s ease; }
+          .dark #top_menu #acce_menu .light .slider:before {
+            left: 37.5px; }
+      #top_menu #acce_menu .light .sun, #top_menu #acce_menu .light .moon {
+        width: 30px;
+        height: 30px; }
+        #top_menu #acce_menu .light .sun path, #top_menu #acce_menu .light .moon path {
+          fill: #999; }
+      #top_menu #acce_menu .light .sun {
+        padding: 2px; }
+    #top_menu #acce_menu .light, #top_menu #acce_menu .size {
+      display: none; }
+  #top_menu.open-slider-acce #acce_menu .icon_acce path {
+    fill: #3e6cd1; }
   #top_menu #title svg {
     width: 320px;
     height: 45px;
@@ -4217,6 +4255,10 @@ header.section-header {
     .site-footer .footer-logo img {
       width: 100%;
       height: auto; }
+    .site-footer .footer-logo .img {
+      width: 100%;
+      height: 71px;
+      background-position: center top; }
   .site-footer h2 {
     font-size: 1.4375em;
     font-weight: 600;
@@ -4463,7 +4505,7 @@ body#tinymce {
   text-decoration: none !important;
   cursor: pointer;
   color: white;
-  background-color: #ffbc54;
+  background-color: #ffc800;
   font-weight: bold;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -4657,7 +4699,7 @@ body#tinymce {
           height: 10px;
           bottom: 15px;
           left: 0;
-          background: #ffbc54;
+          background: #ffc800;
           content: '';
           z-index: -1; }
       .calendario_mes #calendario .item.nombre {
@@ -4743,11 +4785,15 @@ body#tinymce {
     .form_mail .acf-fields .acf-field {
       padding: 0;
       width: 100%;
-      padding-right: 5px; }
+      padding-right: 5px;
+      border-top: none !important; }
       .form_mail .acf-fields .acf-field input {
         width: 100%;
         line-height: 40px;
-        height: 40px; }
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 3px; }
   .form_mail .acf-button {
     border: none;
     background: #dcdcdc;
@@ -5587,7 +5633,7 @@ blockquote {
     display: block;
     width: 4.6875em;
     height: 0.25em;
-    background: #ffbc54;
+    background: #ffc800;
     margin: 0;
     position: relative;
     top: -1.875em; }
@@ -5744,6 +5790,7 @@ blockquote {
     #mapa3d .intro .img {
       width: 500px;
       max-width: 100%;
+      display: none;
       margin: 0 auto;
       margin-top: 2em; }
       #mapa3d .intro .img img {
@@ -6938,7 +6985,15 @@ blockquote {
         width: 100%;
         height: 100%;
         background-size: cover;
-        background-position: center; }
+        background-position: center;
+        overflow: hidden; }
+        .tres-botones .botones .boton .img svg {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          transform: translate(0, -50%); }
+          .tres-botones .botones .boton .img svg path {
+            fill: #333; }
       .tres-botones .botones .boton .name h1 {
         font-size: 38px; }
       .tres-botones .botones .boton .name h4 {
@@ -7138,7 +7193,7 @@ blockquote {
     border: none;
     padding: 10px;
     font-weight: bold;
-    background: #ffbc54;
+    background: #ffc800;
     color: white;
     margin: 0 auto;
     margin-top: 30px; }
@@ -7350,7 +7405,7 @@ blockquote {
         .header-columna .contenedor .left, .header-columna .contenedor .right {
           width: 100%; } }
   .header-columna.colores {
-    background: #ffbc54; }
+    background: #ffc800; }
     .header-columna.colores .left .texto {
       color: white;
       font-weight: bold;
@@ -7746,7 +7801,7 @@ blockquote {
         height: 70%;
         width: 100%; } }
   .slider-columna:not(.half).amarillo .left {
-    background: #ffbc54; }
+    background: #ffc800; }
   .slider-columna:not(.half).gris .left {
     background: #3B3B3B; }
   .slider-columna:not(.half).azul .left {
@@ -8029,3 +8084,118 @@ blockquote {
       display: none; }
     .columnas .right {
       width: 100%; } }
+
+body.dark {
+  background-color: #333; }
+  body.dark #top_menu {
+    background-color: #444;
+    border-bottom-color: #555; }
+    body.dark #top_menu.style {
+      background-color: #444;
+      border-bottom-color: #555; }
+    body.dark #top_menu #title svg path {
+      fill: white; }
+    body.dark #top_menu #acce_menu {
+      border-color: #555;
+      background-color: #333; }
+      body.dark #top_menu #acce_menu .light .slider {
+        background-color: #444; }
+        body.dark #top_menu #acce_menu .light .slider:before {
+          background-color: #ffc800; }
+      body.dark #top_menu #acce_menu .icon_acce:hover path {
+        fill: #ffc800; }
+    body.dark #top_menu.open-slider-acce #acce_menu .icon_acce path {
+      fill: #ffc800; }
+  body.dark #menu_lateral_btn .a {
+    fill: white; }
+  body.dark #menu_lateral_btn:hover .a {
+    fill: #ffc800; }
+  body.dark #menu_lateral .menu-wrapper .main-menu {
+    background-color: #444; }
+    body.dark #menu_lateral .menu-wrapper .main-menu a, body.dark #menu_lateral .menu-wrapper .main-menu .name {
+      color: white; }
+    body.dark #menu_lateral .menu-wrapper .main-menu .item:before {
+      border-color: #999 !important; }
+  body.dark .sec {
+    color: white; }
+  body.dark .botones-carrousel .boton .name {
+    color: #c7c7c7; }
+  body.dark .destacados-cc ul li .name h1 {
+    color: #c7c7c7; }
+  body.dark .titulo-modulo a {
+    color: #ffc800; }
+  body.dark .audio.piepag.home {
+    background-color: #444; }
+  body.dark .tarjetas .item .tarjeta-description h3 {
+    color: #c7c7c7; }
+  body.dark .tarjetas .item .tarjeta-description .texto-descriptivo {
+    color: #9A9A9A !important; }
+  body.dark .site-footer {
+    background-color: #444; }
+    body.dark .site-footer .footer-logo .img {
+      background-position: center bottom; }
+    body.dark .site-footer h2, body.dark .site-footer h3, body.dark .site-footer .git {
+      color: white; }
+    body.dark .site-footer a {
+      color: #c7c7c7; }
+      body.dark .site-footer a:hover {
+        color: #ffc800;
+        opacity: 1; }
+  body.dark .form_mail .acf-fields .acf-field input {
+    background-color: #333;
+    color: white; }
+  body.dark .audio.piepag.home .textos p, body.dark .audio.piepag.home .textos h1 {
+    color: white !important; }
+  body.dark #secondary_menu .item_drop.color {
+    background-color: white; }
+  body.dark .page-obras .obra .title {
+    color: #c7c7c7; }
+  body.dark .page-obras .galeria .gal_nav .item_nav {
+    background: rgba(51, 51, 51, 0.5);
+    color: white; }
+  body.dark .page-obras .galeria .item {
+    background-color: transparent; }
+    body.dark .page-obras .galeria .item.intro .inside_content h1 {
+      color: white; }
+    body.dark .page-obras .galeria .item.intro .autores .autor {
+      color: #c7c7c7; }
+  body.dark .page-obras .galeria .flickity-page-dots .dot {
+    background-color: #333;
+    border-color: #444; }
+    body.dark .page-obras .galeria .flickity-page-dots .dot.is-selected {
+      border-color: #ffc800;
+      background-color: #ffc800; }
+  body.dark .page-obras .texto .left .item {
+    color: #c7c7c7; }
+    body.dark .page-obras .texto .left .item.active {
+      color: #ffc800; }
+  body.dark .page-obras .texto .content .inside {
+    color: white; }
+  body.dark .wp-block-image figcaption {
+    color: #c7c7c7; }
+  body.dark .header-columna {
+    background-color: #444; }
+    body.dark .header-columna .contenedor .left .texto {
+      color: #c7c7c7; }
+  body.dark .slider-columna.half .left {
+    background-color: #444; }
+  body.dark #mapa3d .intro {
+    color: #c7c7c7; }
+  body.dark #contenidoGeneral {
+    color: white; }
+  body.dark #galeria_voces .item.is-selected .descripcion {
+    color: #c7c7c7; }
+  body.dark .columnas .right {
+    color: white; }
+  body.dark .columnas .left {
+    border-right-color: #444; }
+    body.dark .columnas .left .itemList {
+      color: #c7c7c7; }
+      body.dark .columnas .left .itemList.active {
+        color: #ffc800; }
+  body.dark .tres-botones .botones .boton .img path {
+    fill: #c7c7c7; }
+  body.dark .tres-botones.segunda .boton {
+    background-color: #444 !important; }
+  body.dark .header-columna .contenedor .right .img path {
+    fill: #c7c7c7; }

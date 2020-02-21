@@ -19,6 +19,18 @@
 
 <script type="text/javascript">
     var webURL = '<?php echo get_bloginfo('url'); ?>';
+
+    var jsonOb = {
+        theme: 'light',
+        fontsize: 2
+    }
+
+    // localStorage.themeop = JSON.stringify(jsonOb)
+    // localStorage.removeItem('themeop')
+    if(!localStorage.themeop) localStorage.themeop = JSON.stringify(jsonOb)
+    else {
+        jsonOb = JSON.parse(localStorage.themeop)
+    }
 </script>
 
 <?php wp_head(); ?>

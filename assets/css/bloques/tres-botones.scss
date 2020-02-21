@@ -16,7 +16,7 @@
             padding: 32px;
             max-height: 500px;
             min-height: 190px;
-    
+          
             .img {
                 position: absolute;
                 top: 0;
@@ -25,6 +25,18 @@
                 height: 100%;
                 background-size: cover;
                 background-position: center;
+                overflow: hidden;
+
+                svg {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    transform: translate(0, -50%);
+
+                    path {
+                        fill: #333;
+                    }
+                }
             }
 
             .name {

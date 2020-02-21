@@ -74,6 +74,9 @@ function header_scripts()
         wp_register_script('agenda', get_template_directory_uri() . '/js/bloques/agenda.js', array('jquery'), '1.0.0');
         wp_enqueue_script('agenda');
 
+        wp_register_script('accesibilidad', get_template_directory_uri() . '/js/common/accesibilidad.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('accesibilidad');
+
         // wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
         // wp_enqueue_script('scripts');
     }

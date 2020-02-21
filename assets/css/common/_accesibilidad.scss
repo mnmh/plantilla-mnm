@@ -1,0 +1,300 @@
+$color_acce_background: #333;
+$color_acce_background_2: #444;
+
+$titulo_secundario: #c7c7c7;
+
+body.dark {
+    background-color: $color_acce_background;
+
+    #top_menu {
+        background-color: $color_acce_background_2;
+        border-bottom-color: #555;
+    
+        &.style {
+            background-color: $color_acce_background_2;
+            border-bottom-color: #555;
+        }
+    
+        #title {
+            svg path {
+                fill: white;
+            }
+        }
+    
+        #acce_menu {
+            border-color: #555;
+            background-color: #333;
+    
+            .light{
+                .slider {
+                    background-color: #444;
+                    
+                    &:before {
+                        background-color: $amarillo;
+                    }
+                }
+            }
+
+            .icon_acce {
+                &:hover {
+                    path {
+                        fill: $amarillo;
+                    }
+                }
+            }
+        }
+
+        &.open-slider-acce {
+            #acce_menu {
+                .icon_acce {
+                    path {
+                        fill: $amarillo;
+                    }
+                }
+            }
+                
+        }
+    }
+    
+    #menu_lateral_btn {
+        .a {
+            fill: white;
+        }
+    
+        &:hover .a {
+            fill: $amarillo;
+        }
+    }
+    
+    #menu_lateral {
+        .menu-wrapper {
+            .main-menu {
+                background-color: $color_acce_background_2;
+    
+                a, .name {
+                    color: white;
+                }
+    
+                .item {
+                    &:before {
+                        border-color: #999 !important;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    .sec {
+        color: white;
+    }
+    
+    .botones-carrousel {
+        .boton {
+            .name {
+                color: $titulo_secundario;
+            }
+        }
+    }
+    
+    
+    .destacados-cc {
+        ul {
+            li {
+                .name {
+                    h1 {
+                        color: $titulo_secundario;
+                    }
+                }
+            }
+        }
+    }
+    
+    .titulo-modulo a {
+        color: $amarillo;
+    }
+    
+    .audio.piepag.home {
+        background-color: $color_acce_background_2;
+    }
+    
+    .tarjetas .item .tarjeta-description h3 {
+        color: $titulo_secundario;
+    }
+    
+    .tarjetas .item .tarjeta-description .texto-descriptivo {
+        color: $gris !important;
+    }
+    
+    .site-footer {
+        background-color: $color_acce_background_2;
+    
+        .footer-logo .img {
+            background-position: center bottom;
+        }
+    
+        h2, h3, .git {
+            color: white;
+        }
+    
+        a {
+            color: $titulo_secundario;
+    
+            &:hover {
+                color: $amarillo;
+                opacity: 1;
+            }
+        }
+    }
+    
+    .form_mail .acf-fields .acf-field input {
+        background-color: $color_acce_background;
+        color: white;
+    }
+    
+    .audio.piepag.home .textos {
+        p, h1 {
+            color: white !important;
+        }
+    }
+
+    #secondary_menu .item_drop.color {
+        background-color: white;
+    }
+
+    .page-obras {
+        .obra .title {
+            color: $titulo_secundario;
+        }
+
+        .galeria {
+            .gal_nav .item_nav {
+                background: rgba($color: #333, $alpha: 0.5);
+                color: white;
+            }
+
+            .item {
+                background-color: transparent;
+
+                &.intro {
+                    .inside_content h1 {
+                        color: white;
+                    }
+
+                    .autores {
+                        .autor {
+                            color: $titulo_secundario;
+                        }
+                    }
+                }
+            }
+
+            .flickity-page-dots {
+                .dot {
+                    background-color: #333;
+                    border-color: $color_acce_background_2;
+
+                    &.is-selected {
+                        border-color: $amarillo;
+                        background-color: $amarillo;
+                    }
+                }
+            }
+        }
+
+        .texto {
+            .left {
+                .item {
+                    color: $titulo_secundario;
+
+                    &.active {
+                        color: $amarillo;
+                    }
+                }
+            }
+
+            .content {
+                .inside {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .wp-block-image figcaption {
+        color: $titulo_secundario;
+    }
+
+    .header-columna {
+        background-color: $color_acce_background_2;
+
+        .contenedor {
+            .left {
+                .texto {
+                    color: $titulo_secundario;
+                }
+            }
+        }
+    }
+
+    .slider-columna.half {
+        .left {
+            background-color: $color_acce_background_2;
+        }
+    }
+
+    #mapa3d .intro {
+        color: $titulo_secundario;
+    }
+
+    #contenidoGeneral {
+        color: white;
+    }
+
+    #galeria_voces .item.is-selected .descripcion {
+        color: $titulo_secundario;
+    }
+
+    .columnas {
+
+        .right {
+            color: white;
+        }
+        .left {
+            border-right-color: $color_acce_background_2;
+
+            .itemList {
+                color: $titulo_secundario;
+
+                &.active {
+                    color: $amarillo;
+                }
+            }
+        }
+    }
+
+    .tres-botones {
+        .botones {
+            .boton {
+                .img {
+                    path {
+                        fill: $titulo_secundario;
+                    }
+                }
+            }
+        }
+
+        &.segunda {
+            .boton {
+                background-color: $color_acce_background_2 !important;
+            }
+        }
+    }
+
+    .header-columna .contenedor .right .img {
+        path {
+            fill: $titulo_secundario;
+        }
+    }
+}
+
