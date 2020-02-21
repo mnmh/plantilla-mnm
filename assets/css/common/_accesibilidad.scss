@@ -140,4 +140,144 @@ body.dark {
             color: white !important;
         }
     }
+
+    #secondary_menu .item_drop.color {
+        background-color: white;
+    }
+
+    .page-obras {
+        .obra .title {
+            color: $titulo_secundario;
+        }
+
+        .galeria {
+            .gal_nav .item_nav {
+                background: rgba($color: #333, $alpha: 0.5);
+                color: white;
+            }
+
+            .item {
+                background-color: transparent;
+
+                &.intro {
+                    .inside_content h1 {
+                        color: white;
+                    }
+
+                    .autores {
+                        .autor {
+                            color: $titulo_secundario;
+                        }
+                    }
+                }
+            }
+
+            .flickity-page-dots {
+                .dot {
+                    background-color: #333;
+                    border-color: $color_acce_background_2;
+
+                    &.is-selected {
+                        border-color: $amarillo;
+                        background-color: $amarillo;
+                    }
+                }
+            }
+        }
+
+        .texto {
+            .left {
+                .item {
+                    color: $titulo_secundario;
+
+                    &.active {
+                        color: $amarillo;
+                    }
+                }
+            }
+
+            .content {
+                .inside {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .wp-block-image figcaption {
+        color: $titulo_secundario;
+    }
+
+    .header-columna {
+        background-color: $color_acce_background_2;
+
+        .contenedor {
+            .left {
+                .texto {
+                    color: $titulo_secundario;
+                }
+            }
+        }
+    }
+
+    .slider-columna.half {
+        .left {
+            background-color: $color_acce_background_2;
+        }
+    }
+
+    #mapa3d .intro {
+        color: $titulo_secundario;
+    }
+
+    #contenidoGeneral {
+        color: white;
+    }
+
+    #galeria_voces .item.is-selected .descripcion {
+        color: $titulo_secundario;
+    }
+
+    .columnas {
+
+        .right {
+            color: white;
+        }
+        .left {
+            border-right-color: $color_acce_background_2;
+
+            .itemList {
+                color: $titulo_secundario;
+
+                &.active {
+                    color: $amarillo;
+                }
+            }
+        }
+    }
+
+    .tres-botones {
+        .botones {
+            .boton {
+                .img {
+                    path {
+                        fill: $titulo_secundario;
+                    }
+                }
+            }
+        }
+
+        &.segunda {
+            .boton {
+                background-color: $color_acce_background_2 !important;
+            }
+        }
+    }
+
+    .header-columna .contenedor .right .img {
+        path {
+            fill: $titulo_secundario;
+        }
+    }
 }
+

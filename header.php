@@ -7,6 +7,12 @@
 	</head>
 	<?php get_template_part('/assets/template-parts/sideMenu') ?>
 	<body <?php body_class(); ?>>
+
+		<script type="text/javascript">
+		document.getElementsByTagName('body')[0].classList.add(jsonOb.theme)
+
+		console.log(jsonOb , 'hola')
+		</script>
 		<div class="wrap" role="document">
 			<!-- Carga la barra de arriba para la navegación -->
 			<?php get_template_part('/assets/template-parts/top_header') ?>

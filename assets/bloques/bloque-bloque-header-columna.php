@@ -9,6 +9,8 @@ $id = 'botones-' . $block['id'];
 $titulo = get_field('titulo');
 $img = get_field('imagen');
 $texto = get_field('texto');
+$codigo_svg = get_field('codigo_svg');
+
 $invertido = get_field('invertido');
 $class = '';
 if($invertido == 1) $class = 'invertido';
@@ -23,7 +25,11 @@ if($invertido == 1) $class = 'invertido';
                 </div>
             </div>
             <div class="right">
-                <img src="<?php echo $img['url'] ?>" alt="">
+                <?php if($codigo_svg == ''): ?>
+                    <img src="<?php echo $img['url'] ?>" alt="">
+                <?php else: ?>
+                    <div class="img"><?php echo $codigo_svg ?></div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
