@@ -3853,12 +3853,19 @@ button {
     #top_menu #acce_menu > div {
       display: flex;
       align-items: center; }
+      #top_menu #acce_menu > div svg {
+        width: 70%;
+        margin: 15%; }
     #top_menu #acce_menu .icon_acce {
       width: 40px;
       height: 40px;
-      cursor: pointer;
-      margin-right: 10px; }
+      cursor: pointer; }
+      #top_menu #acce_menu .icon_acce path {
+        fill: #999; }
+      #top_menu #acce_menu .icon_acce:hover path {
+        fill: #3e6cd1; }
     #top_menu #acce_menu .light {
+      margin-left: 10px;
       cursor: pointer; }
       #top_menu #acce_menu .light .slider {
         width: 60px;
@@ -3882,8 +3889,14 @@ button {
       #top_menu #acce_menu .light .sun, #top_menu #acce_menu .light .moon {
         width: 30px;
         height: 30px; }
-    #top_menu #acce_menu.open {
-      width: 300px; }
+        #top_menu #acce_menu .light .sun path, #top_menu #acce_menu .light .moon path {
+          fill: #999; }
+      #top_menu #acce_menu .light .sun {
+        padding: 2px; }
+    #top_menu #acce_menu .light, #top_menu #acce_menu .size {
+      display: none; }
+  #top_menu.open-slider-acce #acce_menu .icon_acce path {
+    fill: #3e6cd1; }
   #top_menu #title svg {
     width: 320px;
     height: 45px;
@@ -4242,6 +4255,10 @@ header.section-header {
     .site-footer .footer-logo img {
       width: 100%;
       height: auto; }
+    .site-footer .footer-logo .img {
+      width: 100%;
+      height: 71px;
+      background-position: center top; }
   .site-footer h2 {
     font-size: 1.4375em;
     font-weight: 600;
@@ -8085,6 +8102,10 @@ body.dark {
         background-color: #444; }
         body.dark #top_menu #acce_menu .light .slider:before {
           background-color: #ffc800; }
+      body.dark #top_menu #acce_menu .icon_acce:hover path {
+        fill: #ffc800; }
+    body.dark #top_menu.open-slider-acce #acce_menu .icon_acce path {
+      fill: #ffc800; }
   body.dark #menu_lateral_btn .a {
     fill: white; }
   body.dark #menu_lateral_btn:hover .a {
@@ -8111,10 +8132,8 @@ body.dark {
     color: #9A9A9A !important; }
   body.dark .site-footer {
     background-color: #444; }
-    body.dark .site-footer .footer-logo img {
-      background: #fff;
-      padding: 10px;
-      border-radius: 5px; }
+    body.dark .site-footer .footer-logo .img {
+      background-position: center bottom; }
     body.dark .site-footer h2, body.dark .site-footer h3, body.dark .site-footer .git {
       color: white; }
     body.dark .site-footer a {
