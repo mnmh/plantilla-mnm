@@ -4477,7 +4477,7 @@ body#tinymce {
   text-decoration: none !important;
   cursor: pointer;
   color: white;
-  background-color: #ffc800;
+  background-color: #3e6cd1;
   font-weight: bold;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -4548,11 +4548,11 @@ body#tinymce {
 .moreNav {
   width: 23%;
   margin: 0.25em;
-  min-height: 350px;
+  height: 250px;
   display: flex;
   position: relative;
   overflow: hidden;
-  max-width: 300px; }
+  max-width: 400px; }
   @media only screen and (max-width: 980px) {
     .moreNav {
       width: 48%;
@@ -4566,10 +4566,9 @@ body#tinymce {
     text-decoration: none !important;
     cursor: pointer;
     color: white;
-    background-color: #ffc800;
+    background-color: #3e6cd1;
     font-weight: bold;
     margin: auto;
-    margin-top: 70px;
     padding: 8px 28px 8px 28px;
     border-radius: 40px; }
 
@@ -5334,11 +5333,6 @@ body#tinymce {
           margin-top: 0;
           padding-top: 0;
           flex-basis: 60%; }
-      .page-obras .items.lista .moreNav {
-        width: 100%;
-        min-height: 50px;
-        max-width: none;
-        margin: 0; }
   .page-obras .resultado {
     width: 100%;
     border-bottom: 1px solid #ddd;
@@ -5446,7 +5440,7 @@ body#tinymce {
       padding-top: 12px;
       font-weight: bold; }
     .page-obras .obra .img {
-      height: 240px;
+      height: 250px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -6619,7 +6613,7 @@ blockquote {
             padding-left: 5px; } }
       .banner.banner-margenes .contenedor-carrusel .subtitulo {
         text-transform: uppercase;
-        color: #ffc800; }
+        color: #8e8e8e; }
       .banner.banner-margenes .contenedor-carrusel .carrousel .flickity-slider {
         height: 100%; }
       .banner.banner-margenes .contenedor-carrusel .carrousel .item {
@@ -6638,7 +6632,7 @@ blockquote {
             right: 0; } }
       .banner.banner-margenes .contenedor-carrusel .btn {
         color: white;
-        background-color: #ffc800;
+        background-color: #3e6cd1;
         border: none;
         font-weight: bold;
         margin-top: 20px;
@@ -6972,7 +6966,6 @@ blockquote {
   width: 100%;
   margin: auto;
   max-width: 1600px;
-  color: white;
   margin-bottom: 9vh; }
   .tres-botones .botones {
     display: flex;
@@ -6985,12 +6978,6 @@ blockquote {
       padding: 32px;
       max-height: 500px;
       min-height: 190px; }
-      .tres-botones .botones .boton:nth-child(1) {
-        background-color: #225DDC; }
-      .tres-botones .botones .boton:nth-child(2) {
-        background-color: #ffc800; }
-      .tres-botones .botones .boton:nth-child(3) {
-        background-color: #3B3B3B; }
       .tres-botones .botones .boton .img {
         position: absolute;
         top: 0;
@@ -7026,12 +7013,24 @@ blockquote {
           max-width: none;
           min-height: 20vw;
           height: auto; } }
-  .tres-botones.color .botones .name {
+  .tres-botones.color .botones .boton:nth-child(1) {
+    background-color: #3e6cd1; }
+    .tres-botones.color .botones .boton:nth-child(1) .name {
+      color: white; }
+  .tres-botones.color .botones .boton:nth-child(2) {
+    background-color: #dfdfdf; }
+    .tres-botones.color .botones .boton:nth-child(2) .name {
+      color: #3B3B3B; }
+  .tres-botones.color .botones .boton:nth-child(3) {
+    background-color: #3B3B3B; }
+    .tres-botones.color .botones .boton:nth-child(3) .name {
+      color: white; }
+  .tres-botones.color .botones .boton .name {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    .tres-botones.color .botones .name h4 {
+    .tres-botones.color .botones .boton .name h4 {
       margin-left: 0 !important; }
   .tres-botones.segunda .sec {
     display: block;
@@ -7043,7 +7042,7 @@ blockquote {
       .tres-botones.segunda .sec {
         padding-left: 10px; } }
   .tres-botones.segunda .boton {
-    background-color: #F6F6F6 !important;
+    background-color: #F6F6F6;
     max-width: none;
     min-height: 400px; }
     .tres-botones.segunda .boton .name {
@@ -7056,7 +7055,8 @@ blockquote {
       .tres-botones.segunda .boton .name p {
         max-width: 70% !important;
         margin-left: 0 !important;
-        font-weight: 300; }
+        font-weight: 300;
+        color: #3B3B3B; }
   @media all and (max-width: 1000px) {
     .tres-botones .botones {
       flex-wrap: wrap; }
