@@ -3893,6 +3893,14 @@ button {
           fill: #999; }
       #top_menu #acce_menu .light .sun {
         padding: 2px; }
+    #top_menu #acce_menu .size {
+      margin-left: 20px; }
+      #top_menu #acce_menu .size .icon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer; }
+        #top_menu #acce_menu .size .icon path {
+          fill: #999; }
     #top_menu #acce_menu .light, #top_menu #acce_menu .size {
       display: none; }
   #top_menu.open-slider-acce #acce_menu .icon_acce path {
@@ -8199,3 +8207,21 @@ body.dark {
     background-color: #444 !important; }
   body.dark .header-columna .contenedor .right .img path {
     fill: #c7c7c7; }
+
+body.font_1 #top_menu #acce_menu .size .icon:nth-child(1) path {
+  fill: #3e6cd1; }
+
+body.font_1.dark #top_menu #acce_menu .size .icon:nth-child(1) path {
+  fill: #ffc800; }
+
+body.font_3 #top_menu #acce_menu .size .icon:nth-child(3) path {
+  fill: #3e6cd1; }
+
+body.font_3.dark #top_menu #acce_menu .size .icon:nth-child(3) path {
+  fill: #ffc800; }
+
+body.font_2 #top_menu #acce_menu .size .icon:nth-child(2) path {
+  fill: #3e6cd1; }
+
+body.font_2.dark #top_menu #acce_menu .size .icon:nth-child(2) path {
+  fill: #ffc800; }

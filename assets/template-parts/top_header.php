@@ -38,7 +38,15 @@
 			</div>
 		</div>
 		<div class="size">
-
+			<div class="icon">
+				<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.8068 48L20.0307 41.7695H28.9693L31.1932 48H34L25.8818 26H23.1182L15 48H17.8068ZM20.8727 39.4062L24.4136 29.4805H24.5864L28.1273 39.4062H20.8727Z" fill="black"/> </svg>
+			</div>
+			<div class="icon">
+				<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.5795 48L17.208 37.5215H31.792L35.4205 48H40L26.7545 11H22.2455L9 48H13.5795ZM18.5818 33.5469L24.3591 16.8535H24.6409L30.4182 33.5469H18.5818Z" fill="black"/> </svg>
+			</div>
+			<div class="icon">
+			<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.0568 48L14.8557 34.4062H34.1443L38.9432 48H45L27.4818 0H21.5182L4 48H10.0568ZM16.6727 29.25L24.3136 7.59375H24.6864L32.3273 29.25H16.6727Z" fill="black"/> </svg>
+			</div>
 		</div>
 	</div>
 

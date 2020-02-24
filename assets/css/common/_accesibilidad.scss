@@ -298,3 +298,86 @@ body.dark {
     }
 }
 
+body.font_1 {
+    #top_menu {
+        #acce_menu {
+            .size {
+                .icon:nth-child(1) {
+                    path {
+                        fill: $azul;
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark {
+        #top_menu {
+            #acce_menu {
+                .size {
+                    .icon:nth-child(1) {
+                        path {
+                            fill: $amarillo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.font_3 {
+    #top_menu {
+        #acce_menu {
+            .size {
+                .icon:nth-child(3) {
+                    path {
+                        fill: $azul;
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark {
+        #top_menu {
+            #acce_menu {
+                .size {
+                    .icon:nth-child(3) {
+                        path {
+                            fill: $amarillo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.font_2 {
+    #top_menu {
+        #acce_menu {
+            .size {
+                .icon:nth-child(2) {
+                    path {
+                        fill: $azul;
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark {
+        #top_menu {
+            #acce_menu {
+                .size {
+                    .icon:nth-child(2) {
+                        path {
+                            fill: $amarillo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
