@@ -115,6 +115,20 @@ button {
       }
     }
 
+    .size {
+      margin-left: 20px;
+
+      .icon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+        path {
+          fill: #999;
+        }
+      }
+    }
+
     .light, .size {
       display: none;
     }

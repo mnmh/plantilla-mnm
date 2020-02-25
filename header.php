@@ -10,6 +10,7 @@
 
 		<script type="text/javascript">
 		document.getElementsByTagName('body')[0].classList.add(jsonOb.theme)
+		document.getElementsByTagName('body')[0].classList.add('font_' + jsonOb.fontsize)
 
 		console.log(jsonOb , 'hola')
 		</script>
