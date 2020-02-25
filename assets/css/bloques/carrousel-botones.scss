@@ -32,8 +32,8 @@
 
     .boton {
         cursor: grab;
-        width: 20.625em;
-        height: 23.7em;
+        width: 400px;
+        height: 450px;
         display: inline-block;
         margin-right: 0.3125em;
 
@@ -57,14 +57,14 @@
         .name {
             padding: 0.5em;
             color: #3B3B3B;
-            font-size: 18px;
+            font-size: 1.25em;
             padding-bottom: 0;
             padding-left: 0;
         }
 
         .subtitulo-tarjetas {
             color: #9A9A9A !important;
-            font-size: 14px !important;
+            font-size: 1em !important;
         }
 
         .btn {

@@ -4481,7 +4481,7 @@ body#tinymce {
     margin-bottom: 10px; }
 
 .btn {
-  display: table;
+  display: inline-block;
   text-decoration: none !important;
   cursor: pointer;
   color: white;
@@ -4491,7 +4491,8 @@ body#tinymce {
   margin-right: 10px;
   margin-top: 20px;
   padding: 8px 28px 8px 28px;
-  border-radius: 40px; }
+  border-radius: 40px;
+  font-size: 1em; }
 
 .btn-linea {
   display: table;
@@ -4534,6 +4535,7 @@ body#tinymce {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1em;
   color: #9A9A9A;
   font-weight: 300;
   margin-bottom: 2em; }
@@ -5443,7 +5445,7 @@ body#tinymce {
     .page-obras .obra .title {
       color: #3B3B3B;
       font-weight: normal;
-      font-size: 18px;
+      font-size: 1.25em;
       margin-right: 10px;
       padding-top: 12px;
       font-weight: bold; }
@@ -6268,8 +6270,8 @@ blockquote {
       font-weight: bold; }
   .botones-carrousel .boton {
     cursor: grab;
-    width: 20.625em;
-    height: 23.7em;
+    width: 400px;
+    height: 450px;
     display: inline-block;
     margin-right: 0.3125em; }
     .botones-carrousel .boton .img {
@@ -6288,12 +6290,12 @@ blockquote {
     .botones-carrousel .boton .name {
       padding: 0.5em;
       color: #3B3B3B;
-      font-size: 18px;
+      font-size: 1.25em;
       padding-bottom: 0;
       padding-left: 0; }
     .botones-carrousel .boton .subtitulo-tarjetas {
       color: #9A9A9A !important;
-      font-size: 14px !important; }
+      font-size: 1em !important; }
     .botones-carrousel .boton .btn {
       position: relative;
       top: 44%;
@@ -6486,10 +6488,11 @@ blockquote {
           .banner .inside .content.texto-abajo .contenedor-txt .titulo {
             max-width: 600px; }
       .banner .inside .content .titulo {
-        font-size: 56px;
+        font-size: 3.5em;
         margin-bottom: 20px; }
       .banner .inside .content .txt {
-        max-width: 500px; }
+        max-width: 500px;
+        font-size: 1em; }
   @media only screen and (max-width: 650px) {
     .banner .inside .content {
       bottom: 10%;
@@ -6803,7 +6806,7 @@ blockquote {
       color: #3B3B3B !important;
       font-weight: 300;
       text-align: left;
-      font-size: 14px !important;
+      font-size: 1em !important;
       margin-top: 10px !important;
       margin-bottom: 0px !important;
       margin-left: 0 !important;
@@ -7003,12 +7006,12 @@ blockquote {
           .tres-botones .botones .boton .img svg path {
             fill: #333; }
       .tres-botones .botones .boton .name h1 {
-        font-size: 38px; }
+        font-size: 2.5em; }
       .tres-botones .botones .boton .name h4 {
         font-family: 'CircularStd', sans-serif;
         font-weight: 600;
         font-style: normal;
-        font-size: 16px;
+        font-size: 1em;
         padding-top: 5px;
         width: 85%; }
         .tres-botones .botones .boton .name h4::before {
@@ -7453,9 +7456,10 @@ blockquote {
         margin-left: 10%; }
         .audio.piepag .contenedor .left .textos h1 {
           color: white;
-          font-size: 38px; }
+          font-size: 2em; }
         .audio.piepag .contenedor .left .textos p {
-          color: white; }
+          color: white;
+          font-size: 1em !important; }
       .audio.piepag .contenedor .left .reproductor {
         padding-top: 40px;
         width: 250px;
@@ -7745,7 +7749,7 @@ blockquote {
     .slider-columna:not(.half) .left .subtitulo {
       text-transform: uppercase;
       padding: 16px;
-      font-size: 24px; }
+      font-size: 1.25em; }
       @media only screen and (max-width: 980px) {
         .slider-columna:not(.half) .left .subtitulo {
           padding: 8px;
@@ -7762,7 +7766,7 @@ blockquote {
     .slider-columna:not(.half) .left .enlace {
       position: relative;
       font-family: 'CircularStd';
-      font-size: 20px;
+      font-size: 1em;
       font-weight: 500;
       padding: 10px 16px; }
       @media only screen and (max-width: 980px) {
@@ -8059,6 +8063,7 @@ blockquote {
       .destacados-cc ul li .name h4 {
         font-family: 'Inter';
         font-weight: normal;
+        font-size: 1em;
         color: #9A9A9A; }
         @media only screen and (max-width: 1200px) {
           .destacados-cc ul li .name h4 {
@@ -8208,20 +8213,23 @@ body.dark {
   body.dark .header-columna .contenedor .right .img path {
     fill: #c7c7c7; }
 
-body.font_1 #top_menu #acce_menu .size .icon:nth-child(1) path {
-  fill: #3e6cd1; }
+body.font_1 {
+  font-size: 16px; }
+  body.font_1 #top_menu #acce_menu .size .icon:nth-child(1) path {
+    fill: #3e6cd1; }
+  body.font_1.dark #top_menu #acce_menu .size .icon:nth-child(1) path {
+    fill: #ffc800; }
 
-body.font_1.dark #top_menu #acce_menu .size .icon:nth-child(1) path {
-  fill: #ffc800; }
+body.font_2 {
+  font-size: 18px; }
+  body.font_2 #top_menu #acce_menu .size .icon:nth-child(2) path {
+    fill: #3e6cd1; }
+  body.font_2.dark #top_menu #acce_menu .size .icon:nth-child(2) path {
+    fill: #ffc800; }
 
-body.font_3 #top_menu #acce_menu .size .icon:nth-child(3) path {
-  fill: #3e6cd1; }
-
-body.font_3.dark #top_menu #acce_menu .size .icon:nth-child(3) path {
-  fill: #ffc800; }
-
-body.font_2 #top_menu #acce_menu .size .icon:nth-child(2) path {
-  fill: #3e6cd1; }
-
-body.font_2.dark #top_menu #acce_menu .size .icon:nth-child(2) path {
-  fill: #ffc800; }
+body.font_3 {
+  font-size: 21px; }
+  body.font_3 #top_menu #acce_menu .size .icon:nth-child(3) path {
+    fill: #3e6cd1; }
+  body.font_3.dark #top_menu #acce_menu .size .icon:nth-child(3) path {
+    fill: #ffc800; }

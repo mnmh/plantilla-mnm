@@ -29,7 +29,7 @@
             } else {
                 tl_temp.add('start')
                 .set($parent.find('.light, .size'), {css: {'display': 'none'}})
-                .fromTo($parent,.5 ,{css: {'width': 180}},{css: {'width': 40}})
+                .fromTo($parent,.5 ,{css: {'width': 300}},{css: {'width': 40}})
                 .add(function() {
                     $('#top_menu').removeClass('open-slider-acce')
                 })
