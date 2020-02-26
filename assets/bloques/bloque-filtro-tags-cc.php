@@ -29,7 +29,7 @@ foreach($terms as $term): ?>
 <?php endforeach;?>
 
 
-<div class="filtro_tags center">
+<div class="filtro_tags cc center <?php echo $block['className'] ?>">
     <div class="alfa">
         <?php echo $alfa;?>
     </div>

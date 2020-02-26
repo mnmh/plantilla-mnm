@@ -1135,6 +1135,11 @@
         background: $grisclaro;
         margin: 1px;
 
+        &.active-persistent {
+          background-color: rgba(62, 108, 209, 0.45);
+          color: white;
+        }
+
         &.active {
           color: #fff;
           background: $azul;
@@ -1151,7 +1156,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       align-content: flex-start;
-      max-height: 35vh;
+      max-height: 110vh;
 
       li {
         display: none;
@@ -1188,7 +1193,10 @@
           @include border-radius(30px);
         }
 
-        &:hover {}
+        &.active {
+          background-color: $azul;
+          color: white;
+        }
       }
     }
 
