@@ -15,4 +15,8 @@
 
         <input type="text" placeholder="Descubre las colecciones digitales del museo" name="buscar" id="buscar">
     </div>
+
+    <div class="submit">
+        Buscar
+    </div>
 </form>

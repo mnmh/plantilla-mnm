@@ -5557,6 +5557,11 @@ body#tinymce {
     .page-obras .navegacionFiltros .categorias .listado {
       margin-left: 2.25em; }
 
+.filtro_tags .sec {
+  width: 1000px !important;
+  margin: 0 auto;
+  margin-bottom: 2.5vh !important; }
+
 .filtro_tags .alfa {
   text-align: left;
   margin-bottom: 20px;
@@ -7622,14 +7627,28 @@ blockquote {
   .iconos-cc a.item.active .name {
     color: #3e6cd1; }
 
+#busqueda-cc {
+  display: flex;
+  max-width: 850px;
+  margin: 0 auto;
+  align-items: center; }
+  #busqueda-cc .submit {
+    background: #3e6cd1;
+    padding: 10px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer; }
+
 .inputField {
   display: flex;
   align-items: center;
-  margin: 0 auto;
   margin-top: 2.5vh;
   margin-bottom: 2.5vh;
   background: #f3f3f3;
-  max-width: 600px;
+  width: 100%;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -7682,6 +7701,59 @@ blockquote {
     width: 100%;
     text-align: center;
     color: #999; }
+
+.filtro_tags .selected {
+  margin-top: 2.5vh;
+  padding: 30px;
+  border-radius: 5px; }
+  .filtro_tags .selected li {
+    background-color: #3e6cd1;
+    padding: 7px;
+    border-radius: 50px;
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 0.9em;
+    padding-left: 15px;
+    color: white;
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 5px; }
+    .filtro_tags .selected li:after {
+      content: "\e803";
+      position: absolute;
+      right: 3px;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      color: #3e6cd1;
+      font-family: 'mnm';
+      border-radius: 50px;
+      top: 50%;
+      font-size: 0.7em;
+      text-align: center;
+      line-height: 30px;
+      transform: translate(0, -50%); }
+    .filtro_tags .selected li.default {
+      display: none; }
+
+.filtro_tags.cc .alfa .active {
+  text-indent: -99999px;
+  position: relative; }
+  .filtro_tags.cc .alfa .active:before {
+    content: "\e803";
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-family: 'mnm';
+    top: 50%;
+    font-size: 0.6em;
+    text-align: center;
+    line-height: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-indent: 0; }
 
 .slider-columna:not(.half) {
   display: flex;
@@ -8250,6 +8322,8 @@ body.dark {
     background-color: #444; }
     body.dark #busqueda-cc .inputField input {
       color: white; }
+  body.dark #busqueda-cc .submit {
+    background-color: #ffc800; }
   body.dark .filtro-cc .item {
     background-color: #444; }
     body.dark .filtro-cc .item path, body.dark .filtro-cc .item circle, body.dark .filtro-cc .item rect {
