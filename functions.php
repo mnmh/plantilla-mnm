@@ -447,4 +447,11 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+
+function custom_query_cc( $vars ){
+    $vars[] = "contenido";
+    return $vars;
+}
+add_filter( 'query_vars', 'custom_query_cc' );
+
 ?>

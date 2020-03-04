@@ -4,13 +4,31 @@
  *
  */
 
-$terms = get_terms( 'post_tag', array(
-    'hide_empty' => false,
-) );
+// $terms = get_terms( 'post_tag', array(
+//     'hide_empty' => false,
+// ) );
 
 $out = '';
 $alfa = '';
 $current_first = '';
+
+$url = "http://cc.museodememoria.gov.co/wp-json/wp/v2/tags?per_page=100";
+$terms = array();
+
+for($i = 0; $i < 6; $i++){
+    if($i > 0) $url . '&page=' . ($i + 1);
+
+    $client = curl_init($url);
+    curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
+    $response = curl_exec($client);
+
+    $result = json_decode($response);
+
+    array_merge($terms, $result);
+    // print_r($result);
+}
+
+print_r($terms);
 
 foreach($terms as $term): ?>
     <?php

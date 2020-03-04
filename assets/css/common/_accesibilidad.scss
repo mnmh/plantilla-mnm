@@ -256,6 +256,13 @@ body.dark {
                   }
             }
         }
+
+        .selected {
+            li {
+                background-color: $amarillo;
+                color: #333;
+            }
+        }
     }
 
     .wp-block-image figcaption {

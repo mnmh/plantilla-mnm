@@ -8284,6 +8284,9 @@ body.dark {
     body.dark .filtro_tags .listado li.active {
       background-color: #ffc800;
       color: #333; }
+  body.dark .filtro_tags .selected li {
+    background-color: #ffc800;
+    color: #333; }
   body.dark .wp-block-image figcaption {
     color: #c7c7c7; }
   body.dark .header-columna {
@@ -8361,3 +8364,35 @@ body.font_3 {
     fill: #3e6cd1; }
   body.font_3.dark #top_menu #acce_menu .size .icon:nth-child(3) path {
     fill: #ffc800; }
+
+#cc-contenido-top {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex; }
+  #cc-contenido-top .left, #cc-contenido-top .right {
+    width: 50%; }
+  #cc-contenido-top .left {
+    padding-right: 20px; }
+    #cc-contenido-top .left .titulo {
+      font-size: 1.5em;
+      font-weight: bold; }
+    #cc-contenido-top .left .tipo {
+      color: #999; }
+    #cc-contenido-top .left .descripcion .top {
+      font-weight: bold; }
+  #cc-contenido-top .right {
+    display: flex; }
+    #cc-contenido-top .right .slider_player {
+      height: 3px;
+      width: 100%;
+      background: #f3f3f3; }
+    #cc-contenido-top .right .player {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%; }
+      #cc-contenido-top .right .player iframe {
+        width: 100%;
+        height: 100%; }

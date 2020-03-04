@@ -202,6 +202,8 @@ function wpse_287931_register_categories_names_field() {
             'schema'          => null,
         )
     );
+
+    // REST FIELDS CC
 }
 
 add_action( 'rest_api_init', 'wpse_287931_register_categories_names_field' );
