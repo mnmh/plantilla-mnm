@@ -4,13 +4,31 @@
  *
  */
 
-$terms = get_terms( 'post_tag', array(
-    'hide_empty' => false,
-) );
+// $terms = get_terms( 'post_tag', array(
+//     'hide_empty' => false,
+// ) );
 
 $out = '';
 $alfa = '';
 $current_first = '';
+
+$url = "http://cc.museodememoria.gov.co/wp-json/wp/v2/tags?per_page=100";
+$terms = array();
+
+for($i = 0; $i < 6; $i++){
+    if($i > 0) $url . '&page=' . ($i + 1);
+
+    $client = curl_init($url);
+    curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
+    $response = curl_exec($client);
+
+    $result = json_decode($response);
+
+    array_merge($terms, $result);
+    // print_r($result);
+}
+
+print_r($terms);
 
 foreach($terms as $term): ?>
     <?php
@@ -24,17 +42,25 @@ foreach($terms as $term): ?>
             $alfa .= $current_first;
             $alfa .= '</div>';
         }
-        $out .= '<li data-url="'.get_blogInfo('url').'/wp-json/wp/v2/obras?autor='.$term->term_id.'&per_page=20" data-bio="'.get_blogInfo('url').'/wp-json/wp/v2/autor/'.$term->term_id.'" data-name="'.$term->name.'" class="letter_'.$current_first.'">'.$term->name.'</li>';
+        $out .= '<li data-slug="'.$term->slug.'" class="letter_'.$current_first.'">'.$term->name.'</li>';
     ?>
 <?php endforeach;?>
 
 
-<div class="filtro_tags center">
+<div class="filtro_tags cc center <?php echo $block['className'] ?>">
+    <div class="titulo-modulo">
+        <h2 class="sec">Etiquetas</h2>
+    </div>
+
     <div class="alfa">
         <?php echo $alfa;?>
     </div>
 
     <ul class="listado">
         <?php echo $out;?>
+    </ul>
+
+    <ul class="selected">
+        <li class="default">Una pruba de tags</li>
     </ul>
 </div>

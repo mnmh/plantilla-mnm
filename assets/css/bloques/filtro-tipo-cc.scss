@@ -8,7 +8,6 @@
 
         path, polygon, circle, rect {
             fill: #dcdcdc;
-            transition: all 0.4s ease;
         }
     }
 
@@ -24,6 +23,15 @@
         border-radius: 5px;
         margin: 5px;
         border: 2px solid #f3f3f3;
+        cursor: pointer;
+
+        &:hover {
+            .icon {
+                path, polygon, circle, rect {
+                    fill: #999;
+                }
+            }
+        }
 
         &.active {
             border-color: $azul;
@@ -35,14 +43,6 @@
 
             .name {
                 color: $azul;
-            }
-        }
-
-        &:hover {
-            .icon {
-                path, polygon, circle, rect {
-                    fill: #999;
-                }
             }
         }
     }

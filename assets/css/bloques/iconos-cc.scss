@@ -17,13 +17,13 @@
 .iconos-cc .icon {
     width: calc(100% - 20px);
     padding: 10px;
+    cursor: pointer;
 
     svg {
         width: 40px;
 
         path, polygon {
             fill: #dcdcdc;
-            transition: fill 0.4s ease;
         }
     }
 }
@@ -41,6 +41,20 @@
                     fill: #999;
                 }
             }
+        }
+    }
+
+    &.active {
+        .icon {
+            svg {
+                path, polygon {
+                    fill: $azul;
+                }
+            }
+        }
+
+        .name {
+            color: $azul;
         }
     }
 }
