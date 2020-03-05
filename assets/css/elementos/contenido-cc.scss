@@ -2,9 +2,14 @@
     margin-top: 10vh;
     margin-bottom: 10vh;
     display: flex;
+    flex-wrap: wrap;
 
     .left, .right {
         width: 50%;
+
+        @media #{$medium-and-down} {
+            width: 100%;
+        }
     }
 
     .left {
@@ -27,6 +32,10 @@
 
     .right {
         display: flex;
+
+        @media #{$medium-and-down} {
+            margin-top: 10vh;
+        }
 
         .slider_player {
             height: 3px;
