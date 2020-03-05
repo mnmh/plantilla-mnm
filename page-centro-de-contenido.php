@@ -40,10 +40,14 @@
                     <div class="slider_player"></div>
                     <div class="btn-play">Reproducir</div>
             </div>
-            <?php else: ?>
-            <div class="player">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $result['enlace'] ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <?php elseif($result['tipo-de-contenido'][0]['name'] == 'Audiovisual'): ?>
+                <div class="player">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $result['enlace'] ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <?php elseif($result['tipo-de-contenido'][0]['name'] == 'Publicación'): ?>
+                <div class="player">
+                    <a href="<?php echo $result['archivo']['archivo']['url'] ?>" class="btn-play">Descargar publicación</a>
+                </div>
             <?php endif; ?>
         </div>
     </div>
