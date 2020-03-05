@@ -46,7 +46,7 @@
                 </div>
             <?php elseif($result['tipo-de-contenido'][0]['name'] == 'Publicación'): ?>
                 <div class="player">
-                    <a href="<?php echo $result['archivo']['archivo']['url'] ?>" class="btn-play">Descargar publicación</a>
+                    <a href="<?php echo $result['archivo']['archivo']['url'] ?>" class="btn-play publicacion">Descargar publicación</a>
                 </div>
             <?php endif; ?>
         </div>

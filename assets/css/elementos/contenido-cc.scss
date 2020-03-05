@@ -46,6 +46,16 @@
                 width: 100%;
                 height: 100%;
             }
+
+            .btn_play {
+                &.publicacion {
+                    padding-left: 20px;
+                    &::after {
+                        content: '';
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
