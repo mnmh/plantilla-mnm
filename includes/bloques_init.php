@@ -690,5 +690,6 @@ include( get_theme_file_path("/includes/campos/slider-columnas.php") );
 include( get_theme_file_path("/includes/campos/titulo-modulo.php") );
 include( get_theme_file_path("/includes/campos/destacados-cc.php") );
 include( get_theme_file_path("/includes/campos/cabezote-color-imagen.php") );
+include( get_theme_file_path("/includes/campos/carrousel-cc.php"));
 
 ?>
