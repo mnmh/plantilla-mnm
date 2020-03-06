@@ -370,6 +370,16 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'filtro', 'cc'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Carrousel cc',
+			'title'				=> __('Carrousel de contenido CC'),
+			'description'		=> __('Un bloque para el Carrousel de contenido del CC'),
+			'render_callback'	=> 'bloque_callback_carrousel_cc',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'carrousel', 'cc'),
+		));
 	}
 }
 
@@ -646,6 +656,14 @@ function bloque_callback_bloque_listado_noticias_auto( $block ) {
 		include( get_theme_file_path("assets/bloques/bloque-listado-noticias-auto.php") );
 	}
 }
+
+function bloque_callback_carrousel_cc($block) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-carrousel-cc.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-carrousel-cc.php") );
+	}
+}
+
 
 // Cargar los campos de los bloques
 include( get_theme_file_path("/includes/campos/carrousel-verticales.php") );
