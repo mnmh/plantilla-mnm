@@ -3906,8 +3906,8 @@ button {
   #top_menu.open-slider-acce #acce_menu .icon_acce path {
     fill: #3e6cd1; }
   #top_menu #title svg {
-    width: 320px;
-    height: 45px;
+    width: 280px;
+    height: 15px;
     transition: box-shadow 300ms, color 300ms, background 300ms, padding 200ms; }
     #top_menu #title svg path {
       fill: #3b3b3b; }
