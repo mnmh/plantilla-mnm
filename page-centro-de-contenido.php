@@ -18,6 +18,12 @@
         $response = curl_exec($client);
 
         $result = json_decode($response, true);
+
+
+
+        $args = array( 'posts_per_page' => 4, 'category' => 'informativa' );
+
+        $noticias = get_posts($args);
         
     ?>
 
@@ -49,6 +55,27 @@
                     <a href="<?php echo $result['archivo']['archivo']['url'] ?>" class="btn-play publicacion">Descargar publicación</a>
                 </div>
             <?php endif; ?>
+        </div>
+    </div>
+
+    <div class="tarjetas galeria noticias btm">
+        <div class="inside">
+            <?php foreach($noticias as $noticia): ?>
+
+            <?php
+                $imagen = get_the_post_thumbnail_url($noticia->ID)
+            ?>
+
+            <a href="<?php echo get_permalink($noticia->ID) ?>" class="item">
+
+                <div class="img" style="background-image:url('<?php echo $imagen ?>')"></div>
+
+                <div class="tarjeta-description">
+                    <h3><?php echo $noticia->post_title ?></h3>
+                </div>
+            </a>
+
+            <?php endforeach; ?>
         </div>
     </div>
     <!-- <div id="cc-acordeon">
