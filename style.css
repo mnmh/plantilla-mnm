@@ -8392,7 +8392,15 @@ body.font_3 {
     #cc-contenido-top .right .slider_player {
       height: 3px;
       width: 100%;
-      background: #f3f3f3; }
+      background: #f3f3f3;
+      position: relative; }
+      #cc-contenido-top .right .slider_player .current {
+        background-color: #ffc800;
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: 0; }
     #cc-contenido-top .right .player {
       display: flex;
       align-items: center;
@@ -8408,3 +8416,5 @@ body.font_3 {
         #cc-contenido-top .right .player .btn-play.publicacion::after {
           content: '';
           display: none; }
+      #cc-contenido-top .right .player .btn-play.playing:after {
+        content: '\e813'; }

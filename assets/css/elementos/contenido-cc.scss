@@ -41,6 +41,16 @@
             height: 3px;
             width: 100%;
             background: #f3f3f3;
+            position: relative;
+
+            .current {
+                background-color: $amarillo;
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                top: 0;
+                left: 0;
+            }
         }
 
         .player {
@@ -62,6 +72,12 @@
                     &::after {
                         content: '';
                         display: none;
+                    }
+                }
+
+                &.playing {
+                    &:after {
+                        content: '\e813';
                     }
                 }
             }

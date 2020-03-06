@@ -42,8 +42,10 @@
                 if($result['tipo-de-contenido'][0]['name'] == 'Sonoro'):
             ?>
             <div class="player">
-                    <audio src="<?php echo $result['archivo']['archivo']['url'] ?>"></audio>
-                    <div class="slider_player"></div>
+                    <audio id="audio-cc" src="<?php echo $result['archivo']['archivo']['url'] ?>"></audio>
+                    <div class="slider_player">
+                        <div class="current"></div>
+                    </div>
                     <div class="btn-play">Reproducir</div>
             </div>
             <?php elseif($result['tipo-de-contenido'][0]['name'] == 'Audiovisual'): ?>

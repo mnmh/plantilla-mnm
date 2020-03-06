@@ -80,6 +80,9 @@ function header_scripts()
         wp_register_script('cc-busqueda', get_template_directory_uri() . '/js/elementos/cc-busqueda.js', array('jquery'), '1.0.0');
         wp_enqueue_script('cc-busqueda');
 
+        wp_register_script('cc-contenido', get_template_directory_uri() . '/js/elementos/cc-contenido.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('cc-contenido');
+
         // wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
         // wp_enqueue_script('scripts');
     }
