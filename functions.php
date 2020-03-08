@@ -454,4 +454,10 @@ function defer_parsing_of_js ( $url ) {
     }
     add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
 
+function custom_query_cc( $vars ){
+    $vars[] = "contenido";
+    return $vars;
+}
+add_filter( 'query_vars', 'custom_query_cc' );
+
 ?>

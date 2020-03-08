@@ -107,7 +107,7 @@
 
 .btn {
 
-    display: table;
+    display: inline-block;
     text-decoration: none !important;
     cursor: pointer;
     color: white;
@@ -118,6 +118,7 @@
     margin-top: 20px;
     padding: 8px 28px 8px 28px;
     border-radius: 40px;
+    font-size: 1em;
 
     &:hover {
         //background: #dcdcdc;
@@ -176,7 +177,7 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    
+    font-size: 1em;
     color: #9A9A9A;
     font-weight: 300;
     margin-bottom: 2em;

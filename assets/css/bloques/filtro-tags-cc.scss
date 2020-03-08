@@ -1,0 +1,68 @@
+.filtro_tags {
+    .selected {
+        margin-top: 2.5vh;
+        padding: 30px;
+        border-radius: 5px;
+
+        li {
+            background-color: $azul;
+            padding: 7px;
+            border-radius: 50px;
+            display: inline-block;
+            padding-right: 50px;
+            font-size: 0.9em;
+            padding-left: 15px;
+            color: white;
+            position: relative;
+            margin-right: 5px;
+            margin-bottom: 5px;
+
+            &:after {
+                content: "\e803";
+                position: absolute;
+                right: 3px;
+                width: 30px;
+                height: 30px;
+                background-color: white;
+                color: $azul;
+                font-family: 'mnm';
+                border-radius: 50px;
+                top: 50%;
+                font-size: 0.7em;
+                text-align: center;
+                line-height: 30px;
+                transform: translate(0,-50%);
+            }
+
+            &.default {
+                display: none;
+            }
+        }
+    }
+
+    &.cc {
+        .alfa {
+            .active {
+                text-indent: -99999px;
+                position: relative;
+
+                &:before {
+                    content: "\e803";
+                    position: absolute;
+                    left: 50%;
+                    width: 30px;
+                    height: 30px;
+                    color: white;
+                    font-family: 'mnm';
+                    top: 50%;
+                    font-size: 0.6em;
+                    text-align: center;
+                    line-height: 30px;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                    text-indent: 0;
+                }
+            }
+        }
+    }
+}

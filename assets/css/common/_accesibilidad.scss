@@ -97,7 +97,6 @@ body.dark {
         }
     }
     
-    
     .destacados-cc {
         ul {
             li {
@@ -167,6 +166,10 @@ body.dark {
             color: $titulo_secundario;
         }
 
+        .navegacionFiltros {
+            background-color: transparent;
+        }
+
         .galeria {
             .gal_nav .item_nav {
                 background: rgba($color: #333, $alpha: 0.5);
@@ -217,6 +220,47 @@ body.dark {
                 .inside {
                     color: white;
                 }
+            }
+        }
+    }
+
+    .filtro_tags {
+        .alfa {
+            .letter {
+                background-color: $color_acce_background_2;
+
+                &.active-persistent {
+                    background-color: rgba(246, 200, 0, 0.4);
+                    color: white;
+                  }
+    
+                &.active {
+                    background-color: $amarillo;
+                }
+            }
+        }
+
+        .listado {
+            li {
+                background-color: $color_acce_background_2;
+                color: white;
+
+                .number {
+                    background-color: white;
+                    color: #333;
+                }
+
+                &.active {
+                    background-color: $amarillo;
+                    color: #333;
+                  }
+            }
+        }
+
+        .selected {
+            li {
+                background-color: $amarillo;
+                color: #333;
             }
         }
     }
@@ -296,5 +340,172 @@ body.dark {
             fill: $titulo_secundario;
         }
     }
+
+    //CENTRO DE CONTENIDO
+
+    .iconos-cc {
+        background-color: $color_acce_background_2;
+
+        .item {
+            .icon {
+                path, polygon {
+                    fill: #666;
+                }
+            }
+
+            &:hover {
+                .icon {
+                    path, polygon {
+                        fill: $titulo_secundario;
+                    }
+                }
+            }
+        }
+    }
+
+    #busqueda-cc {
+        .inputField {
+            background-color: $color_acce_background_2;
+
+            input {
+                color: white;
+            }
+        }
+
+        .submit {
+            background-color: $amarillo;
+        }
+    }
+
+    .filtro-cc {
+        .item {
+            background-color: $color_acce_background_2;
+
+            path, circle, rect {
+                fill: #666;
+            }
+
+            &:hover {
+                path, circle, rect {
+                    fill: $titulo_secundario;
+                }
+            }
+
+            &.active {
+                border-color: $amarillo;
+
+                .name {
+                    color: $amarillo;
+                }
+
+                path, circle, rect {
+                    fill: $amarillo;
+                }
+            }
+        }
+    }
+
+    .iconos-cc {
+        .item.active {
+            .icon {
+                svg {
+                    path,polygon {
+                        fill: $amarillo;
+                    }
+                }
+            }
+
+            .name {
+                color: $amarillo;
+            }
+        }
+    }
 }
 
+body.font_1 {
+    font-size: 16px;
+    #top_menu {
+        #acce_menu {
+            .size {
+                .icon:nth-child(1) {
+                    path {
+                        fill: $azul;
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark {
+        #top_menu {
+            #acce_menu {
+                .size {
+                    .icon:nth-child(1) {
+                        path {
+                            fill: $amarillo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.font_2 {
+    font-size: 18px;
+    #top_menu {
+        #acce_menu {
+            .size {
+                .icon:nth-child(2) {
+                    path {
+                        fill: $azul;
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark {
+        #top_menu {
+            #acce_menu {
+                .size {
+                    .icon:nth-child(2) {
+                        path {
+                            fill: $amarillo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+body.font_3 {
+    font-size: 21px;
+    #top_menu {
+        #acce_menu {
+            .size {
+                .icon:nth-child(3) {
+                    path {
+                        fill: $azul;
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark {
+        #top_menu {
+            #acce_menu {
+                .size {
+                    .icon:nth-child(3) {
+                        path {
+                            fill: $amarillo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

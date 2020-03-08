@@ -43,6 +43,7 @@
             .name h4 {
                 font-family: 'Inter';
                 font-weight: normal;
+                font-size: 1em;
                 color: $gris;
 
                 @media #{$large-and-down} {
