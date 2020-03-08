@@ -499,7 +499,7 @@ body {
             width: 100%; }
         #menu_lateral .menu-wrapper .right a .item_noticia {
           height: 20vw;
-          width: 2vw;
+          width: 20vw;
           margin-top: 20px;
           margin-left: 10vw;
           transition: all 0.2s ease;
