@@ -112,7 +112,7 @@ OBJLoader(three__WEBPACK_IMPORTED_MODULE_0__);
 
 (function ($, root, undefined) {
   $(function () {
-    if ($('body').hasClass('parent-pageid-2165')) {
+    if ($('body').hasClass('page-id-2205')) {
       var animate = function animate() {
         requestAnimationFrame(animate);
         renderer.render(scene, camera);
