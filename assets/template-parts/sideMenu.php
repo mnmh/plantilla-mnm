@@ -80,20 +80,20 @@
               'operator'  => 'IN'
               )
             ),
-            'posts_per_page'   => 6,
+            'posts_per_page'   => 1,
           );
 
           $noticias = get_posts($args);
 
         foreach($noticias as $noticia):
-          $img = get_field('imagen_top', $noticia->ID);
+        //   $img = get_field('imagen_top', $noticia->ID);
           $des = get_field('extracto', $noticia->ID);
         ?>
 		 
 		<a href="<?php get_permalink($noticia->ID)?>">
-            <div class="item_noticia" style="background-image: url('<?php echo $img['sizes']['large']?>')"></div>
+            <div class="item_noticia" style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>')"></div>
 			<h3 class="title"><?php echo $noticia->post_title?></h3>
-			<p class="descripcion"><?php echo $noticia->post_excerpt?></p> 
+			<!-- <p class="descripcion"><?php echo $noticia->post_excerpt?></p>  -->
 		</a>
 		<?php endforeach; ?> 
 	</div>
