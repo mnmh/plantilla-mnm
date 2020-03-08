@@ -58,9 +58,8 @@
 
     });
 
-    window.onload = ()=>{
-        // console.log('load');
+    $(window).load(function() {
         window.dispatchEvent(new Event('resize'));
-    }
+    })
 
 })(jQuery, this);
