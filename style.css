@@ -4425,13 +4425,17 @@ body#tinymce {
   #contenidoGeneral .btmdoble {
     margin-bottom: 20vh !important; }
   #contenidoGeneral .wp-block-image {
-    max-width: 800px !important;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto; }
     #contenidoGeneral .wp-block-image.top {
       margin-top: 3em; }
     #contenidoGeneral .wp-block-image img {
       height: auto; }
+    #contenidoGeneral .wp-block-image.full {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto; }
 
 .hori_scroll {
   z-index: 10;
@@ -7915,7 +7919,7 @@ blockquote {
     .slider-columna:not(.half).rojo .left .subtitulo {
       color: white !important; }
   .slider-columna:not(.half).verde .left {
-    background: #29Af93; }
+    background: #00AD9C; }
     .slider-columna:not(.half).verde .left .subtitulo {
       color: white !important; }
   .slider-columna:not(.half).half {
