@@ -10,6 +10,8 @@ $titulo = get_field('titulo');
 $texto = get_field('texto');
 $imagen = get_field('imagen');
 $activar = get_field('activar_boton');
+$enlace = get_field('enlace');
+$textobtn = get_field('textobtn');
 ?>
 
 <div class="banner overlay btm">
@@ -26,7 +28,9 @@ $activar = get_field('activar_boton');
                     <?php echo $texto ?>
                 </div>
                 <?php if($activar == 1): ?>
-                <div class="btn"> Saber más </div>
+                <div class="btn"> 
+                    <a href="<?php echo $enlace ?>"> <?php echo $textobtn ?> </a> 
+                </div>
                 <?php endif; ?>
             </div>
         </div>
