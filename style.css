@@ -8316,6 +8316,8 @@ body.dark {
     background-color: #444 !important; }
   body.dark .header-columna .contenedor .right .img path {
     fill: #c7c7c7; }
+  body.dark #menu_lateral .menu-wrapper .right {
+    background-color: rgba(90, 90, 90, 0.9); }
   body.dark .iconos-cc {
     background-color: #444; }
     body.dark .iconos-cc .item .icon path, body.dark .iconos-cc .item .icon polygon {
@@ -8367,6 +8369,8 @@ body.font_3 {
     fill: #ffc800; }
 
 #cc-contenido-top {
+  max-width: 1600px !important;
+  margin: 0 auto;
   margin-top: 10vh;
   margin-bottom: 10vh;
   display: flex;
@@ -8385,6 +8389,8 @@ body.font_3 {
       color: #999; }
     #cc-contenido-top .left .descripcion .top {
       font-weight: bold; }
+    #cc-contenido-top .left .descripcion p {
+      margin-top: 20px; }
   #cc-contenido-top .right {
     display: flex; }
     @media only screen and (max-width: 980px) {
@@ -8419,3 +8425,33 @@ body.font_3 {
           display: none; }
       #cc-contenido-top .right .player .btn-play.playing:after {
         content: '\e813'; }
+
+.cc-contenido-thumbs {
+  max-width: 1600px;
+  margin: 0 auto; }
+  .cc-contenido-thumbs .inside {
+    display: flex;
+    flex-wrap: wrap; }
+  .cc-contenido-thumbs .item {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px; }
+    .cc-contenido-thumbs .item .thumb {
+      width: 100px;
+      height: 100px;
+      background-color: #efefef;
+      border-radius: 5px; }
+      .cc-contenido-thumbs .item .thumb svg {
+        margin: 30px; }
+        .cc-contenido-thumbs .item .thumb svg path, .cc-contenido-thumbs .item .thumb svg circle, .cc-contenido-thumbs .item .thumb svg rect {
+          fill: #999999; }
+    .cc-contenido-thumbs .item:hover svg path, .cc-contenido-thumbs .item:hover svg circle, .cc-contenido-thumbs .item:hover svg rect {
+      fill: #3e6cd1; }
+    .cc-contenido-thumbs .item .details {
+      width: calc(100% - 150px);
+      margin-left: 10px; }
+      .cc-contenido-thumbs .item .details .name {
+        font-weight: bold; }
+    .cc-contenido-thumbs .item.hide {
+      display: none; }

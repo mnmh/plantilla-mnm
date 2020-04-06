@@ -11,7 +11,7 @@ $color = get_field('color');
 $class = '';
 if($nav == 1) $class = 'ocultar';
 ?>
-<div class="slider-columna <?php echo $block['className'] ?> colores <?php echo $color ?>">
+<div class="slider-columna <?php echo $block['className'] ?> colores <?php echo $color ?>" id="<?php echo $id ?>">
     <div class="left">
         <div class="subtitulo">
             

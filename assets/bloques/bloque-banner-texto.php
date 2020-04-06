@@ -12,7 +12,7 @@ $imagen = get_field('imagen');
 $activar = get_field('activar_boton');
 ?>
 
-<div class="banner overlay btm">
+<div class="banner overlay btm" id="<?php echo $id ?>">
     <div class="img" style="background-image:url('<?php echo $imagen['url'] ?>')"></div>
     <div class="inside">
         <div class="content texto-abajo">

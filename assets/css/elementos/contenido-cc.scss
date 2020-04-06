@@ -1,4 +1,6 @@
 #cc-contenido-top {
+    max-width: 1600px !important;
+    margin: 0 auto;
     margin-top: 10vh;
     margin-bottom: 10vh;
     display: flex;
@@ -26,6 +28,10 @@
         .descripcion {
             .top {
                 font-weight: bold;
+            }
+
+            p {
+                margin-top: 20px;
             }
         }
     }
@@ -82,5 +88,62 @@
                 }
             }
         }
+    }
+}
+
+.cc-contenido-thumbs {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    .inside {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+
+        .thumb {
+            width: 100px;
+            height: 100px;
+            background-color: #efefef;
+            border-radius: 5px;
+
+            svg {
+                margin: 30px;
+
+                path, circle, rect {
+                    fill: #999999;
+                }
+            }
+        }
+
+        &:hover {
+            svg {
+                path, circle, rect {
+                    fill: $azul;
+                }
+            }
+        }
+
+        .details {
+            width: calc(100% - 150px);
+            margin-left: 10px;
+
+            .name {
+                font-weight: bold;
+            }
+        }
+
+        &.hide {
+            display: none;
+        }
+    }
+
+    .btn {
+        // margin: 0 auto;
     }
 }
