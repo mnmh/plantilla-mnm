@@ -3843,6 +3843,15 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  #top_menu .radio {
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer; }
+    #top_menu .radio path {
+      fill: #999; }
+    #top_menu .radio:hover path {
+      fill: #3e6cd1; }
   #top_menu #acce_menu {
     width: 40px;
     height: 40px;
@@ -7022,7 +7031,7 @@ blockquote {
           .tres-botones .botones .boton .img svg path {
             fill: #333; }
       .tres-botones .botones .boton .name h1 {
-        font-size: 2.5em; }
+        font-size: 2 em; }
       .tres-botones .botones .boton .name h4 {
         font-family: 'CircularStd', sans-serif;
         font-weight: 600;
