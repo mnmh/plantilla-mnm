@@ -25,10 +25,11 @@ for($i = 0; $i < 6; $i++){
     $result = json_decode($response);
 
     array_merge($terms, $result);
-    // print_r($result);
+    for($p = 0; $p < count($result); $p++){
+        if($result[$p]->count > 0) array_push($terms, $result[$p]);
+    }
+    print_r($result);
 }
-
-print_r($terms);
 
 foreach($terms as $term): ?>
     <?php

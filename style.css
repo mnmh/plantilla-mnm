@@ -3843,11 +3843,19 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  #top_menu .icons {
+    display: flex; }
   #top_menu .radio {
     margin-left: 10px;
     margin-right: 10px;
-    float: left;
-    cursor: pointer; }
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 50px; }
+    #top_menu .radio a {
+      display: block;
+      padding: 5px;
+      width: 39px;
+      height: 39px; }
     #top_menu .radio path {
       fill: #999; }
     #top_menu .radio:hover path {

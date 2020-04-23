@@ -36,11 +36,23 @@ button {
   align-items: center;
   justify-content: space-between;
 
+  .icons {
+    display: flex;
+  }
+
   .radio {
     margin-left: 10px;
     margin-right: 10px;
-    float: left;
     cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+
+    a {
+      display: block;
+      padding: 5px;
+      width: 39px;
+      height: 39px;
+    }
     
     path {
       fill: #999;
