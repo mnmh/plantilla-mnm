@@ -44,6 +44,16 @@ body.dark {
             }
         }
 
+        .radio {
+            border-color: #555;
+            background-color: #333;
+            &:hover {
+                path {
+                    fill: $amarillo;
+                }
+            }
+        }
+
         &.open-slider-acce {
             #acce_menu {
                 .icon_acce {

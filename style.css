@@ -8221,6 +8221,11 @@ body.dark {
           background-color: #ffc800; }
       body.dark #top_menu #acce_menu .icon_acce:hover path {
         fill: #ffc800; }
+    body.dark #top_menu .radio {
+      border-color: #555;
+      background-color: #333; }
+      body.dark #top_menu .radio:hover path {
+        fill: #ffc800; }
     body.dark #top_menu.open-slider-acce #acce_menu .icon_acce path {
       fill: #ffc800; }
   body.dark #menu_lateral_btn .a {
