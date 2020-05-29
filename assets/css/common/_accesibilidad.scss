@@ -554,6 +554,10 @@ body.ninos-y-ninas {
             display: block;
         }
 
+        #galeria_voces .item {
+            max-width: 350px;
+        }
+
         &::before {
             content: '';
             position: fixed;

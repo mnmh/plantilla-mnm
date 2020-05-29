@@ -8408,6 +8408,8 @@ body.ninos-y-ninas {
       margin-bottom: 30px; }
     body.ninos-y-ninas #contenidoGeneral .carrousel-vertical-container .profiles-item .inside_content .descripcion {
       display: block; }
+    body.ninos-y-ninas #contenidoGeneral #galeria_voces .item {
+      max-width: 350px; }
     body.ninos-y-ninas #contenidoGeneral::before {
       content: '';
       position: fixed;
