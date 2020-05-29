@@ -8399,7 +8399,8 @@ body.ninos-y-ninas {
   body.ninos-y-ninas #contenidoGeneral {
     position: relative; }
     body.ninos-y-ninas #contenidoGeneral .slider-columna:not(.half).full .left .titulo {
-      font-size: 1.25em; }
+      font-size: 1.25em;
+      margin-bottom: 30px; }
     body.ninos-y-ninas #contenidoGeneral .slider-columna:not(.half).full .left .des {
       font-size: 0.85em; }
     body.ninos-y-ninas #contenidoGeneral::before {
