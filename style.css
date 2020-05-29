@@ -8403,6 +8403,10 @@ body.ninos-y-ninas {
       margin-bottom: 30px; }
     body.ninos-y-ninas #contenidoGeneral .slider-columna:not(.half).full .left .des {
       font-size: 0.85em; }
+    body.ninos-y-ninas #contenidoGeneral .carrousel-vertical-container .profiles-item h2 {
+      font-size: 1.25em; }
+    body.ninos-y-ninas #contenidoGeneral .carrousel-vertical-container .profiles-item .inside_content .descripcion {
+      display: block; }
     body.ninos-y-ninas #contenidoGeneral::before {
       content: '';
       position: fixed;

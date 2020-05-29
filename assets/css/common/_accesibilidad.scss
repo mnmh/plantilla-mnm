@@ -545,6 +545,14 @@ body.ninos-y-ninas {
             font-size: 0.85em;
         }
 
+        .carrousel-vertical-container .profiles-item h2 {
+            font-size: 1.25em;
+        }
+
+        .carrousel-vertical-container .profiles-item .inside_content .descripcion {
+            display: block;
+        }
+
         &::before {
             content: '';
             position: fixed;
