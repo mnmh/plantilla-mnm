@@ -8398,6 +8398,10 @@ body.ninos-y-ninas {
   background-color: #acd0e7; }
   body.ninos-y-ninas #contenidoGeneral {
     position: relative; }
+    body.ninos-y-ninas #contenidoGeneral .slider-columna:not(.half).full .left .titulo {
+      font-size: 1.25em; }
+    body.ninos-y-ninas #contenidoGeneral .slider-columna:not(.half).full .left .des {
+      font-size: 0.85em; }
     body.ninos-y-ninas #contenidoGeneral::before {
       content: '';
       position: fixed;
@@ -8468,6 +8472,8 @@ body.ninos-y-ninas {
       background-color: #9ebccc; }
       body.ninos-y-ninas #contenidoGeneral #galeria_voces .next::after, body.ninos-y-ninas #contenidoGeneral #galeria_voces .prev::after {
         color: white; }
+    body.ninos-y-ninas #contenidoGeneral #galeria_voces .item {
+      opacity: 1; }
   body.ninos-y-ninas .tres-botones.color .botones .boton:nth-child(1) {
     background-color: #C2C44E; }
   body.ninos-y-ninas .tres-botones.color .botones .boton:nth-child(2) {

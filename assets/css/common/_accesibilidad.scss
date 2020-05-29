@@ -532,7 +532,17 @@ body.ninos-y-ninas {
     background-color: #acd0e7;
     #contenidoGeneral {
 
+        
+
         position: relative;
+
+        .slider-columna:not(.half).full .left .titulo {
+            font-size: 1.25em;
+        }
+
+        .slider-columna:not(.half).full .left .des {
+            font-size: 0.85em;
+        }
 
         &::before {
             content: '';
@@ -626,7 +636,13 @@ body.ninos-y-ninas {
                 color: white;
             }
         }
+
+        #galeria_voces .item {
+            opacity: 1;
+        }
     }
+
+
 
     .tres-botones.color .botones .boton:nth-child(1){
         background-color: #C2C44E;
