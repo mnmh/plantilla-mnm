@@ -527,3 +527,142 @@ body.font_3 {
         }
     }
 }
+
+body.ninos-y-ninas {
+    background-color: #acd0e7;
+    #contenidoGeneral {
+
+        position: relative;
+
+        &::before {
+            content: '';
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            top: 0;
+            background-image: url('./img/fondo-nna2.svg');
+            background-size: cover;
+            left: 0;
+        }
+
+        &::after {
+            content: '';
+            position: fixed;
+            width: 250px;
+            height: 200px;
+            z-index: -1;
+            top: 40vh;
+            background-image: url('./img/avion.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 0;
+            animation: avioncito linear 40s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+            -webkit-animation: avioncito linear 40s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-transform-origin: 50% 50%;
+            -moz-animation: avioncito linear 40s;
+            -moz-animation-iteration-count: infinite;
+            -moz-transform-origin: 50% 50%;
+            -o-animation: avioncito linear 40s;
+            -o-animation-iteration-count: infinite;
+            -o-transform-origin: 50% 50%;
+            -ms-animation: avioncito linear 40s;
+            -ms-animation-iteration-count: infinite;
+            -ms-transform-origin: 50% 50%;
+        }
+          
+          @keyframes avioncito{
+            0% {
+              left: 150%
+            }
+            100% {
+              left: -50%
+            }
+          }
+          
+          @-moz-keyframes avioncito{
+            0% {
+              left: 150%
+            }
+            100% {
+              left: -50%
+            }
+          }
+          
+          @-webkit-keyframes avioncito {
+            0% {
+              left: 150%
+            }
+            100% {
+              left: -50%
+            }
+          }
+          
+          @-o-keyframes avioncito {
+            0% {
+              left: 150%
+            }
+            100% {
+              left: -50%
+            }
+          }
+          
+          @-ms-keyframes avioncito {
+            0% {
+              left: 150%
+            }
+            100% {
+              left: -50%
+            }
+          }
+
+        #galeria_voces .next, #galeria_voces .prev{
+            background-color: #9ebccc;
+
+            &::after {
+                color: white;
+            }
+        }
+    }
+
+    .tres-botones.color .botones .boton:nth-child(1){
+        background-color: #C2C44E;
+    }
+
+    .tres-botones.color .botones .boton:nth-child(2){
+        background-color: #62912e;
+    }
+
+    .tres-botones.color .botones .boton:nth-child(3){
+        background-color: #497831;
+    }
+
+    .tres-botones.color .botones .boton:nth-child(2) .name {
+        color: white;
+    }
+
+    .slider-columna:not(.half).amarillo .left {
+        background-color: #f6c83f;
+    }
+
+    #galeria_voces .item .leyenda {
+        opacity: 1;
+        font-size: 1.25em;
+        color: #4e6986;
+    }
+
+    .slider-columna:not(.half).azul .left {
+        background: #e83a53;
+    }
+
+    .subtitulo-sec {
+        color: #4e6986;
+    }
+
+    .section-title, .sec {
+        color: #e83a53;
+    }
+}

@@ -8394,6 +8394,101 @@ body.font_3 {
   body.font_3.dark #top_menu #acce_menu .size .icon:nth-child(3) path {
     fill: #ffc800; }
 
+body.ninos-y-ninas {
+  background-color: #acd0e7; }
+  body.ninos-y-ninas #contenidoGeneral {
+    position: relative; }
+    body.ninos-y-ninas #contenidoGeneral::before {
+      content: '';
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+      top: 0;
+      background-image: url("./img/fondo-nna2.svg");
+      background-size: cover;
+      left: 0; }
+    body.ninos-y-ninas #contenidoGeneral::after {
+      content: '';
+      position: fixed;
+      width: 250px;
+      height: 200px;
+      z-index: -1;
+      top: 40vh;
+      background-image: url("./img/avion.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 0;
+      animation: avioncito linear 40s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+      -webkit-animation: avioncito linear 40s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-transform-origin: 50% 50%;
+      -moz-animation: avioncito linear 40s;
+      -moz-animation-iteration-count: infinite;
+      -moz-transform-origin: 50% 50%;
+      -o-animation: avioncito linear 40s;
+      -o-animation-iteration-count: infinite;
+      -o-transform-origin: 50% 50%;
+      -ms-animation: avioncito linear 40s;
+      -ms-animation-iteration-count: infinite;
+      -ms-transform-origin: 50% 50%; }
+
+@keyframes avioncito {
+  0% {
+    left: 150%; }
+  100% {
+    left: -50%; } }
+
+@-moz-keyframes avioncito {
+  0% {
+    left: 150%; }
+  100% {
+    left: -50%; } }
+
+@-webkit-keyframes avioncito {
+  0% {
+    left: 150%; }
+  100% {
+    left: -50%; } }
+
+@-o-keyframes avioncito {
+  0% {
+    left: 150%; }
+  100% {
+    left: -50%; } }
+
+@-ms-keyframes avioncito {
+  body.ninos-y-ninas #contenidoGeneral 0% {
+    left: 150%; }
+  body.ninos-y-ninas #contenidoGeneral 100% {
+    left: -50%; } }
+    body.ninos-y-ninas #contenidoGeneral #galeria_voces .next, body.ninos-y-ninas #contenidoGeneral #galeria_voces .prev {
+      background-color: #9ebccc; }
+      body.ninos-y-ninas #contenidoGeneral #galeria_voces .next::after, body.ninos-y-ninas #contenidoGeneral #galeria_voces .prev::after {
+        color: white; }
+  body.ninos-y-ninas .tres-botones.color .botones .boton:nth-child(1) {
+    background-color: #C2C44E; }
+  body.ninos-y-ninas .tres-botones.color .botones .boton:nth-child(2) {
+    background-color: #62912e; }
+  body.ninos-y-ninas .tres-botones.color .botones .boton:nth-child(3) {
+    background-color: #497831; }
+  body.ninos-y-ninas .tres-botones.color .botones .boton:nth-child(2) .name {
+    color: white; }
+  body.ninos-y-ninas .slider-columna:not(.half).amarillo .left {
+    background-color: #f6c83f; }
+  body.ninos-y-ninas #galeria_voces .item .leyenda {
+    opacity: 1;
+    font-size: 1.25em;
+    color: #4e6986; }
+  body.ninos-y-ninas .slider-columna:not(.half).azul .left {
+    background: #e83a53; }
+  body.ninos-y-ninas .subtitulo-sec {
+    color: #4e6986; }
+  body.ninos-y-ninas .section-title, body.ninos-y-ninas .sec {
+    color: #e83a53; }
+
 #cc-contenido-top {
   max-width: 1600px !important;
   margin: 0 auto;
