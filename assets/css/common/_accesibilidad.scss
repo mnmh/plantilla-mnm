@@ -305,7 +305,7 @@ body.dark {
         color: white;
     }
 
-    #galeria_voces .item.is-selected .descripcion {
+    .galeria_voces .item.is-selected .descripcion {
         color: $titulo_secundario;
     }
 
@@ -554,7 +554,7 @@ body.ninos-y-ninas {
             display: block;
         }
 
-        #galeria_voces .item {
+        .galeria_voces .item {
             max-width: 350px;
         }
 
@@ -643,7 +643,7 @@ body.ninos-y-ninas {
             }
           }
 
-        #galeria_voces .next, #galeria_voces .prev{
+        .galeria_voces .next, .galeria_voces .prev{
             background-color: #9ebccc;
 
             &::after {
@@ -651,7 +651,7 @@ body.ninos-y-ninas {
             }
         }
 
-        #galeria_voces .item {
+        .galeria_voces .item {
             opacity: 1;
         }
     }
@@ -678,7 +678,7 @@ body.ninos-y-ninas {
         background-color: #f6c83f;
     }
 
-    #galeria_voces .item .leyenda {
+    .galeria_voces .item .leyenda {
         opacity: 1;
         font-size: 1.25em;
         color: #4e6986;

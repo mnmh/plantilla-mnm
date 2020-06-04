@@ -7107,22 +7107,22 @@ blockquote {
       .tres-botones .botones .boton {
         width: 100%; } }
 
-#galeria_voces {
+.galeria_voces {
   position: relative;
   margin-bottom: 10em; }
-  #galeria_voces .sec {
+  .galeria_voces .sec {
     width: 100%;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     display: block; }
     @media only screen and (max-width: 1200px) {
-      #galeria_voces .sec {
+      .galeria_voces .sec {
         padding-left: 10px; } }
-  #galeria_voces .nav {
+  .galeria_voces .nav {
     width: 95%; }
-  #galeria_voces .next,
-  #galeria_voces .prev {
+  .galeria_voces .next,
+  .galeria_voces .prev {
     position: absolute;
     text-align: center;
     z-index: 2;
@@ -7133,29 +7133,29 @@ blockquote {
     border-radius: 20px;
     background-color: white;
     line-height: 40px; }
-    #galeria_voces .next:after,
-    #galeria_voces .prev:after {
+    .galeria_voces .next:after,
+    .galeria_voces .prev:after {
       font-family: 'mnm';
       content: "\E80E";
       font-size: 16px;
       color: #3B3B3B;
       font-weight: 300; }
-  #galeria_voces .next {
+  .galeria_voces .next {
     right: 2.5%; }
-  #galeria_voces .prev {
+  .galeria_voces .prev {
     left: 2.5%; }
-  #galeria_voces .prev:after {
+  .galeria_voces .prev:after {
     font-family: 'mnm';
     content: "\E80F";
     font-size: 16px;
     color: #3B3B3B; }
-  #galeria_voces .item {
+  .galeria_voces .item {
     width: 35%;
     min-width: 400px;
     margin-right: 1%;
     opacity: 0.5;
     transition: opacity 300ms; }
-    #galeria_voces .item .leyenda {
+    .galeria_voces .item .leyenda {
       margin-top: 1em;
       font-style: italic;
       opacity: 0;
@@ -7163,26 +7163,26 @@ blockquote {
       display: block;
       font-weight: 400;
       line-height: 1.5; }
-    #galeria_voces .item .descripcion {
+    .galeria_voces .item .descripcion {
       opacity: 0;
       color: #3B3B3B;
       transition: opacity 300ms, transform 300ms;
       transform: translate3d(0, 50%, 0);
       margin: 10px 0 0 0; }
-    #galeria_voces .item.is-selected {
+    .galeria_voces .item.is-selected {
       opacity: 1; }
-      #galeria_voces .item.is-selected .leyenda {
+      .galeria_voces .item.is-selected .leyenda {
         opacity: 0.5; }
-      #galeria_voces .item.is-selected .descripcion {
+      .galeria_voces .item.is-selected .descripcion {
         opacity: 1;
         transform: translate3d(0, 0, 0);
         width: 90%;
         font-size: 14px; }
-    #galeria_voces .item img {
+    .galeria_voces .item img {
       width: 100%;
       height: auto; }
   @media screen and (min-width: 900px) {
-    #galeria_voces .item {
+    .galeria_voces .item {
       width: 35%;
       margin-right: 1%; } }
 
@@ -8326,7 +8326,7 @@ body.dark {
     color: #c7c7c7; }
   body.dark #contenidoGeneral {
     color: white; }
-  body.dark #galeria_voces .item.is-selected .descripcion {
+  body.dark .galeria_voces .item.is-selected .descripcion {
     color: #c7c7c7; }
   body.dark .columnas .right {
     color: white; }
@@ -8408,7 +8408,7 @@ body.ninos-y-ninas {
       margin-bottom: 30px; }
     body.ninos-y-ninas #contenidoGeneral .carrousel-vertical-container .profiles-item .inside_content .descripcion {
       display: block; }
-    body.ninos-y-ninas #contenidoGeneral #galeria_voces .item {
+    body.ninos-y-ninas #contenidoGeneral .galeria_voces .item {
       max-width: 350px; }
     body.ninos-y-ninas #contenidoGeneral::before {
       content: '';
@@ -8476,11 +8476,11 @@ body.ninos-y-ninas {
     left: 150%; }
   body.ninos-y-ninas #contenidoGeneral 100% {
     left: -50%; } }
-    body.ninos-y-ninas #contenidoGeneral #galeria_voces .next, body.ninos-y-ninas #contenidoGeneral #galeria_voces .prev {
+    body.ninos-y-ninas #contenidoGeneral .galeria_voces .next, body.ninos-y-ninas #contenidoGeneral .galeria_voces .prev {
       background-color: #9ebccc; }
-      body.ninos-y-ninas #contenidoGeneral #galeria_voces .next::after, body.ninos-y-ninas #contenidoGeneral #galeria_voces .prev::after {
+      body.ninos-y-ninas #contenidoGeneral .galeria_voces .next::after, body.ninos-y-ninas #contenidoGeneral .galeria_voces .prev::after {
         color: white; }
-    body.ninos-y-ninas #contenidoGeneral #galeria_voces .item {
+    body.ninos-y-ninas #contenidoGeneral .galeria_voces .item {
       opacity: 1; }
   body.ninos-y-ninas .tres-botones.color .botones .boton:nth-child(1) {
     background-color: #C2C44E; }
@@ -8492,7 +8492,7 @@ body.ninos-y-ninas {
     color: white; }
   body.ninos-y-ninas .slider-columna:not(.half).amarillo .left {
     background-color: #f6c83f; }
-  body.ninos-y-ninas #galeria_voces .item .leyenda {
+  body.ninos-y-ninas .galeria_voces .item .leyenda {
     opacity: 1;
     font-size: 1.25em;
     color: #4e6986; }
