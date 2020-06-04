@@ -2,23 +2,27 @@
 
 	$(function () {
 
-		if($('#galeria_voces .inside').length > 0){
-            var gal_voces = new Flickity('#galeria_voces .inside', {
-                freeScroll: false,
-                contain: true,
-                prevNextButtons: false,
-                pageDots: false,
-                cellAlign: 'center',
-                wrapAround: true
-            });
+		if($('.galeria_voces').length > 0){
 
-            $('#galeria_voces .next').on('click', function(){
-                gal_voces.next();
-            });
-
-            $('#galeria_voces .prev').on('click', function(){
-                gal_voces.previous();
-            });
+            $('.galeria_voces .inside').each(function(i) {
+                var gal_voces = new Flickity(this, {
+                    freeScroll: false,
+                    contain: true,
+                    prevNextButtons: false,
+                    pageDots: false,
+                    cellAlign: 'center',
+                    wrapAround: true
+                });
+    
+                $(this).parent().find('.next').on('click', function(){
+                    gal_voces.next();
+                });
+    
+                $(this).parent().find('.prev').on('click', function(){
+                    gal_voces.previous();
+                });
+            })
+            
         }
 
 	});

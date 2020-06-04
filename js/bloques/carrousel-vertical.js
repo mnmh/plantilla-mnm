@@ -13,7 +13,6 @@
                     draggable: true
                 });
 
-                console.log($('.profiles-list').hasClass('sin-carrusel'));
                 if ( $('.profiles-list').hasClass('sin-carrusel') ) {
                     console.log('draggable: ', flkty.options.draggable);
                     
