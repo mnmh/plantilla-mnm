@@ -8115,6 +8115,10 @@ blockquote {
       flex-wrap: wrap;
       flex-flow: wrap-reverse; } }
 
+.videoFrame iframe {
+  width: 100%;
+  height: 65vh; }
+
 .titulo-modulo .sec {
   max-width: 1600px !important;
   margin: 0 auto;

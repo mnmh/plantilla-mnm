@@ -380,6 +380,24 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'carrousel', 'cc'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Bloque video youtube',
+			'title'				=> __('Un bloque para los videos de youtube'),
+			'description'		=> __('Un bloque para los videos de youtube'),
+			'render_callback'	=> 'bloque_callback_videos_youtube',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'videos', 'youtube'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_videos_youtube( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 
