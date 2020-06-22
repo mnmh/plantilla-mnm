@@ -1,4 +1,9 @@
 body.page-template-template-caminando {
+    .leaflet-pane.leaflet-marker-pane{
+        img {
+            border-radius: 100px;
+        }
+    }
     .topHeader {
         position: relative;
         display: flex;
@@ -8,18 +13,39 @@ body.page-template-template-caminando {
         border-bottom: 5px solid #89b7be;
 
         .logoCaminando {
-            width: 300px;
+            width: 500px;
         }
     }
 
     .informacion {
         background-color: #89b7be;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
 
         h2, h3 {
             color:#223336;
             max-width: none !important;
             text-transform: uppercase;
             font-weight: 400;
+        }
+
+        .title {
+            justify-content: center;
+            display: flex;
+
+            .icon {
+                width: 80px;
+                margin-right: 20px;
+            }
+        }
+
+        .txt {
+            margin-top: 2.5vh;
+
+            p {
+                font-weight: 700;
+                color: white;
+            }
         }
 
         .inside {
@@ -31,10 +57,17 @@ body.page-template-template-caminando {
     .mapaContainer {
         position: relative;
         font-family: 'Quicksand', sans-serif;
-
+        .updated {
+            display: none;
+        }
         #acf-form {
             .acf-label {
                 display: none;
+            }
+
+            .acf-notice.-error.acf-error-message.-dismiss,
+            .acf-notice.-error.acf-error-message {
+                width: calc(100% - 320px);
             }
 
             div[data-key=_post_title],
@@ -54,6 +87,21 @@ body.page-template-template-caminando {
             right: 12px;
             background: rgba(255, 255, 255, 0.7);
 
+            #enviar_btn {
+                padding: 10px;
+                text-align: center;
+                border: 3px solid #89b7be;
+                color: #89b7be;
+                background-color: white;
+                margin-top: 2.5vh;
+
+                &:hover {
+                    background-color: #89b7be;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
             .content {
                 padding: 10px;
                 width: 300px;
@@ -64,6 +112,7 @@ body.page-template-template-caminando {
                     border-radius: 5px;
                     border: 3px solid #999;
                     outline: none;
+                    margin-bottom: 2.5vh;
 
                     &:focus {
                         border-color: #89b7be;
@@ -73,6 +122,8 @@ body.page-template-template-caminando {
                 .label {
                     font-weight: 700;
                     color: #555;
+                    line-height: 24px !important;
+
                     span {
                         color: #89b7be;
                     }
@@ -86,6 +137,11 @@ body.page-template-template-caminando {
                     background-color: #89b7be;
                     padding: 10px;
                     color: white;
+                }
+
+                #listado_paleta {
+                    display: flex;
+                    flex-wrap: wrap;
                 }
             }
         }

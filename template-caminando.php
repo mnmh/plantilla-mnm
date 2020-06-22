@@ -10,7 +10,7 @@
 	<div class="inside">
 		<div class="title">
 			<div class="icon">
-
+			<?php get_template_part('/assets/template-parts/logo-simple-caminando') ?>
 			</div>
 			<div class="content">
 				<h2>Sobre este proyecto</h2>
@@ -57,11 +57,12 @@ feugait nulla facilisi</p>
 				Haz click en el mapa y completa la información para agregar tu lugar de memoria al mapa.
 			</div>
 			<p class="label">Tu nombre<span>*</span></p>
-			<input type="text">
+			<input id="campo_nombre" type="text">
 			<p class="label">Nombre del lugar de memoria<span>*</span></p>
-			<input type="text">
+			<input id="campo_titulo" type="text">
 			<p class="label">Descripción del lugar de memoria<span>*</span></p>
-			<textarea name="description" id="" cols="30" rows="10"></textarea>
+			<textarea id="campo_des" name="description" id="" cols="30" rows="10"></textarea>
+			<p class="label">Escoge un color que represente tu lugar de memoria<span>*</span></p>
 		</div>
 	</div>
 </div>

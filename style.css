@@ -6104,6 +6104,9 @@ blockquote {
   .psv-navbar .psv-fullscreen-button {
     display: none; }
 
+body.page-template-template-caminando .leaflet-pane.leaflet-marker-pane img {
+  border-radius: 100px; }
+
 body.page-template-template-caminando .topHeader {
   position: relative;
   display: flex;
@@ -6112,15 +6115,28 @@ body.page-template-template-caminando .topHeader {
   padding-bottom: 2.5vh;
   border-bottom: 5px solid #89b7be; }
   body.page-template-template-caminando .topHeader .logoCaminando {
-    width: 300px; }
+    width: 500px; }
 
 body.page-template-template-caminando .informacion {
-  background-color: #89b7be; }
+  background-color: #89b7be;
+  padding-top: 5vh;
+  padding-bottom: 5vh; }
   body.page-template-template-caminando .informacion h2, body.page-template-template-caminando .informacion h3 {
     color: #223336;
     max-width: none !important;
     text-transform: uppercase;
     font-weight: 400; }
+  body.page-template-template-caminando .informacion .title {
+    justify-content: center;
+    display: flex; }
+    body.page-template-template-caminando .informacion .title .icon {
+      width: 80px;
+      margin-right: 20px; }
+  body.page-template-template-caminando .informacion .txt {
+    margin-top: 2.5vh; }
+    body.page-template-template-caminando .informacion .txt p {
+      font-weight: 700;
+      color: white; }
   body.page-template-template-caminando .informacion .inside {
     max-width: 1600px;
     margin: 0 auto; }
@@ -6128,8 +6144,13 @@ body.page-template-template-caminando .informacion {
 body.page-template-template-caminando .mapaContainer {
   position: relative;
   font-family: 'Quicksand', sans-serif; }
+  body.page-template-template-caminando .mapaContainer .updated {
+    display: none; }
   body.page-template-template-caminando .mapaContainer #acf-form .acf-label {
     display: none; }
+  body.page-template-template-caminando .mapaContainer #acf-form .acf-notice.-error.acf-error-message.-dismiss,
+  body.page-template-template-caminando .mapaContainer #acf-form .acf-notice.-error.acf-error-message {
+    width: calc(100% - 320px); }
   body.page-template-template-caminando .mapaContainer #acf-form div[data-key=_post_title],
   body.page-template-template-caminando .mapaContainer #acf-form div[data-key=field_5bbb8364dbc4c],
   body.page-template-template-caminando .mapaContainer #acf-form div[data-key=field_5bb4dc07613ba],
@@ -6143,6 +6164,17 @@ body.page-template-template-caminando .mapaContainer {
     height: 100%;
     right: 12px;
     background: rgba(255, 255, 255, 0.7); }
+    body.page-template-template-caminando .mapaContainer .sideContent #enviar_btn {
+      padding: 10px;
+      text-align: center;
+      border: 3px solid #89b7be;
+      color: #89b7be;
+      background-color: white;
+      margin-top: 2.5vh; }
+      body.page-template-template-caminando .mapaContainer .sideContent #enviar_btn:hover {
+        background-color: #89b7be;
+        color: white;
+        cursor: pointer; }
     body.page-template-template-caminando .mapaContainer .sideContent .content {
       padding: 10px;
       width: 300px; }
@@ -6151,12 +6183,14 @@ body.page-template-template-caminando .mapaContainer {
         padding: 10px;
         border-radius: 5px;
         border: 3px solid #999;
-        outline: none; }
+        outline: none;
+        margin-bottom: 2.5vh; }
         body.page-template-template-caminando .mapaContainer .sideContent .content textarea:focus, body.page-template-template-caminando .mapaContainer .sideContent .content input[type=text]:focus {
           border-color: #89b7be; }
       body.page-template-template-caminando .mapaContainer .sideContent .content .label {
         font-weight: 700;
-        color: #555; }
+        color: #555;
+        line-height: 24px !important; }
         body.page-template-template-caminando .mapaContainer .sideContent .content .label span {
           color: #89b7be; }
       body.page-template-template-caminando .mapaContainer .sideContent .content .info {
@@ -6167,6 +6201,9 @@ body.page-template-template-caminando .mapaContainer {
         background-color: #89b7be;
         padding: 10px;
         color: white; }
+      body.page-template-template-caminando .mapaContainer .sideContent .content #listado_paleta {
+        display: flex;
+        flex-wrap: wrap; }
 
 .carrousel-vertical-container {
   cursor: grab;
