@@ -1,0 +1,93 @@
+body.page-template-template-caminando {
+    .topHeader {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        border-bottom: 5px solid #89b7be;
+
+        .logoCaminando {
+            width: 300px;
+        }
+    }
+
+    .informacion {
+        background-color: #89b7be;
+
+        h2, h3 {
+            color:#223336;
+            max-width: none !important;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .inside {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+    }
+
+    .mapaContainer {
+        position: relative;
+        font-family: 'Quicksand', sans-serif;
+
+        #acf-form {
+            .acf-label {
+                display: none;
+            }
+
+            div[data-key=_post_title],
+            div[data-key=field_5bbb8364dbc4c],
+            div[data-key=field_5bb4dc07613ba],
+            div[data-key=field_5bb66b886fb7c],
+            .acf-form-submit {
+                display: none;
+            }
+        }
+
+        .sideContent {
+            position: absolute;
+            top: 15px;
+            z-index: 900;
+            height: 100%;
+            right: 12px;
+            background: rgba(255, 255, 255, 0.7);
+
+            .content {
+                padding: 10px;
+                width: 300px;
+
+                textarea, input[type=text] {
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 3px solid #999;
+                    outline: none;
+
+                    &:focus {
+                        border-color: #89b7be;
+                    }
+                }
+
+                .label {
+                    font-weight: 700;
+                    color: #555;
+                    span {
+                        color: #89b7be;
+                    }
+                }
+
+                .info {
+                    width: calc(100% + 20px);
+                    position: relative;
+                    left: -10px;
+                    top: -10px;
+                    background-color: #89b7be;
+                    padding: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

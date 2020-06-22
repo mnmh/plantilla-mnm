@@ -3835,7 +3835,7 @@ button {
 #top_menu {
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 1010;
   top: 0;
   left: 0;
   border-bottom: 1px solid #ccc;
@@ -6103,6 +6103,70 @@ blockquote {
   .psv-navbar .psv-markers-button,
   .psv-navbar .psv-fullscreen-button {
     display: none; }
+
+body.page-template-template-caminando .topHeader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  border-bottom: 5px solid #89b7be; }
+  body.page-template-template-caminando .topHeader .logoCaminando {
+    width: 300px; }
+
+body.page-template-template-caminando .informacion {
+  background-color: #89b7be; }
+  body.page-template-template-caminando .informacion h2, body.page-template-template-caminando .informacion h3 {
+    color: #223336;
+    max-width: none !important;
+    text-transform: uppercase;
+    font-weight: 400; }
+  body.page-template-template-caminando .informacion .inside {
+    max-width: 1600px;
+    margin: 0 auto; }
+
+body.page-template-template-caminando .mapaContainer {
+  position: relative;
+  font-family: 'Quicksand', sans-serif; }
+  body.page-template-template-caminando .mapaContainer #acf-form .acf-label {
+    display: none; }
+  body.page-template-template-caminando .mapaContainer #acf-form div[data-key=_post_title],
+  body.page-template-template-caminando .mapaContainer #acf-form div[data-key=field_5bbb8364dbc4c],
+  body.page-template-template-caminando .mapaContainer #acf-form div[data-key=field_5bb4dc07613ba],
+  body.page-template-template-caminando .mapaContainer #acf-form div[data-key=field_5bb66b886fb7c],
+  body.page-template-template-caminando .mapaContainer #acf-form .acf-form-submit {
+    display: none; }
+  body.page-template-template-caminando .mapaContainer .sideContent {
+    position: absolute;
+    top: 15px;
+    z-index: 900;
+    height: 100%;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.7); }
+    body.page-template-template-caminando .mapaContainer .sideContent .content {
+      padding: 10px;
+      width: 300px; }
+      body.page-template-template-caminando .mapaContainer .sideContent .content textarea, body.page-template-template-caminando .mapaContainer .sideContent .content input[type=text] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 3px solid #999;
+        outline: none; }
+        body.page-template-template-caminando .mapaContainer .sideContent .content textarea:focus, body.page-template-template-caminando .mapaContainer .sideContent .content input[type=text]:focus {
+          border-color: #89b7be; }
+      body.page-template-template-caminando .mapaContainer .sideContent .content .label {
+        font-weight: 700;
+        color: #555; }
+        body.page-template-template-caminando .mapaContainer .sideContent .content .label span {
+          color: #89b7be; }
+      body.page-template-template-caminando .mapaContainer .sideContent .content .info {
+        width: calc(100% + 20px);
+        position: relative;
+        left: -10px;
+        top: -10px;
+        background-color: #89b7be;
+        padding: 10px;
+        color: white; }
 
 .carrousel-vertical-container {
   cursor: grab;

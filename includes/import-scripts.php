@@ -31,6 +31,9 @@ function header_scripts()
         wp_register_script('arte-cultura', get_template_directory_uri() . '/js/elementos/arte-cultura.js', array('jquery'), '1.0.0');
         wp_enqueue_script('arte-cultura');
 
+        wp_register_script('caminando-memoria', get_template_directory_uri() . '/js/elementos/caminando-memoria.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('caminando-memoria');
+
         wp_register_script('recorridovirtual', get_template_directory_uri() . '/assets/js/index.js', array('jquery'), '1.0.0');
         wp_enqueue_script('recorridovirtual');
 

@@ -9,6 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="<?php bloginfo('description'); ?>">
 
+<?php if(is_page_template('template-caminando.php')): ?>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<?php endif; ?>
+
 <?php
     $img = get_the_post_thumbnail_url(get_the_ID(), 'large');
     $gal = get_field('galeria');
