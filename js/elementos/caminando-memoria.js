@@ -40,6 +40,18 @@
             $('#enviar_btn').on('click', function() {
                 $('.mapaContainer .acf-form-submit input').click()
             })
+
+            $('#campo_ciudad').change(function(){
+                $('#acf-field_5ef614f924e8f').val($(this).val())
+            })
+
+            $('#campo_cel').change(function(){
+                $('#acf-field_5ef6150324e90').val($(this).val())
+            })
+
+            $('#campo_mail').on('click', function() {
+                $('#acf-field_5ef6150b24e91').click()
+            })
         }
 
     });
