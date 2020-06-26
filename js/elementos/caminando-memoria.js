@@ -25,12 +25,9 @@
             $('.sideContent .content').append($paleta).append($enviar)
 
 
-            $('#campo_nombre').change(function(){
-                $('#acf-_post_title').val($(this).val())
-            })
-
             $('#campo_titulo').change(function(){
                 $('#acf-field_5bbb8364dbc4c').val($(this).val())
+                $('#acf-_post_title').val($(this).val())
             })
 
             $('#campo_des').change(function(){
