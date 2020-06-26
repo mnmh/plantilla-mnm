@@ -29,7 +29,7 @@
 	
 </div>
 
-<div class="mapaContainer">
+<div class="mapaContainer btm">
 	<?php
 		acf_form(array(
 			'post_id'   => 'new_post',
