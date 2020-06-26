@@ -24,7 +24,8 @@
             $subida_btn = $('.acf-image-uploader .acf-basic-uploader')
             $enviar = $('<div id="enviar_btn">Agregar</div>')
             $subida = $('<div id="subir_btn">Subir imagen</div>')
-            $('.sideContent .content').append($paleta).append($subida).append($enviar)
+            $subida_txt = $('<p class="label">Escoge una imagen de tu lugar [png o jpg de menos de 2mb.]</p>')
+            $('.sideContent .content').append($paleta).append($subida_txt).append($subida).append($enviar)
 
 
             $('#campo_titulo').change(function(){
