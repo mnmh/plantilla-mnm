@@ -76,6 +76,8 @@ body.page-template-template-caminando {
             div[data-key=field_5ef614f924e8f],
             div[data-key=field_5ef6150324e90],
             div[data-key=field_5ef6150b24e91],
+            div[data-key=field_5ef62bb839c9a],
+            div[data-key=field_5ef618221215b],
             div[data-key=field_5bb66b886fb7c],
             .acf-form-submit {
                 display: none;
@@ -92,7 +94,7 @@ body.page-template-template-caminando {
             right: 12px;
             background: rgba(255, 255, 255, 0.7);
 
-            #enviar_btn {
+            #enviar_btn, #subir_btn {
                 padding: 10px;
                 text-align: center;
                 border: 3px solid #89b7be;
@@ -105,6 +107,11 @@ body.page-template-template-caminando {
                     color: white;
                     cursor: pointer;
                 }
+            }
+
+            #subir_btn {
+                color: white;
+                background-color: #89b7be;
             }
 
             .content {

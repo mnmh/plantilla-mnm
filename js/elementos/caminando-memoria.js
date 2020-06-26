@@ -21,8 +21,10 @@
 
 
             $paleta = $('#listado_paleta').clone()
+            $subida_btn = $('.acf-image-uploader .acf-basic-uploader')
             $enviar = $('<div id="enviar_btn">Agregar</div>')
-            $('.sideContent .content').append($paleta).append($enviar)
+            $subida = $('<div id="subir_btn">Subir imagen</div>')
+            $('.sideContent .content').append($paleta).append($subida).append($enviar)
 
 
             $('#campo_titulo').change(function(){
@@ -36,6 +38,15 @@
 
             $('#enviar_btn').on('click', function() {
                 $('.mapaContainer .acf-form-submit input').click()
+            })
+
+            $subida_btn.find('input').change(function(e){
+                console.log(e.srcElement.value)
+                $('#subir_btn').html(e.srcElement.value.replace('C:\\fakepath\\', ''))
+            })
+
+            $('#subir_btn').on('click', function() {
+                $subida_btn.find('input').click()
             })
 
             $('#campo_ciudad').change(function(){
