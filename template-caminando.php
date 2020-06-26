@@ -8,11 +8,7 @@
 
 <div class="informacion">
 	<div class="inside">
-		<div class="title">
-			<div class="content">
-				<h2>Introducción</h2>
-			</div>
-		</div>
+
 		<div class="txt btm">
 			<p>Las iniciativas y lugares de memoria son símbolos de reconciliación, además de memoriales de reconocimiento a las víctimas y lugares de encuentro e intercambio que fomentan la superación de la violencia.</p>
 			<p>Desde el Museo de Memoria de Colombia acompañamos y visibilizamos todas las iniciativas de reparación simbólica que se construyen desde las regiones, a través de “Caminando la Memoria”, una plataforma que busca fortalecer la memoria colectiva sobre los hechos desarrollados en la historia reciente de la violencia en Colombia.</p>
