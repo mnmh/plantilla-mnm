@@ -392,7 +392,7 @@ function my_acf_init() {
 		));
 
 		acf_register_block(array(
-			'name'				=> 'Curaduria arte cultura',
+			'name'				=> 'Bloque curaduria arte cultura',
 			'title'				=> __('Un bloque para las curadurias'),
 			'description'		=> __('Un bloque para las curadurias'),
 			'render_callback'	=> 'bloque_callback_curaduria',
@@ -406,8 +406,8 @@ function my_acf_init() {
 // Carga la plantilla del bloque carrousel con cuadros verticales
 function bloque_callback_curaduria( $block ) {
 	$slug = str_replace('acf/', '', $block['name']);
-	if( file_exists( get_theme_file_path("assets/bloques/bloque-curaduria-arte-cutura.php") ) ) {
-		include( get_theme_file_path("assets/bloques/bloque-curaduria-arte-cutura.php") );
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 

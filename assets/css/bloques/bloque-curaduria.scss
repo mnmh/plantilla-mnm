@@ -1,0 +1,23 @@
+.curaduria-ac {
+    display: flex;
+    align-items: center;
+
+    .left,
+    .right {
+        width: 50%;
+    }
+
+    .left {
+        padding: 10px;
+        .img {
+            height: 300px;
+            background-size: cover;
+            border-radius: 5px;
+        }
+        .titulo {
+            font-weight: 700;
+            font-size: 1.25em;
+            margin-bottom: 15px;
+        }
+    }
+}

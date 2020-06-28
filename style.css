@@ -8230,6 +8230,23 @@ body.page-template-template-caminando .mapaContainer {
   width: 100%;
   height: 65vh; }
 
+.curaduria-ac {
+  display: flex;
+  align-items: center; }
+  .curaduria-ac .left,
+  .curaduria-ac .right {
+    width: 50%; }
+  .curaduria-ac .left {
+    padding: 10px; }
+    .curaduria-ac .left .img {
+      height: 300px;
+      background-size: cover;
+      border-radius: 5px; }
+    .curaduria-ac .left .titulo {
+      font-weight: 700;
+      font-size: 1.25em;
+      margin-bottom: 15px; }
+
 .titulo-modulo .sec {
   max-width: 1600px !important;
   margin: 0 auto;
