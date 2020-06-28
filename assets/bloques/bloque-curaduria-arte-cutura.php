@@ -6,13 +6,18 @@
 
 // id unico para el bloque
 $id = 'bloque-' . $block['id'];
+$items = get_field('items');
+$texto = get_field('texto');
 ?>
 <div class="curaduria-ac">
     <div class="left">
-        <a class="item"></a>
-        <a class="item"></a>
+        <?php if(have_rows('items')): ?>
+            <?php while(have_rows('items'): the_row();) ?>
+                <a href="#" class="item"></a>
+            <?php endwhile;?>
+        <?php endif; ?>
     </div>
     <div class="right">
-
+        <?php echo $texto ?>
     </div>
 </div>
