@@ -8233,7 +8233,8 @@ body.page-template-template-caminando .mapaContainer {
 .curaduria-ac {
   display: flex;
   align-items: center;
-  max-width: 1600px; }
+  max-width: 1600px;
+  margin: 0 auto; }
   .curaduria-ac .left,
   .curaduria-ac .right {
     width: 50%; }
@@ -8247,6 +8248,8 @@ body.page-template-template-caminando .mapaContainer {
       font-weight: 700;
       font-size: 1.25em;
       margin-bottom: 15px; }
+  .curaduria-ac .right {
+    padding-left: 20px; }
 
 .titulo-modulo .sec {
   max-width: 1600px !important;
