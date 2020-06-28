@@ -9,6 +9,7 @@ $id = 'bloque-' . $block['id'];
 $items = get_field('items');
 $texto = get_field('texto');
 ?>
+
 <div class="curaduria-ac">
     <div class="left">
         <?php if(have_rows('items')): ?>
