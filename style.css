@@ -8232,7 +8232,8 @@ body.page-template-template-caminando .mapaContainer {
 
 .curaduria-ac {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  max-width: 1600px; }
   .curaduria-ac .left,
   .curaduria-ac .right {
     width: 50%; }
