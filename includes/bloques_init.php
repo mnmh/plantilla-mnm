@@ -390,6 +390,24 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'videos', 'youtube'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Bloque curaduria arte cultura',
+			'title'				=> __('Un bloque para las curadurias'),
+			'description'		=> __('Un bloque para las curadurias'),
+			'render_callback'	=> 'bloque_callback_curaduria',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'curaduria', 'arte y cultura'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_curaduria( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 
@@ -709,5 +727,6 @@ include( get_theme_file_path("/includes/campos/titulo-modulo.php") );
 include( get_theme_file_path("/includes/campos/destacados-cc.php") );
 include( get_theme_file_path("/includes/campos/cabezote-color-imagen.php") );
 include( get_theme_file_path("/includes/campos/carrousel-cc.php"));
+include( get_theme_file_path("/includes/campos/bloque-curaduria.php"));
 
 ?>
