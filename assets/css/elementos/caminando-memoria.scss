@@ -14,7 +14,39 @@ body.page-template-template-caminando {
     .subtitulo-sec {
         text-align: center;
     }
-    
+
+    .linea-tiempo {
+        background: #8fb7be;
+        color: white;
+        padding: 60px;
+
+        .top {
+            margin-top: 50px;
+        }
+
+        .nav {
+            margin-top: 100px;
+        }
+
+        .dot {
+            background: white;
+            opacity: 0.5;
+
+            &.active {
+                background-color: white;
+                opacity: 1;
+            }
+
+            .fecha {
+                color: white;
+            }
+        }
+
+        .next, .prev {
+            color: white;
+        }
+    }
+
     .topHeader {
         position: relative;
         display: flex;

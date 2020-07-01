@@ -11,6 +11,17 @@ $items_count = count(get_field('elementos'));
 ?>
 
 <div class="linea-tiempo btm">
+<div class="nav">
+        <div class="prev"></div>
+        <div class="inside">
+            <?php for($i = 0; $i < $items_count; $i++): ?>
+                <div class="dot">
+                    <div class="fecha"><?php print_r($elementos[$i]['fecha']) ?></div>
+                </div>
+            <?php endfor; ?>
+        </div>
+        <div class="next"></div>
+    </div>
     <div class="top">
         <?php if(have_rows('elementos')): while(have_rows('elementos')): the_row(); ?>
             <div class="item">
@@ -28,15 +39,5 @@ $items_count = count(get_field('elementos'));
             </div>
         <?php endwhile; endif; ?>
     </div>
-    <div class="nav">
-        <div class="prev"></div>
-        <div class="inside">
-            <?php for($i = 0; $i < $items_count; $i++): ?>
-                <div class="dot">
-                    <div class="fecha"><?php print_r($elementos[$i]['fecha']) ?></div>
-                </div>
-            <?php endfor; ?>
-        </div>
-        <div class="next"></div>
-    </div>
+    
 </div>

@@ -6115,6 +6115,25 @@ body.page-template-template-caminando .titulo-modulo .sec {
 body.page-template-template-caminando .subtitulo-sec {
   text-align: center; }
 
+body.page-template-template-caminando .linea-tiempo {
+  background: #8fb7be;
+  color: white;
+  padding: 60px; }
+  body.page-template-template-caminando .linea-tiempo .top {
+    margin-top: 50px; }
+  body.page-template-template-caminando .linea-tiempo .nav {
+    margin-top: 100px; }
+  body.page-template-template-caminando .linea-tiempo .dot {
+    background: white;
+    opacity: 0.5; }
+    body.page-template-template-caminando .linea-tiempo .dot.active {
+      background-color: white;
+      opacity: 1; }
+    body.page-template-template-caminando .linea-tiempo .dot .fecha {
+      color: white; }
+  body.page-template-template-caminando .linea-tiempo .next, body.page-template-template-caminando .linea-tiempo .prev {
+    color: white; }
+
 body.page-template-template-caminando .topHeader {
   position: relative;
   display: flex;

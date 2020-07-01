@@ -57,6 +57,10 @@
 			<input id="campo_cel" type="text">
 			<p class="label">Correo electrónico<span>*</span></p>
 			<input id="campo_mail" type="text">
+			<p class="label">Web<span>*</span></p>
+			<input id="campo_web" type="text">
+			<p class="label">Actor que apoya<span>*</span></p>
+			<input id="campo_actor" type="text">
 			<p class="label">Descripción del lugar de memoria<span>*</span></p>
 			<textarea id="campo_des" name="description" id="" cols="30" rows="10"></textarea>
 			<p class="label">Escoge un color que represente tu lugar de memoria<span>*</span></p>
