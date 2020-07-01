@@ -66,6 +66,8 @@
 			<p class="label">Escoge un color que represente tu lugar de memoria<span>*</span></p>
 		</div>
 	</div>
+
+	<p class="copy"><a href="http://centrodememoriahistorica.gov.co/politica-de-tratamiento-de-la-informacion-y-datos-personales/">Política de tratamiento de la información y datos personales.</a></p>
 </div>
 
 <?php the_content() ?>

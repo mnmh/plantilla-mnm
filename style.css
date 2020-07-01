@@ -7062,7 +7062,7 @@ body.page-template-template-caminando .mapaContainer {
   .linea-tiempo .logo {
     position: absolute;
     width: 50%;
-    opacity: 0.3;
+    opacity: 0.2;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0); }
@@ -7108,7 +7108,7 @@ body.page-template-template-caminando .mapaContainer {
       .linea-tiempo .nav .dot .fecha {
         position: absolute;
         top: -30px;
-        width: 100px;
+        width: 200px;
         text-align: center;
         left: 50%;
         transform: translate(-50%, 0);
