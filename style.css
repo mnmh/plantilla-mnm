@@ -7041,7 +7041,8 @@ body.page-template-template-caminando .mapaContainer {
   max-width: 1600px;
   color: #333;
   margin-bottom: 5vh;
-  position: relative; }
+  position: relative;
+  min-height: 600px; }
   .linea-tiempo .top {
     margin-bottom: 50px; }
     .linea-tiempo .top .item {
@@ -7061,7 +7062,7 @@ body.page-template-template-caminando .mapaContainer {
     padding-left: 30px; }
   .linea-tiempo .logo {
     position: absolute;
-    width: 50%;
+    width: 30%;
     opacity: 0.2;
     top: 0;
     left: 50%;
