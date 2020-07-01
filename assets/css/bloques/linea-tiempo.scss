@@ -4,6 +4,8 @@
     max-width: 1600px;
     color: #333;
     margin-bottom: 5vh;
+    position: relative;
+
     .top {
         margin-bottom: 50px;
 
@@ -31,6 +33,19 @@
 
     .resultados {
         padding-left: 30px;
+    }
+
+    .logo {
+        position: absolute;
+        width: 50%;
+        opacity: 0.3;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+
+        path {
+            fill: white;
+        }
     }
 
     .nav {

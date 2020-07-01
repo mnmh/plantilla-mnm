@@ -11,6 +11,9 @@ $items_count = count(get_field('elementos'));
 ?>
 
 <div class="linea-tiempo btm">
+    <div class="logo">
+    <?php get_template_part('/assets/template-parts/logo-simple-caminando') ?>
+    </div>
 <div class="nav">
         <div class="prev"></div>
         <div class="inside">

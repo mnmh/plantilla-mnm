@@ -6122,7 +6122,7 @@ body.page-template-template-caminando .linea-tiempo {
   body.page-template-template-caminando .linea-tiempo .top {
     margin-top: 50px; }
   body.page-template-template-caminando .linea-tiempo .nav {
-    margin-top: 100px; }
+    margin-top: 20px; }
   body.page-template-template-caminando .linea-tiempo .dot {
     background: white;
     opacity: 0.5; }
@@ -7040,7 +7040,8 @@ body.page-template-template-caminando .mapaContainer {
   margin: auto;
   max-width: 1600px;
   color: #333;
-  margin-bottom: 5vh; }
+  margin-bottom: 5vh;
+  position: relative; }
   .linea-tiempo .top {
     margin-bottom: 50px; }
     .linea-tiempo .top .item {
@@ -7058,6 +7059,15 @@ body.page-template-template-caminando .mapaContainer {
         margin-bottom: 20px; }
   .linea-tiempo .resultados {
     padding-left: 30px; }
+  .linea-tiempo .logo {
+    position: absolute;
+    width: 50%;
+    opacity: 0.3;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0); }
+    .linea-tiempo .logo path {
+      fill: white; }
   .linea-tiempo .nav {
     display: flex;
     justify-content: center; }
