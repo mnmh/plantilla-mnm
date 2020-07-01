@@ -6,11 +6,11 @@
 
 // id unico para el bloque
 $id = 'botones-' . $block['id'];
+$elementos = get_field('elementos');
 $items_count = count(get_field('elementos'));
 ?>
 
 <div class="linea-tiempo btm">
-    <h1 class="sec">Línea del tiempo</h1>
     <div class="top">
         <?php if(have_rows('elementos')): while(have_rows('elementos')): the_row(); ?>
             <div class="item">
@@ -20,8 +20,11 @@ $items_count = count(get_field('elementos'));
                         <?php echo get_sub_field('contenido'); ?>
                     </p>
                 </div>
-                <?php $imagen = get_sub_field('imagen') ?>
-                <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
+                <!-- <?php $imagen = get_sub_field('imagen') ?>
+                <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div> -->
+                <div class="resultados">
+                    <?php echo get_sub_field('resultados'); ?>
+                </div>
             </div>
         <?php endwhile; endif; ?>
     </div>
@@ -29,7 +32,9 @@ $items_count = count(get_field('elementos'));
         <div class="prev"></div>
         <div class="inside">
             <?php for($i = 0; $i < $items_count; $i++): ?>
-                <div class="dot"></div>
+                <div class="dot">
+                    <div class="fecha"><?php print_r($elementos[$i]['fecha']) ?></div>
+                </div>
             <?php endfor; ?>
         </div>
         <div class="next"></div>

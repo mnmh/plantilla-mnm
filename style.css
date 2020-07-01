@@ -6107,6 +6107,14 @@ blockquote {
 body.page-template-template-caminando .leaflet-pane.leaflet-marker-pane img {
   border-radius: 100px; }
 
+body.page-template-template-caminando .titulo-modulo .sec {
+  color: #89b7be;
+  text-align: center;
+  font-size: 2em; }
+
+body.page-template-template-caminando .subtitulo-sec {
+  text-align: center; }
+
 body.page-template-template-caminando .topHeader {
   position: relative;
   display: flex;
@@ -7012,7 +7020,7 @@ body.page-template-template-caminando .mapaContainer {
   width: 90%;
   margin: auto;
   max-width: 1600px;
-  color: white;
+  color: #333;
   margin-bottom: 5vh; }
   .linea-tiempo .top {
     margin-bottom: 50px; }
@@ -7029,6 +7037,8 @@ body.page-template-template-caminando .mapaContainer {
         display: flex; }
       .linea-tiempo .top .item h2 {
         margin-bottom: 20px; }
+  .linea-tiempo .resultados {
+    padding-left: 30px; }
   .linea-tiempo .nav {
     display: flex;
     justify-content: center; }
@@ -7066,6 +7076,17 @@ body.page-template-template-caminando .mapaContainer {
       margin: 5px;
       position: relative;
       cursor: pointer; }
+      .linea-tiempo .nav .dot .fecha {
+        position: absolute;
+        top: -30px;
+        width: 100px;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 0.7em;
+        text-transform: uppercase;
+        color: #999;
+        display: none; }
       .linea-tiempo .nav .dot:hover {
         background: #999; }
       .linea-tiempo .nav .dot:before {
@@ -7085,6 +7106,8 @@ body.page-template-template-caminando .mapaContainer {
           width: 25px;
           height: 25px;
           border: 2px solid #ccc; }
+        .linea-tiempo .nav .dot.active .fecha {
+          display: block; }
 
 .banner.botones {
   height: 30vh; }
