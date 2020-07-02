@@ -2,6 +2,10 @@
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
+<?php
+$resp = $_GET['updated'];
+?>
+
 <div class="topHeader">
 	<?php get_template_part('/assets/template-parts/logo-caminando') ?>
 </div>
@@ -29,6 +33,39 @@
 	
 </div>
 
+<?php
+	if($resp == true):
+?>
+
+<div id="lugares_memoria_hidden">
+          <?php
+            $args = array (
+              'post_type' => 'lugares',
+              'posts_per_page'   => -1,
+            );
+
+          // get posts
+          $posts = get_posts($args);
+          ?>
+
+          <?php foreach($posts as $lugar):
+
+              $nombre = get_the_title($lugar->ID);
+              $nombre_lugar = get_field('nombre_del_lugar_de_memoria', $lugar->ID);
+              $coor = get_field('mapa_2', $lugar->ID);
+              $texto = get_field('texto_sobre_su_lugar', $lugar->ID);
+              $color = get_field('elige_un_color', $lugar->ID);
+            ?>
+
+            <div class="item" id="<?php echo $lugar->ID?>" data-nombre="<?php echo $nombre?>" data-lugar="<?php echo $nombre_lugar?>" data-coor="<?php echo $coor?>" data-texto="<?php echo $texto?>" data-color="<?php echo $color?>"></div>
+		  <?php endforeach; ?>
+        </div>
+		<div class="mapaContainer btm">
+		<div id="mapaid" style="height: calc(100vh - 100px - 1.5em); z-index: 1;"></div>
+		</div>
+<?php
+	else:
+?>
 <div class="mapaContainer btm">
 	<?php
 		acf_form(array(
@@ -37,7 +74,7 @@
 			'field_groups' => array(4087),
 			'new_post'    => array(
 				'post_type'   => 'lugares',
-				'post_status' => 'publish'
+				'post_status' => 'draft'
 			),
 			'submit_value' => 'Sube tu espacio'
 		));
@@ -69,6 +106,10 @@
 
 	<p class="copy"><a href="http://centrodememoriahistorica.gov.co/politica-de-tratamiento-de-la-informacion-y-datos-personales/">Política de tratamiento de la información y datos personales.</a></p>
 </div>
+
+<?php
+	endif;
+?>
 
 <?php the_content() ?>
 

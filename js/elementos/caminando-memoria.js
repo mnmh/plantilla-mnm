@@ -61,6 +61,39 @@
             $('#campo_mail').on('click', function() {
                 $('#acf-field_5ef6150b24e91').click()
             })
+
+
+            if($('#mapaid').length > 0){
+                var mymap = L.map('mapaid').setView([4.55598, -74.04785], 6);
+
+                  L.tileLayer('https://api.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibmVzdG9ycGVuYSIsImEiOiJjam10bDJpeGMwMWQ2M3FtdzJ6ZHZkYW41In0.dcf5aHJ169baAfs7gHc9Jw', {
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    maxZoom: 18,
+                    accessToken: 'pk.eyJ1IjoibmVzdG9ycGVuYSIsImEiOiJjam10bDJpeGMwMWQ2M3FtdzJ6ZHZkYW41In0.dcf5aHJ169baAfs7gHc9Jw'
+                  }).addTo(mymap);
+
+                  $('#lugares_memoria_hidden .item').each(function(){
+                    var valueInput = $(this).attr('data-coor')
+                    var latlng = valueInput.split(',')
+
+                    if(latlng.length == 2){
+                        var myIcon = L.icon({
+                            iconUrl: 'my-icon.png',
+                            iconSize: [40, 40],
+                            iconAnchor: [20, 20],
+                        });
+                      var marker = L.marker([latlng[0],latlng[1]], {icon: myIcon}).addTo(mymap);
+                      $(marker._icon).css({'background-color': '#' + $(this).attr('data-color')})
+                      $(marker._icon).attr('data-id', $(this).attr('id'))
+                      $(marker._icon).on('click', function(){
+                        var $item = $('#lugares_memoria_hidden #' + $(this).attr('data-id'))
+                        $('#contenido_side .nombre').html($item.attr('data-nombre'))
+                        $('#contenido_side .lugar').html($item.attr('data-lugar'))
+                        $('#contenido_side .texto').html($item.attr('data-texto'))
+                      })
+                    }
+                  })
+            }
         }
 
     });
