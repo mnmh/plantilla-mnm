@@ -62,6 +62,15 @@ $resp = $_GET['updated'];
         </div>
 		<div class="mapaContainer btm">
 		<div id="mapaid" style="height: calc(100vh - 100px - 1.5em); z-index: 1;"></div>
+		<div class="sideContent">
+			<div class="content">
+				<div class="info">
+				<div class="nombre"></div>
+				<div class="lugar"></div>
+				<div class="texto"></div>
+				</div>
+			</div>
+		</div>
 		</div>
 <?php
 	else:

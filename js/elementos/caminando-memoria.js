@@ -87,9 +87,9 @@
                       $(marker._icon).attr('data-id', $(this).attr('id'))
                       $(marker._icon).on('click', function(){
                         var $item = $('#lugares_memoria_hidden #' + $(this).attr('data-id'))
-                        $('#contenido_side .nombre').html($item.attr('data-nombre'))
-                        $('#contenido_side .lugar').html($item.attr('data-lugar'))
-                        $('#contenido_side .texto').html($item.attr('data-texto'))
+                        $('.mapaContainer .sideContent .info .nombre').html($item.attr('data-nombre'))
+                        $('.mapaContainer .sideContent .info .lugar').html($item.attr('data-lugar'))
+                        $('.mapaContainer .sideContent .info .texto').html($item.attr('data-texto'))
                       })
                     }
                   })
