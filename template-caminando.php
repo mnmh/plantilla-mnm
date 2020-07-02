@@ -65,10 +65,9 @@ $resp = $_GET['updated'];
 		<div class="sideContent">
 			<div class="content">
 				<div class="info">
-				<div class="nombre"></div>
 				<div class="lugar"></div>
-				<div class="texto"></div>
 				</div>
+				<div class="texto"></div>
 			</div>
 		</div>
 		</div>
