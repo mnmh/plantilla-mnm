@@ -61,7 +61,7 @@ $resp = $_GET['updated'];
 		  <?php endforeach; ?>
         </div>
 		<div class="mapaContainer btm">
-		<div id="mapaid" style="height: calc(100vh - 100px - 1.5em); z-index: 1;"></div>
+		<div id="mapaid" class="main" style="height: calc(100vh - 100px - 1.5em); z-index: 1;"></div>
 		<div class="sideContent">
 			<div class="content">
 				<div class="info">

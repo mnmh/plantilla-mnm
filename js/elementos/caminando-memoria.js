@@ -20,51 +20,13 @@
             .to('.logoCaminando .frame2', 0, {autoAlpha: 1}, 'start+=0.45')
 
 
-            $paleta = $('#listado_paleta').clone()
-            $subida_btn = $('.acf-image-uploader .acf-basic-uploader')
-            $enviar = $('<div id="enviar_btn">Agregar</div>')
-            $subida = $('<div id="subir_btn">Subir imagen</div>')
-            $subida_txt = $('<p class="label">Escoge una imagen de tu lugar [png o jpg de menos de 2mb.]</p>')
-            $('.sideContent .content').append($paleta).append($subida_txt).append($subida).append($enviar)
+            
 
 
-            $('#campo_titulo').change(function(){
-                $('#acf-field_5bbb8364dbc4c').val($(this).val())
-                $('#acf-_post_title').val($(this).val())
-            })
-
-            $('#campo_des').change(function(){
-                $('#acf-field_5bb4dc07613ba').val($(this).val())
-            })
-
-            $('#enviar_btn').on('click', function() {
-                $('.mapaContainer .acf-form-submit input').click()
-            })
-
-            $subida_btn.find('input').change(function(e){
-                console.log(e.srcElement.value)
-                $('#subir_btn').html(e.srcElement.value.replace('C:\\fakepath\\', ''))
-            })
-
-            $('#subir_btn').on('click', function() {
-                $subida_btn.find('input').click()
-            })
-
-            $('#campo_ciudad').change(function(){
-                $('#acf-field_5ef614f924e8f').val($(this).val())
-            })
-
-            $('#campo_cel').change(function(){
-                $('#acf-field_5ef6150324e90').val($(this).val())
-            })
-
-            $('#campo_mail').on('click', function() {
-                $('#acf-field_5ef6150b24e91').click()
-            })
-
-
-            if($('#mapaid').length > 0){
-                var mymap = L.map('mapaid').setView([4.55598, -74.04785], 6);
+            if($('#mapaid').hasClass('main')){
+                var mymap = L.map('mapaid', {
+                    minZoom: 6
+                }).setView([4.55598, -74.04785], 6);
 
                   L.tileLayer('https://api.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibmVzdG9ycGVuYSIsImEiOiJjam10bDJpeGMwMWQ2M3FtdzJ6ZHZkYW41In0.dcf5aHJ169baAfs7gHc9Jw', {
                     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -93,6 +55,48 @@
                       })
                     }
                   })
+            } else {
+                $paleta = $('#listado_paleta').clone()
+                $subida_btn = $('.acf-image-uploader .acf-basic-uploader')
+                $enviar = $('<div id="enviar_btn">Agregar</div>')
+                $subida = $('<div id="subir_btn">Subir imagen</div>')
+                $subida_txt = $('<p class="label">Escoge una imagen de tu lugar [png o jpg de menos de 2mb.]</p>')
+                $('.sideContent .content').append($paleta).append($subida_txt).append($subida).append($enviar)
+
+
+                $('#campo_titulo').change(function(){
+                    $('#acf-field_5bbb8364dbc4c').val($(this).val())
+                    $('#acf-_post_title').val($(this).val())
+                })
+
+                $('#campo_des').change(function(){
+                    $('#acf-field_5bb4dc07613ba').val($(this).val())
+                })
+
+                $('#enviar_btn').on('click', function() {
+                    $('.mapaContainer .acf-form-submit input').click()
+                })
+
+                $subida_btn.find('input').change(function(e){
+                    console.log(e.srcElement.value)
+                    $('#subir_btn').html(e.srcElement.value.replace('C:\\fakepath\\', ''))
+                })
+
+                $('#subir_btn').on('click', function() {
+                    $subida_btn.find('input').click()
+                })
+
+                $('#campo_ciudad').change(function(){
+                    $('#acf-field_5ef614f924e8f').val($(this).val())
+                })
+
+                $('#campo_cel').change(function(){
+                    $('#acf-field_5ef6150324e90').val($(this).val())
+                })
+
+                $('#campo_mail').on('click', function() {
+                    $('#acf-field_5ef6150b24e91').click()
+                })
             }
         }
 
