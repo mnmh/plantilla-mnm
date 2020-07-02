@@ -6115,6 +6115,9 @@ body.page-template-template-caminando .titulo-modulo .sec {
 body.page-template-template-caminando .subtitulo-sec {
   text-align: center; }
 
+body.page-template-template-caminando #mapaid.main {
+  margin: 15px; }
+
 body.page-template-template-caminando .linea-tiempo {
   background: #8fb7be;
   color: white;
