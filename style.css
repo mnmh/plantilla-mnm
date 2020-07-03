@@ -7057,6 +7057,11 @@ body.page-template-template-caminando .mapaContainer {
         width: 50%;
         background-size: cover;
         background-position: center; }
+      .linea-tiempo .top .item .fecha {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: #fff;
+        opacity: 0.6; }
       .linea-tiempo .top .item.active {
         display: flex; }
         @media all and (max-width: 900px) {
@@ -7118,17 +7123,6 @@ body.page-template-template-caminando .mapaContainer {
       margin: 5px;
       position: relative;
       cursor: pointer; }
-      .linea-tiempo .nav .dot .fecha {
-        position: absolute;
-        top: -30px;
-        width: 200px;
-        text-align: center;
-        left: 50%;
-        transform: translate(-50%, 0);
-        font-size: 0.7em;
-        text-transform: uppercase;
-        color: #999;
-        display: none; }
       .linea-tiempo .nav .dot:hover {
         background: #999; }
       .linea-tiempo .nav .dot:before {
@@ -7148,8 +7142,6 @@ body.page-template-template-caminando .mapaContainer {
           width: 25px;
           height: 25px;
           border: 2px solid #ccc; }
-        .linea-tiempo .nav .dot.active .fecha {
-          display: block; }
 
 .banner.botones {
   height: 30vh; }

@@ -29,6 +29,7 @@ $items_count = count(get_field('elementos'));
         <?php if(have_rows('elementos')): while(have_rows('elementos')): the_row(); ?>
             <div class="item">
                 <div class="left">
+                    <div class="fecha"><?php echo get_sub_field('fecha') ?></div>
                     <h2><?php echo get_sub_field('titulo'); ?></h2>
                     <p class="txt">
                         <?php echo get_sub_field('contenido'); ?>
