@@ -37,6 +37,8 @@ $resp = $_GET['updated'];
 	if($resp == true):
 ?>
 
+<a href="http://museodememoria.gov.co/caminando-la-memoria/" class="main_btn">Ingresar tu lugar de memoria</a>
+
 <div id="lugares_memoria_hidden">
           <?php
             $args = array (
@@ -74,6 +76,9 @@ $resp = $_GET['updated'];
 <?php
 	else:
 ?>
+
+<a href="http://museodememoria.gov.co/caminando-la-memoria/?updated=true" class="main_btn">Ver los otros lugares de memoria</a>
+
 <div class="mapaContainer btm">
 	<?php
 		acf_form(array(
