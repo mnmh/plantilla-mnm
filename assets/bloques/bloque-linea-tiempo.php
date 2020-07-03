@@ -19,7 +19,6 @@ $items_count = count(get_field('elementos'));
         <div class="inside">
             <?php for($i = 0; $i < $items_count; $i++): ?>
                 <div class="dot">
-                    <div class="fecha"><?php print_r($elementos[$i]['fecha']) ?></div>
                 </div>
             <?php endfor; ?>
         </div>
