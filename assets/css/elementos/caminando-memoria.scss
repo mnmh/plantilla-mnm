@@ -141,6 +141,10 @@ body.page-template-template-caminando {
             right: 12px;
             background: rgba(255, 255, 255, 0.7);
 
+            @media all and (max-width: 900px) {
+                display: none;
+            }
+
             #enviar_btn, #subir_btn {
                 padding: 10px;
                 text-align: center;

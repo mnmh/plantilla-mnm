@@ -6198,6 +6198,9 @@ body.page-template-template-caminando .mapaContainer {
     padding-bottom: 20vh;
     right: 12px;
     background: rgba(255, 255, 255, 0.7); }
+    @media all and (max-width: 900px) {
+      body.page-template-template-caminando .mapaContainer .sideContent {
+        display: none; } }
     body.page-template-template-caminando .mapaContainer .sideContent #enviar_btn, body.page-template-template-caminando .mapaContainer .sideContent #subir_btn {
       padding: 10px;
       text-align: center;
