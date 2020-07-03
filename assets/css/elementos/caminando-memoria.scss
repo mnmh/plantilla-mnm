@@ -1,4 +1,20 @@
 body.page-template-template-caminando {
+
+    .main_btn {
+        width: 350px;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        background: #a4dae2;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    
     .leaflet-pane.leaflet-marker-pane{
         img {
             border-radius: 100px;
