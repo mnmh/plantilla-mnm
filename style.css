@@ -7049,13 +7049,6 @@ body.page-template-template-caminando .mapaContainer {
       display: flex;
       justify-content: space-between;
       display: none; }
-      @media all and (max-width: 900px) {
-        .linea-tiempo .top .item {
-          display: block; }
-          .linea-tiempo .top .item .resultados {
-            padding-left: 0;
-            margin-top: 30px;
-            font-size: 0.8em; } }
       .linea-tiempo .top .item .img {
         height: 550px;
         width: 50%;
@@ -7063,6 +7056,13 @@ body.page-template-template-caminando .mapaContainer {
         background-position: center; }
       .linea-tiempo .top .item.active {
         display: flex; }
+        @media all and (max-width: 900px) {
+          .linea-tiempo .top .item.active {
+            display: block; }
+            .linea-tiempo .top .item.active .resultados {
+              padding-left: 0;
+              margin-top: 30px;
+              font-size: 0.8em; } }
       .linea-tiempo .top .item h2 {
         margin-bottom: 20px; }
   .linea-tiempo .resultados {
