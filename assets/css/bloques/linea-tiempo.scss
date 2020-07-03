@@ -15,6 +15,16 @@
             justify-content: space-between;
             display: none;
 
+            @media all and (max-width: 900px) {
+                display: block;
+
+                .resultados {
+                    padding-left: 0;
+                    margin-top: 30px;
+                    font-size: 0.8em;
+                }
+            }
+
             .img {
                 height: 550px;
                 width: 50%;

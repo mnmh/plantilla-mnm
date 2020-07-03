@@ -6115,9 +6115,6 @@ body.page-template-template-caminando .titulo-modulo .sec {
 body.page-template-template-caminando .subtitulo-sec {
   text-align: center; }
 
-body.page-template-template-caminando #mapaid.main {
-  margin: 15px; }
-
 body.page-template-template-caminando .linea-tiempo {
   background: #8fb7be;
   color: white;
@@ -7052,6 +7049,13 @@ body.page-template-template-caminando .mapaContainer {
       display: flex;
       justify-content: space-between;
       display: none; }
+      @media all and (max-width: 900px) {
+        .linea-tiempo .top .item {
+          display: block; }
+          .linea-tiempo .top .item .resultados {
+            padding-left: 0;
+            margin-top: 30px;
+            font-size: 0.8em; } }
       .linea-tiempo .top .item .img {
         height: 550px;
         width: 50%;
