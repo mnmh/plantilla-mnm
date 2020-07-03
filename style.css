@@ -7058,7 +7058,7 @@ body.page-template-template-caminando .mapaContainer {
         background-size: cover;
         background-position: center; }
       .linea-tiempo .top .item .fecha {
-        font-size: 1.5em;
+        font-size: 1.75em;
         text-transform: uppercase;
         color: #fff;
         opacity: 0.6; }
@@ -7086,7 +7086,8 @@ body.page-template-template-caminando .mapaContainer {
       fill: white; }
   .linea-tiempo .nav {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     .linea-tiempo .nav .prev,
     .linea-tiempo .nav .next {
       width: 40px;
