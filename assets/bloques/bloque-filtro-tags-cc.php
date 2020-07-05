@@ -16,20 +16,25 @@ $url = "http://cc.museodememoria.gov.co/wp-json/wp/v2/tags?per_page=100";
 $terms = array();
 
 for($i = 0; $i < 6; $i++){
-    if($i > 0) $url . '&page=' . ($i + 1);
+    $urltemp = $url;
+    if($i > 0) $urltemp = $urltemp . '&page=' . ($i + 1);
 
-    $client = curl_init($url);
+    $client = curl_init($urltemp);
     curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
     $response = curl_exec($client);
 
     $result = json_decode($response);
 
-    array_merge($terms, $result);
+    // array_merge($terms, $result);
+    // echo count($result);
     for($p = 0; $p < count($result); $p++){
         if($result[$p]->count > 0) array_push($terms, $result[$p]);
     }
-    print_r($result);
+    // array_push($terms, $result);
+    // print_r($result);
 }
+
+// print_r($terms);
 
 foreach($terms as $term): ?>
     <?php
