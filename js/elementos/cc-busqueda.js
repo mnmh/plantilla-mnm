@@ -70,13 +70,14 @@
             else $parent.removeClass('active-persistent')
         }
 
-        $('#busqueda-cc .submit').on('click', function(){
-            var string = urlCC + '/wp-json/wp/v2/posts?per_page=20&';
+        $('#busqueda-cc').submit(function(){
+            var string = urlCC + '/wp-json/wp/v2/posts?per_page=20';
+            var string_searchVal = urlCC + '/wp-json/wp/v2/search?per_page=20&search=';
 
             var total_tipo = $('.filtro-cc .active').length
 
             if(total_tipo > 0){
-                string += 'tipo-de-contenido='
+                string += '&tipo-de-contenido='
 
                 $('.filtro-cc .active').each(function(i,e) {
                     var id = $(this).attr('data-id')
@@ -86,11 +87,93 @@
                 })
             }
 
-            $.getJSON(string, function (data) {
-                console.log(data)
-            })
+            var total_tags = $('.filtro_tags .listado .active').length
 
-            console.log(string)
+            if(total_tags > 0){
+                string += '&tags='
+
+                $('.filtro_tags .listado .active').each(function(i,e) {
+                    var id = $(this).attr('data-id')
+
+                    string += id
+                    if(i+1 < total_tags) string += ','
+                })
+            }
+
+            var $inside = $('.cc-contenido-thumbs .inside');
+
+            $inside.find('.item:not(.hide),.msj').remove()
+            $inside.append('<div class="msj"></div>').find('.msj').html('cargando...')
+
+            if($('#buscar').val() != ''){
+                var myStr = $('#buscar').val()
+                myStr=myStr.toLowerCase();
+                myStr=myStr.replace(/(^\s+|[^a-zA-Z0-9 ]+|\s+$)/g,"");   //this one
+                myStr=myStr.replace(/\s+/g, "+");
+
+                string_searchVal = string_searchVal + encodeURI(myStr)
+
+                $.getJSON(string_searchVal, function (data) {
+                    console.log(data)
+                    $inside.find('.msj').remove()
+                    for(var i = 0; i < data.length; i++){
+                        var titulo = data[i]['title'];
+                        $item = $inside.find('.hide.limpio').clone();
+                        $item.find('.name').html(titulo);
+                        $item.attr('href', '/centro-de-contenido/?contenido=' + data[i]['id']);
+                        $item.attr('target', '_blank');
+                        $item.removeClass('hide').addClass('fresh');
+                        $inside.append($item);
+                    }
+    
+                    var tl_temp = new TimelineMax();
+                    tl_temp.add('start')
+                        .staggerFromTo($inside.find('.fresh'), 0.2, {
+                            autoAlpha: 0,
+                            y: 20
+                        }, {
+                            autoAlpha: 1,
+                            y: 0
+                        }, 0.05)
+                        .add(function () {
+                            $($inside.find('.fresh')).removeClass('fresh');
+                        });
+                })
+            } else {
+                $.getJSON(string, function (data) {
+                    $inside.find('.msj').remove()
+                    for(var i = 0; i < data.length; i++){
+                        var tipo = data[i]['tipo-de-contenido'][0]['slug'];
+                        var titulo = data[i]['titulo'];
+                        $item = $inside.find('.hide.' + tipo).clone();
+                        $item.find('.name').html(titulo);
+                        $item.attr('href', '/centro-de-contenido/?contenido=' + data[i]['id']);
+                        $item.attr('target', '_blank');
+                        $item.removeClass('hide').addClass('fresh');
+                        $inside.append($item);
+                    }
+    
+                    var tl_temp = new TimelineMax();
+                    tl_temp.add('start')
+                        .staggerFromTo($inside.find('.fresh'), 0.2, {
+                            autoAlpha: 0,
+                            y: 20
+                        }, {
+                            autoAlpha: 1,
+                            y: 0
+                        }, 0.05)
+                        .add(function () {
+                            $($inside.find('.fresh')).removeClass('fresh');
+                        });
+                    // $this.attr('data-page', page + 1);
+                    // if(data.length < 20) $this.remove();
+                })
+
+
+                console.log($inside)
+            }
+
+            return false
         })
 
     });

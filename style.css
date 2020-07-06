@@ -7844,7 +7844,9 @@ body.page-template-template-caminando .mapaContainer {
     padding-right: 20px;
     color: white;
     margin-left: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    border: none;
+    outline: none; }
 
 .inputField {
   display: flex;
@@ -8773,27 +8775,44 @@ body.ninos-y-ninas {
   margin: 0 auto; }
   .cc-contenido-thumbs .inside {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    border-top: 1px solid #dcdcdc; }
   .cc-contenido-thumbs .item {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px; }
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-bottom: 1px solid #dcdcdc; }
     .cc-contenido-thumbs .item .thumb {
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       background-color: #efefef;
       border-radius: 5px; }
       .cc-contenido-thumbs .item .thumb svg {
-        margin: 30px; }
+        margin: 12px; }
         .cc-contenido-thumbs .item .thumb svg path, .cc-contenido-thumbs .item .thumb svg circle, .cc-contenido-thumbs .item .thumb svg rect {
           fill: #999999; }
-    .cc-contenido-thumbs .item:hover svg path, .cc-contenido-thumbs .item:hover svg circle, .cc-contenido-thumbs .item:hover svg rect {
-      fill: #3e6cd1; }
+    .cc-contenido-thumbs .item:hover {
+      background-color: #3e6cd1; }
+      .cc-contenido-thumbs .item:hover svg path, .cc-contenido-thumbs .item:hover svg circle, .cc-contenido-thumbs .item:hover svg rect {
+        fill: white; }
+      .cc-contenido-thumbs .item:hover .name {
+        color: white; }
+      .cc-contenido-thumbs .item:hover .thumb {
+        background-color: rgba(255, 255, 255, 0.3); }
     .cc-contenido-thumbs .item .details {
       width: calc(100% - 150px);
       margin-left: 10px; }
       .cc-contenido-thumbs .item .details .name {
         font-weight: bold; }
-    .cc-contenido-thumbs .item.hide {
-      display: none; }
+  .cc-contenido-thumbs .hide {
+    display: none; }
+  .cc-contenido-thumbs .msj {
+    text-align: center;
+    text-align: cce;
+    width: 100%;
+    padding: 50px;
+    font-weight: bold;
+    color: #3e6cd1; }

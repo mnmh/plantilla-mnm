@@ -98,22 +98,26 @@
     .inside {
         display: flex;
         flex-wrap: wrap;
+        border-top: 1px solid #dcdcdc;
     }
 
     .item {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         padding: 20px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        border-bottom: 1px solid #dcdcdc;
 
         .thumb {
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
             background-color: #efefef;
             border-radius: 5px;
 
             svg {
-                margin: 30px;
+                margin: 12px;
 
                 path, circle, rect {
                     fill: #999999;
@@ -124,8 +128,17 @@
         &:hover {
             svg {
                 path, circle, rect {
-                    fill: $azul;
+                    fill: white;
                 }
+            }
+
+            background-color: $azul;
+
+            .name {
+                color: white;
+            }
+            .thumb {
+                background-color: rgba(255,255,255,0.3);
             }
         }
 
@@ -138,12 +151,19 @@
             }
         }
 
-        &.hide {
-            display: none;
-        }
+        
     }
 
-    .btn {
-        // margin: 0 auto;
+    .hide {
+        display: none;
+    }
+
+    .msj {
+        text-align: center;
+        text-align: cce;
+        width: 100%;
+        padding: 50px;
+        font-weight: bold;
+        color: $azul;
     }
 }

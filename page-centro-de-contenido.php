@@ -2,7 +2,7 @@
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-	<?php the_content() ?>
+	
 
     <?php
         $contenidoID = get_query_var('contenido');
@@ -162,7 +162,8 @@
         <?php endif; ?>
 
     </div>
-
+    <?php else: ?>
+        <?php the_content() ?>
     <?php endif;?>
 
 	<?php endwhile; endif; ?>

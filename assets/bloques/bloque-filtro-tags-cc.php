@@ -48,16 +48,12 @@ foreach($terms as $term): ?>
             $alfa .= $current_first;
             $alfa .= '</div>';
         }
-        $out .= '<li data-slug="'.$term->slug.'" class="letter_'.$current_first.'">'.$term->name.'</li>';
+        $out .= '<li data-id="'.$term->id.'" data-slug="'.$term->slug.'" class="letter_'.$current_first.'">'.$term->name.'</li>';
     ?>
 <?php endforeach;?>
 
 
 <div class="filtro_tags cc center <?php echo $block['className'] ?>">
-    <div class="titulo-modulo">
-        <h2 class="sec">Etiquetas</h2>
-    </div>
-
     <div class="alfa">
         <?php echo $alfa;?>
     </div>

@@ -17,6 +17,7 @@
                     var titulo = data[i]['titulo'];
                     $item = $inside.find('.hide.' + tipo).clone();
                     $item.find('.name').html(titulo);
+                    $item.attr('target', '_blank');
                     $item.attr('href', '/centro-de-contenido/?contenido=' + data[i]['id']);
                     $item.removeClass('hide').addClass('fresh');
                     $inside.append($item);
