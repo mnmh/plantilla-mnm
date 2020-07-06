@@ -167,3 +167,11 @@
         color: $azul;
     }
 }
+
+body.centro-de-contenido {
+    .titulo-modulo {
+        .sec, .subtitulo-sec {
+            text-align: center;
+        }
+    }
+}

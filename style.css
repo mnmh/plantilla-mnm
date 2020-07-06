@@ -8816,3 +8816,6 @@ body.ninos-y-ninas {
     padding: 50px;
     font-weight: bold;
     color: #3e6cd1; }
+
+body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-modulo .subtitulo-sec {
+  text-align: center; }
