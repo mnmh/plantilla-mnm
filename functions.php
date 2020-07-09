@@ -427,7 +427,7 @@ function custom_taxo_arte_cultura() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'etiquetas', array( 'obraspost' ), $args );
+	register_taxonomy( 'etiquetas', array( 'obras' ), $args );
 
 }
 add_action( 'init', 'custom_taxo_arte_cultura', 0 );
