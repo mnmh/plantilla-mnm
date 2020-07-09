@@ -39,7 +39,7 @@ $resp = $_GET['updated'];
 
 <a href="http://museodememoria.gov.co/caminando-la-memoria/" class="main_btn">Ingresar tu lugar de memoria</a>
 
-<div id="lugares_memoria_hidden">
+		<div id="lugares_memoria_hidden">
           <?php
             $args = array (
               'post_type' => 'lugares',
@@ -61,9 +61,13 @@ $resp = $_GET['updated'];
 
             <div class="item" id="<?php echo $lugar->ID?>" data-nombre="<?php echo $nombre?>" data-lugar="<?php echo $nombre_lugar?>" data-coor="<?php echo $coor?>" data-texto="<?php echo $texto?>" data-color="<?php echo $color?>"></div>
 		  <?php endforeach; ?>
-        </div>
+		</div>
+		
 		<div class="mapaContainer btm">
-		<div id="mapaid" class="main" style="height: calc(100vh - 100px - 1.5em); z-index: 1;"></div>
+		<!-- <div id="mapaid" class="main" style="height: calc(100vh - 100px - 1.5em); z-index: 1;"></div> -->
+		<div class="mapaCC">
+			<?php get_template_part('/assets/template-parts/mapaCC') ?>
+		</div>
 		<div class="sideContent">
 			<div class="content">
 				<div class="info">
