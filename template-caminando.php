@@ -37,50 +37,6 @@ $resp = $_GET['updated'];
 	if($resp == true):
 ?>
 
-<a href="http://museodememoria.gov.co/caminando-la-memoria/" class="main_btn">Ingresar tu lugar de memoria</a>
-
-		<div id="lugares_memoria_hidden">
-          <?php
-            $args = array (
-              'post_type' => 'lugares',
-              'posts_per_page'   => -1,
-            );
-
-          // get posts
-          $posts = get_posts($args);
-          ?>
-
-          <?php foreach($posts as $lugar):
-
-              $nombre = get_the_title($lugar->ID);
-              $nombre_lugar = get_field('nombre_del_lugar_de_memoria', $lugar->ID);
-              $coor = get_field('mapa_2', $lugar->ID);
-              $texto = get_field('texto_sobre_su_lugar', $lugar->ID);
-              $color = get_field('elige_un_color', $lugar->ID);
-            ?>
-
-            <div class="item" id="<?php echo $lugar->ID?>" data-nombre="<?php echo $nombre?>" data-lugar="<?php echo $nombre_lugar?>" data-coor="<?php echo $coor?>" data-texto="<?php echo $texto?>" data-color="<?php echo $color?>"></div>
-		  <?php endforeach; ?>
-		</div>
-		
-		<div class="mapaContainer display btm">
-		<!-- <div id="mapaid" class="main" style="height: calc(100vh - 100px - 1.5em); z-index: 1;"></div> -->
-		<div class="mapaCC">
-			<?php get_template_part('/assets/template-parts/mapa-cc') ?>
-		</div>
-		<div class="sideMap">
-			<div class="content">
-				<div class="info">
-				<div class="lugar"></div>
-				</div>
-				<div class="texto">Haz click en un lugar de memoria del mapa</div>
-			</div>
-		</div>
-		</div>
-<?php
-	else:
-?>
-
 <a href="http://museodememoria.gov.co/caminando-la-memoria/?updated=true" class="main_btn">Ver los otros lugares de memoria</a>
 
 <div class="mapaContainer form btm">
@@ -123,6 +79,53 @@ $resp = $_GET['updated'];
 
 	<p class="copy"><a href="http://centrodememoriahistorica.gov.co/politica-de-tratamiento-de-la-informacion-y-datos-personales/">Política de tratamiento de la información y datos personales.</a></p>
 </div>
+
+<?php
+	else:
+?>
+
+<a href="http://museodememoria.gov.co/caminando-la-memoria/" class="main_btn">Ingresar tu lugar de memoria</a>
+
+		<div id="lugares_memoria_hidden">
+          <?php
+            $args = array (
+              'post_type' => 'lugares',
+              'posts_per_page'   => -1,
+            );
+
+          // get posts
+          $posts = get_posts($args);
+          ?>
+
+          <?php foreach($posts as $lugar):
+
+              $nombre = get_the_title($lugar->ID);
+              $nombre_lugar = get_field('nombre_del_lugar_de_memoria', $lugar->ID);
+              $coor = get_field('mapa_2', $lugar->ID);
+              $texto = get_field('texto_sobre_su_lugar', $lugar->ID);
+              $color = get_field('elige_un_color', $lugar->ID);
+            ?>
+
+            <div class="item" id="<?php echo $lugar->ID?>" data-nombre="<?php echo $nombre?>" data-lugar="<?php echo $nombre_lugar?>" data-coor="<?php echo $coor?>" data-texto="<?php echo $texto?>" data-color="<?php echo $color?>"></div>
+		  <?php endforeach; ?>
+		</div>
+		
+		<div class="mapaContainer display btm">
+		<!-- <div id="mapaid" class="main" style="height: calc(100vh - 100px - 1.5em); z-index: 1;"></div> -->
+		<div class="mapaCC">
+			<?php get_template_part('/assets/template-parts/mapa-cc') ?>
+		</div>
+		<div class="sideMap">
+			<div class="content">
+				<div class="info">
+				<div class="lugar"></div>
+				</div>
+				<div class="texto">Haz click en un lugar de memoria del mapa</div>
+			</div>
+		</div>
+		</div>
+
+
 
 <?php
 	endif;
