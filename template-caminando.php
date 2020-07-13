@@ -34,7 +34,7 @@ $resp = $_GET['updated'];
 </div>
 
 <?php
-	if($resp == false):
+	if($resp == true):
 ?>
 
 <a href="http://museodememoria.gov.co/caminando-la-memoria/" class="main_btn">Ver los otros lugares de memoria</a>
@@ -84,7 +84,7 @@ $resp = $_GET['updated'];
 	else:
 ?>
 
-<a href="http://museodememoria.gov.co/caminando-la-memoria/?updated=false" class="main_btn">Ingresar tu lugar de memoria</a>
+<a href="http://museodememoria.gov.co/caminando-la-memoria/?updated=true" class="main_btn">Ingresar tu lugar de memoria</a>
 
 		<div id="lugares_memoria_hidden">
           <?php
