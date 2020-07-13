@@ -1,4 +1,4 @@
-.mapaContainer.display {
+.mapaContainer.display,.mapaContainer.buscador {
     display: flex;
     align-items: center;
 
@@ -45,6 +45,14 @@
                 color: #999;
                 margin-left: 10px;
             }
+        }
+    }
+
+    &.buscador {
+        justify-content: center;
+
+        .mapaCC {
+            max-width: 500px;
         }
     }
 }

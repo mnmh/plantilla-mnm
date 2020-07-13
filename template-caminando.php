@@ -73,7 +73,7 @@ $resp = $_GET['updated'];
 				<div class="info">
 				<div class="lugar"></div>
 				</div>
-				<div class="texto"></div>
+				<div class="texto">Haz click en un lugar de memoria del mapa</div>
 			</div>
 		</div>
 		</div>

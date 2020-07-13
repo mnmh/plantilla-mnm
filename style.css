@@ -1,34 +1,38 @@
 @charset "UTF-8";
 @import url("https://rsms.me/inter/inter.css");
-.mapaContainer.display {
+.mapaContainer.display, .mapaContainer.buscador {
   display: flex;
   align-items: center; }
-  .mapaContainer.display .mapaCC {
+  .mapaContainer.display .mapaCC, .mapaContainer.buscador .mapaCC {
     max-width: 1000px;
     width: 100%; }
-    .mapaContainer.display .mapaCC #Layer_2 path {
+    .mapaContainer.display .mapaCC #Layer_2 path, .mapaContainer.buscador .mapaCC #Layer_2 path {
       fill: transparent !important;
       transition: all 0.25s ease;
       cursor: pointer; }
-      .mapaContainer.display .mapaCC #Layer_2 path:hover {
+      .mapaContainer.display .mapaCC #Layer_2 path:hover, .mapaContainer.buscador .mapaCC #Layer_2 path:hover {
         fill: rgba(255, 255, 255, 0.7) !important; }
-    .mapaContainer.display .mapaCC .mapa_bola {
+    .mapaContainer.display .mapaCC .mapa_bola, .mapaContainer.buscador .mapaCC .mapa_bola {
       cursor: pointer;
       stroke: #333; }
-      .mapaContainer.display .mapaCC .mapa_bola:hover, .mapaContainer.display .mapaCC .mapa_bola.active {
+      .mapaContainer.display .mapaCC .mapa_bola:hover, .mapaContainer.display .mapaCC .mapa_bola.active, .mapaContainer.buscador .mapaCC .mapa_bola:hover, .mapaContainer.buscador .mapaCC .mapa_bola.active {
         fill: white; }
-  .mapaContainer.display .sideMap {
+  .mapaContainer.display .sideMap, .mapaContainer.buscador .sideMap {
     width: 100%;
     max-width: 500px;
     background-color: white; }
-    .mapaContainer.display .sideMap .content {
+    .mapaContainer.display .sideMap .content, .mapaContainer.buscador .sideMap .content {
       padding: 10px; }
-      .mapaContainer.display .sideMap .content .lugar {
+      .mapaContainer.display .sideMap .content .lugar, .mapaContainer.buscador .sideMap .content .lugar {
         color: #89b7be;
         font-size: 2em; }
-      .mapaContainer.display .sideMap .content .texto {
+      .mapaContainer.display .sideMap .content .texto, .mapaContainer.buscador .sideMap .content .texto {
         color: #999;
         margin-left: 10px; }
+  .mapaContainer.display.buscador, .mapaContainer.buscador.buscador {
+    justify-content: center; }
+    .mapaContainer.display.buscador .mapaCC, .mapaContainer.buscador.buscador .mapaCC {
+      max-width: 500px; }
 
 /** Import theme styles */
 /* stylelint-disable */

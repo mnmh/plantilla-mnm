@@ -410,8 +410,27 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'linea del tiempo'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Mapa buscador',
+			'title'				=> __('Un bloque para mostrar el mapa del cc'),
+			'description'		=> __('Un bloque para mostrar el mapa del cc'),
+			'render_callback'	=> 'bloque_callback_mapa_cc',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'cc', 'mapa'),
+		));
 	}
 }
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_mapa_cc( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
+	}
+}
+
 
 // Carga la plantilla del bloque carrousel con cuadros verticales
 function bloque_callback_linea_tiempo_caminando( $block ) {
