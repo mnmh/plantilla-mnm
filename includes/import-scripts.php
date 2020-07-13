@@ -14,6 +14,9 @@ function header_scripts()
         wp_register_script('gsap', get_template_directory_uri() . '/js/lib/gsap.js', array('jquery'), '1.0.0');
         wp_enqueue_script('gsap');
 
+        wp_register_script('d3', get_template_directory_uri() . '/js/lib/d3.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('d3');
+
         wp_register_script('scroll', get_template_directory_uri() . '/js/lib/scroll.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scroll');
 

@@ -1,0 +1,25 @@
+.mapaContainer.display {
+    display: flex;
+
+    .mapaCC {
+        max-width: 1000px;
+        width: 100%;
+
+        #Layer_2{
+            path {
+                fill: transparent !important;
+                transition: all 0.25s ease;
+                cursor: pointer;
+
+                &:hover {
+                    fill: rgba($color: #000000, $alpha: 0.2) !important
+                }
+            }
+        }
+    }
+
+    .sideMap {
+        width: 100%;
+        background-color: #89b7be;
+    }
+}

@@ -63,12 +63,12 @@ $resp = $_GET['updated'];
 		  <?php endforeach; ?>
 		</div>
 		
-		<div class="mapaContainer btm">
+		<div class="mapaContainer display btm">
 		<!-- <div id="mapaid" class="main" style="height: calc(100vh - 100px - 1.5em); z-index: 1;"></div> -->
 		<div class="mapaCC">
-			<?php get_template_part('/assets/template-parts/mapaCC') ?>
+			<?php get_template_part('/assets/template-parts/mapa-cc') ?>
 		</div>
-		<div class="sideContent">
+		<div class="sideMap">
 			<div class="content">
 				<div class="info">
 				<div class="lugar"></div>
@@ -83,7 +83,7 @@ $resp = $_GET['updated'];
 
 <a href="http://museodememoria.gov.co/caminando-la-memoria/?updated=true" class="main_btn">Ver los otros lugares de memoria</a>
 
-<div class="mapaContainer btm">
+<div class="mapaContainer form btm">
 	<?php
 		acf_form(array(
 			'post_id'   => 'new_post',
