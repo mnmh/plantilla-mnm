@@ -99,6 +99,104 @@
             }
         }
 
+        var min_lon = -79.4437498789999950
+        var max_lon = -66.2529165459999945
+        var min_lat = -4.7020829940000013
+        var max_lat = 13.6087503390000002
+
+        var forceStrength = 0.15;
+
+        if($('#lugares_memoria_hidden').length > 0) {
+            
+            var arrayObj = []
+            $('#lugares_memoria_hidden .item').each((i,item) => {
+                var resp = {}
+                var coor = $(item).attr('data-coor').split(',')
+                resp['lat'] = coor[0]
+                resp['lon'] = coor[1]
+                resp['id'] = $(item).attr('id')
+                resp['color'] = $(item).attr('data-color')
+                resp['nombre'] = $(item).attr('data-nombre')
+                resp['lugar'] = $(item).attr('data-lugar')
+                resp['texto'] = $(item).attr('data-texto')
+
+                if(coor[0]!='' && coor[1]) arrayObj.push(resp)
+            })
+
+            if(arrayObj.length > 0){
+                var svg = d3.select('#mapaCC');
+				var node = svg.selectAll("circle")
+				.data(arrayObj)
+				.enter()
+				.append("circle")
+				.attr("id",function(d,i) {
+					return d['id'];
+                })
+                .attr("fill",function(d,i) {
+					return '#' + d['color'];
+                })
+                .attr("data-nombre",function(d,i) {
+					return d['nombre'];
+                })
+                .attr("data-lugar",function(d,i) {
+					return d['lugar'];
+                })
+                .attr("data-texto",function(d,i) {
+					return d['texto'];
+				})
+				.attr('r', 15)
+                .attr('class', 'mapa_bola')
+                
+                function charge(d) {
+					// return -Math.pow(total.map(0,1069,1,1), 2.0) * forceStrength;
+					return -Math.pow(15, 2.0) * forceStrength;
+				}
+	
+				function ticked(d) {
+					node.attr("cx",function(d) {
+						return d.x;
+					})
+					.attr("cy",function(d) {
+						return d.y;
+					});
+				}
+	
+				var force_mapa_X = d3.forceX(function(d){
+                    var str = d['lon'];
+                    str = parseFloat(str)
+                    str = scaleLinear(str, min_lon, max_lon, 0, 1356) - 1356
+					return str;
+				});
+				var force_mapa_Y = d3.forceY(function(d){
+                    var str = d['lat'];
+                    str = parseFloat(str)
+                    str = scaleLinear(str, min_lat, max_lat, 1882, 0) + 1882
+					return str;
+                });
+                
+                var simulation = d3.forceSimulation(arrayObj)
+				.force("charge", d3.forceManyBody().strength(charge))
+				.force("x", force_mapa_X)
+				.force("y", force_mapa_Y)
+				.on("tick", ticked)
+				.alphaTarget(1)
+                .restart();
+                
+
+                $('.mapa_bola').on('click', function(){
+                    $('.mapa_bola.active').removeClass('active')
+                    $(this).addClass('active')
+                    $('.mapaContainer .sideMap .info .lugar').html($(this).attr('data-lugar'))
+                    $('.mapaContainer .sideMap .texto').html($(this).attr('data-texto'))
+                  })
+            }
+        }
+
+        function scaleLinear(i,r1,r2,m1,m2) {
+            var resp = (i-r1) / (r2-r1) * (m2-m1) + m2
+            return resp
+        }
+
     });
 
 })(jQuery, this);

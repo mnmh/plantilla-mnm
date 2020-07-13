@@ -1,5 +1,6 @@
 .mapaContainer.display {
     display: flex;
+    align-items: center;
 
     .mapaCC {
         max-width: 1000px;
@@ -12,14 +13,38 @@
                 cursor: pointer;
 
                 &:hover {
-                    fill: rgba($color: #000000, $alpha: 0.2) !important
+                    fill: rgba($color: #ffffff, $alpha: 0.7) !important
                 }
+            }
+        }
+
+        .mapa_bola {
+            cursor: pointer;
+            stroke: #333;
+
+            &:hover, &.active {
+                fill: white;
             }
         }
     }
 
     .sideMap {
         width: 100%;
-        background-color: #89b7be;
+        max-width: 500px;
+        background-color: white;
+
+        .content {
+            padding: 10px;
+
+            .lugar {
+                color: #89b7be;
+                font-size: 2em;
+            }
+
+            .texto {
+                color: #999;
+                margin-left: 10px;
+            }
+        }
     }
 }

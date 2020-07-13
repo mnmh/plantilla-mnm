@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url("https://rsms.me/inter/inter.css");
 .mapaContainer.display {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   .mapaContainer.display .mapaCC {
     max-width: 1000px;
     width: 100%; }
@@ -10,10 +11,24 @@
       transition: all 0.25s ease;
       cursor: pointer; }
       .mapaContainer.display .mapaCC #Layer_2 path:hover {
-        fill: rgba(0, 0, 0, 0.2) !important; }
+        fill: rgba(255, 255, 255, 0.7) !important; }
+    .mapaContainer.display .mapaCC .mapa_bola {
+      cursor: pointer;
+      stroke: #333; }
+      .mapaContainer.display .mapaCC .mapa_bola:hover, .mapaContainer.display .mapaCC .mapa_bola.active {
+        fill: white; }
   .mapaContainer.display .sideMap {
     width: 100%;
-    background-color: #89b7be; }
+    max-width: 500px;
+    background-color: white; }
+    .mapaContainer.display .sideMap .content {
+      padding: 10px; }
+      .mapaContainer.display .sideMap .content .lugar {
+        color: #89b7be;
+        font-size: 2em; }
+      .mapaContainer.display .sideMap .content .texto {
+        color: #999;
+        margin-left: 10px; }
 
 /** Import theme styles */
 /* stylelint-disable */

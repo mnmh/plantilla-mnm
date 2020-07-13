@@ -1,4 +1,4 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg id="mapaCC" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1356 1882" enable-background="new 0 0 1356 1882" xml:space="preserve">
 <g id="Layer_1">
 	<image overflow="visible" width="1356" height="1881" xlink:href="<?php echo get_template_directory_uri() ?>/img/mapacc_final.jpg" >
