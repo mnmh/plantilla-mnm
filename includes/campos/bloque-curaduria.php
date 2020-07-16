@@ -22,7 +22,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'acfe_repeater_stylised_button' => 0,
                 'collapsed' => '',
                 'min' => 2,
-                'max' => 2,
+                'max' => 4,
                 'layout' => 'table',
                 'button_label' => '',
                 'sub_fields' => array(
