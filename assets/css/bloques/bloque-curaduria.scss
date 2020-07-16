@@ -4,9 +4,17 @@
     max-width: 1600px;
     margin: 0 auto;
 
+    @media all and (max-width: 980px){
+        flex-wrap: wrap;
+    }
+
     .left,
     .right {
         width: 50%;
+
+        @media all and (max-width: 980px){
+            width: 100%;
+        }
     }
 
     .left {

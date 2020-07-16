@@ -8342,9 +8342,16 @@ body.page-template-template-caminando .mapaContainer {
   align-items: center;
   max-width: 1600px;
   margin: 0 auto; }
+  @media all and (max-width: 980px) {
+    .curaduria-ac {
+      flex-wrap: wrap; } }
   .curaduria-ac .left,
   .curaduria-ac .right {
     width: 50%; }
+    @media all and (max-width: 980px) {
+      .curaduria-ac .left,
+      .curaduria-ac .right {
+        width: 100%; } }
   .curaduria-ac .left {
     padding: 10px; }
     .curaduria-ac .left .img {
