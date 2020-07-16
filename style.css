@@ -8350,6 +8350,7 @@ body.page-template-template-caminando .mapaContainer {
     .curaduria-ac .left .img {
       height: 300px;
       background-size: cover;
+      background-position: center;
       border-radius: 5px; }
     .curaduria-ac .left .titulo {
       font-weight: 700;
