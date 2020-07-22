@@ -162,7 +162,7 @@
         <?php endif; ?>
 
     </div>
-    <?php else: ?>
+    <?php elseif(is_admin()): ?>
         <?php the_content() ?>
     <?php endif;?>
 

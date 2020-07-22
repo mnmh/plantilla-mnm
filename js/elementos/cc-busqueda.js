@@ -71,8 +71,8 @@
         }
 
         $('#busqueda-cc').submit(function(){
-            var string = urlCC + '/wp-json/wp/v2/posts?per_page=20';
-            var string_searchVal = urlCC + '/wp-json/wp/v2/search?per_page=20&search=';
+            var string = urlCC + '/wp-json/cc/v1/busqueda?p=20';
+            var string_searchVal = urlCC + '/wp-json/cc/v1/busqueda?p=20';
 
             var total_tipo = $('.filtro-cc .active').length
 
@@ -105,41 +105,41 @@
             $inside.find('.item:not(.hide),.msj').remove()
             $inside.append('<div class="msj"></div>').find('.msj').html('cargando...')
 
-            if($('#buscar').val() != ''){
+            // if($('#buscar').val() != ''){
                 var myStr = $('#buscar').val()
                 myStr=myStr.toLowerCase();
                 myStr=myStr.replace(/(^\s+|[^a-zA-Z0-9 ]+|\s+$)/g,"");   //this one
                 myStr=myStr.replace(/\s+/g, "+");
 
-                string_searchVal = string_searchVal + encodeURI(myStr)
+                string = string + '&q=' + encodeURI(myStr)
 
-                $.getJSON(string_searchVal, function (data) {
-                    console.log(data)
-                    $inside.find('.msj').remove()
-                    for(var i = 0; i < data.length; i++){
-                        var titulo = data[i]['title'];
-                        $item = $inside.find('.hide.limpio').clone();
-                        $item.find('.name').html(titulo);
-                        $item.attr('href', '/centro-de-contenido/?contenido=' + data[i]['id']);
-                        $item.attr('target', '_blank');
-                        $item.removeClass('hide').addClass('fresh');
-                        $inside.append($item);
-                    }
+                // $.getJSON(string_searchVal, function (data) {
+                //     console.log(data)
+                //     $inside.find('.msj').remove()
+                //     for(var i = 0; i < data.length; i++){
+                //         var titulo = data[i]['title'];
+                //         $item = $inside.find('.hide.limpio').clone();
+                //         $item.find('.name').html(titulo);
+                //         $item.attr('href', '/centro-de-contenido/?contenido=' + data[i]['id']);
+                //         $item.attr('target', '_blank');
+                //         $item.removeClass('hide').addClass('fresh');
+                //         $inside.append($item);
+                //     }
     
-                    var tl_temp = new TimelineMax();
-                    tl_temp.add('start')
-                        .staggerFromTo($inside.find('.fresh'), 0.2, {
-                            autoAlpha: 0,
-                            y: 20
-                        }, {
-                            autoAlpha: 1,
-                            y: 0
-                        }, 0.05)
-                        .add(function () {
-                            $($inside.find('.fresh')).removeClass('fresh');
-                        });
-                })
-            } else {
+                //     var tl_temp = new TimelineMax();
+                //     tl_temp.add('start')
+                //         .staggerFromTo($inside.find('.fresh'), 0.2, {
+                //             autoAlpha: 0,
+                //             y: 20
+                //         }, {
+                //             autoAlpha: 1,
+                //             y: 0
+                //         }, 0.05)
+                //         .add(function () {
+                //             $($inside.find('.fresh')).removeClass('fresh');
+                //         });
+                // })
+            // } else {
                 $.getJSON(string, function (data) {
                     $inside.find('.msj').remove()
                     for(var i = 0; i < data.length; i++){
@@ -168,10 +168,7 @@
                     // $this.attr('data-page', page + 1);
                     // if(data.length < 20) $this.remove();
                 })
-
-
-                console.log($inside)
-            }
+            // }
 
             return false
         })
