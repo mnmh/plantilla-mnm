@@ -152,10 +152,10 @@
                         // $item.removeClass('hide').addClass('fresh');
                         // $inside.append($item);
 
-                        var titulo = data[i]['title'];
+                        var titulo = data[i]['post_title'];
                         $item = $inside.find('.hide.limpio').clone();
                         $item.find('.name').html(titulo);
-                        $item.attr('href', '/centro-de-contenido/?contenido=' + data[i]['id']);
+                        $item.attr('href', '/centro-de-contenido/?contenido=' + data[i]['ID']);
                         $item.attr('target', '_blank');
                         $item.removeClass('hide').addClass('fresh');
                         $inside.append($item);
