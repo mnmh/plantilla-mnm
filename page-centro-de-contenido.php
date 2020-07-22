@@ -162,7 +162,7 @@
         <?php endif; ?>
 
     </div>
-    <?php elseif(is_admin()): ?>
+    <?php elseif(current_user_can('edit_posts')): ?>
         <?php the_content() ?>
     <?php endif;?>
 
