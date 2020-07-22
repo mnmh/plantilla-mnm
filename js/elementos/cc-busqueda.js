@@ -143,9 +143,17 @@
                 $.getJSON(string, function (data) {
                     $inside.find('.msj').remove()
                     for(var i = 0; i < data.length; i++){
-                        var tipo = data[i]['tipo-de-contenido'][0]['slug'];
-                        var titulo = data[i]['titulo'];
-                        $item = $inside.find('.hide.' + tipo).clone();
+                        // var tipo = data[i]['tipo-de-contenido'][0]['slug'];
+                        // var titulo = data[i]['titulo'];
+                        // $item = $inside.find('.hide.' + tipo).clone();
+                        // $item.find('.name').html(titulo);
+                        // $item.attr('href', '/centro-de-contenido/?contenido=' + data[i]['id']);
+                        // $item.attr('target', '_blank');
+                        // $item.removeClass('hide').addClass('fresh');
+                        // $inside.append($item);
+
+                        var titulo = data[i]['title'];
+                        $item = $inside.find('.hide.limpio').clone();
                         $item.find('.name').html(titulo);
                         $item.attr('href', '/centro-de-contenido/?contenido=' + data[i]['id']);
                         $item.attr('target', '_blank');
