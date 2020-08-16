@@ -15,16 +15,16 @@
         width: 100%;
         z-index: 100;
 
-        .item {
-            text-indent: -99999px;
-            white-space: nowrap;
-            width: 50px;
+        // .item {
+        //     text-indent: -99999px;
+        //     white-space: nowrap;
+        //     width: 50px;
 
-            &::after {
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
+        //     &::after {
+        //         left: 50%;
+        //         transform: translate(-50%, -50%);
+        //     }
+        // }
     }
 
     .item {

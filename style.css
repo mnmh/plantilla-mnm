@@ -8383,13 +8383,6 @@ body.page-template-template-caminando .mapaContainer {
     position: absolute;
     width: 100%;
     z-index: 100; }
-    .navegacion_scroll.scroll .item {
-      text-indent: -99999px;
-      white-space: nowrap;
-      width: 50px; }
-      .navegacion_scroll.scroll .item::after {
-        left: 50%;
-        transform: translate(-50%, -50%); }
   .navegacion_scroll .item {
     width: 100%;
     padding: 10px;
