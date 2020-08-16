@@ -4475,6 +4475,8 @@ body#tinymce {
     margin-top: 7vh !important; }
   #contenidoGeneral .btmdoble {
     margin-bottom: 20vh !important; }
+  #contenidoGeneral .nomargin {
+    margin: 0 !important; }
   #contenidoGeneral .wp-block-image {
     max-width: 800px;
     margin-left: auto;
@@ -8427,6 +8429,54 @@ body.page-template-template-caminando .mapaContainer {
 
 .spacer_nav_scroll {
   margin-bottom: 10vh; }
+
+.navegacion_especiales {
+  display: flex;
+  margin: 0 auto;
+  padding-left: 20px;
+  background-color: #C24D3F;
+  padding-right: 20px;
+  margin-bottom: 10vh;
+  margin-top: 1px; }
+  @media all and (max-width: 900px) {
+    .navegacion_especiales {
+      white-space: nowrap; } }
+  .navegacion_especiales .item {
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    background-color: #C24D3F;
+    font-weight: bold;
+    color: #fff;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all 0.2s ease; }
+    .navegacion_especiales .item::after {
+      text-indent: 0;
+      content: '';
+      position: absolute;
+      left: 20px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      background-color: rgba(255, 255, 255, 0.25);
+      top: 50%;
+      transform: translate(0, -50%);
+      border-radius: 50px;
+      font-size: 1.5em;
+      color: white;
+      text-align: center;
+      transition: all 0.2s ease; }
+    .navegacion_especiales .item.active::after {
+      background-color: #ffc800; }
+    .navegacion_especiales .item:hover::before {
+      background-color: white;
+      color: #C24D3F; }
 
 .titulo-modulo .sec {
   max-width: 1600px !important;

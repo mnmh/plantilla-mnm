@@ -430,6 +430,24 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'scroll', 'nav'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Navegacion general',
+			'title'				=> __('Un bloque para navegar a otras páginas de una mismo especial'),
+			'description'		=> __('Un bloque para navegar a otras páginas de una mismo especial'),
+			'render_callback'	=> 'bloque_callback_nav_especiales',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'general', 'especiales', 'nav'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_nav_especiales( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 

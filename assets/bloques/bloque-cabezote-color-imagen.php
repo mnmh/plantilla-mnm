@@ -8,7 +8,7 @@
 $color = get_field('color');
 $id = 'bloque-' . $block['id'];
 ?>
-<div class="slider-columna full btm <?php echo $color ?>">
+<div class="slider-columna full btm <?php echo $color ?> <?php echo $block['className'] ?>">
     <div class="left">
         <div class="subtitulo">
             <?php echo get_field('subtitulo'); ?>
