@@ -8,28 +8,36 @@ blockquote {
     font-weight: 600;
     color: black;
     font-size: 1em;
-    margin: 0 0 0 auto;
+    margin: 0 auto;
     display: block;
     width: 100%; // padding-top: 2em;
+    border-left: 5px solid $amarillo;
+    max-width: 1000px !important;
+    padding-left: 20px;
 
     // font-style: italic;
-    &::after {
-        content: "";
+    p{
+        max-width: 1000px !important;
+    }
+
+    cite {
+        margin-top: 50px;
         display: block;
-        width: em(75, 16);
-        height: em(4, 16);
-        background: $amarillo;
-        margin: 0;
-        position: relative;
-        top: em(-30, 16);
+        text-align: right;
+
+        em {
+            font-size: 1em;
+            border-bottom: 2px solid $amarillo;
+            color: #999;
+            display: inline-block;
+            padding: 5px;
+        }
     }
 
     em {
         font-weight: 400;
-        font-size: 0.75em;
+        font-size: 1.5em;
         display: block;
-        width: 75%; // font-style: normal;
-        margin: 2.125em 0 0;
 
         strong {
             font-weight: 400;
@@ -38,11 +46,6 @@ blockquote {
 
     @media screen and (min-width:850px) {
         font-size: 1.05em;
-    }
-
-    @media screen and (min-width:1300px) {
-        // margin-right: em(-70);
-        margin-left: 10%;
     }
 }
 
