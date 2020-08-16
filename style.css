@@ -8367,6 +8367,67 @@ body.page-template-template-caminando .mapaContainer {
   .curaduria-ac .right {
     padding-left: 20px; }
 
+.navegacion_scroll {
+  display: flex;
+  margin: 0 auto;
+  counter-reset: contador;
+  padding-left: 20px;
+  background-color: #C24D3F;
+  padding-right: 20px; }
+  @media all and (max-width: 900px) {
+    .navegacion_scroll {
+      white-space: nowrap; } }
+  .navegacion_scroll.scroll {
+    position: absolute;
+    width: 100%;
+    z-index: 100; }
+    .navegacion_scroll.scroll .item {
+      text-indent: -99999px;
+      white-space: nowrap;
+      width: 50px; }
+      .navegacion_scroll.scroll .item::after {
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  .navegacion_scroll .item {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    counter-increment: contador;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    background-color: #C24D3F;
+    font-weight: bold;
+    color: #fff;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all 0.2s ease; }
+    .navegacion_scroll .item::after {
+      content: counter(contador);
+      text-indent: 0;
+      position: absolute;
+      left: 5px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background-color: rgba(255, 255, 255, 0.25);
+      top: 50%;
+      transform: translate(0, -50%);
+      border-radius: 50px;
+      font-size: 1.5em;
+      color: white;
+      text-align: center;
+      transition: all 0.2s ease; }
+    .navegacion_scroll .item:hover::before {
+      background-color: white;
+      color: #C24D3F; }
+
+.spacer_nav_scroll {
+  margin-bottom: 10vh; }
+
 .titulo-modulo .sec {
   max-width: 1600px !important;
   margin: 0 auto;

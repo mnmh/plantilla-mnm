@@ -420,6 +420,24 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'cc', 'mapa'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Navegacion scroll',
+			'title'				=> __('Un bloque para navegar por scroll a distintos bloques de una misma página'),
+			'description'		=> __('Un bloque para navegar por scroll a distintos bloques de una misma página'),
+			'render_callback'	=> 'bloque_callback_nav_scroll',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'scroll', 'nav'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_nav_scroll( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 

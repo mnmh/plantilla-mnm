@@ -17,6 +17,9 @@ function header_scripts()
         wp_register_script('d3', get_template_directory_uri() . '/js/lib/d3.js', array('jquery'), '1.0.0');
         wp_enqueue_script('d3');
 
+        wp_register_script('scrollto', get_template_directory_uri() . '/js/lib/scrollto.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('scrollto');
+
         wp_register_script('scroll', get_template_directory_uri() . '/js/lib/scroll.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scroll');
 
@@ -91,6 +94,9 @@ function header_scripts()
 
         wp_register_script('cc-generales', get_template_directory_uri() . '/js/elementos/cc-generales.js', array('jquery'), '1.0.0');
         wp_enqueue_script('cc-generales');
+
+        wp_register_script('bloque-navscroll', get_template_directory_uri() . '/js/bloques/bloque-navscroll.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('bloque-navscroll');
 
         // wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
         // wp_enqueue_script('scripts');
