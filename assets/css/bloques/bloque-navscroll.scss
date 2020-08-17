@@ -1,21 +1,4 @@
 .parent-nav {
-    @media all and (max-width: 900px){
-        overflow-x: scroll;
-    }
-}
-
-.navegacion_scroll {
-    display: flex;
-    margin: 0 auto;
-    counter-reset: contador;
-    padding-left: 20px;
-    background-color: $rojo;
-    padding-right: 20px;
-
-    @media all and (max-width: 900px){
-        white-space: nowrap;
-    }
-
     &.scroll {
         position: absolute;
         width: 100%;
@@ -31,6 +14,23 @@
         //         transform: translate(-50%, -50%);
         //     }
         // }
+    }
+
+    @media all and (max-width: 900px){
+        overflow-x: scroll;
+    }
+}
+
+.navegacion_scroll {
+    display: flex;
+    margin: 0 auto;
+    counter-reset: contador;
+    padding-left: 20px;
+    background-color: $rojo;
+    padding-right: 20px;
+
+    @media all and (max-width: 900px){
+        white-space: nowrap;
     }
 
     .item {

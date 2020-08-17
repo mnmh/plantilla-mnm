@@ -8369,6 +8369,11 @@ body.page-template-template-caminando .mapaContainer {
   .curaduria-ac .right {
     padding-left: 20px; }
 
+.parent-nav.scroll {
+  position: absolute;
+  width: 100%;
+  z-index: 100; }
+
 @media all and (max-width: 900px) {
   .parent-nav {
     overflow-x: scroll; } }
@@ -8383,10 +8388,6 @@ body.page-template-template-caminando .mapaContainer {
   @media all and (max-width: 900px) {
     .navegacion_scroll {
       white-space: nowrap; } }
-  .navegacion_scroll.scroll {
-    position: absolute;
-    width: 100%;
-    z-index: 100; }
   .navegacion_scroll .item {
     width: 100%;
     padding: 10px;

@@ -8,7 +8,7 @@
 $id = 'bloque-' . $block['id'];
 ?>
 
-<div class="parent-nav">
+<div class="parent-nav nav_scroll">
 <div class="navegacion_scroll" id="<?php echo $id ?>">
 <?php
     if(have_rows('elementos')): while(have_rows('elementos')): the_row()
