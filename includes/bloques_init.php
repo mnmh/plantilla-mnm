@@ -440,6 +440,24 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'general', 'especiales', 'nav'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Imagen zoom',
+			'title'				=> __('Un bloque cargar una imagen en alta resolución'),
+			'description'		=> __('Un bloque cargar una imagen en alta resolución'),
+			'render_callback'	=> 'bloque_callback_zoomify',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'zoom', 'imagen'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_zoomify( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 

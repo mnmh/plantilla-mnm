@@ -1,4 +1,4 @@
-<?php acf_form_head(); ?>
+<?php //acf_form_head(); ?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>

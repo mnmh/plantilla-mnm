@@ -20,7 +20,7 @@ function header_scripts()
         wp_register_script('scrollto', get_template_directory_uri() . '/js/lib/scrollto.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scrollto');
 
-        wp_register_script('leaflet', get_template_directory_uri() . '/js/lib/leaflet.js', array('jquery'), '1.0.0');
+        wp_register_script('leaflet', 'http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js', array('jquery'), '1.0.0');
         wp_enqueue_script('leaflet');
 
         wp_register_script('zoomify', get_template_directory_uri() . '/js/lib/zoomify.js', array('jquery'), '1.0.0');
@@ -103,6 +103,9 @@ function header_scripts()
 
         wp_register_script('bloque-navscroll', get_template_directory_uri() . '/js/bloques/bloque-navscroll.js', array('jquery'), '1.0.0');
         wp_enqueue_script('bloque-navscroll');
+
+        wp_register_script('imagen-zoom', get_template_directory_uri() . '/js/bloques/imagen-zoom.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('imagen-zoom');
 
         // wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
         // wp_enqueue_script('scripts');

@@ -8534,6 +8534,17 @@ body.page-template-template-caminando .mapaContainer {
           .destacados-cc ul li .name h4 {
             margin-left: 0 !important; } }
 
+.bloque_zoomify {
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #333;
+  margin-bottom: 10vh; }
+  .bloque_zoomify iframe {
+    width: 100%;
+    height: 60vh; }
+
 .columnas {
   display: flex; }
   .columnas .left {
