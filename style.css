@@ -8369,6 +8369,10 @@ body.page-template-template-caminando .mapaContainer {
   .curaduria-ac .right {
     padding-left: 20px; }
 
+@media all and (max-width: 900px) {
+  .parent-nav {
+    overflow-x: scroll; } }
+
 .navegacion_scroll {
   display: flex;
   margin: 0 auto;
