@@ -10,13 +10,13 @@
                 
                 if(scrollDistance >= distancia){
                     $('.spacer_nav_scroll').css({'height': $('.navegacion_scroll').outerHeight()})
-                    $('.navegacion_scroll').css({'margin-top': margin});
-                    $('.navegacion_scroll').addClass('scroll');
+                    $('.parent-nav.nav_scroll').css({'margin-top': margin});
+                    $('.parent-nav.nav_scroll').addClass('scroll');
                 }
                 else {
                     $('.spacer_nav_scroll').css({'height': 0})
-                    $('.navegacion_scroll').css({'margin-top': 0});
-                    $('.navegacion_scroll').removeClass('scroll');
+                    $('.parent-nav.nav_scroll').css({'margin-top': 0});
+                    $('.parent-nav.nav_scroll').removeClass('scroll');
                 }
             });
 
