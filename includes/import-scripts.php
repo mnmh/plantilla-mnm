@@ -20,12 +20,6 @@ function header_scripts()
         wp_register_script('scrollto', get_template_directory_uri() . '/js/lib/scrollto.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scrollto');
 
-        wp_register_script('leaflet', 'http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js', array('jquery'), '1.0.0');
-        wp_enqueue_script('leaflet');
-
-        wp_register_script('zoomify', get_template_directory_uri() . '/js/lib/zoomify.js', array('jquery'), '1.0.0');
-        wp_enqueue_script('zoomify');
-
         wp_register_script('scroll', get_template_directory_uri() . '/js/lib/scroll.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scroll');
 

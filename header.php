@@ -1,4 +1,4 @@
-<?php //acf_form_head(); ?>
+<?php acf_form_head(); ?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
@@ -11,8 +11,6 @@
 		<script type="text/javascript">
 		document.getElementsByTagName('body')[0].classList.add(jsonOb.theme)
 		document.getElementsByTagName('body')[0].classList.add('font_' + jsonOb.fontsize)
-
-		console.log(jsonOb , 'hola')
 		</script>
 		<div class="wrap" role="document">
 			<!-- Carga la barra de arriba para la navegación -->

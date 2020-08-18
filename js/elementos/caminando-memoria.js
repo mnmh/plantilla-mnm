@@ -24,6 +24,9 @@
 
 
             if($('#mapaid').hasClass('main')){
+
+                console.log('hola')
+
                 var mymap = L.map('mapaid', {
                     minZoom: 6
                 }).setView([4.55598, -74.04785], 6);
@@ -55,6 +58,7 @@
                     }
                   })
             } else {
+                
                 $paleta = $('#listado_paleta').clone()
                 $subida_btn = $('.acf-image-uploader .acf-basic-uploader')
                 $enviar = $('<div id="enviar_btn">Agregar</div>')

@@ -21,8 +21,6 @@
 ?>
 <meta property="og:image" content="<?php echo $img ?>" />
 
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
-
 <script type="text/javascript">
     var webURL = '<?php echo get_bloginfo('url'); ?>';
 

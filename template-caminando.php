@@ -47,7 +47,7 @@ $resp = $_GET['updated'];
 			'field_groups' => array(4087),
 			'new_post'    => array(
 				'post_type'   => 'lugares',
-				'post_status' => 'draft'
+				'post_status' => 'draft' 
 			),
 			'return' => 'http://museodememoria.gov.co/caminando-la-memoria/',
 			'submit_value' => 'Sube tu espacio'
