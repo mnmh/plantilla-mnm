@@ -450,6 +450,24 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'zoom', 'imagen'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Pronto bloques',
+			'title'				=> __('Un bloque cargar cuadros para contenido por venir'),
+			'description'		=> __('Un bloque cargar cuadros para contenido por venir'),
+			'render_callback'	=> 'bloque_callback_pronto_bloques',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'pronto', 'imagen'),
+		));
+	}
+}
+
+// Carga la plantilla del bloque carrousel con cuadros verticales
+function bloque_callback_pronto_bloques( $block ) {
+	$slug = str_replace('acf/', '', $block['name']);
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-{$slug}.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-{$slug}.php") );
 	}
 }
 

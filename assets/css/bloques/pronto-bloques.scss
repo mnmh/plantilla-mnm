@@ -1,0 +1,44 @@
+.fila-botones {
+    display: flex;
+    justify-content: center;
+
+    .item {
+        width: 20vw;
+        height: 25vw;
+        display: flex;
+        padding: 5px;
+
+        .inside {
+            background-color: #333;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+            align-items: flex-start;
+            background-position: center;
+            background-size: cover;
+
+            .name {
+                background-color: $rojo;
+                text-align: center;
+                color: white;
+                border-radius: 50px;
+                padding: 10px;
+                padding-right: 25px;
+                padding-left: 25px;
+                max-width: 90%;
+                font-weight: bold;
+                margin-top: 10%;
+            }
+        }
+
+        &:hover {
+            .inside {
+                .name {
+                    background-color: white;
+                    color: #333;
+                }
+            }
+        }
+    }
+}
