@@ -26,7 +26,7 @@ if($invertido == 1) $class = 'invertido';
             </div>
             <div class="right">
                 <?php if($codigo_svg == ''): ?>
-                    <img src="<?php echo $img['url'] ?>" alt="">
+                    <img width="<?php echo $img['width']?>" height="<?php echo $img['height']?>" src="<?php echo $img['url'] ?>" alt="">
                 <?php else: ?>
                     <div class="img"><?php echo $codigo_svg ?></div>
                 <?php endif; ?>

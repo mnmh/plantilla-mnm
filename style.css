@@ -7663,7 +7663,7 @@ body.page-template-template-caminando .mapaContainer {
         background-position: center center; }
       .header-columna .contenedor .right img {
         width: 100%;
-        height: auto; }
+        height: 100%; }
     @media only screen and (max-width: 980px) {
       .header-columna .contenedor {
         flex-wrap: wrap; }
