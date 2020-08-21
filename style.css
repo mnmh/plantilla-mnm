@@ -7610,7 +7610,9 @@ body.page-template-template-caminando .mapaContainer {
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    align-content: flex-start;
+    align-items: flex-start; }
     .header-columna .contenedor.invertido {
       flex-flow: row-reverse; }
       .header-columna .contenedor.invertido .right {
