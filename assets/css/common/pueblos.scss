@@ -1,0 +1,25 @@
+.parent-pageid-11339, .page-id-11339 {
+    .navegacion_especiales {
+        background: #F6c04b;
+    }
+    
+    .navegacion_especiales .item {
+        background: #F6c04b;
+    }
+    
+    .navegacion_especiales .item.active::after {
+        background-color: #6cb0b9;
+    }
+    
+    .navegacion_scroll .item, .navegacion_scroll {
+        background: #F6c04b;
+    }
+    
+    .navegacion_scroll{
+        border-bottom: 1px solid #e2ac35;
+    }
+    
+    .fila-botones .item .inside .name{
+        background: #F6c04b;
+    }
+}

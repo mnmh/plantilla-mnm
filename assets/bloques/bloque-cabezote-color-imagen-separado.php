@@ -11,7 +11,7 @@ $id = 'bloque-' . $block['id'];
 // print_r($block);
 // echo get_permalink();
 ?>
-<div class="slider-columna half full btm <?php echo $color ?>">
+<div class="slider-columna half full btm <?php echo $color ?> <?php echo $block['className'] ?>">
     <div class="left">
         <div class="subtitulo">
             <?php echo get_field('subtitulo'); ?>

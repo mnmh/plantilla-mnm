@@ -8082,7 +8082,8 @@ body.page-template-template-caminando .mapaContainer {
           padding: 8px;
           font-size: 16px; } }
     .slider-columna:not(.half) .left .titulo {
-      font-size: 3em;
+      font-size: 2em;
+      line-height: 1em;
       font-weight: 600;
       padding: 16px;
       font-family: CircularStd; }
@@ -8448,7 +8449,7 @@ body.page-template-template-caminando .mapaContainer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 50px;
+    padding-left: 60px;
     background-color: #C24D3F;
     font-weight: bold;
     color: #fff;
@@ -9052,3 +9053,21 @@ body.ninos-y-ninas {
 
 body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-modulo .subtitulo-sec {
   text-align: center; }
+
+.parent-pageid-11339 .navegacion_especiales, .page-id-11339 .navegacion_especiales {
+  background: #F6c04b; }
+
+.parent-pageid-11339 .navegacion_especiales .item, .page-id-11339 .navegacion_especiales .item {
+  background: #F6c04b; }
+
+.parent-pageid-11339 .navegacion_especiales .item.active::after, .page-id-11339 .navegacion_especiales .item.active::after {
+  background-color: #6cb0b9; }
+
+.parent-pageid-11339 .navegacion_scroll .item, .parent-pageid-11339 .navegacion_scroll, .page-id-11339 .navegacion_scroll .item, .page-id-11339 .navegacion_scroll {
+  background: #F6c04b; }
+
+.parent-pageid-11339 .navegacion_scroll, .page-id-11339 .navegacion_scroll {
+  border-bottom: 1px solid #e2ac35; }
+
+.parent-pageid-11339 .fila-botones .item .inside .name, .page-id-11339 .fila-botones .item .inside .name {
+  background: #F6c04b; }
