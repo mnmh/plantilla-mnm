@@ -5729,7 +5729,8 @@ blockquote {
   font-size: 1.5em;
   display: block; }
   blockquote p {
-    max-width: 1000px !important; }
+    max-width: 1000px !important;
+    font-size: 1.2em !important; }
   blockquote cite {
     margin-top: 50px;
     display: block;
@@ -9099,3 +9100,11 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
 .parent-pageid-11339 .titulo-modulo h2, .page-id-11339 .titulo-modulo h2 {
   color: #6cb0b9;
   font-weight: normal; }
+
+.parent-pageid-11339 #contenidoGeneral svg, .page-id-11339 #contenidoGeneral svg {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block; }
+
+.parent-pageid-11339 #contenidoGeneral strong, .page-id-11339 #contenidoGeneral strong {
+  color: #f68b4b; }

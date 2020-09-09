@@ -41,4 +41,14 @@
         color: #6cb0b9;
         font-weight: normal;
     }
+
+    #contenidoGeneral svg {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #contenidoGeneral strong {
+        color: #f68b4b;
+    }
 }
