@@ -8611,8 +8611,6 @@ a.leaflet-control-zoom-out {
       width: 100%;
       display: flex;
       justify-content: center;
-      align-content: flex-start;
-      align-items: flex-start;
       background-position: center;
       background-size: cover; }
       .fila-botones .item .inside .name {
@@ -9093,7 +9091,7 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
 
 .parent-pageid-11339 .titulo-modulo, .page-id-11339 .titulo-modulo {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #6cb0b9; }
 
 .parent-pageid-11339 .titulo-modulo h2, .page-id-11339 .titulo-modulo h2 {
