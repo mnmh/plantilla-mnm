@@ -422,16 +422,16 @@ body {
   #contenidoGeneral .columnas h2, #contenidoGeneral .columnas h3, #contenidoGeneral .columnas h4, #contenidoGeneral .columnas h5, #contenidoGeneral .columnas h6, #contenidoGeneral .columnas p {
     margin-top: 15px;
     margin-bottom: 15px; }
-  #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p, #contenidoGeneral ul {
+  #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p, #contenidoGeneral > ul {
     max-width: 800px;
     margin: 0 auto; }
-  #contenidoGeneral ul {
+  #contenidoGeneral > ul {
     font-size: 16px; }
-  #contenidoGeneral ul li {
+  #contenidoGeneral > ul li {
     margin-bottom: 20px;
     padding-left: 20px;
     position: relative; }
-  #contenidoGeneral ul li::before {
+  #contenidoGeneral > ul li::before {
     content: '';
     width: 15px;
     height: 15px;

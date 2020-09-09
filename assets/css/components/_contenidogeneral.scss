@@ -21,22 +21,22 @@ body {
       margin-bottom: 15px;
     }
   }
-  h2, h3, h4, h5, h6, p, ul {
+  h2, h3, h4, h5, h6, p, > ul {
     max-width: 800px;
     margin: 0 auto;
   }
 
-  ul {
+  > ul {
     font-size: 16px;
   }
 
-  ul li {
+  > ul li {
       margin-bottom: 20px;
       padding-left: 20px;
       position: relative;
   }
 
-  ul li::before {
+  > ul li::before {
       content: '';
       width: 15px;
       height: 15px;
