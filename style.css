@@ -425,6 +425,21 @@ body {
   #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p, #contenidoGeneral ul {
     max-width: 800px;
     margin: 0 auto; }
+  #contenidoGeneral ul {
+    font-size: 16px; }
+  #contenidoGeneral ul li {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative; }
+  #contenidoGeneral ul li::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    background: #f7d07c;
+    position: absolute;
+    left: 0;
+    top: 5px; }
   @media screen and (max-width: 800px) {
     #contenidoGeneral .tenpix {
       margin: 0 10px; } }
