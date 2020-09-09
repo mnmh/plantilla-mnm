@@ -18,8 +18,12 @@
     .navegacion_scroll{
         border-bottom: 1px solid #e2ac35;
     }
-    
+
     .fila-botones .item .inside .name{
+        background: #F6c04b;
+    }
+
+    .slider-columna:not(.half).rojo .left{
         background: #F6c04b;
     }
 }
