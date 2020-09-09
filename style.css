@@ -8619,16 +8619,15 @@ a.leaflet-control-zoom-out {
         background-color: #C24D3F;
         text-align: center;
         color: white;
-        border-radius: 50px;
+        /* border-radius: 50px; */
         padding: 10px;
         padding-right: 25px;
         padding-left: 25px;
-        max-width: 90%;
+        width: 100%;
         font-weight: bold;
-        margin-top: 10%; }
+        /* margin-top: 10%; */ }
     .fila-botones .item:hover .inside .name {
-      background-color: white;
-      color: #333; }
+      display: none; }
 
 .columnas {
   display: flex; }
@@ -9084,7 +9083,7 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
   border-bottom: 1px solid #e2ac35; }
 
 .parent-pageid-11339 .fila-botones .item .inside .name, .page-id-11339 .fila-botones .item .inside .name {
-  background: #F6c04b; }
+  background: #f6c04bcc; }
 
 .parent-pageid-11339 .slider-columna:not(.half).rojo .left, .page-id-11339 .slider-columna:not(.half).rojo .left {
   background: #F6c04b; }

@@ -19,24 +19,23 @@
             background-size: cover;
 
             .name {
-                background-color: $rojo;
+                background-color: #C24D3F;
                 text-align: center;
                 color: white;
-                border-radius: 50px;
+                /* border-radius: 50px; */
                 padding: 10px;
                 padding-right: 25px;
                 padding-left: 25px;
-                max-width: 90%;
+                width: 100%;
                 font-weight: bold;
-                margin-top: 10%;
+                /* margin-top: 10%; */
             }
         }
 
         &:hover {
             .inside {
                 .name {
-                    background-color: white;
-                    color: #333;
+                    display: none;
                 }
             }
         }
