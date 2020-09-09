@@ -5717,32 +5717,30 @@ body#tinymce {
 
 blockquote {
   font-weight: 600;
-  color: black;
+  color: #555;
   font-size: 1em;
   margin: 0 auto;
   display: block;
   width: 100%;
   border-left: 5px solid #ffc800;
   max-width: 1000px !important;
-  padding-left: 20px; }
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 1.5em;
+  display: block; }
   blockquote p {
     max-width: 1000px !important; }
   blockquote cite {
     margin-top: 50px;
     display: block;
-    text-align: right; }
-    blockquote cite em {
-      font-size: 1em;
-      border-bottom: 2px solid #ffc800;
-      color: #999;
-      display: inline-block;
-      padding: 5px; }
-  blockquote em {
-    font-weight: 400;
-    font-size: 1.5em;
-    display: block; }
-    blockquote em strong {
-      font-weight: 400; }
+    text-align: right;
+    font-size: 1em;
+    border-bottom: 2px solid #ffc800;
+    color: #999;
+    display: inline-block;
+    padding: 5px; }
+  blockquote strong {
+    font-weight: 400; }
   @media screen and (min-width: 850px) {
     blockquote {
       font-size: 1.05em; } }

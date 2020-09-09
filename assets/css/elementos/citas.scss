@@ -6,7 +6,7 @@
 
 blockquote {
     font-weight: 600;
-    color: black;
+    color: #555;
     font-size: 1em;
     margin: 0 auto;
     display: block;
@@ -25,16 +25,13 @@ blockquote {
         display: block;
         text-align: right;
 
-        em {
             font-size: 1em;
             border-bottom: 2px solid $amarillo;
             color: #999;
             display: inline-block;
             padding: 5px;
-        }
     }
 
-    em {
         font-weight: 400;
         font-size: 1.5em;
         display: block;
@@ -42,7 +39,6 @@ blockquote {
         strong {
             font-weight: 400;
         }
-    }
 
     @media screen and (min-width:850px) {
         font-size: 1.05em;
