@@ -8414,14 +8414,15 @@ body.page-template-template-caminando .mapaContainer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 50px;
+    padding-left: 60px;
     background-color: #C24D3F;
     font-weight: bold;
     color: #fff;
     line-height: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    transition: all 0.2s ease; }
+    transition: all 0.2s ease;
+    font-size: 0.8em; }
     .navegacion_scroll .item::after {
       content: counter(contador);
       text-indent: 0;
