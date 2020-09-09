@@ -9083,7 +9083,7 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
 .parent-pageid-11339 .fila-botones .item .inside .name, .page-id-11339 .fila-botones .item .inside .name {
   background: #f6c04bcc; }
 
-.parent-pageid-11339 .slider-columna:not(.half).rojo .left, .page-id-11339 .slider-columna:not(.half).rojo .left {
+.parent-pageid-11339 .slider-columna:not(.half).rojo .left, .parent-pageid-11339 .slider-columna.half .right:before, .page-id-11339 .slider-columna:not(.half).rojo .left, .page-id-11339 .slider-columna.half .right:before {
   background: #F6c04b; }
 
 .parent-pageid-11339 .slider-columna.half .left, .page-id-11339 .slider-columna.half .left {

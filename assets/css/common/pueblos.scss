@@ -23,7 +23,7 @@
         background: #f6c04bcc;
     }
 
-    .slider-columna:not(.half).rojo .left{
+    .slider-columna:not(.half).rojo .left,.slider-columna.half .right:before{
         background: #F6c04b;
     }
 
