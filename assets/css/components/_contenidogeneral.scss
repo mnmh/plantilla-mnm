@@ -9,6 +9,7 @@ body {
   overflow: hidden;
   //padding: em(5);
 
+
   body.page-pagina-principal-data & {
     padding: 0;
   }
@@ -20,7 +21,7 @@ body {
       margin-bottom: 15px;
     }
   }
-  h2, h3, h4, h5, h6, p {
+  h2, h3, h4, h5, h6, p, ul {
     max-width: 800px;
     margin: 0 auto;
   }

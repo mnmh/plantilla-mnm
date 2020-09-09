@@ -422,7 +422,7 @@ body {
   #contenidoGeneral .columnas h2, #contenidoGeneral .columnas h3, #contenidoGeneral .columnas h4, #contenidoGeneral .columnas h5, #contenidoGeneral .columnas h6, #contenidoGeneral .columnas p {
     margin-top: 15px;
     margin-bottom: 15px; }
-  #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p {
+  #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p, #contenidoGeneral ul {
     max-width: 800px;
     margin: 0 auto; }
   @media screen and (max-width: 800px) {
@@ -9074,3 +9074,15 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
 
 .parent-pageid-11339 .slider-columna:not(.half).rojo .left, .page-id-11339 .slider-columna:not(.half).rojo .left {
   background: #F6c04b; }
+
+.parent-pageid-11339 .slider-columna.half .left, .page-id-11339 .slider-columna.half .left {
+  background: #F6c04b; }
+
+.parent-pageid-11339 .titulo-modulo, .page-id-11339 .titulo-modulo {
+  text-align: center;
+  font-size: 2em;
+  color: #6cb0b9; }
+
+.parent-pageid-11339 .titulo-modulo h2, .page-id-11339 .titulo-modulo h2 {
+  color: #6cb0b9;
+  font-weight: normal; }
