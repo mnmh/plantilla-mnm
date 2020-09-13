@@ -33,6 +33,219 @@
                       opacity: 1
                     }).addTo(mapa);
                   })
+
+                  console.log('ch')
+                  var resguardoIcon = L.icon({
+                    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Google_Map_Marker.svg',
+                    iconSize: [50, 50], // size of the icon
+                    });
+              
+                var puebloIcon = L.icon({
+                        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Google_Map_Marker.svg',
+                        iconSize: [20, 20], // size of the icon
+                        });
+
+                let markers_pueblos = []
+                let markers_resguardos = []
+                let ubicacion = []
+                
+                let pie = d3.pie()
+                .padAngle(0.005)
+                .sort(null)
+                .value(d => d.value)
+
+                let color_peligro = d3.scaleOrdinal().range(['#E0052D', '#F2D7B6']).domain(['si', 'no'])
+                
+
+                let rmax = 30
+                let markers = L.markerClusterGroup({
+                    maxClusterRadius: 60,
+                    iconCreateFunction: iconClusterDefine
+                })
+
+                d3.csv('https://raw.githubusercontent.com/mnmh/datos/master/ubicacion_pueblos_indigenas.csv', data => {
+                      ubicacion.push(data)
+                      console.log(data)
+                    //   cargarPueblos()
+                  }).then((col,data) => {
+                    //   console.log(data, col)
+                    //   ubicacion = data
+                      cargarPueblos()
+                      console.log(ubicacion)
+                  })
+                
+
+                function iconClusterDefine(cluster) {
+                    var children = cluster.getAllChildMarkers(),
+                        n = children.length,
+                        strokeWidth = 1,
+                        r = rmax-2*strokeWidth-(n<10?12:n<100?8:n<1000?4:0),
+                        iconDim = 50
+                    
+                    let data = devolverData(children)
+                    let html = dibujarDona({
+                      data: data,
+                      n: n,
+                      r: r,
+                      strokeWidth: strokeWidth
+                    })
+                        
+                    let myIcon = new L.DivIcon({
+                      html: html,
+                      className: 'marker-cluster', 
+                      iconSize: new L.Point(iconDim, iconDim)
+                    });
+                    return myIcon;
+                  }
+
+                  function devolverData(children){
+                    let resp = [
+                      {
+                        name: 'si',
+                        value: 0
+                      },
+                      {
+                        name: 'no',
+                        value: 0
+                      }
+                    ]
+                    children.map(c => {
+                      if(c.options.peligro) resp[0].value = resp[0].value + 1
+                      else resp[1].value = resp[1].value + 1
+                    })
+                    
+                    return resp
+                  }
+
+                  function dibujarDona(aggs){
+                    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                    let vis = d3.select(svg).attr('width', 50)
+                        .attr('height', 50)
+                    
+                    let scaleTotal = d3.scaleLinear().range(['#FFF', '#F2B705']).domain([0,ubicacion.length])
+                    const arcs = pie(aggs.data);
+                    vis.append('circle')
+                      .attr('cx', 25)
+                      .attr('cy', 25)
+                      .attr('r', 25)
+                      .attr('fill', scaleTotal(aggs.n))
+                      .attr('fill',  '#FFF')
+                
+                    
+                     vis.selectAll("path")
+                      .data(arcs)
+                      .join("path")
+                        .attr("fill", d => color_peligro(d.data.name))
+                        .attr("d", d3.arc().innerRadius(20).outerRadius(25))
+                        .attr('transform', 'translate(25,25)')
+                    
+                    vis.append('text')
+                      .text(aggs.n)
+                      .attr('fill','#333')
+                      .attr('dy', '.5em')
+                      .attr('x', 25)
+                      .attr('y', 25)
+                      .attr('font-weight', 'bold')
+                      .attr('text-anchor', 'middle')
+                    
+                    return serializeXmlNode(svg);
+                  }
+                  
+                  function serializeXmlNode(xmlNode) {
+                    if (typeof window.XMLSerializer != "undefined") {
+                        return (new window.XMLSerializer()).serializeToString(xmlNode);
+                    } else if (typeof xmlNode.xml != "undefined") {
+                        return xmlNode.xml;
+                    }
+                    return "";
+                }
+                  
+                  function devolverPoblacion(elem){
+                    if(elem['Con población entre 0-99 personas'] === 'X') return '0-99'
+                    else if(elem['Con población entre 100-199 personas'] === 'X') return '100-199'
+                    else if(elem['Con población entre 200-500 personas'] === 'X') return '200-500'
+                    else return 'Sin información'
+                  }
+                  
+                  function devolverPeligro(elem){
+                    if(elem['En peligro de ser exterminados cultural o físicamente por el conflicto armado interno por el Auto 004 de 2009.'] === 'X') return true
+                    else return false
+                  }
+
+                  function cargarPueblos() {
+
+                    ubicacion.map(i => {
+                      let lat = parseFloat(i['Latitud'].replace(',', '.'))
+                      let lon = parseFloat(i['Longitud'].replace(',', '.'))
+                      let marker = L.marker([lat,lon],{
+                          icon: puebloIcon,
+                          pueblo: i['Pueblo'],
+                          poblacion: devolverPoblacion(i),
+                          peligro: devolverPeligro(i)
+                        })
+                      .bindTooltip(
+                        '<b>Pueblo:</b> ' + i['Pueblo'] + '</br>' +
+                        '<b>Municipio:</b>' + i['Municipio']
+                      , {className: 'myCSSClass'})
+                      .on('click', () => {
+                        markers_resguardos = []
+                        let cod_resguardos = []
+                        
+                        pueblos.map(p => {
+                          // console.log(i['Pueblo'], p['Pueblo'])
+                          if(i['Pueblo'].replace(/\s+/g,' ').trim() == p['Pueblo'].replace(/\s+/g,' ').trim()){
+                            // console.log(p['Nombre Resguardo'])
+                            
+                            const municipio = municipios.features.find(m => {
+                              return m.properties['MPIOS'] === p['Cod Mpio']
+                            })
+                            if(municipio){
+                              if(!cod_resguardos.includes(municipio.properties['MPIOS'])){
+                                cod_resguardos.push(municipio.properties['MPIOS'])
+                                let l = L.geoJson(municipio, {})
+                                let coor = l.getBounds().getCenter()
+                                let resguardo =  L.marker([coor.lat,coor.lng], {icon: resguardoIcon}).bindTooltip(
+                                    '<b>Resguardo:</b> ' + p['Nombre Resguardo'] + '</br>' +
+                                    '<b>Municipio:</b>' + p['Municipio']
+                                  ).on('click', () => {
+                                  markers_resguardos.map(r => r.remove())
+                                  // markers_pueblos.map(r => r.remove())
+                                  // markers_pueblos = []
+                                  markers_resguardos = []
+                                  // cargarPueblos()
+                                  markers.addTo(mapa)
+                                }).addTo(mapa)
+                                markers_resguardos.push(resguardo)
+                              }
+                            }
+                              
+                          }
+                        })
+                        
+                        if(markers_resguardos.length > 0) {
+                          // markers_pueblos.map(m => {
+                          //   if(marker._leaflet_id != m._leaflet_id) {m.remove()}
+                          // })
+                          // markers_pueblos = []
+                          // markers_pueblos.push(marker)
+                          // marker.off('click')
+                          // marker.on('click', () => {
+                          //   marker.remove()
+                          //   markers_resguardos.map(r => r.remove())
+                          //   markers_pueblos = []
+                          //   markers_resguardos = []
+                          //   cargarPueblos()
+                          // })
+                          // marker.addTo(map)
+                          mapa.removeLayer(markers)
+                        }
+                        
+                      }).addTo(markers)
+                      markers_pueblos.push(marker)
+                    })
+                    
+                    mapa.addLayer(markers)
+                  }
               })
 
             })
@@ -255,6 +468,29 @@
                     }
                   })
               }
+        })
+   
+        $('.calendario.awa').each(function(){
+            $parent = $(this)
+            $(this).find('.left path').on('mouseenter', function(e,el){
+                var path = $(this).attr('data-path')
+                $('#awa_imagen').find('> g').addClass('opacity')
+                $('#' + path).removeClass('opacity')
+            }).on('mouseleave', function() {
+                $('#awa_imagen').find('> g').removeClass('opacity')
+            })
+        })
+
+        $('.calendario.chorrera').each(function(){
+            $parent = $(this)
+            $(this).find('.left circle').on('mouseenter', function(e,el){
+                var path = $(this).attr('data-path')
+                console.log(this)
+                $('#chorrera_img').find('> g').addClass('opacity')
+                $('#' + path).removeClass('opacity')
+            }).on('mouseleave', function() {
+                $('#chorrera_img').find('> g').removeClass('opacity')
+            })
         })
     });
 

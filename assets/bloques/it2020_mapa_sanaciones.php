@@ -8,7 +8,7 @@
 $id = 'bloque-' . $block['id'];
 ?>
 
-<div class="map_nav">
+<div class="map_nav btm">
     <div class="mapa_contenedor" id="<?php echo $id ?>">
     </div>
     <div class="right">

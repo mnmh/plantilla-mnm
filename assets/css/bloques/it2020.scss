@@ -129,6 +129,9 @@ $itclaro: #eee3d7;
         background-color: $itclaro;
         color: $itcol;
     }
+    .navegacion_scroll {
+        border-bottom: 1px solid #cc6634;
+    }
     .navegacion_scroll .item:after {
         color: $itcol;
     }
@@ -137,4 +140,68 @@ $itclaro: #eee3d7;
         background-color:#fff !important;
         border: 1px solid #ccc;
     } 
+}
+
+.calendario {
+    margin: 0 auto;
+    max-width: 1600px;
+
+    .inside {
+        width: 100%;
+        display: flex;
+        padding: 2.5%;
+        background-color: #fff;
+    }
+    &.chorrera {
+        .inside > svg, .left {width: 50%;}
+        .left {
+            svg {
+                circle {
+                    fill: #fff;
+                    stroke: $itcol;
+                    cursor: pointer;
+                    transition: all 0.25s ease;
+
+                    &:hover {
+                        fill: $itclaro
+                    }
+                }
+            }
+        }
+    }
+    &.awa {
+        .inside > svg {
+            width: 50%;
+        }
+
+        .left {
+            width: 50%;
+
+            svg {
+                path {
+                    fill: #fff;
+                    stroke: $itcol;
+                    stroke-width: 2;
+                    cursor: pointer;
+                    transition: all 0.25s ease;
+
+                    &:hover {
+                        fill: $itclaro
+                    }
+                }
+            }
+        }
+    }
+
+    .inside {
+        > svg {
+            g {
+                transition: all 0.4s ease;
+
+                &.opacity {
+                    opacity: 0.1;
+                }
+            }
+        }
+    }
 }

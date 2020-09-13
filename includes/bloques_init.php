@@ -483,12 +483,45 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'mapa', 'bot', 'itinerancia'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Calendario Awa',
+			'title'				=> __('Calendario Awa'),
+			'description'		=> __('Un bloque que carga el calendario awá'),
+			'render_callback'	=> 'bloque_callback_it2020_calendario_awa',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'calendario', 'itinerancia'),
+		));
+
+		acf_register_block(array(
+			'name'				=> 'Calendario Chorrera',
+			'title'				=> __('Calendario Chorrera'),
+			'description'		=> __('Un bloque que carga el calendario chorrera'),
+			'render_callback'	=> 'bloque_callback_it2020_calendario_chorrera',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'calendario', 'itinerancia'),
+		));
 	}
 }
 
 /*
 BLOQUES ITINERANCIA 2020
 */
+
+function bloque_callback_it2020_calendario_chorrera($block) {
+	if( file_exists( get_theme_file_path("assets/bloques/it2020_calendario_chorrera.php") ) ) {
+		include( get_theme_file_path("assets/bloques/it2020_calendario_chorrera.php") );
+	}
+}
+
+function bloque_callback_it2020_calendario_awa($block) {
+	if( file_exists( get_theme_file_path("assets/bloques/it2020_calendario_awa.php") ) ) {
+		include( get_theme_file_path("assets/bloques/it2020_calendario_awa.php") );
+	}
+}
+
 function bloque_callback_it2020_mapa_bot($block) {
 	if( file_exists( get_theme_file_path("assets/bloques/it2020_mapa_bot.php") ) ) {
 		include( get_theme_file_path("assets/bloques/it2020_mapa_bot.php") );

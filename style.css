@@ -8599,6 +8599,58 @@ a.leaflet-control-zoom-out {
   background: #333;
   color: white; }
 
+.leaflet-marker-icon {
+  background: none !important; }
+
+a.leaflet-control-zoom-in {
+  border-radius: 50px !important;
+  border: 1px solid #ccc !important;
+  margin-bottom: 5px; }
+
+.leaflet-control-zoom.leaflet-bar.leaflet-control {
+  border: none; }
+
+a.leaflet-control-zoom-out {
+  border-radius: 50px !important;
+  border: 1px solid #ccc !important; }
+
+.leaflet-popup-tip-container {
+  display: none !important; }
+
+.leaflet-popup-content-wrapper {
+  background: #333;
+  color: white;
+  border-radius: 3px !important;
+  box-shadow: none !important; }
+
+.leaflet-popup-content {
+  margin: 0;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+
+.leaflet-popup-content-wrapper {
+  color: white; }
+
+.myCSSClass {
+  background: #333 !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px !important; }
+
+.leaflet-tooltip-left.myCSSClass::before {
+  border-left-color: #333; }
+
+.leaflet-tooltip-right.myCSSClass::before {
+  border-right-color: #333; }
+
+.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
+  -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
+  -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-in; }
+
 .fila-botones {
   display: flex;
   justify-content: center; }
@@ -9200,9 +9252,46 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
   background-color: #eee3d7;
   color: #cc6634; }
 
+.parent-pageid-11576 .navegacion_scroll {
+  border-bottom: 1px solid #cc6634; }
+
 .parent-pageid-11576 .navegacion_scroll .item:after {
   color: #cc6634; }
 
 .parent-pageid-11576 .leaflet-container {
   background-color: #fff !important;
   border: 1px solid #ccc; }
+
+.calendario {
+  margin: 0 auto;
+  max-width: 1600px; }
+  .calendario .inside {
+    width: 100%;
+    display: flex;
+    padding: 2.5%;
+    background-color: #fff; }
+  .calendario.chorrera .inside > svg, .calendario.chorrera .left {
+    width: 50%; }
+  .calendario.chorrera .left svg circle {
+    fill: #fff;
+    stroke: #cc6634;
+    cursor: pointer;
+    transition: all 0.25s ease; }
+    .calendario.chorrera .left svg circle:hover {
+      fill: #eee3d7; }
+  .calendario.awa .inside > svg {
+    width: 50%; }
+  .calendario.awa .left {
+    width: 50%; }
+    .calendario.awa .left svg path {
+      fill: #fff;
+      stroke: #cc6634;
+      stroke-width: 2;
+      cursor: pointer;
+      transition: all 0.25s ease; }
+      .calendario.awa .left svg path:hover {
+        fill: #eee3d7; }
+  .calendario .inside > svg g {
+    transition: all 0.4s ease; }
+    .calendario .inside > svg g.opacity {
+      opacity: 0.1; }
