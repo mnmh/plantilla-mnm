@@ -1,0 +1,50 @@
+$itcol: #cc6634;
+$itcol_active: #99cccc;
+$itclaro: #eee3d7;
+
+.mapa_contenedor {
+    height: 90vh;
+    width: 60%;
+}
+
+.disposicion-al-dialogo .leaflet-container {
+    background-color:#FFF !important;
+    border: 1px solid #ccc;
+} 
+
+.mapa_bot {
+    display: flex;
+
+    .rigth, svg {
+        width: 50%;
+    }
+
+    .rigth {
+        display: flex;
+        align-items: center;
+        font-size: 2em;
+        color: $itcol
+    }
+}
+
+.parent-pageid-11576 {
+    #top_menu {
+        background-color: $itcol;
+    }
+    #menu_lateral_btn .a, #top_menu #title svg path {
+        fill: white
+    }
+    #top_menu .radio path, #top_menu #acce_menu .icon_acce path {
+        fill: white;
+    }
+    #top_menu .radio:hover path, #top_menu #acce_menu .icon_acce:hover path {
+        fill: $itcol_active;
+    }
+    .navegacion_scroll, .navegacion_scroll .item {
+        background-color: $itclaro;
+        color: $itcol;
+    }
+    .navegacion_scroll .item:after {
+        color: $itcol;
+    }
+}

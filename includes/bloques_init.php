@@ -460,6 +460,44 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'pronto', 'imagen'),
 		));
+
+		/*
+		ITINERANCIA 2020
+		*/
+		acf_register_block(array(
+			'name'				=> 'Mapa sanaciones',
+			'title'				=> __('Mapa sanaciones'),
+			'description'		=> __('Un bloque que carga el mapa de sanaciones para la exposición 2020'),
+			'render_callback'	=> 'bloque_callback_it2020_mapa_sanaciones',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'mapa', 'itinerancia'),
+		));
+
+		acf_register_block(array(
+			'name'				=> 'Mapa bot',
+			'title'				=> __('Mapa bot'),
+			'description'		=> __('Un bloque que carga el mapa de las entradas al bot de whatsapp'),
+			'render_callback'	=> 'bloque_callback_it2020_mapa_bot',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'mapa', 'bot', 'itinerancia'),
+		));
+	}
+}
+
+/*
+BLOQUES ITINERANCIA 2020
+*/
+function bloque_callback_it2020_mapa_bot($block) {
+	if( file_exists( get_theme_file_path("assets/bloques/it2020_mapa_bot.php") ) ) {
+		include( get_theme_file_path("assets/bloques/it2020_mapa_bot.php") );
+	}
+}
+
+function bloque_callback_it2020_mapa_sanaciones($block) {
+	if( file_exists( get_theme_file_path("assets/bloques/it2020_mapa_sanaciones.php") ) ) {
+		include( get_theme_file_path("assets/bloques/it2020_mapa_sanaciones.php") );
 	}
 }
 
@@ -809,7 +847,6 @@ function bloque_callback_carrousel_cc($block) {
 		include( get_theme_file_path("assets/bloques/bloque-carrousel-cc.php") );
 	}
 }
-
 
 // Cargar los campos de los bloques
 include( get_theme_file_path("/includes/campos/carrousel-verticales.php") );

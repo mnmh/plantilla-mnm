@@ -9106,3 +9106,40 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
 
 .parent-pageid-11339 #contenidoGeneral strong, .page-id-11339 #contenidoGeneral strong {
   color: #f68b4b; }
+
+.mapa_contenedor {
+  height: 90vh;
+  width: 60%; }
+
+.disposicion-al-dialogo .leaflet-container {
+  background-color: #FFF !important;
+  border: 1px solid #ccc; }
+
+.mapa_bot {
+  display: flex; }
+  .mapa_bot .rigth, .mapa_bot svg {
+    width: 50%; }
+  .mapa_bot .rigth {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    color: #cc6634; }
+
+.parent-pageid-11576 #top_menu {
+  background-color: #cc6634; }
+
+.parent-pageid-11576 #menu_lateral_btn .a, .parent-pageid-11576 #top_menu #title svg path {
+  fill: white; }
+
+.parent-pageid-11576 #top_menu .radio path, .parent-pageid-11576 #top_menu #acce_menu .icon_acce path {
+  fill: white; }
+
+.parent-pageid-11576 #top_menu .radio:hover path, .parent-pageid-11576 #top_menu #acce_menu .icon_acce:hover path {
+  fill: #99cccc; }
+
+.parent-pageid-11576 .navegacion_scroll, .parent-pageid-11576 .navegacion_scroll .item {
+  background-color: #eee3d7;
+  color: #cc6634; }
+
+.parent-pageid-11576 .navegacion_scroll .item:after {
+  color: #cc6634; }

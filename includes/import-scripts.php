@@ -95,6 +95,9 @@ function header_scripts()
         wp_register_script('cc-generales', get_template_directory_uri() . '/js/elementos/cc-generales.js', array('jquery'), '1.0.0');
         wp_enqueue_script('cc-generales');
 
+        wp_register_script('it2020', get_template_directory_uri() . '/js/elementos/it2020.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('it2020');
+
         wp_register_script('bloque-navscroll', get_template_directory_uri() . '/js/bloques/bloque-navscroll.js', array('jquery'), '1.0.0');
         wp_enqueue_script('bloque-navscroll');
 
