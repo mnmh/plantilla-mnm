@@ -9118,6 +9118,36 @@ body.ninos-y-ninas {
 body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-modulo .subtitulo-sec {
   text-align: center; }
 
+#cc_contenedor_buscador {
+  position: relative; }
+  #cc_contenedor_buscador #mapa_cc_general {
+    height: 90vh; }
+    #cc_contenedor_buscador #mapa_cc_general.leaflet-container {
+      background-color: #fff !important;
+      border: 1px solid #ccc; }
+  #cc_contenedor_buscador #cc_buscador_input {
+    position: absolute;
+    border: 2px solid #3e6cd1;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 900;
+    top: 20px;
+    border-radius: 100px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); }
+    #cc_contenedor_buscador #cc_buscador_input input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: #3e6cd1;
+      text-align: center;
+      border-bottom: 1px dashed #3e6cd1; }
+      #cc_contenedor_buscador #cc_buscador_input input::placeholder {
+        color: #3e6cd1; }
+
 .parent-pageid-11339 .navegacion_especiales, .page-id-11339 .navegacion_especiales {
   background: #F6c04b; }
 
