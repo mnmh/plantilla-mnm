@@ -926,5 +926,6 @@ include( get_theme_file_path("/includes/campos/carrousel-cc.php"));
 include( get_theme_file_path("/includes/campos/bloque-curaduria.php"));
 include( get_theme_file_path("/includes/campos/bloque-navegacion.php"));
 include( get_theme_file_path("/includes/campos/bloque-pronto.php"));
+include( get_theme_file_path("/includes/campos/bloque-reproductor-audio.php"));
 
 ?>
