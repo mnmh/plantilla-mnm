@@ -9235,6 +9235,11 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
 .parent-pageid-11339 .reproductor_sencillo .time .bar .num span, .page-id-11339 .reproductor_sencillo .time .bar .num span {
   color: #F6c04b; }
 
+.parent-pageid-11339 .slider-columna:not(.half) .right .inside .item, .page-id-11339 .slider-columna:not(.half) .right .inside .item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f6c04b; }
+
 .parent-pageid-11339 .navegacion_especiales .item, .page-id-11339 .navegacion_especiales .item {
   background: #F6c04b; }
 

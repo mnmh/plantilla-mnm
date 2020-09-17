@@ -10,6 +10,12 @@
     .reproductor_sencillo .time .bar .num span {
         color: #F6c04b;
     }
+
+    .slider-columna:not(.half) .right .inside .item {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #f6c04b;
+    }
     
     .navegacion_especiales .item {
         background: #F6c04b;
