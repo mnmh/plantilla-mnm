@@ -4501,7 +4501,8 @@ body#tinymce {
   #contenidoGeneral .wp-block-image {
     max-width: 800px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    text-align: center; }
     #contenidoGeneral .wp-block-image.top {
       margin-top: 3em; }
     #contenidoGeneral .wp-block-image img {
@@ -4510,6 +4511,10 @@ body#tinymce {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto; }
+    #contenidoGeneral .wp-block-image figcaption {
+      font-size: 0.75em;
+      color: #999;
+      font-style: italic; }
 
 .hori_scroll {
   z-index: 10;
