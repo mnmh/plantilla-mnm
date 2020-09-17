@@ -1,0 +1,89 @@
+.reproductor_sencillo {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 30px;
+
+    .time {
+        position: relative;
+        background-color: #ececec;
+        width: calc(100% - 150px);
+        margin-left: 150px;
+        height: 5px;
+        top: 6px;
+
+        .bar {
+            position: absolute;
+            height: 5px;
+            left: 0;
+            top: 0;
+            background-color: $amarillo;
+
+            .num {
+                position: absolute;
+                right: 0;
+                top: -20px;
+                font-size: 9px;
+                color: #999;
+                width: 150px;
+                text-align: right;
+
+                span{
+                    font-weight: bold;
+                    color: $amarillo;
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    .inside {
+        display: flex;
+        margin-top: 1px;
+
+        .left {
+            width: 150px;
+            
+            .btn {
+                background-color: $amarillo;
+                position: relative;
+                width: 150px;
+                height: 100px;
+                padding: 0;
+                margin: 0;
+                border-radius: 0;
+                -webkit-border-bottom-left-radius: 20px;
+                -moz-border-radius-bottomleft: 20px;
+                border-bottom-left-radius: 20px;
+
+                &::after {
+                    content: '\e810';
+                    font-family: 'mnm';
+                    color: white;
+                    font-size: 40px;
+                    text-align: left;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+
+                &.playing {
+                    &::after {
+                        content: '\e813';
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: calc(100% - 150px);
+            padding: 10px;
+            text-align: center;
+            color: #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

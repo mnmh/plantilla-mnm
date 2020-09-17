@@ -77,6 +77,9 @@ function header_scripts()
         wp_register_script('slider-columnas', get_template_directory_uri() . '/js/bloques/slider-columnas.js', array('jquery'), '1.0.0');
         wp_enqueue_script('slider-columnas');
 
+        wp_register_script('reproductor-audio', get_template_directory_uri() . '/js/bloques/reproductor-audio.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('reproductor-audio');
+
         wp_register_script('animaciones', get_template_directory_uri() . '/js/common/animaciones.js', array('jquery'), '1.0.0');
         wp_enqueue_script('animaciones');
 

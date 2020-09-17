@@ -503,12 +503,28 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'calendario', 'itinerancia'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Bloque reproductor audio',
+			'title'				=> __('Bloque reproductor audio'),
+			'description'		=> __('Un bloque que carga un reproductor sencillo'),
+			'render_callback'	=> 'bloque_callback_audio_sencillo',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'audio', 'sencillo'),
+		));
 	}
 }
 
 /*
 BLOQUES ITINERANCIA 2020
 */
+
+function bloque_callback_audio_sencillo($block) {
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-reproductor-sencillo.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-reproductor-sencillo.php") );
+	}
+}
 
 function bloque_callback_it2020_calendario_chorrera($block) {
 	if( file_exists( get_theme_file_path("assets/bloques/it2020_calendario_chorrera.php") ) ) {

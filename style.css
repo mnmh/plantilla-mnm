@@ -73,10 +73,16 @@ a {
     margin-left: 350px;
     width: 100%; }
 
+.wp-block-embed__wrapper {
+  text-align: center; }
+
 figure iframe {
   border: none;
   width: 100%;
-  height: 80vh;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 50vh;
+  min-height: 400px;
   padding: 50px;
   background: #333; }
 
@@ -8679,6 +8685,73 @@ a.leaflet-control-zoom-out {
         /* margin-top: 10%; */ }
     .fila-botones .item:hover .inside .name {
       display: none; }
+
+.reproductor_sencillo {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 30px; }
+  .reproductor_sencillo .time {
+    position: relative;
+    background-color: #ececec;
+    width: calc(100% - 150px);
+    margin-left: 150px;
+    height: 5px;
+    top: 6px; }
+    .reproductor_sencillo .time .bar {
+      position: absolute;
+      height: 5px;
+      left: 0;
+      top: 0;
+      background-color: #ffc800; }
+      .reproductor_sencillo .time .bar .num {
+        position: absolute;
+        right: 0;
+        top: -20px;
+        font-size: 9px;
+        color: #999;
+        width: 150px;
+        text-align: right; }
+        .reproductor_sencillo .time .bar .num span {
+          font-weight: bold;
+          color: #ffc800;
+          display: inline; }
+  .reproductor_sencillo .inside {
+    display: flex;
+    margin-top: 1px; }
+    .reproductor_sencillo .inside .left {
+      width: 150px; }
+      .reproductor_sencillo .inside .left .btn {
+        background-color: #ffc800;
+        position: relative;
+        width: 150px;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        -webkit-border-bottom-left-radius: 20px;
+        -moz-border-radius-bottomleft: 20px;
+        border-bottom-left-radius: 20px; }
+        .reproductor_sencillo .inside .left .btn::after {
+          content: '\e810';
+          font-family: 'mnm';
+          color: white;
+          font-size: 40px;
+          text-align: left;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        .reproductor_sencillo .inside .left .btn.playing::after {
+          content: '\e813'; }
+    .reproductor_sencillo .inside .right {
+      width: calc(100% - 150px);
+      padding: 10px;
+      text-align: center;
+      color: #999;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 .columnas {
   display: flex; }
