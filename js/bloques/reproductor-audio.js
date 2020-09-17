@@ -2,8 +2,8 @@
 
     $(function () {
         $('.reproductor_sencillo').each(function(){
-            console.log(this)
-            $item = $(this)
+            id = $(this).attr('id')
+            $item = $('#' + id)
             $audio = $item.find('audio')
 
             $audio[0].ontimeupdate = () => {
