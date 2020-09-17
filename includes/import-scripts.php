@@ -89,8 +89,8 @@ function header_scripts()
         wp_register_script('accesibilidad', get_template_directory_uri() . '/js/common/accesibilidad.js', array('jquery'), '1.0.0');
         wp_enqueue_script('accesibilidad');
 
-        wp_register_script('cc-busqueda', get_template_directory_uri() . '/js/elementos/cc-busqueda.js', array('jquery'), '1.0.0');
-        wp_enqueue_script('cc-busqueda');
+        // wp_register_script('cc-busqueda', get_template_directory_uri() . '/js/elementos/cc-busqueda.js', array('jquery'), '1.0.0');
+        // wp_enqueue_script('cc-busqueda');
 
         wp_register_script('cc-contenido', get_template_directory_uri() . '/js/elementos/cc-contenido.js', array('jquery'), '1.0.0');
         wp_enqueue_script('cc-contenido');
