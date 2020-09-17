@@ -76,7 +76,7 @@ a {
 .wp-block-embed__wrapper {
   text-align: center; }
 
-figure iframe {
+figure iframe, .wp-block-embed iframe {
   border: none;
   width: 100%;
   max-width: 800px;
