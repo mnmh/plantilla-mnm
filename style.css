@@ -429,7 +429,7 @@ body {
     margin-top: 15px;
     margin-bottom: 15px; }
   #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p, #contenidoGeneral > ul {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto; }
   #contenidoGeneral > ul {
     font-size: 16px; }
