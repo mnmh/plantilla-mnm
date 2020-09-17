@@ -104,9 +104,10 @@
         align-items: center;
         justify-content: flex-start;
         padding-left: 60px;
-        background-color: $rojo;
+        background-color: transparent;
         font-weight: bold;
         color: #fff;
+        border: 2px solid #fff;
         line-height: 20px;
         padding-top: 15px;
         padding-bottom: 15px;

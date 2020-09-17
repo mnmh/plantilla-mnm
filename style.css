@@ -8476,9 +8476,10 @@ body.page-template-template-caminando .mapaContainer {
     align-items: center;
     justify-content: flex-start;
     padding-left: 60px;
-    background-color: #C24D3F;
+    background-color: transparent;
     font-weight: bold;
     color: #fff;
+    border: 2px solid #fff;
     line-height: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -9244,7 +9245,8 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
   background: #F6c04b; }
 
 .parent-pageid-11339 .navegacion_especiales .item.active::after, .page-id-11339 .navegacion_especiales .item.active::after {
-  background-color: #6cb0b9; }
+  background-color: #6cb0b9;
+  border-color: #6cb0b9; }
 
 .parent-pageid-11339 .navegacion_scroll .item, .parent-pageid-11339 .navegacion_scroll, .page-id-11339 .navegacion_scroll .item, .page-id-11339 .navegacion_scroll {
   background: #F6c04b; }
