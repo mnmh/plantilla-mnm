@@ -24,9 +24,11 @@ $titulo = get_field('titulo');
             $imagen = get_sub_field('imagen');
         ?>
             <li class="cuadro">
-                <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
-                <h2 class="name"><?php the_sub_field('nombre') ?></h2>
-                <div class="txt"><?php the_sub_field('texto') ?></div>
+                <a href="<?php echo get_sub_field('enlace') ?>">
+                    <div class="img" style="background-image:url('<?php echo $imagen['sizes']['large'] ?>')"></div>
+                    <h2 class="name"><?php the_sub_field('nombre') ?></h2>
+                    <div class="txt"><?php the_sub_field('texto') ?></div>
+                </a>
             </li>
         <?php endwhile; endif; ?>
     </ul>
