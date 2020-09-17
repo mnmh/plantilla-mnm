@@ -2,6 +2,7 @@
 
     $(function () {
         $('.reproductor_sencillo').each(function(){
+            console.log(this)
             $item = $(this)
             $audio = $item.find('audio')
 
