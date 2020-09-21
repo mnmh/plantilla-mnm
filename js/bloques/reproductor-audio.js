@@ -1,9 +1,9 @@
 (function ($, root, undefined) {
 
     $(function () {
-        $('.reproductor_sencillo').each(function(){
-            id = $(this).attr('id')
-            $item = $('#' + id)
+        $('.reproductor_sencillo .left .btn').each(function(){
+            id = $(this).attr('data-id')
+            $item = $(this).parent().parent().parent()
             $audio = $item.find('audio')
 
             $audio[0].ontimeupdate = () => {
@@ -25,14 +25,17 @@
                 s = Math.floor(s);
                 return (h < 10 ? '0'+h : h)+":"+(m < 10 ? '0'+m : m)+":"+(s < 10 ? '0'+s : s);
             }
-
-            $item.find('.left .btn').on('click', function() {
+            
+            $(this).on('click', function() {
+                $item = $(this).parent().parent().parent()
+                $audio = $item.find('audio')
+                
                 if($(this).hasClass('playing')){
                     $audio[0].pause()
-                    $item.find('.left .btn').removeClass('playing')
+                    $(this).removeClass('playing')
                 } else {
                     $audio[0].play()
-                    $item.find('.left .btn').addClass('playing')
+                    $(this).addClass('playing')
                 }
                 
             })
