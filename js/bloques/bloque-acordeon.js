@@ -25,8 +25,9 @@
                 // $parent = $(this)
                 $parent.find('.fila-botones').addClass('btm').append($item)
                 $item.on('click', function(){
-                    $parent.find('.fila-botones .active').removeClass('active')
-                    $(this).addClass('active')
+                    $('.fila-botones .active').removeClass('active')
+                    var in_ = $(this).index()
+                    $('.fila-botones .item:nth-child('+(in_ + 1)+')').addClass('active')
                     $('.acordeon_hijo').hide()
                     let id = $(this).attr('data-id')
                     $('#' + id).fadeIn()
