@@ -7,7 +7,8 @@
             let $item = $('<div class="fila-botones"></div>')
             $parent.append($item)
             let loop_nombre = 'scroll_hijo'
-            $('#contenidoGeneral').append($parent.find('.fila-botones').clone())
+            $newfila = $parent.find('.fila-botones').clone()
+            $('#contenidoGeneral').append($newfila)
 
             $('.acordeon_hijo').each(function(index){
                 // console.log($(this).find('.titulo-modulo .sec').html())
@@ -33,7 +34,7 @@
 
                 })
 
-                $('#contenidoGeneral .fila-botones').append($item.clone())
+                $newfila.append($item.clone())
             })
         })
 
