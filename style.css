@@ -431,13 +431,15 @@ body {
   #contenidoGeneral h2, #contenidoGeneral h3, #contenidoGeneral h4, #contenidoGeneral h5, #contenidoGeneral h6, #contenidoGeneral p, #contenidoGeneral > ul {
     max-width: 900px;
     margin: 0 auto; }
-  #contenidoGeneral > ul {
-    font-size: 16px; }
-  #contenidoGeneral > ul li {
+  #contenidoGeneral .acordeon_hijo > .ul, #contenidoGeneral > ul {
+    font-size: 16px;
+    max-width: 900px;
+    margin: 0 auto; }
+  #contenidoGeneral .acordeon_hijo > .ul li, #contenidoGeneral > ul li {
     margin-bottom: 20px;
     padding-left: 20px;
     position: relative; }
-  #contenidoGeneral > ul li::before {
+  #contenidoGeneral .acordeon_hijo > .ul li::before, #contenidoGeneral > ul li::before {
     content: '';
     width: 15px;
     height: 15px;

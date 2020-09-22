@@ -26,17 +26,19 @@ body {
     margin: 0 auto;
   }
 
-  > ul {
+  .acordeon_hijo > .ul, > ul {
     font-size: 16px;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
-  > ul li {
+  .acordeon_hijo > .ul li, > ul li {
       margin-bottom: 20px;
       padding-left: 20px;
       position: relative;
   }
 
-  > ul li::before {
+  .acordeon_hijo > .ul li::before, > ul li::before {
       content: '';
       width: 15px;
       height: 15px;
