@@ -8689,7 +8689,7 @@ a.leaflet-control-zoom-out {
         width: 100%;
         font-weight: bold;
         /* margin-top: 10%; */ }
-    .fila-botones .item:hover .inside .name {
+    .fila-botones .item:hover .inside .name, .fila-botones .item.active .inside .name {
       display: none; }
 
 .reproductor_sencillo {

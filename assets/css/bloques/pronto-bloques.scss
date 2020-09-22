@@ -30,7 +30,7 @@
             }
         }
 
-        &:hover {
+        &:hover, &.active {
             .inside {
                 .name {
                     display: none;
