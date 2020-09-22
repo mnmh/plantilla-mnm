@@ -9,7 +9,9 @@
             let loop_nombre = 'scroll_hijo'
 
             $('.acordeon_hijo').each(function(index){
-                console.log($(this).find('.titulo-modulo .sec').html())
+                // console.log($(this).find('.titulo-modulo .sec').html())
+                let img_url = $(this).find('.galeria_voces .item.is-selected img').attr('src')
+
                 let item_id = loop_nombre + '_' + index
                 let $item = $('<a class="item"></a>')
                 $item.attr('data-id', item_id)
@@ -17,6 +19,7 @@
                 $(this).hide()
                 $item.html('<div class="inside"><div class="name"></div></div>')
                 $item.find('.name').text($(this).find('.titulo-modulo .sec').html())
+                $item.find('.inside').css({'background-image': 'url("'+img_url+'")'})
                 // $parent = $(this)
                 $parent.find('.fila-botones').append($item)
                 $item.on('click', function(){
