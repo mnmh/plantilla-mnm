@@ -34,7 +34,13 @@
 
                 })
 
-                $newfila.append($item.clone())
+                $newfila.append($item.clone().on('click', function(){
+                    $('.acordeon_hijo').hide()
+                    let id = $(this).attr('data-id')
+                    $('#' + id).fadeIn()
+                    window.dispatchEvent(new Event('resize'));
+
+                }))
             })
         })
 
