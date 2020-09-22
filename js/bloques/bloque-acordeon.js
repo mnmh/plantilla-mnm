@@ -48,7 +48,7 @@
                 }))
             })
 
-            $newfila.find('.item:first-child').click()
+            $parent.find('.fila-botones').find('.item:first-child').click()
         })
 
     });
