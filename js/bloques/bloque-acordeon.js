@@ -7,6 +7,7 @@
             let $item = $('<div class="fila-botones"></div>')
             $parent.append($item)
             let loop_nombre = 'scroll_hijo'
+            $('#contenidoGeneral').append($parent.find('.fila-botones').clone())
 
             $('.acordeon_hijo').each(function(index){
                 // console.log($(this).find('.titulo-modulo .sec').html())
@@ -31,6 +32,8 @@
                     window.dispatchEvent(new Event('resize'));
 
                 })
+
+                $('#contenidoGeneral .fila-botones').append($item.clone())
             })
         })
 
