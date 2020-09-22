@@ -513,12 +513,28 @@ function my_acf_init() {
 			'icon'				=> 'admin-comments',
 			'keywords'			=> array( 'audio', 'sencillo'),
 		));
+
+		acf_register_block(array(
+			'name'				=> 'Bloque acordeon',
+			'title'				=> __('Bloque acordeon'),
+			'description'		=> __('Un bloque que carga un acordeon'),
+			'render_callback'	=> 'bloque_callback_acordeon',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'acordeon', 'padre'),
+		));
 	}
 }
 
 /*
 BLOQUES ITINERANCIA 2020
 */
+
+function bloque_callback_acordeon($block) {
+	if( file_exists( get_theme_file_path("assets/bloques/bloque-acordeon-menu.php") ) ) {
+		include( get_theme_file_path("assets/bloques/bloque-acordeon-menu.php") );
+	}
+}
 
 function bloque_callback_audio_sencillo($block) {
 	if( file_exists( get_theme_file_path("assets/bloques/bloque-reproductor-sencillo.php") ) ) {

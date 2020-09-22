@@ -107,6 +107,9 @@ function header_scripts()
         wp_register_script('imagen-zoom', get_template_directory_uri() . '/js/bloques/imagen-zoom.js', array('jquery'), '1.0.0');
         wp_enqueue_script('imagen-zoom');
 
+        wp_register_script('bloque-acordeon', get_template_directory_uri() . '/js/bloques/bloque-acordeon.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('bloque-acordeon');
+
         // wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
         // wp_enqueue_script('scripts');
     }
