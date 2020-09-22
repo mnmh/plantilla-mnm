@@ -21,8 +21,10 @@
                 $item.find('.name').text($(this).find('.titulo-modulo .sec').html())
                 $item.find('.inside').css({'background-image': 'url("'+img_url+'")'})
                 // $parent = $(this)
-                $parent.find('.fila-botones').append($item)
+                $parent.find('.fila-botones').addClass('btm').append($item)
                 $item.on('click', function(){
+                    $parent.find('.fila-botones .active').removeClass('active')
+                    $(this).addClass('active')
                     $('.acordeon_hijo').hide()
                     let id = $(this).attr('data-id')
                     $('#' + id).fadeIn()
