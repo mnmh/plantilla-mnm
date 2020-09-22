@@ -7,7 +7,7 @@
             let $item = $('<div class="fila-botones"></div>')
             $parent.append($item)
             let loop_nombre = 'scroll_hijo'
-            $newfila = $parent.find('.fila-botones').clone()
+            $newfila = $parent.find('.fila-botones').clone().addClass('btm')
             $('#contenidoGeneral').append($newfila)
 
             $('.acordeon_hijo').each(function(index){
