@@ -35,11 +35,14 @@
                 })
 
                 $newfila.append($item.clone().on('click', function(){
+                    $('.fila-botones .active').removeClass('active')
+                    var in_ = $(this).index()
+                    $('.fila-botones .item:nth-child('+(in_ + 1)+')').addClass('active')
                     $('.acordeon_hijo').hide()
                     let id = $(this).attr('data-id')
                     $('#' + id).fadeIn()
                     window.dispatchEvent(new Event('resize'));
-                    $.scrollTo('.acordeon_padre', 100)
+                    $.scrollTo('.acordeon_padre', 300)
 
                 }))
             })
