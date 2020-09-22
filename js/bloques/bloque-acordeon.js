@@ -47,6 +47,8 @@
 
                 }))
             })
+
+            $newfila.find('.item:first-child').click()
         })
 
     });
