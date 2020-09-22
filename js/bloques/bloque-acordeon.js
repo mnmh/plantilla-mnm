@@ -39,6 +39,7 @@
                     let id = $(this).attr('data-id')
                     $('#' + id).fadeIn()
                     window.dispatchEvent(new Event('resize'));
+                    $.scrollTo('.acordeon_padre', 100)
 
                 }))
             })
