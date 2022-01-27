@@ -24,7 +24,7 @@
         "jquery": "^3.4.1",
         "jshint": "^2.10.2",
         "photo-sphere-viewer": "^3.4.0",
-        "three": "^0.94.0",
+        "three": "^0.137.0",
         "three-obj-loader": "^1.1.3",
         "three-orbitcontrols": "^2.1.2",
         "webpack": "^4.39.2"
