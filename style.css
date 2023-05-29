@@ -474,7 +474,7 @@ body {
       width: 280px;
       background-color: white;
       position: relative;
-      padding-top: 2em; }
+      padding-top: 4em; }
       @media all and (min-width: 1024px) {
         #menu_lateral .menu-wrapper .main-menu {
           width: 350px; } }
@@ -9418,3 +9418,93 @@ body.centro-de-contenido .titulo-modulo .sec, body.centro-de-contenido .titulo-m
     transition: all 0.4s ease; }
     .calendario .inside > svg g.opacity {
       opacity: 0.1; }
+
+.wrap{
+	width: 100% !important;
+	margin: 0 !important;
+}
+		.preheader{
+			background: #005DC7;
+			width: 100%;
+			height: 43px;
+			display: block;
+			padding: 5px;
+    		margin-top: 0px;
+		}
+
+		.site-footer{
+			background: #005DC7;
+		}
+
+		.preheader img{
+			max-width: 158px;
+		}
+		#contenidoGeneral{
+			margin-top: 150px !important;
+		}
+		#top_menu{
+			top: 50px;
+			transition: all .3s ease-in-out;
+		}
+		.footer-museo .logo-gov{
+			max-width: 200px;
+			display: block;
+			margin: 0 auto;
+			padding: 10px;
+		}
+
+		.footer-museo .logo-co{
+			max-width: 100px;
+			margin: 0 auto;
+			padding: 10px;
+		}
+		.footer-museo .museo-links:first-child{
+			text-align: center;
+		}
+
+		.site-footer{
+			color: #fff !important;
+		}
+
+		.site-footer a{
+			color: #fff !important;
+			text-decoration: underline;
+		}
+
+		.site-footer .footer-museo {
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.museo-links{
+			border-right: 2px solid #fff;
+		}
+		.museo-links:last-child{
+			border: 0 !important;
+		}
+
+		.social-media li{
+			display: inline-block !important;
+		}
+
+		.social-media li img{
+			max-width: 30px;
+		}
+
+		.fixedmenu{
+			top: 0 !important;
+			height: 50px !important;
+			transition: all .3s ease-in-out; 
+		}
+
+		@media screen and (max-width: 920px){
+			.site-footer .footer-museo {
+			grid-template-columns: repeat(1, 1fr);
+			text-align: center !important;
+		}
+		.museo-links{
+			border-right: 0px solid #fff;
+			border-bottom: 2px solid #fff;
+		}
+		}
